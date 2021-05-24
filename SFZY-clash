@@ -5,35 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 顺丰资源Youtube
-    server: centos.fuchau.xyz
-    port: 443
-    type: vmess
-    uuid: b707c9e6-3a61-4f0b-8844-9a398cfadfb7
-    alterId: 2
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-path: /add76314/
-    ws-headers:
-      Host: centos.fuchau.xyz
-  - name: 顺丰资源Youtube 2
-    server: 137.59.52.107
-    port: 33992
-    type: ss
-    cipher: aes-256-gcm
-    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-  - name: 顺丰资源YouTube
-    server: sg1.vless.co
-    port: 443
-    type: trojan
-    password: fastssh.com
-    sni: sg1.vless.co
-    skip-cert-verify: false
-  - name: 🇭🇰 香港顺丰资源Youtube
-    server: xg2.cthgo.me
-    port: 43587
+  - name: JP顺丰资源Youtube
+    server: 134.122.189.149
+    port: 10005
     type: vmess
     uuid: aa9d9f44-09dc-47e6-9518-ec3ca7ab2a69
     alterId: 0
@@ -43,20 +17,35 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: xg2.cthgo.me
-  - name: 🇺🇸 US顺丰资源Youtube
-    server: 23.224.164.100
-    port: 443
+      Host: 134.122.189.149
+  - name: 顺丰资源Youtube
+    server: 137.59.52.107
+    port: 40093
+    type: ss
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇭🇰 顺丰资源Youtube|🇭🇰HK
+    server: 183.236.57.52
+    port: 10001
     type: vmess
-    uuid: d25a6583-52ca-496f-87ae-f2275b3b0ddd
-    alterId: 64
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
     cipher: auto
-    tls: true
+    tls: false
+    skip-cert-verify: false
+  - name: 🇭🇰 香港顺丰资源Youtube
+    server: xin.cthgo.me
+    port: 2020
+    type: vmess
+    uuid: aa9d9f44-09dc-47e6-9518-ec3ca7ab2a69
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: false
     network: ws
-    ws-path: /path/160317342506
+    ws-path: /
     ws-headers:
-      Host: www.09025120.xyz
+      Host: xin.cthgo.me
   - name: 🇭🇰 香港顺丰资源Youtube 2
     server: xin.cthgo.me
     port: 9866
@@ -70,41 +59,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: xin.cthgo.me
-  - name: 🇭🇰 香港顺丰资源Youtube 3
-    server: xin.cthgo.me
-    port: 2020
-    type: vmess
-    uuid: aa9d9f44-09dc-47e6-9518-ec3ca7ab2a69
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: xin.cthgo.me
-  - name: 顺丰资源Youtube 3
-    server: 183.236.57.52
-    port: 10003
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 4
-    server: 104.200.131.245
-    port: 33998
-    type: ss
-    cipher: aes-256-gcm
-    password: NHwQTPLCfaTMSqTnU3mjcSxe
-  - name: 🇺🇸 US顺丰资源Youtube 2
-    server: 207.244.67.149
-    port: 39772
-    type: ss
-    cipher: aes-256-gcm
-    password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇭🇰 香港顺丰资源Youtube 4
+  - name: 顺丰资源Youtube 2
     server: 139.226.50.32
     port: 10005
     type: vmess
@@ -113,7 +68,16 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇨🇳 台湾顺丰资源Youtube
+  - name: 🇭🇰 顺丰资源Youtube|🇭🇰HK 2
+    server: 183.236.57.52
+    port: 10001
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 3
     server: 139.226.50.32
     port: 10004
     type: vmess
@@ -122,15 +86,33 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 顺丰资源Youtube 5
+  - name: 🇭🇰 香港顺丰资源Youtube 3
     server: 139.226.50.32
-    port: 10003
+    port: 10005
     type: vmess
     uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
     alterId: 1
     cipher: auto
     tls: false
     skip-cert-verify: false
+  - name: 🇷🇴 罗马尼亚顺丰资源Youtube
+    server: 193.29.106.197
+    port: 31572
+    type: ss
+    cipher: aes-256-gcm
+    password: n8w4StnbVD9dmXYn4Ajt87EA
+  - name: 顺丰资源Youtube 4
+    server: 34.244.63.147
+    port: 805
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 顺丰资源Youtube 5
+    server: 167.88.63.29
+    port: 806
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
   - name: 顺丰资源Youtube 6
     server: 139.226.50.32
     port: 10003
@@ -140,102 +122,62 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇺🇸 US顺丰资源Youtube 3
-    server: 198.147.22.87
-    port: 31757
+  - name: 顺丰资源Youtube 7
+    server: 34.244.63.147
+    port: 809
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 顺丰资源Youtube 8
+    server: 34.244.63.147
+    port: 807
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 顺丰资源Youtube 9
+    server: 104.200.131.245
+    port: 33998
     type: ss
     cipher: aes-256-gcm
-    password: wj7nDCuNARchSeKNCN8VFK62
-  - name: 顺丰资源Youtube 7
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 顺丰资源Youtube 10
     server: 139.28.176.53
     port: 31572
     type: ss
     cipher: aes-256-gcm
     password: n8w4StnbVD9dmXYn4Ajt87EA
-  - name: 🇺🇸 US顺丰资源Youtube 4
-    server: 198.147.22.87
-    port: 33998
-    type: ss
-    cipher: aes-256-gcm
-    password: NHwQTPLCfaTMSqTnU3mjcSxe
-  - name: 顺丰资源Youtube 8
-    server: 183.236.57.52
-    port: 10001
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 9
-    server: 198.147.22.87
-    port: 33992
-    type: ss
-    cipher: aes-256-gcm
-    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-  - name: 顺丰资源Youtube 10
-    server: t6.ssrsub.one
-    port: 8443
-    type: trojan
-    password: qN7AKCF3
-    sni: t6.ssrsub.one
-    skip-cert-verify: false
-  - name: 🇺🇸 US顺丰资源Youtube 5
-    server: 198.147.22.87
-    port: 31572
-    type: ss
-    cipher: aes-256-gcm
-    password: n8w4StnbVD9dmXYn4Ajt87EA
-  - name: 顺丰资源Youtube 11
-    server: 34.244.63.147
-    port: 812
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 12
-    server: 139.226.50.32
-    port: 10004
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US顺丰资源Youtube 6
-    server: 198.147.22.87
-    port: 33148
-    type: ss
-    cipher: aes-256-gcm
-    password: CMduaFXddcQbwNAAs7xFDnc8
-  - name: 顺丰资源Youtube 13
-    server: 198.147.22.87
+  - name: 🇳🇱 荷兰顺丰资源Youtube
+    server: 89.46.223.239
     port: 39772
     type: ss
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 顺丰资源Youtube 14
+  - name: 顺丰资源Youtube 11
     server: 139.226.50.32
-    port: 10005
+    port: 10003
     type: vmess
     uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
     alterId: 1
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 顺丰资源Youtube 15
-    server: 139.226.50.32
-    port: 10005
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 16
-    server: 154.84.1.35
+  - name: 顺丰资源Youtube 12
+    server: 104.200.131.245
+    port: 33992
+    type: ss
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 顺丰资源Youtube 13
+    server: 185.124.240.159
+    port: 33998
+    type: ss
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇺🇸 顺丰资源Youtube|🇺🇸US
+    server: 23.225.9.252
     port: 443
     type: vmess
-    uuid: 0415746c-4d6b-49fb-9a8a-e74ad6172d3d
+    uuid: 2dd19ba3-f6d8-4562-8153-03ea94335111
     alterId: 64
     cipher: auto
     tls: true
@@ -243,46 +185,281 @@ proxies:
     network: ws
     ws-path: /path/310910211916
     ws-headers:
-      Host: www.00722542.xyz
-  - name: 🇷🇴 罗马尼亚顺丰资源Youtube
-    server: 91.90.123.189
+      Host: www.38559541.xyz
+  - name: 顺丰资源Youtube 14
+    server: 198.147.22.87
+    port: 33998
+    type: ss
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 顺丰资源Youtube 15
+    server: t4.ssrsub.one
+    port: 8443
+    type: trojan
+    password: 8l5DUdeb
+    sni: t4.ssrsub.one
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 16
+    server: 183.236.57.52
+    port: 10004
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 立陶宛顺丰资源Youtube
+    server: 194.41.112.14
+    port: 39772
+    type: ss
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 顺丰资源Youtube 17
+    server: t1.ssrsub.one
+    port: 443
+    type: trojan
+    password: oniTKdGW
+    sni: t1.ssrsub.one
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 18
+    server: 185.124.240.159
+    port: 38742
+    type: ss
+    cipher: aes-256-gcm
+    password: DKXfWwc4ebscpXTKpbt85rSH
+  - name: 顺丰资源Youtube 19
+    server: 198.147.22.87
+    port: 31757
+    type: ss
+    cipher: aes-256-gcm
+    password: wj7nDCuNARchSeKNCN8VFK62
+  - name: 顺丰资源Youtube 20
+    server: 198.147.22.87
+    port: 33992
+    type: ss
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 顺丰资源Youtube 21
+    server: 198.147.22.87
+    port: 40093
+    type: ss
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇺🇸 US顺丰资源Youtube
+    server: 198.147.22.87
+    port: 33148
+    type: ss
+    cipher: aes-256-gcm
+    password: CMduaFXddcQbwNAAs7xFDnc8
+  - name: 顺丰资源Youtube|🇳🇱NL
+    server: 154.84.1.175
+    port: 443
+    type: vmess
+    uuid: c49d20c4-aabb-4caa-9f75-538316b8e97a
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /path/310910211916
+    ws-headers:
+      Host: www.23439261.xyz
+  - name: 🇺🇸 US顺丰资源Youtube 2
+    server: 198.147.22.87
     port: 31572
     type: ss
     cipher: aes-256-gcm
     password: n8w4StnbVD9dmXYn4Ajt87EA
+  - name: 顺丰资源Youtube 22
+    server: 104.19.45.116
+    port: 443
+    type: vmess
+    uuid: dbb1253f-c663-42b0-a3bf-ceae0e8d0e46
+    alterId: 4
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /ceae0e8d0e46
+    ws-headers:
+      Host: 35044ac9a120f4dd5.spbohk.com
+  - name: 🇺🇸 US顺丰资源Youtube 3
+    server: 104.200.131.245
+    port: 31944
+    type: ss
+    cipher: aes-256-gcm
+    password: aYNeKDMzYQYw4KbUbJA8Wszq
+  - name: 🇺🇸 US顺丰资源Youtube 4
+    server: 198.147.22.87
+    port: 34815
+    type: ss
+    cipher: aes-256-gcm
+    password: LkFAzkzXkSCRYa2CsRdL8cGb
+  - name: 顺丰资源Youtube 23
+    server: 104.18.6.138
+    port: 443
+    type: vmess
+    uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: cdnde.irteyz.today
+  - name: 🇭🇰 香港顺丰资源Youtube 4
+    server: shcn2-04b.iplc188.com
+    port: 10001
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 24
+    server: sg1.vless.co
+    port: 443
+    type: trojan
+    password: fastssh.com
+    sni: sg1.vless.co
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 25
+    server: 34.244.63.147
+    port: 802
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 顺丰资源Youtube 26
+    server: 138.199.42.163
+    port: 31572
+    type: ss
+    cipher: aes-256-gcm
+    password: n8w4StnbVD9dmXYn4Ajt87EA
+  - name: 🇷🇺 俄罗斯顺丰资源Youtube
+    server: t6.ssrsub.one
+    port: 443
+    type: trojan
+    password: QWKM5g6D
+    sni: t6.ssrsub.one
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 27
+    server: t5.ssrsub.one
+    port: 8443
+    type: trojan
+    password: BzSTIgwh
+    sni: t5.ssrsub.one
+    skip-cert-verify: false
   - name: 🇮🇪 爱尔兰顺丰资源Youtube
+    server: 34.244.63.147
+    port: 801
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 顺丰资源Youtube 28
+    server: 23.224.69.3
+    port: 443
+    type: vmess
+    uuid: 538d3b28-f335-4a0a-bda8-b5065fb1bfb7
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /path/310910211916
+    ws-headers:
+      Host: www.39930935.xyz
+  - name: 顺丰资源Youtube 29
+    server: t4.ssrsub.one
+    port: 443
+    type: trojan
+    password: fFHV52LP
+    sni: t4.ssrsub.one
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 30
+    server: 34.244.63.147
+    port: 812
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 🇮🇪 爱尔兰顺丰资源Youtube 2
     server: 34.244.63.147
     port: 803
     type: ss
     cipher: chacha20-ietf-poly1305
     password: G!yBwPWH3Vao
-  - name: JP顺丰资源Youtube
-    server: 18.179.202.11
-    port: 80
+  - name: 🇨🇳 顺丰资源Youtube|CN
+    server: shcn2-04.iplc188.com
+    port: 10004
     type: vmess
-    uuid: 119f999c-2cf9-36cd-bf7b-08fdf66dbd45
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
     alterId: 1
     cipher: auto
     tls: false
     skip-cert-verify: false
-    network: ws
-    ws-path: /jp
-    ws-headers:
-      Host: 18.179.202.11
-  - name: JP顺丰资源Youtube 2
-    server: 18.179.202.11
-    port: 80
+  - name: 顺丰资源Youtube 31
+    server: bj.linn.ink
+    port: 50001
     type: vmess
-    uuid: 119f999c-2cf9-36cd-bf7b-08fdf66dbd45
+    uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb
+    alterId: 100
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 32
+    server: shcn2-04c.iplc188.com
+    port: 10005
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
     alterId: 1
     cipher: auto
     tls: false
     skip-cert-verify: false
+  - name: 顺丰资源Youtube 33
+    server: 34.244.63.147
+    port: 810
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 🇭🇰 香港顺丰资源Youtube 5
+    server: xg2.cthgo.me
+    port: 80
+    type: vmess
+    uuid: aa9d9f44-09dc-47e6-9518-ec3ca7ab2a69
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     network: ws
-    ws-path: /jp
+    ws-path: /
     ws-headers:
-      Host: apple.com
-  - name: 顺丰资源Youtube 17
+      Host: xg2.cthgo.me
+  - name: 顺丰资源Youtube 34
+    server: 139.226.50.32
+    port: 10001
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 35
+    server: t10.ssrsub.one
+    port: 443
+    type: trojan
+    password: XHgvdhp7
+    sni: t10.ssrsub.one
+    skip-cert-verify: false
+  - name: 🇨🇳 顺丰资源Youtube|CN 2
+    server: shcn2-04b.iplc188.com
+    port: 10001
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 顺丰资源Youtube 36
     server: 45.58.145.209
     port: 443
     type: vmess
@@ -295,261 +472,93 @@ proxies:
     ws-path: /path/310910211916
     ws-headers:
       Host: www.12387703.xyz
-  - name: 🇺🇸 US顺丰资源Youtube 7
-    server: 138.199.42.163
-    port: 31572
-    type: ss
-    cipher: aes-256-gcm
-    password: n8w4StnbVD9dmXYn4Ajt87EA
-  - name: 顺丰资源Youtube 18
-    server: t6.ssrsub.one
-    port: 443
-    type: trojan
-    password: QWKM5g6D
-    sni: t6.ssrsub.one
+  - name: JP顺丰资源Youtube 2
+    server: 139.226.50.32
+    port: 10001
+    type: vmess
+    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
+    alterId: 1
+    cipher: auto
+    tls: false
     skip-cert-verify: false
-  - name: 顺丰资源Youtube 19
+  - name: 顺丰资源Youtube 37
     server: t5.ssrsub.one
     port: 443
     type: trojan
     password: R5DNgT2E
     sni: t5.ssrsub.one
     skip-cert-verify: false
-  - name: 🇺🇸 US顺丰资源Youtube 8
-    server: 104.200.131.245
-    port: 31944
-    type: ss
-    cipher: aes-256-gcm
-    password: aYNeKDMzYQYw4KbUbJA8Wszq
-  - name: 🇺🇸 US顺丰资源Youtube 9
-    server: 198.147.22.87
-    port: 40093
-    type: ss
-    cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: 顺丰资源Youtube 20
-    server: t5.ssrsub.one
+  - name: 顺丰资源Youtube 38
+    server: t3.ssrsub.one
     port: 8443
     type: trojan
-    password: BzSTIgwh
-    sni: t5.ssrsub.one
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 21
-    server: 139.226.50.32
-    port: 10004
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 22
-    server: 183.236.57.52
-    port: 10003
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇷🇴 罗马尼亚顺丰资源Youtube 2
-    server: 185.124.240.159
-    port: 39772
-    type: ss
-    cipher: aes-256-gcm
-    password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 顺丰资源Youtube 23
-    server: 183.236.57.52
-    port: 10001
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US顺丰资源Youtube 10
-    server: 23.224.69.18
-    port: 443
-    type: vmess
-    uuid: 76003e21-7cce-430a-a823-428a7f012aa2
-    alterId: 64
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-path: /path/310910211916
-    ws-headers:
-      Host: www.76126449.xyz
-  - name: 🇮🇪 爱尔兰顺丰资源Youtube 2
-    server: 34.244.63.147
-    port: 801
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 24
-    server: 34.244.63.147
-    port: 810
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 25
-    server: shcn2-04b.iplc188.com
-    port: 10001
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 26
-    server: 34.244.63.147
-    port: 807
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: JP顺丰资源Youtube 3
-    server: 139.226.50.32
-    port: 10001
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 27
-    server: 34.244.63.147
-    port: 802
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 28
-    server: shcn2-04b.iplc188.com
-    port: 10006
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 29
-    server: 111.6.78.248
-    port: 11401
-    type: vmess
-    uuid: 119f999c-2cf9-36cd-bf7b-08fdf66dbd45
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-path: /videos
-    ws-headers:
-      Host: xuexi.cn
-  - name: 顺丰资源Youtube 30
-    server: 34.244.63.147
-    port: 805
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 31
-    server: 139.226.50.32
-    port: 10001
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇮🇪 爱尔兰顺丰资源Youtube 3
-    server: 34.244.63.147
-    port: 804
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 32
-    server: 139.226.50.32
-    port: 10001
-    type: vmess
-    uuid: 2b162f57-f45f-46d0-a4d0-085fc2c9721a
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 顺丰资源Youtube 33
-    server: 34.244.63.147
-    port: 809
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 顺丰资源Youtube 34
-    server: zj3c.nat.1.coalcloud.xyz
-    port: 20424
-    type: vmess
-    uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb
-    alterId: 100
-    cipher: auto
-    tls: false
+    password: KWEeV3fI
+    sni: t3.ssrsub.one
     skip-cert-verify: false
 proxy-groups:
   - name: 节点选择
     proxies:
+      - JP顺丰资源Youtube
       - 顺丰资源Youtube
-      - 顺丰资源Youtube 2
-      - 顺丰资源YouTube
+      - 🇭🇰 顺丰资源Youtube|🇭🇰HK
       - 🇭🇰 香港顺丰资源Youtube
-      - 🇺🇸 US顺丰资源Youtube
       - 🇭🇰 香港顺丰资源Youtube 2
-      - 🇭🇰 香港顺丰资源Youtube 3
+      - 顺丰资源Youtube 2
+      - 🇭🇰 顺丰资源Youtube|🇭🇰HK 2
       - 顺丰资源Youtube 3
+      - 🇭🇰 香港顺丰资源Youtube 3
+      - 🇷🇴 罗马尼亚顺丰资源Youtube
       - 顺丰资源Youtube 4
-      - 🇺🇸 US顺丰资源Youtube 2
-      - 🇭🇰 香港顺丰资源Youtube 4
-      - 🇨🇳 台湾顺丰资源Youtube
       - 顺丰资源Youtube 5
       - 顺丰资源Youtube 6
-      - 🇺🇸 US顺丰资源Youtube 3
       - 顺丰资源Youtube 7
-      - 🇺🇸 US顺丰资源Youtube 4
       - 顺丰资源Youtube 8
       - 顺丰资源Youtube 9
       - 顺丰资源Youtube 10
-      - 🇺🇸 US顺丰资源Youtube 5
+      - 🇳🇱 荷兰顺丰资源Youtube
       - 顺丰资源Youtube 11
       - 顺丰资源Youtube 12
-      - 🇺🇸 US顺丰资源Youtube 6
       - 顺丰资源Youtube 13
+      - 🇺🇸 顺丰资源Youtube|🇺🇸US
       - 顺丰资源Youtube 14
       - 顺丰资源Youtube 15
       - 顺丰资源Youtube 16
-      - 🇷🇴 罗马尼亚顺丰资源Youtube
-      - 🇮🇪 爱尔兰顺丰资源Youtube
-      - JP顺丰资源Youtube
-      - JP顺丰资源Youtube 2
+      - 立陶宛顺丰资源Youtube
       - 顺丰资源Youtube 17
-      - 🇺🇸 US顺丰资源Youtube 7
       - 顺丰资源Youtube 18
       - 顺丰资源Youtube 19
-      - 🇺🇸 US顺丰资源Youtube 8
-      - 🇺🇸 US顺丰资源Youtube 9
       - 顺丰资源Youtube 20
       - 顺丰资源Youtube 21
+      - 🇺🇸 US顺丰资源Youtube
+      - 顺丰资源Youtube|🇳🇱NL
+      - 🇺🇸 US顺丰资源Youtube 2
       - 顺丰资源Youtube 22
-      - 🇷🇴 罗马尼亚顺丰资源Youtube 2
+      - 🇺🇸 US顺丰资源Youtube 3
+      - 🇺🇸 US顺丰资源Youtube 4
       - 顺丰资源Youtube 23
-      - 🇺🇸 US顺丰资源Youtube 10
-      - 🇮🇪 爱尔兰顺丰资源Youtube 2
+      - 🇭🇰 香港顺丰资源Youtube 4
       - 顺丰资源Youtube 24
       - 顺丰资源Youtube 25
       - 顺丰资源Youtube 26
-      - JP顺丰资源Youtube 3
+      - 🇷🇺 俄罗斯顺丰资源Youtube
       - 顺丰资源Youtube 27
+      - 🇮🇪 爱尔兰顺丰资源Youtube
       - 顺丰资源Youtube 28
       - 顺丰资源Youtube 29
       - 顺丰资源Youtube 30
+      - 🇮🇪 爱尔兰顺丰资源Youtube 2
+      - 🇨🇳 顺丰资源Youtube|CN
       - 顺丰资源Youtube 31
-      - 🇮🇪 爱尔兰顺丰资源Youtube 3
       - 顺丰资源Youtube 32
       - 顺丰资源Youtube 33
+      - 🇭🇰 香港顺丰资源Youtube 5
       - 顺丰资源Youtube 34
+      - 顺丰资源Youtube 35
+      - 🇨🇳 顺丰资源Youtube|CN 2
+      - 顺丰资源Youtube 36
+      - JP顺丰资源Youtube 2
+      - 顺丰资源Youtube 37
+      - 顺丰资源Youtube 38
     type: select
   - name: Apple
     type: select
