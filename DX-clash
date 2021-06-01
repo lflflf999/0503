@@ -5,938 +5,655 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: m 33, server: n43.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: m 34, server: 18.217.174.124, port: 18080, type: ssr, cipher: chacha20-ietf, password: asdfjomcw, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: m 35, server: 75.2.115.164, port: 38086, type: ssr, cipher: chacha20-ietf, password: BSN3momKRmKh5hoF, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: m 36, server: 23.99.110.218, port: 38087, type: ssr, cipher: chacha20-ietf, password: BSN3momKRmKh5hoF, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: m 37, server: n96.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: 🇸🇬 Y：新加坡 2, server: sg02.xqkj.cloud, port: 5021, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg02.xqkj.cloud}}
-  - {name: 🇸🇬 Y：新加坡 3, server: sg03.xqkj.cloud, port: 5022, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg03.xqkj.cloud}}
-  - {name: 🇸🇬 Y：新加坡 4, server: sg04.xqkj.cloud, port: 5023, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg04.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国, server: kr01.xqkj.cloud, port: 5030, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr01.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国 2, server: kr02.xqkj.cloud, port: 5031, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr02.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国 3, server: kr03.xqkj.cloud, port: 5032, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr03.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国 4, server: kr04.xqkj.cloud, port: 5033, type: vmess, uuid: 46f04701-591a-43e1-a560-93358a7c4065, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr04.xqkj.cloud}}
-  - {name: 🇺🇸 US（）, server: 104.19.45.116, port: 443, type: vmess, uuid: dbb1253f-c663-42b0-a3bf-ceae0e8d0e46, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ceae0e8d0e46, ws-headers: {Host: 35044ac9a120f4dd5.spbohk.com}}
-  - {name: 🇺🇸 US（） 2, server: 23.224.31.210, port: 443, type: vmess, uuid: 4aa50ee1-1a3c-4ab5-8f4a-998f8ccedd06, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/270119141029, ws-headers: {Host: www.53933374.xyz}}
-  - {name: 🇩🇪 德国(), server: gefree1.free3333.xyz, port: 443, type: vmess, uuid: 6b7c64ca-4b77-4796-bdc6-254ed52a4c53, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: gefree1.free3333.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（）, server: 154.84.1.151, port: 443, type: vmess, uuid: fabb69a2-3fab-42ab-ab3f-048d51c8d010, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.58613279.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 2, server: 46.182.107.17, port: 443, type: vmess, uuid: 45ef0cc8-1a31-453d-9b4c-f66eaa6daa86, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.44985428.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 3, server: 46.182.107.26, port: 443, type: vmess, uuid: ed430006-3d07-4116-902b-649d3492c01a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.59299999.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 4, server: 154.84.1.225, port: 443, type: vmess, uuid: fac11238-1560-4c46-b93b-e92a71304005, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.07197105.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 5, server: 154.84.1.175, port: 443, type: vmess, uuid: c49d20c4-aabb-4caa-9f75-538316b8e97a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.23439261.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 6, server: 46.182.107.29, port: 443, type: vmess, uuid: 5e2b3301-d09b-401a-b465-94a8e0a68a79, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.73783566.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 7, server: 154.84.1.68, port: 443, type: vmess, uuid: 29f57ecb-1331-42a3-a635-4ad70f5fce32, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.19668223.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 8, server: 154.84.1.23, port: 443, type: vmess, uuid: f3875942-e838-4d0a-82fd-59e785941b63, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.11314085.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 9, server: 154.84.1.150, port: 443, type: vmess, uuid: b6a1fc1e-5e56-47d5-b1af-76a3d81def37, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.24826945.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 10, server: 154.84.1.127, port: 443, type: vmess, uuid: 01f3e51f-4c86-48fe-9a03-202e93a46969, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.63681459.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 11, server: 154.84.1.33, port: 443, type: vmess, uuid: 0165667d-54f2-479e-9bd7-e5548edc3194, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.44186580.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 12, server: 45.58.149.15, port: 443, type: vmess, uuid: f72de1a6-b823-4951-bf6b-8f5f2cfba0a3, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.86214129.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 13, server: 154.84.1.35, port: 443, type: vmess, uuid: 0415746c-4d6b-49fb-9a8a-e74ad6172d3d, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.00722542.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 14, server: 51.89.115.72, port: 443, type: vmess, uuid: 6a7e3fcf-6256-4eaa-9d37-07886949b94f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.969983021.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 15, server: 154.84.1.238, port: 443, type: vmess, uuid: 5599a700-4f47-4673-b2c8-a4d9460ab0be, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.84849018.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 16, server: 46.182.107.14, port: 443, type: vmess, uuid: 046e37b4-962a-4dfd-a372-c52f8f90edc6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.98868925.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 17, server: 154.84.1.142, port: 443, type: vmess, uuid: ab594acc-2624-472f-a7a1-b7fe284776e7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.40983279.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 18, server: 154.84.1.34, port: 443, type: vmess, uuid: f5713c1a-eeec-4f31-a51c-acb2b879144c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17888690.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 19, server: 45.58.145.209, port: 443, type: vmess, uuid: 5f3d2caf-55b6-4af2-9183-329602a3fee0, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.12387703.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 20, server: 51.195.112.160, port: 443, type: vmess, uuid: 6a7e3fcf-6256-4eaa-9d37-07886949b94f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.969983021.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 21, server: 45.58.145.134, port: 443, type: vmess, uuid: 4f6e189e-140e-4017-8db9-8026a17bb1bc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.90326050.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 22, server: 46.182.107.5, port: 443, type: vmess, uuid: 9fb4ba62-3b1c-4987-8762-d1e4d346afd7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.16162053.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 23, server: 154.84.1.163, port: 443, type: vmess, uuid: c0b06dcf-ab46-454f-b173-4afadd9f56c8, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.53151238.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 24, server: 154.84.1.31, port: 443, type: vmess, uuid: 82e9f17c-cac2-45da-9c07-2967980a32a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.00225384.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 25, server: 154.84.1.181, port: 443, type: vmess, uuid: 2a3b4685-7deb-4388-a96a-fac9ee08ad63, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.57741322.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 26, server: 46.182.107.32, port: 443, type: vmess, uuid: e1358875-8d22-4977-a24a-15f3f6df07af, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.97032356.xyz}}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹（） 27, server: 154.84.1.37, port: 443, type: vmess, uuid: bad6de34-e23e-4a56-a162-f9b524447cc2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.59438416.xyz}}
-  - {name: 🇺🇸 美国 加利福尼亚（）, server: 23.225.98.115, port: 443, type: vmess, uuid: cd04efa2-b14c-4de3-adde-a23e4d7a60dc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.46815547.xyz}}
-  - {name: 🇺🇸 美国 加利福尼亚（） 2, server: 137.175.58.42, port: 443, type: vmess, uuid: 3f2ed494-f7a0-4563-bba5-4ab44fde87e6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.62884913.xyz}}
-  - {name: 🇺🇸 美国 加利福尼亚（） 3, server: 23.224.69.3, port: 443, type: vmess, uuid: 538d3b28-f335-4a0a-bda8-b5065fb1bfb7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.39930935.xyz}}
-  - {name: 🇺🇸 美国 加利福尼亚（） 4, server: 23.224.8.82, port: 443, type: vmess, uuid: 74e4c336-aaa3-4c41-9a0d-bea94e71833b, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.78651322.xyz}}
-  - {name: 🇺🇸 美国 加利福尼亚（） 5, server: 23.225.9.252, port: 443, type: vmess, uuid: 2dd19ba3-f6d8-4562-8153-03ea94335111, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.38559541.xyz}}
-  - {name: 🇺🇸 美国 加利福尼亚（） 6, server: 23.224.69.18, port: 443, type: vmess, uuid: 76003e21-7cce-430a-a823-428a7f012aa2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.76126449.xyz}}
-  - {name: 🇺🇸 美国(), server: c-us3.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-us3.ooxc.cc}}
-  - {name: 🇺🇸 美国() 2, server: www.digitalocean.com, port: 443, type: vmess, uuid: 6b7c64ca-4b77-4796-bdc6-254ed52a4c53, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: gefree1.free3333.xyz}}
-  - {name: 🇺🇸 美国() 3, server: 52.255.146.242, port: 28380, type: vmess, uuid: a232e331-bff8-48d4-f9a6-2436cf41aa26, alterId: 64, cipher: auto, tls: false}
-  - {name: (), server: shcn2-04d.iplc188.com, port: 10001, type: vmess, uuid: 2f8b5974-2dd6-4421-9d35-ec0002020566, alterId: 1, cipher: auto, tls: false}
-  - {name: () 2, server: shcn2-04d.iplc188.com, port: 10005, type: vmess, uuid: 2f8b5974-2dd6-4421-9d35-ec0002020566, alterId: 1, cipher: auto, tls: false}
-  - {name: () 3, server: 193.42.96.98, port: 30104, type: vmess, uuid: c7d03e59-8fff-463e-9589-9f8099d3e366, alterId: 64, cipher: auto, tls: false}
-  - {name: () 4, server: 183.236.57.18, port: 10004, type: vmess, uuid: 2f8b5974-2dd6-4421-9d35-ec0002020566, alterId: 1, cipher: auto, tls: false}
-  - {name: () 5, server: 139.226.50.32, port: 10004, type: vmess, uuid: 2f8b5974-2dd6-4421-9d35-ec0002020566, alterId: 1, cipher: auto, tls: false}
-  - {name: () 6, server: 183.236.57.18, port: 10003, type: vmess, uuid: 2f8b5974-2dd6-4421-9d35-ec0002020566, alterId: 1, cipher: auto, tls: false}
-  - {name: () 7, server: cm.syhwdz.top, port: 36501, type: vmess, uuid: 99ab7ff1-147d-341f-b422-010392b589a6, alterId: 16, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cm.syhwdz.top}}
-  - {name: 185.124.240.159:33998, server: 185.124.240.159, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 2.58.242.43:38033, server: 2.58.242.43, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 89.46.223.239:39772, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 194.41.112.14:39772, server: 194.41.112.14, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 139.28.176.53:31572, server: 139.28.176.53, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 104.200.131.245:33998, server: 104.200.131.245, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 207.244.67.149:33998, server: 207.244.67.149, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 84.17.35.86:39772, server: 84.17.35.86, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x, server: 65.52.164.219, port: 10088, type: vmess, uuid: d6171326-3ed3-42f9-aba8-a0a655d284db, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /index, ws-headers: {Host: us5.xxl123.fun}}
+  - {name: 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x, server: hkbn2.tcpbbr.net, port: 2244, type: vmess, uuid: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /sub, ws-headers: {Host: broadcastlv.chat.bilibili.com}}
+  - {name: 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x, server: 20.46.169.179, port: 5505, type: vmess, uuid: 49955b62-27c7-3734-bc6b-1c60c0ab0059, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /xxx, ws-headers: {Host: 20.46.169.179}}
+  - {name: 🇩🇪 德国(g), server: gefree1.free3333.xyz, port: 443, type: vmess, uuid: 6b7c64ca-4b77-4796-bdc6-254ed52a4c53, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: gefree1.free3333.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g）, server: 154.84.1.151, port: 443, type: vmess, uuid: fabb69a2-3fab-42ab-ab3f-048d51c8d010, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.58613279.xyz}}
+  - {name: asdsa, server: 52.53.210.70, port: 56867, type: vmess, uuid: 6208032f-922b-4e21-eb62-ecd643b1675f, alterId: 64, cipher: auto, tls: false}
+  - {name: adsad, server: 54.215.234.182, port: 14924, type: vmess, uuid: d099824d-8259-4c45-f6ab-c1896f741393, alterId: 64, cipher: auto, tls: false}
+  - {name: vmess1, server: 52.255.146.242, port: 28380, type: vmess, uuid: a232e331-bff8-48d4-f9a6-2436cf41aa26, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 2, server: 46.182.107.17, port: 443, type: vmess, uuid: 45ef0cc8-1a31-453d-9b4c-f66eaa6daa86, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.44985428.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 3, server: 46.182.107.26, port: 443, type: vmess, uuid: ed430006-3d07-4116-902b-649d3492c01a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.59299999.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 4, server: 154.84.1.225, port: 443, type: vmess, uuid: fac11238-1560-4c46-b93b-e92a71304005, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.07197105.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 5, server: 154.84.1.175, port: 443, type: vmess, uuid: c49d20c4-aabb-4caa-9f75-538316b8e97a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.23439261.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 6, server: 46.182.107.29, port: 443, type: vmess, uuid: 5e2b3301-d09b-401a-b465-94a8e0a68a79, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.73783566.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 7, server: 154.84.1.68, port: 443, type: vmess, uuid: 29f57ecb-1331-42a3-a635-4ad70f5fce32, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.19668223.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 8, server: 154.84.1.23, port: 443, type: vmess, uuid: f3875942-e838-4d0a-82fd-59e785941b63, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.11314085.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 9, server: 154.84.1.150, port: 443, type: vmess, uuid: b6a1fc1e-5e56-47d5-b1af-76a3d81def37, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.24826945.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 10, server: 154.84.1.127, port: 443, type: vmess, uuid: 01f3e51f-4c86-48fe-9a03-202e93a46969, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.63681459.xyz}}
+  - {name: 🇳🇱 荷兰 阿姆斯特丹（g） 11, server: 154.84.1.33, port: 443, type: vmess, uuid: 0165667d-54f2-479e-9bd7-e5548edc3194, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.44186580.xyz}}
+  - {name: 🇳🇱 NL_52 |54.40Mb, server: 154.84.1.180, port: 443, type: vmess, uuid: 0f55100c-8abb-4542-9e5a-ff7d8120e43d, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 154.84.1.180}}
+  - {name: 🇳🇱 NL_53 |51.36Mb, server: 154.84.1.33, port: 443, type: vmess, uuid: 0165667d-54f2-479e-9bd7-e5548edc3194, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 154.84.1.33}}
+  - {name: 🇳🇱 NL_54 |53.71Mb, server: 154.84.1.37, port: 443, type: vmess, uuid: bad6de34-e23e-4a56-a162-f9b524447cc2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 154.84.1.37}}
+  - {name: 🇳🇱 NL_55 |51.11Mb, server: 154.84.1.163, port: 443, type: vmess, uuid: c0b06dcf-ab46-454f-b173-4afadd9f56c8, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 154.84.1.163}}
+  - {name: 🇳🇱 NL_56 |50.62Mb, server: 154.84.1.31, port: 443, type: vmess, uuid: 82e9f17c-cac2-45da-9c07-2967980a32a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.00225384.xyz}}
+  - {name: Y 15, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: Y 16, server: 23.224.69.18, port: 443, type: vmess, uuid: 76003e21-7cce-430a-a823-428a7f012aa2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.76126449.xyz}}
+  - {name: Y 17, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: Y 18, server: 23.224.8.82, port: 443, type: vmess, uuid: 74e4c336-aaa3-4c41-9a0d-bea94e71833b, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.78651322.xyz}}
+  - {name: Y 19, server: 51.89.115.72, port: 443, type: vmess, uuid: 6a7e3fcf-6256-4eaa-9d37-07886949b94f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 51.89.115.72}}
+  - {name: Y 20, server: 23.224.164.100, port: 443, type: vmess, uuid: d25a6583-52ca-496f-87ae-f2275b3b0ddd, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/160317342506, ws-headers: {Host: 23.224.164.100}}
+  - {name: Y 21, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇯🇵 g - 日本东京Linode数据中心 1, server: auto.freev2.top, port: 44671, type: vmess, uuid: bc187896-12da-4b8f-a487-a5cf26a4335b, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇺🇸 g - 美国Amazon EC2服务器 2, server: 3.33.159.126, port: 443, type: vmess, uuid: 57d5b49c-5213-35f4-a741-1f4207981741, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: sg52601.fans8.xyz}}
+  - {name: Y 22, server: 51.89.115.72, port: 443, type: vmess, uuid: 6a7e3fcf-6256-4eaa-9d37-07886949b94f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.969983021.xyz}}
+  - {name: 🇳🇱 NL_57 |52.60Mb, server: 46.182.107.14, port: 443, type: vmess, uuid: 046e37b4-962a-4dfd-a372-c52f8f90edc6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 46.182.107.14}}
+  - {name: 🇳🇱 NL_58 |51.43Mb, server: 154.84.1.127, port: 443, type: vmess, uuid: 01f3e51f-4c86-48fe-9a03-202e93a46969, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 154.84.1.127}}
+  - {name: 🇨🇦 加拿大, server: ss3.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub}
+  - {name: 🇺🇸 美国  38, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 美国  40, server: cc.hciahciphcie.club, port: 443, type: vmess, uuid: 9a297bb1-06e3-4e6f-97fa-3d3202d46596, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /84c3f/, ws-headers: {Host: cc.hciahciphcie.club}}
+  - {name: 🇺🇸 美国  41, server: 172.67.154.85, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 www|🇺🇸 US_1139, server: 104.21.19.155, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
+  - {name: 🇺🇸 www|🇺🇸 US_1141, server: 172.67.186.204, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
+  - {name: 🇨🇳 江苏省无锡市电信 1, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2, server: ssr4.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
+  - {name: 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3, server: ssr2.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
+  - {name: 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4, server: 173.0.55.68, port: 22003, type: ssr, cipher: rc4, password: dongtaiwang.com 123abc, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5, server: ssr1.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
+  - {name: 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6, server: ssr3.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
+  - {name: 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb, server: ty2-8.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: ty2-8.sstr-api.xyz}
+  - {name: 🇯🇵 www|adi|0401 - JP_780 |10.08Mb, server: os1-1.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os1-1.sstr-api.xyz}
   - {name: 207.244.67.149:40093, server: 207.244.67.149, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 207.244.67.149:35294, server: 207.244.67.149, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 154.127.50.138:31572, server: 154.127.50.138, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 167.88.63.29:806, server: 167.88.63.29, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 185.38.150.124:31572, server: 185.38.150.124, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 185.124.240.159:38742, server: 185.124.240.159, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 185.124.240.149:39772, server: 185.124.240.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 138.199.42.151:49396, server: 138.199.42.151, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 195.47.194.79:49396, server: 195.47.194.79, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 2.58.242.43:39772, server: 2.58.242.43, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 15.237.126.197:812, server: 15.237.126.197, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 104.200.131.245:33992, server: 104.200.131.245, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 15.237.126.197:800, server: 15.237.126.197, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: () 14, server: t3.ssrsub.one, port: 8443, type: trojan, password: 1PVhDs6Z, sni: t3.ssrsub.one}
-  - {name: () 15, server: t1.ssrsub.one, port: 8443, type: trojan, password: tgJX9TkN, sni: t1.ssrsub.one}
-  - {name: 🇨🇦 加拿大(), server: t1.ssrsub.one, port: 443, type: trojan, password: ErcILMD9, sni: t1.ssrsub.one}
-  - {name: 🇭🇰 香港, server: 16.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 83c18473-68f5-4c6e-8f3b-728abd2f04df, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.HKG.ASIA.BIGAIRPORT.NET}}
-  - {name: 🇭🇰 香港 2, server: 18.162.96.154, port: 80, type: vmess, uuid: 119f999c-2cf9-36cd-bf7b-08fdf66dbd45, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /hk, ws-headers: {Host: apple.com}}
-  - {name: 🇭🇰 香港 3, server: vip345.xyz, port: 39015, type: vmess, uuid: 1ae6b7f7-69d4-366c-903f-a1d6b317164e, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /sn, ws-headers: {Host: vip345.xyz}}
-  - {name: 🇭🇰 香港 4, server: 42.2.143.119, port: 443, type: vmess, uuid: b707c9e6-3a61-4f0b-8844-9a398cfadfb7, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /add76314/, ws-headers: {Host: centos.fuchau.xyz}}
-  - {name: 🇭🇰 香港 5, server: vip345.xyz, port: 39014, type: vmess, uuid: 1ae6b7f7-69d4-366c-903f-a1d6b317164e, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /sn, ws-headers: {Host: vip345.xyz}}
-  - {name: 🇺🇸 美国, server: c-us3.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-us3.ooxc.cc}}
-  - {name: 🇩🇪 德国, server: gefree1.free3333.xyz, port: 443, type: vmess, uuid: 6b7c64ca-4b77-4796-bdc6-254ed52a4c53, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: gefree1.free3333.xyz}}
-  - {name: 89.46.223.239:39772 2, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 207.244.67.149:35294 2, server: 207.244.67.149, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 195.47.194.79:49396 2, server: 195.47.194.79, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇩🇪 德国 2, server: node07-v2ray.cloudddns.icu, port: 58888, type: vmess, uuid: e8c0cfd5-2e1b-442b-9071-a73d52e87bf3, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: node07-v2ray.cloudddns.icu}}
-  - {name: 84.17.35.118:41676, server: 84.17.35.118, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇩🇪 德国 3, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 84.17.35.118:47027, server: 84.17.35.118, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 84.17.35.118:47121, server: 84.17.35.118, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 84.17.35.118:33992, server: 84.17.35.118, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 84.17.35.118:34687, server: 84.17.35.118, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 84.17.35.118:31944, server: 84.17.35.118, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 84.17.35.118:45329, server: 84.17.35.118, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 138.199.42.151:49339, server: 138.199.42.151, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 84.17.35.118:44820, server: 84.17.35.118, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 84.17.35.118:48938, server: 84.17.35.118, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 84.17.35.86:39772 2, server: 84.17.35.86, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 84.17.35.118:49126, server: 84.17.35.118, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇩🇪 德国 4, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 84.17.35.118:38742, server: 84.17.35.118, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 84.17.35.118:31764, server: 84.17.35.118, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 84.17.35.118:46642, server: 84.17.35.118, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 84.17.35.118:40093, server: 84.17.35.118, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 138.199.42.151:40093, server: 138.199.42.151, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 84.17.35.118:38620, server: 84.17.35.118, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 37.120.212.139:39772, server: 37.120.212.139, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 172.98.78.227:39772, server: 172.98.78.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 138.199.42.151:45329, server: 138.199.42.151, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 138.199.42.151:41676, server: 138.199.42.151, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 84.17.35.118:49396, server: 84.17.35.118, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇨🇦 加拿大, server: t1.ssrsub.one, port: 443, type: trojan, password: ErcILMD9, sni: t1.ssrsub.one}
-  - {name: 138.199.42.151:37588, server: 138.199.42.151, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 138.199.42.151:31572, server: 138.199.42.151, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 37.120.212.139:33992, server: 37.120.212.139, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 138.199.42.151:31764, server: 138.199.42.151, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 138.199.42.151:38620, server: 138.199.42.151, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 45.130.137.34:39772, server: 45.130.137.34, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 138.199.42.151:31944, server: 138.199.42.151, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 138.199.42.151:33992, server: 138.199.42.151, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 m|🇺🇸US_4408 |22.21Mb, server: 173.82.240.245, port: 443, type: vmess, uuid: 9a297bb1-06e3-4e6f-97fa-3d3202d46596, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /84c3f/, ws-headers: {Host: cc.hciahciphcie.club}}
+  - {name: 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16, server: cn2.relay.iplc.pro, port: 52005, type: vmess, uuid: a72e2f68-e7cb-447b-86e9-98a207e53c5d, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35, server: hk2.direct.iplc.pro, port: 52000, type: vmess, uuid: a72e2f68-e7cb-447b-86e9-98a207e53c5d, alterId: 1, cipher: auto, tls: false}
+  - {name: m|, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0, server: 12v1sg01.airlanding.xyz, port: 18010, type: vmess, uuid: 500914a7-1ede-3a31-aa4e-fd33e305d6aa, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: 12v1sg01.airlanding.xyz}}
+  - {name: 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0, server: 14v1hk06.airlanding.xyz, port: 18012, type: vmess, uuid: 500914a7-1ede-3a31-aa4e-fd33e305d6aa, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: 14v1hk06.airlanding.xyz}}
+  - {name: 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301, server: 172.67.154.85, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇭🇰 m|【福利】HKG/香港 B, server: 52.80.96.133, port: 8000, type: vmess, uuid: 0821b208-8675-43e8-bbed-8afac1e391a1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: baidu.com}}
+  - {name: 🇭🇰 m|【直连】HKG/香港 C - 1, server: 16.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 0821b208-8675-43e8-bbed-8afac1e391a1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 🇭🇰 m|【直连】HKG/香港 C - 2, server: 17.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 0821b208-8675-43e8-bbed-8afac1e391a1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 17.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 🇭🇰 香港() 11, server: 13.75.111.138, port: 39021, type: vmess, uuid: 49955b62-27c7-3734-bc6b-1c60c0ab0059, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /xgr, ws-headers: {Host: 13.75.111.138}}
+  - {name: 🇭🇰 香港() 12, server: 16.162.33.111, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
+  - {name: 🇭🇰 香港() 13, server: 18.166.249.196, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: 18.166.249.196}}
+  - {name: 🇭🇰 香港() 14, server: 18.166.152.161, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: 18.166.152.161}}
+  - {name: 🇭🇰 香港() 15, server: ac2077.herokuapp.com, port: 443, type: vmess, uuid: d1babe08-f8ac-490b-b66f-9be27467f3cc, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess, ws-headers: {Host: ac2077.herokuapp.com}}
+  - {name: 🇭🇰 香港() 16, server: wtt.tcpbbr.net, port: 443, type: vmess, uuid: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d, alterId: 2, cipher: auto, tls: true}
+  - {name: 🇭🇰 香港() 17, server: 13.75.111.138, port: 39020, type: vmess, uuid: 49955b62-27c7-3734-bc6b-1c60c0ab0059, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /xgr, ws-headers: {Host: 13.75.111.138}}
+  - {name: 🇭🇰 香港() 18, server: a83679f.ga.gladns.com, port: 3205, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.ga.gladns.com}}
+  - {name: 🇭🇰 香港() 19, server: a83679f.gd.gladns.com, port: 3204, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
+  - {name: 🇭🇰 香港() 20, server: a83679f.ga.gladns.com, port: 3204, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.ga.gladns.com}}
+  - {name: 🇭🇰 香港() 21, server: agals01.cloudddns.icu, port: 80, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: agals01.cloudddns.icu}}
+  - {name: 🇭🇰 HK（w）, server: agals03.v2raya.xyz, port: 80, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: agals03.v2raya.xyz}}
+  - {name: 🇭🇰 HK（w） 2, server: 65.52.164.219, port: 10088, type: vmess, uuid: bf45949b-833a-49fc-acf0-e0fd169fd28a, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /index, ws-headers: {Host: us5.xxl123.fun}}
+  - {name: 🇭🇰 HK（w） 3, server: 65.52.164.219, port: 10009, type: vmess, uuid: bf45949b-833a-49fc-acf0-e0fd169fd28a, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /index, ws-headers: {Host: jp2.xxl123.fun}}
+  - {name: 🇺🇸 US（w）, server: 183.240.60.133, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇺🇸 US（w） 2, server: cn2.relay.iplc.pro, port: 52008, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇺🇸 US（w） 3, server: 16.162.103.87, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: 16.162.103.87}}
+  - {name: 🇺🇸 US（w） 4, server: ks-us-a.qjnodeip.xyz, port: 5329, type: vmess, uuid: 80e87424-d9e5-47b1-82fb-90dcc22cede2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ks-us-a.qjnodeip.xyz}}
+  - {name: 🇺🇸 US（w） 5, server: ks-us-b.qjnodeip.xyz, port: 5341, type: vmess, uuid: 80e87424-d9e5-47b1-82fb-90dcc22cede2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ks-us-b.qjnodeip.xyz}}
+  - {name: 🇺🇸 US（w） 6, server: hk1.iplc.pro, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇺🇸 US（w） 7, server: 16.162.33.111, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: 16.162.33.111}}
+  - {name: 🇺🇸 US（w） 8, server: v2ray.wefuckgfw.ga, port: 443, type: vmess, uuid: 27a3ebe8-bc98-11eb-a251-00163c39a536, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /Akyc78tg/, ws-headers: {Host: v2ray.wefuckgfw.ga}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -952,133 +669,91 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - m 33
-      - m 34
-      - m 35
-      - m 36
-      - m 37
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
-      - 🇺🇸 US（）
-      - 🇺🇸 US（） 2
-      - 🇩🇪 德国()
-      - 🇳🇱 荷兰 阿姆斯特丹（）
-      - 🇳🇱 荷兰 阿姆斯特丹（） 2
-      - 🇳🇱 荷兰 阿姆斯特丹（） 3
-      - 🇳🇱 荷兰 阿姆斯特丹（） 4
-      - 🇳🇱 荷兰 阿姆斯特丹（） 5
-      - 🇳🇱 荷兰 阿姆斯特丹（） 6
-      - 🇳🇱 荷兰 阿姆斯特丹（） 7
-      - 🇳🇱 荷兰 阿姆斯特丹（） 8
-      - 🇳🇱 荷兰 阿姆斯特丹（） 9
-      - 🇳🇱 荷兰 阿姆斯特丹（） 10
-      - 🇳🇱 荷兰 阿姆斯特丹（） 11
-      - 🇳🇱 荷兰 阿姆斯特丹（） 12
-      - 🇳🇱 荷兰 阿姆斯特丹（） 13
-      - 🇳🇱 荷兰 阿姆斯特丹（） 14
-      - 🇳🇱 荷兰 阿姆斯特丹（） 15
-      - 🇳🇱 荷兰 阿姆斯特丹（） 16
-      - 🇳🇱 荷兰 阿姆斯特丹（） 17
-      - 🇳🇱 荷兰 阿姆斯特丹（） 18
-      - 🇳🇱 荷兰 阿姆斯特丹（） 19
-      - 🇳🇱 荷兰 阿姆斯特丹（） 20
-      - 🇳🇱 荷兰 阿姆斯特丹（） 21
-      - 🇳🇱 荷兰 阿姆斯特丹（） 22
-      - 🇳🇱 荷兰 阿姆斯特丹（） 23
-      - 🇳🇱 荷兰 阿姆斯特丹（） 24
-      - 🇳🇱 荷兰 阿姆斯特丹（） 25
-      - 🇳🇱 荷兰 阿姆斯特丹（） 26
-      - 🇳🇱 荷兰 阿姆斯特丹（） 27
-      - 🇺🇸 美国 加利福尼亚（）
-      - 🇺🇸 美国 加利福尼亚（） 2
-      - 🇺🇸 美国 加利福尼亚（） 3
-      - 🇺🇸 美国 加利福尼亚（） 4
-      - 🇺🇸 美国 加利福尼亚（） 5
-      - 🇺🇸 美国 加利福尼亚（） 6
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - ()
-      - () 2
-      - () 3
-      - () 4
-      - () 5
-      - () 6
-      - () 7
-      - 185.124.240.159:33998
-      - 2.58.242.43:38033
-      - 89.46.223.239:39772
-      - 194.41.112.14:39772
-      - 139.28.176.53:31572
-      - 104.200.131.245:33998
-      - 207.244.67.149:33998
-      - 84.17.35.86:39772
-      - 207.244.67.149:40093
-      - 207.244.67.149:35294
-      - 154.127.50.138:31572
-      - 167.88.63.29:806
-      - 185.38.150.124:31572
-      - 185.124.240.159:38742
-      - 185.124.240.149:39772
-      - 138.199.42.151:49396
-      - 195.47.194.79:49396
-      - 2.58.242.43:39772
-      - 15.237.126.197:812
-      - 104.200.131.245:33992
-      - 15.237.126.197:800
-      - () 14
-      - () 15
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 89.46.223.239:39772 2
-      - 207.244.67.149:35294 2
-      - 195.47.194.79:49396 2
-      - 🇩🇪 德国 2
-      - 84.17.35.118:41676
-      - 🇩🇪 德国 3
-      - 84.17.35.118:47027
-      - 84.17.35.118:47121
-      - 84.17.35.118:33992
-      - 84.17.35.118:34687
-      - 84.17.35.118:31944
-      - 84.17.35.118:45329
-      - 138.199.42.151:49339
-      - 84.17.35.118:44820
-      - 84.17.35.118:48938
-      - 84.17.35.86:39772 2
-      - 84.17.35.118:49126
-      - 🇩🇪 德国 4
-      - 84.17.35.118:38742
-      - 84.17.35.118:31764
-      - 84.17.35.118:46642
-      - 84.17.35.118:40093
-      - 138.199.42.151:40093
-      - 84.17.35.118:38620
-      - 37.120.212.139:39772
-      - 172.98.78.227:39772
-      - 138.199.42.151:45329
-      - 138.199.42.151:41676
-      - 84.17.35.118:49396
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - 🇭🇰 香港 ☆☆ 06 ☆GMO☆  1.2x
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国(g)
+      - 🇳🇱 荷兰 阿姆斯特丹（g）
+      - asdsa
+      - adsad
+      - vmess1
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 2
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 3
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 4
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 5
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 6
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 7
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 8
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 9
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 10
+      - 🇳🇱 荷兰 阿姆斯特丹（g） 11
+      - 🇳🇱 NL_52 |54.40Mb
+      - 🇳🇱 NL_53 |51.36Mb
+      - 🇳🇱 NL_54 |53.71Mb
+      - 🇳🇱 NL_55 |51.11Mb
+      - 🇳🇱 NL_56 |50.62Mb
+      - Y 15
+      - Y 16
+      - Y 17
+      - Y 18
+      - Y 19
+      - Y 20
+      - Y 21
+      - 🇯🇵 g - 日本东京Linode数据中心 1
+      - 🇺🇸 g - 美国Amazon EC2服务器 2
+      - Y 22
+      - 🇳🇱 NL_57 |52.60Mb
+      - 🇳🇱 NL_58 |51.43Mb
       - 🇨🇦 加拿大
-      - 138.199.42.151:37588
-      - 138.199.42.151:31572
-      - 37.120.212.139:33992
-      - 138.199.42.151:31764
-      - 138.199.42.151:38620
-      - 45.130.137.34:39772
-      - 138.199.42.151:31944
-      - 138.199.42.151:33992
+      - 🇺🇸 美国  38
+      - 🇺🇸 美国  40
+      - 🇺🇸 美国  41
+      - 🇺🇸 www|🇺🇸 US_1139
+      - 🇺🇸 www|🇺🇸 US_1141
+      - 🇨🇳 江苏省无锡市电信 1
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 2
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 3
+      - 🇺🇸 美国密苏里州堪萨斯城Virpus网络公司 4
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 5
+      - 🇨🇦 加拿大安大略省基奇纳DataCity数据中心 6
+      - 🇯🇵 www|adi|0401 - JP_1008 |17.08Mb
+      - 🇯🇵 www|adi|0401 - JP_780 |10.08Mb
+      - 207.244.67.149:40093
+      - 🇺🇸 m|🇺🇸US_4408 |22.21Mb
+      - 🇯🇵 m|Relay_🇨🇳CN-🇯🇵JP_16
+      - 🇭🇰 m|Relay_🇭🇰HK-🇭🇰HK_35
+      - m|
+      - 🇸🇬 m|🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 m|🇭🇰 V1 | 香港06 | AGA直连1Gbps | x1.0
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_296
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_298
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_301
+      - 🇩🇪 m|Relay_🇺🇸US-🇩🇪DE_307
+      - 🇭🇰 m|【福利】HKG/香港 B
+      - 🇭🇰 m|【直连】HKG/香港 C - 1
+      - 🇭🇰 m|【直连】HKG/香港 C - 2
+      - 🇭🇰 香港() 11
+      - 🇭🇰 香港() 12
+      - 🇭🇰 香港() 13
+      - 🇭🇰 香港() 14
+      - 🇭🇰 香港() 15
+      - 🇭🇰 香港() 16
+      - 🇭🇰 香港() 17
+      - 🇭🇰 香港() 18
+      - 🇭🇰 香港() 19
+      - 🇭🇰 香港() 20
+      - 🇭🇰 香港() 21
+      - 🇭🇰 HK（w）
+      - 🇭🇰 HK（w） 2
+      - 🇭🇰 HK（w） 3
+      - 🇺🇸 US（w）
+      - 🇺🇸 US（w） 2
+      - 🇺🇸 US（w） 3
+      - 🇺🇸 US（w） 4
+      - 🇺🇸 US（w） 5
+      - 🇺🇸 US（w） 6
+      - 🇺🇸 US（w） 7
+      - 🇺🇸 US（w） 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
