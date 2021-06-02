@@ -5,651 +5,490 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇷🇺 俄罗斯, server: 45.147.201.94, port: 21799, type: vmess, uuid: 77a8f6bb-ace4-4283-a865-b8feabf5312d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 9, server: ks-us-c.qjnodeip.xyz, port: 5361, type: vmess, uuid: 80e87424-d9e5-47b1-82fb-90dcc22cede2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ks-us-c.qjnodeip.xyz}}
-  - {name: 🇨🇦 加拿大 7, server: 142.47.219.13, port: 443, type: vmess, uuid: bce319a6-c1e1-11eb-8936-0050569b2f15, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /OW1k0fXV/, ws-headers: {Host: a4.ssrsub.one}}
-  - {name: 🇭🇰 香港 2, server: a83679f.gd.gladns.com, port: 3204, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
-  - {name: 🇨🇦 加拿大 8, server: b5.ssrsub.one, port: 2053, type: vmess, uuid: d7f490e4-c1e1-11eb-939f-0050569b7bb6, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇨🇦 加拿大 9, server: t4.ssrsub.one, port: 8443, type: trojan, password: neAgYIzQ, sni: t4.ssrsub.one}
-  - {name: 🇳🇱 荷兰, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇭🇰 香港 3, server: 219.77.37.130, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大 10, server: 45.62.245.20, port: 443, type: vmess, uuid: a106688c-c1e1-11eb-b58f-0050569b799a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /2fMz3Seh/, ws-headers: {Host: a1.ssrsub.one}}
-  - {name: 🇺🇸 美国 10, server: t7.ssrsub.one, port: 8443, type: trojan, password: zoAIDgHp, sni: t7.ssrsub.one}
-  - {name: 🇩🇪 德国 3, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 美国 11, server: hk1.iplc.pro, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇷🇺 俄罗斯 2, server: free-russian01-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 🇷🇺 俄罗斯 3, server: free-russian01-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 🇩🇪 德国 4, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇩🇪 德国 5, server: 172.67.154.85, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 美国 12, server: 205.185.115.178, port: 31100, type: vmess, uuid: c6583bd1-c9d8-3559-821e-c7e68c166840, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 205.185.115.178}}
-  - {name: 🇺🇸 美国 13, server: vtwonet-us-a.qjnodeip.xyz, port: 8309, type: vmess, uuid: 9EA416BF-07DA-8302-9124-743FB94AA05E, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国 6, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 美国 14, server: kr.june628.ml, port: 25524, type: vmess, uuid: 7a9bde7c-404f-4467-9fb4-7e613eaf8e8b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /By:June-@Starlink101, ws-headers: {Host: kr.june628.ml}}
-  - {name: 🇺🇸 美国 15, server: 16.162.103.87, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇷🇺 俄罗斯 4, server: vip345.xyz, port: 39017, type: vmess, uuid: 4e2228a1-775d-3d44-8d55-5408b252bf7f, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /sn, ws-headers: {Host: vip345.xyz}}
-  - {name: 🇩🇪 德国 7, server: gefree1.free3333.xyz, port: 443, type: vmess, uuid: 6b7c64ca-4b77-4796-bdc6-254ed52a4c53, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: gefree1.free3333.xyz}}
-  - {name: 🇨🇳 台湾, server: 2.58.242.158, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇭🇰 香港 4, server: 61.238.21.15, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 5, server: agals05.v2raya.xyz, port: 80, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇺🇸 美国 16, server: agals04.v2raya.xyz, port: 80, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇺🇸 美国 17, server: cera.qqnz.com.cn, port: 443, type: vmess, uuid: a398c5fd-a7d7-49fa-a294-f4a6a076a121, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /vmessws, ws-headers: {Host: cera.qqnz.com.cn}}
-  - {name: 🇫🇷 法国, server: ss.pl.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: M1LCZAlfz1bV}
-  - {name: 🇺🇸 美国 18, server: agals01.cloudddns.icu, port: 80, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇺🇸 美国 19, server: 16.162.33.111, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇺🇸 美国 20, server: kr-2.june628.ml, port: 32503, type: vmess, uuid: e709f578-702c-480e-cc64-4e3f4218a920, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /By:June-@Starlink101, ws-headers: {Host: kr-2.june628.ml}}
-  - {name: 🇺🇸 美国 21, server: 104.19.64.83, port: 443, type: vmess, uuid: e1934f6e-ae2c-41e7-8877-844152137c1e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: buy.1808.cf}}
-  - {name: 🇭🇰 香港 6, server: 18.166.152.161, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇺🇸 美国 22, server: v2ray.wefuckgfw.ga, port: 443, type: vmess, uuid: 27a3ebe8-bc98-11eb-a251-00163c39a536, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /Akyc78tg/, ws-headers: {Host: v2ray.wefuckgfw.ga}}
-  - {name: 🇭🇰 香港 7, server: 18.166.249.196, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
-  - {name: 🇩🇪 德国 8, server: 183.236.55.216, port: 52012, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国 2, server: 392.cloudddns.icu, port: 443, type: trojan, password: 5e3078ff-3676-3041-a5e3-4602bd3bc532, sni: 392.cloudddns.icu}
-  - {name: 🇭🇰 香港 8, server: 183.240.60.133, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 23, server: kr-1.june628.ml, port: 20746, type: vmess, uuid: a7322b47-69cd-4fd4-aa03-476e5862954f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /By:June-@Starlink101, ws-headers: {Host: kr-1.june628.ml}}
+  - {name: 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x, server: a83679f.gb.gladns.com, port: 3205, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gb.gladns.com}}
+  - {name: 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x, server: 00.cn2.rocketdns.xyz, port: 21001, type: vmess, uuid: 74ca2435-a520-3ff6-8d0c-aed108332ad7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 01.hk.rocketdns.xyz}}
+  - {name: 🇫🇷 法国, server: 51.195.112.160, port: 443, type: vmess, uuid: 6a7e3fcf-6256-4eaa-9d37-07886949b94f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.969983021.xyz}}
+  - {name: 塞浦路斯, server: 46.182.107.11, port: 443, type: vmess, uuid: b438dc80-6336-4717-a770-7cb2068971aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.46352799.xyz}}
+  - {name: 🇺🇸 美国, server: 23.224.69.3, port: 443, type: vmess, uuid: 538d3b28-f335-4a0a-bda8-b5065fb1bfb7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.39930935.xyz}}
+  - {name: 🇺🇸 美国 2, server: 23.225.9.252, port: 443, type: vmess, uuid: 2dd19ba3-f6d8-4562-8153-03ea94335111, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.38559541.xyz}}
+  - {name: 塞浦路斯 2, server: 46.182.107.14, port: 443, type: vmess, uuid: 046e37b4-962a-4dfd-a372-c52f8f90edc6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.98868925.xyz}}
+  - {name: 🇳🇱 荷兰, server: 154.84.1.238, port: 443, type: vmess, uuid: 5599a700-4f47-4673-b2c8-a4d9460ab0be, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.84849018.xyz}}
+  - {name: 89.46.223.239:39772, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇳🇱 荷兰 2, server: 154.84.1.142, port: 443, type: vmess, uuid: ab594acc-2624-472f-a7a1-b7fe284776e7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.40983279.xyz}}
+  - {name: 🇳🇱 荷兰 3, server: 46.182.107.29, port: 443, type: vmess, uuid: 5e2b3301-d09b-401a-b465-94a8e0a68a79, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.73783566.xyz}}
+  - {name: 🇺🇸 美国 3, server: 45.58.149.15, port: 443, type: vmess, uuid: f72de1a6-b823-4951-bf6b-8f5f2cfba0a3, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.86214129.xyz}}
+  - {name: 🇳🇱 荷兰 4, server: 46.182.107.26, port: 443, type: vmess, uuid: ed430006-3d07-4116-902b-649d3492c01a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.59299999.xyz}}
+  - {name: 🇺🇸 美国 4, server: 23.224.69.18, port: 443, type: vmess, uuid: 76003e21-7cce-430a-a823-428a7f012aa2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.76126449.xyz}}
+  - {name: 塞浦路斯 3, server: 46.182.107.17, port: 443, type: vmess, uuid: 45ef0cc8-1a31-453d-9b4c-f66eaa6daa86, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.44985428.xyz}}
+  - {name: 🇺🇸 美国 5, server: 154.84.1.149, port: 443, type: vmess, uuid: 1655351f-8d5f-4e7a-9a86-b5bc4ed7da92, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.41330606.xyz}}
+  - {name: 🇳🇱 荷兰 5, server: 154.84.1.225, port: 443, type: vmess, uuid: fac11238-1560-4c46-b93b-e92a71304005, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.07197105.xyz}}
+  - {name: K 15, server: 61.238.21.15, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: K 16, server: 25.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 9d2aa977-4ba6-45de-a694-a3a2b30df394, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 25.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: K 17, server: hk1.iplc.pro, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: K 18, server: 183.236.57.18, port: 10003, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false}
+  - {name: K 19, server: auto.freev2.top, port: 44671, type: vmess, uuid: bc187896-12da-4b8f-a487-a5cf26a4335b, alterId: 1, cipher: auto, tls: false}
+  - {name: K 20, server: 16.162.33.111, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /public, ws-headers: {Host: 16.162.33.111}}
+  - {name: K 21, server: hk-10.azure.v2ray.ikuuu.pro, port: 448, type: vmess, uuid: 997026df-c1fd-3a00-ad16-f062d6bd4871, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk-10.azure.v2ray.ikuuu.pro}}
+  - {name: K 22, server: hk2.direct.iplc.pro, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: K 23, server: 183.240.60.133, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
+  - {name: K 24, server: a83679f.ga.gladns.com, port: 3202, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.ga.gladns.com}}
+  - {name: K 25, server: kr.june628.ml, port: 25524, type: vmess, uuid: 7a9bde7c-404f-4467-9fb4-7e613eaf8e8b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /By:June-@Starlink101, ws-headers: {Host: kr.june628.ml}}
+  - {name: K 26, server: 183.236.57.18, port: 10004, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false}
+  - {name: K 27, server: hk-9.azure.v2ray.ikuuu.pro, port: 448, type: vmess, uuid: 997026df-c1fd-3a00-ad16-f062d6bd4871, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk-9.azure.v2ray.ikuuu.pro}}
+  - {name: K 28, server: 176.31.146.89, port: 3030, type: ss, cipher: chacha20-ietf-poly1305, password: 7Zo1naHUEndM}
+  - {name: K 29, server: 193.42.96.98, port: 30104, type: vmess, uuid: c7d03e59-8fff-463e-9589-9f8099d3e366, alterId: 64, cipher: auto, tls: false}
+  - {name: K 30, server: 13.56.230.128, port: 8080, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+  - {name: K 31, server: 52.53.210.70, port: 56867, type: vmess, uuid: 6208032f-922b-4e21-eb62-ecd643b1675f, alterId: 64, cipher: auto, tls: false}
+  - {name: K 32, server: shcn2-04d.iplc188.com, port: 10002, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false}
+  - {name: K 33, server: vtwonet-us-a.qjnodeip.xyz, port: 8309, type: vmess, uuid: 9EA416BF-07DA-8302-9124-743FB94AA05E, alterId: 0, cipher: auto, tls: false}
+  - {name: K 34, server: 104.19.27.26, port: 443, type: vmess, uuid: b47f1d5c-a228-4b24-809e-626852910b1a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: luba.1808.cf}}
+  - {name: K 35, server: 16.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: c8c92c4d-8e6f-4f24-a857-76fa2ecaaa16, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: K 36, server: cera.qqnz.com.cn, port: 443, type: vmess, uuid: a398c5fd-a7d7-49fa-a294-f4a6a076a121, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /vmessws, ws-headers: {Host: cera.qqnz.com.cn}}
+  - {name: K 37, server: v2ray.wefuckgfw.ga, port: 443, type: vmess, uuid: 27a3ebe8-bc98-11eb-a251-00163c39a536, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /Akyc78tg/, ws-headers: {Host: v2ray.wefuckgfw.ga}}
+  - {name: K 38, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: K 39, server: hke5.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: ef5cd80d-5fe0-4ec6-8664-687b6c6b8e4c, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /api/shop, ws-headers: {Host: hkv2-1.ddns.tjiasu.xyz}}
+  - {name: K 40, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: K 41, server: cc.hciahciphcie.club, port: 443, type: vmess, uuid: 9a297bb1-06e3-4e6f-97fa-3d3202d46596, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /84c3f/, ws-headers: {Host: cc.hciahciphcie.club}}
+  - {name: K 42, server: 04.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 9d2aa977-4ba6-45de-a694-a3a2b30df394, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 04.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: K 43, server: gefree1.free3333.xyz, port: 443, type: vmess, uuid: 6b7c64ca-4b77-4796-bdc6-254ed52a4c53, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: gefree1.free3333.xyz}}
+  - {name: K 44, server: 51.77.170.89, port: 3030, type: ss, cipher: chacha20-ietf-poly1305, password: 7FDvhjev93bs}
+  - {name: K 45, server: 207.182.155.170, port: 3030, type: ss, cipher: chacha20-ietf-poly1305, password: gRcNQyKEpDEI}
+  - {name: 🇭🇰 Y：香港, server: hk01.xqkj.cloud, port: 5040, type: vmess, uuid: 878d752f-6088-44db-8e41-aee16ddedbf1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk01.xqkj.cloud}}
+  - {name: 🇭🇰 Y：香港 2, server: hk02.xqkj.cloud, port: 5041, type: vmess, uuid: 878d752f-6088-44db-8e41-aee16ddedbf1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk02.xqkj.cloud}}
+  - {name: 🇭🇰 Y：香港 3, server: hk03.xqkj.cloud, port: 5042, type: vmess, uuid: 878d752f-6088-44db-8e41-aee16ddedbf1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk03.xqkj.cloud}}
+  - {name: 🇭🇰 Y：香港 4, server: hk04.xqkj.cloud, port: 5043, type: vmess, uuid: 878d752f-6088-44db-8e41-aee16ddedbf1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk04.xqkj.cloud}}
+  - {name: 🇭🇰 Y：香港 5, server: hk05.xqkj.cloud, port: 5044, type: vmess, uuid: 878d752f-6088-44db-8e41-aee16ddedbf1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk05.xqkj.cloud}}
+  - {name: 🇭🇰 Y：香港 6, server: hk06.xqkj.cloud, port: 5045, type: vmess, uuid: 878d752f-6088-44db-8e41-aee16ddedbf1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk06.xqkj.cloud}}
+  - {name: 🇨🇳 台湾, server: a83679f.gd.gladns.com, port: 3203, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
+  - {name: 🇨🇳 台湾 2, server: a83679f.hf.gladns.com, port: 3306, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.hf.gladns.com}}
   - {name: 🇯🇵 日本, server: a83679f.gd.gladns.com, port: 3202, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
-  - {name: 🇭🇰 香港 9, server: hk1.direct.iplc.pro, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾 2, server: a83679f.hc.gladns.com, port: 3306, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.hc.gladns.com}}
-  - {name: 🇭🇰 香港 10, server: hk2.direct.iplc.pro, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 11, server: 61.238.21.144, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 12, server: 14.198.130.103, port: 52000, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾 3, server: a83679f.gd.gladns.com, port: 3203, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
-  - {name: 🇭🇰 香港 13, server: 40.83.113.39, port: 65304, type: vmess, uuid: ca936158-5044-4d2a-9e5e-126fb8675192, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 24, server: cc.hciahciphcie.club, port: 443, type: vmess, uuid: 9a297bb1-06e3-4e6f-97fa-3d3202d46596, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /84c3f/, ws-headers: {Host: cc.hciahciphcie.club}}
-  - {name: 🇺🇸 美国 25, server: c-us3.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-us3.ooxc.cc}}
-  - {name: 🇺🇸 美国 26, server: c-us3.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-us3.ooxc.cc}}
-  - {name: 🇫🇷 法国 2, server: ss.fr.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: 6nhHHuGHw2D5}
-  - {name: 🇯🇵 Y：日本, server: jp01.xqkj.cloud, port: 5008, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp01.xqkj.cloud}}
-  - {name: 🇯🇵 Y：日本 2, server: jp02.xqkj.cloud, port: 5009, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp02.xqkj.cloud}}
-  - {name: 🇺🇸 g - 美国CloudFlare公司CDN节点 5, server: 104.19.64.83, port: 443, type: vmess, uuid: e1934f6e-ae2c-41e7-8877-844152137c1e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: buy.1808.cf}}
-  - {name: 🇺🇸 g - 美国CloudFlare公司CDN节点 6, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇯🇵 Y：日本 3, server: jp03.xqkj.cloud, port: 5010, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp03.xqkj.cloud}}
-  - {name: 🇯🇵 Y：日本 4, server: jp04.xqkj.cloud, port: 5011, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp04.xqkj.cloud}}
-  - {name: 🇸🇬 Y：新加坡, server: sg01.xqkj.cloud, port: 5020, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg01.xqkj.cloud}}
-  - {name: 🇸🇬 Y：新加坡 2, server: sg02.xqkj.cloud, port: 5021, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg02.xqkj.cloud}}
-  - {name: 🇸🇬 Y：新加坡 3, server: sg03.xqkj.cloud, port: 5022, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg03.xqkj.cloud}}
-  - {name: 🇸🇬 Y：新加坡 4, server: sg04.xqkj.cloud, port: 5023, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg04.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国, server: kr01.xqkj.cloud, port: 5030, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr01.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国 2, server: kr02.xqkj.cloud, port: 5031, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr02.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国 3, server: kr03.xqkj.cloud, port: 5032, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr03.xqkj.cloud}}
-  - {name: 🇰🇷 Y：韩国 4, server: kr04.xqkj.cloud, port: 5033, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr04.xqkj.cloud}}
-  - {name: 🇭🇰 Y：香港, server: hk01.xqkj.cloud, port: 5040, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk01.xqkj.cloud}}
-  - {name: 🇭🇰 Y：香港 2, server: hk02.xqkj.cloud, port: 5041, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk02.xqkj.cloud}}
-  - {name: 🇭🇰 Y：香港 3, server: hk03.xqkj.cloud, port: 5042, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk03.xqkj.cloud}}
-  - {name: 🇭🇰 Y：香港 4, server: hk04.xqkj.cloud, port: 5043, type: vmess, uuid: 7fba7a56-7677-44d4-8f7b-6325a10e37a2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk04.xqkj.cloud}}
-  - {name: 埃及(), server: 185.108.105.57, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇷🇺 俄罗斯(), server: a83679f.ga.gladns.com, port: 3202, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.ga.gladns.com}}
-  - {name: 🇷🇺 俄罗斯() 2, server: a83679f.gd.gladns.com, port: 3202, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
-  - {name: 🇷🇺 俄罗斯() 3, server: 172.67.150.130, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 🇷🇺 俄罗斯() 4, server: t6.ssrsub.one, port: 8443, type: trojan, password: bQENkMu9, sni: t6.ssrsub.one}
-  - {name: 🇰🇷 韩国(), server: 392.cloudddns.icu, port: 443, type: trojan, password: 5e3078ff-3676-3041-a5e3-4602bd3bc532, sni: 392.cloudddns.icu}
-  - {name: 🇰🇷 韩国() 2, server: kr-3.yingfu9883163.xyz, port: 35033, type: vmess, uuid: 695a555e-0fe9-4006-eb94-c87f1949c2fa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr-3.yingfu9883163.xyz}}
-  - {name: 🇨🇦 加拿大(), server: b4.ssrsub.one, port: 2053, type: vmess, uuid: bf71d400-c1e1-11eb-8936-0050569b2f15, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 美国(), server: ac2099.herokuapp.com, port: 443, type: vmess, uuid: d1babe08-f8ac-490b-b66f-9be27467f3cc, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess, ws-headers: {Host: ac2099.herokuapp.com}}
-  - {name: 🇺🇸 美国() 2, server: 52.255.146.242, port: 28380, type: vmess, uuid: a232e331-bff8-48d4-f9a6-2436cf41aa26, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国() 3, server: 13.56.230.128, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: 39341fe7-b8b7-4605-a811-af1f1d46d4fb}
-  - {name: 🇺🇸 美国() 4, server: free-russian01-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 🇺🇸 美国  19, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 美国  20, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇭🇰 香港, server: vip345.xyz, port: 39009, type: vmess, uuid: 49955b62-27c7-3734-bc6b-1c60c0ab0059, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /xgr, ws-headers: {Host: vip345.xyz}}
+  - {name: 🇭🇰 香港 2, server: 00.cn2.rocketdns.xyz, port: 21002, type: vmess, uuid: 74ca2435-a520-3ff6-8d0c-aed108332ad7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 02.hk.rocketdns.xyz}}
+  - {name: 🇸🇬 新加坡, server: a83679f.gd.gladns.com, port: 3205, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /t, ws-headers: {Host: a83679f.gd.gladns.com}}
+  - {name: 🇰🇷 韩国, server: 00.cn2.rocketdns.xyz, port: 21011, type: vmess, uuid: 74ca2435-a520-3ff6-8d0c-aed108332ad7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 12.in.rocketdns.xyz}}
+  - {name: 🇭🇰 香港 3, server: 19.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 9d2aa977-4ba6-45de-a694-a3a2b30df394, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 19.HKG.ASIA.BIGAIRPORT.NET}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇭🇰 香港 6
-      - 🇭🇰 香港 7
-      - 🇭🇰 香港 8
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -665,90 +504,68 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 9
-      - 🇨🇦 加拿大 7
-      - 🇭🇰 香港 2
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇳🇱 荷兰
-      - 🇭🇰 香港 3
-      - 🇨🇦 加拿大 10
-      - 🇺🇸 美国 10
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 11
-      - 🇷🇺 俄罗斯 2
-      - 🇷🇺 俄罗斯 3
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇷🇺 俄罗斯 4
-      - 🇩🇪 德国 7
-      - 🇨🇳 台湾
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
+      - 🇸🇬 新加坡 ☆☆  01 ☆AWS☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
       - 🇫🇷 法国
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇭🇰 香港 6
-      - 🇺🇸 美国 22
-      - 🇭🇰 香港 7
-      - 🇩🇪 德国 8
-      - 🇰🇷 韩国 2
-      - 🇭🇰 香港 8
-      - 🇺🇸 美国 23
-      - 🇯🇵 日本
-      - 🇭🇰 香港 9
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇨🇳 台湾 3
-      - 🇭🇰 香港 13
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇫🇷 法国 2
-      - 🇯🇵 Y：日本
-      - 🇯🇵 Y：日本 2
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 5
-      - 🇺🇸 g - 美国CloudFlare公司CDN节点 6
-      - 🇯🇵 Y：日本 3
-      - 🇯🇵 Y：日本 4
-      - 🇸🇬 Y：新加坡
-      - 🇸🇬 Y：新加坡 2
-      - 🇸🇬 Y：新加坡 3
-      - 🇸🇬 Y：新加坡 4
-      - 🇰🇷 Y：韩国
-      - 🇰🇷 Y：韩国 2
-      - 🇰🇷 Y：韩国 3
-      - 🇰🇷 Y：韩国 4
+      - 塞浦路斯
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 塞浦路斯 2
+      - 🇳🇱 荷兰
+      - 89.46.223.239:39772
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇺🇸 美国 3
+      - 🇳🇱 荷兰 4
+      - 🇺🇸 美国 4
+      - 塞浦路斯 3
+      - 🇺🇸 美国 5
+      - 🇳🇱 荷兰 5
+      - K 15
+      - K 16
+      - K 17
+      - K 18
+      - K 19
+      - K 20
+      - K 21
+      - K 22
+      - K 23
+      - K 24
+      - K 25
+      - K 26
+      - K 27
+      - K 28
+      - K 29
+      - K 30
+      - K 31
+      - K 32
+      - K 33
+      - K 34
+      - K 35
+      - K 36
+      - K 37
+      - K 38
+      - K 39
+      - K 40
+      - K 41
+      - K 42
+      - K 43
+      - K 44
+      - K 45
       - 🇭🇰 Y：香港
       - 🇭🇰 Y：香港 2
       - 🇭🇰 Y：香港 3
       - 🇭🇰 Y：香港 4
-      - 埃及()
-      - 🇷🇺 俄罗斯()
-      - 🇷🇺 俄罗斯() 2
-      - 🇷🇺 俄罗斯() 3
-      - 🇷🇺 俄罗斯() 4
-      - 🇰🇷 韩国()
-      - 🇰🇷 韩国() 2
-      - 🇨🇦 加拿大()
-      - 🇺🇸 美国()
-      - 🇺🇸 美国() 2
-      - 🇺🇸 美国() 3
-      - 🇺🇸 美国() 4
-      - 🇺🇸 美国  19
-      - 🇺🇸 美国  20
+      - 🇭🇰 Y：香港 5
+      - 🇭🇰 Y：香港 6
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇭🇰 香港 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
