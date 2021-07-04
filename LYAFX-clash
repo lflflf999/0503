@@ -5,498 +5,457 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 62.212.239.67:50168, server: 62.212.239.67, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 62.212.239.51:50168, server: 62.212.239.51, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 212.102.44.83:31944, server: 212.102.44.83, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇭🇰 香港w, server: vtwonet-hk-a.qjnodeip.xyz, port: 23333, type: vmess, uuid: 55D1D690-B0C1-58CA-918B-8C4783AE88BD, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港w 2, server: vtwonet-hk-a.qjnodeip.xyz, port: 23333, type: vmess, uuid: 55D1D690-B0C1-58CA-918B-8C4783AE88BD, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾w, server: 60.251.50.20, port: 443, type: vmess, uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.92809472.xyz}}
-  - {name: 🇨🇳 台湾w 2, server: 60.251.50.20, port: 443, type: vmess, uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.92809472.xyz}}
-  - {name: 🇨🇳 台湾w 3, server: 60.251.50.20, port: 443, type: vmess, uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.92809472.xyz}}
-  - {name: 🇨🇳 台湾w 4, server: 60.251.50.20, port: 443, type: vmess, uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.92809472.xyz}}
-  - {name: w, server: cn.linn.ink, port: 30030, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国w, server: v2.linn.ink, port: 30070, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国, server: euserv12p.ezddns.tk, port: 80, type: vmess, uuid: c0304bc1-f8ff-4108-9bc6-3415d16ae5e3, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv12p.ezddns.tk}}
-  - {name: 🇺🇸 美国 2, server: euserv4p.ezddns.tk, port: 443, type: vmess, uuid: d2da3dcb-b08a-4561-83de-b73e7b8c0288, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /stream, ws-headers: {Host: euserv4p.ezddns.tk}}
-  - {name: 🇺🇸 美国 3, server: euserv6p.ezddns.tk, port: 80, type: vmess, uuid: 499737a4-9f18-4e1f-fb38-437e1855fc04, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv6p.ezddns.tk}}
-  - {name: w 9, server: 96.43.91.60, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.45218443.xyz}}
-  - {name: 🇺🇸 美国🚀w 2, server: 172.67.150.130, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: w 10, server: 172.67.150.130, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: w 11, server: 172.67.150.130, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 143.244.60.164:50168, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇳🇱 荷兰 🚀w, server: 46.182.107.93, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-96dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.79570456.xyz}}
-  - {name: 143.244.60.164:50168 2, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 143.244.60.164:50168 3, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 143.244.60.164:50168 4, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 143.244.60.164:50168 5, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 143.244.60.164:50168 6, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 143.244.60.164:50168 7, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇳🇱 m|🇳🇱 NL_4046, server: 46.182.107.93, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-96dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.79570456.xyz}}
-  - {name: 🇺🇸 m|🇺🇸 US_7440, server: 13.213.192.57, port: 12222, type: vmess, uuid: a1ae2fe8-01c9-4f2b-b5ab-c11a1935d363, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.213.192.57}}
-  - {name: 🇳🇱 m|🇳🇱 NL_4012, server: 46.182.107.94, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-96dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.79570456.xyz}}
-  - {name: 🇸🇬 m|🇸🇬SG_3210, server: 13.228.29.76, port: 3360, type: vmess, uuid: d9fcc8c6-7795-3f0e-8398-cf2fbc9bc5d6, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v34ioachelp, ws-headers: {Host: 13.228.29.76}}
-  - {name: 🇨🇳 m|🇹🇼TW_3307, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
-  - {name: "🇺🇸 m|美国LV1[基础|x1]", server: lax-2.us.liyun.edu.pl, port: 443, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /0dked-dsk/dsds, ws-headers: {Host: lv--1.sb-cloud.cf}}
-  - {name: 🇺🇸 m|🇺🇸 US_7275, server: 198.2.200.219, port: 443, type: vmess, uuid: 2a23dbd5-09cf-4aa8-a835-3230728c4973, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.48168443.xyz}}
-  - {name: 🇺🇸 m|🇺🇸 US_7307, server: 96.43.91.60, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.45218443.xyz}}
-  - {name: 🇺🇸 美国 4, server: 154.84.1.156, port: 443, type: vmess, uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.51334583.xyz}}
-  - {name: 185.212.203.115:36402, server: 185.212.203.115, port: 36402, type: ss, cipher: aes-256-gcm, password: qLVVsktJzWpi}
-  - {name: 🇳🇱 荷兰, server: 46.182.107.82, port: 443, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.63681459.xyz}}
-  - {name: 🇳🇱 荷兰 2, server: 46.182.107.145, port: 443, type: vmess, uuid: acedd8e0-e654-4a40-935d-5594c6c114bd, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.61020861.xyz}}
-  - {name: 23.82.11.49:50168, server: 23.82.11.49, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇳🇱 荷兰 3, server: 46.182.107.154, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26111a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.53103739.xyz}}
-  - {name: 85.10.50.164:40093, server: 85.10.50.164, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 89.46.223.239:39772, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 89.46.223.239:39772 2, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 89.46.223.239:39772 3, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 89.46.223.239:39772 4, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 美国w 16, server: 172.67.153.238, port: 443, type: vmess, uuid: 356ed062-4f58-49c3-bd44-c0b6db1c94ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /stream, ws-headers: {Host: euserv3p.ezddns.tk}}
-  - {name: 🇳🇱 荷兰 4, server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd3588, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.25936911.xyz}}
-  - {name: 91.90.123.115:47121, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 207.244.67.149:50168, server: 207.244.67.149, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 91.90.123.115:41676, server: 91.90.123.115, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 91.90.123.115:47027, server: 91.90.123.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: nl1.hiout.me:36402, server: nl1.hiout.me, port: 36402, type: ss, cipher: aes-256-gcm, password: qLVVsktJzWpi}
-  - {name: 143.244.60.164:50168 8, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇳🇱 荷兰 5, server: 46.182.107.37, port: 443, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f68, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.32811341.xyz}}
-  - {name: 🇺🇸 美国 5, server: usa5b-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: usa5b-node.3366test.com}}
-  - {name: 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15, server: hg04.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14, server: hkt07.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16, server: hg01.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 馃嚚馃嚘 CA_390, server: 165.154.234.152, port: 50680, type: vmess, uuid: 7d45212a-d98f-4b98-9b44-bbe81cb72acb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13, server: hg03.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12, server: hg02.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 馃嚠馃嚦 IN_1266, server: 165.231.253.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: Relay_ |72.66Mb, server: cfcn.9sep.org, port: 80, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /w421x2bx2za, ws-headers: {Host: nj.sb-cloud.cf}}
-  - {name: 🇺🇸 Pool_馃嚭馃嚫US_161, server: 207.244.67.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 老杨爱分享YouTube频道, server: 54.223.185.171, port: 8003, type: vmess, uuid: e854d8f1-f0f7-40fe-a77d-345cf7a78e05, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
+  - {name: 老杨爱分享YouTube频道 2, server: 54.223.185.171, port: 8001, type: vmess, uuid: bb511347-6ed5-475c-9ffe-ac7268fdf351, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: baidu.com}}
+  - {name: 老杨爱分享YouTube频道 3, server: 154.17.1.245, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 4, server: 154.17.2.153, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 5, server: 154.17.2.112, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: N0KSFR6alSxjgp7T8Aa9Ce8DnCaAOYqz5lFZxe3O2I3uycYZXEDp3S34RyCDwB}
+  - {name: 老杨爱分享YouTube频道 6, server: euserv12p.ezddns.tk, port: 80, type: vmess, uuid: c0304bc1-f8ff-4108-9bc6-3415d16ae5e3, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv12p.ezddns.tk}}
+  - {name: 老杨爱分享YouTube频道 7, server: euserv10p.ezddns.tk, port: 80, type: vmess, uuid: 4323a38e-29dc-4c6d-f436-b15114e57a75, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /download.zip, ws-headers: {Host: euserv10p.ezddns.tk}}
+  - {name: 老杨爱分享YouTube频道 8, server: 165.154.234.152, port: 50680, type: vmess, uuid: 7d45212a-d98f-4b98-9b44-bbe81cb72acb, alterId: 0, cipher: auto, tls: false}
+  - {name: 老杨爱分享YouTube频道 9, server: 165.231.253.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 老杨爱分享YouTube频道 10, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 老杨爱分享YouTube频道 11, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+  - {name: 老杨爱分享YouTube频道 12, server: 198.147.22.87, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 老杨爱分享YouTube频道 13, server: 135.125.207.34, port: 80, type: vmess, uuid: e2816152-6326-4cf9-aa95-34b0f9a8c666, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 135.125.207.34}}
+  - {name: 老杨爱分享YouTube频道 14, server: euserv8p.ezddns.tk, port: 80, type: vmess, uuid: 24d6dc76-f0a0-4809-8a70-6ad2dce20022, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv8p.ezddns.tk}}
+  - {name: 老杨爱分享YouTube频道 15, server: cfcn.9sep.org, port: 80, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /w421x2bx2za, ws-headers: {Host: nj.sb-cloud.cf}}
+  - {name: 老杨爱分享YouTube频道 16, server: 54.223.185.171, port: 8002, type: vmess, uuid: 83c18473-68f5-4c6e-8f3b-728abd2f04df, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
+  - {name: 老杨爱分享YouTube频道 17, server: 124.156.153.15, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 124.156.153.15}}
+  - {name: 老杨爱分享YouTube频道 18, server: 46.101.28.98, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
+  - {name: 老杨爱分享YouTube频道 19, server: 104.19.7.84, port: 443, type: vmess, uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /y475, ws-headers: {Host: free.frli.xyz}}
+  - {name: 老杨爱分享YouTube频道 20, server: qq13.feiclouddd.me, port: 443, type: vmess, uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sadfasf, ws-headers: {Host: qq13.feiclouddd.me}}
+  - {name: 老杨爱分享YouTube频道 21, server: v2ray.huarenlife.top, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: v2ray.huarenlife.top}}
+  - {name: 老杨爱分享YouTube频道 22, server: 104.25.52.187, port: 443, type: vmess, uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /y475, ws-headers: {Host: free.frli.xyz}}
+  - {name: 老杨爱分享YouTube频道 23, server: superstar.srayx.xyz, port: 27001, type: vmess, uuid: 0588ca87-26d9-4a95-a8d4-cb14dbae515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 老杨爱分享YouTube频道 24, server: huarenlife.top, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: huarenlife.top}}
+  - {name: 老杨爱分享YouTube频道 25, server: 104.19.110.34, port: 443, type: vmess, uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /y475, ws-headers: {Host: free.frli.xyz}}
+  - {name: 老杨爱分享YouTube频道 26, server: superstar.srayx.xyz, port: 27011, type: vmess, uuid: 0588ca87-26d9-4a95-a8d4-cb14dbae515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 老杨爱分享YouTube频道 27, server: 193.110.201.185, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 28, server: nn-ssr4.feiclouddd.me, port: 443, type: vmess, uuid: 79214731-7f0c-4f2d-a894-13b7df293624, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sadfasdf, ws-headers: {Host: nn-ssr4.feiclouddd.me}}
+  - {name: 老杨爱分享YouTube频道 29, server: 104.19.101.44, port: 443, type: vmess, uuid: 7c452843-46f2-4b0f-b4d6-fe516d37f09a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /abkqvws, ws-headers: {Host: w.73papapa.ml}}
+  - {name: 老杨爱分享YouTube频道 30, server: 154.17.2.31, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 31, server: 154.17.2.149, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 32, server: 154.17.2.109, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: l3Y9yKCBaT5SnpFFOe834yqIaXwSpRxz3l7D3Aua82ZgcSNZDCO6AexYDCE0Rj}
+  - {name: 老杨爱分享YouTube频道 33, server: 154.17.2.95, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 34, server: 104.19.45.117, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 老杨爱分享YouTube频道 35, server: 198.147.22.87, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: 老杨爱分享YouTube频道 36, server: 154.17.5.133, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 37, server: 198.147.22.87, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 老杨爱分享YouTube频道 38, server: 23.82.11.49, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 老杨爱分享YouTube频道 39, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 老杨爱分享YouTube频道 40, server: 154.17.5.184, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 41, server: 154.17.1.251, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 42, server: 198.147.22.87, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 老杨爱分享YouTube频道 43, server: 96.43.91.60, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.45218443.xyz}}
+  - {name: 老杨爱分享YouTube频道 44, server: 154.17.2.217, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 45, server: superstar.srayx.xyz, port: 27004, type: vmess, uuid: 0588ca87-26d9-4a95-a8d4-cb14dbae515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 老杨爱分享YouTube频道 46, server: superstar.srayx.xyz, port: 27003, type: vmess, uuid: 0588ca87-26d9-4a95-a8d4-cb14dbae515d, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /superstar, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 老杨爱分享YouTube频道 47, server: superstar.srayx.xyz, port: 27006, type: vmess, uuid: 0588ca87-26d9-4a95-a8d4-cb14dbae515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 老杨爱分享YouTube频道 48, server: ban4.feiclouddd.me, port: 443, type: vmess, uuid: 6da431e4-d7b1-4f61-b3e2-f3f8d6f03bb8, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sdafasfsa, ws-headers: {Host: ban4.feiclouddd.me}}
+  - {name: 老杨爱分享YouTube频道 49, server: superstar.srayx.xyz, port: 27008, type: vmess, uuid: 0588ca87-26d9-4a95-a8d4-cb14dbae515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 老杨爱分享YouTube频道 50, server: 154.17.2.121, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 51, server: 54.180.96.67, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.180.96.67}}
+  - {name: 老杨爱分享YouTube频道 52, server: 165.231.253.165, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 老杨爱分享YouTube频道 53, server: 165.231.253.165, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 老杨爱分享YouTube频道 54, server: 154.17.2.117, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: 2SYSIDnBqT5eCl736xlD4yODaXaSF9EeNp3OZcpjyC8ARYwA0zgC83aKxFZRu3}
+  - {name: 老杨爱分享YouTube频道 55, server: 154.17.2.54, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: YazuZ2ZE9p5Rn3CANKlD6SqC0OTSyXBIReypacD4Fae8gx87lOD3SY33jFAwCx}
+  - {name: 老杨爱分享YouTube频道 56, server: 154.17.2.211, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: ZECSlaTZea5jFO736FA3Ry3DaXRA2qNx0pceYDzKCuYS8gl3B4p8InwyDCOSx9}
+  - {name: 老杨爱分享YouTube频道 57, server: 154.17.2.160, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 老杨爱分享YouTube频道 58, server: 207.244.67.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 老杨爱分享YouTube频道 59, server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -512,70 +471,65 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 62.212.239.67:50168
-      - 62.212.239.51:50168
-      - 212.102.44.83:31944
-      - 🇭🇰 香港w
-      - 🇭🇰 香港w 2
-      - 🇨🇳 台湾w
-      - 🇨🇳 台湾w 2
-      - 🇨🇳 台湾w 3
-      - 🇨🇳 台湾w 4
-      - w
-      - 🇺🇸 美国w
-      - 🇺🇸 美国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - w 9
-      - 🇺🇸 美国🚀w 2
-      - w 10
-      - w 11
-      - 143.244.60.164:50168
-      - 🇳🇱 荷兰 🚀w
-      - 143.244.60.164:50168 2
-      - 143.244.60.164:50168 3
-      - 143.244.60.164:50168 4
-      - 143.244.60.164:50168 5
-      - 143.244.60.164:50168 6
-      - 143.244.60.164:50168 7
-      - 🇳🇱 m|🇳🇱 NL_4046
-      - 🇺🇸 m|🇺🇸 US_7440
-      - 🇳🇱 m|🇳🇱 NL_4012
-      - 🇸🇬 m|🇸🇬SG_3210
-      - 🇨🇳 m|🇹🇼TW_3307
-      - 🇺🇸 m|美国LV1[基础|x1]
-      - 🇺🇸 m|🇺🇸 US_7275
-      - 🇺🇸 m|🇺🇸 US_7307
-      - 🇺🇸 美国 4
-      - 185.212.203.115:36402
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰 2
-      - 23.82.11.49:50168
-      - 🇳🇱 荷兰 3
-      - 85.10.50.164:40093
-      - 89.46.223.239:39772
-      - 89.46.223.239:39772 2
-      - 89.46.223.239:39772 3
-      - 89.46.223.239:39772 4
-      - 🇺🇸 美国w 16
-      - 🇳🇱 荷兰 4
-      - 91.90.123.115:47121
-      - 207.244.67.149:50168
-      - 91.90.123.115:41676
-      - 91.90.123.115:47027
-      - nl1.hiout.me:36402
-      - 143.244.60.164:50168 8
-      - 🇳🇱 荷兰 5
-      - 🇺🇸 美国 5
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_15
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_14
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_16
-      - 馃嚚馃嚘 CA_390
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_13
-      - 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_12
-      - 馃嚠馃嚦 IN_1266
-      - Relay_ |72.66Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_161
+      - 老杨爱分享YouTube频道
+      - 老杨爱分享YouTube频道 2
+      - 老杨爱分享YouTube频道 3
+      - 老杨爱分享YouTube频道 4
+      - 老杨爱分享YouTube频道 5
+      - 老杨爱分享YouTube频道 6
+      - 老杨爱分享YouTube频道 7
+      - 老杨爱分享YouTube频道 8
+      - 老杨爱分享YouTube频道 9
+      - 老杨爱分享YouTube频道 10
+      - 老杨爱分享YouTube频道 11
+      - 老杨爱分享YouTube频道 12
+      - 老杨爱分享YouTube频道 13
+      - 老杨爱分享YouTube频道 14
+      - 老杨爱分享YouTube频道 15
+      - 老杨爱分享YouTube频道 16
+      - 老杨爱分享YouTube频道 17
+      - 老杨爱分享YouTube频道 18
+      - 老杨爱分享YouTube频道 19
+      - 老杨爱分享YouTube频道 20
+      - 老杨爱分享YouTube频道 21
+      - 老杨爱分享YouTube频道 22
+      - 老杨爱分享YouTube频道 23
+      - 老杨爱分享YouTube频道 24
+      - 老杨爱分享YouTube频道 25
+      - 老杨爱分享YouTube频道 26
+      - 老杨爱分享YouTube频道 27
+      - 老杨爱分享YouTube频道 28
+      - 老杨爱分享YouTube频道 29
+      - 老杨爱分享YouTube频道 30
+      - 老杨爱分享YouTube频道 31
+      - 老杨爱分享YouTube频道 32
+      - 老杨爱分享YouTube频道 33
+      - 老杨爱分享YouTube频道 34
+      - 老杨爱分享YouTube频道 35
+      - 老杨爱分享YouTube频道 36
+      - 老杨爱分享YouTube频道 37
+      - 老杨爱分享YouTube频道 38
+      - 老杨爱分享YouTube频道 39
+      - 老杨爱分享YouTube频道 40
+      - 老杨爱分享YouTube频道 41
+      - 老杨爱分享YouTube频道 42
+      - 老杨爱分享YouTube频道 43
+      - 老杨爱分享YouTube频道 44
+      - 老杨爱分享YouTube频道 45
+      - 老杨爱分享YouTube频道 46
+      - 老杨爱分享YouTube频道 47
+      - 老杨爱分享YouTube频道 48
+      - 老杨爱分享YouTube频道 49
+      - 老杨爱分享YouTube频道 50
+      - 老杨爱分享YouTube频道 51
+      - 老杨爱分享YouTube频道 52
+      - 老杨爱分享YouTube频道 53
+      - 老杨爱分享YouTube频道 54
+      - 老杨爱分享YouTube频道 55
+      - 老杨爱分享YouTube频道 56
+      - 老杨爱分享YouTube频道 57
+      - 老杨爱分享YouTube频道 58
+      - 老杨爱分享YouTube频道 59
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
