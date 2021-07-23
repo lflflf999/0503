@@ -5,163 +5,151 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN_1612, server: ngzyd-1.okex-tradebot.xyz, port: 30004, type: vmess, uuid: bfcd0463-2f1e-4945-9d90-50037230a372, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
-  - {name: 🇺🇸 US_7777, server: 45.79.114.57, port: 36788, type: vmess, uuid: B22C2F57-0189-25E7-79FA-90717E212748, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.79.114.57}}
-  - {name: 🇺🇸 US_7784, server: us04.xqkj.cloud, port: 1114, type: vmess, uuid: 3bd498ab-4983-4bd9-b4a2-f93c016090ef, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us04.xqkj.cloud}}
-  - {name: 🇺🇸 US_7773, server: 45.63.84.173, port: 20511, type: vmess, uuid: c37d2866-4e07-45cf-ba78-2ef59c13630f, alterId: 0, cipher: auto, tls: false}
-  - {name: CA_1500, server: dld01.xqkj.cloud, port: 1511, type: vmess, uuid: 3bd498ab-4983-4bd9-b4a2-f93c016090ef, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: dld01.xqkj.cloud}}
-  - {name: Pool_馃嚠馃嚬IT_3279, server: 82.102.26.117, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354, server: 104.160.186.54, port: 443, type: vmess, uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.92726054.xyz}}
-  - {name: 🇳🇱 馃嚦馃嚤NL_3952, server: 193.32.210.230, port: 35870, type: ss, cipher: aes-256-gcm, password: VFqcjsifsjyC}
-  - {name: CA_1505, server: dld15.xqkj.cloud, port: 1615, type: vmess, uuid: 3bd498ab-4983-4bd9-b4a2-f93c016090ef, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: dld15.xqkj.cloud}}
-  - {name: 🇺🇸 US_7787, server: 216.128.181.160, port: 50109, type: vmess, uuid: 737a9170-debb-4638-9924-9f55f35717f2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 HK_3385, server: 18.163.61.169, port: 80, type: vmess, uuid: 353e01fe-d179-47b5-aae8-72f2ff1e7cce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /api, ws-headers: {Host: 18.163.61.169}}
-  - {name: 🇹🇷 TR_5530, server: 141.98.119.155, port: 10001, type: vmess, uuid: e5c04139-0d1b-4d09-8718-78feeeaaa057, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 141.98.119.155}}
-  - {name: 🇫🇷 FR_2776 |61.88Mb, server: 95.179.222.187, port: 39536, type: vmess, uuid: 664b7607-e962-4e67-8cee-3aa2202ea44f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 SG_5428, server: sg02.xqkj.cloud, port: 1212, type: vmess, uuid: 3bd498ab-4983-4bd9-b4a2-f93c016090ef, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg02.xqkj.cloud}}
-  - {name: _920 |83.96Mb, server: 99.79.183.33, port: 2222, type: vmess, uuid: 57b9f56f-8f51-3af3-87de-87b6e46b2e17, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 99.79.183.33}}
-  - {name: 🇫🇷 馃嚝馃嚪FR_2096, server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: Pool_馃嚟馃嚪HR_2768, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4862, server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9, server: 198.147.22.87, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4416, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4642, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 US_7780, server: us2021071901.herokuapp.com, port: 443, type: vmess, uuid: 550218a3-2b2f-4e64-862e-84e0ee3043f6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /static, ws-headers: {Host: us2021071901.herokuapp.com}}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4466, server: 91.90.123.115, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4917, server: 91.90.123.115, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4908, server: 91.90.123.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4414, server: 91.90.123.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4412, server: 91.90.123.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇨🇳 CN_1852 |67.39Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30006, type: vmess, uuid: 84893ab7-21da-4a10-8f89-28e66f7de9a8, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇭🇰 HK_4492 |24.03Mb, server: relay.xxl123.fun, port: 10010, type: vmess, uuid: e9e99983-0296-40a1-9d68-dd475d6c4fc5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /path, ws-headers: {Host: "http://ec2-54-223-120-161.cn-north-1.compute.amazonaws.com.cn,f932c3d98981b.download.microsoft.com"}}
+  - {name: 🇭🇰 HK_4485 |23.68Mb, server: 207.46.151.21, port: 20088, type: vmess, uuid: b2f76fa8-56b5-4561-9992-2bab3fc58a40, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /path, ws-headers: {Host: "http://ec2-54-223-120-161.cn-north-1.compute.amazonaws.com.cn,f932c3d98981b.download.microsoft.com"}}
+  - {name: 🇭🇰 HK_4493 | 5.82Mb, server: aws.yyds.zeroyyds.cc, port: 443, type: trojan, password: dfd71fd2-39db-48f1-a5b6-9f67dff32133, sni: aws.yyds.zeroyyds.cc}
+  - {name: 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub, server: a7.ssrsub.one, port: 443, type: trojan, password: BFJYOPsk, sni: a7.ssrsub.one}
+  - {name: 🇺🇸 US_11584, server: 64.32.13.30, port: 443, type: vmess, uuid: 4dc574eb-94e8-439e-aad6-4d74df1a38c5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.12001759.xyz}}
+  - {name: 🇺🇸 US_11626 |78.73Mb, server: 173.82.69.83, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.35561062.xyz}}
   - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4415, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4424, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4913, server: 91.90.123.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: p7.22332e.com:8333, server: p7.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
-  - {name: 🇺🇸 Pool_馃嚭馃嚫US_7213, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: CA_1504, server: bimbel.ruangguru.com, port: 80, type: vmess, uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshkit, ws-headers: {Host: eu-sshkit.v2-ray.cf}}
+  - {name: 🇷🇺 RU_7594, server: ruml.jjyun.ren, port: 80, type: vmess, uuid: 90cab127-9c02-46f2-8642-c7d230c88355, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ruml.jjyun.ren}}
+  - {name: Pool_馃嚟馃嚪HR_2768, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4911, server: 91.90.123.115, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: p8.22332e.com:8333, server: p8.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4916, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4416, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4862, server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4424, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇷🇺 RU_7592, server: ruml.jjyun.ren, port: 88, type: vmess, uuid: 90cab127-9c02-46f2-8642-c7d230c88355, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ruml.jjyun.ren}}
+  - {name: GB_4336 |66.23Mb, server: ukdll.52jjyun.top, port: 80, type: vmess, uuid: 90cab127-9c02-46f2-8642-c7d230c88355, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukdll.52jjyun.top}}
+  - {name: 🇺🇸 Pool_馃嚭馃嚫US_7213, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇩🇪 DE_2398 |49.13Mb, server: 45.82.167.21, port: 80, type: vmess, uuid: a7b384a1-dd97-4fc3-819d-06cd8c706811, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4913, server: 91.90.123.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4642, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4412, server: 91.90.123.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4914, server: 91.90.123.115, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: ssr1.ssrsub.one:7139, server: ssr1.ssrsub.one, port: 7139, type: ss, cipher: aes-256-cfb, password: suo.yt/ssrsub}
+  - {name: 🇳🇱 NL_6086 |62.67Mb, server: 108.61.199.250, port: 37889, type: vmess, uuid: 025ccdd9-9b9d-4ebf-8c39-725c3f438637, alterId: 0, cipher: auto, tls: false}
+  - {name: IN_4898, server: 13.233.139.203, port: 8888, type: vmess, uuid: 24cd8398-c0e6-4667-a712-a358754809d9, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.233.139.203}}
+  - {name: IN_4899 |23.09Mb, server: in1-1.noojat.com, port: 1443, type: trojan, password: 7x42LetRa0, sni: in1-1.noojat.com}
+  - {name: ssr2.ssrsub.one:47478, server: ssr2.ssrsub.one, port: 47478, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
+  - {name: 🇺🇸 馃嚭馃嚫US_6692, server: 66.55.148.42, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇭🇰 HK_4489 |25.80Mb, server: hk-01.yinriver.top, port: 80, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-01.yinriver.top}}
+  - {name: 🇫🇷 馃嚝馃嚪FR_2096, server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: Pool_馃嚟馃嚪HR_2748, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -172,122 +160,113 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -303,41 +282,38 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN_1612
-      - 🇺🇸 US_7777
-      - 🇺🇸 US_7784
-      - 🇺🇸 US_7773
-      - CA_1500
-      - Pool_馃嚠馃嚬IT_3279
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_4354
-      - 🇳🇱 馃嚦馃嚤NL_3952
-      - CA_1505
-      - 🇺🇸 US_7787
-      - 🇭🇰 HK_3385
-      - 🇹🇷 TR_5530
-      - 🇫🇷 FR_2776 |61.88Mb
-      - 🇸🇬 SG_5428
-      - _920 |83.96Mb
-      - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇺🇸 github.com/freefq - 美国科罗拉多州Front Range Hosting公司 9
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇺🇸 US_7780
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4466
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4917
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4908
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4414
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇨🇳 CN_1852 |67.39Mb
+      - 🇭🇰 HK_4492 |24.03Mb
+      - 🇭🇰 HK_4485 |23.68Mb
+      - 🇭🇰 HK_4493 | 5.82Mb
+      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 US_11584
+      - 🇺🇸 US_11626 |78.73Mb
       - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - p7.22332e.com:8333
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - CA_1504
+      - 🇷🇺 RU_7594
+      - Pool_馃嚟馃嚪HR_2768
       - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - p8.22332e.com:8333
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇷🇺 RU_7592
+      - GB_4336 |66.23Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_7213
+      - 🇩🇪 DE_2398 |49.13Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
+      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
+      - ssr1.ssrsub.one:7139
+      - 🇳🇱 NL_6086 |62.67Mb
+      - IN_4898
+      - IN_4899 |23.09Mb
+      - ssr2.ssrsub.one:47478
+      - 🇺🇸 馃嚭馃嚫US_6692
+      - 🇭🇰 HK_4489 |25.80Mb
+      - 🇫🇷 馃嚝馃嚪FR_2096
+      - Pool_馃嚟馃嚪HR_2748
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
