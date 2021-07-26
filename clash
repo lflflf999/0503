@@ -5,151 +5,371 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN_1852 |67.39Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30006, type: vmess, uuid: 84893ab7-21da-4a10-8f89-28e66f7de9a8, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
-  - {name: 🇭🇰 HK_4492 |24.03Mb, server: relay.xxl123.fun, port: 10010, type: vmess, uuid: e9e99983-0296-40a1-9d68-dd475d6c4fc5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /path, ws-headers: {Host: "http://ec2-54-223-120-161.cn-north-1.compute.amazonaws.com.cn,f932c3d98981b.download.microsoft.com"}}
-  - {name: 🇭🇰 HK_4485 |23.68Mb, server: 207.46.151.21, port: 20088, type: vmess, uuid: b2f76fa8-56b5-4561-9992-2bab3fc58a40, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /path, ws-headers: {Host: "http://ec2-54-223-120-161.cn-north-1.compute.amazonaws.com.cn,f932c3d98981b.download.microsoft.com"}}
-  - {name: 🇭🇰 HK_4493 | 5.82Mb, server: aws.yyds.zeroyyds.cc, port: 443, type: trojan, password: dfd71fd2-39db-48f1-a5b6-9f67dff32133, sni: aws.yyds.zeroyyds.cc}
-  - {name: 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub, server: a7.ssrsub.one, port: 443, type: trojan, password: BFJYOPsk, sni: a7.ssrsub.one}
-  - {name: 🇺🇸 US_11584, server: 64.32.13.30, port: 443, type: vmess, uuid: 4dc574eb-94e8-439e-aad6-4d74df1a38c5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.12001759.xyz}}
-  - {name: 🇺🇸 US_11626 |78.73Mb, server: 173.82.69.83, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.35561062.xyz}}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4415, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 🇷🇺 RU_7594, server: ruml.jjyun.ren, port: 80, type: vmess, uuid: 90cab127-9c02-46f2-8642-c7d230c88355, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ruml.jjyun.ren}}
-  - {name: Pool_馃嚟馃嚪HR_2768, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4911, server: 91.90.123.115, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4916, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4416, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4862, server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4424, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737, server: sg-cn-relay-6-689145.dukou.info, port: 9306, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-relay-6-689145.dukou.info}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694, server: hk031.bp666.xyz, port: 30011, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk031.bp666.xyz}}
+  - {name: 🇨🇳 CN_2630 |11.04Mb, server: hk12-5510.dukouplan3.dev, port: 8012, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk12-5510.dukouplan3.dev}
+  - {name: 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707, server: hk047.bp666.xyz, port: 30027, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk047.bp666.xyz}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750, server: hk-route-12369-2.dukou.info, port: 8302, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk-route-12369-2.dukou.info}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752, server: hk-route2-azure-hk7.dukou.info, port: 8307, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk-route2-azure-hk7.dukou.info}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734, server: hk035.bp666.xyz, port: 30015, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk035.bp666.xyz}}
+  - {name: 🇨🇳 CN_2651 |11.18Mb, server: sg-cn-hk-relay-4-40e978.dukou.info, port: 9304, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-hk-relay-4-40e978.dukou.info}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736, server: hk11-5423.dukouplan3.dev, port: 8011, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk11-5423.dukouplan3.dev}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745, server: shanghai-router2-hk4-5478.dukou.info, port: 8304, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: shanghai-router2-hk4-5478.dukou.info}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748, server: hk-route2-azure-hk8.dukou.info, port: 8308, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk-route2-azure-hk8.dukou.info}
+  - {name: 🇨🇳 CN_2637 |10.88Mb, server: sg-cn-relay-8-14852.dukou.info, port: 9308, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-relay-8-14852.dukou.info}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724, server: 013.nb818.xyz, port: 30053, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 013.nb818.xyz}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739, server: hk-route-12369-9.dukou.info, port: 8309, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk-route-12369-9.dukou.info}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743, server: hk-cnrelay-14-142345.dukou.info, port: 8314, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk-cnrelay-14-142345.dukou.info}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747, server: hk10-gray.dukou.info, port: 8310, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk10-gray.dukou.info}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691, server: hk039.bp666.xyz, port: 30019, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk039.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695, server: hk033.bp666.xyz, port: 30013, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk033.bp666.xyz}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702, server: hk032.bp666.xyz, port: 30012, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk032.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726, server: hk037.bp666.xyz, port: 30017, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk037.bp666.xyz}}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738, server: tw6-5641.dukouplan3.dev, port: 5306, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: tw6-5641.dukouplan3.dev}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689, server: 012.nb818.xyz, port: 30052, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 012.nb818.xyz}}
+  - {name: 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708, server: hk046.bp666.xyz, port: 30026, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk046.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742, server: sg-cn-hk-relay-2-54bc52.dukou.info, port: 9302, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-hk-relay-2-54bc52.dukou.info}
+  - {name: 🇨🇳 CN_2638 |11.48Mb, server: sg-cn-hk-relay-3-dd4440.dukou.info, port: 9303, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-hk-relay-3-dd4440.dukou.info}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690, server: 011.nb818.xyz, port: 30051, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 011.nb818.xyz}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692, server: hk034.bp666.xyz, port: 30014, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk034.bp666.xyz}}
+  - {name: 🇨🇳 CN_2640 |10.15Mb, server: sg-cn-hk-relay-5-51f087.dukou.info, port: 9305, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-hk-relay-5-51f087.dukou.info}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698, server: hk038.bp666.xyz, port: 30018, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk038.bp666.xyz}}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699, server: hk041.bp666.xyz, port: 30021, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk041.bp666.xyz}}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701, server: hk042.bp666.xyz, port: 30022, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk042.bp666.xyz}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751, server: node08-trojan.cloudddns.icu, port: 46006, type: trojan, password: a4f79c56-42e5-462d-a76b-0aac55d45fdf, sni: node08-trojan.cloudddns.icu}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712, server: hk043.bp666.xyz, port: 30023, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk043.bp666.xyz}}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740, server: tw5-5564.dukouplan3.dev, port: 5305, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: tw5-5564.dukouplan3.dev}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696, server: hk036.bp666.xyz, port: 30016, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk036.bp666.xyz}}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700, server: hk044.bp666.xyz, port: 30024, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk044.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706, server: hk048.bp666.xyz, port: 30028, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk048.bp666.xyz}}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703, server: hk045.bp666.xyz, port: 30025, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk045.bp666.xyz}}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709, server: hk050.bp666.xyz, port: 30030, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk050.bp666.xyz}}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710, server: hk049.bp666.xyz, port: 30029, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk049.bp666.xyz}}
+  - {name: 🇨🇳 CN_2629 |10.55Mb, server: sg-cn-relay-7-74812.dukou.info, port: 9307, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: sg-cn-relay-7-74812.dukou.info}
+  - {name: 🇨🇳 CN_2653 |10.78Mb, server: tw3-5412.dukouplan3.dev, port: 5303, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: tw3-5412.dukouplan3.dev}
+  - {name: 🇨🇳 CN_2650 |11.03Mb, server: tw-cn-hk-relay-1-97861a.dukou.info, port: 5301, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: tw-cn-hk-relay-1-97861a.dukou.info}
+  - {name: 🇨🇳 CN_2631 |11.45Mb, server: tw-cn-hk-relay-2-184a76.dukou.info, port: 5302, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: tw-cn-hk-relay-2-184a76.dukou.info}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711, server: hk056.bp666.xyz, port: 30036, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk056.bp666.xyz}}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717, server: hk059.bp666.xyz, port: 30039, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk059.bp666.xyz}}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727, server: hk060.bp666.xyz, port: 30040, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk060.bp666.xyz}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746, server: hk-route-12369-3.dukou.info, port: 8303, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: hk-route-12369-3.dukou.info}
+  - {name: 🇨🇳 CN_2639 | 9.89Mb, server: tw7-5756.dukouplan3.dev, port: 5307, type: trojan, password: 1f3f9b92-7945-5efb-937a-90ce6040ac8b, sni: tw7-5756.dukouplan3.dev}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713, server: hk062.bp666.xyz, port: 30042, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk062.bp666.xyz}}
+  - {name: 🇭🇰 HK_5124 |25.10Mb, server: gyc.cloudddns.icu, port: 123, type: vmess, uuid: a47638b5-60bf-3f8d-b551-85615b655084, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /public, ws-headers: {Host: gyc.cloudddns.icu}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719, server: hk061.bp666.xyz, port: 30041, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk061.bp666.xyz}}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715, server: hk063.bp666.xyz, port: 30043, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk063.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723, server: hk065.bp666.xyz, port: 30045, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk065.bp666.xyz}}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732, server: hk057.bp666.xyz, port: 30037, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk057.bp666.xyz}}
+  - {name: 虎窝vmess节点22, server: 18.192.65.108, port: 55566, type: vmess, uuid: a74bc6e5-c888-4287-86da-9f13397d5550, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.192.65.108}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721, server: hk069.bp666.xyz, port: 30049, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk069.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729, server: hk051.bp666.xyz, port: 30031, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk051.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730, server: hk053.bp666.xyz, port: 30033, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk053.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718, server: hk066.bp666.xyz, port: 30046, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk066.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720, server: hk067.bp666.xyz, port: 30047, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk067.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733, server: hk070.bp666.xyz, port: 30050, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk070.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704, server: hk054.bp666.xyz, port: 30034, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk054.bp666.xyz}}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716, server: hk058.bp666.xyz, port: 30038, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk058.bp666.xyz}}
+  - {name: Pool_馃嚞馃嚙GB_2645, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725, server: hk064.bp666.xyz, port: 30044, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk064.bp666.xyz}}
+  - {name: 🇷🇺 RU_7762, server: 194.87.48.252, port: 38673, type: vmess, uuid: f0da4655-f438-4008-a9e0-6c7f0c4cfaa5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3, server: 154.17.2.160, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: Pool_馃嚠馃嚬IT_3104, server: 82.102.26.117, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: Pool_馃嚠馃嚬IT_3268, server: 82.102.26.117, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: Pool_馃嚠馃嚬IT_3270, server: 82.102.26.117, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: Pool_馃嚠馃嚬IT_3099, server: 82.102.26.117, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: Pool_馃嚠馃嚬IT_3100, server: 82.102.26.117, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: Pool_馃嚠馃嚬IT_3116, server: 82.102.26.117, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
   - {name: 🇷🇺 RU_7592, server: ruml.jjyun.ren, port: 88, type: vmess, uuid: 90cab127-9c02-46f2-8642-c7d230c88355, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ruml.jjyun.ren}}
-  - {name: GB_4336 |66.23Mb, server: ukdll.52jjyun.top, port: 80, type: vmess, uuid: 90cab127-9c02-46f2-8642-c7d230c88355, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukdll.52jjyun.top}}
-  - {name: 🇺🇸 Pool_馃嚭馃嚫US_7213, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇩🇪 DE_2398 |49.13Mb, server: 45.82.167.21, port: 80, type: vmess, uuid: a7b384a1-dd97-4fc3-819d-06cd8c706811, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4913, server: 91.90.123.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4642, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4412, server: 91.90.123.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_4914, server: 91.90.123.115, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: ssr1.ssrsub.one:7139, server: ssr1.ssrsub.one, port: 7139, type: ss, cipher: aes-256-cfb, password: suo.yt/ssrsub}
-  - {name: 🇳🇱 NL_6086 |62.67Mb, server: 108.61.199.250, port: 37889, type: vmess, uuid: 025ccdd9-9b9d-4ebf-8c39-725c3f438637, alterId: 0, cipher: auto, tls: false}
+  - {name: Pool_馃嚠馃嚬IT_3279, server: 82.102.26.117, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇺🇸 github.com/freefq - 美国Amazon数据中心 11, server: 18.192.65.108, port: 55566, type: vmess, uuid: a74bc6e5-c888-4287-86da-9f13397d5550, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.192.65.108}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728, server: hk055.bp666.xyz, port: 30035, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk055.bp666.xyz}}
+  - {name: _1387 |11.90Mb, server: 139.180.169.69, port: 37390, type: vmess, uuid: 208bc0c8-a6ed-4625-9700-124f824bbe5c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 RU_7760, server: 2.56.241.7, port: 31222, type: vmess, uuid: 56bb7d0c-be78-4f90-9064-0f92cfe1c56f, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 2.56.241.7}}
+  - {name: 🇷🇺 RU_8207 |24.24Mb, server: 2.56.241.7, port: 31222, type: vmess, uuid: 56bb7d0c-be78-4f90-9064-0f92cfe1c56f, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 2.56.241.7}}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5, server: 154.17.2.109, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: l3Y9yKCBaT5SnpFFOe834yqIaXwSpRxz3l7D3Aua82ZgcSNZDCO6AexYDCE0Rj}
   - {name: IN_4898, server: 13.233.139.203, port: 8888, type: vmess, uuid: 24cd8398-c0e6-4667-a712-a358754809d9, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.233.139.203}}
-  - {name: IN_4899 |23.09Mb, server: in1-1.noojat.com, port: 1443, type: trojan, password: 7x42LetRa0, sni: in1-1.noojat.com}
-  - {name: ssr2.ssrsub.one:47478, server: ssr2.ssrsub.one, port: 47478, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
-  - {name: 🇺🇸 馃嚭馃嚫US_6692, server: 66.55.148.42, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇭🇰 HK_4489 |25.80Mb, server: hk-01.yinriver.top, port: 80, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-01.yinriver.top}}
   - {name: 🇫🇷 馃嚝馃嚪FR_2096, server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: Pool_馃嚟馃嚪HR_2748, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731, server: hk052.bp666.xyz, port: 30032, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk052.bp666.xyz}}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722, server: hk068.bp666.xyz, port: 30048, type: vmess, uuid: c7e615e1-f678-4d97-887c-5666533bac17, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk068.bp666.xyz}}
+  - {name: 虎窝vmess节点09, server: 18.163.61.169, port: 80, type: vmess, uuid: 353e01fe-d179-47b5-aae8-72f2ff1e7cce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /api, ws-headers: {Host: 18.163.61.169}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -160,113 +380,278 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -282,38 +667,93 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN_1852 |67.39Mb
-      - 🇭🇰 HK_4492 |24.03Mb
-      - 🇭🇰 HK_4485 |23.68Mb
-      - 🇭🇰 HK_4493 | 5.82Mb
-      - 🇺🇸 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 US_11584
-      - 🇺🇸 US_11626 |78.73Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4415
-      - 🇷🇺 RU_7594
-      - Pool_馃嚟馃嚪HR_2768
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4911
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4916
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4416
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4862
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4424
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1737
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1694
+      - 🇨🇳 CN_2630 |11.04Mb
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1707
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1750
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1752
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1734
+      - 🇨🇳 CN_2651 |11.18Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1736
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1745
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1748
+      - 🇨🇳 CN_2637 |10.88Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1724
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1739
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1743
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1747
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1691
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1695
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1702
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1726
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1738
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1689
+      - 🇰🇷 Relay_🇨🇳CN-🇰🇷KR_1708
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1742
+      - 🇨🇳 CN_2638 |11.48Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1690
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1692
+      - 🇨🇳 CN_2640 |10.15Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1698
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1699
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1701
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1751
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1712
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_1740
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1696
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1700
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1706
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1703
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1709
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_1710
+      - 🇨🇳 CN_2629 |10.55Mb
+      - 🇨🇳 CN_2653 |10.78Mb
+      - 🇨🇳 CN_2650 |11.03Mb
+      - 🇨🇳 CN_2631 |11.45Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1711
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1717
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1727
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_1746
+      - 🇨🇳 CN_2639 | 9.89Mb
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1713
+      - 🇭🇰 HK_5124 |25.10Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1719
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1715
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1723
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1732
+      - 虎窝vmess节点22
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1721
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1729
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1730
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1718
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1720
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1733
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1704
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_1716
+      - Pool_馃嚞馃嚙GB_2645
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1725
+      - 🇷🇺 RU_7762
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 3
+      - Pool_馃嚠馃嚬IT_3104
+      - Pool_馃嚠馃嚬IT_3268
+      - Pool_馃嚠馃嚬IT_3270
+      - Pool_馃嚠馃嚬IT_3099
+      - Pool_馃嚠馃嚬IT_3100
+      - Pool_馃嚠馃嚬IT_3116
       - 🇷🇺 RU_7592
-      - GB_4336 |66.23Mb
-      - 🇺🇸 Pool_馃嚭馃嚫US_7213
-      - 🇩🇪 DE_2398 |49.13Mb
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4913
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4642
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4412
-      - 🇷🇴 Pool_馃嚪馃嚧RO_4914
-      - ssr1.ssrsub.one:7139
-      - 🇳🇱 NL_6086 |62.67Mb
+      - Pool_馃嚠馃嚬IT_3279
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 11
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1728
+      - _1387 |11.90Mb
+      - 🇷🇺 RU_7760
+      - 🇷🇺 RU_8207 |24.24Mb
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 5
       - IN_4898
-      - IN_4899 |23.09Mb
-      - ssr2.ssrsub.one:47478
-      - 🇺🇸 馃嚭馃嚫US_6692
-      - 🇭🇰 HK_4489 |25.80Mb
       - 🇫🇷 馃嚝馃嚪FR_2096
-      - Pool_馃嚟馃嚪HR_2748
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1731
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_1722
+      - 虎窝vmess节点09
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
