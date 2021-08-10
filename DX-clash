@@ -5,834 +5,173 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: zf.proxypools.top, port: 50318, type: vmess, uuid: 0292c423-62df-4710-8d66-63844fad3534, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /tg2shenseven, ws-headers: {Host: zf.proxypools.top}}
-  - {name: 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2, server: azhk.pengui.tools, port: 80, type: vmess, uuid: 66fb5323-8836-4143-973b-48a46c2df7e9, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /pazhk, ws-headers: {Host: azhk.pengui.tools}}
-  - {name: 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3, server: zf.proxypools.top, port: 33826, type: vmess, uuid: 0292c423-62df-4710-8d66-63844fad3534, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shenseven, ws-headers: {Host: zf.proxypools.top}}
-  - {name: 🇯🇵 hm|日本(JP)Japan/Tokyo, server: 3.113.29.123, port: 44444, type: ss, cipher: aes-256-gcm, password: J9gdfl9kUa}
-  - {name: 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4, server: transit-azure-f4s-hk.speedtestcustom.tk, port: 55036, type: vmess, uuid: 49f7c16f-1607-4dd3-8d53-878d682fb406, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: transit-azure-f4s-hk.speedtestcustom.tk}}
-  - {name: 🇸🇬 hm|新加坡(SG)Singapore/Singapore, server: psg.pengui.tools, port: 80, type: vmess, uuid: 66fb5323-8836-4143-973b-48a46c2df7e9, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5, server: zf.proxypools.top, port: 45545, type: vmess, uuid: 0292c423-62df-4710-8d66-63844fad3534, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇺🇸 hm|美国(US)USA/Chicago, server: 104.16.16.255, port: 443, type: vmess, uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sadfasf, ws-headers: {Host: qq13.feiclouddd.me}}
-  - {name: 🇺🇸 hm|美国(US)USA/Chicago 2, server: 172.67.182.11, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: jp-02.yinriver.top}}
-  - {name: 🇺🇸 hm|美国(US)USA/Chicago 3, server: 172.67.182.11, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg-08.yinriver.top}}
-  - {name: 🇺🇸 hm|美国(US)USA/San Francisco, server: 104.22.4.180, port: 443, type: vmess, uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sadfasf, ws-headers: {Host: qq13.feiclouddd.me}}
-  - {name: 🇺🇸 hm|美国(US)USA/San Francisco 2, server: 104.21.76.229, port: 443, type: vmess, uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sadfasf, ws-headers: {Host: qq13.feiclouddd.me}}
-  - {name: 🇺🇸 美国 10, server: 143.244.56.230, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇭🇰 香港 26, server: 40.83.88.55, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇺🇸 美国 20, server: 143.244.57.99, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇸🇬 新加坡 4, server: 89.187.163.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 美国 31, server: 143.244.57.99, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: 🇭🇰 香港 38, server: agals01.cloudddns.icu, port: 123, type: trojan, password: 1abcd003-371d-3cf0-b52e-57b3888bbf2e, sni: agals01.cloudddns.icu}
-  - {name: 立陶宛, server: 194.41.112.11, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇺🇸 美国 33, server: 138.199.16.137, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇭🇰 香港 39, server: 059.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 1b605004-07b1-492c-9ab7-95a25e0cede4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 059.HK.AP.POP.BIGAIRPORT.NET}}
-  - {name: 斯洛伐克, server: 37.120.221.5, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇺🇸 美国 34, server: sh.sh.miao.rest, port: 52202, type: vmess, uuid: dc7aea2e-e2bc-494c-9625-4208b79eb72d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sh.sh.miao.rest}}
-  - {name: 🇭🇰 香港 40, server: 40.83.94.143, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇭🇰 香港 41, server: 13.75.49.2, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇭🇰 香港 42, server: 13.75.1.220, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇸🇬 新加坡 7, server: 13.229.86.224, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 波黑 3, server: 194.37.98.211, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇭🇰 香港 43, server: wr.naigai.one, port: 33893, type: trojan, password: e9a0ba8c-97ee-45ee-ba50-29cc7d508aed, sni: wr.naigai.one}
-  - {name: 🇨🇳 Pool_🇹🇼TW_8902, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
-  - {name: 🇺🇸 美国 35, server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 新加坡 8, server: 89.187.163.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇬🇧 英国, server: 5.183.101.200, port: 35374, type: vmess, uuid: 1969-12-31T23:59:59Z, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 44, server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇭🇰 香港 45, server: 52.223.4.234, port: 54527, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: a067b1252f1bc4eda.awsglobalaccelerator.com}}
-  - {name: 🇩🇪 德国, server: 45.134.224.3, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 葡萄牙, server: 194.39.127.242, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 波黑 4, server: 185.99.3.7, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 美国 36, server: 143.244.60.162, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇷🇺 俄罗斯 3, server: 5.189.202.16, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: 🇺🇸 美国 37, server: 103.156.50.113, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 波黑 5, server: 193.29.106.109, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇨🇳 台湾 4, server: 2.58.242.158, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇮🇳 印度 3, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇸🇬 新加坡 9, server: 89.187.163.210, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 美国 38, server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇩🇰 丹麦, server: 37.120.194.125, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇩🇰 丹麦 2, server: 37.120.194.125, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 🇭🇰 香港 46, server: 23.97.75.56, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇺🇸 美国 39, server: 161.35.216.140, port: 80, type: vmess, uuid: c2677816-0c3b-465f-eb2c-2b5b2edfc7fb, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 40, server: 45.43.14.75, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇮🇳 印度 4, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 美国 41, server: 143.244.57.99, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: 🇺🇸 美国 42, server: 23.82.11.49, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇳🇱 荷兰, server: 91.206.168.24, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇬🇧 英国 2, server: 89.238.130.251, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇭🇰 香港 47, server: hkawst1.biteb.club, port: 54543, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkawst1.biteb.club}}
-  - {name: 🇩🇪 德国 2, server: 119.188.97.30, port: 80, type: vmess, uuid: ea17f807-c50d-4444-bdd5-e827c91f9cb8, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇭🇰 香港 48, server: 113.207.102.30, port: 80, type: vmess, uuid: ea17f807-c50d-4444-bdd5-e827c91f9cb8, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 002.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇭🇰 香港 49, server: 40.83.77.18, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇦🇺 澳大利亚 2, server: 45.130.137.14, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇭🇰 香港 50, server: hkaz1.biteb.club, port: 54411, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz1.biteb.club}}
-  - {name: 🇭🇰 香港 51, server: 3.33.138.235, port: 80, type: vmess, uuid: 4de12cf0-642c-40f7-9f84-30e809610184, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇩🇪 德国 3, server: 138.201.150.52, port: 33957, type: vmess, uuid: 89cee221-b06c-46c5-f0d7-4fd3f4740b97, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 43, server: 119.188.97.51, port: 80, type: vmess, uuid: 3e546191-0784-4c44-8849-01f06f942a5f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /index/cctv9.m3u8, ws-headers: {Host: dn-pd2hiel8.cn2.run.gxu.edu.cn}}
-  - {name: 🇷🇺 俄罗斯 4, server: 5.189.202.16, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇨🇳 台湾 5, server: 2.58.242.157, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 新加坡 10, server: transit-azure-f4s-hk.speedtestcustom.tk, port: 61139, type: vmess, uuid: aad7c4db-0949-4611-b85b-bf017fbb15e8, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: transit-azure-f4s-hk.speedtestcustom.tk}}
-  - {name: 🇭🇰 香港 52, server: 18.162.149.17, port: 443, type: vmess, uuid: 2e4f069d-300a-4055-857c-f9bd785935b3, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.162.149.17}}
-  - {name: 🇭🇰 香港 53, server: hkaz2.biteb.club, port: 54476, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz2.biteb.club}}
-  - {name: 🇭🇰 香港 54, server: v1.proxypools.top, port: 8443, type: trojan, password: 5f6ed9ca-ef42-43e8-ab9f-470016bf92e9, sni: v1.proxypools.top}
-  - {name: 🇭🇰 香港 55, server: hkaz2.biteb.club, port: 54546, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz2.biteb.club}}
-  - {name: 🇦🇺 澳大利亚 3, server: ss.au.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0}
-  - {name: 🇺🇸 美国 44, server: 192.154.255.54, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: g 38, server: 23.105.163.109, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇮🇹 意大利🚀g 10, server: 212.102.44.98, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: g 39, server: 176.31.146.89, port: 4040, type: ss, cipher: aes-256-gcm, password: AMvZHPXhPk6t}
-  - {name: g 40, server: 84.17.60.235, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: g 41, server: 138.199.16.137, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: g 42, server: 212.102.44.98, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇺🇸 美国🚀g 8, server: 37.120.212.133, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: g 43, server: 198.8.92.84, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: g 44, server: 185.180.14.147, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: g 45, server: 138.199.16.137, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: g 46, server: 212.102.44.98, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇷🇴 罗马尼亚🚀g 2, server: 194.37.98.211, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: g 47, server: 198.8.92.84, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: g 48, server: 5.187.49.189, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: g 49, server: 185.76.9.44, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇸🇬 us.New York-28@1Gbps节点更新ha, server: 104.16.148.48, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-29@1Gbps节点更新ha, server: 104.19.23.24, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-3@1Gbps节点更新ha, server: icook.tw, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-4@1Gbps节点更新ha, server: www.cloudflare.com, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-5@1Gbps节点更新ha, server: www.garmin.com, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-6@1Gbps节点更新ha, server: 104.18.135.208, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-7@1Gbps节点更新ha, server: 104.20.130.43, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-8@1Gbps节点更新ha, server: 104.25.104.240, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇸🇬 us.New York-9@1Gbps节点更新ha, server: 104.16.160.114, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: 567567.cf}}
-  - {name: 🇺🇸 美国 7, server: 212.102.44.83, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 美国02 | 中转AZ | 流媒体, server: relay.xxl123.fun, port: 10011, type: vmess, uuid: bdac9b89-384a-4fd5-8d18-669d987d8dbc, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /f932c3d98981b, ws-headers: {Host: f932c3d98981b.download.microsoft.com}}
-  - {name: 🇸🇬 美国-10@1Gbps节点更新ha, server: 104.16.110.238, port: 443, type: vmess, uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/Vincent-Jacksonvws?ed=2048", ws-headers: {Host: 567567.ga}}
-  - {name: 🇸🇬 美国-11@1Gbps节点更新ha, server: 104.18.8.157, port: 443, type: vmess, uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/Vincent-Jacksonvws?ed=2048", ws-headers: {Host: 567567.ga}}
-  - {name: 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x, server: cm-jm.okvpn.cc, port: 20001, type: vmess, uuid: 94a60d56-10ee-4796-a072-25fc8d9a52b8, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
-  - {name: 🇭🇰 Y17-HK-7, server: gya.cloudddns.icu, port: 819, type: vmess, uuid: 1474e8e6-2c5c-3fe2-9de9-b9ce56c48745, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /public, ws-headers: {Host: gya.cloudddns.icu}}
-  - {name: 🇭🇰 Y17-HK-7 2, server: gya.cloudddns.icu, port: 819, type: vmess, uuid: a7436b35-0daf-3eac-9a0b-356b8a3cc63b, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /public, ws-headers: {Host: gya.cloudddns.icu}}
-  - {name: 🇭🇰 Y18-HK-7, server: jm.01.nkeo.top, port: 34662, type: vmess, uuid: b2b0264a-249b-3acd-bf9b-10489709c9b3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ws, ws-headers: {Host: jm.01.nkeo.top}}
-  - {name: 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x, server: 20.188.14.186, port: 80, type: vmess, uuid: 93eafbfd-eafb-4065-b9aa-7f15cc943cec, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /pjp, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x, server: 46.182.107.44, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.68737987.xyz}}
-  - {name: 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x, server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.73345741.xyz}}
+  - {name: 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x, server: rw3r.xyz, port: 57079, type: vmess, uuid: 0a4c1cdb-3d06-3de3-b997-fab025b2ec18, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /JpzsmqibHG06w, ws-headers: {Host: jpn03.dawjfier001.space}}
+  - {name: 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x, server: hk3.uuv2.co.uk, port: 1016, type: vmess, uuid: 7fa9d805-7d70-486a-81a8-7249dcd908cd, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: hk3.uuv2.co.uk}}
+  - {name: 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x, server: 52.223.4.234, port: 54527, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: 52.223.4.234}}
+  - {name: 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x, server: www.17080100.xyz, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17080100.xyz}}
+  - {name: 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x, server: 154.84.1.152, port: 443, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.65198831.xyz}}
+  - {name: 🇯🇵 日本(JP)Japan/Tokyo, server: 52.199.19.113, port: 80, type: vmess, uuid: f830d6df-0a72-4fd4-c434-57a0fe1c811e, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 52.199.19.113}}
+  - {name: 🇯🇵 日本(JP)Japan/Osaka, server: 15.152.41.22, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇺🇸 美国(US)USA/Denver, server: 212.102.44.71, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇺🇸 美国(US)USA/Salt Lake City, server: 104.200.131.172, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇺🇸 美国(US)USA/Miami, server: 89.187.173.201, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇺🇸 美国(US)USA/Boston, server: 173.237.207.11, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇺🇸 美国(US)USA/Buffalo, server: 172.93.153.148, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇺🇸 美国(US)USA/Flushing, server: 104.244.208.203, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇺🇸 美国(US)USA/Manassas, server: 23.105.163.109, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国(US)USA/San Jose, server: 209.58.128.48, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇸🇬 gq - 新加坡Amazon数据中心 1, server: 13.251.44.93, port: 80, type: vmess, uuid: ca167929-58be-44f6-e449-2b624626baa1, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.251.44.93}}
+  - {name: 🇺🇸 gq - 美国惠普HP 2, server: 16.162.118.217, port: 443, type: vmess, uuid: a076dc92-8e3f-4ad9-f93e-276562007d93, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.162.118.217}}
+  - {name: 🇭🇰 gq - 香港Amazon数据中心 3, server: jb.wocaonimabi666.xyz, port: 16668, type: vmess, uuid: 6e351ded-1fc1-48f6-9f11-8c1d9621edd6, alterId: 0, cipher: auto, tls: false}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇭🇰 香港 26
-      - 🇭🇰 香港 38
-      - 🇭🇰 香港 39
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇭🇰 香港 43
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇨🇳 台湾 4
-      - 🇭🇰 香港 46
-      - 🇭🇰 香港 47
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇨🇳 台湾 5
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
+      - 🇭🇰 gq - 香港Amazon数据中心 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -848,115 +187,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 4
-      - 🇸🇬 hm|新加坡(SG)Singapore/Singapore
-      - 🇦🇷 hm|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 5
-      - 🇺🇸 hm|美国(US)USA/Chicago
-      - 🇺🇸 hm|美国(US)USA/Chicago 2
-      - 🇺🇸 hm|美国(US)USA/Chicago 3
-      - 🇺🇸 hm|美国(US)USA/San Francisco
-      - 🇺🇸 hm|美国(US)USA/San Francisco 2
-      - 🇺🇸 美国 10
-      - 🇭🇰 香港 26
-      - 🇺🇸 美国 20
-      - 🇸🇬 新加坡 4
-      - 🇺🇸 美国 31
-      - 🇭🇰 香港 38
-      - 立陶宛
-      - 🇺🇸 美国 33
-      - 🇭🇰 香港 39
-      - 斯洛伐克
-      - 🇺🇸 美国 34
-      - 🇭🇰 香港 40
-      - 🇭🇰 香港 41
-      - 🇭🇰 香港 42
-      - 🇸🇬 新加坡 7
-      - 波黑 3
-      - 🇭🇰 香港 43
-      - 🇨🇳 Pool_🇹🇼TW_8902
-      - 🇺🇸 美国 35
-      - 🇸🇬 新加坡 8
-      - 🇬🇧 英国
-      - 🇭🇰 香港 44
-      - 🇭🇰 香港 45
-      - 🇩🇪 德国
-      - 葡萄牙
-      - 波黑 4
-      - 🇺🇸 美国 36
-      - 🇷🇺 俄罗斯 3
-      - 🇺🇸 美国 37
-      - 波黑 5
-      - 🇨🇳 台湾 4
-      - 🇮🇳 印度 3
-      - 🇸🇬 新加坡 9
-      - 🇺🇸 美国 38
-      - 🇩🇰 丹麦
-      - 🇩🇰 丹麦 2
-      - 🇭🇰 香港 46
-      - 🇺🇸 美国 39
-      - 🇺🇸 美国 40
-      - 🇮🇳 印度 4
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 2
-      - 🇭🇰 香港 47
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 48
-      - 🇭🇰 香港 49
-      - 🇦🇺 澳大利亚 2
-      - 🇭🇰 香港 50
-      - 🇭🇰 香港 51
-      - 🇩🇪 德国 3
-      - 🇺🇸 美国 43
-      - 🇷🇺 俄罗斯 4
-      - 🇨🇳 台湾 5
-      - 🇸🇬 新加坡 10
-      - 🇭🇰 香港 52
-      - 🇭🇰 香港 53
-      - 🇭🇰 香港 54
-      - 🇭🇰 香港 55
-      - 🇦🇺 澳大利亚 3
-      - 🇺🇸 美国 44
-      - g 38
-      - 🇮🇹 意大利🚀g 10
-      - g 39
-      - g 40
-      - g 41
-      - g 42
-      - 🇺🇸 美国🚀g 8
-      - g 43
-      - g 44
-      - g 45
-      - g 46
-      - 🇷🇴 罗马尼亚🚀g 2
-      - g 47
-      - g 48
-      - g 49
-      - 🇸🇬 us.New York-28@1Gbps节点更新ha
-      - 🇸🇬 us.New York-29@1Gbps节点更新ha
-      - 🇸🇬 us.New York-3@1Gbps节点更新ha
-      - 🇸🇬 us.New York-4@1Gbps节点更新ha
-      - 🇸🇬 us.New York-5@1Gbps节点更新ha
-      - 🇸🇬 us.New York-6@1Gbps节点更新ha
-      - 🇸🇬 us.New York-7@1Gbps节点更新ha
-      - 🇸🇬 us.New York-8@1Gbps节点更新ha
-      - 🇸🇬 us.New York-9@1Gbps节点更新ha
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国02 | 中转AZ | 流媒体
-      - 🇸🇬 美国-10@1Gbps节点更新ha
-      - 🇸🇬 美国-11@1Gbps节点更新ha
+      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
       - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 Y17-HK-7
-      - 🇭🇰 Y17-HK-7 2
-      - 🇭🇰 Y18-HK-7
-      - 🇯🇵 日本 ☆☆ 02 ☆GMO☆  1.2x
       - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇳🇱 荷兰 ☆☆  01 ☆AWS☆  1.2x
+      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
+      - 🇯🇵 日本(JP)Japan/Tokyo
+      - 🇯🇵 日本(JP)Japan/Osaka
+      - 🇺🇸 美国(US)USA/Denver
+      - 🇺🇸 美国(US)USA/Salt Lake City
+      - 🇺🇸 美国(US)USA/Miami
+      - 🇺🇸 美国(US)USA/Boston
+      - 🇺🇸 美国(US)USA/Buffalo
+      - 🇺🇸 美国(US)USA/Flushing
+      - 🇺🇸 美国(US)USA/Manassas
+      - 🇺🇸 美国(US)USA/San Jose
+      - 🇸🇬 gq - 新加坡Amazon数据中心 1
+      - 🇺🇸 gq - 美国惠普HP 2
+      - 🇭🇰 gq - 香港Amazon数据中心 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
