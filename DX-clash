@@ -5,173 +5,404 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x, server: rw3r.xyz, port: 57079, type: vmess, uuid: 0a4c1cdb-3d06-3de3-b997-fab025b2ec18, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /JpzsmqibHG06w, ws-headers: {Host: jpn03.dawjfier001.space}}
-  - {name: 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x, server: hk3.uuv2.co.uk, port: 1016, type: vmess, uuid: 7fa9d805-7d70-486a-81a8-7249dcd908cd, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: hk3.uuv2.co.uk}}
-  - {name: 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x, server: 52.223.4.234, port: 54527, type: vmess, uuid: eadcd39f-6804-3b8b-9943-65df7198a553, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: 52.223.4.234}}
-  - {name: 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x, server: www.17080100.xyz, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17080100.xyz}}
-  - {name: 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x, server: 154.84.1.152, port: 443, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.65198831.xyz}}
-  - {name: 🇯🇵 日本(JP)Japan/Tokyo, server: 52.199.19.113, port: 80, type: vmess, uuid: f830d6df-0a72-4fd4-c434-57a0fe1c811e, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 52.199.19.113}}
-  - {name: 🇯🇵 日本(JP)Japan/Osaka, server: 15.152.41.22, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇺🇸 美国(US)USA/Denver, server: 212.102.44.71, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇺🇸 美国(US)USA/Salt Lake City, server: 104.200.131.172, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇺🇸 美国(US)USA/Miami, server: 89.187.173.201, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇺🇸 美国(US)USA/Boston, server: 173.237.207.11, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 美国(US)USA/Buffalo, server: 172.93.153.148, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇺🇸 美国(US)USA/Flushing, server: 104.244.208.203, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 美国(US)USA/Manassas, server: 23.105.163.109, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 美国(US)USA/San Jose, server: 209.58.128.48, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇸🇬 gq - 新加坡Amazon数据中心 1, server: 13.251.44.93, port: 80, type: vmess, uuid: ca167929-58be-44f6-e449-2b624626baa1, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.251.44.93}}
-  - {name: 🇺🇸 gq - 美国惠普HP 2, server: 16.162.118.217, port: 443, type: vmess, uuid: a076dc92-8e3f-4ad9-f93e-276562007d93, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.162.118.217}}
-  - {name: 🇭🇰 gq - 香港Amazon数据中心 3, server: jb.wocaonimabi666.xyz, port: 16668, type: vmess, uuid: 6e351ded-1fc1-48f6-9f11-8c1d9621edd6, alterId: 0, cipher: auto, tls: false}
+  - {name: hm|捷克共和国(CZ)Czech Republic/Prague, server: 185.180.14.147, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8, server: c39s4.jamjams.net, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false}
+  - {name: 🇫🇷 hm|法国(FR)France/Roubaix, server: 176.31.146.89, port: 4040, type: ss, cipher: aes-256-gcm, password: AMvZHPXhPk6t}
+  - {name: 🇬🇧 hm|英国(GB)United Kiongdom/London, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇹 hm|意大利(IT)Italy/Rome, server: 37.120.207.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 hm|美国(US)USA/Fremont 2, server: 23.83.227.244, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false}
+  - {name: 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2, server: 138.199.19.186, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇩🇪 hm|德国(DE)Germany/Berlin, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 hm|美国(US)USA/Chicago 12, server: 172.67.182.11, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg-06.yinriver.top}}
+  - {name: 🇮🇹 hm|意大利(IT)Italy/Milan, server: 217.138.219.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2, server: 84.17.53.210, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9, server: 164.90.204.216, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 164.90.204.216}}
+  - {name: 🇮🇹 hm|意大利(IT)Italy/Milan 2, server: 185.213.21.7, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10, server: 163.172.214.118, port: 56282, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3, server: 138.199.19.162, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen, server: 37.120.194.163, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国, server: hk10-gray.dukou.info, port: 8310, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk10-gray.dukou.info}
+  - {name: 🇺🇸 美国 2, server: sg-cn-hk-relay-2-54bc52.dukou.info, port: 9302, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-2-54bc52.dukou.info}
+  - {name: 🇭🇰 香港, server: hk12-5510.dukouplan3.dev, port: 8012, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk12-5510.dukouplan3.dev}
+  - {name: 🇭🇰 香港 2, server: zf.proxypools.top, port: 33826, type: vmess, uuid: e73edc5d-2eef-47c1-a2e3-6d202e3478bf, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shenseven, ws-headers: {Host: zf.proxypools.top}}
+  - {name: 🇭🇰 香港 3, server: hk-route-12369-9.dukou.info, port: 8309, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk-route-12369-9.dukou.info}
+  - {name: 🇭🇰 香港 4, server: hk-route-12369-1.dukou.info, port: 8301, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk-route-12369-1.dukou.info}
+  - {name: 🇸🇬 新加坡, server: sg-cn-hk-relay-5-51f087.dukou.info, port: 9305, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-5-51f087.dukou.info}
+  - {name: 🇸🇬 新加坡 2, server: sg-cn-hk-relay-1-767f45.dukou.info, port: 9301, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-1-767f45.dukou.info}
+  - {name: 🇭🇰 香港 5, server: hk-route2-azure-hk8.dukou.info, port: 8308, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk-route2-azure-hk8.dukou.info}
+  - {name: 🇸🇬 新加坡 3, server: sg-cn-relay-8-14852.dukou.info, port: 9308, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-relay-8-14852.dukou.info}
+  - {name: 🇭🇰 香港 6, server: zf.proxypools.top, port: 45545, type: vmess, uuid: e73edc5d-2eef-47c1-a2e3-6d202e3478bf, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇸🇬 新加坡 4, server: sg-cn-hk-relay-4-40e978.dukou.info, port: 9304, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-4-40e978.dukou.info}
+  - {name: 🇺🇸 美国 3, server: gggz.quickairport.top, port: 21831, type: vmess, uuid: 943c710e-273c-4a48-b52c-8ab43049a08b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gggz.quickairport.top}}
+  - {name: 🇨🇳 台湾, server: tw7-5756.dukouplan3.dev, port: 5307, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: tw7-5756.dukouplan3.dev}
+  - {name: 🇭🇰 香港 7, server: hk-route-12369-6.dukou.info, port: 8306, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk-route-12369-6.dukou.info}
+  - {name: 🇨🇳 台湾 2, server: tw6-5641.dukouplan3.dev, port: 5306, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: tw6-5641.dukouplan3.dev}
+  - {name: 🇭🇰 香港 8, server: zf.proxypools.top, port: 50318, type: vmess, uuid: e73edc5d-2eef-47c1-a2e3-6d202e3478bf, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /tg2shenseven, ws-headers: {Host: zf.proxypools.top}}
+  - {name: 🇸🇬 新加坡 5, server: sg-cn-relay-7-74812.dukou.info, port: 9307, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-relay-7-74812.dukou.info}
+  - {name: 🇺🇸 美国 4, server: shanghai-router2-hk4-5478.dukou.info, port: 8304, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: shanghai-router2-hk4-5478.dukou.info}
+  - {name: 🇭🇰 香港 9, server: hkaz2.biteb.club, port: 54546, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz2.biteb.club}}
+  - {name: 🇭🇰 香港 10, server: hk-cnrelay-13-138465.dukou.info, port: 8313, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk-cnrelay-13-138465.dukou.info}
+  - {name: 🇨🇳 台湾 3, server: tw4-5545.dukouplan3.dev, port: 5304, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: tw4-5545.dukouplan3.dev}
+  - {name: 🇺🇸 美国 5, server: hk11-5423.dukouplan3.dev, port: 8011, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: hk11-5423.dukouplan3.dev}
+  - {name: 🇸🇬 新加坡 6, server: anycast.live.hk-b.starseadata.com, port: 44817, type: vmess, uuid: 1fc889fc-cd4d-4925-97f7-ff182bd73ded, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: anycast.live.hk-b.starseadata.com}}
+  - {name: 🇺🇸 美国 6, server: 143.244.57.99, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇭🇰 香港 11, server: zf.proxypools.top, port: 31616, type: vmess, uuid: e73edc5d-2eef-47c1-a2e3-6d202e3478bf, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shensevens, ws-headers: {Host: zf.proxypools.top}}
+  - {name: 🇸🇬 新加坡 7, server: sg-cn-hk-relay-3-dd4440.dukou.info, port: 9303, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-3-dd4440.dukou.info}
+  - {name: 🇨🇳 台湾 4, server: tw-cn-hk-relay-1-97861a.dukou.info, port: 5301, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: tw-cn-hk-relay-1-97861a.dukou.info}
+  - {name: 🇨🇳 台湾 5, server: tw-cn-hk-relay-2-184a76.dukou.info, port: 5302, type: trojan, password: f2b8d872-3462-11e9-96d3-020b85e0a428, sni: tw-cn-hk-relay-2-184a76.dukou.info}
+  - {name: 🇭🇰 香港 12, server: hkaz1.biteb.club, port: 54411, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz1.biteb.club}}
+  - {name: 🇺🇸 美国 7, server: 138.199.19.182, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国 8, server: 143.244.56.230, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇭 瑞士, server: 84.17.53.210, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇭🇰 香港 11
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -187,24 +418,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 ☆☆ 01 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
-      - 🇭🇰 香港 ☆☆ 05 ☆GMO☆  1.2x
-      - 🇺🇸 美国 ☆☆ 02 ☆NTT☆   1.2x
-      - 🇺🇸 美国 ☆☆ 03 ☆NTT☆   1.2x
-      - 🇯🇵 日本(JP)Japan/Tokyo
-      - 🇯🇵 日本(JP)Japan/Osaka
-      - 🇺🇸 美国(US)USA/Denver
-      - 🇺🇸 美国(US)USA/Salt Lake City
-      - 🇺🇸 美国(US)USA/Miami
-      - 🇺🇸 美国(US)USA/Boston
-      - 🇺🇸 美国(US)USA/Buffalo
-      - 🇺🇸 美国(US)USA/Flushing
-      - 🇺🇸 美国(US)USA/Manassas
-      - 🇺🇸 美国(US)USA/San Jose
-      - 🇸🇬 gq - 新加坡Amazon数据中心 1
-      - 🇺🇸 gq - 美国惠普HP 2
-      - 🇭🇰 gq - 香港Amazon数据中心 3
+      - hm|捷克共和国(CZ)Czech Republic/Prague
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 8
+      - 🇫🇷 hm|法国(FR)France/Roubaix
+      - 🇬🇧 hm|英国(GB)United Kiongdom/London
+      - 🇮🇹 hm|意大利(IT)Italy/Rome
+      - 🇺🇸 hm|美国(US)USA/Fremont 2
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 2
+      - 🇩🇪 hm|德国(DE)Germany/Berlin
+      - 🇺🇸 hm|美国(US)USA/Chicago 12
+      - 🇮🇹 hm|意大利(IT)Italy/Milan
+      - 🇨🇭 hm|瑞士(CH)Switzerland/Zürich 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 9
+      - 🇮🇹 hm|意大利(IT)Italy/Milan 2
+      - 🇳🇱 hm|荷兰(NL)Netherlands/Amsterdam 10
+      - 🇩🇪 hm|德国(DE)Germany/Frankfurt am Main 3
+      - 🇩🇰 hm|丹麦(DK)Denmark/Copenhagen
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 2
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 3
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡 4
+      - 🇺🇸 美国 3
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 7
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 8
+      - 🇸🇬 新加坡 5
+      - 🇺🇸 美国 4
+      - 🇭🇰 香港 9
+      - 🇭🇰 香港 10
+      - 🇨🇳 台湾 3
+      - 🇺🇸 美国 5
+      - 🇸🇬 新加坡 6
+      - 🇺🇸 美国 6
+      - 🇭🇰 香港 11
+      - 🇸🇬 新加坡 7
+      - 🇨🇳 台湾 4
+      - 🇨🇳 台湾 5
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇨🇭 瑞士
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
