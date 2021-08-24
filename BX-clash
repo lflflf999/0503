@@ -5,734 +5,543 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: hk3.uuv2.co.uk, port: 2053, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /@mftizi, ws-headers: {Host: hk3.uuv2.co.uk}}
+  - {name: 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo, server: 54.95.74.195, port: 14557, type: vmess, uuid: 455125c4-cd4c-49da-fe0b-27db6e7b02ca, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.95.74.195}}
+  - {name: 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2, server: jp2.uuv2.uk, port: 2053, type: vmess, uuid: e62b33ef-a6f7-46f4-999b-353cfe1d404b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /@mftizi, ws-headers: {Host: jp2.uuv2.uk}}
+  - {name: 🇯🇵 【直连】NRT/东京 A - 2, server: 022.JP.AP.POP.BIGAIRPORT.NET, port: 443, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: 022.JP.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 8, server: 048.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 048.HK.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇯🇵 【直连】NRT/东京 A - 3, server: 023.JP.AP.POP.BIGAIRPORT.NET, port: 443, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: 023.JP.AP.POP.BIGAIRPORT.NET}}
+  - {name: "🇯🇵 [1x] 日本-1-直连入口", server: zl-jp-1.no-ne.xyz, port: 10161, type: vmess, uuid: a4a7353a-6462-4dc1-83ee-3bc6f6820673, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /alun, ws-headers: {Host: zl-jp-1.no-ne.xyz}}
   - {name: 🇯🇵 hm|日本(JP)Japan/Tokyo, server: jp2.uuv2.co.uk, port: 1016, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: jp2.uuv2.co.uk}}
-  - {name: 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo, server: jp2.uuv2.uk, port: 2053, type: vmess, uuid: e62b33ef-a6f7-46f4-999b-353cfe1d404b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /@mftizi, ws-headers: {Host: jp2.uuv2.uk}}
-  - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2, server: zza1.uuv2.uk, port: 5201, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: jp01.uuv2.uk}}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles, server: 154.17.1.245, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2, server: 154.17.2.54, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: YazuZ2ZE9p5Rn3CANKlD6SqC0OTSyXBIReypacD4Fae8gx87lOD3SY33jFAwCx}
-  - {name: 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb, server: 84.17.41.77, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3, server: 154.17.2.31, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 US_551, server: 154.17.5.133, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 US_562, server: 154.17.2.121, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 US_548, server: 154.17.2.149, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 US_554, server: 154.17.2.117, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: 2SYSIDnBqT5eCl736xlD4yODaXaSF9EeNp3OZcpjyC8ARYwA0zgC83aKxFZRu3}
-  - {name: 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb, server: 84.17.41.77, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 付费节点, server: 84.17.41.83, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4, server: 154.17.2.109, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: l3Y9yKCBaT5SnpFFOe834yqIaXwSpRxz3l7D3Aua82ZgcSNZDCO6AexYDCE0Rj}
-  - {name: 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了, server: 84.17.41.77, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 US_553, server: 154.17.2.153, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5, server: 154.17.2.160, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle, server: 84.17.41.77, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb, server: 192.111.134.195, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3, server: zza1.uuv2.uk, port: 5401, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /@mftizi, ws-headers: {Host: kr02.uuv2.uk}}
-  - {name: CA（感谢关注youtube：8度科技）, server: c39s4.jamjams.net, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6, server: 154.17.2.142, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7, server: 192.111.134.195, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2, server: 185.242.5.147, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 US_563, server: 154.17.1.251, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb, server: 212.102.44.86, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem, server: 91.90.123.131, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 US_555, server: 154.17.5.184, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam, server: 104.245.96.219, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 5, server: 118.107.244.111, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas, server: 185.242.5.147, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了, server: 37.19.199.209, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 3, server: 043.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 043.HK.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇯🇵 【直连】NRT/东京 A - 5, server: 025.JP.AP.POP.BIGAIRPORT.NET, port: 443, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: 025.JP.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 6, server: 046.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 046.HK.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 10, server: 050.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 050.HK.AP.POP.BIGAIRPORT.NET}}
+  - {name: 免费订阅-中转2, server: az.freehk.miao.rest, port: 29999, type: vmess, uuid: c3cd5c42-9527-4777-973d-a9d33b30bb9a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: edith.xiaohongshu.com}}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 5, server: 045.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 045.HK.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles, server: 154.17.2.54, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: YazuZ2ZE9p5Rn3CANKlD6SqC0OTSyXBIReypacD4Fae8gx87lOD3SY33jFAwCx}
+  - {name: "🇭🇰 [1x] 香港-2-温州入口", server: 101.67.14.216, port: 16852, type: vmess, uuid: a4a7353a-6462-4dc1-83ee-3bc6f6820673, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /alun, ws-headers: {Host: 101.67.14.216}}
+  - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: zza1.uuv2.uk, port: 5201, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: jp01.uuv2.uk}}
+  - {name: "🇰🇷 [1x] 韩国-1-直连入口", server: zl-kr-1.no-ne.xyz, port: 10161, type: vmess, uuid: a4a7353a-6462-4dc1-83ee-3bc6f6820673, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /alun, ws-headers: {Host: zl-kr-1.no-ne.xyz}}
   - {name: 🇺🇸 US_550, server: 154.17.2.211, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: ZECSlaTZea5jFO736FA3Ry3DaXRA2qNx0pceYDzKCuYS8gl3B4p8InwyDCOSx9}
-  - {name: 馃嚚馃嚘CA_1957 |75.14Mb, server: 208.78.41.202, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 洛杉矶（感谢关注youtube：8度科技）, server: 185.242.5.149, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb, server: 199.10.64.99, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 乌克兰（感谢关注youtube：8度科技）, server: 37.19.199.209, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3, server: 185.242.5.149, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 sfzy888.com _🇺🇸US_576, server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb, server: 199.10.64.99, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 亚特兰大（感谢关注youtube：8度科技）, server: 198.8.92.69, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）, server: 91.90.123.131, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 付费节点 2, server: 217.138.219.229, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 付费节点 3, server: 212.102.46.56, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 付费节点 4, server: 199.10.64.99, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2, server: 147.78.12.75, port: 16823, type: vmess, uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0, alterId: 0, cipher: auto, tls: false}
-  - {name: 捷克 布拉格（感谢关注youtube：8度科技）, server: 217.138.219.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 克罗地亚（感谢关注youtube：8度科技）, server: 176.222.34.113, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2, server: 217.138.211.221, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester, server: 84.39.114.86, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris, server: 217.138.207.251, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2, server: 185.242.5.149, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 107.181.177.181, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3, server: 104.245.96.219, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false}
-  - {name: 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb, server: 199.10.64.99, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君) 2, server: 217.138.216.243, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich, server: 45.12.222.245, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 关注http://dwz.date/dUtE免费领取🚀MiDnight来了, server: 37.120.143.117, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: "??GB_4773", server: 89.238.130.253, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4, server: 66.115.182.79, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3, server: 91.90.123.131, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 克罗地亚（感谢关注youtube：8度科技） 2, server: 176.222.34.113, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君), server: 199.10.64.99, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君) 3, server: 84.247.51.251, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2, server: 84.247.51.251, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 付费节点 5, server: 217.138.219.229, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: "??AT_1272 |53.83Mb", server: 5.253.207.85, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: "??AT_1274 |53.61Mb", server: 5.253.207.85, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2, server: 37.120.213.5, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4, server: 217.138.199.179, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo, server: 107.191.112.214, port: 80, type: vmess, uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 107.191.112.214}}
-  - {name: 付费节点 6, server: 37.19.199.209, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 乌克兰（感谢关注youtube：8度科技） 2, server: 37.19.199.209, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2, server: 86.106.136.85, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5, server: 193.29.106.100, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin, server: 193.29.106.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）, server: 37.120.207.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main, server: 185.93.180.101, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3, server: 45.89.174.83, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6, server: 193.29.106.179, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7, server: 217.138.211.221, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8, server: 5.253.205.229, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb, server: 37.120.143.117, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）, server: 84.39.114.86, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君) 4, server: 193.29.106.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta, server: 66.115.182.79, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇷🇴 sfzy888.com _🇷🇴RO_366, server: 193.29.106.5, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb, server: 199.10.64.99, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇭🇰 YouTube-阿伟科技13-HK-20, server: 54.254.45.125, port: 9999, type: ss, cipher: chacha20-ietf-poly1305, password: 1f0ffe8e-02b9-4246-86b4-541449b7ae67}
-  - {name: "??GB_4390", server: 89.238.130.253, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford, server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）, server: 82.102.17.181, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 卢森堡, server: 185.153.151.104, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）, server: 87.101.94.213, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 4, server: 044.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: acde5e85-0f47-464e-b9b7-ab6925134e9e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 044.HK.AP.POP.BIGAIRPORT.NET}}
+  - {name: 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了, server: 84.17.41.77, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 US_562, server: 154.17.2.121, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
   - {name: 🇺🇸 US_667, server: 154.17.2.162, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 斯洛伐克（感谢关注youtube：8度科技）, server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 hm|美国(US)USA/Denver, server: 212.102.44.86, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜, server: 217.138.211.221, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb, server: 84.17.41.77, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 付费节点, server: 217.138.219.229, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）, server: 91.90.123.131, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2, server: 192.111.134.195, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 免费订阅-中转1, server: bj.freehk.miao.rest, port: 29999, type: vmess, uuid: c3cd5c42-9527-4777-973d-a9d33b30bb9a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: edith.xiaohongshu.com}}
+  - {name: 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb, server: 192.111.134.195, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb, server: 199.10.64.99, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb, server: 199.10.64.99, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb, server: 199.10.64.99, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）, server: 172.241.114.87, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2, server: 172.241.114.87, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 193.29.106.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3, server: 154.17.2.160, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb, server: 212.102.44.86, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont, server: c2s801.jamjams.net, port: 59710, type: vmess, uuid: e2078136-6651-409b-8b57-36c3361ffd3e, alterId: 8, cipher: auto, tls: false}
+  - {name: 付费节点 2, server: 217.138.219.229, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 2, server: 217.138.216.243, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇹 意大利 米兰（感谢关注youtube：8度科, server: 82.102.26.60, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 3, server: 107.181.177.181, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb, server: 199.10.64.99, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb, server: 199.10.64.99, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb, server: 199.10.64.99, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris, server: 45.89.174.83, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 付费节点 3, server: 199.10.64.99, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem, server: 91.90.123.131, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 亚特兰大（感谢关注youtube：8度科技）, server: 198.8.92.69, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb, server: 193.29.106.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb, server: 199.10.64.99, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 关注http://dwz.date/dUtE免费领取🚀MiDnight来了, server: 37.120.143.117, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇸🇬 节点更新https://bit.ly/3uWuS7a, server: 185.217.71.245, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇩🇪 德国(欢迎订阅Youtube破解资源君), server: 217.138.216.243, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main, server: 185.93.180.101, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇨🇦 加拿大(CA)Canada/Vancouver, server: 107.181.177.181, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb, server: 199.10.64.99, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb, server: 199.10.64.99, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb, server: 199.10.64.99, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2, server: zza1.uuv2.uk, port: 5401, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /@mftizi, ws-headers: {Host: kr02.uuv2.uk}}
+  - {name: 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜, server: 163.172.214.118, port: 18770, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2, server: 37.120.196.51, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）, server: 87.101.94.211, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb, server: 199.10.64.99, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇷🇴 罗马尼亚, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "??AT_1274 |53.61Mb", server: 5.253.207.85, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester, server: 84.39.114.86, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇸🇬 节点更新https://bit.ly/3uWuS7a 2, server: 217.138.207.251, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb, server: 193.29.106.100, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 🇭🇰 【直连】HKG/香港 C - 5
+      - 🇭🇰 [1x] 香港-2-温州入口
       - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇭🇰 【直连】HKG/香港 C - 4
       - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - 🇭🇰 香港 5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -748,104 +557,76 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇯🇵 hm|日本(JP)Japan/Tokyo
       - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/Tokyo 2
+      - 🇯🇵 【直连】NRT/东京 A - 2
+      - 🇭🇰 【直连】HKG/香港 C - 8
+      - 🇯🇵 【直连】NRT/东京 A - 3
+      - 🇯🇵 [1x] 日本-1-直连入口
+      - 🇯🇵 hm|日本(JP)Japan/Tokyo
+      - 🇭🇰 【直连】HKG/香港 C - 3
+      - 🇯🇵 【直连】NRT/东京 A - 5
+      - 🇭🇰 【直连】HKG/香港 C - 6
+      - 🇭🇰 【直连】HKG/香港 C - 10
+      - 免费订阅-中转2
+      - 🇭🇰 【直连】HKG/香港 C - 5
       - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇺🇸 馃嚭馃嚫US_9651 |58.12Mb
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇺🇸 US_551
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇰🇷 [1x] 韩国-1-直连入口
+      - 🇺🇸 US_550
+      - 🇭🇰 【直连】HKG/香港 C - 4
+      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
       - 🇺🇸 US_562
-      - 🇺🇸 US_548
-      - 🇺🇸 US_554
+      - 🇺🇸 US_667
+      - 🇺🇸 hm|美国(US)USA/Denver
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
       - 🇺🇸 馃嚭馃嚫US_13003 |66.85Mb
       - 付费节点
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_553
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Seattle
-      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
-      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 3
-      - CA（感谢关注youtube：8度科技）
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 6
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 7
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇺🇸 US_563
-      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
-      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
-      - 🇺🇸 US_555
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam
-      - 🇭🇰 香港 5
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - 🇺🇸 US_550
-      - 馃嚚馃嚘CA_1957 |75.14Mb
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇺🇸 馃嚭馃嚫US_11071 |51.00Mb
-      - 乌克兰（感谢关注youtube：8度科技）
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 🇺🇸 sfzy888.com _🇺🇸US_576
-      - 🇺🇸 馃嚭馃嚫US_11437 |23.60Mb
-      - 亚特兰大（感谢关注youtube：8度科技）
       - 🇷🇴 罗马尼亚（感谢关注youtube：8度科技）
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 2
-      - 捷克 布拉格（感谢关注youtube：8度科技）
-      - 克罗地亚（感谢关注youtube：8度科技）
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Las Vegas 2
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 免费订阅-中转1
+      - 🇺🇸 馃嚭馃嚫US_13555 |52.35Mb
+      - 🇺🇸 馃嚭馃嚫US_10776 |30.99Mb
+      - 🇺🇸 馃嚭馃嚫US_11055 |22.98Mb
+      - 🇺🇸 馃嚭馃嚫US_10987 | 7.78Mb
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技）
+      - 🇺🇸 美国 达拉斯（感谢关注youtube：8度科技） 2
       - 欧洲(欢迎订阅Youtube破解资源君)
-      - 🇳🇱 https://www.mattkaydiary.com|荷兰(NL)Netherlands/Amsterdam 3
-      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇺🇸 馃嚭馃嚫US_9817 |113.39Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Fremont
+      - 付费节点 2
       - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich
-      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
-      - ??GB_4773
-      - 🇺🇸 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 3
-      - 克罗地亚（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇮🇹 意大利 米兰（感谢关注youtube：8度科
       - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 2
-      - 付费节点 5
-      - ??AT_1272 |53.83Mb
-      - ??AT_1274 |53.61Mb
-      - 🇨🇭 https://www.mattkaydiary.com|瑞士(CH)Switzerland/Zürich 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/London
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/El Segundo
-      - 付费节点 6
-      - 乌克兰（感谢关注youtube：8度科技） 2
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester 2
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 5
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Berlin
-      - 🇦🇹 奥地利 维也纳（感谢关注youtube：8度科技）
-      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
-      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris 3
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 6
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 7
-      - 欧洲🚀关注http://dwz.date/dUtE免费领取🚀MiDnight来了 8
-      - 🇧🇪 馃嚙馃嚜BE_1770 |18.92Mb
-      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
-      - 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Atlanta
-      - 🇷🇴 sfzy888.com _🇷🇴RO_366
+      - 🇺🇸 馃嚭馃嚫US_10845 |47.15Mb
+      - 🇺🇸 馃嚭馃嚫US_10725 |11.11Mb
+      - 🇺🇸 馃嚭馃嚫US_10644 |46.91Mb
+      - 🇫🇷 https://www.mattkaydiary.com|法国(FR)France/Paris
+      - 付费节点 3
+      - 🇧🇪 https://www.mattkaydiary.com|比利时(BE)Belgium/Zaventem
+      - 亚特兰大（感谢关注youtube：8度科技）
+      - 🇷🇴 馃嚪馃嚧RO_7767 |55.87Mb
       - 🇺🇸 馃嚭馃嚫US_13991 |51.87Mb
-      - 🇭🇰 YouTube-阿伟科技13-HK-20
-      - ??GB_4390
-      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Stretford
-      - 🇩🇪 西班牙 马德里（感谢关注youtube：8度科技）
-      - 卢森堡
+      - 关注http://dwz.date/dUtE免费领取🚀MiDnight来了
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
+      - 🇩🇪 https://www.mattkaydiary.com|德国(DE)Germany/Frankfurt am Main
+      - 🇨🇦 加拿大(CA)Canada/Vancouver
+      - 🇺🇸 馃嚭馃嚫US_11477 |47.71Mb
+      - 🇺🇸 馃嚭馃嚫US_11546 |39.33Mb
+      - 🇺🇸 馃嚭馃嚫US_10801 |42.11Mb
+      - 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇳🇱 荷兰🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - 🇩🇪 德国(欢迎订阅Youtube破解资源君) 2
       - 🇮🇹 意大利 罗马（感谢关注youtube：8度科技）
-      - 🇺🇸 US_667
-      - 斯洛伐克（感谢关注youtube：8度科技）
+      - 🇺🇸 馃嚭馃嚫US_10986 |46.39Mb
+      - 🇷🇴 罗马尼亚
+      - ??AT_1274 |53.61Mb
+      - 🇬🇧 https://www.mattkaydiary.com|英国(GB)United Kiongdom/Manchester
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
+      - 🇷🇴 馃嚪馃嚧RO_7770 |57.92Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
