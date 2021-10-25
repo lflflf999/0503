@@ -5,513 +5,1449 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: T, server: 27.131.164.100, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: T 2, server: 66.115.177.156, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: T 3, server: 79.110.54.133, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: T 4, server: 86.106.136.93, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: T 5, server: 172.105.172.37, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 6, server: 167.88.63.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 7, server: 38.114.114.49, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 8, server: 51.77.53.200, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 9, server: 66.115.177.156, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: T 10, server: 51.77.52.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 11, server: 38.64.138.14, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 12, server: 85.208.108.90, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 13, server: 51.77.53.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 14, server: 27.131.164.94, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: T 15, server: 176.125.231.5, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇺🇸 美国f 13, server: 134.195.196.110, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 加拿大f 5, server: 198.57.27.233, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国f 14, server: 172.99.190.186, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国f 15, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇷🇴 罗马尼亚f, server: 193.29.107.125, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇺🇸 美国f 16, server: 66.115.177.143, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇷🇴 罗马尼亚f 2, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 美国f 17, server: 167.88.63.108, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国f 18, server: 134.195.196.130, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 法国f, server: 185.166.84.81, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 挪威f, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国f 19, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇷🇴 罗马尼亚f 3, server: 193.29.107.125, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: 🇫🇷 法国f 2, server: 185.166.84.81, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇬🇧 英国f, server: 193.118.60.166, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国f 20, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 西班牙f, server: 38.39.192.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: T 16, server: 27.131.164.100, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: T 17, server: 27.131.164.94, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇷🇴 馃嚪馃嚧RO_9700, server: 193.29.107.125, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: 🇷🇴 馃嚪馃嚧RO_9845, server: 193.29.107.125, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 馃嚭馃嚫US_15748, server: 199.58.187.67, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 馃嚭馃嚫US_16588, server: 45.43.19.92, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇺🇸 馃嚭馃嚫US_12506, server: 154.16.168.186, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: 🇺🇸 馃嚭馃嚫US_13434, server: 199.58.187.8, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇺🇸 馃嚭馃嚫US_13766, server: 199.58.187.8, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇺🇸 馃嚭馃嚫US_14878, server: 199.58.187.8, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇺🇸 馃嚭馃嚫US_17287, server: 192.154.255.52, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 馃嚭馃嚫US_12497, server: 154.16.168.186, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: 🇺🇸 馃嚭馃嚫US_13317, server: 192.111.134.78, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 馃嚭馃嚫US_13745, server: 192.111.134.222, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 馃嚭馃嚫US_14149, server: 185.246.209.52, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇺🇸 馃嚭馃嚫US_15391, server: 154.16.168.184, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 馃弫ZZ_18950, server: 138.199.42.155, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 馃弫ZZ_19017, server: 134.195.196.154, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃嚨馃嚤PL_8481, server: 37.28.156.117, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇷🇴 馃嚪馃嚧RO_9718, server: 193.29.107.125, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇷🇴 馃嚪馃嚧RO_10327, server: 79.110.54.133, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇺🇸 馃嚭馃嚫US_12509, server: 154.16.168.186, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇺🇸 馃嚭馃嚫US_12538, server: 154.16.168.186, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: T 18, server: 79.110.54.91, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: T 19, server: 61.14.210.232, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: T 20, server: 61.14.210.232, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: T 21, server: 27.131.164.94, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: T 22, server: 27.131.164.94, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: T 23, server: 61.14.210.232, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: T 24, server: 27.131.164.100, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: T 25, server: 79.110.54.133, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: T 26, server: 79.110.54.91, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: T 27, server: 172.252.99.16, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: T 28, server: 172.252.99.26, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: T 29, server: 27.131.164.100, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 亚洲负载均衡, server: fz.v2ray.asia, port: 25349, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK A JM, server: jm.v2ray.asia, port: 31262, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK A GZA, server: gya.v2ray.asia, port: 33532, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |, server: qington001.baiyun.pw, port: 909, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | B | 1.5x | 白银 |, server: cmbaiying001.baiyun.pw, port: 961, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |, server: awsjp1.baiyun.cyou, port: 13011, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | C | 1.5x | 白银 |, server: cmbaiying001.baiyun.pw, port: 934, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |, server: awsjp1.baiyun.cyou, port: 18071, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | D | 1.5x | 白银 |, server: cmbaiying001.baiyun.pw, port: 938, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | E | 1.5x | 白银 |, server: cmbaiying001.baiyun.pw, port: 939, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇯🇵 日本 | F | 1.5x | 白银 |, server: cmbaiying001.baiyun.pw, port: 942, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇫🇷 法国 | A | 2.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 920, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: azfae}}
+  - {name: 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 49004, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZADLY1.baiyun.cyou}}
+  - {name: 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 47007, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: azael1.baiyun.cyou}}
+  - {name: 🇨🇭 瑞士 | A | 2.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 935, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: azruishi1.baiyun.cyou}}
+  - {name: 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |, server: gonyi2.baiyun.pw, port: 837, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国  | A |  1.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 925, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: e}}
+  - {name: 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |, server: CMZS1.baiyun.cyou, port: 49006, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: linodemeixi1.baiyun.cyou}}
+  - {name: 🇺🇸 美国 | A | 0.1x | 青銅 |, server: qtdojjs1.baiyun.cyou, port: 10001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | A | 1.5x | 白银 |, server: cmbaiying001.baiyun.pw, port: 941, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | B | 0.1x | 青銅 |, server: qtdojjs1.baiyun.cyou, port: 20001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | C | 0.1x | 青銅 |, server: qtdojjs2.baiyun.cyou, port: 10001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |, server: cmzhuangshi001.baiyun.pw, port: 947, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: dmitmg001.baiyun.cyou}}
+  - {name: 🇺🇸 美国 | D | 0.1x | 青銅 |, server: qtdojjs2.baiyun.cyou, port: 20001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | E | 0.1x | 青銅 |, server: qtdojjs3.baiyun.cyou, port: 20001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | F | 0.1x | 青銅 |, server: qtdojjs3.baiyun.cyou, port: 10001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |, server: gonyi2.baiyun.pw, port: 889, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |, server: gonyi2.baiyun.pw, port: 839, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇬🇧 英国  | A | 2.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 47003, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: azyg1.baiyun.cyou}}
+  - {name: 🇳🇱 荷兰 | A | 2.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 940, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: azhl1.baiyun.cyou}}
+  - {name: 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |, server: cmzhuangshi001.baiyun.pw, port: 944, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: yuenan1.baiyun.cyou}}
+  - {name: 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |, server: CMZS1.baiyun.cyou, port: 943, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: JGWDB1.baiyun.cyou}}
+  - {name: 阿拉伯  | A |  2.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 47006, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: azalb.baiyun.cyou}}
+  - {name: 阿联酋  | A | 2.0x | 钻石 | 原生 |, server: CMZS1.baiyun.cyou, port: 955, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZALQ1.baiyun.cyou}}
+  - {name: 🇰🇷 韩国  | A |  1.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 47005, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /jiayou, ws-headers: {Host: azhg1.baiyun.cyou}}
+  - {name: 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |, server: qington001.baiyun.pw, port: 916, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |, server: qington001.baiyun.pw, port: 906, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |, server: awshg1.baiyun.cyou, port: 821, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |, server: awshg1.baiyun.cyou, port: 815, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |, server: CMZS1.baiyun.cyou, port: 956, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: xingazhk1.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |, server: CMZS1.baiyun.cyou, port: 959, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: xingazhk1.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |, server: CMZS1.baiyun.cyou, port: 948, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: m.sc.189.cn}}
+  - {name: 🇭🇰 香港  | D |  1.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 923, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZHKD.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | E |  1.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 924, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZHKE.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |, server: CMZS1.baiyun.cyou, port: 957, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: xingazhk1.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | G |  1.0x | 钻石 |, server: CMZS1.baiyun.cyou, port: 926, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZHKG.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |, server: CMZS1.baiyun.cyou, port: 960, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: xingazhk1.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | I |  1.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 47001, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZHKI.baiyun.cyou}}
+  - {name: 🇭🇰 香港  | J |  1.0x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 945, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZHKJ.baiyun.cyou}}
+  - {name: 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |, server: test1.baiyun.pw, port: 80, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2aaa, ws-headers: {Host: test.baiyun.pw}}
+  - {name: 🇭🇰 香港 | K | 1x | 钻石 |, server: cmzhuangshi001.baiyun.pw, port: 927, type: vmess, uuid: 0fd44f5b-8544-32f9-8653-31f4df96056d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: AZHK2.baiyun.cyou}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_44, server: 134.195.196.133, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 mm|美国USUSA/Atlanta_45, server: 167.88.63.119, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 mm|美国USUSA/San Jose_46, server: usgia.jjyun.ren, port: 88, type: vmess, uuid: 6cb4893e-c977-497c-8f68-0b3645e4b51f, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: usgia.jjyun.ren}}
+  - {name: 🇯🇵 mm|日本JPJapan/Tokyo_47, server: jp1.futi.online, port: 443, type: vmess, uuid: ab1f1860-eb87-4385-a543-9f408adb8b32, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: jp1.futi.online}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_48, server: 134.195.196.97, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49, server: 89.238.130.251, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: mm_50, server: v3.ssrsub.com, port: 158, type: vmess, uuid: 9f665f12-29a2-4ff7-a456-c41f9443e8a7, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_51, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 mm|美国USUSA/Atlanta_52, server: 167.88.63.61, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 mm|美国USUSA/Atlanta_53, server: 167.88.63.114, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 mm|美国USUSA/San Jose_54, server: us3.futi.online, port: 443, type: vmess, uuid: ab1f1860-eb87-4385-a543-9f408adb8b32, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: us3.futi.online}}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_55, server: ukdll.52jjyun.top, port: 80, type: vmess, uuid: bf7134c3-914d-4294-8cdf-6eda920d1a42, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukdll.52jjyun.top}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56, server: 134.195.198.252, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_57, server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_58, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 mm|美国USUSA/Atlanta_59, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 mm|美国USUSA/Atlanta_60, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: mm|挪威NONorway/Kristiansand_61, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_62, server: ukml.52jjyun.top, port: 88, type: vmess, uuid: 6cb4893e-c977-497c-8f68-0b3645e4b51f, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_63, server: 193.118.60.167, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_64, server: ukml.52jjyun.top, port: 88, type: vmess, uuid: cb6273ad-5837-4c65-92e8-07daf9beb777, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_65, server: ukml.52jjyun.top, port: 88, type: vmess, uuid: 190ee9db-85d6-438c-88a2-a62a4cc4c8a3, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_66, server: 193.118.60.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_67, server: 172.99.190.230, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇷🇺 mm|俄罗斯RURussia/Moscow_68, server: v7.ssrsub.com, port: 158, type: vmess, uuid: 9f665f12-29a2-4ff7-a456-c41f9443e8a7, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v7.ssrsub.com}}
+  - {name: 🇷🇺 mm|俄罗斯RURussia/Moscow_69, server: t7.ssrsub.com, port: 8443, type: trojan, password: 9f665f12-29a2-4ff7-a456-c41f9443e8a7, sni: t7.ssrsub.com}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_70, server: 172.99.190.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_71, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_72, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73, server: 172.105.174.182, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_74, server: ukdll.52jjyun.top, port: 80, type: vmess, uuid: c8191e5d-c551-4896-8d57-7493da874557, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukdll.52jjyun.top}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Waterloo_75, server: v9.ssrsub.com, port: 158, type: vmess, uuid: 6270e596-dfa0-48a3-aad0-613ce89724b4, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_76, server: 134.195.196.133, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_77, server: ukml.52jjyun.top, port: 88, type: vmess, uuid: c8191e5d-c551-4896-8d57-7493da874557, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
+  - {name: 🇷🇺 mm|俄罗斯RURussia/Moscow_78, server: t3.ssrsub.com, port: 8443, type: trojan, password: 9f665f12-29a2-4ff7-a456-c41f9443e8a7, sni: t3.ssrsub.com}
+  - {name: 🇷🇺 mm|俄罗斯RURussia/Moscow_79, server: t4.ssrsub.com, port: 8443, type: trojan, password: 6270e596-dfa0-48a3-aad0-613ce89724b4, sni: t4.ssrsub.com}
+  - {name: 🇰🇷 mm|韩国KRKorea/Incheon_80, server: 3.36.66.100, port: 80, type: vmess, uuid: 562398c8-cb7f-4850-90eb-2fd17dccb13a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 3.36.66.100}}
+  - {name: 🇦🇨 mm|加拿大CACanada/Toronto_81, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 mm|美国USUSA/Atlanta_82, server: 167.88.63.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 mm|美国USUSA/Las Vegas_83, server: v1.ssrsub.com, port: 158, type: vmess, uuid: 6270e596-dfa0-48a3-aad0-613ce89724b4, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
+  - {name: 🇬🇧 mm|英国GBUnited+Kiongdom/London_84, server: 193.118.60.171, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇰🇷 mm|韩国KRKorea/Seoul_85, server: 193.123.253.102, port: 80, type: vmess, uuid: 562398c8-cb7f-4850-90eb-2fd17dccb13a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 193.123.253.102}}
+  - {name: 🇷🇺 mm|俄罗斯RURussia/Moscow_86, server: t7.ssrsub.com, port: 8443, type: trojan, password: 6270e596-dfa0-48a3-aad0-613ce89724b4, sni: t7.ssrsub.com}
+  - {name: 🇺🇸 mm|美国USUSA/San Francisco_87, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /sshocean, ws-headers: {Host: uk2.v2rayserv.com}}
+  - {name: 🇬🇧 mm|英国GBUnited Kiongdom/London_88, server: ukml.52jjyun.top, port: 88, type: vmess, uuid: bf7134c3-914d-4294-8cdf-6eda920d1a42, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
+  - {name: 🇺🇸 美国 49, server: 66.115.177.156, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇦 加拿大 8, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 50, server: 134.195.196.97, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 9, server: 198.57.27.225, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 51, server: 134.195.198.178, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 52, server: 134.195.196.110, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 10, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 11, server: 198.57.27.243, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 12, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 53, server: 134.195.198.252, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 13, server: 198.57.27.233, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 54, server: 66.115.177.156, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 泰国 3, server: 27.131.164.94, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: 🇹🇭 泰国 4, server: 27.131.164.94, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: 🇺🇸 美国 55, server: 134.195.196.97, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇷🇴 罗马尼亚 11, server: 91.90.123.115, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 瑞典 23, server: 167.88.63.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 56, server: 38.107.226.238, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 57, server: 167.88.63.108, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 14, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 58, server: 66.115.177.156, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 美国 59, server: 38.107.226.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 60, server: 134.195.196.97, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 15, server: 198.57.27.225, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 英国 5, server: 86.106.136.93, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 瑞典 24, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 61, server: 134.195.196.110, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 16, server: 134.195.198.250, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 62, server: 66.115.177.156, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇨🇦 加拿大 17, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 63, server: 134.195.198.195, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 18, server: 198.57.27.233, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 64, server: 134.195.198.250, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 19, server: 134.195.198.178, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 65, server: 134.195.198.95, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 66, server: 172.99.190.35, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇹🇭 泰国 5, server: 27.131.164.94, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: 🇺🇸 美国 67, server: 172.99.190.186, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 68, server: 66.115.177.156, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇹🇭 泰国 6, server: 27.131.164.94, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇺🇸 美国 69, server: 167.88.63.114, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 瑞典 25, server: 167.88.63.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 70, server: 38.107.226.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 71, server: 66.115.177.156, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇺🇸 美国 72, server: 134.195.196.79, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 20, server: 134.195.196.110, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 21, server: 198.57.27.233, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 73, server: 167.88.63.82, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 瑞典 26, server: 167.88.63.82, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 74, server: 134.195.196.163, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇹🇭 泰国 7, server: 27.131.164.94, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: 🇹🇭 泰国 8, server: 27.131.164.100, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇺🇸 美国 75, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 挪威 2, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 76, server: 66.115.177.156, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇺🇸 美国 77, server: 172.99.190.246, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇹🇭 泰国 9, server: 27.131.164.100, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: 🇺🇸 美国 78, server: 167.88.63.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 79, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 80, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇷🇴 罗马尼亚 12, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 81, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 82, server: 134.195.196.97, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 83, server: 66.115.177.156, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇺🇸 美国 84, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 瑞典 27, server: 167.88.63.107, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 85, server: 134.195.196.163, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 86, server: 134.195.196.163, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇹🇭 泰国 10, server: 27.131.164.100, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇺🇸 美国 87, server: 134.195.196.79, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 88, server: 66.115.177.141, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇺🇸 美国 89, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 22, server: 198.57.27.233, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇹🇭 泰国 11, server: 27.131.164.94, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: 🇹🇭 泰国 12, server: 27.131.164.94, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: 🇩🇪 德国 3, server: 146.70.27.12, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 美国 90, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇹🇭 泰国 13, server: 27.131.164.94, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇹🇭 泰国 14, server: 27.131.164.100, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: 🇺🇸 美国 91, server: 172.99.190.35, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 92, server: 38.107.226.146, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 英国 6, server: 193.118.60.167, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 93, server: 134.195.196.163, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇫🇷 法国, server: 185.166.84.81, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇦🇹 奥地利, server: 5.253.207.53, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇦 加拿大 23, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 94, server: 172.99.190.230, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇫🇷 法国 2, server: 185.166.84.81, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇩🇪 德国 4, server: 193.118.60.171, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇹🇭 泰国 15, server: 27.131.164.100, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇺🇸 美国 95, server: 134.195.196.130, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 96, server: 134.195.198.250, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 24, server: 198.57.27.233, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 25, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 瑞典 28, server: 167.88.63.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 97, server: 172.99.190.230, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 98, server: 66.115.177.156, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: 🇺🇸 美国 99, server: 38.107.226.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 瑞典 29, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 100, server: 172.99.190.186, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_16, server: 134.195.196.79, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_17, server: 134.195.196.133, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_18, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -527,73 +1463,205 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - 🇺🇸 美国f 13
-      - 🇨🇦 加拿大f 5
-      - 🇺🇸 美国f 14
-      - 🇺🇸 美国f 15
-      - 🇷🇴 罗马尼亚f
-      - 🇺🇸 美国f 16
-      - 🇷🇴 罗马尼亚f 2
-      - 🇺🇸 美国f 17
-      - 🇺🇸 美国f 18
-      - 🇫🇷 法国f
-      - 挪威f
-      - 🇺🇸 美国f 19
-      - 🇷🇴 罗马尼亚f 3
-      - 🇫🇷 法国f 2
-      - 🇬🇧 英国f
-      - 🇺🇸 美国f 20
-      - 西班牙f
-      - T 16
-      - T 17
-      - 🇷🇴 馃嚪馃嚧RO_9700
-      - 🇷🇴 馃嚪馃嚧RO_9845
-      - 🇺🇸 馃嚭馃嚫US_15748
-      - 🇺🇸 馃嚭馃嚫US_16588
-      - 🇺🇸 馃嚭馃嚫US_12506
-      - 🇺🇸 馃嚭馃嚫US_13434
-      - 🇺🇸 馃嚭馃嚫US_13766
-      - 🇺🇸 馃嚭馃嚫US_14878
-      - 🇺🇸 馃嚭馃嚫US_17287
-      - 🇺🇸 馃嚭馃嚫US_12497
-      - 🇺🇸 馃嚭馃嚫US_13317
-      - 🇺🇸 馃嚭馃嚫US_13745
-      - 🇺🇸 馃嚭馃嚫US_14149
-      - 🇺🇸 馃嚭馃嚫US_15391
-      - 馃弫ZZ_18950
-      - 馃弫ZZ_19017
-      - 馃嚨馃嚤PL_8481
-      - 🇷🇴 馃嚪馃嚧RO_9718
-      - 🇷🇴 馃嚪馃嚧RO_10327
-      - 🇺🇸 馃嚭馃嚫US_12509
-      - 🇺🇸 馃嚭馃嚫US_12538
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
+      - 亚洲负载均衡
+      - 🇭🇰 HK A JM
+      - 🇭🇰 HK A GZA
+      - 🇯🇵 日本 | B | 0.01x | 白银 | 直连 |
+      - 🇯🇵 日本 | B | 1.5x | 白银 |
+      - 🇯🇵 日本 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | C | 1.5x | 白银 |
+      - 🇯🇵 日本 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇯🇵 日本 | D | 1.5x | 白银 |
+      - 🇯🇵 日本 | E | 1.5x | 白银 |
+      - 🇯🇵 日本 | F | 1.5x | 白银 |
+      - 🇫🇷 法国 | A | 2.0x | 钻石 |
+      - 🇦🇺 澳大利亚  | A |  1.0x | 钻石 |
+      - 🇮🇪 爱尔兰 | A | 2.0x | 钻石 |
+      - 🇨🇭 瑞士 | A | 2.0x | 钻石 |
+      - 🇺🇸 美国   | 公益 | A | 2.0x  | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国  | A |  1.0x | 钻石 |
+      - 🇺🇸 美国  | B |  1.0x | 钻石 | 美區流媒體解鎖 | IPLC |
+      - 🇺🇸 美国 | A | 0.1x | 青銅 |
+      - 🇺🇸 美国 | A | 1.5x | 白银 |
+      - 🇺🇸 美国 | B | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 0.1x | 青銅 |
+      - 🇺🇸 美国 | C | 1.0x | 钻石  | 流媒體解鎖 |
+      - 🇺🇸 美国 | D | 0.1x | 青銅 |
+      - 🇺🇸 美国 | E | 0.1x | 青銅 |
+      - 🇺🇸 美国 | F | 0.1x | 青銅 |
+      - 🇺🇸 美国 | 公益 | B | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇺🇸 美国 | 公益 | C | 2.0x | 官網 | ninihao.cc | 不保证速度与稳定性，如需稳定使用请购买套餐 |
+      - 🇬🇧 英国  | A | 2.0x | 钻石 |
+      - 🇳🇱 荷兰 | A | 2.0x | 钻石 |
+      - 🇻🇳 越南 | A | 2.0x | 钻石 | 原生ip |
+      - 🇸🇦 迪拜 | A | 2x | 钻石 | 迪拜流媒體解鎖 |
+      - 阿拉伯  | A |  2.0x | 钻石 |
+      - 阿联酋  | A | 2.0x | 钻石 | 原生 |
+      - 🇰🇷 韩国  | A |  1.0x | 钻石 |
+      - 🇰🇷 韩国 | A | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | B | 0.01x | 白银 | 直连 |
+      - 🇰🇷 韩国 | C | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇰🇷 韩国 | D | 0.01x | 青铜 |  移動聯通直連 |
+      - 🇭🇰 香港  | A |  1.0x | 钻石 |港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | B |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | C |  1.0x | 钻石 | 原生IP |
+      - 🇭🇰 香港  | D |  1.0x | 钻石 |
+      - 🇭🇰 香港  | E |  1.0x | 钻石 |
+      - 🇭🇰 香港  | F |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | G |  1.0x | 钻石 |
+      - 🇭🇰 香港  | H |  1.0x | 钻石 | 港区流媒體解鎖 | IPLC |
+      - 🇭🇰 香港  | I |  1.0x | 钻石 |
+      - 🇭🇰 香港  | J |  1.0x | 钻石 |
+      - 🇭🇰 香港 | A | 1x | 鑽石 | 80端口免流 |
+      - 🇭🇰 香港 | K | 1x | 钻石 |
+      - 🇦🇨 mm|加拿大CACanada/Toronto_44
+      - 🇺🇸 mm|美国USUSA/Atlanta_45
+      - 🇺🇸 mm|美国USUSA/San Jose_46
+      - 🇯🇵 mm|日本JPJapan/Tokyo_47
+      - 🇦🇨 mm|加拿大CACanada/Toronto_48
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/Manchester_49
+      - mm_50
+      - 🇦🇨 mm|加拿大CACanada/Toronto_51
+      - 🇺🇸 mm|美国USUSA/Atlanta_52
+      - 🇺🇸 mm|美国USUSA/Atlanta_53
+      - 🇺🇸 mm|美国USUSA/San Jose_54
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_55
+      - 🇦🇨 mm|加拿大CACanada/Richmond+Hill_56
+      - 🇦🇨 mm|加拿大CACanada/Toronto_57
+      - 🇦🇨 mm|加拿大CACanada/Toronto_58
+      - 🇺🇸 mm|美国USUSA/Atlanta_59
+      - 🇺🇸 mm|美国USUSA/Atlanta_60
+      - mm|挪威NONorway/Kristiansand_61
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_62
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_63
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_64
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_65
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_66
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_67
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_68
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_69
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_70
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_71
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_72
+      - 🇦🇺 mm|澳大利亚AUAustralia/Sydney_73
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_74
+      - 🇦🇨 mm|加拿大CACanada/Waterloo_75
+      - 🇦🇨 mm|加拿大CACanada/Toronto_76
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_77
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_78
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_79
+      - 🇰🇷 mm|韩国KRKorea/Incheon_80
+      - 🇦🇨 mm|加拿大CACanada/Toronto_81
+      - 🇺🇸 mm|美国USUSA/Atlanta_82
+      - 🇺🇸 mm|美国USUSA/Las Vegas_83
+      - 🇬🇧 mm|英国GBUnited+Kiongdom/London_84
+      - 🇰🇷 mm|韩国KRKorea/Seoul_85
+      - 🇷🇺 mm|俄罗斯RURussia/Moscow_86
+      - 🇺🇸 mm|美国USUSA/San Francisco_87
+      - 🇬🇧 mm|英国GBUnited Kiongdom/London_88
+      - 🇺🇸 美国 49
+      - 🇨🇦 加拿大 8
+      - 🇺🇸 美国 50
+      - 🇨🇦 加拿大 9
+      - 🇺🇸 美国 51
+      - 🇺🇸 美国 52
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 53
+      - 🇨🇦 加拿大 13
+      - 🇺🇸 美国 54
+      - 🇹🇭 泰国 3
+      - 🇹🇭 泰国 4
+      - 🇺🇸 美国 55
+      - 🇷🇴 罗马尼亚 11
+      - 瑞典 23
+      - 🇺🇸 美国 56
+      - 🇺🇸 美国 57
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 58
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇨🇦 加拿大 15
+      - 🇬🇧 英国 5
+      - 瑞典 24
+      - 🇺🇸 美国 61
+      - 🇨🇦 加拿大 16
+      - 🇺🇸 美国 62
+      - 🇨🇦 加拿大 17
+      - 🇺🇸 美国 63
+      - 🇨🇦 加拿大 18
+      - 🇺🇸 美国 64
+      - 🇨🇦 加拿大 19
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇹🇭 泰国 5
+      - 🇺🇸 美国 67
+      - 🇺🇸 美国 68
+      - 🇹🇭 泰国 6
+      - 🇺🇸 美国 69
+      - 瑞典 25
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇺🇸 美国 72
+      - 🇨🇦 加拿大 20
+      - 🇨🇦 加拿大 21
+      - 🇺🇸 美国 73
+      - 瑞典 26
+      - 🇺🇸 美国 74
+      - 🇹🇭 泰国 7
+      - 🇹🇭 泰国 8
+      - 🇺🇸 美国 75
+      - 挪威 2
+      - 🇺🇸 美国 76
+      - 🇺🇸 美国 77
+      - 🇹🇭 泰国 9
+      - 🇺🇸 美国 78
+      - 🇺🇸 美国 79
+      - 🇺🇸 美国 80
+      - 🇷🇴 罗马尼亚 12
+      - 🇺🇸 美国 81
+      - 🇺🇸 美国 82
+      - 🇺🇸 美国 83
+      - 🇺🇸 美国 84
+      - 瑞典 27
+      - 🇺🇸 美国 85
+      - 🇺🇸 美国 86
+      - 🇹🇭 泰国 10
+      - 🇺🇸 美国 87
+      - 🇺🇸 美国 88
+      - 🇺🇸 美国 89
+      - 🇨🇦 加拿大 22
+      - 🇹🇭 泰国 11
+      - 🇹🇭 泰国 12
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 90
+      - 🇹🇭 泰国 13
+      - 🇹🇭 泰国 14
+      - 🇺🇸 美国 91
+      - 🇺🇸 美国 92
+      - 🇬🇧 英国 6
+      - 🇺🇸 美国 93
+      - 🇫🇷 法国
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大 23
+      - 🇺🇸 美国 94
+      - 🇫🇷 法国 2
+      - 🇩🇪 德国 4
+      - 🇹🇭 泰国 15
+      - 🇺🇸 美国 95
+      - 🇺🇸 美国 96
+      - 🇨🇦 加拿大 24
+      - 🇨🇦 加拿大 25
+      - 瑞典 28
+      - 🇺🇸 美国 97
+      - 🇺🇸 美国 98
+      - 🇺🇸 美国 99
+      - 瑞典 29
+      - 🇺🇸 美国 100
+      - 🇨🇦 c_🇨🇦_CA_加拿大_16
+      - 🇨🇦 c_🇨🇦_CA_加拿大_17
+      - 🇨🇦 c_🇨🇦_CA_加拿大_18
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
