@@ -5,83 +5,53 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 付费节点, server: uus2.liuwei01.tk, port: 443, type: vmess, uuid: 1b93051f-c9ad-4908-874e-ccb5e8da27ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /liuwei, ws-headers: {Host: uus2.liuwei01.tk}}
-  - {name: 付费节点 2, server: 149.28.222.193, port: 80, type: vmess, uuid: 562398c8-cb7f-4850-90eb-2fd17dccb13a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /JJkuv3, ws-headers: {Host: 149.28.222.193}}
-  - {name: 付费节点 3, server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 4, server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 付费节点 5, server: 18.163.112.47, port: 8080, type: vmess, uuid: 858432a9-4a9c-4690-ef7b-c7adeb4c9f21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /Download, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 付费节点 6, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 7, server: 37.120.233.253, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 付费节点 8, server: 167.88.63.28, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 9, server: 167.88.63.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 10, server: 167.88.63.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 11, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 12, server: 167.88.63.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 13, server: 193.29.107.123, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 付费节点 14, server: 193.118.60.174, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 15, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 16, server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 17, server: t5.ssrsub.com, port: 8443, type: trojan, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, sni: t5.ssrsub.com, skip-cert-verify: false}
-  - {name: 付费节点 18, server: 198.57.27.225, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 19, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 20, server: 38.107.226.149, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 21, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 22, server: 134.195.196.165, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 23, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 24, server: 134.195.196.110, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 25, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 26, server: 5.253.207.53, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 付费节点 27, server: 134.195.196.163, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 28, server: 5.253.207.51, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 付费节点 29, server: 134.195.198.252, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 30, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 31, server: 134.195.198.252, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 32, server: 134.195.196.163, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 33, server: 64.44.42.60, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 付费节点 34, server: 66.115.177.141, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 付费节点 35, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 36, server: 45.129.32.8, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 付费节点 37, server: 172.99.190.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 38, server: 193.38.51.192, port: 152, type: ss, cipher: aes-128-gcm, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793}
-  - {name: 付费节点 39, server: 198.57.27.243, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 40, server: 38.107.226.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 41, server: 146.70.27.12, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 付费节点 42, server: 45.62.231.180, port: 152, type: ss, cipher: aes-128-gcm, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793}
-  - {name: 付费节点 43, server: 193.118.60.167, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 44, server: v9.ssrsub.com, port: 158, type: vmess, uuid: 5b092e88-82d8-47eb-a7a2-98bcf02754e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
-  - {name: 付费节点 45, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 46, server: t9.ssrsub.com, port: 8443, type: trojan, password: 5b092e88-82d8-47eb-a7a2-98bcf02754e9, sni: t9.ssrsub.com, skip-cert-verify: false}
-  - {name: 付费节点 47, server: 167.88.63.82, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 48, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 49, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 50, server: 194.87.99.122, port: 36576, type: vmess, uuid: 93143f88-4e0c-438f-9b15-1774b9c4c41c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 付费节点 51, server: 45.141.102.51, port: 54367, type: vmess, uuid: d7bbbcad-0653-42a1-b101-db44624707aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 付费节点 52, server: 38.107.226.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 53, server: 167.88.63.119, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 54, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 55, server: 86.106.136.93, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 付费节点 56, server: 167.88.63.107, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 57, server: 193.118.60.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 58, server: t3.ssrsub.com, port: 8443, type: trojan, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, sni: t3.ssrsub.com, skip-cert-verify: false}
-  - {name: 付费节点 59, server: 193.38.51.192, port: 152, type: ss, cipher: aes-128-gcm, password: 5b092e88-82d8-47eb-a7a2-98bcf02754e9}
-  - {name: 付费节点 60, server: 134.195.196.133, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 61, server: 191.96.13.200, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: 付费节点 62, server: v5.ssrsub.com, port: 158, type: vmess, uuid: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v5.ssrsub.com}}
-  - {name: 付费节点 63, server: t9.ssrsub.com, port: 8443, type: trojan, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, sni: t9.ssrsub.com, skip-cert-verify: false}
-  - {name: 付费节点 64, server: 66.115.177.141, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 付费节点 65, server: 194.87.99.122, port: 36576, type: vmess, uuid: 93143f88-4e0c-438f-9b15-1774b9c4c41c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 付费节点 66, server: 134.195.196.147, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 67, server: 193.118.60.171, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 68, server: 172.99.190.35, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 69, server: 172.105.55.72, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 70, server: 134.195.196.154, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 71, server: 172.99.190.35, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 72, server: 134.195.198.178, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 73, server: v3.ssrsub.com, port: 158, type: vmess, uuid: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}}
-  - {name: 付费节点 74, server: 66.115.177.156, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 付费节点 75, server: 134.195.196.110, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 76, server: v9.ssrsub.com, port: 158, type: vmess, uuid: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
-  - {name: 付费节点 77, server: 79.110.54.133, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 付费节点, server: 167.88.63.28, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 2, server: 18.163.112.47, port: 8080, type: vmess, uuid: 858432a9-4a9c-4690-ef7b-c7adeb4c9f21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /Download, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 付费节点 3, server: 167.88.63.89, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 4, server: 38.107.226.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 5, server: 167.88.63.119, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 6, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 7, server: 167.88.63.61, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 8, server: 38.107.226.238, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 9, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 10, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 11, server: t5.ssrsub.com, port: 8443, type: trojan, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, sni: t5.ssrsub.com, skip-cert-verify: false}
+  - {name: 付费节点 12, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 13, server: t7.ssrsub.com, port: 8443, type: trojan, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793, sni: t7.ssrsub.com, skip-cert-verify: false}
+  - {name: 付费节点 14, server: 167.88.63.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 15, server: 146.70.27.12, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 付费节点 16, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 17, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 18, server: 134.195.196.97, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 19, server: 198.57.27.225, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 20, server: 198.57.27.247, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 21, server: 193.118.60.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 22, server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 付费节点 23, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 24, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 25, server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 26, server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 27, server: 134.195.198.178, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 28, server: 1.transit.t.qjnodeip.xyz, port: 41431, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 8, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /J5, ws-headers: {Host: xjp1.dddwda.xyz}}
+  - {name: 付费节点 29, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 30, server: 134.195.196.110, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 31, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 32, server: 198.57.27.225, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 33, server: 167.88.63.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点 34, server: 66.115.177.141, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 付费节点 35, server: 62.212.239.53, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 付费节点 36, server: 134.195.196.154, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 37, server: 62.212.239.53, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 付费节点 38, server: 172.99.190.35, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 39, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 40, server: 2.59.214.204, port: 152, type: ss, cipher: aes-128-gcm, password: 6d6d99b0-be8a-43bc-ad73-2fb0f1595793}
+  - {name: 付费节点 41, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 42, server: 134.195.196.133, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 付费节点 43, server: 66.115.177.141, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 付费节点 44, server: 134.195.196.133, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 45, server: 66.115.177.156, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 付费节点 46, server: 167.88.63.89, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点 47, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -135,36 +105,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -218,36 +158,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -301,36 +211,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
   - name: 📲 电报信息
     type: select
     proxies:
@@ -383,36 +263,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -465,36 +315,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -547,36 +367,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -646,36 +436,6 @@ proxy-groups:
       - 付费节点 45
       - 付费节点 46
       - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
-      - 付费节点 52
-      - 付费节点 53
-      - 付费节点 54
-      - 付费节点 55
-      - 付费节点 56
-      - 付费节点 57
-      - 付费节点 58
-      - 付费节点 59
-      - 付费节点 60
-      - 付费节点 61
-      - 付费节点 62
-      - 付费节点 63
-      - 付费节点 64
-      - 付费节点 65
-      - 付费节点 66
-      - 付费节点 67
-      - 付费节点 68
-      - 付费节点 69
-      - 付费节点 70
-      - 付费节点 71
-      - 付费节点 72
-      - 付费节点 73
-      - 付费节点 74
-      - 付费节点 75
-      - 付费节点 76
-      - 付费节点 77
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
