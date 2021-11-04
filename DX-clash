@@ -5,989 +5,1296 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: h 39, server: 149.28.222.193, port: 80, type: vmess, uuid: 562398c8-cb7f-4850-90eb-2fd17dccb13a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /JJkuv3, ws-headers: {Host: 149.28.222.193}}
-  - {name: h 40, server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: h 41, server: 198.57.27.247, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: h 42, server: 212.38.189.174, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: h 43, server: 66.115.177.143, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: h 44, server: 27.131.164.100, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: h 45, server: 194.39.127.191, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: h 46, server: 198.41.192.192, port: 443, type: vmess, uuid: c206cb99-b4b7-4254-92e4-0c6f61d5a96a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: us.klee.ml}}
-  - {name: h 47, server: 66.115.177.141, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: h 48, server: 167.88.61.204, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: h 49, server: 38.107.226.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: Te 6, server: clouda.yixiu.ga, port: 443, type: vmess, uuid: f65eb556-2e2b-4fbb-8ab5-914313200f77, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /qgebvws, ws-headers: {Host: clouda.yixiu.ga}}
-  - {name: Te 15, server: 172.105.184.12, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: Te 16, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Te 17, server: 172.105.187.158, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Te 18, server: 154.17.2.109, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: B7wYOKgFl0YDIF3aOeCRl93eaSSa2pnzqZASDuxy4CN35CZpXAyjT6DEc8x38R}
-  - {name: Te 19, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: Te 20, server: 38.68.135.239, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: Te 21, server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Te 22, server: 167.88.63.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: Te 23, server: 198.57.27.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: Te 24, server: 62.210.222.195, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Te 25, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: Te 26, server: 172.252.64.55, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: Te 27, server: 167.88.63.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: Te 28, server: 172.105.172.41, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: Te 29, server: 172.105.184.113, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Te 30, server: 172.105.170.230, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: Te 31, server: 45.89.229.223, port: 152, type: ss, cipher: aes-128-gcm, password: 5b092e88-82d8-47eb-a7a2-98bcf02754e9}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14, server: 1.transit.nph.qjnodeip.xyz, port: 30004, type: vmess, uuid: ad645efc-a9ba-414b-a2ff-4da652828a75, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15, server: v1-aws-hk-11.niaoyun.online, port: 666, type: vmess, uuid: f548911a-d732-3e05-b552-899f3f9a3487, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16, server: 1.transit.nph.qjnodeip.xyz, port: 30003, type: vmess, uuid: a2cf2ca3-95e7-4067-9e15-3cb7832be81e, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17, server: v1-aws-hk-11.niaoyun.online, port: 666, type: vmess, uuid: 514e9d38-efd0-3c6e-8122-7b124198d53f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18, server: v1-aws-hk-10.niaoyun.online, port: 666, type: vmess, uuid: 1d443b77-c5eb-39eb-8b0d-407abb67c02c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇺🇸 m|美国USUSA/San Francisco_19, server: usdll2.jjyun.ren, port: 80, type: vmess, uuid: 17bf25e4-c944-4c1a-8a29-3f72f1d75d8f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /jjyunml, ws-headers: {Host: usdll2.jjyun.ren}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20, server: 1.transit.t.qjnodeip.xyz, port: 62329, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /usa1Z, ws-headers: {Host: usa03.dadwff.xyz}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21, server: 1.transit.nph.qjnodeip.xyz, port: 30005, type: vmess, uuid: 0f66944c-f940-4864-908e-5431ef9fdc51, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22, server: v1-aws-hk-06.niaoyun.online, port: 666, type: vmess, uuid: 514e9d38-efd0-3c6e-8122-7b124198d53f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23, server: 1.transit.nph.qjnodeip.xyz, port: 30007, type: vmess, uuid: ad645efc-a9ba-414b-a2ff-4da652828a75, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24, server: v1-aws-hk-04.niaoyun.online, port: 666, type: vmess, uuid: f548911a-d732-3e05-b552-899f3f9a3487, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25, server: v1-aws-hk-15.niaoyun.online, port: 666, type: vmess, uuid: 514e9d38-efd0-3c6e-8122-7b124198d53f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26, server: v1-aws-hk-06.niaoyun.online, port: 666, type: vmess, uuid: dcbd3481-eb2c-33bc-8cb3-a093b3b4e2bb, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27, server: v1-aws-hk-02.niaoyun.online, port: 666, type: vmess, uuid: b9cc1e88-5db0-37ff-840a-b882345e22d1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28, server: v1-aws-hk-12.niaoyun.online, port: 666, type: vmess, uuid: dcbd3481-eb2c-33bc-8cb3-a093b3b4e2bb, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29, server: v1-aws-hk-15.niaoyun.online, port: 666, type: vmess, uuid: b9cc1e88-5db0-37ff-840a-b882345e22d1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30, server: 1.transit.t.qjnodeip.xyz, port: 42007, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /HGz2Z, ws-headers: {Host: usa05.cswtw.xyz}}
-  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31, server: v1-aws-hk-10.niaoyun.online, port: 666, type: vmess, uuid: f548911a-d732-3e05-b552-899f3f9a3487, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
-  - {name: 🇦🇨 m|加拿大CACanada/Toronto_32, server: 134.195.196.36, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33, server: 1.transit.t.qjnodeip.xyz, port: 49676, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /JS6dq, ws-headers: {Host: xjp2.iuhbhgg.xyz}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34, server: 1.transit.nph.qjnodeip.xyz, port: 30009, type: vmess, uuid: 4799b571-88d0-48e7-9a22-c63ade6b6c03, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 m|日本JPJapan/Tokyo_35, server: 52.199.89.79, port: 80, type: vmess, uuid: d4cfd5b1-9cfd-4f32-822f-6dfa2423da13, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /air.knayo.in, ws-headers: {Host: 52.199.89.79}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36, server: 1.transit.t.qjnodeip.xyz, port: 60649, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /HGzsmqibHG02Z, ws-headers: {Host: dddwda.xyz}}
-  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37, server: 1.transit.t.qjnodeip.xyz, port: 27435, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 8, cipher: auto, tls: true, network: ws, ws-path: /JP03W, ws-headers: {Host: xjp03.cswtw.xyz}}
-  - {name: 馃弫ZZ_16614, server: 134.195.196.179, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16615, server: 134.195.196.199, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16628, server: 134.195.196.51, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16630, server: 134.195.196.231, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16632, server: 134.195.196.24, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16634, server: 134.195.196.36, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16635, server: 134.195.196.44, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16647, server: 134.195.196.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16648, server: 134.195.196.51, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16676, server: 134.195.196.24, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16679, server: 134.195.196.24, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16682, server: 134.195.196.50, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 馃弫ZZ_16683, server: 134.195.196.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16686, server: 134.195.196.51, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 馃弫ZZ_16689, server: 134.195.196.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16701, server: 134.195.196.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 馃弫ZZ_16722, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16729, server: 134.195.196.202, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 馃弫ZZ_16731, server: 134.195.196.202, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 馃嚭馃嚫US_14965, server: 38.107.226.49, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 馃嚭馃嚫US_14974, server: 38.107.226.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 馃嚭馃嚫US_14982, server: 38.107.226.49, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16613, server: 134.195.196.51, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16617, server: 134.195.196.199, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16620, server: 134.195.196.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16626, server: 134.195.196.50, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16629, server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16642, server: 134.195.196.199, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16650, server: 134.195.196.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16652, server: 134.195.196.179, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16659, server: 134.195.196.51, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 馃弫ZZ_16664, server: 134.195.196.231, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16667, server: 134.195.196.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 馃弫ZZ_16677, server: 134.195.196.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16703, server: 134.195.196.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 馃弫ZZ_16704, server: 134.195.196.179, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16711, server: 134.195.196.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16730, server: 134.195.196.202, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16732, server: 134.195.196.202, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16746, server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 馃嚭馃嚫US_14963, server: 38.107.226.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 馃嚭馃嚫US_14973, server: 38.107.226.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 馃嚭馃嚫US_14983, server: 38.107.226.49, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16621, server: 134.195.196.179, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16627, server: 134.195.196.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16637, server: 134.195.196.44, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16649, server: 134.195.196.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 馃弫ZZ_16651, server: 134.195.196.179, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16655, server: 134.195.196.24, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16658, server: 134.195.196.36, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16673, server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16680, server: 134.195.196.44, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16681, server: 134.195.196.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16724, server: 134.195.196.36, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 馃嚭馃嚫US_14966, server: 38.107.226.49, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16663, server: 134.195.196.231, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16666, server: 134.195.196.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16668, server: 134.195.196.179, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 馃弫ZZ_16685, server: 134.195.196.51, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16725, server: 134.195.196.44, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16726, server: 134.195.196.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 馃弫ZZ_16717, server: 134.195.196.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 馃嚭馃嚫US_254 |26.23Mb, server: 165.232.167.127, port: 80, type: vmess, uuid: d96115c5-ec25-45a3-bc94-2b813db31e09, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 165.232.167.127}}
-  - {name: 🇺🇸 馃嚭馃嚫US_12131, server: 66.115.182.101, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 馃嚭馃嚫US_12710, server: 66.115.182.101, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 馃嚭馃嚫US_15061, server: 66.115.182.101, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb, server: 157.245.151.90, port: 80, type: vmess, uuid: d96115c5-ec25-45a3-bc94-2b813db31e09, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 157.245.151.90}}
-  - {name: 馃弫ZZ_16660, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 馃弫ZZ_16616, server: 134.195.196.24, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 馃弫ZZ_16669, server: 134.195.196.179, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 馃弫ZZ_16690, server: 134.195.196.179, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 馃弫ZZ_16716, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 馃弫ZZ_16719, server: 134.195.196.231, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 美国 33, server: 198.147.22.87, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇺🇸 美国 34, server: 198.147.22.87, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇳 印度 21, server: 172.105.55.72, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇬🇧 英国, server: 185.44.76.188, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 美国 35, server: 45.79.122.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国 36, server: 45.79.122.28, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: T, server: 172.105.184.113, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: T 2, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: T 3, server: 172.105.187.158, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: T 4, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: T 5, server: 167.88.61.15, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: T 6, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: T 7, server: 172.252.99.26, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: T 8, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国 55, server: 38.107.226.49, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大 76, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 瑞典 28, server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇺 澳大利亚 2, server: 172.105.172.41, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 56, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇺 澳大利亚 3, server: 172.105.172.41, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 英国 2, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 57, server: 167.88.63.119, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇮🇹 意大利 2, server: 82.102.26.94, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇺🇸 美国 58, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇦🇺 澳大利亚 4, server: 172.105.172.41, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇺 澳大利亚 5, server: 172.105.167.214, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 59, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 60, server: 172.99.190.153, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 61, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 62, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 63, server: 172.99.190.35, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 挪威, server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 挪威 2, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 64, server: 172.99.190.35, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 65, server: 172.99.190.139, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 66, server: 172.99.190.139, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇮🇹 意大利 3, server: 82.102.26.94, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇺🇸 美国 67, server: 38.107.226.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇦🇺 澳大利亚 6, server: 172.105.167.214, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇺 澳大利亚 7, server: 172.105.167.214, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇦🇺 澳大利亚 8, server: 172.105.167.214, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 68, server: 167.88.63.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 69, server: 167.88.63.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 77, server: 134.195.196.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大 78, server: 134.195.196.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 70, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 71, server: 172.99.190.35, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇩🇪 德国 4, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x, server: 52.175.66.20, port: 443, type: vmess, uuid: 69e53074-eb53-4967-b3ec-7d5b132e7d3c, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /api/rn, ws-headers: {Host: usbv2.ddns.tjiasu.xyz}}
+  - {name: C, server: azhk2.zz123.xyz, port: 35724, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: 🇯🇵 日本-油管3, server: 52.199.89.79, port: 80, type: vmess, uuid: bbf0f4ef-a205-4caf-bddf-70e10e3256ea, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /air.knayo.in, ws-headers: {Host: 52.199.89.79}}
+  - {name: 🇺🇸 美国-油管2, server: gonyi2.baiyun.pw, port: 837, type: vmess, uuid: 7d15736e-3f24-3cce-a313-03e6a2673215, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 🇺🇸 美国-油管5, server: gonyi2.baiyun.pw, port: 839, type: vmess, uuid: 7d15736e-3f24-3cce-a313-03e6a2673215, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}}
+  - {name: 瑞典-油管2, server: 167.88.61.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国-油管1, server: 79.110.54.133, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇭🇰 香港-油管5, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇭🇰 香港-油管5 2, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国-油管5 2, server: 520yyds.zhqt.xyz, port: 50089, type: vmess, uuid: 1bac430d-4fe8-4b5c-8ec5-be7495a6a3bc, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: free-4.joker007.top}}
+  - {name: 🇸🇬 新加坡-油管5, server: 520yyds.zhqt.xyz, port: 50093, type: vmess, uuid: 1bac430d-4fe8-4b5c-8ec5-be7495a6a3bc, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: chenguanxi.zhqt.xyz}}
+  - {name: 🇭🇰 香港-油管5 3, server: v1-aws-hk-08.niaoyun.online, port: 666, type: vmess, uuid: f548911a-d732-3e05-b552-899f3f9a3487, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
+  - {name: 🇺🇸 美国() 23, server: 38.107.226.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大() 14, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国() 24, server: t2.ssrsub.com, port: 844, type: trojan, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, sni: t2.ssrsub.com}
+  - {name: 🇺🇸 美国() 25, server: 172.99.190.153, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国() 26, server: 38.107.226.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇯🇵 日本(), server: jp-1.azure.v2ray.ikuuu.pro, port: 448, type: vmess, uuid: 3c7919b0-87bd-3399-abd2-a79cd334c0c2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp-1.azure.v2ray.ikuuu.pro}}
+  - {name: 欧洲() 20, server: 72.140.224.197, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇺🇸 美国() 27, server: agals02.subyyds.xyz, port: 992, type: trojan, password: f45d308f-d9bc-3954-982f-40883392fb8e, sni: agals02.subyyds.xyz}
+  - {name: 🇨🇦 加拿大() 15, server: 134.195.196.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国() 28, server: 38.107.226.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国() 29, server: 172.99.190.139, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国() 30, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇷🇺 俄罗斯() 8, server: morton0.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: morton0.herokuapp.com}}
+  - {name: 欧洲() 21, server: jmnt.fastnetwork.fun, port: 50025, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /v1, ws-headers: {Host: meeting.speednetwork.xyz}}
+  - {name: 🇺🇸 美国() 31, server: 38.107.226.146, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇸🇬 新加坡(), server: sglmz9.zhs.company, port: 8443, type: trojan, password: 60665a07-09d5-3505-9bd4-c09d02fe46b8, sni: sglmz9.zhs.company}
+  - {name: 🇺🇸 美国() 32, server: morton0.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: morton0.herokuapp.com}}
+  - {name: 🇷🇺 俄罗斯() 9, server: t4.ssrsub.com, port: 844, type: trojan, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, sni: t4.ssrsub.com}
+  - {name: 欧洲() 22, server: 152.89.160.61, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 欧洲() 23, server: 152.89.160.61, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 欧洲() 24, server: v7.ssrsub.com, port: 159, type: vmess, uuid: f5487ee3-aef5-436f-adf9-673b1afe2ff7, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v7.ssrsub.com}}
+  - {name: 🇷🇺 俄罗斯() 10, server: v3.ssrsub.com, port: 159, type: vmess, uuid: f5487ee3-aef5-436f-adf9-673b1afe2ff7, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}}
+  - {name: 🇭🇰 香港-油管5 4, server: azhk.greenyun.tk, port: 54213, type: vmess, uuid: 2c764650-866e-4f62-9bcf-169922235da7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /onefall.top, ws-headers: {Host: azhk.greenyun.tk}}
+  - {name: 🇷🇺 俄罗斯-油管1, server: ru2.greenyun.tk, port: 443, type: vmess, uuid: 2c764650-866e-4f62-9bcf-169922235da7, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /onefall, ws-headers: {Host: ru2.greenyun.tk}}
+  - {name: 🇺🇸 美国-油管4, server: 138.199.42.170, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇺🇸 美国-油管4 2, server: 138.199.42.170, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
+  - {name: 🇺🇸 美国-油管1 2, server: 138.199.42.170, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇺🇸 美国-油管4 3, server: 138.199.42.170, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: 🇺🇸 美国-油管4 4, server: 138.199.42.170, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇺🇸 美国-油管4 5, server: 138.199.42.170, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 卢森堡-油管2, server: 520yyds.zhqt.xyz, port: 50090, type: vmess, uuid: 290b06e1-1fb3-4cdb-90ac-6477f329785a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: free-3.joker007.top}}
+  - {name: 🇺🇸 美国-油管3, server: 520yyds.zhqt.xyz, port: 50089, type: vmess, uuid: 290b06e1-1fb3-4cdb-90ac-6477f329785a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: free-4.joker007.top}}
+  - {name: C 41, server: 103.93.75.82, port: 80, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: C 42, server: x-cs.gotout.work, port: 31312, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false}
+  - {name: C 43, server: 52.175.125.36, port: 28666, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 52.175.125.36}}
+  - {name: C 44, server: x-gz.gotout.work, port: 31322, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false}
+  - {name: C 45, server: zh.fxyjs.xyz, port: 50025, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /v1, ws-headers: {Host: meeting.speednetwork.xyz}}
+  - {name: C 46, server: x-cs.gotout.work, port: 31311, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false}
+  - {name: C 47, server: 120.232.173.100, port: 51363, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 120.232.173.100}}
+  - {name: C 48, server: jmnt.fastnetwork.fun, port: 50025, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /v1, ws-headers: {Host: meeting.speednetwork.xyz}}
+  - {name: C 49, server: 52.175.125.36, port: 16032, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: C 50, server: azhk2.zz123.xyz, port: 46101, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 51, server: azhk2.zz123.xyz, port: 46101, type: vmess, uuid: b02255d6-6912-34da-9f25-d49a996e5014, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 52, server: azhk2.zz123.xyz, port: 46101, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 53, server: 52.175.125.36, port: 22355, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: C 54, server: azhk2.zz123.xyz, port: 37862, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 55, server: azhk2.zz123.xyz, port: 37862, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 56, server: azhk2.zz123.xyz, port: 37862, type: vmess, uuid: b02255d6-6912-34da-9f25-d49a996e5014, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 57, server: 103.93.75.63, port: 18080, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: C 58, server: tw.tcpbbr.net, port: 80, type: vmess, uuid: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}}
+  - {name: C 59, server: hk-10.azure.v2ray.ikuuu.pro, port: 449, type: vmess, uuid: 39066a66-fc04-30d1-8ccf-e22e557aff3b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk-10.azure.v2ray.ikuuu.pro}}
+  - {name: C 60, server: 168.63.201.200, port: 10874, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 168.63.201.200}}
+  - {name: C 61, server: azhk2.zz123.xyz, port: 33413, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}}
+  - {name: C 62, server: 172.247.198.123, port: 443, type: vmess, uuid: 7e68e0da-4264-4bd2-accc-ee977b3df1f5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.60137286.xyz}}
+  - {name: 馃嚚馃嚳CZ_2654 |31.92Mb, server: 89.187.161.2, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚚馃嚳CZ_2598 |32.85Mb, server: 89.187.161.2, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 馃嚚馃嚳CZ_2585 |32.35Mb, server: 89.187.161.2, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 馃嚚馃嚳CZ_2619 |32.31Mb, server: 89.187.161.2, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30002, type: vmess, uuid: 45fc4eab-4725-4e9c-bcfd-7d539dca2acb, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇺🇸 Pool_馃嚭馃嚫US_1252, server: 66.115.147.79, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚚馃嚳CZ_2632 |29.64Mb, server: 89.187.161.4, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 馃弫ZZ_16020, server: 134.195.196.179, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 馃弫ZZ_16028, server: 134.195.196.199, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 馃弫ZZ_16033, server: 134.195.196.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 馃弫ZZ_16034, server: 134.195.196.179, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 馃弫ZZ_16082, server: 134.195.196.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 馃弫ZZ_16019, server: 134.195.196.179, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 馃弫ZZ_16038, server: 134.195.196.231, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 馃弫ZZ_16058, server: 134.195.196.231, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 馃弫ZZ_16062, server: 134.195.196.179, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 馃弫ZZ_16085, server: 134.195.196.202, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 馃弫ZZ_16087, server: 134.195.196.202, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 馃嚭馃嚫US_12691, server: 38.107.226.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_20, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_23, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_34, server: 198.8.92.84, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_38, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 c_🇨🇦_CA_加拿大_45, server: 198.8.92.84, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇭🇰 c_🇭🇰_HK_香港_13, server: 118.107.244.110, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 c_🇫🇷_FR_法国_30, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1, server: 5.yyds123.com, port: 80, type: vmess, uuid: bac18e70-9964-3f99-805a-d809c4bdc6cb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 5.yyds123.com}}
+  - {name: 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2, server: 2.yyds123.com, port: 80, type: vmess, uuid: bac18e70-9964-3f99-805a-d809c4bdc6cb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 2.yyds123.com}}
+  - {name: 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3, server: 5.yyds123.com, port: 29999, type: vmess, uuid: bac18e70-9964-3f99-805a-d809c4bdc6cb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 5.yyds123.com}}
+  - {name: 🇺🇸 m|美国USUSA/Newark_4, server: 104.16.38.252, port: 443, type: vmess, uuid: 4d88f6a2-aaa9-42b6-afc4-227f89974119, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2021.ga}}
+  - {name: 🇺🇸 m|美国USUSA/San Francisco_5, server: 104.26.9.74, port: 443, type: vmess, uuid: f6c1babe-416e-47d1-8726-049678e25c7a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /sshocean, ws-headers: {Host: us2.v2rayserv.com}}
+  - {name: 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6, server: v1-aws-hk-06.niaoyun.online, port: 666, type: vmess, uuid: b9cc1e88-5db0-37ff-840a-b882345e22d1, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: t.me/vpnpool}}
+  - {name: 🇦🇨 m|加拿大CACanada/Toronto_7, server: 134.195.196.231, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇨 m|加拿大CACanada/Toronto_8, server: 134.195.196.179, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9, server: ctsh1.racernet.link, port: 22080, type: vmess, uuid: d12b7888-e61f-3308-a752-33d491dbaa1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ctsh1de1, ws-headers: {Host: ctsh1.racernet.link}}
+  - {name: 🇨🇳 台湾 5x速节点_10, server: vip345.xyz, port: 35230, type: vmess, uuid: bac18e70-9964-3f99-805a-d809c4bdc6cb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: vip345.xyz}}
+  - {name: 🇦🇨 m|加拿大CACanada/Toronto_11, server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 m|美国USUSA/San Francisco_12, server: 104.19.101.62, port: 443, type: vmess, uuid: d7662dde-1d41-4c35-888b-033f1764b643, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/zeduvws?ed=2048", ws-headers: {Host: cc.1808.cf}}
+  - {name: 🇦🇨 m|加拿大CACanada/Toronto_13, server: 134.195.196.179, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇨 m|加拿大CACanada/Toronto_14, server: 134.195.196.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇨 m|加拿大CACanada/Toronto_15, server: 134.195.196.202, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 香港HK, server: 18.162.41.203, port: 599, type: vmess, uuid: 2c8258ea-31d6-3a0f-9e27-6a56146a1393, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /yingyun, ws-headers: {Host: 18.162.41.203}}
+  - {name: 🇸🇬 新加坡SG, server: 18.139.116.205, port: 599, type: vmess, uuid: 2c8258ea-31d6-3a0f-9e27-6a56146a1393, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /yingyun, ws-headers: {Host: 18.139.116.205}}
+  - {name: 04（）, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 06（）, server: 134.195.196.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 07（）, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 09（）, server: 5.226.139.232, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 12（）, server: 38.107.226.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国, server: 38.107.226.146, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 瑞典, server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 瑞典 2, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大, server: 134.195.196.179, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 2, server: 134.195.196.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国 2, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 3, server: 134.195.196.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 4, server: 134.195.196.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大 5, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 6, server: 134.195.196.179, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 3, server: 38.107.226.49, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 香港, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 7, server: 134.195.196.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇩🇪 德国, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 8, server: 134.195.196.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大 9, server: 134.195.196.179, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大 10, server: 134.195.196.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 11, server: 134.195.196.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 瑞典 3, server: 167.88.63.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大 12, server: 134.195.196.231, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 瑞典 4, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇭🇰 香港-油管5 3
+      - 🇭🇰 香港-油管5 4
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇭🇰 香港HK
+      - 🇭🇰 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1003,138 +1310,183 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - h 39
-      - h 40
-      - h 41
-      - h 42
-      - h 43
-      - h 44
-      - h 45
-      - h 46
-      - h 47
-      - h 48
-      - h 49
-      - Te 6
-      - Te 15
-      - Te 16
-      - Te 17
-      - Te 18
-      - Te 19
-      - Te 20
-      - Te 21
-      - Te 22
-      - Te 23
-      - Te 24
-      - Te 25
-      - Te 26
-      - Te 27
-      - Te 28
-      - Te 29
-      - Te 30
-      - Te 31
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_14
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_15
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_16
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_17
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_18
-      - 🇺🇸 m|美国USUSA/San Francisco_19
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_20
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_21
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_22
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_23
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_24
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_25
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_26
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_27
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_28
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_29
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_30
-      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_31
-      - 🇦🇨 m|加拿大CACanada/Toronto_32
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_33
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Shanghai/_34
-      - 🇯🇵 m|日本JPJapan/Tokyo_35
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_36
-      - 🇭🇰 m|中国香港/中国台湾CNChina/Guangzhou/_37
-      - 馃弫ZZ_16614
-      - 馃弫ZZ_16615
-      - 馃弫ZZ_16628
-      - 馃弫ZZ_16630
-      - 馃弫ZZ_16632
-      - 馃弫ZZ_16634
-      - 馃弫ZZ_16635
-      - 馃弫ZZ_16647
-      - 馃弫ZZ_16648
-      - 馃弫ZZ_16676
-      - 馃弫ZZ_16679
-      - 馃弫ZZ_16682
-      - 馃弫ZZ_16683
-      - 馃弫ZZ_16686
-      - 馃弫ZZ_16689
-      - 馃弫ZZ_16701
-      - 馃弫ZZ_16722
-      - 馃弫ZZ_16729
-      - 馃弫ZZ_16731
-      - 🇺🇸 馃嚭馃嚫US_14965
-      - 🇺🇸 馃嚭馃嚫US_14974
-      - 🇺🇸 馃嚭馃嚫US_14982
-      - 馃弫ZZ_16613
-      - 馃弫ZZ_16617
-      - 馃弫ZZ_16620
-      - 馃弫ZZ_16626
-      - 馃弫ZZ_16629
-      - 馃弫ZZ_16642
-      - 馃弫ZZ_16650
-      - 馃弫ZZ_16652
-      - 馃弫ZZ_16659
-      - 馃弫ZZ_16664
-      - 馃弫ZZ_16667
-      - 馃弫ZZ_16677
-      - 馃弫ZZ_16703
-      - 馃弫ZZ_16704
-      - 馃弫ZZ_16711
-      - 馃弫ZZ_16730
-      - 馃弫ZZ_16732
-      - 馃弫ZZ_16746
-      - 🇺🇸 馃嚭馃嚫US_14963
-      - 🇺🇸 馃嚭馃嚫US_14973
-      - 🇺🇸 馃嚭馃嚫US_14983
-      - 馃弫ZZ_16621
-      - 馃弫ZZ_16627
-      - 馃弫ZZ_16637
-      - 馃弫ZZ_16649
-      - 馃弫ZZ_16651
-      - 馃弫ZZ_16655
-      - 馃弫ZZ_16658
-      - 馃弫ZZ_16673
-      - 馃弫ZZ_16680
-      - 馃弫ZZ_16681
-      - 馃弫ZZ_16724
-      - 🇺🇸 馃嚭馃嚫US_14966
-      - 馃弫ZZ_16663
-      - 馃弫ZZ_16666
-      - 馃弫ZZ_16668
-      - 馃弫ZZ_16685
-      - 馃弫ZZ_16725
-      - 馃弫ZZ_16726
-      - 馃弫ZZ_16717
-      - 🇺🇸 馃嚭馃嚫US_254 |26.23Mb
-      - 🇺🇸 馃嚭馃嚫US_12131
-      - 🇺🇸 馃嚭馃嚫US_12710
-      - 🇺🇸 馃嚭馃嚫US_15061
-      - 🇸🇬 馃嚫馃嚞SG_126 |24.61Mb
-      - 馃弫ZZ_16660
-      - 馃弫ZZ_16616
-      - 馃弫ZZ_16669
-      - 馃弫ZZ_16690
-      - 馃弫ZZ_16716
-      - 馃弫ZZ_16719
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 21
-      - 🇬🇧 英国
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - 🇺🇸 美国 55
+      - 🇨🇦 加拿大 76
+      - 瑞典 28
+      - 🇦🇺 澳大利亚 2
+      - 🇺🇸 美国 56
+      - 🇦🇺 澳大利亚 3
+      - 🇬🇧 英国 2
+      - 🇺🇸 美国 57
+      - 🇮🇹 意大利 2
+      - 🇺🇸 美国 58
+      - 🇦🇺 澳大利亚 4
+      - 🇦🇺 澳大利亚 5
+      - 🇺🇸 美国 59
+      - 🇺🇸 美国 60
+      - 🇺🇸 美国 61
+      - 🇺🇸 美国 62
+      - 🇺🇸 美国 63
+      - 挪威
+      - 挪威 2
+      - 🇺🇸 美国 64
+      - 🇺🇸 美国 65
+      - 🇺🇸 美国 66
+      - 🇮🇹 意大利 3
+      - 🇺🇸 美国 67
+      - 🇦🇺 澳大利亚 6
+      - 🇦🇺 澳大利亚 7
+      - 🇦🇺 澳大利亚 8
+      - 🇺🇸 美国 68
+      - 🇺🇸 美国 69
+      - 🇨🇦 加拿大 77
+      - 🇨🇦 加拿大 78
+      - 🇺🇸 美国 70
+      - 🇺🇸 美国 71
+      - 🇩🇪 德国 4
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - 🇯🇵 日本-油管3
+      - 🇺🇸 美国-油管2
+      - 🇺🇸 美国-油管5
+      - 瑞典-油管2
+      - 🇺🇸 美国-油管1
+      - 🇭🇰 香港-油管5
+      - 🇭🇰 香港-油管5 2
+      - 🇺🇸 美国-油管5 2
+      - 🇸🇬 新加坡-油管5
+      - 🇭🇰 香港-油管5 3
+      - 🇺🇸 美国() 23
+      - 🇨🇦 加拿大() 14
+      - 🇺🇸 美国() 24
+      - 🇺🇸 美国() 25
+      - 🇺🇸 美国() 26
+      - 🇯🇵 日本()
+      - 欧洲() 20
+      - 🇺🇸 美国() 27
+      - 🇨🇦 加拿大() 15
+      - 🇺🇸 美国() 28
+      - 🇺🇸 美国() 29
+      - 🇺🇸 美国() 30
+      - 🇷🇺 俄罗斯() 8
+      - 欧洲() 21
+      - 🇺🇸 美国() 31
+      - 🇸🇬 新加坡()
+      - 🇺🇸 美国() 32
+      - 🇷🇺 俄罗斯() 9
+      - 欧洲() 22
+      - 欧洲() 23
+      - 欧洲() 24
+      - 🇷🇺 俄罗斯() 10
+      - 🇭🇰 香港-油管5 4
+      - 🇷🇺 俄罗斯-油管1
+      - 🇺🇸 美国-油管4
+      - 🇺🇸 美国-油管4 2
+      - 🇺🇸 美国-油管1 2
+      - 🇺🇸 美国-油管4 3
+      - 🇺🇸 美国-油管4 4
+      - 🇺🇸 美国-油管4 5
+      - 卢森堡-油管2
+      - 🇺🇸 美国-油管3
+      - C 41
+      - C 42
+      - C 43
+      - C 44
+      - C 45
+      - C 46
+      - C 47
+      - C 48
+      - C 49
+      - C 50
+      - C 51
+      - C 52
+      - C 53
+      - C 54
+      - C 55
+      - C 56
+      - C 57
+      - C 58
+      - C 59
+      - C 60
+      - C 61
+      - C 62
+      - 馃嚚馃嚳CZ_2654 |31.92Mb
+      - 馃嚚馃嚳CZ_2598 |32.85Mb
+      - 馃嚚馃嚳CZ_2585 |32.35Mb
+      - 馃嚚馃嚳CZ_2619 |32.31Mb
+      - 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_43 |15.00Mb
+      - 🇺🇸 Pool_馃嚭馃嚫US_1252
+      - 馃嚚馃嚳CZ_2632 |29.64Mb
+      - 馃弫ZZ_16020
+      - 馃弫ZZ_16028
+      - 馃弫ZZ_16033
+      - 馃弫ZZ_16034
+      - 馃弫ZZ_16082
+      - 馃弫ZZ_16019
+      - 馃弫ZZ_16038
+      - 馃弫ZZ_16058
+      - 馃弫ZZ_16062
+      - 馃弫ZZ_16085
+      - 馃弫ZZ_16087
+      - 🇺🇸 馃嚭馃嚫US_12691
+      - 🇨🇦 c_🇨🇦_CA_加拿大_20
+      - 🇨🇦 c_🇨🇦_CA_加拿大_23
+      - 🇨🇦 c_🇨🇦_CA_加拿大_34
+      - 🇨🇦 c_🇨🇦_CA_加拿大_38
+      - 🇨🇦 c_🇨🇦_CA_加拿大_45
+      - 🇭🇰 c_🇭🇰_HK_香港_13
+      - 🇫🇷 c_🇫🇷_FR_法国_30
+      - 🏳️‍🌈 香港05 免流80节点 解锁奈飞 流量倍速0.5 用2G只算1G的钱_1
+      - 🏳️‍🌈 香港02 免流80节点 流量倍速0.5 用2G只算1G的钱_2
+      - 🏳️‍🌈 vip3独享 香港三网优化 解锁奈飞 流量倍速0.5 用2G只算1G的钱_3
+      - 🇺🇸 m|美国USUSA/Newark_4
+      - 🇺🇸 m|美国USUSA/San Francisco_5
+      - 🇦🇷 m|中国香港特别行政区HKHongkong SAR China/Hong Kong_6
+      - 🇦🇨 m|加拿大CACanada/Toronto_7
+      - 🇦🇨 m|加拿大CACanada/Toronto_8
+      - 🇭🇰 m|中国香港/中国台湾CNChina/Pudong/_9
+      - 🇨🇳 台湾 5x速节点_10
+      - 🇦🇨 m|加拿大CACanada/Toronto_11
+      - 🇺🇸 m|美国USUSA/San Francisco_12
+      - 🇦🇨 m|加拿大CACanada/Toronto_13
+      - 🇦🇨 m|加拿大CACanada/Toronto_14
+      - 🇦🇨 m|加拿大CACanada/Toronto_15
+      - 🇭🇰 香港HK
+      - 🇸🇬 新加坡SG
+      - 04（）
+      - 06（）
+      - 07（）
+      - 09（）
+      - 12（）
+      - 🇺🇸 美国
+      - 瑞典
+      - 瑞典 2
+      - 🇨🇦 加拿大
+      - 🇨🇦 加拿大 2
+      - 🇺🇸 美国 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇺🇸 美国 3
+      - 🇭🇰 香港
+      - 🇨🇦 加拿大 7
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大 8
+      - 🇨🇦 加拿大 9
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 瑞典 3
+      - 🇨🇦 加拿大 12
+      - 瑞典 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
