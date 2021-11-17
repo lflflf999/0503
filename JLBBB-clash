@@ -5,396 +5,893 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 付费节点, server: agals02.subyyds.xyz, port: 992, type: trojan, password: f45d308f-d9bc-3954-982f-40883392fb8e, sni: agals02.subyyds.xyz, skip-cert-verify: false}
-  - {name: 付费节点 2, server: agals02.subyyds.xyz, port: 992, type: trojan, password: 5d2f53fb-cc28-3f91-9844-02a4ccedfd4a, sni: agals02.subyyds.xyz, skip-cert-verify: false}
-  - {name: 付费节点 3, server: 167.88.61.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 4, server: 172.252.99.15, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 付费节点 5, server: 172.252.99.27, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 付费节点 6, server: 134.195.196.231, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 7, server: 172.99.190.153, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 8, server: 134.195.196.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 9, server: 172.99.190.153, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 10, server: 134.195.196.179, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 11, server: 134.195.196.36, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 12, server: 51.89.125.129, port: 443, type: vmess, uuid: 7beb4281-e8e4-4183-b172-29b78391abfd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.64761935.xyz}}
-  - {name: 付费节点 13, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 14, server: 134.195.196.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 15, server: 172.105.167.214, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 16, server: 38.107.226.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 17, server: 172.105.167.214, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 18, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
-  - {name: 付费节点 19, server: 167.88.63.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 20, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 21, server: 167.88.63.119, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 22, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 23, server: 172.99.190.139, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 24, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 25, server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 26, server: 172.105.172.37, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 27, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 付费节点 28, server: 167.88.63.11, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 29, server: 172.99.190.35, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 30, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 31, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 32, server: 134.195.196.24, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 33, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 34, server: 38.107.226.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 35, server: 38.107.226.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 付费节点 36, server: 172.99.190.153, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 37, server: 172.99.190.139, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 38, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 39, server: 167.88.63.11, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 40, server: 172.99.190.158, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 41, server: 38.107.226.146, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 付费节点 42, server: 167.88.63.82, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 43, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 44, server: 89.46.223.239, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 付费节点 45, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点 46, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 付费节点 47, server: 167.88.63.82, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 48, server: 144.172.69.74, port: 11031, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 144.172.69.74}}
-  - {name: 付费节点 49, server: 167.88.63.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 付费节点 50, server: 45.62.246.171, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7}
-  - {name: 付费节点 51, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: youtube（锦囊妙计帮帮帮）, server: 137.59.53.212, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: youtube（锦囊妙计帮帮帮） 2, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: youtube（锦囊妙计帮帮帮） 3, server: 137.59.53.212, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: youtube（锦囊妙计帮帮帮） 4, server: 198.8.92.84, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: youtube（锦囊妙计帮帮帮） 5, server: 185.76.8.218, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: youtube（锦囊妙计帮帮帮） 6, server: 154.16.171.215, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: youtube（锦囊妙计帮帮帮） 7, server: 185.76.8.218, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: youtube（锦囊妙计帮帮帮） 8, server: 185.108.106.172, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: youtube（锦囊妙计帮帮帮） 9, server: 185.76.8.218, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: youtube（锦囊妙计帮帮帮） 10, server: 185.76.8.218, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: youtube（锦囊妙计帮帮帮） 11, server: 185.76.8.218, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: youtube（锦囊妙计帮帮帮） 12, server: 185.76.8.218, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: youtube（锦囊妙计帮帮帮） 13, server: 137.59.53.212, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: youtube（锦囊妙计帮帮帮） 14, server: 156.146.33.66, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: youtube（锦囊妙计帮帮帮） 15, server: 143.244.57.119, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: youtube（锦囊妙计帮帮帮） 16, server: 66.115.166.147, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: youtube（锦囊妙计帮帮帮） 17, server: 185.76.9.56, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: youtube（锦囊妙计帮帮帮） 18, server: 137.59.53.212, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: youtube（锦囊妙计帮帮帮） 19, server: 82.102.26.53, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: youtube（锦囊妙计帮帮帮） 20, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: youtube（锦囊妙计帮帮帮） 21, server: 156.146.33.66, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: youtube（锦囊妙计帮帮帮） 22, server: 156.146.33.66, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: youtube（锦囊妙计帮帮帮） 23, server: 156.146.33.66, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: youtube（锦囊妙计帮帮帮） 24, server: 82.102.26.53, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: youtube（锦囊妙计帮帮帮） 25, server: 82.102.26.53, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: youtube（锦囊妙计帮帮帮） 26, server: 156.146.33.66, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: youtube（锦囊妙计帮帮帮） 27, server: 66.115.147.72, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: youtube（锦囊妙计帮帮帮） 28, server: 37.19.220.199, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: youtube（锦囊妙计帮帮帮） 29, server: 185.76.9.56, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: youtube（锦囊妙计帮帮帮） 30, server: 37.19.220.199, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: youtube（锦囊妙计帮帮帮） 31, server: 185.76.8.218, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: youtube（锦囊妙计帮帮帮） 32, server: 185.108.106.172, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: youtube（锦囊妙计帮帮帮） 33, server: 172.99.190.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: youtube（锦囊妙计帮帮帮） 34, server: 185.108.106.174, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: youtube（锦囊妙计帮帮帮） 35, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: youtube（锦囊妙计帮帮帮） 36, server: 185.108.106.180, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: youtube（锦囊妙计帮帮帮） 37, server: 156.146.50.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: youtube（锦囊妙计帮帮帮） 38, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: youtube（锦囊妙计帮帮帮） 39, server: 37.19.220.199, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: youtube（锦囊妙计帮帮帮） 40, server: 134.195.196.163, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: youtube（锦囊妙计帮帮帮） 41, server: 134.195.196.97, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: youtube（锦囊妙计帮帮帮） 42, server: 185.76.8.218, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: youtube（锦囊妙计帮帮帮） 43, server: 185.76.8.218, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: youtube（锦囊妙计帮帮帮） 44, server: 155.254.31.184, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: youtube（锦囊妙计帮帮帮） 45, server: 84.17.53.168, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: youtube（锦囊妙计帮帮帮） 46, server: 185.76.8.218, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: youtube（锦囊妙计帮帮帮） 47, server: 66.115.147.72, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: youtube（锦囊妙计帮帮帮） 48, server: 154.16.171.215, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: youtube（锦囊妙计帮帮帮） 49, server: 185.76.8.218, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: youtube（锦囊妙计帮帮帮） 50, server: 185.76.8.218, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: youtube（锦囊妙计帮帮帮） 51, server: 37.120.213.3, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: youtube（锦囊妙计帮帮帮） 52, server: 198.8.92.84, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: youtube（锦囊妙计帮帮帮） 53, server: 185.76.8.218, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: youtube（锦囊妙计帮帮帮） 54, server: 185.76.8.218, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: youtube（锦囊妙计帮帮帮） 55, server: 154.16.171.215, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: youtube（锦囊妙计帮帮帮） 56, server: 212.102.44.71, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: youtube（锦囊妙计帮帮帮） 57, server: 180.149.231.69, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: youtube（锦囊妙计帮帮帮） 58, server: 199.10.64.147, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: youtube（锦囊妙计帮帮帮） 59, server: 212.102.44.71, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: youtube（锦囊妙计帮帮帮） 60, server: 107.150.94.12, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: youtube（锦囊妙计帮帮帮） 61, server: 2.58.241.133, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: youtube（锦囊妙计帮帮帮） 62, server: 107.150.94.12, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: youtube（锦囊妙计帮帮帮） 63, server: 2.58.241.133, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: youtube（锦囊妙计帮帮帮） 64, server: 185.76.9.56, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: youtube（锦囊妙计帮帮帮） 65, server: 185.76.9.56, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: youtube（锦囊妙计帮帮帮） 66, server: 66.115.147.72, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: youtube（锦囊妙计帮帮帮） 67, server: 66.115.147.72, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: youtube（锦囊妙计帮帮帮） 68, server: 66.115.147.72, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: youtube（锦囊妙计帮帮帮） 69, server: 66.115.147.72, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: youtube（锦囊妙计帮帮帮） 70, server: 198.8.92.84, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: youtube（锦囊妙计帮帮帮） 71, server: 66.115.147.72, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: youtube（锦囊妙计帮帮帮） 72, server: 66.115.147.72, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: youtube（锦囊妙计帮帮帮） 73, server: 212.102.44.71, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: youtube（锦囊妙计帮帮帮） 74, server: 212.102.46.56, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: youtube（锦囊妙计帮帮帮） 75, server: 185.76.9.56, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: youtube（锦囊妙计帮帮帮） 76, server: 198.147.22.197, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: youtube（锦囊妙计帮帮帮） 77, server: 212.102.46.71, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: youtube（锦囊妙计帮帮帮） 78, server: 212.102.46.71, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: youtube（锦囊妙计帮帮帮） 79, server: 212.102.46.71, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: youtube（锦囊妙计帮帮帮） 80, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: youtube（锦囊妙计帮帮帮） 81, server: 137.59.53.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: youtube（锦囊妙计帮帮帮） 82, server: 137.59.53.212, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: youtube（锦囊妙计帮帮帮） 83, server: 137.59.53.212, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: youtube（锦囊妙计帮帮帮） 84, server: 137.59.53.212, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: youtube（锦囊妙计帮帮帮） 85, server: 91.206.168.62, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: youtube（锦囊妙计帮帮帮） 86, server: 198.8.92.84, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: youtube（锦囊妙计帮帮帮） 87, server: 91.206.168.62, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: youtube（锦囊妙计帮帮帮） 88, server: 167.88.63.107, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: youtube（锦囊妙计帮帮帮） 89, server: 137.59.53.212, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: youtube（锦囊妙计帮帮帮） 90, server: 137.59.53.212, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: youtube（锦囊妙计帮帮帮） 91, server: 137.59.53.212, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: youtube（锦囊妙计帮帮帮） 92, server: 195.47.194.52, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: youtube（锦囊妙计帮帮帮） 93, server: 195.47.194.52, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: youtube（锦囊妙计帮帮帮） 94, server: 137.59.53.212, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: youtube（锦囊妙计帮帮帮） 95, server: 155.254.31.184, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: youtube（锦囊妙计帮帮帮） 96, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: youtube（锦囊妙计帮帮帮） 97, server: 154.16.171.215, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: youtube（锦囊妙计帮帮帮） 98, server: 198.8.92.84, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: youtube（锦囊妙计帮帮帮） 99, server: 198.8.92.84, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: youtube（锦囊妙计帮帮帮） 100, server: 185.76.9.56, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: youtube（锦囊妙计帮帮帮） 101, server: 185.76.9.56, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: youtube（锦囊妙计帮帮帮） 102, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: youtube（锦囊妙计帮帮帮） 103, server: 185.108.106.172, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: youtube（锦囊妙计帮帮帮） 104, server: 198.8.92.84, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: youtube（锦囊妙计帮帮帮） 105, server: 185.108.106.175, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: youtube（锦囊妙计帮帮帮） 106, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: youtube（锦囊妙计帮帮帮） 107, server: 132.226.172.134, port: 37509, type: vmess, uuid: 7a44d386-e7eb-41d4-92ce-ffbfb32b7957, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: youtube（锦囊妙计帮帮帮） 108, server: 198.8.92.84, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: youtube（锦囊妙计帮帮帮） 109, server: 198.8.92.84, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: youtube（锦囊妙计帮帮帮） 110, server: 156.146.33.66, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: youtube（锦囊妙计帮帮帮） 111, server: 82.102.26.53, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: youtube（锦囊妙计帮帮帮） 112, server: 138.199.22.139, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: youtube（锦囊妙计帮帮帮） 113, server: 198.8.92.84, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: youtube（锦囊妙计帮帮帮） 114, server: 198.8.92.84, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: youtube（锦囊妙计帮帮帮） 115, server: 185.76.9.56, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: youtube（锦囊妙计帮帮帮） 116, server: 198.8.92.84, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: youtube（锦囊妙计帮帮帮） 117, server: 198.8.92.84, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: youtube（锦囊妙计帮帮帮） 118, server: 198.8.92.84, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: youtube（锦囊妙计帮帮帮） 119, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: youtube（锦囊妙计帮帮帮） 120, server: 198.8.92.84, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: youtube（锦囊妙计帮帮帮） 121, server: 198.8.92.84, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: youtube（锦囊妙计帮帮帮） 122, server: 185.76.8.218, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -417,57 +914,128 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 付费节点
-      - 付费节点 2
-      - 付费节点 3
-      - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 付费节点 9
-      - 付费节点 10
-      - 付费节点 11
-      - 付费节点 12
-      - 付费节点 13
-      - 付费节点 14
-      - 付费节点 15
-      - 付费节点 16
-      - 付费节点 17
-      - 付费节点 18
-      - 付费节点 19
-      - 付费节点 20
-      - 付费节点 21
-      - 付费节点 22
-      - 付费节点 23
-      - 付费节点 24
-      - 付费节点 25
-      - 付费节点 26
-      - 付费节点 27
-      - 付费节点 28
-      - 付费节点 29
-      - 付费节点 30
-      - 付费节点 31
-      - 付费节点 32
-      - 付费节点 33
-      - 付费节点 34
-      - 付费节点 35
-      - 付费节点 36
-      - 付费节点 37
-      - 付费节点 38
-      - 付费节点 39
-      - 付费节点 40
-      - 付费节点 41
-      - 付费节点 42
-      - 付费节点 43
-      - 付费节点 44
-      - 付费节点 45
-      - 付费节点 46
-      - 付费节点 47
-      - 付费节点 48
-      - 付费节点 49
-      - 付费节点 50
-      - 付费节点 51
+      - youtube（锦囊妙计帮帮帮）
+      - youtube（锦囊妙计帮帮帮） 2
+      - youtube（锦囊妙计帮帮帮） 3
+      - youtube（锦囊妙计帮帮帮） 4
+      - youtube（锦囊妙计帮帮帮） 5
+      - youtube（锦囊妙计帮帮帮） 6
+      - youtube（锦囊妙计帮帮帮） 7
+      - youtube（锦囊妙计帮帮帮） 8
+      - youtube（锦囊妙计帮帮帮） 9
+      - youtube（锦囊妙计帮帮帮） 10
+      - youtube（锦囊妙计帮帮帮） 11
+      - youtube（锦囊妙计帮帮帮） 12
+      - youtube（锦囊妙计帮帮帮） 13
+      - youtube（锦囊妙计帮帮帮） 14
+      - youtube（锦囊妙计帮帮帮） 15
+      - youtube（锦囊妙计帮帮帮） 16
+      - youtube（锦囊妙计帮帮帮） 17
+      - youtube（锦囊妙计帮帮帮） 18
+      - youtube（锦囊妙计帮帮帮） 19
+      - youtube（锦囊妙计帮帮帮） 20
+      - youtube（锦囊妙计帮帮帮） 21
+      - youtube（锦囊妙计帮帮帮） 22
+      - youtube（锦囊妙计帮帮帮） 23
+      - youtube（锦囊妙计帮帮帮） 24
+      - youtube（锦囊妙计帮帮帮） 25
+      - youtube（锦囊妙计帮帮帮） 26
+      - youtube（锦囊妙计帮帮帮） 27
+      - youtube（锦囊妙计帮帮帮） 28
+      - youtube（锦囊妙计帮帮帮） 29
+      - youtube（锦囊妙计帮帮帮） 30
+      - youtube（锦囊妙计帮帮帮） 31
+      - youtube（锦囊妙计帮帮帮） 32
+      - youtube（锦囊妙计帮帮帮） 33
+      - youtube（锦囊妙计帮帮帮） 34
+      - youtube（锦囊妙计帮帮帮） 35
+      - youtube（锦囊妙计帮帮帮） 36
+      - youtube（锦囊妙计帮帮帮） 37
+      - youtube（锦囊妙计帮帮帮） 38
+      - youtube（锦囊妙计帮帮帮） 39
+      - youtube（锦囊妙计帮帮帮） 40
+      - youtube（锦囊妙计帮帮帮） 41
+      - youtube（锦囊妙计帮帮帮） 42
+      - youtube（锦囊妙计帮帮帮） 43
+      - youtube（锦囊妙计帮帮帮） 44
+      - youtube（锦囊妙计帮帮帮） 45
+      - youtube（锦囊妙计帮帮帮） 46
+      - youtube（锦囊妙计帮帮帮） 47
+      - youtube（锦囊妙计帮帮帮） 48
+      - youtube（锦囊妙计帮帮帮） 49
+      - youtube（锦囊妙计帮帮帮） 50
+      - youtube（锦囊妙计帮帮帮） 51
+      - youtube（锦囊妙计帮帮帮） 52
+      - youtube（锦囊妙计帮帮帮） 53
+      - youtube（锦囊妙计帮帮帮） 54
+      - youtube（锦囊妙计帮帮帮） 55
+      - youtube（锦囊妙计帮帮帮） 56
+      - youtube（锦囊妙计帮帮帮） 57
+      - youtube（锦囊妙计帮帮帮） 58
+      - youtube（锦囊妙计帮帮帮） 59
+      - youtube（锦囊妙计帮帮帮） 60
+      - youtube（锦囊妙计帮帮帮） 61
+      - youtube（锦囊妙计帮帮帮） 62
+      - youtube（锦囊妙计帮帮帮） 63
+      - youtube（锦囊妙计帮帮帮） 64
+      - youtube（锦囊妙计帮帮帮） 65
+      - youtube（锦囊妙计帮帮帮） 66
+      - youtube（锦囊妙计帮帮帮） 67
+      - youtube（锦囊妙计帮帮帮） 68
+      - youtube（锦囊妙计帮帮帮） 69
+      - youtube（锦囊妙计帮帮帮） 70
+      - youtube（锦囊妙计帮帮帮） 71
+      - youtube（锦囊妙计帮帮帮） 72
+      - youtube（锦囊妙计帮帮帮） 73
+      - youtube（锦囊妙计帮帮帮） 74
+      - youtube（锦囊妙计帮帮帮） 75
+      - youtube（锦囊妙计帮帮帮） 76
+      - youtube（锦囊妙计帮帮帮） 77
+      - youtube（锦囊妙计帮帮帮） 78
+      - youtube（锦囊妙计帮帮帮） 79
+      - youtube（锦囊妙计帮帮帮） 80
+      - youtube（锦囊妙计帮帮帮） 81
+      - youtube（锦囊妙计帮帮帮） 82
+      - youtube（锦囊妙计帮帮帮） 83
+      - youtube（锦囊妙计帮帮帮） 84
+      - youtube（锦囊妙计帮帮帮） 85
+      - youtube（锦囊妙计帮帮帮） 86
+      - youtube（锦囊妙计帮帮帮） 87
+      - youtube（锦囊妙计帮帮帮） 88
+      - youtube（锦囊妙计帮帮帮） 89
+      - youtube（锦囊妙计帮帮帮） 90
+      - youtube（锦囊妙计帮帮帮） 91
+      - youtube（锦囊妙计帮帮帮） 92
+      - youtube（锦囊妙计帮帮帮） 93
+      - youtube（锦囊妙计帮帮帮） 94
+      - youtube（锦囊妙计帮帮帮） 95
+      - youtube（锦囊妙计帮帮帮） 96
+      - youtube（锦囊妙计帮帮帮） 97
+      - youtube（锦囊妙计帮帮帮） 98
+      - youtube（锦囊妙计帮帮帮） 99
+      - youtube（锦囊妙计帮帮帮） 100
+      - youtube（锦囊妙计帮帮帮） 101
+      - youtube（锦囊妙计帮帮帮） 102
+      - youtube（锦囊妙计帮帮帮） 103
+      - youtube（锦囊妙计帮帮帮） 104
+      - youtube（锦囊妙计帮帮帮） 105
+      - youtube（锦囊妙计帮帮帮） 106
+      - youtube（锦囊妙计帮帮帮） 107
+      - youtube（锦囊妙计帮帮帮） 108
+      - youtube（锦囊妙计帮帮帮） 109
+      - youtube（锦囊妙计帮帮帮） 110
+      - youtube（锦囊妙计帮帮帮） 111
+      - youtube（锦囊妙计帮帮帮） 112
+      - youtube（锦囊妙计帮帮帮） 113
+      - youtube（锦囊妙计帮帮帮） 114
+      - youtube（锦囊妙计帮帮帮） 115
+      - youtube（锦囊妙计帮帮帮） 116
+      - youtube（锦囊妙计帮帮帮） 117
+      - youtube（锦囊妙计帮帮帮） 118
+      - youtube（锦囊妙计帮帮帮） 119
+      - youtube（锦囊妙计帮帮帮） 120
+      - youtube（锦囊妙计帮帮帮） 121
+      - youtube（锦囊妙计帮帮帮） 122
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
