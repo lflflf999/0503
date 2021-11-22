@@ -5,615 +5,179 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_416, server: t2.ssrsub.com, port: 11033, type: trojan, password: a0daa9d9-6257-4ae9-9959-ccfb993f122c, sni: t2.ssrsub.com}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_425, server: t2.ssrsub.com, port: 11033, type: trojan, password: 0d0a53dd-6a0f-47ac-8d0c-6eca674926b2, sni: t2.ssrsub.com}
-  - {name: 🇺🇸 US_441, server: us01.straycloud.icu, port: 442, type: trojan, password: 0ac65136-5962-49d6-91f0-138957f6dec9, sni: us01.straycloud.icu}
-  - {name: 🇨🇳 CN_47, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN_48, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇩🇪 DE_76, server: 176.227.241.22, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇫🇷 FR_97, server: 185.108.106.172, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: GB_102, server: 31.22.110.235, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: 4Re9z5Y86AO0gwBlCpFaaq3DyXCRuCxaOyS2DIS38Yj3E7xpT3enDNZlcSZKAF}
-  - {name: GB_106, server: 31.22.110.234, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: DEeRnSA3D05l6eIOxpaFacTFjZRu9YXqBgpY8D2xay7SC43wCN3l83ZyKASzCO}
-  - {name: GB_109, server: 31.22.110.233, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: j3I60ENB8u9ODlTZA2Fx4y3FKXppRxy3ZegewcaY8SCnC3qRCSSlYaDDAa57Oz}
-  - {name: IN_123, server: 103.108.117.148, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: IN_125, server: 103.108.117.148, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: IN_131, server: 103.108.117.148, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: IN_140, server: 103.108.117.148, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: IN_141, server: 103.108.117.148, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: IN_147, server: 103.108.117.148, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: IN_148, server: 103.108.117.148, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: IN_154, server: 103.108.117.148, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇸🇪 SE_259, server: 185.76.9.56, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇸🇪 SE_260, server: 185.76.9.56, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 🇸🇪 SE_262, server: 185.76.9.56, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇸🇪 SE_263, server: 185.76.9.56, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: 🇸🇬 SG_264, server: 139.162.24.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: SK_274, server: 185.76.8.218, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: Relay_ | 2.92Mb, server: t1.ssrsub.com, port: 11033, type: trojan, password: 0d0a53dd-6a0f-47ac-8d0c-6eca674926b2, sni: t1.ssrsub.com}
-  - {name: Relay_ | 5.40Mb, server: t1.ssrsub.com, port: 11033, type: trojan, password: a0daa9d9-6257-4ae9-9959-ccfb993f122c, sni: t1.ssrsub.com}
-  - {name: _01, server: 185.76.9.56, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
+  - {name: ZZ_964, server: 134.195.196.110, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ZZ_12874, server: 134.195.196.219, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: ZZ_12709, server: 134.195.196.219, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 馃弫 ZZ_710, server: 134.195.196.110, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: ZZ_12853, server: 134.195.196.219, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇳 CN_53, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false}
+  - {name: ZZ_12832, server: 134.195.196.219, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: ZZ_12983, server: 134.195.196.219, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb, server: sh-hk-01-tr.cdn.savoy.click, port: 12443, type: trojan, password: UiLPqefVfielqkDjEwBV, sni: sh-hk-01-tr.cdn.savoy.click}
+  - {name: ZZ_12875, server: 134.195.196.219, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇳 CN_37, server: 101.132.173.78, port: 41906, type: vmess, uuid: e24ac30e-e296-4761-af23-7bda2781ba85, alterId: 64, cipher: auto, tls: false}
   - {name: 🇯🇵 Relay_-🇯🇵JP_06, server: 185.172.113.85, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: _08, server: 185.76.9.56, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: _10, server: 185.76.9.56, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: _12, server: 185.76.9.56, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
-  - {name: _14, server: 185.76.9.56, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: _16, server: 185.76.9.56, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: _17, server: 185.76.9.56, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: _18, server: 185.76.9.56, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: _22, server: 185.76.9.56, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: _23, server: 185.76.9.56, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: _24, server: 185.76.9.56, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: _26, server: 185.76.9.56, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: _29, server: 185.76.9.56, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: _30, server: 185.76.9.56, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: _31, server: 185.76.9.56, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: _32, server: 185.76.9.56, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: _40, server: 185.76.9.56, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: _45, server: 185.76.9.56, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: _46, server: 185.76.9.56, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: _47, server: 185.76.9.56, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: _48, server: 185.76.9.56, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: _51, server: 185.76.9.56, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: _52, server: 185.76.9.56, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: _53, server: 185.76.9.56, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: _56, server: 185.76.9.56, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: _59, server: 185.76.9.56, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: _61, server: 185.76.9.56, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
-  - {name: _63, server: 185.76.9.56, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: _64, server: 185.76.9.56, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: _94, server: 37.19.211.60, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: _97, server: 185.76.9.56, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: _100, server: 185.76.9.56, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
-  - {name: _113, server: 37.19.211.85, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: _127, server: 103.108.117.148, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: _129, server: 185.76.9.56, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: _137, server: 37.19.211.43, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: _148, server: 185.76.9.56, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: _149, server: 185.76.9.56, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: _153, server: 185.76.9.56, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: _154, server: 185.76.9.56, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: _156, server: 185.76.9.56, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: _157, server: 185.76.9.56, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: _158, server: 185.76.9.56, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
-  - {name: _160, server: 185.76.9.56, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: _162, server: 185.76.9.56, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: _164, server: 185.76.9.56, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: _166, server: 185.76.9.56, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: _170, server: 138.199.42.134, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
-  - {name: _171, server: 185.76.9.56, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
-  - {name: _175, server: 185.76.9.56, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: _183, server: 37.19.211.55, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: _195, server: 138.199.42.136, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: _203, server: 37.19.211.40, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: _207, server: 185.76.9.56, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
-  - {name: _220, server: 103.108.117.148, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: _249, server: 185.76.9.56, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: _258, server: 37.19.211.138, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: _264, server: 37.19.211.83, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: _272, server: 185.76.9.56, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: _283, server: 37.19.211.85, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: _302, server: 37.19.211.108, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: _308, server: 37.19.211.70, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: _316, server: 37.19.211.78, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: _321, server: 37.19.211.70, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: _351, server: 37.19.211.138, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: _360, server: 37.19.211.50, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: _363, server: 37.19.211.108, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: _376, server: 37.19.211.85, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: _379, server: 37.19.211.40, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: _380, server: 185.76.9.56, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: _394, server: 37.19.211.40, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: _408, server: 37.19.211.28, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: _411, server: 37.19.211.113, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: _413, server: 37.19.211.80, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: _423, server: 37.19.211.93, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: _427, server: 37.19.211.85, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: _432, server: 37.19.211.60, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: Pool__438, server: 217.197.161.166, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: _442, server: 37.19.211.80, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: _444, server: 37.19.211.138, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: _446, server: 37.19.211.83, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: _461, server: 37.19.211.55, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: _466, server: 37.19.211.65, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: _471, server: 37.19.211.85, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: _481, server: 37.19.211.55, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: _495, server: 37.19.211.93, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: _496, server: 37.19.211.25, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: _500, server: 37.19.211.75, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: _529, server: 37.19.211.93, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇫🇷 FR_2894, server: 185.108.106.172, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: 🇫🇷 FR_2906, server: 185.108.106.172, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: 🇫🇷 FR_2936, server: 185.108.106.172, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇫🇷 FR_2991, server: 185.108.106.172, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: 🇫🇷 FR_3324, server: 185.108.106.172, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: 🇫🇷 FR_3330, server: 185.108.106.172, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
   - {name: GB_3503, server: 31.22.110.231, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: D3YK0wxpIA5lgS326ej3qaDDaFSFROz8AZOYByXaE3Zn4u98pyCcRTelSxNCC7}
-  - {name: GB_3507, server: 31.22.110.232, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: D8YSqCZ5FIpRy9a3Oen24jASaXaSeYCR36x0DxNgZK3By8OFECADzplTu3c7wl}
-  - {name: 🇸🇪 SE_7021, server: 185.76.9.56, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: 🇸🇪 SE_7035, server: 185.76.9.56, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
-  - {name: 🇸🇪 SE_7041, server: 185.76.9.56, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇸🇪 SE_7050, server: 185.76.9.56, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇸🇪 SE_7060, server: 185.76.9.56, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇸🇪 SE_7061, server: 185.76.9.56, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇸🇪 SE_7072, server: 185.76.9.56, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: 🇸🇪 SE_7125, server: 185.76.9.56, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: 🇸🇪 SE_7133, server: 185.76.9.56, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: SK_7359, server: 185.76.8.218, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: SK_7365, server: 185.76.8.218, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: SK_7366, server: 185.76.8.218, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: SK_7380, server: 185.76.8.218, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: UA_8030, server: 37.19.211.115, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
-  - {name: UA_8272, server: 37.19.211.115, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 🇺🇸 US_8736, server: 156.146.33.74, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: 🇺🇸 US_8747, server: 156.146.33.74, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇺🇸 US_9107, server: 156.146.33.74, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: 🇺🇸 US_9353, server: 156.146.33.74, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 US_9654, server: 156.146.33.74, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇺🇸 Pool_🇺🇸US_9772, server: 198.147.22.87, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇺🇸 US_11325, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 US_12255, server: 156.146.33.74, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: ZZ_13418, server: 138.199.42.142, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: GB_3540, server: 31.22.110.232, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: D8YSqCZ5FIpRy9a3Oen24jASaXaSeYCR36x0DxNgZK3By8OFECADzplTu3c7wl}
+  - {name: Pool__334, server: 217.197.161.166, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: Pool__372, server: 217.197.161.166, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: ZZ_12877, server: 134.195.196.219, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: ZZ_12890, server: 134.195.196.219, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: Pool__137, server: 217.197.161.166, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 馃嚫馃嚞 SG_342, server: 217.197.161.166, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇨🇳 CN_156, server: jpa.sttlink.xyz, port: 20189, type: vmess, uuid: ab60166b-d22d-3ae5-963f-e5867007ff08, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ka, ws-headers: {Host: jpa.sttlink.xyz}}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524, server: t2.ssrsub.com, port: 11033, type: trojan, password: a0daa9d9-6257-4ae9-9959-ccfb993f122c, sni: t2.ssrsub.com}
+  - {name: _98, server: t1.ssrsub.com, port: 11033, type: trojan, password: a0daa9d9-6257-4ae9-9959-ccfb993f122c, sni: t1.ssrsub.com}
+  - {name: 🇳🇴, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: Relay_ | 6.74Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30010, type: vmess, uuid: 353f88e0-ec8d-43cb-8941-622fd5e6583d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: Relay_ | 9.66Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30006, type: vmess, uuid: 353f88e0-ec8d-43cb-8941-622fd5e6583d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇺🇸 Relay_🏁ZZ-🇺🇸US_311, server: cm.cf.cname.club, port: 2052, type: vmess, uuid: 6e902fde-dcb1-4d5a-9079-8c086d867954, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us.cname.club}}
+  - {name: p5.22332e.com:8333, server: p5.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇯🇵 Relay_-🇯🇵JP_137, server: 185.172.113.85, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 59.125.11.158:8158, server: 59.125.11.158, port: 8158, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: 🇯🇵 Relay_-🇯🇵JP_59, server: 185.172.113.85, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 Relay_-🇯🇵JP_100, server: 185.172.113.85, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 Relay_-🇯🇵JP_141, server: 185.172.113.85, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66, server: 185.172.113.85, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: NO_106, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇫🇷 Relay_-🇫🇷FR_118, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇯🇵 Relay_-🇯🇵JP_160, server: 185.172.113.85, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -624,461 +188,134 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1094,154 +331,45 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_416
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_425
-      - 🇺🇸 US_441
-      - 🇨🇳 CN_47
-      - 🇨🇳 CN_48
-      - 🇩🇪 DE_76
-      - 🇫🇷 FR_97
-      - GB_102
-      - GB_106
-      - GB_109
-      - IN_123
-      - IN_125
-      - IN_131
-      - IN_140
-      - IN_141
-      - IN_147
-      - IN_148
-      - IN_154
-      - 🇸🇪 SE_259
-      - 🇸🇪 SE_260
-      - 🇸🇪 SE_262
-      - 🇸🇪 SE_263
-      - 🇸🇬 SG_264
-      - SK_274
-      - Relay_ | 2.92Mb
-      - Relay_ | 5.40Mb
-      - _01
+      - ZZ_964
+      - ZZ_12874
+      - ZZ_12709
+      - 馃弫 ZZ_710
+      - ZZ_12853
+      - 🇨🇳 CN_53
+      - ZZ_12832
+      - ZZ_12983
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_2099 |10.00Mb
+      - ZZ_12875
+      - 🇨🇳 CN_37
       - 🇯🇵 Relay_-🇯🇵JP_06
-      - _08
-      - _10
-      - _12
-      - _14
-      - _16
-      - _17
-      - _18
-      - _22
-      - _23
-      - _24
-      - _26
-      - _29
-      - _30
-      - _31
-      - _32
-      - _40
-      - _45
-      - _46
-      - _47
-      - _48
-      - _51
-      - _52
-      - _53
-      - _56
-      - _59
-      - _61
-      - _63
-      - _64
-      - _94
-      - _97
-      - _100
-      - _113
-      - _127
-      - _129
-      - _137
-      - _148
-      - _149
-      - _153
-      - _154
-      - _156
-      - _157
-      - _158
-      - _160
-      - _162
-      - _164
-      - _166
-      - _170
-      - _171
-      - _175
-      - _183
-      - _195
-      - _203
-      - _207
-      - _220
-      - _249
-      - _258
-      - _264
-      - _272
-      - _283
-      - _302
-      - _308
-      - _316
-      - _321
-      - _351
-      - _360
-      - _363
-      - _376
-      - _379
-      - _380
-      - _394
-      - _408
-      - _411
-      - _413
-      - _423
-      - _427
-      - _432
-      - Pool__438
-      - _442
-      - _444
-      - _446
-      - _461
-      - _466
-      - _471
-      - _481
-      - _495
-      - _496
-      - _500
-      - _529
-      - 🇫🇷 FR_2894
-      - 🇫🇷 FR_2906
-      - 🇫🇷 FR_2936
-      - 🇫🇷 FR_2991
-      - 🇫🇷 FR_3324
-      - 🇫🇷 FR_3330
       - GB_3503
-      - GB_3507
-      - 🇸🇪 SE_7021
-      - 🇸🇪 SE_7035
-      - 🇸🇪 SE_7041
-      - 🇸🇪 SE_7050
-      - 🇸🇪 SE_7060
-      - 🇸🇪 SE_7061
-      - 🇸🇪 SE_7072
-      - 🇸🇪 SE_7125
-      - 🇸🇪 SE_7133
-      - SK_7359
-      - SK_7365
-      - SK_7366
-      - SK_7380
-      - UA_8030
-      - UA_8272
-      - 🇺🇸 US_8736
-      - 🇺🇸 US_8747
-      - 🇺🇸 US_9107
-      - 🇺🇸 US_9353
-      - 🇺🇸 US_9654
-      - 🇺🇸 Pool_🇺🇸US_9772
-      - 🇺🇸 US_11325
-      - 🇺🇸 US_12255
-      - ZZ_13418
+      - GB_3540
+      - Pool__334
+      - Pool__372
+      - ZZ_12877
+      - ZZ_12890
+      - Pool__137
+      - 🇸🇬 馃嚫馃嚞 SG_342
+      - 🇨🇳 CN_156
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1524
+      - _98
+      - 🇳🇴
+      - Relay_ | 6.74Mb
+      - Relay_ | 9.66Mb
+      - 🇺🇸 Relay_🏁ZZ-🇺🇸US_311
+      - p5.22332e.com:8333
+      - 🇯🇵 Relay_-🇯🇵JP_137
+      - 59.125.11.158:8158
+      - 🇯🇵 Relay_-🇯🇵JP_59
+      - 🇯🇵 Relay_-🇯🇵JP_100
+      - 🇯🇵 Relay_-🇯🇵JP_141
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_47
+      - 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_49
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_66
+      - NO_106
+      - 🇫🇷 Relay_-🇫🇷FR_118
+      - 🇯🇵 Relay_-🇯🇵JP_160
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
