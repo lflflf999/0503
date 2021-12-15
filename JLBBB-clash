@@ -5,340 +5,431 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2, server: v3.ssrsub.com, port: 8443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}}
-  - {name: 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3, server: 139.227.161.129, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇦 加拿大(youtube锦囊妙计帮帮帮), server: t4.ssrsub.com, port: 8443, type: trojan, password: 13b36e17-e869-4b77-bf33-e5a431eac496, sni: t4.ssrsub.com, skip-cert-verify: false}
-  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮）, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮）, server: 194.135.32.208, port: 32551, type: vmess, uuid: 9d40aefc-54d9-11ec-af2d-f2c157360b1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /W9s28k1i/, ws-headers: {Host: 194.135.32.208}}
-  - {name: 🇬🇧 英国（youtube锦囊妙计帮帮帮）, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq764g2xn.com, port: 30016, type: vmess, uuid: 5efeb899-e8bd-446f-b0be-863d30331174, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 亚洲(youtube锦囊妙计帮帮帮), server: 194.156.120.52, port: 41002, type: vmess, uuid: ebb93e84-5bb7-11ec-8bc6-6a5c6e054e4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮), server: 194.135.32.208, port: 32551, type: vmess, uuid: 9d40aefc-54d9-11ec-af2d-f2c157360b1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /W9s28k1i/, ws-headers: {Host: 194.135.32.208}}
-  - {name: 🇯🇵 日本(youtube锦囊妙计帮帮帮), server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮）, server: armsj2.kozow.com, port: 80, type: vmess, uuid: 44e0d410-535a-11ec-968f-02001700aa14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: armsj2.kozow.com}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 2, server: 149.28.79.47, port: 63744, type: vmess, uuid: 5c7b78ca-5d3a-11ec-be5c-560003bcd9c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /reCRBW6w/, ws-headers: {Host: 149.28.79.47}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 3, server: 152.70.127.223, port: 80, type: vmess, uuid: 44e0d410-535a-11ec-968f-02001700aa14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 152.70.127.223}}
+  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮）, server: 137.184.5.19, port: 80, type: vmess, uuid: 00105a67-9b81-3403-9174-42fd3bb64855, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-08.xncloud.xyz}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 4, server: 193.233.85.226, port: 24758, type: vmess, uuid: ec4e35ee-5d64-11ec-a957-7e88ef32b81a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /uPe7SYWz/, ws-headers: {Host: 193.233.85.226}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 5, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 6, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 172.104.98.216}}
+  - {name: 🇰🇷 韩国（youtube锦囊妙计帮帮帮）, server: 54.180.108.95, port: 18000, type: vmess, uuid: 00105a67-9b81-3403-9174-42fd3bb64855, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-06.xncloud.xyz}}
+  - {name: 🇯🇵 日本（youtube锦囊妙计帮帮帮）, server: 139.162.80.175, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 7, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 8, server: v2.ssrsub.com, port: 443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 9, server: armsj2.kozow.com, port: 80, type: vmess, uuid: 44e0d410-535a-11ec-968f-02001700aa14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: armsj2.kozow.com}}
+  - {name: 乌克兰（youtube锦囊妙计帮帮帮）, server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 10, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 11, server: 152.70.127.223, port: 80, type: vmess, uuid: 44e0d410-535a-11ec-968f-02001700aa14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 152.70.127.223}}
+  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2, server: 144.126.218.238, port: 80, type: vmess, uuid: 00105a67-9b81-3403-9174-42fd3bb64855, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-01.xncloud.xyz}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 12, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 13, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 14, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3, server: 192.46.210.73, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 15, server: 183.232.163.3, port: 3939, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）, server: 165.154.229.22, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 16, server: 194.135.32.100, port: 17736, type: vmess, uuid: f0b94cb8-5d64-11ec-9f3f-1637e7a279b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /QoETN87w/, ws-headers: {Host: 194.135.32.100}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 17, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: e795f820-9391-4a9d-bfaf-b5329386f82f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 18, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）, server: 84.17.38.144, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gTYdduTTEBBdVZ4LcBnT}
+  - {name: 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）, server: 172.105.180.227, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 19, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 20, server: v2.ssrsub.com, port: 443, type: vmess, uuid: e795f820-9391-4a9d-bfaf-b5329386f82f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}}
+  - {name: 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2, server: 184.75.208.234, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 21, server: 183.232.163.3, port: 4343, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 22, server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 23, server: 183.232.163.3, port: 6262, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
   - {name: 希腊（youtube锦囊妙计帮帮帮）, server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
-  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国(youtube锦囊妙计帮帮帮), server: 142.4.123.249, port: 500, type: vmess, uuid: 0dcea9f2-10ac-11ec-a0bc-00163cf00cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港(youtube锦囊妙计帮帮帮), server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾（youtube锦囊妙计帮帮帮）, server: 120.197.88.216, port: 20002, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
-  - {name: 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）, server: 46.102.153.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
-  - {name: 🇧🇪 比利时（youtube锦囊妙计帮帮帮）, server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3, server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 2, server: 120.197.88.216, port: 20001, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 3, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇰🇷 韩国（youtube锦囊妙计帮帮帮）, server: cm-jm.okvpn.xyz, port: 20006, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3, server: shcn2-06b.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇮🇳 印度（youtube锦囊妙计帮帮帮）, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 4, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 5, server: 120.197.88.216, port: 20015, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇯🇵 日本（youtube锦囊妙计帮帮帮）, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 6, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2, server: 172.105.180.227, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 7, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4, server: 170.130.31.114, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 4W2SJmdKUMJjjkVfRDdh}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5, server: hkf1.dior.bar, port: 80, type: vmess, uuid: 579934ab-0b50-4e7f-b3c5-3923bbbaf41f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkf1.dior.bar}}
-  - {name: 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 付费节点（youtube锦囊妙计帮帮帮） 8, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 24, server: 183.232.163.3, port: 4646, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 25, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: 🇫🇷 法国（youtube锦囊妙计帮帮帮）, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 26, server: 183.232.163.3, port: 2727, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 27, server: 183.232.163.3, port: 4949, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 28, server: 183.232.163.3, port: 5254, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 29, server: 183.232.163.3, port: 5253, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 30, server: 183.232.163.3, port: 2020, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 31, server: 183.232.163.3, port: 3434, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 32, server: 183.232.163.3, port: 4141, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 33, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 34, server: 183.232.163.3, port: 9191, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 35, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 36, server: 183.232.163.3, port: 3435, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇳 台湾（youtube锦囊妙计帮帮帮）, server: 139.227.161.129, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港（youtube锦囊妙计帮帮帮）, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 37, server: 183.232.163.3, port: 2525, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 38, server: 194.156.120.52, port: 41002, type: vmess, uuid: ebb93e84-5bb7-11ec-8bc6-6a5c6e054e4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 付费节点（youtube锦囊妙计帮帮帮） 39, server: 137.175.30.251, port: 111, type: vmess, uuid: 77cd775c-1c0a-11ec-a1a8-00163c1393a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -361,49 +452,62 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 2
-      - 🇪🇺 欧洲（youtube锦囊妙计帮帮帮） 3
-      - 🇨🇦 加拿大(youtube锦囊妙计帮帮帮)
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮）
-      - 🇬🇧 英国（youtube锦囊妙计帮帮帮）
-      - 亚洲(youtube锦囊妙计帮帮帮)
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮)
-      - 🇯🇵 日本(youtube锦囊妙计帮帮帮)
-      - 希腊（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
-      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮)
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮)
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 2
-      - 🇭🇰 香港(youtube锦囊妙计帮帮帮) 2
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
-      - 🇧🇪 比利时（youtube锦囊妙计帮帮帮）
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 3
       - 付费节点（youtube锦囊妙计帮帮帮） 2
       - 付费节点（youtube锦囊妙计帮帮帮） 3
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 4
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 2
-      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
-      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮） 2
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 3
-      - 🇮🇳 印度（youtube锦囊妙计帮帮帮）
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 4
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
       - 付费节点（youtube锦囊妙计帮帮帮） 5
-      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 6
-      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 4
-      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮） 2
+      - 🇰🇷 韩国（youtube锦囊妙计帮帮帮）
+      - 🇯🇵 日本（youtube锦囊妙计帮帮帮）
       - 付费节点（youtube锦囊妙计帮帮帮） 7
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 4
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 5
-      - 🇺🇸 美国(youtube锦囊妙计帮帮帮) 5
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 6
-      - 🇪🇺 欧洲(youtube锦囊妙计帮帮帮) 7
       - 付费节点（youtube锦囊妙计帮帮帮） 8
+      - 付费节点（youtube锦囊妙计帮帮帮） 9
+      - 乌克兰（youtube锦囊妙计帮帮帮）
+      - 🇷🇴 罗马尼亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 10
+      - 付费节点（youtube锦囊妙计帮帮帮） 11
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 12
+      - 付费节点（youtube锦囊妙计帮帮帮） 13
+      - 付费节点（youtube锦囊妙计帮帮帮） 14
+      - 🇺🇸 美国（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 15
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 16
+      - 付费节点（youtube锦囊妙计帮帮帮） 17
+      - 付费节点（youtube锦囊妙计帮帮帮） 18
+      - 🇸🇬 新加坡（youtube锦囊妙计帮帮帮）
+      - 🇦🇺 澳大利亚（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 19
+      - 付费节点（youtube锦囊妙计帮帮帮） 20
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 2
+      - 付费节点（youtube锦囊妙计帮帮帮） 21
+      - 付费节点（youtube锦囊妙计帮帮帮） 22
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 3
+      - 付费节点（youtube锦囊妙计帮帮帮） 23
+      - 希腊（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 24
+      - 付费节点（youtube锦囊妙计帮帮帮） 25
+      - 🇫🇷 法国（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 26
+      - 付费节点（youtube锦囊妙计帮帮帮） 27
+      - 付费节点（youtube锦囊妙计帮帮帮） 28
+      - 付费节点（youtube锦囊妙计帮帮帮） 29
+      - 付费节点（youtube锦囊妙计帮帮帮） 30
+      - 付费节点（youtube锦囊妙计帮帮帮） 31
+      - 付费节点（youtube锦囊妙计帮帮帮） 32
+      - 付费节点（youtube锦囊妙计帮帮帮） 33
+      - 付费节点（youtube锦囊妙计帮帮帮） 34
+      - 付费节点（youtube锦囊妙计帮帮帮） 35
+      - 付费节点（youtube锦囊妙计帮帮帮） 36
+      - 🇨🇦 加拿大（youtube锦囊妙计帮帮帮） 4
+      - 🇨🇳 台湾（youtube锦囊妙计帮帮帮）
+      - 🇭🇰 香港（youtube锦囊妙计帮帮帮）
+      - 付费节点（youtube锦囊妙计帮帮帮） 37
+      - 付费节点（youtube锦囊妙计帮帮帮） 38
+      - 付费节点（youtube锦囊妙计帮帮帮） 39
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
