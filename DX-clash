@@ -5,573 +5,397 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: C 344, server: 169.239.129.33, port: 12501, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 169.239.129.33}}
-  - {name: C 35, server: 211.99.96.31, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: C 351, server: iepl.sg.d6e4.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: C 354, server: v27.88host.buzz, port: 18072, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v27.88host.buzz}}
-  - {name: C 359, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: C 361, server: sg-am21.eqsunshine.com, port: 8080, type: ssr, cipher: aes-256-cfb, password: jUQAcjhEG, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: releases.ubuntu.com}
-  - {name: C 365, server: us-am11.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: vGndzdmPB, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: releases.ubuntu.com}
-  - {name: C 374, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: ""}
-  - {name: C 374 2, server: 00.cn1.rocketdns.xyz, port: 65018, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: C 375, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: C 378, server: 116.163.10.145, port: 65013, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.10.145}}
-  - {name: C 379, server: sy-am2.eqsunshine.com, port: 443, type: ssr, cipher: aes-256-cfb, password: Jz8r4gLNP, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: ""}
-  - {name: C 38, server: v21.88host.buzz, port: 18033, type: vmess, uuid: c1ff7ecc-7b0d-3c4e-af21-4afa507f44e6, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v21.88host.buzz}}
-  - {name: C 380, server: 120.241.72.90, port: 18007, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v13.88host.buzz}}
-  - {name: C 382, server: v27.88host.buzz, port: 18074, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v27.88host.buzz}}
-  - {name: C 388, server: 223.25.246.4, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
-  - {name: C 391, server: 198.200.51.18, port: 27962, type: vmess, uuid: b660c4a6-50df-11ec-9676-00163caf481c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /jZyaImnU/, ws-headers: {Host: 198.200.51.18}}
-  - {name: C 393, server: 00.cn1.rocketdns.xyz, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: C 403, server: v36.88host.buzz, port: 18058, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v36.88host.buzz}}
-  - {name: C 406, server: sg-am15.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: q4UW0QdUl, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: releases.ubuntu.com}
-  - {name: C 41, server: iepl.hk.f6e8.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: C 41 2, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: nodnqJmXykIChRXUqqodCfhcWhtFglJX, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click}
-  - {name: C 410, server: mf-justhost-ru-01.xncloud.xyz, port: 18000, type: vmess, uuid: 71ba860d-7a06-37cc-a3d6-04250bdf118a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-justhost-ru-01.xncloud.xyz}}
-  - {name: C 417, server: hk-hkg-shhk-001-tr.cdn.savoy.click, port: 20089, type: trojan, password: nodnqJmXykIChRXUqqodCfhcWhtFglJX, sni: hk-hkg-shhk-001-tr.cdn.savoy.click}
-  - {name: C 419, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: C 421, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 0, cipher: auto, tls: false}
-  - {name: C 423, server: 00.cn3.rocketdns.xyz, port: 65014, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: C 425, server: 116.163.14.146, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.14.146}}
-  - {name: C 428, server: v26.88host.buzz, port: 18077, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v26.88host.buzz}}
-  - {name: C 430, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: C 431, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: C 440, server: 116.163.10.145, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: C 45, server: iepl.sg.bd6f.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: C 5, server: v24.88host.buzz, port: 18028, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v24.88host.buzz}}
-  - {name: C 51, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: ""}
-  - {name: C 52, server: 00.cn3.rocketdns.xyz, port: 65011, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: C 53, server: 00.cn4.rocketdns.xyz, port: 65008, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: C 54, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: C 56, server: 211.99.96.36, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: C 56 2, server: 217.138.222.138, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
-  - {name: C 62, server: 00.cn4.rocketdns.xyz, port: 65009, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: C 64, server: v36.88host.buzz, port: 18069, type: vmess, uuid: 0e634ac9-82bb-366b-86a6-99e02968e497, alterId: 0, cipher: auto, tls: false}
-  - {name: C 7, server: 211.99.96.19, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: C 76, server: 86.106.136.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: h6WG7sxsLTBGn7uyvMG8}
-  - {name: C 76 2, server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: C 79, server: v13.88host.buzz, port: 18007, type: vmess, uuid: c1ff7ecc-7b0d-3c4e-af21-4afa507f44e6, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v13.88host.buzz}}
-  - {name: C 81, server: 00.cn4.rocketdns.xyz, port: 65010, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: 🇭🇰 香港02解锁流媒体, server: 00.cn2.rocketdns.xyz, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: 🇷🇺 俄罗斯02解锁流媒体, server: 00.cn3.rocketdns.xyz, port: 65021, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: 12/22_123, server: 46.102.153.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
-  - {name: 12/22_125, server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
-  - {name: 12/22_81, server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 12/22_128, server: 188.214.125.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
-  - {name: 12/22_75, server: 172.105.41.63, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 12/22_117, server: 185.51.134.210, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
-  - {name: 12/22_111, server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
-  - {name: 12/22_113, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: 12/22_65, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 12/22_115, server: 169.38.107.52, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
-  - {name: 12/22_126, server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
-  - {name: 12/22_78, server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 香港Hk 3, server: 58.152.85.196, port: 2808, type: ss, cipher: aes-256-gcm, password: dbbdb5625d0268ef28240da6d67eb4c0}
-  - {name: 12/22_131, server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
-  - {name: 12/22_122, server: 84.247.50.10, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
-  - {name: 12/22_101, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 12/22_84, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 77.243.191.178:8389, server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 69.39.239.72:8388, server: 69.39.239.72, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 2jQLXYq5xgrE3gKXmfjB}
+  - {name: 169.57.35.97:8389, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: 188.214.152.194:8389, server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
+  - {name: 84.247.50.10:8389, server: 84.247.50.10, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
+  - {name: 45.141.152.178:8389, server: 45.141.152.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr}
+  - {name: 103.108.94.226:8389, server: 103.108.94.226, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: bFfLrvbG3GjjNSxKBWt5}
+  - {name: 23.226.131.146:8388, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: 23.226.131.146:8389, server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: 188.214.106.98:8388, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 188.214.106.98:8389, server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 46.102.153.106:8388, server: 46.102.153.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: 46.102.153.106:8389, server: 46.102.153.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: 45.83.91.66:8389, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+  - {name: 86.106.136.98:8389, server: 86.106.136.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: h6WG7sxsLTBGn7uyvMG8}
+  - {name: 66.55.92.101:8389, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 104.223.91.146:8389, server: 104.223.91.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QKyLzp5JUG6XEGy2wbEE}
+  - {name: 89.238.177.234:8389, server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6}
+  - {name: Cf 139, server: 139.227.161.129, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇸🇬 SG( 18, server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: 🇸🇬 SG( 19, server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇸🇬 SG( 20, server: 217.182.199.168, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇸🇬 SG( 21, server: 217.182.199.168, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US( 101, server: 198.200.51.34, port: 10911, type: vmess, uuid: 53e483d4-1ea9-11ec-ad60-00163cc87418, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 US( 106, server: 23.19.26.246, port: 10515, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
+  - {name: 🇭🇰 HK( 57, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}}
+  - {name: 🇭🇰 HK( 91, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-awekji}}
+  - {name: 🇰🇷 韩国 🇰🇷(, server: 146.56.177.34, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇰🇷 韩国 🇰🇷( 2, server: 146.56.177.34, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 146.56.177.34}}
+  - {name: 🇺🇸 3-油管🇺🇸 US_1957, server: 165.154.229.22, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 165.154.229.22}}
+  - {name: 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267, server: 139.227.161.129, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -油管🇺🇸US_1862, server: 198.200.51.18, port: 27962, type: vmess, uuid: b660c4a6-50df-11ec-9676-00163caf481c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /jZyaImnU/, ws-headers: {Host: 198.200.51.18}}
+  - {name: C） 60, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}}
+  - {name: 🇺🇸 US( 73, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 US( 82, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: 🇺🇸 US( 84, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 US( 88, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇺🇸 US( 90, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US美国( 3, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 HK( 129, server: fosyd.tuboshu.space, port: 18888, type: vmess, uuid: 3cfb790e-b33f-303f-b386-05f6a82692cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /thkyd, ws-headers: {Host: fosyd.tuboshu.space}}
+  - {name: 🇭🇰 HK( 130, server: 118.107.244.110, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 US_992, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: CA_119, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: NO_655, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -594,72 +418,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - C 344
-      - C 35
-      - C 351
-      - C 354
-      - C 359
-      - C 361
-      - C 365
-      - C 374
-      - C 374 2
-      - C 375
-      - C 378
-      - C 379
-      - C 38
-      - C 380
-      - C 382
-      - C 388
-      - C 391
-      - C 393
-      - C 403
-      - C 406
-      - C 41
-      - C 41 2
-      - C 410
-      - C 417
-      - C 419
-      - C 421
-      - C 423
-      - C 425
-      - C 428
-      - C 430
-      - C 431
-      - C 440
-      - C 45
-      - C 5
-      - C 51
-      - C 52
-      - C 53
-      - C 54
-      - C 56
-      - C 56 2
-      - C 62
-      - C 64
-      - C 7
-      - C 76
-      - C 76 2
-      - C 79
-      - C 81
-      - 🇭🇰 香港02解锁流媒体
-      - 🇷🇺 俄罗斯02解锁流媒体
-      - 12/22_123
-      - 12/22_125
-      - 12/22_81
-      - 12/22_128
-      - 12/22_75
-      - 12/22_117
-      - 12/22_111
-      - 12/22_113
-      - 12/22_65
-      - 12/22_115
-      - 12/22_126
-      - 12/22_78
-      - 🇭🇰 香港Hk 3
-      - 12/22_131
-      - 12/22_122
-      - 12/22_101
-      - 12/22_84
+      - 77.243.191.178:8389
+      - 69.39.239.72:8388
+      - 169.57.35.97:8389
+      - 188.214.152.194:8389
+      - 84.247.50.10:8389
+      - 45.141.152.178:8389
+      - 103.108.94.226:8389
+      - 23.226.131.146:8388
+      - 23.226.131.146:8389
+      - 188.214.106.98:8388
+      - 188.214.106.98:8389
+      - 46.102.153.106:8388
+      - 46.102.153.106:8389
+      - 45.83.91.66:8389
+      - 86.106.136.98:8389
+      - 66.55.92.101:8389
+      - 104.223.91.146:8389
+      - 89.238.177.234:8389
+      - Cf 139
+      - 🇸🇬 SG( 18
+      - 🇸🇬 SG( 19
+      - 🇸🇬 SG( 20
+      - 🇸🇬 SG( 21
+      - 🇺🇸 US( 101
+      - 🇺🇸 US( 106
+      - 🇭🇰 HK( 57
+      - 🇭🇰 HK( 91
+      - 🇰🇷 韩国 🇰🇷(
+      - 🇰🇷 韩国 🇰🇷( 2
+      - 🇺🇸 3-油管🇺🇸 US_1957
+      - 🇨🇳 -油管Relay_🇨🇳CN-🇹🇼TW_267
+      - 🇺🇸 -油管🇺🇸US_1862
+      - C） 60
+      - 🇺🇸 US( 73
+      - 🇺🇸 US( 82
+      - 🇺🇸 US( 84
+      - 🇺🇸 US( 88
+      - 🇺🇸 US( 90
+      - 🇺🇸 US美国( 3
+      - 🇭🇰 HK( 129
+      - 🇭🇰 HK( 130
+      - 🇺🇸 US_992
+      - CA_119
+      - NO_655
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
