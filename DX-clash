@@ -5,405 +5,581 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: C 14, server: 00.cn2.rocketdns.xyz, port: 65013, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: C 15, server: 23.94.183.109, port: 80, type: vmess, uuid: fadd8320-d5c2-4628-8ddb-af885f5470e8, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: baidu.com}}
-  - {name: C 16, server: 00.cn3.rocketdns.xyz, port: 65008, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: C 17, server: 193.233.85.3, port: 45174, type: vmess, uuid: 14823120-5dc2-11ec-b398-3a571dcc9720, alterId: 0, cipher: auto, tls: false}
-  - {name: C 18, server: v28.88host.buzz, port: 18073, type: vmess, uuid: 8e101712-8380-3376-bbeb-ef6ef1eaafb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v28.88host.buzz}}
-  - {name: C 19, server: 00.cn2.rocketdns.xyz, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: C 20, server: 211.23.181.18, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.181.18}}
-  - {name: C 21, server: 00.cn2.rocketdns.xyz, port: 65016, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: C 22, server: 00.cn3.rocketdns.xyz, port: 65020, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: C 23, server: 3.106.142.132, port: 9999, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 3.106.142.132}}
-  - {name: C 24, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 172.104.98.216}}
-  - {name: 🇭🇰 HK(Y) 13, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: nodnqJmXykIChRXUqqodCfhcWhtFglJX, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click}
-  - {name: 🇩🇪 德国 🇩🇪(), server: 45.141.152.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr}
-  - {name: 🇸🇬 SG(Y), server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
-  - {name: 🇻🇳 越南 🇻🇳(Y), server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
-  - {name: 🇺🇸 US(Y), server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
-  - {name: 🇭🇰 HK(Y) 14, server: 00.cn3.rocketdns.xyz, port: 65009, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: 🇭🇰 HK(Y) 15, server: 18.192.212.68, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.192.212.68}}
-  - {name: 🇮🇳 印度 🇮🇳(Y), server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: Cf 275, server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: Cf 278, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
-  - {name: 🇨🇳 _中国_youtube：w_54, server: 00.cn3.rocketdns.xyz, port: 65008, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: 🇷🇺 _俄罗斯联邦_youtube：w_82, server: 193.233.85.3, port: 45174, type: vmess, uuid: 14823120-5dc2-11ec-b398-3a571dcc9720, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 _中国_youtube：w_95, server: 00.cn1.rocketdns.xyz, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: 🇨🇳 _中国_youtube：w_102, server: 00.cn3.rocketdns.xyz, port: 65009, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: 🇨🇳 _中国_youtube：w_111, server: 116.163.14.146, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.14.146}}
-  - {name: T, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 2, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
-  - {name: T 3, server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: T 4, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: T 5, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 6, server: 46.102.153.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
-  - {name: T 7, server: 217.138.222.138, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
-  - {name: T 8, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 9, server: 211.99.96.36, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: T 10, server: iepl.tw.4edb.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: T 11, server: 211.99.96.23, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: T 12, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: T 13, server: 188.214.152.194, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
-  - {name: T 14, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: T 15, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: T 16, server: hzcm.rokishi.cyou, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 2f89f81e-2aef-4d07-84ec-871d9b552d7c}
-  - {name: T 17, server: gzcm.rokishi.cyou, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 2f89f81e-2aef-4d07-84ec-871d9b552d7c}
-  - {name: T 18, server: jmcm.rokishi.cyou, port: 10074, type: ss, cipher: chacha20-ietf-poly1305, password: 2f89f81e-2aef-4d07-84ec-871d9b552d7c}
-  - {name: T 19, server: jmcm.rokishi.cyou, port: 10046, type: ss, cipher: chacha20-ietf-poly1305, password: 2f89f81e-2aef-4d07-84ec-871d9b552d7c}
+  - {name: "🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x", server: azhk.relay.qchwnd.moe, port: 60609, type: trojan, password: dbb6508f-1fd7-4ce6-aa73-cfd83079574b, sni: azhk.relay.qchwnd.moe}
+  - {name: "🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x", server: gdcm.relay.qchwnd.moe, port: 60609, type: trojan, password: dbb6508f-1fd7-4ce6-aa73-cfd83079574b, sni: gdcm.relay.qchwnd.moe}
+  - {name: "🇮🇩 [高速][原生]🇮🇩印尼-1.2x", server: azhk.relay.qchwnd.moe, port: 10211, type: trojan, password: dbb6508f-1fd7-4ce6-aa73-cfd83079574b, sni: azhk.relay.qchwnd.moe}
+  - {name: 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x, server: v24.88host.buzz, port: 18036, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v24.88host.buzz}}
+  - {name: 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x, server: 116.163.14.51, port: 18033, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v21.88host.buzz}}
+  - {name: 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x, server: 120.197.130.73, port: 18026, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v22.88host.buzz}}
+  - {name: 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x, server: 20.187.111.148, port: 33893, type: vmess, uuid: 92965c5d-06e7-3c61-8790-ea39f8acfeb6, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: zhuzhu12.com}}
+  - {name: 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x, server: 00.cn3.rocketdns.xyz, port: 65015, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x, server: 120.240.86.41, port: 18029, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v25.88host.buzz}}
+  - {name: 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x, server: 120.240.86.51, port: 18077, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v26.88host.buzz}}
+  - {name: 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x, server: 120.240.86.26, port: 18074, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v27.88host.buzz}}
+  - {name: 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x, server: 120.241.72.97, port: 18010, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v13.88host.buzz}}
+  - {name: 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x, server: 120.197.130.73, port: 18137, type: vmess, uuid: a52e8f88-a2a1-33d9-96c8-84115b56686c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v22.88host.buzz}}
+  - {name: C, server: iepl.hk.f663.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: C 2, server: iepl.sg.e0c4.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 145.239.1.137:8080, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 192.46.210.73:8000, server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 217.182.199.168:5500, server: 217.182.199.168, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 38.75.136.93:8080, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 145.239.1.137:8091, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 198.57.27.218:8090, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 198.57.27.218:8091, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 46.29.218.6:8091, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 172.99.190.87:8008, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 46.29.218.6:8008, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 217.182.199.168:8888, server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 172.105.41.63:3306, server: 172.105.41.63, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 118.107.244.110:3389, server: 118.107.244.110, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 198.57.27.218:3389, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 145.239.1.137:3306, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 挪威 🇳🇴() 2, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇭🇰 HK(Y) 41, server: v12.88host.buzz, port: 18118, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 US(Y) 10, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: (Y) 2, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大 🇨🇦(Y) 3, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 HK(Y) 42, server: iepl.sg.bd6f.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇭🇰 HK(Y) 43, server: iepl.sg.1312.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇭🇰 HK(Y) 44, server: iepl.sg.21ce.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇭🇰 HK(Y) 45, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK(Y) 46, server: 00.cn1.rocketdns.xyz, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇺🇸 US(Y) 11, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: Tre 25, server: 00.cn1.rocketdns.xyz, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: Tre 26, server: 00.cn2.rocketdns.xyz, port: 65019, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: Tre 27, server: 00.cn2.rocketdns.xyz, port: 65010, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: Tre 28, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: Tre 29, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: Tre 30, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: Tre 31, server: 193.233.85.3, port: 45174, type: vmess, uuid: 14823120-5dc2-11ec-b398-3a571dcc9720, alterId: 0, cipher: auto, tls: false}
+  - {name: Tre 32, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇳 _🇨🇳_CN_中国, server: iepl.hk.0686.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇦 _🇨🇦_CA_加拿大, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇮🇳 _🇮🇳_IN_印度, server: 169.38.107.52, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 2, server: iepl.hk.71bc.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 3, server: iepl.tw.9548.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 4, server: iepl.sg.e0c4.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 5, server: 120.232.82.190, port: 2008, type: ss, cipher: aes-256-gcm, password: 8e2bb8a49c86c76d7876bb61d44f40d9}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 6, server: iepl.hk.f663.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 7, server: iepl.sg.21ce.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 8, server: iepl.hk.fda0.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 9, server: iepl.sg.f84d.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 10, server: iepl.hk.f6e8.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: _🇳🇴_NO_挪威, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 11, server: iepl.tw.4edb.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇫🇷 _🇫🇷_FR_法国, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 12, server: iepl.hk.206f.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇨🇳 _🇨🇳_CN_中国 13, server: iepl.hk.31c4.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: _🇳🇴_NO_挪威 2, server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -426,51 +602,73 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - C 14
-      - C 15
-      - C 16
-      - C 17
-      - C 18
-      - C 19
-      - C 20
-      - C 21
-      - C 22
-      - C 23
-      - C 24
-      - 🇭🇰 HK(Y) 13
-      - 🇩🇪 德国 🇩🇪()
-      - 🇸🇬 SG(Y)
-      - 🇻🇳 越南 🇻🇳(Y)
-      - 🇺🇸 US(Y)
-      - 🇭🇰 HK(Y) 14
-      - 🇭🇰 HK(Y) 15
-      - 🇮🇳 印度 🇮🇳(Y)
-      - Cf 275
-      - Cf 278
-      - 🇨🇳 _中国_youtube：w_54
-      - 🇷🇺 _俄罗斯联邦_youtube：w_82
-      - 🇨🇳 _中国_youtube：w_95
-      - 🇨🇳 _中国_youtube：w_102
-      - 🇨🇳 _中国_youtube：w_111
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
+      - 🇭🇰 [高速][原生][HGC]🇭🇰香港-1.5x
+      - 🇭🇰 [隧道][原生][HGC]🇭🇰香港-1.5x
+      - 🇮🇩 [高速][原生]🇮🇩印尼-1.2x
+      - 🇩🇪 德国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇩🇪 德国 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇰🇷 韩国 ☆☆  01 ☆AWS☆  1.2x
+      - 🇩🇪 德国 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 02 ☆GMO☆  1.2x
+      - 🇬🇧 英国 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇮🇳 印度 ☆☆ 01 ☆GMO☆  1.2x
+      - 🇭🇰 香港 ☆☆ 03 ☆GMO☆  1.2x
+      - 🇺🇸 美国 ☆☆ 01 ☆NTT☆   1.2x
+      - C
+      - C 2
+      - 145.239.1.137:8080
+      - 192.46.210.73:8000
+      - 217.182.199.168:5500
+      - 38.75.136.93:8080
+      - 145.239.1.137:8091
+      - 198.57.27.218:8090
+      - 198.57.27.218:8091
+      - 46.29.218.6:8091
+      - 172.99.190.87:8008
+      - 46.29.218.6:8008
+      - 217.182.199.168:8888
+      - 172.105.41.63:3306
+      - 118.107.244.110:3389
+      - 198.57.27.218:3389
+      - 145.239.1.137:3306
+      - 挪威 🇳🇴() 2
+      - 🇭🇰 HK(Y) 41
+      - 🇺🇸 US(Y) 10
+      - (Y) 2
+      - 🇨🇦 加拿大 🇨🇦(Y) 3
+      - 🇭🇰 HK(Y) 42
+      - 🇭🇰 HK(Y) 43
+      - 🇭🇰 HK(Y) 44
+      - 🇭🇰 HK(Y) 45
+      - 🇭🇰 HK(Y) 46
+      - 🇺🇸 US(Y) 11
+      - Tre 25
+      - Tre 26
+      - Tre 27
+      - Tre 28
+      - Tre 29
+      - Tre 30
+      - Tre 31
+      - Tre 32
+      - 🇨🇳 _🇨🇳_CN_中国
+      - 🇨🇦 _🇨🇦_CA_加拿大
+      - 🇮🇳 _🇮🇳_IN_印度
+      - 🇨🇳 _🇨🇳_CN_中国 2
+      - 🇨🇳 _🇨🇳_CN_中国 3
+      - 🇨🇳 _🇨🇳_CN_中国 4
+      - 🇨🇳 _🇨🇳_CN_中国 5
+      - 🇨🇳 _🇨🇳_CN_中国 6
+      - 🇨🇳 _🇨🇳_CN_中国 7
+      - 🇨🇳 _🇨🇳_CN_中国 8
+      - 🇨🇳 _🇨🇳_CN_中国 9
+      - 🇨🇳 _🇨🇳_CN_中国 10
+      - _🇳🇴_NO_挪威
+      - 🇨🇳 _🇨🇳_CN_中国 11
+      - 🇫🇷 _🇫🇷_FR_法国
+      - 🇨🇳 _🇨🇳_CN_中国 12
+      - 🇨🇳 _🇨🇳_CN_中国 13
+      - _🇳🇴_NO_挪威 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
