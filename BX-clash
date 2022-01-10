@@ -5,191 +5,151 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾阿伟科技-油管, server: in05.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 美国_44, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 俄罗斯阿伟科技-油管, server: 45.150.236.137, port: 37399, type: ss, cipher: aes-256-gcm, password: eUtr67qjfD, udp: true}
-  - {name: 日本阿伟科技-油管, server: jp_g_aws_l.hudaye.space, port: 8088, type: vmess, uuid: 91507b27-8f95-4a48-91fd-1ccf2edb21c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp_g_aws_l.hudaye.space}, udp: true}
-  - {name: HK(Youtube技术分享室整理), server: 520yyds.zhqt.xyz, port: 30003, type: vmess, uuid: e6e8150f-c7b0-4c7a-aefb-b0b5bbda0fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本阿伟科技-油管 2, server: jp_g_aws_l.hudaye.space, port: 8088, type: vmess, uuid: 2ecd44af-e27c-4899-9482-cb2bb1a73fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp_g_aws_l.hudaye.space}, udp: true}
-  - {name: _US_美国, server: 38.75.136.93, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 台湾阿伟科技-油管 2, server: tw-tpe-hq-v2.node.inforun.work, port: 888, type: vmess, uuid: adef7fc3-66d8-4709-b588-30b8ba07f5ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_31, server: t3.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: US(Youtube技术分享室整理), server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}, udp: true}
-  - {name: US_1896, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: AU_31, server: 172.105.180.227, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_21, server: t3.ssrsub.com, port: 156, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚_23, server: 172.105.180.227, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1137, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: AU_58, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1802, server: 38.75.136.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_830, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1102, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 台湾阿伟科技-油管 3, server: tw-tpe-h-v2.cdn.savoy.click, port: 988, type: vmess, uuid: adef7fc3-66d8-4709-b588-30b8ba07f5ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: FR_386, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 澳大利亚_22, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 澳大利亚_18, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: AU_18, server: 172.105.180.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: AU(Youtube技术分享室整理), server: 172.105.180.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 欧洲_20, server: 172.105.180.227, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 加拿大, server: t1.ssrsub.com, port: 8443, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: AU_28, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 澳大利亚_24, server: 172.105.180.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 172.105.180.227, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 澳大利亚_26, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AU_34, server: 172.105.180.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 澳大利亚_32, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: T, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 2, server: 38.75.136.93, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 澳大利亚_16, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: "法国[感谢订阅——科技网络]", server: 193.38.50.176, port: 11014, type: vmess, uuid: 48272da2-7017-11ec-a093-ba74f0b557b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /h4e3ElaB/, ws-headers: {Host: 193.38.50.176}, udp: true}
-  - {name: "美国[感谢订阅——科技网络]", server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US(Youtube技术分享室整理) 2, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇫🇷, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君) 2, server: 172.105.180.227, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 3, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _HK_香港 4, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大阿伟科技-油管 2, server: t3.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲_36, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 10, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _FR_法国, server: 62.210.209.50, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国感谢订阅——科技网络_65, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 53, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 17, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 欧洲感谢订阅——科技网络_106, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _BE_比利时, server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs, udp: true}
+  - {name: _US_美国 22, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: T 3, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: _CH_瑞士, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
+  - {name: _FR_法国 5, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 51, server: 38.143.66.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国感谢订阅——科技网络_109, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 欧洲感谢订阅——科技网络_112, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _FR_法国 8, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _FR_法国 7, server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: T 21, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国 32, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国感谢订阅——科技网络_4, server: 167.88.61.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 挪威_40, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 9, server: 38.75.136.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _BG_保加利亚, server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw, udp: true}
+  - {name: _NO_挪威 3, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国阿伟科技-油管 14, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
+  - {name: 美国感谢订阅——科技网络_87, server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy, udp: true}
+  - {name: _US_美国 55, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲感谢订阅——科技网络_130, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国 71, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 52, server: 38.143.66.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,198 +168,156 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾阿伟科技-油管
-      - 台湾阿伟科技-油管 2
-      - 台湾阿伟科技-油管 3
+      - _HK_香港 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -415,48 +333,38 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾阿伟科技-油管
-      - 美国_44
-      - 俄罗斯阿伟科技-油管
-      - 日本阿伟科技-油管
-      - HK(Youtube技术分享室整理)
-      - 日本阿伟科技-油管 2
-      - _US_美国
-      - 台湾阿伟科技-油管 2
-      - Ytb:鹏哥分享_CA_加拿大_31
-      - US(Youtube技术分享室整理)
-      - US_1896
-      - AU_31
-      - Ytb:鹏哥分享_CA_加拿大_21
-      - 澳大利亚_23
-      - US_1137
-      - AU_58
-      - US_1802
-      - US_830
-      - US_1102
-      - 台湾阿伟科技-油管 3
-      - FR_386
-      - 澳大利亚_22
-      - 澳大利亚_18
-      - AU_18
-      - AU(Youtube技术分享室整理)
-      - 欧洲_20
-      - 加拿大
-      - AU_28
-      - 澳大利亚_24
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - 澳大利亚_26
-      - AU_34
-      - 澳大利亚_32
-      - T
-      - _US_美国 2
-      - 澳大利亚_16
-      - 法国[感谢订阅——科技网络]
-      - 美国[感谢订阅——科技网络]
-      - US(Youtube技术分享室整理) 2
-      - 🇫🇷
-      - 欧洲(欢迎订阅Youtube破解资源君) 2
-      - _US_美国 3
+      - _HK_香港 4
+      - 加拿大阿伟科技-油管 2
+      - 欧洲_36
+      - _US_美国 10
+      - _FR_法国
+      - 美国感谢订阅——科技网络_65
+      - _US_美国 53
+      - _US_美国 17
+      - 欧洲感谢订阅——科技网络_106
+      - _BE_比利时
+      - _US_美国 22
+      - T 3
+      - _CH_瑞士
+      - _FR_法国 5
+      - _US_美国 51
+      - 美国感谢订阅——科技网络_109
+      - 欧洲感谢订阅——科技网络_112
+      - _FR_法国 8
+      - _FR_法国 7
+      - T 21
+      - _US_美国 32
+      - 美国感谢订阅——科技网络_4
+      - 挪威_40
+      - _US_美国 9
+      - _BG_保加利亚
+      - _NO_挪威 3
+      - 美国阿伟科技-油管 14
+      - 美国感谢订阅——科技网络_87
+      - _US_美国 55
+      - 欧洲感谢订阅——科技网络_130
+      - 美国 71
+      - _US_美国 52
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
