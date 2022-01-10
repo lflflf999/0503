@@ -5,901 +5,581 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: T, server: 211.99.96.40, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: T 2, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 3, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: T 4, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: T 5, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 6, server: 43.154.157.216, port: 60151, type: ss, cipher: chacha20-ietf-poly1305, password: dunkpzGG9FM9}
-  - {name: T 7, server: gzcm.rokishi.cyou, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
-  - {name: T 8, server: gzcm.rokishi.cyou, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
-  - {name: T 9, server: jmcm.rokishi.cyou, port: 10037, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
-  - {name: T 10, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: T 11, server: 118.107.244.110, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 12, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: T 13, server: 38.91.102.86, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: T 14, server: 38.91.102.86, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: T 15, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 16, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: T 17, server: 38.91.102.86, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: T 18, server: 38.64.138.145, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: T 19, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: T 20, server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: T 21, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: T 22, server: 169.197.143.157, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: T 23, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: T 24, server: 172.99.190.87, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: T 25, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: T 26, server: 134.195.196.68, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: T 27, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: T 28, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: T 29, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: T 30, server: 38.64.138.145, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 挪威_1, server: 84.247.50.10, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
-  - {name: 🇪🇺 欧洲_2, server: 169.197.141.24, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇪🇺 欧洲_3, server: 169.197.141.24, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇪🇺 欧洲_4, server: 169.197.141.24, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 美国_5, server: 38.91.102.86, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国_6, server: 169.197.141.24, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国_7, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 挪威_8, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 美国_9, server: 38.91.102.86, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 美国_10, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 挪威_11, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国_12, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 澳大利亚_13, server: 172.105.180.227, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 美国_14, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇸🇬 新加坡_15, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇦🇺 澳大利亚_16, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇦🇺 澳大利亚_17, server: 172.105.180.227, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇦🇺 澳大利亚_18, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇦🇺 澳大利亚_19, server: 172.105.180.227, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇪🇺 欧洲_20, server: 172.105.180.227, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇦🇺 澳大利亚_21, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇦🇺 澳大利亚_22, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇦🇺 澳大利亚_23, server: 172.105.180.227, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇦🇺 澳大利亚_24, server: 172.105.180.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 澳大利亚_25, server: 172.105.180.227, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 澳大利亚_26, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 挪威_27, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 澳大利亚_28, server: 172.105.180.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇦🇺 澳大利亚_29, server: 172.105.180.227, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇪🇺 欧洲_30, server: 169.197.141.24, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇦🇺 澳大利亚_31, server: 172.105.180.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇦🇺 澳大利亚_32, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇦🇺 澳大利亚_33, server: 172.105.180.227, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国_34, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 澳大利亚_35, server: 172.105.180.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇪🇺 欧洲_36, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇮🇹 意大利_37, server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇪🇺 欧洲_38, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 美国_39, server: 172.99.190.87, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 挪威_40, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇪🇺 欧洲_41, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 挪威_42, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇪🇺 欧洲_43, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国_44, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇪🇺 欧洲_45, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 美国_46, server: 23.19.26.246, port: 10515, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇺🇸 美国_47, server: 38.91.102.86, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇪🇺 欧洲_48, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
-  - {name: 🇺🇸 美国_49, server: 43.154.157.216, port: 60151, type: ss, cipher: chacha20-ietf-poly1305, password: dunkpzGG9FM9}
-  - {name: 🇨🇳 台湾_50, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇪🇺 欧洲_51, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇮🇹 意大利_52, server: 82.202.220.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
-  - {name: 🇺🇸 美国_53, server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇮🇹 意大利_54, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇯🇵 日本_55, server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇪🇺 欧洲_56, server: 169.197.141.24, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 美国_57, server: 192.46.210.73, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国_58, server: 192.46.210.73, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 美国_59, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇮🇹 意大利_60, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 法国_61, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: w_118, server: 172.105.42.228, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: w_119, server: 172.105.42.228, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: w_120, server: 172.105.42.228, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: w_121, server: 172.105.42.228, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: w_122, server: 172.105.42.228, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: w_123, server: 172.105.42.228, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: w_124, server: 172.105.42.228, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: w_125, server: 172.105.42.228, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: w_126, server: 172.105.42.228, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: w_127, server: 172.105.42.228, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: w_128, server: 172.105.42.228, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: w_130, server: 172.105.42.228, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: w_131, server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: w_132, server: 5.255.101.95, port: 60202, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}}
-  - {name: w_133, server: 172.105.42.94, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: w_134, server: 172.105.42.94, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _美国_()+T_75, server: 38.75.136.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: _挪威_()+T_79, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇪🇺 欧洲w_2, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _美国_()+T_92, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇸🇬 新加坡, server: fuck.biubiubiu.cloud, port: 443, type: trojan, password: B4iK9pXaRnHfr9Rp, sni: fuck.biubiubiu.cloud}
+  - {name: 🇦🇺 _AU_澳大利亚 3, server: 172.105.180.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 37, server: 167.88.61.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 38, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 39, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国 30, server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国 31, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 32, server: 23.82.136.151, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
+  - {name: 🇦🇺 _AU_澳大利亚 4, server: 172.105.180.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇫🇷 法国 13, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: 🇺🇸 美国 33, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 40, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 41, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 42, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
+  - {name: 🇫🇷 法国 14, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国 34, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 美国 35, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 36, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国 37, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 挪威, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 挪威 2, server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇦🇺 _AU_澳大利亚 5, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 43, server: 167.88.61.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇫🇷 法国 15, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇫🇷 法国 16, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大 10, server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大 11, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 44, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 45, server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 46, server: 167.88.61.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇦🇺 澳大利亚 3, server: 172.105.180.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 法国 17, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 38, server: 167.88.61.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 47, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 48, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇫🇷 法国 18, server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大 12, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国 39, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇭🇰 香港 5, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡 2, server: fuck.biubiubiu.cloud, port: 443, type: trojan, password: B4iK9pXaRnHfr9Rp, sni: fuck.biubiubiu.cloud, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 49, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 50, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 51, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 52, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 53, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇫🇷 法国 19, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大 13, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大 14, server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 40, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 41, server: 169.197.142.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 54, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}}
+  - {name: 🇺🇸 _US_美国 55, server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 56, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 57, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 美国 42, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 43, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 美国 44, server: 172.99.190.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 挪威 3, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 挪威 4, server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 58, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇷🇺 俄罗斯 3, server: t7.ssrsub.com, port: 8443, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t7.ssrsub.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 45, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 挪威 5, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -922,113 +602,73 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - T
-      - T 2
-      - T 3
-      - T 4
-      - T 5
-      - T 6
-      - T 7
-      - T 8
-      - T 9
-      - T 10
-      - T 11
-      - T 12
-      - T 13
-      - T 14
-      - T 15
-      - T 16
-      - T 17
-      - T 18
-      - T 19
-      - T 20
-      - T 21
-      - T 22
-      - T 23
-      - T 24
-      - T 25
-      - T 26
-      - T 27
-      - T 28
-      - T 29
-      - T 30
-      - 挪威_1
-      - 🇪🇺 欧洲_2
-      - 🇪🇺 欧洲_3
-      - 🇪🇺 欧洲_4
-      - 🇺🇸 美国_5
-      - 🇺🇸 美国_6
-      - 🇺🇸 美国_7
-      - 挪威_8
-      - 🇺🇸 美国_9
-      - 🇺🇸 美国_10
-      - 挪威_11
-      - 🇺🇸 美国_12
-      - 🇦🇺 澳大利亚_13
-      - 🇺🇸 美国_14
-      - 🇸🇬 新加坡_15
-      - 🇦🇺 澳大利亚_16
-      - 🇦🇺 澳大利亚_17
-      - 🇦🇺 澳大利亚_18
-      - 🇦🇺 澳大利亚_19
-      - 🇪🇺 欧洲_20
-      - 🇦🇺 澳大利亚_21
-      - 🇦🇺 澳大利亚_22
-      - 🇦🇺 澳大利亚_23
-      - 🇦🇺 澳大利亚_24
-      - 🇦🇺 澳大利亚_25
-      - 🇦🇺 澳大利亚_26
-      - 挪威_27
-      - 🇦🇺 澳大利亚_28
-      - 🇦🇺 澳大利亚_29
-      - 🇪🇺 欧洲_30
-      - 🇦🇺 澳大利亚_31
-      - 🇦🇺 澳大利亚_32
-      - 🇦🇺 澳大利亚_33
-      - 🇺🇸 美国_34
-      - 🇦🇺 澳大利亚_35
-      - 🇪🇺 欧洲_36
-      - 🇮🇹 意大利_37
-      - 🇪🇺 欧洲_38
-      - 🇺🇸 美国_39
-      - 挪威_40
-      - 🇪🇺 欧洲_41
-      - 挪威_42
-      - 🇪🇺 欧洲_43
-      - 🇺🇸 美国_44
-      - 🇪🇺 欧洲_45
-      - 🇺🇸 美国_46
-      - 🇺🇸 美国_47
-      - 🇪🇺 欧洲_48
-      - 🇺🇸 美国_49
-      - 🇨🇳 台湾_50
-      - 🇪🇺 欧洲_51
-      - 🇮🇹 意大利_52
-      - 🇺🇸 美国_53
-      - 🇮🇹 意大利_54
-      - 🇯🇵 日本_55
-      - 🇪🇺 欧洲_56
-      - 🇺🇸 美国_57
-      - 🇺🇸 美国_58
-      - 🇺🇸 美国_59
-      - 🇮🇹 意大利_60
-      - 🇫🇷 法国_61
-      - w_118
-      - w_119
-      - w_120
-      - w_121
-      - w_122
-      - w_123
-      - w_124
-      - w_125
-      - w_126
-      - w_127
-      - w_128
-      - w_130
-      - w_131
-      - w_132
-      - w_133
-      - w_134
+      - 🇺🇸 _美国_()+T_75
+      - _挪威_()+T_79
+      - 🇪🇺 欧洲w_2
+      - 🇺🇸 _美国_()+T_92
+      - 🇸🇬 新加坡
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 美国 30
+      - 🇺🇸 美国 31
+      - 🇺🇸 美国 32
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇫🇷 法国 13
+      - 🇺🇸 美国 33
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇫🇷 法国 14
+      - 🇺🇸 美国 34
+      - 🇺🇸 美国 35
+      - 🇺🇸 美国 36
+      - 🇺🇸 美国 37
+      - 挪威
+      - 挪威 2
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇺🇸 _US_美国 43
+      - 🇫🇷 法国 15
+      - 🇫🇷 法国 16
+      - 🇨🇦 加拿大 10
+      - 🇨🇦 加拿大 11
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇦🇺 澳大利亚 3
+      - 🇫🇷 法国 17
+      - 🇺🇸 美国 38
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇫🇷 法国 18
+      - 🇨🇦 加拿大 12
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 5
+      - 🇸🇬 新加坡 2
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇫🇷 法国 19
+      - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇺🇸 美国 40
+      - 🇺🇸 美国 41
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 美国 42
+      - 🇺🇸 美国 43
+      - 🇺🇸 美国 44
+      - 挪威 3
+      - 挪威 4
+      - 🇺🇸 _US_美国 58
+      - 🇷🇺 俄罗斯 3
+      - 🇺🇸 美国 45
+      - 挪威 5
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
