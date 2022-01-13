@@ -5,181 +5,549 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 US(), server: 104.16.181.103, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}}
-  - {name: 🇺🇸 US() 2, server: 104.16.181.150, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}}
-  - {name: 🇭🇰 HK(), server: 42.157.8.162, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 HK() 2, server: 47.99.142.242, port: 54497, type: vmess, uuid: 4b6b4c48-dbd6-4743-8e33-0049006b3068, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇻🇳 越南🇻🇳(), server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
-  - {name: 🇨🇳 TW(), server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 HK() 3, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: HU(), server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}}
-  - {name: GB(), server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
-  - {name: 🇭🇰 HK() 4, server: 203.189.208.74, port: 48776, type: vmess, uuid: d40c20e7-a5c3-4dcf-93c3-b2d7efb1159f, alterId: 0, cipher: auto, tls: false}
-  - {name: CA(), server: t1.ssrsub.com, port: 8443, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t1.ssrsub.com, skip-cert-verify: true}
-  - {name: GB() 2, server: 45.91.83.111, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: 45.91.83.111}}
-  - {name: 🇺🇸 _US_美国 2, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 3, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 4, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 5, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 6, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: T, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: T 2, server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: T 3, server: 62.210.209.50, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: T 4, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: T 5, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: T 6, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: SfobRIcergHchqBFzzua, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click}
+  - {name: T 7, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: SfobRIcergHchqBFzzua, sni: jp-tyo-04-tr.cdn.savoy.click}
+  - {name: T 8, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: T 9, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: T 10, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: T 11, server: 118.107.244.110, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: T 12, server: 118.107.244.110, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: T 13, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: T 14, server: gdyd.xxcv.cc, port: 25603, type: trojan, password: 16d71e09-b2ae-3d8c-8bbb-5eeabed31975, sni: gdyd.xxcv.cc}
+  - {name: T 15, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 27, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 28, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 29, server: 38.75.136.93, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 30, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 31, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: _53, server: 103.108.94.226, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: bFfLrvbG3GjjNSxKBWt5}
+  - {name: _61, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: _64, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: _66, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
+  - {name: _67, server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
+  - {name: _69, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: false}
+  - {name: _71, server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
+  - {name: _110, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: tswmqssAcdphWMRdDSPZbeVSzhRVbGdp, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click, skip-cert-verify: false}
+  - {name: _139, server: s2.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s2.upyun.online, skip-cert-verify: false}
+  - {name: T 16, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: T 17, server: 118.107.244.110, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: T 18, server: gzcm.rokishi.cyou, port: 20026, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 19, server: gzcm.rokishi.cyou, port: 20036, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 20, server: 0750-s1.cm.liangxinyun.xyz, port: 5801, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz}
+  - {name: T 21, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: T 22, server: gzcm.rokishi.cyou, port: 20010, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 23, server: gzcm.rokishi.cyou, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 24, server: 118.107.244.110, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: T 25, server: gzcm.rokishi.cyou, port: 20019, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 26, server: gzcm.rokishi.cyou, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 27, server: iepl.elaina.link, port: 50010, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 28, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: T 29, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: T 30, server: hzcm.rokishi.cyou, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 31, server: gzcm.rokishi.cyou, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 32, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: T 33, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: T 34, server: 38.91.102.96, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: T 35, server: gzcm.rokishi.cyou, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 36, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: T 37, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: T 38, server: hzcm.rokishi.cyou, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 39, server: 192.46.210.73, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: T 40, server: 118.107.244.110, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: T 41, server: 172.105.180.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: T 42, server: 43.154.157.216, port: 60151, type: ss, cipher: chacha20-ietf-poly1305, password: dunkpzGG9FM9}
+  - {name: T 43, server: gzcm.rokishi.cyou, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 44, server: gzcm.rokishi.cyou, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 45, server: jmcm.rokishi.cyou, port: 10037, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 46, server: 0750-s1.cm.liangxinyun.xyz, port: 5803, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz}
+  - {name: T 47, server: 172.99.190.87, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: T 48, server: hzcm.rokishi.cyou, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458}
+  - {name: T 49, server: sp.xmsj.reimu.ltd, port: 5101, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: sp.xmsj.reimu.ltd}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -202,23 +570,69 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US()
-      - 🇺🇸 US() 2
-      - 🇭🇰 HK()
-      - 🇭🇰 HK() 2
-      - 🇻🇳 越南🇻🇳()
-      - 🇨🇳 TW()
-      - 🇭🇰 HK() 3
-      - HU()
-      - GB()
-      - 🇭🇰 HK() 4
-      - CA()
-      - GB() 2
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
+      - T
+      - T 2
+      - T 3
+      - T 4
+      - T 5
+      - T 6
+      - T 7
+      - T 8
+      - T 9
+      - T 10
+      - T 11
+      - T 12
+      - T 13
+      - T 14
+      - T 15
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 _US_美国 31
+      - _53
+      - _61
+      - _64
+      - _66
+      - _67
+      - _69
+      - _71
+      - _110
+      - _139
+      - T 16
+      - T 17
+      - T 18
+      - T 19
+      - T 20
+      - T 21
+      - T 22
+      - T 23
+      - T 24
+      - T 25
+      - T 26
+      - T 27
+      - T 28
+      - T 29
+      - T 30
+      - T 31
+      - T 32
+      - T 33
+      - T 34
+      - T 35
+      - T 36
+      - T 37
+      - T 38
+      - T 39
+      - T 40
+      - T 41
+      - T 42
+      - T 43
+      - T 44
+      - T 45
+      - T 46
+      - T 47
+      - T 48
+      - T 49
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
