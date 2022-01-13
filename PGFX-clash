@@ -5,780 +5,588 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {name: 'Ytb:鹏哥分享_CN_中国_1', server: 118.193.179.2, port: 36923, type: ss, cipher: chacha20-ietf-poly1305, password: koko666}
-  - {name: 'Ytb:鹏哥分享_HK_香港_2', server: 118.107.244.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 'Ytb:鹏哥分享_SG_新加坡_3', server: fuck.biubiubiu.cloud, port: 443, type: trojan, password: B4iK9pXaRnHfr9Rp}
-  - {name: 'Ytb:鹏哥分享_HK_香港_4', server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'Ytb:鹏哥分享_PH_菲律宾_5', server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
-  - {name: 'Ytb:鹏哥分享_HK_香港_6', server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 'Ytb:鹏哥分享_HK_香港_7', server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_FR_法国_8', server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
-  - {name: 'Ytb:鹏哥分享_CH_瑞士_9', server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
-  - {name: 'Ytb:鹏哥分享_HU_匈牙利_10', server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy}
-  - {name: 'Ytb:鹏哥分享_NL_荷兰_11', server: 178.62.224.119, port: 8888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: 178.62.224.119 }}
-  - {name: 'Ytb:鹏哥分享_NL_荷兰_12', server: 178.62.224.119, port: 8888, type: vmess, uuid: b85b6cbb-ec13-41c6-ba97-52ad48d63c5c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: 178.62.224.119 }}
-  - {name: 'Ytb:鹏哥分享_PT_葡萄牙_13', server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 'Ytb:鹏哥分享_IL_以色列_14', server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_15', server: t4.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57}
-  - {name: 'Ytb:鹏哥分享_BG_保加利亚_16', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
-  - {name: 'Ytb:鹏哥分享_HK_香港_17', server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_18', server: t4.ssrsub.com, port: 156, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5}
-  - {name: 'Ytb:鹏哥分享_FR_法国_19', server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 'Ytb:鹏哥分享_US_美国_20', server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Ytb:鹏哥分享_US_美国_21', server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 'Ytb:鹏哥分享_GB_英国_22', server: 172.99.190.87, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_GB_英国_23', server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 'Ytb:鹏哥分享_GB_英国_24', server: 172.99.190.87, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 'Ytb:鹏哥分享_US_美国_25', server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_26', server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 'Ytb:鹏哥分享_US_美国_27', server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Ytb:鹏哥分享_US_美国_28', server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_29', server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 'Ytb:鹏哥分享_US_美国_30', server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_GB_英国_31', server: 172.99.190.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 'Ytb:鹏哥分享_US_美国_32', server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_33', server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 'Ytb:鹏哥分享_US_美国_34', server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'Ytb:鹏哥分享_US_美国_35', server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_36', server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Ytb:鹏哥分享_CN_中国_37', server: 120.232.214.36, port: 5002, type: ss, cipher: aes-256-gcm, password: 1f6aca3cebd21a4cd5a80718ed16b74c}
-  - {name: 'Ytb:鹏哥分享_US_美国_38', server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Ytb:鹏哥分享_GB_英国_39', server: 172.99.190.87, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_40', server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Ytb:鹏哥分享_US_美国_41', server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'Ytb:鹏哥分享_US_美国_42', server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'Ytb:鹏哥分享_US_美国_43', server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 'Ytb:鹏哥分享_GB_英国_44', server: 172.99.190.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_45', server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Ytb:鹏哥分享_US_美国_46', server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_47', server: t3.ssrsub.com, port: 156, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t3.ssrsub.com}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_48', server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 'Ytb:鹏哥分享_US_美国_49', server: 169.197.142.39, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_50', server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_51', server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_52', server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Ytb:鹏哥分享_US_美国_53', server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 'Ytb:鹏哥分享_US_美国_54', server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 'Ytb:鹏哥分享_US_美国_55', server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'Ytb:鹏哥分享_US_美国_56', server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_57', server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'Ytb:鹏哥分享_US_美国_58', server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 'Ytb:鹏哥分享_US_美国_59', server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 'Ytb:鹏哥分享_US_美国_60', server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_61', server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 'Ytb:鹏哥分享_GB_英国_62', server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 'Ytb:鹏哥分享_US_美国_63', server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_64', server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_65', server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_66', server: t1.ssrsub.com, port: 8443, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t1.ssrsub.com}
-  - {name: 'Ytb:鹏哥分享_US_美国_67', server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 'Ytb:鹏哥分享_US_美国_68', server: 167.88.61.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'Ytb:鹏哥分享_US_美国_69', server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_70', server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_71', server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'Ytb:鹏哥分享_US_美国_72', server: 167.88.61.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_73', server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 'Ytb:鹏哥分享_CN_中国_74', server: 183.232.56.202, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/video", host: 183.232.56.202 }}
-  - {name: 'Ytb:鹏哥分享_US_美国_75', server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'Ytb:鹏哥分享_US_美国_76', server: 167.88.61.60, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_GB_英国_77', server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_78', server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'Ytb:鹏哥分享_US_美国_79', server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 'Ytb:鹏哥分享_US_美国_80', server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 'Ytb:鹏哥分享_US_美国_81', server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Ytb:鹏哥分享_US_美国_82', server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 'Ytb:鹏哥分享_US_美国_83', server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'Ytb:鹏哥分享_US_美国_84', server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 'Ytb:鹏哥分享_NO_挪威_85', server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_86', server: t3.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t3.ssrsub.com}
-  - {name: 'Ytb:鹏哥分享_US_美国_87', server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Ytb:鹏哥分享_CA_加拿大_88', server: t1.ssrsub.com, port: 8443, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t1.ssrsub.com}
-  - {name: 'Ytb:鹏哥分享_US_美国_89', server: 169.197.142.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Ytb:鹏哥分享_US_美国_90', server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'Ytb:鹏哥分享_GB_英国_91', server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Ytb:鹏哥分享_GB_英国_92', server: 172.99.190.87, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'YTB:鹏哥分享_CN_中国_1', server: 120.197.88.216, port: 20049, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: 120.197.88.216 }}
+  - {name: 'YTB:鹏哥分享_CN_中国_2', server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: cm-jm.okvpn.xyz }}
+  - {name: 'YTB:鹏哥分享_PH_菲律宾_3', server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
+  - {name: 'YTB:鹏哥分享_CN_中国_4', server: 120.197.88.216, port: 20015, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: 120.197.88.216 }}
+  - {name: 'YTB:鹏哥分享_CN_中国_5', server: 116.162.32.200, port: 18000, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: 116.162.32.200 }}
+  - {name: 'YTB:鹏哥分享_DE_德国_6', server: 172.105.251.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_DE_德国_7', server: 172.105.251.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'YTB:鹏哥分享_CH_瑞士_8', server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: 'YTB:鹏哥分享_DE_德国_9', server: 172.105.251.193, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_DE_德国_10', server: 172.105.251.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'YTB:鹏哥分享_DE_德国_11', server: 172.105.251.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'YTB:鹏哥分享_DE_德国_12', server: 172.105.251.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_DE_德国_13', server: 172.105.251.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'YTB:鹏哥分享_BG_保加利亚_14', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: 'YTB:鹏哥分享_DE_德国_15', server: 172.105.251.193, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_GB_英国_16', server: 149.7.16.10, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 'YTB:鹏哥分享_MX_墨西哥_17', server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: 'YTB:鹏哥分享_GB_英国_18', server: 149.7.16.10, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 'YTB:鹏哥分享_GB_英国_19', server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_NL_荷兰_20', server: 178.62.224.119, port: 8888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: "/", host: 178.62.224.119 }}
+  - {name: 'YTB:鹏哥分享_GB_英国_21', server: 149.7.16.10, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 'YTB:鹏哥分享_US_美国_22', server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 'YTB:鹏哥分享_HU_匈牙利_23', server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: { path: "/path/243535322906", host: www.16675463.xyz }}
+  - {name: 'YTB:鹏哥分享_TW_台湾_24', server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 'YTB:鹏哥分享_GB_英国_25', server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 'YTB:鹏哥分享_GB_英国_26', server: 172.99.190.87, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_US_美国_27', server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'YTB:鹏哥分享_US_美国_28', server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 'YTB:鹏哥分享_US_美国_29', server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_PT_葡萄牙_30', server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 'YTB:鹏哥分享_US_美国_31', server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 'YTB:鹏哥分享_US_美国_32', server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_CA_加拿大_33', server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_US_美国_34', server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 'YTB:鹏哥分享_US_美国_35', server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'YTB:鹏哥分享_US_美国_36', server: 169.197.142.39, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_US_美国_37', server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_US_美国_38', server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'YTB:鹏哥分享_US_美国_39', server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 'YTB:鹏哥分享_GB_英国_40', server: 172.99.190.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 'YTB:鹏哥分享_US_美国_41', server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 'YTB:鹏哥分享_US_美国_42', server: v9.ssrsub.com, port: 8443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: { path: "/ssrsub", host: v9.ssrsub.com }}
+  - {name: 'YTB:鹏哥分享_US_美国_43', server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'YTB:鹏哥分享_US_美国_44', server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 'YTB:鹏哥分享_US_美国_45', server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 'YTB:鹏哥分享_GB_英国_46', server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'YTB:鹏哥分享_US_美国_47', server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 'YTB:鹏哥分享_US_美国_48', server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 'YTB:鹏哥分享_US_美国_49', server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'YTB:鹏哥分享_US_美国_50', server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_US_美国_51', server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: { path: "/ws", host: usa-sanfrancisco.lvuft.com }}
+  - {name: 'YTB:鹏哥分享_US_美国_52', server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_US_美国_53', server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_GB_英国_54', server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_CA_加拿大_55', server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_CA_加拿大_56', server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_US_美国_57', server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_CA_加拿大_58', server: t3.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t3.ssrsub.com}
+  - {name: 'YTB:鹏哥分享_NO_挪威_59', server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_CA_加拿大_60', server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'YTB:鹏哥分享_US_美国_61', server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 'YTB:鹏哥分享_CA_加拿大_62', server: t3.ssrsub.com, port: 156, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t3.ssrsub.com}
+  - {name: 'YTB:鹏哥分享_US_美国_63', server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 'YTB:鹏哥分享_NO_挪威_64', server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'YTB:鹏哥分享_US_美国_65', server: 167.88.61.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'YTB:鹏哥分享_NO_挪威_66', server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'YTB:鹏哥分享_67', server: v8.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: { path: "/ssrsub", host: v8.ssrsub.com }}
+  - {name: 'YTB:鹏哥分享_NO_挪威_68', server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威人_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威人_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威人_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -794,98 +602,74 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Ytb:鹏哥分享_CN_中国_1
-      - Ytb:鹏哥分享_HK_香港_2
-      - Ytb:鹏哥分享_SG_新加坡_3
-      - Ytb:鹏哥分享_HK_香港_4
-      - Ytb:鹏哥分享_PH_菲律宾_5
-      - Ytb:鹏哥分享_HK_香港_6
-      - Ytb:鹏哥分享_HK_香港_7
-      - Ytb:鹏哥分享_FR_法国_8
-      - Ytb:鹏哥分享_CH_瑞士_9
-      - Ytb:鹏哥分享_HU_匈牙利_10
-      - Ytb:鹏哥分享_NL_荷兰_11
-      - Ytb:鹏哥分享_NL_荷兰_12
-      - Ytb:鹏哥分享_PT_葡萄牙_13
-      - Ytb:鹏哥分享_IL_以色列_14
-      - Ytb:鹏哥分享_CA_加拿大_15
-      - Ytb:鹏哥分享_BG_保加利亚_16
-      - Ytb:鹏哥分享_HK_香港_17
-      - Ytb:鹏哥分享_CA_加拿大_18
-      - Ytb:鹏哥分享_FR_法国_19
-      - Ytb:鹏哥分享_US_美国_20
-      - Ytb:鹏哥分享_US_美国_21
-      - Ytb:鹏哥分享_GB_英国_22
-      - Ytb:鹏哥分享_GB_英国_23
-      - Ytb:鹏哥分享_GB_英国_24
-      - Ytb:鹏哥分享_US_美国_25
-      - Ytb:鹏哥分享_US_美国_26
-      - Ytb:鹏哥分享_US_美国_27
-      - Ytb:鹏哥分享_US_美国_28
-      - Ytb:鹏哥分享_US_美国_29
-      - Ytb:鹏哥分享_US_美国_30
-      - Ytb:鹏哥分享_GB_英国_31
-      - Ytb:鹏哥分享_US_美国_32
-      - Ytb:鹏哥分享_US_美国_33
-      - Ytb:鹏哥分享_US_美国_34
-      - Ytb:鹏哥分享_US_美国_35
-      - Ytb:鹏哥分享_CA_加拿大_36
-      - Ytb:鹏哥分享_CN_中国_37
-      - Ytb:鹏哥分享_US_美国_38
-      - Ytb:鹏哥分享_GB_英国_39
-      - Ytb:鹏哥分享_NO_挪威_40
-      - Ytb:鹏哥分享_US_美国_41
-      - Ytb:鹏哥分享_US_美国_42
-      - Ytb:鹏哥分享_US_美国_43
-      - Ytb:鹏哥分享_GB_英国_44
-      - Ytb:鹏哥分享_NO_挪威_45
-      - Ytb:鹏哥分享_US_美国_46
-      - Ytb:鹏哥分享_CA_加拿大_47
-      - Ytb:鹏哥分享_NO_挪威_48
-      - Ytb:鹏哥分享_US_美国_49
-      - Ytb:鹏哥分享_US_美国_50
-      - Ytb:鹏哥分享_US_美国_51
-      - Ytb:鹏哥分享_CA_加拿大_52
-      - Ytb:鹏哥分享_US_美国_53
-      - Ytb:鹏哥分享_US_美国_54
-      - Ytb:鹏哥分享_US_美国_55
-      - Ytb:鹏哥分享_US_美国_56
-      - Ytb:鹏哥分享_NO_挪威_57
-      - Ytb:鹏哥分享_US_美国_58
-      - Ytb:鹏哥分享_US_美国_59
-      - Ytb:鹏哥分享_US_美国_60
-      - Ytb:鹏哥分享_US_美国_61
-      - Ytb:鹏哥分享_GB_英国_62
-      - Ytb:鹏哥分享_US_美国_63
-      - Ytb:鹏哥分享_CA_加拿大_64
-      - Ytb:鹏哥分享_NO_挪威_65
-      - Ytb:鹏哥分享_CA_加拿大_66
-      - Ytb:鹏哥分享_US_美国_67
-      - Ytb:鹏哥分享_US_美国_68
-      - Ytb:鹏哥分享_US_美国_69
-      - Ytb:鹏哥分享_US_美国_70
-      - Ytb:鹏哥分享_NO_挪威_71
-      - Ytb:鹏哥分享_US_美国_72
-      - Ytb:鹏哥分享_NO_挪威_73
-      - Ytb:鹏哥分享_CN_中国_74
-      - Ytb:鹏哥分享_US_美国_75
-      - Ytb:鹏哥分享_US_美国_76
-      - Ytb:鹏哥分享_GB_英国_77
-      - Ytb:鹏哥分享_CA_加拿大_78
-      - Ytb:鹏哥分享_US_美国_79
-      - Ytb:鹏哥分享_US_美国_80
-      - Ytb:鹏哥分享_US_美国_81
-      - Ytb:鹏哥分享_US_美国_82
-      - Ytb:鹏哥分享_US_美国_83
-      - Ytb:鹏哥分享_US_美国_84
-      - Ytb:鹏哥分享_NO_挪威_85
-      - Ytb:鹏哥分享_CA_加拿大_86
-      - Ytb:鹏哥分享_US_美国_87
-      - Ytb:鹏哥分享_CA_加拿大_88
-      - Ytb:鹏哥分享_US_美国_89
-      - Ytb:鹏哥分享_US_美国_90
-      - Ytb:鹏哥分享_GB_英国_91
-      - Ytb:鹏哥分享_GB_英国_92
+      - YTB:鹏哥分享_CN_中国_1
+      - YTB:鹏哥分享_CN_中国_2
+      - YTB:鹏哥分享_PH_菲律宾_3
+      - YTB:鹏哥分享_CN_中国_4
+      - YTB:鹏哥分享_CN_中国_5
+      - YTB:鹏哥分享_DE_德国_6
+      - YTB:鹏哥分享_DE_德国_7
+      - YTB:鹏哥分享_CH_瑞士_8
+      - YTB:鹏哥分享_DE_德国_9
+      - YTB:鹏哥分享_DE_德国_10
+      - YTB:鹏哥分享_DE_德国_11
+      - YTB:鹏哥分享_DE_德国_12
+      - YTB:鹏哥分享_DE_德国_13
+      - YTB:鹏哥分享_BG_保加利亚_14
+      - YTB:鹏哥分享_DE_德国_15
+      - YTB:鹏哥分享_GB_英国_16
+      - YTB:鹏哥分享_MX_墨西哥_17
+      - YTB:鹏哥分享_GB_英国_18
+      - YTB:鹏哥分享_GB_英国_19
+      - YTB:鹏哥分享_NL_荷兰_20
+      - YTB:鹏哥分享_GB_英国_21
+      - YTB:鹏哥分享_US_美国_22
+      - YTB:鹏哥分享_HU_匈牙利_23
+      - YTB:鹏哥分享_TW_台湾_24
+      - YTB:鹏哥分享_GB_英国_25
+      - YTB:鹏哥分享_GB_英国_26
+      - YTB:鹏哥分享_US_美国_27
+      - YTB:鹏哥分享_US_美国_28
+      - YTB:鹏哥分享_US_美国_29
+      - YTB:鹏哥分享_PT_葡萄牙_30
+      - YTB:鹏哥分享_US_美国_31
+      - YTB:鹏哥分享_US_美国_32
+      - YTB:鹏哥分享_CA_加拿大_33
+      - YTB:鹏哥分享_US_美国_34
+      - YTB:鹏哥分享_US_美国_35
+      - YTB:鹏哥分享_US_美国_36
+      - YTB:鹏哥分享_US_美国_37
+      - YTB:鹏哥分享_US_美国_38
+      - YTB:鹏哥分享_US_美国_39
+      - YTB:鹏哥分享_GB_英国_40
+      - YTB:鹏哥分享_US_美国_41
+      - YTB:鹏哥分享_US_美国_42
+      - YTB:鹏哥分享_US_美国_43
+      - YTB:鹏哥分享_US_美国_44
+      - YTB:鹏哥分享_US_美国_45
+      - YTB:鹏哥分享_GB_英国_46
+      - YTB:鹏哥分享_US_美国_47
+      - YTB:鹏哥分享_US_美国_48
+      - YTB:鹏哥分享_US_美国_49
+      - YTB:鹏哥分享_US_美国_50
+      - YTB:鹏哥分享_US_美国_51
+      - YTB:鹏哥分享_US_美国_52
+      - YTB:鹏哥分享_US_美国_53
+      - YTB:鹏哥分享_GB_英国_54
+      - YTB:鹏哥分享_CA_加拿大_55
+      - YTB:鹏哥分享_CA_加拿大_56
+      - YTB:鹏哥分享_US_美国_57
+      - YTB:鹏哥分享_CA_加拿大_58
+      - YTB:鹏哥分享_NO_挪威_59
+      - YTB:鹏哥分享_CA_加拿大_60
+      - YTB:鹏哥分享_US_美国_61
+      - YTB:鹏哥分享_CA_加拿大_62
+      - YTB:鹏哥分享_US_美国_63
+      - YTB:鹏哥分享_NO_挪威_64
+      - YTB:鹏哥分享_US_美国_65
+      - YTB:鹏哥分享_NO_挪威_66
+      - YTB:鹏哥分享_67
+      - YTB:鹏哥分享_NO_挪威_68
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -1245,26 +1029,26 @@ rules:
   - DOMAIN-SUFFIX,1.iqeq.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,1.jeasyui.net,🛑 全球拦截
   - DOMAIN-SUFFIX,1.mgff.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,1.nanrenwo.net,🛑全球拦截
-  - DOMAIN-SUFFIX,1.panduoduo.net,🛑全球拦截
-  - DOMAIN-SUFFIX,1.qtmojo.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,1.renshu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1.soufy.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,1.tulaoshi.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1.tuxi.com.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,1.win7china.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1.win7sky.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1.wps.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,1.xiaopin5.com,🛑全球拦截
-  - DOMAINSUFFIX,1.xiaozhizhijia.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1.xilu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1.zw3e.com,🛑全球拦截
-  - DOMAIN-SUFFIX,1000dy.com,🛑全球拦截
+  - DOMAIN-SUFFIX,1.nanrenwo.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.panduoduo.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.qtmojo.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.rengshu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.soufy.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.tulaoshi.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.tuxi.com.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.win7china.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.win7sky.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.wps.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.xiaopin5.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.xiaozhizhijia.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.xilu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1.zw3e.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,1000dy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,10086.cn.baidu.cdn.yiwk.com,🛑 全球拦截
   - DOMAIN-SUFFIX,100fenlm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,1017.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,10up.com,🛑全球拦截
-  - DOMAIN-SUFFIX,11.hydcd.com,🛑全球拦截
+  - DOMAIN-SUFFIX,1017.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,10up.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,11.hydcd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,111111qb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,111cn.net,🛑 全球拦截
   - DOMAIN-SUFFIX,1133.cc,🛑 全球拦截
@@ -1642,25 +1426,25 @@ rules:
   - DOMAIN-SUFFIX,a.hl.mi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.holagames.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.irs01.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,a.itiexue.net,🛑全球拦截
+  - DOMAIN-SUFFIX,a.itiexue.net,🛑 全球拦截
   - DOMAIN-SUFFIX,a.jyeoo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.kandiaoyu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,a.kejixun.com,🛑全球拦截
+  - DOMAIN-SUFFIX,a.kejixun.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.kickass.to,🛑 全球拦截
   - DOMAIN-SUFFIX,a.koudai.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.livesportmedia.eu,🛑 全球拦截
   - DOMAIN-SUFFIX,a.lolwot.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.ltdnc.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.lwinl.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,a.lz13.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,amgxwztv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,amshuhuangge.org,🛑 全球拦截
+  - DOMAIN-SUFFIX,a.lz13.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,a.m.gxwztv.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,a.m.shuhuangge.org,🛑 全球拦截
   - DOMAIN-SUFFIX,a.mct01.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.mjlnbx.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,a.nanhuwang.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.nowscore.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,a.qiao024.com,🛑全球拦截
-  - DOMAIN-SUFFIX,a.qinghua5.com,🛑全球拦截
+  - DOMAIN-SUFFIX,a.qiao024.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,a.qinghua5.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.shangz99991.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.shczz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.shenchuang.com,🛑 全球拦截
@@ -2104,7 +1888,7 @@ rules:
   - DOMAIN-SUFFIX,adres.myaora.net,🛑 全球拦截
   - DOMAIN-SUFFIX,adriver.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,adriver-sync.rutarget.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,adroll.com,🛑全球拦截
+  - DOMAIN-SUFFIX,adroll.com,🛑 全球拦截
   - DOMAIN-SUFFIX,adrotator.se,🛑 全球拦截
   - DOMAIN-SUFFIX,adrs.sdo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,adrunnr.com,🛑 全球拦截
@@ -2115,7 +1899,7 @@ rules:
   - DOMAIN-SUFFIX,ads2.msn.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ads2.opensubtitles.org,🛑 全球拦截
   - DOMAIN-SUFFIX,ads8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ads80.com,🛑全球拦截
+  - DOMAIN-SUFFIX,ads80.com,🛑 全球拦截
   - DOMAIN-SUFFIX,adsatt.abcnews.starwave.com,🛑 全球拦截
   - DOMAIN-SUFFIX,adsatt.disney.starwave.com,🛑 全球拦截
   - DOMAIN-SUFFIX,adsatt.espn.go.com,🛑 全球拦截
@@ -2343,19 +2127,19 @@ rules:
   - DOMAIN-SUFFIX,apas.aipai.com,🛑 全球拦截
   - DOMAIN-SUFFIX,api.0.0.0.0.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,api.adv.ott.cibntv.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,api.ahjinshu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,api.android.dianru.com,🛑全球拦截
-  - DOMAINSUFFIX,api.anti.wauee.com,🛑全球拦截
-  - DOMAIN-SUFFIX,api.appodeal.com,🛑全球拦截
-  - DOMAIN-SUFFIX,api.apps.sina.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,api.bailingjiankang.com,🛑全球拦截
+  - DOMAIN-SUFFIX,api.ahjinshu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.android.dianru.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.anti.wauee.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.appodeal.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.apps.sina.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.bailingjiankang.com,🛑 全球拦截
   - DOMAIN-SUFFIX,api.bs.zui.com,🛑 全球拦截
   - DOMAIN-SUFFIX,api.cmt.mob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,api.coolguang.com,🛑全球拦截
-  - DOMAIN-SUFFIX,api.dewmobile.net,🛑全球拦截
-  - DOMAIN-SUFFIX,api.dianru.com,🛑全球拦截
-  - DOMAIN-SUFFIX,api.doumob.com,🛑全球拦截
-  - DOMAIN-SUFFIX,api.dreamfull.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,api.coolguang.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.dewmobile.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.dianru.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.doumob.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,api.dreamfull.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,api.dsp.yhd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,api.exc.mob.com,🛑 全球拦截
   - DOMAIN-SUFFIX,api.g1.junfull.com,🛑 全球拦截
@@ -2576,26 +2360,26 @@ rules:
   - DOMAIN-SUFFIX,b1.91jucai.com,🛑 全球拦截
   - DOMAIN-SUFFIX,b1.c1km4.com,🛑 全球拦截
   - DOMAIN-SUFFIX,b17.8794.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,b17.shangc.net,🛑全球拦截
-  - DOMAIN-SUFFIX,b17.xiumu.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,b17.shangc.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,b17.xiumu.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,b1sync.zemanta.com,🛑 全球拦截
   - DOMAIN-SUFFIX,b4xuj.zzhhts.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,b7nkd.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,b7nkd.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,b92.putniktravel.com,🛑 全球拦截
   - DOMAIN-SUFFIX,b9377h.com,🛑 全球拦截
   - DOMAIN-SUFFIX,b99u.top,🛑 全球拦截
-  - DOMAIN-SUFFIX,ba.ccm2.net,🛑全球拦截
+  - DOMAIN-SUFFIX,ba.ccm2.net,🛑 全球拦截
   - DOMAIN-SUFFIX,ba.fqzds.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ba.kioskea.net,🛑 全球拦截
   - DOMAIN-SUFFIX,baby.yf898.com,🛑 全球拦截
   - DOMAIN-SUFFIX,backup.lumion3d.com,🛑 全球拦截
   - DOMAIN-SUFFIX,backup.lumion3d.net,🛑 全球拦截
   - DOMAIN-SUFFIX,bad1.51gxqm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,badao37.net,🛑全球拦截
-  - DOMAIN-SUFFIX,bai3.gushiwen.org,🛑全球拦截
+  - DOMAIN-SUFFIX,badao37.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,bai3.gushiwen.org,🛑 全球拦截
   - DOMAIN-SUFFIX,baiapk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,baichuan.baidu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,baidu.cybcyw.com,🛑全球拦截
+  - DOMAIN-SUFFIX,baichuan.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,baidu.cybcyw.com,🛑 全球拦截
   - DOMAIN-SUFFIX,baidu.dsp.tansuotv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,baidu.greenxf.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,baidu.jz5u.net,🛑 全球拦截
@@ -2937,25 +2721,25 @@ rules:
   - DOMAIN-SUFFIX,c1.xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c16cp358.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c2.58toto.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,c2.popads.net,🛑全球拦截
+  - DOMAIN-SUFFIX,c2.popads.net,🛑 全球拦截
   - DOMAIN-SUFFIX,c2.statcounter.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,c3.gostats.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,c3.gostats.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,c3.moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c6.bjdianyue.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c6.lnymd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c77777777.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,c8.wangdq.com,🛑全球拦截
+  - DOMAIN-SUFFIX,c8.wangdq.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c8b.jcdb88.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ca.5173car.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ca.w8.com.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,caamei.com,🛑全球拦截
+  - DOMAIN-SUFFIX,ca.w8.com.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,caamei.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cacaca.0571yy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cacaca.sp96878.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cacafly.net,🛑全球拦截
-  - DOMAIN-SUFFIX,cache.betweendigital.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cache.soloth.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cache.xw126.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cachead.com,🛑全球拦截
+  - DOMAIN-SUFFIX,cacafly.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,cache.betweendigital.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cache.soloth.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cache.xw126.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cachead.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cachenotice.cp11.ott.cibntv.net,🛑 全球拦截
   - DOMAIN-SUFFIX,cachesit.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cache-ssl.celtra.com,🛑 全球拦截
@@ -3287,61 +3071,61 @@ rules:
   - DOMAIN-SUFFIX,coolguang.com,🛑 全球拦截
   - DOMAIN-SUFFIX,coolnay.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cooolyi.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,coolyi.com,🛑全球拦截
+  - DOMAIN-SUFFIX,cooolyi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,coop.pop.baofeng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cootek-dialer-download.oss-cn-hangzhou.aliyuncs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cootek-file.cdn.cootekservice.com,🛑全球拦截
-  - DOMAIN,cop.my,🛑全球拦截
+  - DOMAIN-SUFFIX,cootek-file.cdn.cootekservice.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cop.my,🛑 全球拦截
   - DOMAIN-SUFFIX,coremetrics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,corner.houyi.baofeng.net,🛑全球拦截
+  - DOMAIN-SUFFIX,corner.houyi.baofeng.net,🛑 全球拦截
   - DOMAIN-SUFFIX,coro.benbaisteel.com,🛑 全球拦截
   - DOMAIN-SUFFIX,corocksi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,corp.meitu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,corp.sohu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cosoyoo.com,🛑全球拦截
+  - DOMAIN-SUFFIX,corp.meitu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,corp.sohu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cosoyoo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,count.cpm.cm.kankan.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,count.knowsky.com,🛑全球拦截
-  - DOMAIN-SUFFIX,count.mail.163.com,🛑全球拦截
-  - DOMAIN-SUFFIX,count.pcpop.com,🛑全球拦截
+  - DOMAIN-SUFFIX,count.knowsky.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,count.mail.163.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,count.pcpop.com,🛑 全球拦截
   - DOMAIN-SUFFIX,count.video.sina.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,count.wk2.com,🛑全球拦截
+  - DOMAIN-SUFFIX,count.wk2.com,🛑 全球拦截
   - DOMAIN-SUFFIX,count5.pconline.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,count6.pconline.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,counter.csdn.net,🛑全球拦截
-  - DOMAIN-SUFFIX,counter.kingsoft.com,🛑全球拦截
-  - DOMAIN-SUFFIX,counter.m1905.com,🛑全球拦截
+  - DOMAIN-SUFFIX,counter.csdn.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,counter.kingsoft.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,counter.m1905.com,🛑 全球拦截
   - DOMAIN-SUFFIX,counter.marketgid.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,counter.sina.com.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,counter.sina.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,counter.yadro.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,counter.yesky.com,🛑全球拦截
+  - DOMAIN-SUFFIX,counter.yesky.com,🛑 全球拦截
   - DOMAIN-SUFFIX,countpvn.light.fang.com,🛑 全球拦截
   - DOMAIN-SUFFIX,countubn.light.soufun.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,couqm.com.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,cp.5jjx.net,🛑全球拦截
-  - DOMAIN-SUFFIX,cp.ggyapp.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cp.greenxf.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,couqm.com.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,cp.5jjx.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,cp.ggyapp.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cp.greenxf.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,cp.gs307.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cp.jfcdns.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cp.jz5u.net,🛑全球拦截
-  - DOMAIN-SUFFIX,cpc.sogou.com,🛑全球拦截
+  - DOMAIN-SUFFIX,cp.jfcdns.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cp.jz5u.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,cpc.sogou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cpc.sohu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpcv.cc,🛑全球拦截
+  - DOMAIN-SUFFIX,cpcv.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,cpm.amateurcommunity.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cpm.amateurcommunity.de,🛑 全球拦截
   - DOMAIN-SUFFIX,cpm.cm.sandai.net,🛑 全球拦截
   - DOMAIN-SUFFIX,cpmchina.co,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpms.cc,🛑全球拦截
+  - DOMAIN-SUFFIX,cpms.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,cpro.9xu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpro.baidu.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,cpro.baidu.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,cpro.fangtoo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cpro.zhidao.baidu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpro.zol.com.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,cpro.zol.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,cpro1.edushi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpro2.baidu.com,🛑全球拦截
+  - DOMAIN-SUFFIX,cpro2.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cps.360buy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpu.baidu.com,🛑全球拦截
-  - DOMAINSUFFIX,cpu-admin.baidu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,cpv.channelray,🛑全球拦截
+  - DOMAIN-SUFFIX,cpu.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cpu-admin.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,cpv.channelray,🛑 全球拦截
   - DOMAIN-SUFFIX,cpv.czpush.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cpv.ty229.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cpv6.com,🛑 全球拦截
@@ -3582,7 +3366,7 @@ rules:
   - DOMAIN-SUFFIX,ddhtek.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ddkkrrla.m.qxs.la,🛑 全球拦截
   - DOMAIN-SUFFIX,ddomm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ddpxhq.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,ddpxhq.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,ddrrccck.m.qxs.la,🛑 全球拦截
   - DOMAIN-SUFFIX,de.as.cp61.ott.cibntv.net,🛑 全球拦截
   - DOMAIN-SUFFIX,de.dzribao.com,🛑 全球拦截
@@ -3591,13 +3375,13 @@ rules:
   - DOMAIN-SUFFIX,deals.ledgertranscript.com,🛑 全球拦截
   - DOMAIN-SUFFIX,debugreport.mobiledissector.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dejing.laobanfa.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,deletemer.online,🛑全球拦截
-  - DOMAIN-SUFFIX,deliver.kuwo.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,deletemer.online,🛑 全球拦截
+  - DOMAIN-SUFFIX,deliver.kuwo.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,delivery.maihehd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,delivery.playallvideos.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,delivery.porn.com,🛑全球拦截
+  - DOMAIN-SUFFIX,delivery.porn.com,🛑 全球拦截
   - DOMAIN-SUFFIX,delivery.thebloggernetwork.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,delivery.wasu.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,delivery.wasu.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,delivery-pc.wasu.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,demo.jointreport-switch.com,🛑 全球拦截
   - DOMAIN-SUFFIX,desk.cmix.org,🛑 全球拦截
@@ -3697,27 +3481,27 @@ rules:
   - DOMAIN-SUFFIX,dm.pw0.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,dm.riji.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,dm.sanwen.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,dm.sanwen8.com,🛑全球拦截
+  - DOMAIN-SUFFIX,dm.sanwen8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dm.sb580.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dm.toutiao.com,🛑全球拦截
+  - DOMAIN-SUFFIX,dm.toutiao.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dm.ws8.org,🛑 全球拦截
   - DOMAIN-SUFFIX,dm.yjbys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dm1.tom61.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dm50.jkyd.net,🛑 全球拦截
   - DOMAIN-SUFFIX,dm50.yxlady.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dmacore.kejet.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dmacore.kejet.net,🛑全球拦截
-  - DOMAIN-SUFFIX,dmg.digitaltarget.ru,🛑全球拦截
-  - DOMAIN-SUFFIX,dmp.kejet.net,🛑全球拦截
-  - DOMAIN-SUFFIX,dmp.sina.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,dmacore.kejet.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,dmg.digitaltarget.ru,🛑 全球拦截
+  - DOMAIN-SUFFIX,dmp.kejet.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,dmp.sina.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,dmpclick.deliver.ifeng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dmrtb.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dmt.qcrx.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,dmt.qcrx.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,dmtrck.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dn3.ixinwei.com,🛑全球拦截
-  - DOMAIN-SUFFIX,dn7788.com,🛑全球拦截
-  - DOMAIN-SUFFIX,dn-growth.qbox.me,🛑全球拦截
-  - DOMAIN-SUFFIX,dnvus.com,🛑全球拦截
+  - DOMAIN-SUFFIX,dn3.ixinwei.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,dn7788.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,dn-growing.qbox.me,🛑 全球拦截
+  - DOMAIN-SUFFIX,dnvus.com,🛑 全球拦截
   - DOMAIN-SUFFIX,do.lymstsc.com,🛑 全球拦截
   - DOMAIN-SUFFIX,do69ifsly4.me,🛑 全球拦截
   - DOMAIN-SUFFIX,doc.go.sohu.com,🛑 全球拦截
@@ -4355,27 +4139,27 @@ rules:
   - DOMAIN-SUFFIX,fych.uranus.sogou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fydgold132.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fytza.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,fz863.com,🛑全球拦截
-  - DOMAIN-SUFFIX,fzz.cloud.1234507.com,🛑全球拦截
+  - DOMAIN-SUFFIX,fz863.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,fzz.cloud.1234507.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fzz.shgqjr.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,g.163.com,🛑全球拦截
-  - DOMAIN-SUFFIX,g.51network.com,🛑全球拦截
+  - DOMAIN-SUFFIX,g.163.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.51network.com,🛑 全球拦截
   - DOMAIN-SUFFIX,g.6sfg.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,g.ad8.cc,🛑全球拦截
-  - DOMAIN-SUFFIX,g.aligames.com,🛑全球拦截
-  - DOMAIN-SUFFIX,g.baidu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,g.bitauto.com,🛑全球拦截
+  - DOMAIN-SUFFIX,g.ad8.cc,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.aligames.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.bitauto.com,🛑 全球拦截
   - DOMAIN-SUFFIX,g.brothersoft.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,g.chuiyao.com,🛑全球拦截
-  - DOMAIN-SUFFIX,gdyoyi.tv,🛑 全球拦截
-  - DOMAIN-SUFFIX,g.daman.cc,🛑全球拦截
-  - DOMAIN-SUFFIX,g.f11w.com,🛑全球拦截
-  - DOMAIN-SUFFIX,g.f5gh.com,🛑全球拦截
-  - DOMAIN-SUFFIX,g.gridsum.com,🛑全球拦截
+  - DOMAIN-SUFFIX,g.chuiyao.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.d.yoyi.tv,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.daman.cc,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.f11w.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.f5gh.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.gridsum.com,🛑 全球拦截
   - DOMAIN-SUFFIX,g.haluoha.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,g.hsw.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,g.mnw.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,g.ousns.net,🛑全球拦截
+  - DOMAIN-SUFFIX,g.hsw.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.mnw.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,g.ousns.net,🛑 全球拦截
   - DOMAIN-SUFFIX,g.rs.yoyi.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,g.s8dj.com,🛑 全球拦截
   - DOMAIN-SUFFIX,g.szdn1ms.com,🛑 全球拦截
@@ -4623,27 +4407,27 @@ rules:
   - DOMAIN-SUFFIX,hao123rt.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hao549.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hao61.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,hao916.com,🛑全球拦截
-  - DOMAIN-SUFFIX,hao934.com,🛑全球拦截
+  - DOMAIN-SUFFIX,hao916.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,hao934.com,🛑 全球拦截
   - DOMAIN-SUFFIX,haoghost.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,haohaowan8.com,🛑全球拦截
+  - DOMAIN-SUFFIX,haohaowan8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,haolew.com,🛑 全球拦截
   - DOMAIN-SUFFIX,haostat.qihoo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hapic1.jhkxwl.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hascosafety.com,🛑全球拦截
-  - DOMAIN-SUFFIX,hats.haibao.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,hbalx.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,hascosafety.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,hats.haibao.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,hbalx.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hbdt.luomi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hblinwei.com,🛑全球拦截
-  - DOMAIN-SUFFIX,hbngfy.com,🛑全球拦截
+  - DOMAIN-SUFFIX,hblinwei.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,hbngfy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hbyyzm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hc.baidu.com,🛑全球拦截
+  - DOMAIN-SUFFIX,hc.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hccms.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hcreditx.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hd.jiedaibao.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hd.ylddq.com,🛑全球拦截
-  - DOMAIN-SUFFIX,hda.maxli.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,hdad.baike.com,🛑全球拦截
+  - DOMAIN-SUFFIX,hd.ylddq.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,hda.maxli.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,hdad.baike.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hdb.maxli.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hdggcdn.bayimob.com,🛑 全球拦截
   - DOMAIN-SUFFIX,hdhkwl.com,🛑 全球拦截
@@ -4910,21 +4694,21 @@ rules:
   - DOMAIN-SUFFIX,img.ma.social-touch.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.meipic.net,🛑 全球拦截
   - DOMAIN-SUFFIX,img.qdscgj.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,img.qqgeshou.com,🛑全球拦截
+  - DOMAIN-SUFFIX,img.qqgeshou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.s8bbs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,img.scapio.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,img.scupio.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.sheyuansu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,img.supfast.net,🛑全球拦截
+  - DOMAIN-SUFFIX,img.supfast.net,🛑 全球拦截
   - DOMAIN-SUFFIX,img.tan5858.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,img.taotaosou.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,img.taotaosou.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,img.tcdxt.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,img.toppr.com.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,img.toppr.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,img.twcczhu.com,🛑 全球拦截
-  - DOMAINSUFFIX,img.uyangyong.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,img.uyangyong.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,img.wan.sogou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.wuben56.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.xa9t.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,img.xcy8.com,🛑全球拦截
+  - DOMAIN-SUFFIX,img.xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.xiacaidd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.xuenb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,img.yingshidiguo.cn,🛑 全球拦截
@@ -5189,26 +4973,26 @@ rules:
   - DOMAIN-SUFFIX,jjxgly.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jjyy.gaopengqcdz.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,jk939.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jkjjkj.top,🛑全球拦截
-  - DOMAIN-SUFFIX,jkmxy.com,🛑全球拦截
+  - DOMAIN-SUFFIX,jkjjkj.top,🛑 全球拦截
+  - DOMAIN-SUFFIX,jkmxy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jl027.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jlssbz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jmonitor.jiuzhilan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jmsyzj.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jmxlaser.com,🛑全球拦截
-  - DOMAIN-SUFFIX,jndczg.com,🛑全球拦截
+  - DOMAIN-SUFFIX,jmxlaser.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,jndczg.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jnrsjm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jnsdkjzs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jnsz.net.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,jnyngg.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,jnsz.net.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,jnyngg.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,johtzj.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jointreport-switch.com,🛑全球拦截
+  - DOMAIN-SUFFIX,jointreport-switch.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jossuer.net,🛑 全球拦截
   - DOMAIN-SUFFIX,joyfuldoors.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jp88.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,jpg.cooguo.com,🛑全球拦截
+  - DOMAIN-SUFFIX,jpg.cooguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jpg.inte.sogoucdn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jph.itiexue.net,🛑全球拦截
+  - DOMAIN-SUFFIX,jph.itiexue.net,🛑 全球拦截
   - DOMAIN-SUFFIX,jpush.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,jpush.html5.qq.com,🛑 全球拦截
   - DOMAIN-SUFFIX,jqmt.qq.com,🛑 全球拦截
@@ -5520,24 +5304,24 @@ rules:
   - DOMAIN-SUFFIX,ldpgl.code.mytanwan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lds.lenovomm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lds.zui.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ldy.350.com,🛑全球拦截
-  - DOMAIN-SUFFIX,ldy.adqku.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,ldy.350.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ldy.adqku.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,le4le.com,🛑 全球拦截
   - DOMAIN-SUFFIX,leadbolt.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,leadboltads.net,🛑全球拦截
-  - DOMAIN-SUFFIX,leadboltapps.net,🛑全球拦截
+  - DOMAIN-SUFFIX,leadboltads.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,leadboltapps.net,🛑 全球拦截
   - DOMAIN-SUFFIX,ledou.dl.uu.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,leeyuoxs.com,🛑全球拦截
+  - DOMAIN-SUFFIX,leeyuoxs.com,🛑 全球拦截
   - DOMAIN-SUFFIX,legozu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,le999.com,🛑全球拦截
-  - DOMAIN-SUFFIX,lessplay.com,🛑全球拦截
+  - DOMAIN-SUFFIX,lele999.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,lessplay.com,🛑 全球拦截
   - DOMAIN-SUFFIX,letv.irs01.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,leztc.com,🛑全球拦截
+  - DOMAIN-SUFFIX,leztc.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lflili.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,lfyuanai.com,🛑全球拦截
+  - DOMAIN-SUFFIX,lfyuanai.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lg2.jointreport-switch.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lg4.jointreport-switch.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,lhafy.com,🛑全球拦截
+  - DOMAIN-SUFFIX,lhafy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lhengilin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,lhusy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,li.anyysz.com,🛑 全球拦截
@@ -5828,24 +5612,24 @@ rules:
   - DOMAIN-SUFFIX,m.kjhfy.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.kl6636.net,🛑 全球拦截
   - DOMAIN-SUFFIX,m.ksttwz.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,m.kubiqq.com,🛑全球拦截
+  - DOMAIN-SUFFIX,m.kubiqq.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.kwjkd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.kxhie.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.laigame7.net,🛑 全球拦截
   - DOMAIN-SUFFIX,m.lancedu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,m.laojiayoufang.com,🛑全球拦截
+  - DOMAIN-SUFFIX,m.laojiayoufang.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.laoqu123.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.lfdydk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,m.lovezhishou.com,🛑全球拦截
-  - DOMAIN-SUFFIX,m.lusrg.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,m.lovezhishou.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,m.lusrg.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,m.lyjz001.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.lzida.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.lzytt.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.maopuzw.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.mgogo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,m.mgsue.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,m.m.miaoxinqipei.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,m.mightiger.net,🛑全球拦截
+  - DOMAIN-SUFFIX,m.mgsue.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,m.miaoxinqipei.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,m.mightiger.net,🛑 全球拦截
   - DOMAIN-SUFFIX,m.miiuv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.miupp.com,🛑 全球拦截
   - DOMAIN-SUFFIX,m.mmkvi.com,🛑 全球拦截
@@ -6373,27 +6157,27 @@ rules:
   - DOMAIN-SUFFIX,newton-api.ele.me,🛑 全球拦截
   - DOMAIN-SUFFIX,nexage.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nexstep.zdworks.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,nextcps.com,🛑全球拦截
-  - DOMAIN-SUFFIX,nextlnk9.com,🛑全球拦截
+  - DOMAIN-SUFFIX,nextcps.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,nextlnk9.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nexus.ensighten.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,nfh.cnshef.com,🛑全球拦截
+  - DOMAIN-SUFFIX,nfh.cnshef.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ngads.go.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ninebox.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,ninebox.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,ninemsn.imrworldwide.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,niurenw.com,🛑全球拦截
-  - DOMAIN-SUFFIX,niux88.com,🛑全球拦截
-  - DOMAIN-SUFFIX,niuxgame77.com,🛑全球拦截
+  - DOMAIN-SUFFIX,niurenw.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,niux88.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,niuxgame77.com,🛑 全球拦截
   - DOMAIN-SUFFIX,niwd.zhybw88.com,🛑 全球拦截
   - DOMAIN-SUFFIX,njdijiani.com,🛑 全球拦截
   - DOMAIN-SUFFIX,njfsk.com,🛑 全球拦截
   - DOMAIN-SUFFIX,njmpacc.com,🛑 全球拦截
   - DOMAIN-SUFFIX,njq.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,njs.imagicskin.com,🛑全球拦截
+  - DOMAIN-SUFFIX,njs.imagicskin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,njs.myyage.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,njs.dependvalve.com,🛑全球拦截
+  - DOMAIN-SUFFIX,njs.reliancevalve.com,🛑 全球拦截
   - DOMAIN-SUFFIX,njxczy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,nkeo.top,🛑全球拦截
-  - DOMAIN-SUFFIX,nlog.baidu.com,🛑全球拦截
+  - DOMAIN-SUFFIX,nkeo.top,🛑 全球拦截
+  - DOMAIN-SUFFIX,nlog.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nmbtedu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nmkgs.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,nmpcdn.com,🛑 全球拦截
@@ -6553,26 +6337,26 @@ rules:
   - DOMAIN-SUFFIX,p.tencentmind.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p.twitter.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p.vq6nsu.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,p.yizuya.com,🛑全球拦截
+  - DOMAIN-SUFFIX,p.yizuya.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p.ynjczy.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,p0y.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,p0y.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,p1.18zhongyao.com,🛑 全球拦截
-  - DOMAIN-SUFF IX,p1.qinsx.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,p1.qinsx.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,p2.hyz86.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,p2.qinsx.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,p2.ykauto.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,p2.qinsx.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,p2.ykauto.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,p215223.clksite.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p215223.inclk.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p215223.mycdn2.co,🛑 全球拦截
-  - DOMAIN-SUFFIX,p2pmid.baofeng.com,🛑全球拦截
+  - DOMAIN-SUFFIX,p2pmid.baofeng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p3p.mmstat.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,p3p.sogou.com,🛑全球拦截
+  - DOMAIN-SUFFIX,p3p.sogou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p3p.yahoo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p3tt.com,🛑 全球拦截
   - DOMAIN-SUFFIX,p4p.sina.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,p4psearch.china.alibaba.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,p555.cc,🛑全球拦截
-  - DOMAIN-SUFFIX,p8u.hinet.net,🛑全球拦截
+  - DOMAIN-SUFFIX,p555.cc,🛑 全球拦截
+  - DOMAIN-SUFFIX,p8u.hinet.net,🛑 全球拦截
   - DOMAIN-SUFFIX,package01.com,🛑 全球拦截
   - DOMAIN-SUFFIX,pad.zhywyl.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,padsdel2.cdnads.com,🛑 全球拦截
@@ -7228,25 +7012,25 @@ rules:
   - DOMAIN-SUFFIX,s.zxwdw.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s0.2mdn.net,🛑 全球拦截
   - DOMAIN-SUFFIX,s03.optimix.asia,🛑 全球拦截
-  - DOMAIN-SUFFIX,s1.2mdn.net,🛑全球拦截
+  - DOMAIN-SUFFIX,s1.2mdn.net,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.cmfu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.hiapk.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.hnhbyxdq.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.huiqituan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.iigushi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.kutongji.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,s1.mingmingtehui.com,🛑全球拦截
-  - DOMAIN-SUFFIX,s1.qiqutt.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,s1.qiqutt.com,🛑全球拦截
-  - DOMAIN-SUFFIX,s1.qiuyi.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,s1.mingmingtehui.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,s1.qiqutt.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,s1.qiqutt.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,s1.qiuyi.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,s1.s8tu.com,🛑 全球拦截
-  - DOMAINSUFFIX,s1.tansuotv.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,s1.tansuotv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s10.histats.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s2.dnaxddnc.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s2.hiapk.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s2.huoying666.com,🛑 全球拦截
-  - DOMAINSUFFIX,s2.kuaibaopay.com,🛑全球拦截
-  - DOMAIN-SUFFIX,s2.mingmingtehui.com,🛑全球拦截
+  - DOMAIN-SUFFIX,s2.kuaibaopay.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,s2.mingmingtehui.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s2.yandui.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s2.zdface.com,🛑 全球拦截
   - DOMAIN-SUFFIX,s2.zdmimg.com,🛑 全球拦截
@@ -7774,26 +7558,26 @@ rules:
   - DOMAIN-SUFFIX,ta80.com,🛑 全球拦截
   - DOMAIN-SUFFIX,taat00889.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tactics.bainv.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,tad.suning.com,🛑全球拦截
-  - DOMAIN-SUFFIX,tag.cdnmaster.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,tad.suning.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,tag.cdnmaster.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,tag.digitaltarget.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,tag.yoc-adserver.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tags.growthio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tags2.adshell.net,🛑全球拦截
+  - DOMAIN-SUFFIX,tags.growingio.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,tags2.adshell.net,🛑 全球拦截
   - DOMAIN-SUFFIX,tags4.revdepo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tajxgs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,talk.nz.igexin.com,🛑全球拦截
+  - DOMAIN-SUFFIX,talk.nz.igexin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,talkingdata.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,talkingdata.net,🛑全球拦截
-  - DOMAIN-SUFFIX,tangoutianxia.com,🛑全球拦截
+  - DOMAIN-SUFFIX,talkingdata.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,tangoutianxia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tansuotv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tanwanyx.com,🛑全球拦截
+  - DOMAIN-SUFFIX,tanwanyx.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tanxlog.istreamsche.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tanzanite.infomine.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,taobaly.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,taobaoaliyun.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,taobaobo5.com,🛑全球拦截
-  - DOMAIN-SUFFIX,taobayun.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,taobaly.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,taobaoaliyun.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,taobaobo5.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,taobayun.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,taohanpai.com,🛑 全球拦截
   - DOMAIN-SUFFIX,taomato.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tap.rubiconproject.com,🛑 全球拦截
@@ -7874,26 +7658,26 @@ rules:
   - DOMAIN-SUFFIX,tjlog.easou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tjlog.ps.easou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tjs.sjs.sinajs.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,tk.baidu.com,🛑全球拦截
+  - DOMAIN-SUFFIX,tk.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tk.optaim.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tkd777.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,tkmdng.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,tkweb.baidu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,tl.play.aiseet.atianqi.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,tkd777.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,tkmdng.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,tkweb.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,t-l.play.aiseet.atianqi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tmcs.net,🛑 全球拦截
   - DOMAIN-SUFFIX,tmisc.home.news.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,tns-counter.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,token.rubiconproject.com,🛑全球拦截
+  - DOMAIN-SUFFIX,token.rubiconproject.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tongji-res1.meizu.com,🛑 全球拦截
-  - DOMAINSUFFIX,tongqing2015.com,🛑全球拦截
-  - DOMAIN-SUFFIX,tool.btrabbit.la,🛑全球拦截
-  - DOMAIN-SUFFIX,toolbar.baidu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,toolbar.msn.com,🛑全球拦截
+  - DOMAIN-SUFFIX,tongqing2015.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,tool.btrabbit.la,🛑 全球拦截
+  - DOMAIN-SUFFIX,toolbar.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,toolbar.msn.com,🛑 全球拦截
   - DOMAIN-SUFFIX,toourbb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,top.h.qhimg.com,🛑 全球拦截
   - DOMAIN-SUFFIX,top.h.qhmsg.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,top267.com,🛑全球拦截
-  - DOMAIN-SUFFIX,total.xinmin.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,top267.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,total.xinmin.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,touclick.com,🛑 全球拦截
   - DOMAIN-SUFFIX,toutiao.2haha.com,🛑 全球拦截
   - DOMAIN-SUFFIX,toutiao.jxnews.com.cn,🛑 全球拦截
@@ -8038,8 +7822,8 @@ rules:
   - DOMAIN-SUFFIX,ujikdd041o.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,uk3oi.adgze.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,ukeiae.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ulic.baidu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,ulink.cc,🛑全球拦截
+  - DOMAIN-SUFFIX,ulic.baidu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ulink.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,ulog.imap.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,um.simpli.fi,🛑 全球拦截
   - DOMAIN-SUFFIX,um0592.com,🛑 全球拦截
@@ -8051,32 +7835,32 @@ rules:
   - DOMAIN-SUFFIX,un.52rkl.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,un.soarfi.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,un.winasdaq.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,un1.takefoto.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,un1.takefoto.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,unconf.mobad.ijinshan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,undm.qibulo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,unicast.ign.com,🛑全球拦截
-  - DOMAIN-SUFFIX,unicast.msn.com,🛑全球拦截
-  - DOMAIN-SUFFIX,unilog.wostore.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,unicast.ign.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,unicast.msn.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,unilog.wostore.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,unimhk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,union.baidu.com,🛑全球拦截
+  - DOMAIN-SUFFIX,union.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,union.baidustatic.guannin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,union.china.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,union.dbba.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,union.dbba.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,union.maccms.com,🛑 全球拦截
   - DOMAIN-SUFFIX,union.mop.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,union.sogou.com,🛑全球拦截
-  - DOMAIN-SUFFIX,union.star-media.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,union.youdao.com,🛑全球拦截
+  - DOMAIN-SUFFIX,union.sogou.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,union.star-media.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,union.youdao.com,🛑 全球拦截
   - DOMAIN-SUFFIX,union1.xiaojianjian.net,🛑 全球拦截
   - DOMAIN-SUFFIX,uniondm.cz88.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,unionimage.baidu.com,🛑全球拦截
+  - DOMAIN-SUFFIX,unionimage.baidu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,unionsy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,union-wifi.com,🛑全球拦截
-  - DOMAIN-SUFFIX,unipaydl.wostore.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,unipayupg.wostore.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,union-wifi.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,unipaydl.wostore.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,unipayupg.wostore.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,unitacs.m.taobao.com,🛑 全球拦截
   - DOMAIN-SUFFIX,unjs.jfcdns.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,unlitui.com,🛑全球拦截
+  - DOMAIN-SUFFIX,unlitui.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uns.soarfi.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,untitled.dwstatic.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uodoo.com,🛑 全球拦截
@@ -8217,21 +8001,21 @@ rules:
   - DOMAIN-SUFFIX,vps.inte.sogou.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vs.funshion.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vs19.gzcu.u3.ucweb.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vs2.gzcu.u3.ucweb.com,🛑全球拦截
-  - DOMAIN-SUFFIX,vs7.gzcu.u3.ucweb.com,🛑全球拦截
-  - DOMAIN-SUFFIX,vs8.gzct.u3.ucweb.com,🛑全球拦截
-  - DOMAIN-SUFFIX,vs8.gzcu.u3.ucweb.com,🛑全球拦截
+  - DOMAIN-SUFFIX,vs2.gzcu.u3.ucweb.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vs7.gzcu.u3.ucweb.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vs8.gzct.u3.ucweb.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vs8.gzcu.u3.ucweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,v-sence.gentags.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,vsnoon.com,🛑全球拦截
+  - DOMAIN-SUFFIX,vsnoon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vt.bjhdonline.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vtale.org,🛑 全球拦截
-  - DOMAIN-SUFFIX,vungle.cn,🛑全球拦截
-  - DOMAINSUFFIX,vupload.duowan.com,🛑全球拦截
-  - DOMAIN-SUFFIX,vvlog.movi​​ebox.baofeng.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vungle.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,vupload.duowan.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vvlog.moviebox.baofeng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vvv.ieduw.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vvvulqn7.com,🛑全球拦截
-  - DOMAIN-SUFFIX,vwkhdi.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,vwws6.net,🛑全球拦截
+  - DOMAIN-SUFFIX,vvvulqn7.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vwkhdi.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,vwws6.net,🛑 全球拦截
   - DOMAIN-SUFFIX,vz-cdn.contentabc.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vz-cdn.trafficjunky.net,🛑 全球拦截
   - DOMAIN-SUFFIX,w.bobocn.cn,🛑 全球拦截
@@ -8277,25 +8061,25 @@ rules:
   - DOMAIN-SUFFIX,wap.114so.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,wap.138lm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wap.bytdzsw.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wap.cmgame.com,🛑全球拦截
-  - DOMAIN-SUFFIX,wap.moad.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,wap.cmgame.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,wap.moad.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,wap.mpush.qq.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wap.tanwan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wap.txwdn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wap.wooboo.com.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,wap.wooboo.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,wap001.bytravel.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,wap3.ucweb.com,🛑全球拦截
+  - DOMAIN-SUFFIX,wap3.ucweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wapadv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wappv.zol.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,waps.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,wapscdn.wapx.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,waps.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wapscdn.wapx.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,wapssl.ff113300.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wapwbclick.mobile.sina.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,wapx.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,wapx.com,🛑全球拦截
+  - DOMAIN-SUFFIX,wapx.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wapx.com,🛑 全球拦截
   - DOMAIN-SUFFIX,watson.live.com,🛑 全球拦截
   - DOMAIN-SUFFIX,watson.microsoft.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wazero.online,🛑全球拦截
+  - DOMAIN-SUFFIX,wazero.online,🛑 全球拦截
   - DOMAIN-SUFFIX,wb.gtimg.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wbapp.mobile.sina.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,wbclick.mobile.sina.cn,🛑 全球拦截
@@ -8752,27 +8536,27 @@ rules:
   - DOMAIN-SUFFIX,yooli.com,🛑 全球拦截
   - DOMAIN-SUFFIX,you1ad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,youfumei.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,youjia2016.com,🛑全球拦截
-  - DOMAIN-SUFFIX,youka.la,🛑全球拦截
-  - DOMAIN-SUFFIX,youle.tom.com,🛑全球拦截
-  - DOMAIN-SUFFIX,youle55.com,🛑全球拦截
-  - DOMAIN-SUFFIX,youmi.net,🛑全球拦截
+  - DOMAIN-SUFFIX,youjia2016.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,youka.la,🛑 全球拦截
+  - DOMAIN-SUFFIX,youle.tom.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,youle55.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,youmi.net,🛑 全球拦截
   - DOMAIN-SUFFIX,youmsm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yousee.com,🛑全球拦截
-  - DOMAIN-SUFFIX,youxi.kugou.com,🛑全球拦截
-  - DOMAIN-SUFFIX,youxiaoad.com,🛑全球拦截
-  - DOMAIN-SUFFIX,youxicool.net,🛑全球拦截
-  - DOMAIN-SUFFIX,youzehui.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yoyi.com.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,yousee.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,youxi.kugou.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,youxiaoad.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,youxicool.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,youzehui.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yoyi.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,yoyi.tv,🛑 全球拦截
-  - DOMAIN-SUFFIX,ypmeiwen.com,🛑全球拦截
+  - DOMAIN-SUFFIX,ypmeiwen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ypmob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yqjxzw.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yqw88.com,🛑全球拦截
+  - DOMAIN-SUFFIX,yqjxzw.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yqw88.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yrt7dgkf.exashare.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yrxmr.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ysej.code.weddingeeos.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ysjwj.com,🛑全球拦截
+  - DOMAIN-SUFFIX,ysjwj.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ysm.hauchi.com.tw,🛑 全球拦截
   - DOMAIN-SUFFIX,ysm.yahoo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yt.mmstat.com,🛑 全球拦截
@@ -8794,26 +8578,26 @@ rules:
   - DOMAIN-SUFFIX,yun.tuia.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,yun.tuisnake.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yun.yuyiya.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yun1.yahoo001.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yunanfuwuqi.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yunbofangbt.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yundingjiayuan.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yunjiasu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yunshipei.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yunxuu.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yuyue008.cn,🛑全球拦截
-  - DOMAIN-SUFFIX,ywjxsp168.cn,🛑全球拦截
+  - DOMAIN-SUFFIX,yun1.yahoo001.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yunanfuwuqi.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yunbofangbt.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yundingjiayuan.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yunjiasu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yunshipei.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yunxuu.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yuyue008.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,ywjxsp168.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,yx.lenovomm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yxhxs.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yxjad.com,🛑全球拦截
+  - DOMAIN-SUFFIX,yxhxs.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yxjad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yxs.tymsyx.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yxszy.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yxxwyz.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yy58ju.com,🛑全球拦截
-  - DOMAIN-SUFFIX,yyb.pc6.com,🛑全球拦截
+  - DOMAIN-SUFFIX,yxszy.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yxxwyz.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yy58ju.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,yyb.pc6.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yyffeicd.m.qxs.la,🛑 全球拦截
-  - DOMAIN-SUFFIX,yyjxgm.net,🛑全球拦截
-  - DOMAIN-SUFFIX,yp17.com,🛑全球拦截
+  - DOMAIN-SUFFIX,yyjxgm.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,yyp17.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yyt.irs01.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yzaosite.com,🛑 全球拦截
   - DOMAIN-SUFFIX,yzh.jyjhkz.com,🛑 全球拦截
@@ -9426,23 +9210,23 @@ rules:
   - DOMAIN-SUFFIX,appcpi.net,🛑 全球拦截
   - DOMAIN-SUFFIX,bulldogcpi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,insurads.com,🛑 全球拦截
-  - IP-CIDR,101.227.97.240/32,🛑全球拦截,no-resolve
-  - IP-CIDR,101.227.200.11/32,🛑全球拦截,no-resolve
-  - IP-CIDR,101.227.200.28/32,🛑全球拦截,no-resolve
-  - IP-CIDR,124.192.153.42/32,🛑全球拦截,no-resolve
-  - IP-CIDR,117.177.248.17/32,🛑全球拦截,no-resolve
-  - IP-CIDR,117.177.248.41/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.176.139/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.176.176/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.177.180/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.177.182/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.177.184/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.177.43/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.177.47/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.177.80/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.182.101/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.182.102/32,🛑全球拦截,no-resolve
-  - IP-CIDR,223.87.182.11/32,🛑全球拦截,no-resolve
+  - IP-CIDR,101.227.97.240/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,101.227.200.11/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,101.227.200.28/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,124.192.153.42/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,117.177.248.17/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,117.177.248.41/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.176.139/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.176.176/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.177.180/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.177.182/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.177.184/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.177.43/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.177.47/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.177.80/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.182.101/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.182.102/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,223.87.182.11/32,🛑 全球拦截,no-resolve
   - IP-CIDR,223.87.182.52/32,🛑 全球拦截,no-resolve
   - IP-CIDR,1.3.0.10/32,🛑 全球拦截,no-resolve
   - IP-CIDR,101.201.29.182/32,🛑 全球拦截,no-resolve
@@ -9596,24 +9380,24 @@ rules:
   - IP-CIDR,220.196.52.141/32,🛑 全球拦截,no-resolve
   - IP-CIDR,221.6.4.148/32,🛑 全球拦截,no-resolve
   - IP-CIDR,114.247.28.96/32,🛑 全球拦截,no-resolve
-  - IP-CIDR,221.179.131.72/32,🛑全球拦截,no-resolve
-  - IP-CI DR,221.179.140.145/32,🛑全球拦截,no-resolve
-  - IP-CIDR,10.72.25.0/24,🛑全球拦截,no-resolve
-  - IP-CIDR,115.182.16.79/32,🛑全球拦截,no-resolve
-  - IP-CIDR,118.144.88.126/32,🛑全球拦截,no-resolve
-  - IP-CIDR,118.144.88.215/32,🛑全球拦截,no-resolve
-  - IP-CIDR,118.144.88.216/32,🛑全球拦截,no-resolve
-  - IP-CIDR,120.76.189.132/32,🛑全球拦截,no-resolve
-  - IP-CIDR,124.14.21.147/32,🛑全球拦截,no-resolve
-  - IP-CIDR,124.14.21.151/32,🛑全球拦截,no-resolve
-  - IP-CIDR,180.166.52.24/32,🛑全球拦截,no-resolve
-  - IP-CI DR,211.161.101.106/32,🛑全球拦截,no-resolve
-  - IP-CIDR,220.115.251.25/32,🛑全球拦截,no-resolve
-  - IP-CIDR,222.73.156.235/32,🛑全球拦截,no-resolve
-  - IP-CIDR,188.89.204.198/32,🛑全球拦截,no-resolve
-  - DOMAIN-SUFFIX,17gouwuba.com,🛑全球拦截
-  - DOMAIN-SUFFIX,186078.com,🛑全球拦截
-  - DOMAIN-SUFFIX,189zj.cn,🛑全球拦截
+  - IP-CIDR,221.179.131.72/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,221.179.140.145/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,10.72.25.0/24,🛑 全球拦截,no-resolve
+  - IP-CIDR,115.182.16.79/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,118.144.88.126/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,118.144.88.215/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,118.144.88.216/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,120.76.189.132/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,124.14.21.147/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,124.14.21.151/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,180.166.52.24/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,211.161.101.106/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,220.115.251.25/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,222.73.156.235/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,188.89.204.198/32,🛑 全球拦截,no-resolve
+  - DOMAIN-SUFFIX,17gouwuba.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,186078.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,189zj.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,285680.com,🛑 全球拦截
   - DOMAIN-SUFFIX,3721zh.com,🛑 全球拦截
   - DOMAIN-SUFFIX,4336wang.cn,🛑 全球拦截
@@ -9744,22 +9528,22 @@ rules:
   - IP-CIDR,218.93.127.37/32,🛑 全球拦截,no-resolve
   - IP-CIDR,221.228.17.152/32,🛑 全球拦截,no-resolve
   - IP-CIDR,221.231.6.79/32,🛑 全球拦截,no-resolve
-  - IP-CIDR,222.186.61.91/32,🛑全球拦截,no-resolve
-  - IP-CIDR,222.186.61.95/32,🛑全球拦截,no-resolve
-  - IP-CIDR,222.186.61.96/32,🛑全球拦截,no-resolve
-  - IP-CIDR,222.186.61.97/32,🛑全球拦截,no-resolve
-  - IP-CIDR,106.75.231.48/32,🛑全球拦截,no-resolve
-  - IP-CIDR,119.4.249.166/32,🛑全球拦截,no-resolve
-  - IP-CIDR,220.196.52.141/32,🛑全球拦截,no-resolve
+  - IP-CIDR,222.186.61.91/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,222.186.61.95/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,222.186.61.96/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,222.186.61.97/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,106.75.231.48/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,119.4.249.166/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,220.196.52.141/32,🛑 全球拦截,no-resolve
   - IP-CIDR,221.6.4.148/32,🛑 全球拦截,no-resolve
-  - IP-CIDR,114.247.28.96/32,🛑全球拦截,no-resolve
-  - IP-CIDR,120.240.95.37/32,🛑全球拦截,no-resolve
-  - IP-CIDR,221.179.131.72/32,🛑全球拦截,no-resolve
-  - IP-CI DR,221.179.140.145/32,🛑全球拦截,no-resolve
-  - IP-CIDR,115.182.16.79/32,🛑全球拦截,no-resolve
-  - IP-CIDR,118.144.88.126/32,🛑全球拦截,no-resolve
-  - IP-CIDR,118.144.88.215/32,🛑全球拦截,no-resolve
-  - IP-CIDR,118.144.88.216/32,🛑全球拦截,no-resolve
+  - IP-CIDR,114.247.28.96/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,120.240.95.37/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,221.179.131.72/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,221.179.140.145/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,115.182.16.79/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,118.144.88.126/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,118.144.88.215/32,🛑 全球拦截,no-resolve
+  - IP-CIDR,118.144.88.216/32,🛑 全球拦截,no-resolve
   - IP-CIDR,120.76.189.132/32,🛑 全球拦截,no-resolve
   - IP-CIDR,124.14.21.147/32,🛑 全球拦截,no-resolve
   - IP-CIDR,124.14.21.151/32,🛑 全球拦截,no-resolve
@@ -10090,26 +9874,26 @@ rules:
   - IP-CIDR,91.108.12.0/22,🔰 节点选择,no-resolve
   - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
   - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
-  - IP-CIDR,149.154.160.0/20,🔰节点选择,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,🔰节点选择,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,🔰节点选择,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,🔰节点选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
   - DOMAIN-SUFFIX,line.me,🔰 节点选择
-  - DOMAIN-SUFFIX,line-apps.com,🔰节点选择
-  - DOMAIN-SUFFIX,line-scdn.net,🔰节点选择
-  - DOMAIN-SUFFIX,naver.jp,🔰节点选择
-  - IP-CIDR,103.2.30.0/23,🔰节点选择,no-resolve
-  - IP-CIDR,125.209.208.0/20,🔰节点选择,no-resolve
-  - IP-CIDR,147.92.128.0/17,🔰节点选择,no-resolve
-  - IP-CIDR,203.104.144.0/21,🔰节点选择,no-resolv
+  - DOMAIN-SUFFIX,line-apps.com,🔰 节点选择
+  - DOMAIN-SUFFIX,line-scdn.net,🔰 节点选择
+  - DOMAIN-SUFFIX,naver.jp,🔰 节点选择
+  - IP-CIDR,103.2.30.0/23,🔰 节点选择,no-resolve
+  - IP-CIDR,125.209.208.0/20,🔰 节点选择,no-resolve
+  - IP-CIDR,147.92.128.0/17,🔰 节点选择,no-resolve
+  - IP-CIDR,203.104.144.0/21,🔰 节点选择,no-resolve
   - DOMAIN,a248.e.akamai.net,🔰 节点选择
-  - DOMAIN,a771.dscq.akamai.net,🔰节点选择
-  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰节点选择
-  - DOMAIN-SUFFIX,4shared.com,🔰节点选择
-  - DOMAIN-SUFFIX,9cache.com,🔰节点选择
-  - DOMAIN-SUFFIX,9gag.com,🔰节点选择
-  - DOMAIN-SUFFIX,abc.com,🔰节点选择
-  - DOMAIN-SUFFIX,abc.net.au,🔰节点选择
+  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
+  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
+  - DOMAIN-SUFFIX,4shared.com,🔰 节点选择
+  - DOMAIN-SUFFIX,9cache.com,🔰 节点选择
+  - DOMAIN-SUFFIX,9gag.com,🔰 节点选择
+  - DOMAIN-SUFFIX,abc.com,🔰 节点选择
+  - DOMAIN-SUFFIX,abc.net.au,🔰 节点选择
   - DOMAIN-SUFFIX,abebooks.com,🔰 节点选择
   - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
   - DOMAIN-SUFFIX,ao3.org,🔰 节点选择
@@ -10374,27 +10158,27 @@ rules:
   - DOMAIN-SUFFIX,rfi.fr,🔰 节点选择
   - DOMAIN-SUFFIX,rixcloud.com,🔰 节点选择
   - DOMAIN-SUFFIX,roadshow.hk,🔰 节点选择
-  - DOMAIN-SUFFIX,rsshub.app,🔰节点选择
-  - DOMAIN-SUFFIX,scmp.com,🔰节点选择
-  - DOMAIN-SUFFIX,scribd.com,🔰节点选择
-  - DOMAIN-SUFFIX,seatguru.com,🔰节点选择
-  - DOMAIN-SUFFIX,shadowsocks.org,🔰节点选择
-  - DOMAIN-SUFFIX,shindanmaker.com,🔰节点选择
-  - DOMAIN-SUFFIX,shopee.tw,🔰节点选择
-  - DOMAIN-SUFFIX,sina.com.hk,🔰节点选择
-  - DOMAIN-SUFFIX,slideshare.net,🔰节点选择
-  - DOMAIN-SUFFIX,soft Famous.com,🔰 节点选择
-  - DOMAIN-SUFFIX,spiegel.de,🔰节点选择
-  - DOMAIN-SUFFIX,ssrcloud.org,🔰节点选择
-  - DOMAIN-SUFFIX,startpage.com,🔰节点选择
-  - DOMAIN-SUFFIX,steamcommunity.com,🔰节点选择
-  - DOMAIN-SUFFIX,steemit.com,🔰节点选择
-  - DOMAIN-SUFFIX,steemitwallet.com,🔰节点选择
-  - DOMAIN-SUFFIX,straitstimes.com,🔰节点选择
-  - DOMAIN-SUFFIX,streema.com,🔰节点选择
-  - DOMAIN-SUFFIX,t66y.com,🔰节点选择
-  - DOMAIN-SUFFIX,tapatalk.com,🔰节点选择
-  - DOMAIN-SUFFIX,teco-hk.org,🔰节点选择
+  - DOMAIN-SUFFIX,rsshub.app,🔰 节点选择
+  - DOMAIN-SUFFIX,scmp.com,🔰 节点选择
+  - DOMAIN-SUFFIX,scribd.com,🔰 节点选择
+  - DOMAIN-SUFFIX,seatguru.com,🔰 节点选择
+  - DOMAIN-SUFFIX,shadowsocks.org,🔰 节点选择
+  - DOMAIN-SUFFIX,shindanmaker.com,🔰 节点选择
+  - DOMAIN-SUFFIX,shopee.tw,🔰 节点选择
+  - DOMAIN-SUFFIX,sina.com.hk,🔰 节点选择
+  - DOMAIN-SUFFIX,slideshare.net,🔰 节点选择
+  - DOMAIN-SUFFIX,softfamous.com,🔰 节点选择
+  - DOMAIN-SUFFIX,spiegel.de,🔰 节点选择
+  - DOMAIN-SUFFIX,ssrcloud.org,🔰 节点选择
+  - DOMAIN-SUFFIX,startpage.com,🔰 节点选择
+  - DOMAIN-SUFFIX,steamcommunity.com,🔰 节点选择
+  - DOMAIN-SUFFIX,steemit.com,🔰 节点选择
+  - DOMAIN-SUFFIX,steemitwallet.com,🔰 节点选择
+  - DOMAIN-SUFFIX,straitstimes.com,🔰 节点选择
+  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
+  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
+  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
+  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
   - DOMAIN-SUFFIX,teco-mo.org,🔰 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🔰 节点选择
   - DOMAIN-SUFFIX,textnow.me,🔰 节点选择
@@ -10723,7 +10507,7 @@ rules:
   - DOMAIN-SUFFIX,acg.rip,🎯 全球直连
   - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
   - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
-  - DOMAIN-SUFFIX,broadcastthe.net,🎯 全球直连
+  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
   - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
   - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
   - DOMAIN-SUFFIX,comicat.org,🎯 全球直连
