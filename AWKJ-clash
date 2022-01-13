@@ -5,60 +5,88 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾阿伟科技-油管, server: 0105tw.fans8.xyz, port: 80, type: vmess, uuid: fe2021fe-e942-39bb-8585-3c1ef61acfae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 0105tw.fans8.xyz}}
-  - {name: 🇨🇳 台湾阿伟科技-油管 2, server: 1207tw.fans8.xyz, port: 80, type: vmess, uuid: fe2021fe-e942-39bb-8585-3c1ef61acfae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1207tw.fans8.xyz}}
-  - {name: 🇬🇧 英国阿伟科技-油管, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇮🇳 印度阿伟科技-油管, server: aicoo6du.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}}
-  - {name: 🇸🇬 新加坡阿伟科技-油管, server: 101.67.8.158, port: 18168, type: trojan, password: d0d535cc-438d-4a0c-e09e-65441e89ac1e, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡阿伟科技-油管 2, server: 13.94.36.226, port: 55529, type: vmess, uuid: 0c026923-0425-420f-99a6-f940ed3798a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇸🇬 新加坡阿伟科技-油管 3, server: sg-sin-krn-v2.node.inforun.work, port: 12888, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇭🇰 香港阿伟科技-油管, server: 0107hk.fans8.xyz, port: 80, type: vmess, uuid: fe2021fe-e942-39bb-8585-3c1ef61acfae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 0107hk.fans8.xyz}}
-  - {name: 🇭🇰 香港阿伟科技-油管 2, server: 1222hk3.fans8.xyz, port: 80, type: vmess, uuid: fe2021fe-e942-39bb-8585-3c1ef61acfae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222hk3.fans8.xyz}}
-  - {name: 🇭🇰 香港阿伟科技-油管 3, server: hk-hkg-shhk-001-v2.cdn.savoy.click, port: 20088, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇭🇰 香港阿伟科技-油管 4, server: hk-hkg-sh-hk-02-v2.cdn.savoy.click, port: 21088, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇭🇰 香港阿伟科技-油管 5, server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇭🇰 香港阿伟科技-油管 6, server: sh-hk-hgc-100m-v2.cdn.savoy.click, port: 20188, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇭🇰 香港阿伟科技-油管 7, server: sh-hk-hgc-1g-v2.node.inforun.work, port: 20288, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇨🇳 台湾阿伟科技-油管 3, server: fq-tw-01.node.net.dacy.cc, port: 25565, type: vmess, uuid: f3d9e27f-b019-435f-8692-169e2ec83bcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: youtube-aweikeji}}
-  - {name: 🇨🇳 台湾阿伟科技-油管 4, server: tw-tpe-h-v2.cdn.savoy.click, port: 988, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇨🇳 台湾阿伟科技-油管 5, server: tw-tpe-hq-v2.node.inforun.work, port: 888, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇯🇵 日本阿伟科技-油管, server: jp19.holiganfan.com, port: 10088, type: trojan, password: 6a826c64-5b0a-4960-8de0-a4de86e71034, sni: jp19.holiganfan.com, skip-cert-verify: false}
-  - {name: 🇯🇵 日本阿伟科技-油管 2, server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mydisk, ws-headers: {Host: vipdedi.boom.ovh}}
-  - {name: 🇯🇵 日本阿伟科技-油管 3, server: hzcu.rymv2rayssl.xyz, port: 44601, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 185.172.115.80}}
-  - {name: 🇯🇵 日本阿伟科技-油管 4, server: hzcu.rymv2rayssl.xyz, port: 44601, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hzcu.rymv2rayssl.xyz}}
-  - {name: 🇯🇵 日本阿伟科技-油管 5, server: jp-nrt-04-v2.cdn.savoy.click, port: 888, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 葡萄牙阿伟科技-油管, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 🇺🇸 美国阿伟科技-油管, server: 104.17.165.193, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxny.fovi.tk}}
-  - {name: 🇺🇸 美国阿伟科技-油管 2, server: 104.24.223.86, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}}
-  - {name: 🇺🇸 美国阿伟科技-油管 3, server: 104.16.29.103, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxny.fovi.tk}}
-  - {name: 🇺🇸 美国阿伟科技-油管 4, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}}
-  - {name: 🇺🇸 美国阿伟科技-油管 5, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-油管 6, server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: 710b36b8-f254-4cfb-a2ae-5eb72405848a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇺🇸 美国阿伟科技-油管 7, server: fa1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-油管 8, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-油管 9, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-油管 10, server: inapus1.mooncloud.bike, port: 8443, type: vmess, uuid: 0d69346e-9a21-394e-a00a-ffec7fad5956, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: inapus1.mooncloud.bike}}
-  - {name: 🇺🇸 美国阿伟科技-油管 11, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}}
-  - {name: 🇺🇸 美国阿伟科技-油管 12, server: shz3.mooncloud.bike, port: 8443, type: vmess, uuid: 0d69346e-9a21-394e-a00a-ffec7fad5956, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shz3.mooncloud.bike}}
-  - {name: 🇺🇸 美国阿伟科技-油管 13, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /sakura/, ws-headers: {Host: 2022-world-1.a-yu.xyz}}
-  - {name: 🇺🇸 美国阿伟科技-油管 14, server: cm-jm.okvpn.xyz, port: 20004, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇺🇸 美国阿伟科技-油管 15, server: cu-cs.okvpn.xyz, port: 18004, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
-  - {name: 🇺🇸 美国阿伟科技-油管 16, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}}
-  - {name: 🇺🇸 美国阿伟科技-油管 17, server: 20.111.31.233, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: 5401fcb0-2899-4c05-8eee-1728b8a1affc}
-  - {name: 🇺🇸 美国阿伟科技-油管 18, server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇺🇸 美国阿伟科技-油管 19, server: us-sea-sh-us-02-v2.node.inforun.work, port: 22088, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇺🇸 美国阿伟科技-油管 20, server: us-sjc-na-v2.cdn.savoy.click, port: 688, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇲🇾 马来西亚阿伟科技-油管, server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇰🇷 韩国阿伟科技-油管, server: freeb.vproxy.us, port: 443, type: trojan, password: 066771f4-b7f5-426a-bbb2-5fecfe9190f5, sni: freeb.vproxy.us, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国阿伟科技-油管 2, server: 3.34.134.181, port: 25565, type: vmess, uuid: c35e2e64-b67a-4141-be78-51dd0923a114, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}}
-  - {name: 🇰🇷 韩国阿伟科技-油管 3, server: 101.67.8.158, port: 41232, type: vmess, uuid: da884ca5-089c-404a-87c8-a1b3ac17f38c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: YouTube-aweikeji}}
-  - {name: 🇰🇷 韩国阿伟科技-油管 4, server: fq-kr-01.node.net.dacy.cc, port: 25565, type: vmess, uuid: d44815e8-ee38-41f1-9bb6-d71dab16b0fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: YouTube-aweikeji}}
+  - {name: 🇨🇳 台湾阿伟科技-油管, server: 1207tw.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1207tw.fans8.xyz}}
+  - {name: 🇨🇳 台湾阿伟科技-油管 2, server: 0109tw.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 0109tw.fans8.xyz}}
+  - {name: 🇩🇪 德国阿伟科技-油管, server: 20.79.17.130, port: 10080, type: vmess, uuid: fbfe2c35-643e-4c43-b710-8f107788f18a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 20.79.17.130}}
+  - {name: 🇩🇪 德国阿伟科技-油管 2, server: fi-hel-01-v2.node.inforun.work, port: 888, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇩🇪 德美国阿伟科技-油管, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: ddns04.r8o8c8k.xyz}}
+  - {name: 🇷🇺 俄罗斯阿伟科技-油管, server: 194.5.79.15, port: 60764, type: vmess, uuid: e1107940-740b-11ec-8f34-0e8969ca1a20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇵🇭 菲律宾阿伟科技-油管, server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
-  - {name: 🇷🇺 俄罗斯阿伟科技-油管, server: 104.16.160.114, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2021.ga}}
-  - {name: 🇷🇺 俄罗斯阿伟科技-油管 2, server: ru-led-sh-ru-v2.node.inforun.work, port: 24088, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇩🇪 德国阿伟科技-油管, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇩🇪 德国阿伟科技-油管 2, server: fi-hel-01-v2.node.inforun.work, port: 888, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
-  - {name: 🇩🇪 德国阿伟科技-油管 3, server: de-nue-v2.cdn.savoy.click, port: 888, type: vmess, uuid: f87311c1-3a22-4dad-b42b-a93e9279d758, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇰🇷 韩国阿伟科技-油管, server: gy-kr-01.node.net.dacy.cc, port: 25565, type: vmess, uuid: f3d9e27f-b019-435f-8692-169e2ec83bcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: gy-kr-01.node.net.dacy.cc}}
+  - {name: 🇰🇷 韩国阿伟科技-油管 2, server: daozhu.relay.net.dacy.cc, port: 41232, type: vmess, uuid: d44815e8-ee38-41f1-9bb6-d71dab16b0fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: daozhu.relay.net.dacy.cc}}
+  - {name: 🇰🇷 韩国阿伟科技-油管 3, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}}
+  - {name: 🇨🇦 加拿大阿伟科技-油管, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇨🇦 加拿大阿伟科技-油管 2, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇨🇦 加拿大阿伟科技-油管 3, server: 72.140.224.197, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇲🇾 马来西亚阿伟科技-油管, server: 120.197.88.216, port: 20049, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.197.88.216}}
+  - {name: 🇺🇸 美国阿伟科技-油管, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 2, server: 104.18.96.85, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 3, server: 104.18.102.85, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxla2.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 4, server: 104.17.165.193, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxny.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 5, server: 104.18.85.215, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxsg.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 6, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 7, server: 104.16.135.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxla2.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 8, server: 104.16.29.103, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxny.fovi.tk}}
+  - {name: 🇺🇸 美国阿伟科技-油管 9, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: ddns04.r8o8c8k.xyz}}
+  - {name: 🇺🇸 美国阿伟科技-油管 10, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}}
+  - {name: 🇺🇸 美国阿伟科技-油管 11, server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国阿伟科技-油管 12, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 美国阿伟科技-油管 13, server: 38.114.114.67, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国阿伟科技-油管 14, server: 38.114.114.67, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国阿伟科技-油管 15, server: 38.114.114.67, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国阿伟科技-油管 16, server: 38.114.114.67, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国阿伟科技-油管 17, server: 108.165.196.212, port: 2340, type: ss, cipher: aes-256-gcm, password: 81d7d46b9c66c779e81b83bc594df5eb}
+  - {name: 🇺🇸 美国阿伟科技-油管 18, server: 38.114.114.67, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国阿伟科技-油管 19, server: 38.114.114.67, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国阿伟科技-油管 20, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
+  - {name: 🇺🇸 美国阿伟科技-油管 21, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
+  - {name: 🇺🇸 美国阿伟科技-油管 22, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /sakura/, ws-headers: {Host: 2022-world-1.a-yu.xyz}}
+  - {name: 🇺🇸 美国阿伟科技-油管 23, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}}
+  - {name: 🇺🇸 美国阿伟科技-油管 24, server: 20.111.31.233, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: 5401fcb0-2899-4c05-8eee-1728b8a1affc}
+  - {name: 🇺🇸 美国阿伟科技-油管 25, server: fa1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
+  - {name: 🇺🇸 美国阿伟科技-油管 26, server: inapus1.mooncloud.bike, port: 8443, type: vmess, uuid: fbfe2c35-643e-4c43-b710-8f107788f18a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: inapus1.mooncloud.bike}}
+  - {name: 🇺🇸 美国阿伟科技-油管 27, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
+  - {name: 🇺🇸 美国阿伟科技-油管 28, server: shz3.mooncloud.bike, port: 8443, type: vmess, uuid: fbfe2c35-643e-4c43-b710-8f107788f18a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shz3.mooncloud.bike}}
+  - {name: 🇺🇸 美国阿伟科技-油管 29, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
+  - {name: 美洲阿伟科技-油管, server: 156.251.141.235, port: 443, type: vmess, uuid: 8cf91d03-990a-4d70-9ab3-672ba7b882b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /GNTHk4fO2F, ws-headers: {Host: 3.ezydfdd.com}}
+  - {name: 墨西哥阿伟科技-油管, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: 🇯🇵 日本阿伟科技-油管, server: 120.197.88.216, port: 20015, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇯🇵 日本阿伟科技-油管 2, server: 120.197.88.216, port: 20015, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.197.88.216}}
+  - {name: 🇯🇵 日本阿伟科技-油管 3, server: 172.105.251.193, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 日本阿伟科技-油管 4, server: 172.105.251.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇯🇵 日本阿伟科技-油管 5, server: 172.105.251.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇯🇵 日本阿伟科技-油管 6, server: 172.105.251.193, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇯🇵 日本阿伟科技-油管 7, server: 172.105.251.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇯🇵 日本阿伟科技-油管 8, server: gy-jp-01.node.net.dacy.cc, port: 25565, type: vmess, uuid: d44815e8-ee38-41f1-9bb6-d71dab16b0fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index.html, ws-headers: {Host: gy-jp-01.node.net.dacy.cc}}
+  - {name: 🇯🇵 日本阿伟科技-油管 9, server: jp19.holiganfan.com, port: 10088, type: trojan, password: 052c0a58-cc6b-437a-b15e-be23f27d17d9, sni: jp19.holiganfan.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本阿伟科技-油管 10, server: jp-nrt-04-v2.cdn.savoy.click, port: 888, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇨🇳 台湾阿伟科技-油管 3, server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 🇨🇳 台湾阿伟科技-油管 4, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 🇨🇳 台湾阿伟科技-油管 5, server: 0105tw.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 0105tw.fans8.xyz}}
+  - {name: 🇨🇳 台湾阿伟科技-油管 6, server: tw-tpe-h-v2.cdn.savoy.click, port: 988, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇨🇳 台湾阿伟科技-油管 7, server: tw-tpe-hq-v2.node.inforun.work, port: 888, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇭🇰 香港阿伟科技-油管, server: 116.162.32.200, port: 18000, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇭🇰 香港阿伟科技-油管 2, server: 120.197.88.216, port: 20001, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇭🇰 香港阿伟科技-油管 3, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇭🇰 香港阿伟科技-油管 4, server: 116.162.32.200, port: 18000, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.200}}
+  - {name: 🇭🇰 香港阿伟科技-油管 5, server: 120.197.88.216, port: 20001, type: vmess, uuid: aaaced8e-e212-431a-8671-9f414a2ec807, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.197.88.216}}
+  - {name: 🇭🇰 香港阿伟科技-油管 6, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 09fe98b8-3795-3294-b749-5a39208a6cdd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}}
+  - {name: 🇭🇰 香港阿伟科技-油管 7, server: trhk2.qiguangyicai.xyz, port: 4443, type: trojan, password: 09f043d3-159f-4064-81fe-f4ac329afbdc, sni: trhk2.qiguangyicai.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港阿伟科技-油管 8, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 香港阿伟科技-油管 9, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港阿伟科技-油管 10, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇭🇰 香港阿伟科技-油管 11, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇭🇰 香港阿伟科技-油管 12, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇭🇰 香港阿伟科技-油管 13, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 香港阿伟科技-油管 14, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇭🇰 香港阿伟科技-油管 15, server: 0110hk01.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 0110hk01.fans8.xyz}}
+  - {name: 🇭🇰 香港阿伟科技-油管 16, server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇭🇰 香港阿伟科技-油管 17, server: hk-gz-hk-hkt-v2-b.cdn.savoy.click, port: 60188, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇭🇰 香港阿伟科技-油管 18, server: sh-hk-hgc-100m-v2.cdn.savoy.click, port: 20188, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 🇸🇬 新加坡阿伟科技-油管, server: fuck.biubiubiu.cloud, port: 443, type: trojan, password: B4iK9pXaRnHfr9Rp, sni: fuck.biubiubiu.cloud, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡阿伟科技-油管 2, server: sg-sin-krn-v2.node.inforun.work, port: 12888, type: vmess, uuid: 7336fc51-3097-41b9-8ee1-16a7626e9c91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}}
+  - {name: 匈牙利阿伟科技-油管, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}}
+  - {name: 🇮🇳 印度阿伟科技-油管, server: 45.133.181.58, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -67,27 +95,18 @@ proxy-groups:
       - DIRECT
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -108,17 +127,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -127,27 +183,18 @@ proxy-groups:
     proxies:
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -168,17 +215,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -187,27 +271,18 @@ proxy-groups:
       - 🎯 全球直连
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -228,17 +303,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
   - name: 📲 电报信息
     type: select
     proxies:
@@ -246,27 +358,18 @@ proxy-groups:
       - 🎯 全球直连
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -287,17 +390,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -305,27 +445,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -346,17 +477,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -364,27 +532,18 @@ proxy-groups:
       - 🎯 全球直连
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -405,17 +564,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -440,27 +636,18 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇨🇳 台湾阿伟科技-油管
       - 🇨🇳 台湾阿伟科技-油管 2
-      - 🇬🇧 英国阿伟科技-油管
-      - 🇮🇳 印度阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管
-      - 🇸🇬 新加坡阿伟科技-油管 2
-      - 🇸🇬 新加坡阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管
-      - 🇭🇰 香港阿伟科技-油管 2
-      - 🇭🇰 香港阿伟科技-油管 3
-      - 🇭🇰 香港阿伟科技-油管 4
-      - 🇭🇰 香港阿伟科技-油管 5
-      - 🇭🇰 香港阿伟科技-油管 6
-      - 🇭🇰 香港阿伟科技-油管 7
-      - 🇨🇳 台湾阿伟科技-油管 3
-      - 🇨🇳 台湾阿伟科技-油管 4
-      - 🇨🇳 台湾阿伟科技-油管 5
-      - 🇯🇵 日本阿伟科技-油管
-      - 🇯🇵 日本阿伟科技-油管 2
-      - 🇯🇵 日本阿伟科技-油管 3
-      - 🇯🇵 日本阿伟科技-油管 4
-      - 🇯🇵 日本阿伟科技-油管 5
-      - 葡萄牙阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管
+      - 🇩🇪 德国阿伟科技-油管 2
+      - 🇩🇪 德美国阿伟科技-油管
+      - 🇷🇺 俄罗斯阿伟科技-油管
+      - 🇵🇭 菲律宾阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管
+      - 🇰🇷 韩国阿伟科技-油管 2
+      - 🇰🇷 韩国阿伟科技-油管 3
+      - 🇨🇦 加拿大阿伟科技-油管
+      - 🇨🇦 加拿大阿伟科技-油管 2
+      - 🇨🇦 加拿大阿伟科技-油管 3
+      - 🇲🇾 马来西亚阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管
       - 🇺🇸 美国阿伟科技-油管 2
       - 🇺🇸 美国阿伟科技-油管 3
@@ -481,17 +668,54 @@ proxy-groups:
       - 🇺🇸 美国阿伟科技-油管 18
       - 🇺🇸 美国阿伟科技-油管 19
       - 🇺🇸 美国阿伟科技-油管 20
-      - 🇲🇾 马来西亚阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管
-      - 🇰🇷 韩国阿伟科技-油管 2
-      - 🇰🇷 韩国阿伟科技-油管 3
-      - 🇰🇷 韩国阿伟科技-油管 4
-      - 🇵🇭 菲律宾阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管
-      - 🇷🇺 俄罗斯阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管
-      - 🇩🇪 德国阿伟科技-油管 2
-      - 🇩🇪 德国阿伟科技-油管 3
+      - 🇺🇸 美国阿伟科技-油管 21
+      - 🇺🇸 美国阿伟科技-油管 22
+      - 🇺🇸 美国阿伟科技-油管 23
+      - 🇺🇸 美国阿伟科技-油管 24
+      - 🇺🇸 美国阿伟科技-油管 25
+      - 🇺🇸 美国阿伟科技-油管 26
+      - 🇺🇸 美国阿伟科技-油管 27
+      - 🇺🇸 美国阿伟科技-油管 28
+      - 🇺🇸 美国阿伟科技-油管 29
+      - 美洲阿伟科技-油管
+      - 墨西哥阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管
+      - 🇯🇵 日本阿伟科技-油管 2
+      - 🇯🇵 日本阿伟科技-油管 3
+      - 🇯🇵 日本阿伟科技-油管 4
+      - 🇯🇵 日本阿伟科技-油管 5
+      - 🇯🇵 日本阿伟科技-油管 6
+      - 🇯🇵 日本阿伟科技-油管 7
+      - 🇯🇵 日本阿伟科技-油管 8
+      - 🇯🇵 日本阿伟科技-油管 9
+      - 🇯🇵 日本阿伟科技-油管 10
+      - 🇨🇳 台湾阿伟科技-油管 3
+      - 🇨🇳 台湾阿伟科技-油管 4
+      - 🇨🇳 台湾阿伟科技-油管 5
+      - 🇨🇳 台湾阿伟科技-油管 6
+      - 🇨🇳 台湾阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管
+      - 🇭🇰 香港阿伟科技-油管 2
+      - 🇭🇰 香港阿伟科技-油管 3
+      - 🇭🇰 香港阿伟科技-油管 4
+      - 🇭🇰 香港阿伟科技-油管 5
+      - 🇭🇰 香港阿伟科技-油管 6
+      - 🇭🇰 香港阿伟科技-油管 7
+      - 🇭🇰 香港阿伟科技-油管 8
+      - 🇭🇰 香港阿伟科技-油管 9
+      - 🇭🇰 香港阿伟科技-油管 10
+      - 🇭🇰 香港阿伟科技-油管 11
+      - 🇭🇰 香港阿伟科技-油管 12
+      - 🇭🇰 香港阿伟科技-油管 13
+      - 🇭🇰 香港阿伟科技-油管 14
+      - 🇭🇰 香港阿伟科技-油管 15
+      - 🇭🇰 香港阿伟科技-油管 16
+      - 🇭🇰 香港阿伟科技-油管 17
+      - 🇭🇰 香港阿伟科技-油管 18
+      - 🇸🇬 新加坡阿伟科技-油管
+      - 🇸🇬 新加坡阿伟科技-油管 2
+      - 匈牙利阿伟科技-油管
+      - 🇮🇳 印度阿伟科技-油管
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
