@@ -5,1437 +5,1469 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 _HK_香港, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇭🇰 _HK_香港 2, server: 118.107.244.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇭🇰 _HK_香港 3, server: 118.107.244.112, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇭🇰 _HK_香港 4, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享), server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2, server: 120.197.88.216, port: 20015, type: vmess, uuid: b6cfdcc9-804e-4609-a317-d171d39c5725, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3, server: 165.154.227.178, port: 80, type: vmess, uuid: 6c23fcf0-18e7-3cd0-a123-821fa514fb42, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 165.154.227.178}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇺🇸 _US_美国, server: 167.88.61.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 2, server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 3, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 4, server: 38.75.136.45, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5, server: 168.138.197.27, port: 60982, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}}
-  - {name: 🇺🇸 _US_美国 5, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 6, server: 38.75.136.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 _US_美国 7, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 8, server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 9, server: 167.88.61.130, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 10, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 11, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 12, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 13, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 14, server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 15, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇯🇵 _JP_日本, server: 5.180.76.74, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8, server: 46.29.218.170, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享), server: 134.195.196.199, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: default_name, server: 198.41.212.15, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
+  - {name: default_name 2, server: 198.41.212.9, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
+  - {name: 🇺🇸 _US_美国, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享), server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享), server: 38.75.136.102, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 2, server: 38.68.135.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 3, server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 4, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 5, server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 6, server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 7, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 8, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2, server: 38.68.135.19, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 9, server: 167.88.62.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 10, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3, server: 46.29.218.170, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4, server: 45.152.183.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: 🇺🇸 _US_美国 11, server: 38.68.134.69, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 12, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 13, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 14, server: 167.88.63.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 15, server: 167.88.63.61, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: 🇺🇸 _US_美国 16, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 17, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 18, server: 167.88.62.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 19, server: 38.68.135.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 20, server: 38.64.138.145, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 21, server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9, server: 38.75.136.102, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10, server: 38.68.135.19, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11, server: 167.88.62.68, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 22, server: 38.75.136.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 23, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 24, server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 25, server: 38.68.135.19, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 26, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12, server: 192.46.208.123, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 27, server: 38.75.136.93, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇨🇦 _CA_加拿大, server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: default_name, server: 198.41.212.9, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5, server: 38.68.134.202, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇯🇵 _JP_日本, server: 5.180.76.74, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 _CA_加拿大, server: 134.195.196.52, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇨🇦 _CA_加拿大 2, server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8, server: 167.88.62.68, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享), server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 17, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 18, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 19, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 20, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 21, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 _CA_加拿大 3, server: 134.195.196.52, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇦 _CA_加拿大 4, server: 134.195.196.199, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9, server: 134.195.196.33, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10, server: 192.46.208.123, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 22, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 23, server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 24, server: 38.68.134.69, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 25, server: 167.88.63.61, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇨🇦 _CA_加拿大 5, server: 198.57.27.184, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12, server: 46.29.218.146, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 26, server: 38.68.134.202, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 27, server: 167.88.61.130, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: 🇺🇸 _US_美国 28, server: 38.68.134.202, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 29, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 30, server: 38.64.138.145, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 31, server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 32, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 33, server: 38.107.226.48, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 _CA_加拿大 2, server: 134.195.196.199, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: default_name 2, server: 198.41.212.15, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
+  - {name: 🇺🇸 _US_美国 29, server: 38.68.134.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 30, server: 38.68.134.85, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 31, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 32, server: 167.88.63.61, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 33, server: 167.88.63.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 34, server: 167.88.62.68, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 35, server: 167.88.63.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 _CA_加拿大 6, server: 134.195.196.199, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13, server: 134.195.196.52, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 36, server: 167.88.63.61, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 37, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 38, server: 38.68.134.202, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 _CA_加拿大 7, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 _CA_加拿大 8, server: 134.195.196.199, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 _CA_加拿大 9, server: 134.195.196.52, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7, server: 38.68.134.85, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享), server: 198.57.27.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 34, server: 38.75.136.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 35, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 36, server: 167.88.61.130, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 37, server: 38.107.226.48, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 38, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 39, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 40, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 41, server: 38.68.134.202, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 42, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 43, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 44, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 45, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 46, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 47, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇬🇧 _GB_英国, server: 212.38.189.174, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16, server: 212.38.189.174, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17, server: 134.195.196.33, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9, server: 172.99.190.90, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 48, server: 38.75.136.93, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 49, server: 38.68.134.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 50, server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 51, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 52, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 53, server: 38.64.138.145, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 _US_美国 54, server: 38.64.138.145, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: default_name 3, server: 198.41.212.2, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 55, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 56, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 57, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 58, server: 167.88.63.61, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇨🇦 _CA_加拿大 3, server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20, server: 134.195.196.52, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 59, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 60, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 61, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇭🇰 _HK_香港 5, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: default_name 4, server: 198.41.212.8, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12, server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 62, server: 38.107.226.48, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 63, server: 38.75.136.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 64, server: 38.75.136.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 _US_美国 65, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 66, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 67, server: 167.88.63.61, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 68, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 69, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 70, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14, server: 167.88.63.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22, server: 172.105.59.32, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 71, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国 72, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 73, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇬🇧 _GB_英国 2, server: 172.99.190.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23, server: 172.105.59.32, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24, server: 172.105.59.32, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 _US_美国 74, server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 75, server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 76, server: 38.75.136.93, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 🇺🇸 _US_美国 77, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26, server: 172.105.59.32, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 78, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 79, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 80, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 81, server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 82, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27, server: 38.107.226.48, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 83, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 84, server: 167.88.61.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 85, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 86, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 87, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16, server: 172.99.190.87, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 88, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28, server: 172.105.59.32, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 89, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 90, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 91, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇬🇧 _GB_英国 3, server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 92, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 93, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 94, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 95, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 96, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 97, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 98, server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 99, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 _US_美国 100, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 101, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 102, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 103, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 104, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 105, server: 167.88.63.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 106, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 107, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 108, server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 109, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 110, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 39, server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 40, server: 38.68.134.202, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 41, server: 167.88.63.61, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 42, server: 167.88.63.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 10, server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 _CA_加拿大 11, server: 134.195.196.199, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 _CA_加拿大 12, server: 134.195.198.250, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7, server: 167.88.63.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 43, server: 38.107.226.48, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 44, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 45, server: 38.107.226.48, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 46, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 _CA_加拿大 13, server: 134.195.196.199, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 _CA_加拿大 14, server: 198.57.27.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 15, server: 134.195.196.52, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇨🇦 _CA_加拿大 16, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 _CA_加拿大 17, server: 134.195.196.110, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 _CA_加拿大 18, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8, server: 38.68.134.85, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9, server: 134.195.196.199, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10, server: 38.68.134.202, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11, server: 38.121.43.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 47, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 48, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 49, server: 167.88.63.61, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: _NO_挪威, server: 46.29.218.170, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: _MX_墨西哥, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: 🇯🇵 _JP_日本 2, server: jp_g_aws_m.hudaye.space, port: 55487, type: ss, cipher: chacha20-ietf-poly1305, password: dce3585f-4ce5-4931-8997-89c484496017}
+  - {name: 🇬🇧 _GB_英国, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 50, server: 142.202.48.105, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15, server: 134.195.196.199, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 51, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 52, server: 167.88.61.130, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 53, server: 167.88.61.130, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 _CA_加拿大 19, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 54, server: 167.88.61.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 20, server: 134.195.196.52, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17, server: 212.38.189.174, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3, server: 198.57.27.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 55, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 _CA_加拿大 21, server: 134.195.196.101, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 _CA_加拿大 22, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 _CA_加拿大 23, server: 198.57.27.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 24, server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 _CA_加拿大 25, server: 198.57.27.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5, server: 198.57.27.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 56, server: 38.107.226.48, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 26, server: 134.195.196.52, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 _CA_加拿大 27, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18, server: 134.195.196.52, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19, server: 134.195.196.199, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 57, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇨🇦 _CA_加拿大 28, server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 _CA_加拿大 29, server: 134.195.196.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 58, server: 169.197.143.157, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: _NO_挪威 2, server: 46.29.218.170, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 59, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇨🇦 _CA_加拿大 30, server: 198.57.27.152, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 60, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21, server: 172.105.59.32, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22, server: 172.105.59.32, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 61, server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 62, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 63, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 64, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 65, server: 38.75.136.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 66, server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 _JP_日本 3, server: jp_g_aws_m.hudaye.space, port: 55486, type: ss, cipher: aes-128-gcm, password: dce3585f-4ce5-4931-8997-89c484496017}
+  - {name: 🇺🇸 _US_美国 67, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 68, server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 69, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 70, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇳🇱 _NL_荷兰, server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13, server: 38.68.134.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 71, server: 167.88.61.130, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23, server: 38.107.226.48, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 72, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 73, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24, server: 172.105.59.32, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 74, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇬🇧 _GB_英国 2, server: 212.38.189.174, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 75, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 76, server: 167.88.63.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 77, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 78, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 79, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 80, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 81, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 82, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 83, server: 167.88.61.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 84, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 85, server: 167.88.61.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 86, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 87, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 88, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 89, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇨🇦 _CA_加拿大 31, server: 134.195.196.52, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇦 _CA_加拿大 32, server: 134.195.196.52, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 90, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1458,180 +1490,184 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
+      - default_name
+      - default_name 2
       - 🇺🇸 _US_美国
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 5
       - 🇺🇸 _US_美国 6
       - 🇺🇸 _US_美国 7
       - 🇺🇸 _US_美国 8
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 3
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 4
       - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
       - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国 14
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 15
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 16
       - 🇯🇵 _JP_日本
+      - 🇫🇷 _FR_法国
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 6
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 7
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 8
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享)
-      - 🇺🇸 _US_美国 16
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 17
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国 20
       - 🇺🇸 _US_美国 21
+      - 🇨🇦 _CA_加拿大 3
+      - 🇨🇦 _CA_加拿大 4
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 9
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 10
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 2
       - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
       - 🇺🇸 _US_美国 24
       - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
+      - 🇨🇦 _CA_加拿大 5
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 12
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 3
+      - 🇺🇸 _US_美国 26
       - 🇺🇸 _US_美国 27
-      - 🇨🇦 _CA_加拿大
-      - default_name
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 28
       - 🇺🇸 _US_美国 29
       - 🇺🇸 _US_美国 30
       - 🇺🇸 _US_美国 31
       - 🇺🇸 _US_美国 32
       - 🇺🇸 _US_美国 33
-      - 🇨🇦 _CA_加拿大 2
-      - default_name 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享)
       - 🇺🇸 _US_美国 34
       - 🇺🇸 _US_美国 35
+      - 🇨🇦 _CA_加拿大 6
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 13
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 5
       - 🇺🇸 _US_美国 36
       - 🇺🇸 _US_美国 37
       - 🇺🇸 _US_美国 38
+      - 🇨🇦 _CA_加拿大 7
+      - 🇨🇦 _CA_加拿大 8
+      - 🇨🇦 _CA_加拿大 9
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 14
       - 🇺🇸 _US_美国 39
       - 🇺🇸 _US_美国 40
       - 🇺🇸 _US_美国 41
       - 🇺🇸 _US_美国 42
+      - 🇨🇦 _CA_加拿大 10
+      - 🇨🇦 _CA_加拿大 11
+      - 🇨🇦 _CA_加拿大 12
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 6
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 7
       - 🇺🇸 _US_美国 43
       - 🇺🇸 _US_美国 44
       - 🇺🇸 _US_美国 45
       - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇬🇧 _GB_英国
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
+      - 🇨🇦 _CA_加拿大 13
+      - 🇨🇦 _CA_加拿大 14
+      - 🇨🇦 _CA_加拿大 15
+      - 🇨🇦 _CA_加拿大 16
+      - 🇨🇦 _CA_加拿大 17
+      - 🇨🇦 _CA_加拿大 18
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 8
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 9
-      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 2
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
+      - 🇺🇸 _US_美国 47
       - 🇺🇸 _US_美国 48
       - 🇺🇸 _US_美国 49
+      - _NO_挪威
+      - _MX_墨西哥
+      - 🇯🇵 _JP_日本 2
+      - 🇬🇧 _GB_英国
       - 🇺🇸 _US_美国 50
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 51
       - 🇺🇸 _US_美国 52
       - 🇺🇸 _US_美国 53
+      - 🇨🇦 _CA_加拿大 19
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 54
-      - default_name 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 10
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇺🇸 _US_美国 58
-      - 🇨🇦 _CA_加拿大 3
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 11
-      - 🇺🇸 _US_美国 59
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇭🇰 _HK_香港 5
-      - default_name 4
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇨🇦 _CA_加拿大 20
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 17
       - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 3
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 4
+      - 🇺🇸 _US_美国 55
+      - 🇨🇦 _CA_加拿大 21
+      - 🇨🇦 _CA_加拿大 22
+      - 🇨🇦 _CA_加拿大 23
+      - 🇨🇦 _CA_加拿大 24
+      - 🇨🇦 _CA_加拿大 25
+      - 🇨🇦 加拿大(欢迎订阅Youtube玉豆分享) 5
+      - 🇺🇸 _US_美国 56
+      - 🇨🇦 _CA_加拿大 26
+      - 🇨🇦 _CA_加拿大 27
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 18
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 19
+      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 12
+      - 🇺🇸 _US_美国 57
+      - 🇨🇦 _CA_加拿大 28
+      - 🇨🇦 _CA_加拿大 29
+      - 🇺🇸 _US_美国 58
+      - _NO_挪威 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 20
+      - 🇺🇸 _US_美国 59
+      - 🇨🇦 _CA_加拿大 30
+      - 🇺🇸 _US_美国 60
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 21
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
+      - 🇺🇸 _US_美国 61
       - 🇺🇸 _US_美国 62
       - 🇺🇸 _US_美国 63
       - 🇺🇸 _US_美国 64
       - 🇺🇸 _US_美国 65
       - 🇺🇸 _US_美国 66
+      - 🇯🇵 _JP_日本 3
       - 🇺🇸 _US_美国 67
       - 🇺🇸 _US_美国 68
       - 🇺🇸 _US_美国 69
       - 🇺🇸 _US_美国 70
+      - 🇳🇱 _NL_荷兰
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 13
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 14
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 22
       - 🇺🇸 _US_美国 71
+      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 15
       - 🇺🇸 _US_美国 72
       - 🇺🇸 _US_美国 73
-      - 🇬🇧 _GB_英国 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 23
       - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 24
       - 🇺🇸 _US_美国 74
+      - 🇬🇧 _GB_英国 2
       - 🇺🇸 _US_美国 75
       - 🇺🇸 _US_美国 76
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 25
       - 🇺🇸 _US_美国 77
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 26
       - 🇺🇸 _US_美国 78
       - 🇺🇸 _US_美国 79
       - 🇺🇸 _US_美国 80
       - 🇺🇸 _US_美国 81
       - 🇺🇸 _US_美国 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 27
       - 🇺🇸 _US_美国 83
       - 🇺🇸 _US_美国 84
       - 🇺🇸 _US_美国 85
       - 🇺🇸 _US_美国 86
       - 🇺🇸 _US_美国 87
-      - 🇺🇸 美国(欢迎订阅Youtube玉豆分享) 16
       - 🇺🇸 _US_美国 88
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 28
       - 🇺🇸 _US_美国 89
+      - 🇨🇦 _CA_加拿大 31
+      - 🇨🇦 _CA_加拿大 32
       - 🇺🇸 _US_美国 90
-      - 🇺🇸 _US_美国 91
-      - 🇬🇧 _GB_英国 3
-      - 🇺🇸 _US_美国 92
-      - 🇺🇸 _US_美国 93
-      - 🇺🇸 _US_美国 94
-      - 🇺🇸 _US_美国 95
-      - 🇺🇸 _US_美国 96
-      - 🇺🇸 _US_美国 97
-      - 🇺🇸 _US_美国 98
-      - 🇺🇸 _US_美国 99
-      - 🇺🇸 _US_美国 100
-      - 🇺🇸 _US_美国 101
-      - 🇺🇸 _US_美国 102
-      - 🇺🇸 _US_美国 103
-      - 🇺🇸 _US_美国 104
-      - 🇺🇸 _US_美国 105
-      - 🇺🇸 _US_美国 106
-      - 🇺🇸 _US_美国 107
-      - 🇪🇺 欧洲(欢迎订阅Youtube玉豆分享) 29
-      - 🇺🇸 _US_美国 108
-      - 🇺🇸 _US_美国 109
-      - 🇺🇸 _US_美国 110
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
