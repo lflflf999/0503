@@ -5,1348 +5,2244 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 加拿大, server: 149.248.63.54, port: 42814, type: ss, cipher: aes-256-gcm, password: !<str> 34165725, udp: true}
-  - {name: 法国, server: 95.142.175.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: tkAx1ehPPkMN, udp: true}
-  - {name: 加拿大 2, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大 3, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大 4, server: 198.57.27.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 英国, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 中国, server: newgy.jidan666.com, port: 23034, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: newgy.jidan666.com, skip-cert-verify: true, udp: true}
-  - {name: 英国 2, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大 5, server: 198.57.27.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 墨西哥, server: 169.57.35.97, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL, udp: true}
-  - {name: 德国, server: 89.163.140.155, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 中国 2, server: one.hmbiplc.com, port: 53894, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚, server: 116.206.230.130, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: zaNeDgu9mZKpEMTHQJy8, udp: true}
-  - {name: _SG_新加坡, server: 172.104.44.88, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国, server: 167.88.61.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 2, server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 3, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 4, server: 167.88.61.109, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 5, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 6, server: 167.88.61.130, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 7, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 8, server: 169.197.143.157, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 9, server: 169.197.143.157, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 10, server: 169.197.143.157, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 11, server: 169.197.143.157, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 12, server: 167.88.61.130, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 13, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 14, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 15, server: 169.197.143.157, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 16, server: 169.197.143.157, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 17, server: 167.88.61.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 18, server: 169.197.143.157, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 19, server: 169.197.143.157, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 20, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 21, server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 22, server: 169.197.143.157, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: w, server: 62.210.209.50, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: w 2, server: 62.210.209.50, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: w 3, server: 172.105.190.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: w 4, server: 145.239.1.100, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: w 5, server: 145.239.1.100, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: w 6, server: 145.239.1.100, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: w 7, server: 172.105.190.20, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: w 8, server: 172.105.177.120, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: w 9, server: 212.38.189.174, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: w 10, server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: w 11, server: 62.210.209.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: w 12, server: 212.38.189.174, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: w 13, server: 20.111.31.233, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: 5401fcb0-2899-4c05-8eee-1728b8a1affc, udp: true}
-  - {name: 美国 ☆☆ 01 ☆NTT☆   1.2x, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: 日本 ☆☆ 02 ☆GMO☆  1.2x, server: 133.wgong.xyz, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 ☆☆ 01 ☆AWS☆  1.2x, server: 20.205.58.228, port: 11223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 ☆☆ 01 ☆GMO☆  1.2x, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: 香港 ☆☆ 01 ☆GMO☆  1.2x, server: qy1.dwjsyz.top, port: 16664, type: vmess, uuid: 0075f65b-7ec6-3b18-a0b6-0c0dc54f9e6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: qy1.dwjsyz.top}}, udp: true}
-  - {name: 台湾 ☆☆ 01 ☆NTT☆   1.2x, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 ☆☆ 02 ☆AWS☆  1.2x, server: 125.wgong.xyz, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 ☆☆ 03 ☆GMO☆  1.2x, server: 86.wgong.xyz, port: 52286, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 ☆☆ 03 ☆AWS☆  1.2x, server: 20.205.58.228, port: 11223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: w）_1, server: 169.197.143.157, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: w）_2, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: ddns04.r8o8c8k.xyz}}, udp: true}
-  - {name: _加拿大_w_3, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _美国_w_4, server: 38.75.136.58, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _美国_w_5, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: w_6, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
-  - {name: w_7, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b3f4826a-01e1-438a-8cb4-becb9e8b140c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
-  - {name: _加拿大_w_8, server: 134.195.196.199, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _加拿大_w_9, server: 134.195.196.199, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _美国_w_10, server: 167.88.62.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _中国跳转_w_11, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _中国跳转_w_12, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _中国跳转_w_13, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _中国跳转_w_14, server: 112.64.69.187, port: 10002, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _中国跳转_w_15, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _香港_w_16, server: yooo.xiaobaigou.cc, port: 1001, type: trojan, password: ee378a62-03b0-3f55-89d9-36bea6b4917a, sni: yooo.xiaobaigou.cc, skip-cert-verify: true, udp: true}
-  - {name: _中国跳转_w_17, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _香港_w_18, server: yooo1.xiaobaigou.cc, port: 56016, type: trojan, password: ee378a62-03b0-3f55-89d9-36bea6b4917a, sni: yooo1.xiaobaigou.cc, skip-cert-verify: true, udp: true}
-  - {name: _香港_w_19, server: 23.99.98.230, port: 10204, type: vmess, uuid: 476ddab3-29a2-4a32-8f0d-33cf6add3722, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: wq - 美国华盛顿Cogent通信公司 1, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: wq - 瑞典  3, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: wq - 美国华盛顿Cogent通信公司 4, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wq - 加拿大  7, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _中国_<w>_104, server: 112.64.69.187, port: 10002, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _新加坡_<w>_12, server: 3.vpnbro.ml, port: 9999, type: trojan, password: dcba4731-0d6c-41f7-9d33-026fa5bff514, sni: 3.vpnbro.ml, skip-cert-verify: true, udp: true}
-  - {name: _新加坡_<w>_16, server: 4.vpnbro.ml, port: 9999, type: trojan, password: fb64c541-d412-4a01-ab8f-16bbdea884ac, sni: 4.vpnbro.ml, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(w) 27, server: 120.232.208.195, port: 19057, type: vmess, uuid: b1f64afe-67ae-3b44-bcb3-5ff2bc913170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: _菲律宾_<w>_3, server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG, udp: true}
-  - {name: _中国_<w>_18, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(w) 28, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: _中国_<w>_22, server: 120.232.208.195, port: 19057, type: vmess, uuid: b1f64afe-67ae-3b44-bcb3-5ff2bc913170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: 120.232.208.195}}, udp: true}
-  - {name: _中国_<w>_13, server: 183.240.69.51, port: 16664, type: vmess, uuid: 0075f65b-7ec6-3b18-a0b6-0c0dc54f9e6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: 183.240.69.51}}, udp: true}
-  - {name: _美国_<w>_42, server: 38.75.137.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _美国_<w>_49, server: 38.75.137.66, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(w) 7, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: 美国w_156, server: 38.75.137.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _美国_<w>_54, server: 38.75.136.58, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_117, server: 167.88.61.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 日本w_129, server: 172.105.251.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_169, server: 38.75.137.66, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国w_105, server: 38.75.136.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国w_200, server: 38.75.137.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _美国_<w>_45, server: 38.75.137.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _美国_<w>_50, server: 38.75.136.58, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_125, server: 38.114.114.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _美国_<w>_31, server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国w_216, server: 38.75.137.66, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_236, server: 38.75.136.58, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_455, server: 38.75.136.58, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国w_1, server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_153, server: 38.68.134.190, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国w_314, server: 38.114.114.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_159, server: 38.68.134.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国w_217, server: 38.75.137.187, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 欢w）_1, server: t1.ssrsub.com, port: 8443, type: trojan, password: 51273235-0995-455e-96e4-83b1811b4cab, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: _美国_<w>_44, server: 38.75.137.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国w_139, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国w_223, server: 38.68.134.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_227, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_264, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国w_322, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 欧洲w_336, server: 134.195.196.214, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_440, server: 38.68.135.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _美国_<w>_28, server: 167.88.61.109, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _美国_<w>_41, server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _美国_<w>_48, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _美国_<w>_53, server: 38.68.134.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国w_87, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 法国w_132, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_164, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_176, server: 167.88.62.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_203, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_465, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _美国_<w>_38, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _美国_<w>_56, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国w_3, server: 38.68.134.37, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 欧洲w_49, server: t3.ssrsub.com, port: 8443, type: trojan, password: 51273235-0995-455e-96e4-83b1811b4cab, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: 美国w_141, server: 38.68.135.93, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国w_143, server: 38.68.134.190, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_145, server: 38.68.134.37, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_177, server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_184, server: 38.68.135.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_193, server: 38.68.134.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国w_224, server: 38.121.43.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_283, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_454, server: 38.107.226.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _美国_<w>_71, server: 38.107.226.159, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _美国_<w>_73, server: 167.88.63.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _加拿大_<w>_78, server: 134.195.196.51, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲w_15, server: t4.ssrsub.com, port: 8443, type: trojan, password: 974aeac3-c27c-4e20-86e4-03f526faaccd, sni: t4.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: 美国w_70, server: 167.88.62.34, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国w_155, server: 38.68.135.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国w_160, server: 38.68.135.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国w_166, server: 38.68.135.93, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_180, server: 38.68.134.37, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_183, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_187, server: 38.68.134.37, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国w_226, server: 172.99.190.153, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国w_301, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大w_356, server: 198.57.27.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国w_426, server: 38.107.226.48, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _美国_<w>_72, server: 167.88.63.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _美国_<w>_81, server: 38.107.226.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国w_101, server: 192.46.208.153, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国w_138, server: 38.68.135.93, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Cw） 487, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Cw） 488, server: 198.41.212.1, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: Cw） 489, server: 112.33.32.136, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 490, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 491, server: 172.99.190.186, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 492, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 493, server: 38.121.43.91, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Cw） 494, server: 134.195.196.51, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 495, server: 198.57.27.191, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Cw） 496, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Cw） 497, server: 38.68.135.18, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Cw） 498, server: 129.wgong.xyz, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 499, server: shz3.mooncloud.bike, port: 8443, type: vmess, uuid: 997f97bc-1732-4a1c-98c8-3edb8349040f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shz3.mooncloud.bike}}, udp: true}
+  - {name: Cw） 500, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Cw） 501, server: 134.195.196.51, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Cw） 502, server: fa6.uuv2.co.uk, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 503, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 504, server: 169.197.141.109, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 505, server: 38.91.100.134, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 506, server: 38.91.107.22, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Cw） 507, server: 142.202.48.77, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 508, server: 62.210.209.50, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 509, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Cw） 510, server: newgy.jidan666.com, port: 23031, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: newgy.jidan666.com, skip-cert-verify: true, udp: true}
+  - {name: Cw） 511, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 512, server: 212.38.189.174, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 513, server: 38.86.135.126, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 514, server: 38.68.134.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 515, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 516, server: 142.202.48.7, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 517, server: 107.182.234.233, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: Cw） 518, server: 134.195.196.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 519, server: 38.91.100.102, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Cw） 520, server: 85.208.110.2, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 521, server: oz1.mooncloud.bike, port: 8443, type: vmess, uuid: f1533fd1-4562-4935-a1e6-832685d4a919, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz1.mooncloud.bike}}, udp: true}
+  - {name: Cw） 522, server: 212.38.189.174, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Cw） 523, server: 38.91.107.22, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 524, server: 134.195.196.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 525, server: 198.57.27.191, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Cw） 526, server: 198.57.27.191, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Cw） 527, server: 134.195.196.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 528, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 529, server: 38.121.43.91, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Cw） 530, server: 142.202.48.77, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Cw） 531, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Cw） 532, server: 38.68.134.37, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 533, server: 202.61.141.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 202.61.141.130}}, udp: true}
+  - {name: Cw） 534, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 535, server: 134.195.196.227, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 536, server: 198.57.27.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Cw） 537, server: cn3.node.zeroteam.top, port: 39898, type: vmess, uuid: ffff0daa-f055-41c4-9b29-629d17f27b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 538, server: 212.38.189.174, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Cw） 539, server: 142.202.48.77, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 540, server: 169.239.129.33, port: 12501, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 169.239.129.33}}, udp: true}
+  - {name: Cw） 541, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 542, server: 112.33.32.136, port: 10004, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 543, server: 198.57.27.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 544, server: 101.89.109.30, port: 10015, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 545, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: 974aeac3-c27c-4e20-86e4-03f526faaccd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+  - {name: Cw） 546, server: 134.195.196.227, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Cw） 547, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 548, server: 85.208.110.2, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 549, server: 38.68.134.190, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Cw） 550, server: 134.195.196.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Cw） 551, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 552, server: 134.195.196.51, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Cw） 553, server: 134.195.196.128, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 554, server: 38.68.134.190, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 555, server: 167.88.62.34, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 556, server: inapus.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: inapus1.mooncloud.bike}}, udp: true}
+  - {name: Cw） 557, server: us.mtoly.xyz, port: 43369, type: vmess, uuid: aefe3659-4737-433a-b879-e172ce7fd212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.v.qq.com}}, udp: true}
+  - {name: Cw） 558, server: shz.mooncloud.bike, port: 8443, type: vmess, uuid: 21bf6cb2-a4f1-4029-9b9b-9d2a493e057d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shz.mooncloud.bike}}, udp: true}
+  - {name: Cw） 559, server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 560, server: 198.57.27.241, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 561, server: 139.162.130.101, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 562, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 7d578358-7514-11ec-a376-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}, udp: true}
+  - {name: Cw） 563, server: 104.16.169.85, port: 443, type: vmess, uuid: c213d58f-9e41-4d9e-ab99-efa6090dee02, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn-dc02.testred.xyz}}, udp: true}
+  - {name: Cw） 564, server: 120.232.174.96, port: 46584, type: vmess, uuid: 7bb1b983-435b-3d8d-a5ff-cdc1ea7735ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 120.232.174.96}}, udp: true}
+  - {name: Cw） 565, server: 198.57.27.191, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 566, server: 134.195.196.81, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 567, server: v2.ssrsub.com, port: 8443, type: vmess, uuid: 51273235-0995-455e-96e4-83b1811b4cab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
+  - {name: Cw） 568, server: cn3.node.zeroteam.top, port: 39898, type: vmess, uuid: ffff0daa-f055-41c4-9b29-629d17f27b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 569, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}, udp: true}
+  - {name: Cw） 570, server: 112.33.32.136, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 571, server: 167.88.62.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Cw） 572, server: 167.88.63.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Cw） 573, server: 172.99.190.109, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Cw） 574, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 575, server: 38.91.107.22, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 576, server: 38.68.135.18, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Cw） 577, server: 38.86.135.169, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Cw） 578, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 579, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ua1.uuv2.co.uk}}, udp: true}
+  - {name: Cw） 580, server: 38.91.100.134, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Cw） 581, server: 142.202.48.58, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Cw） 582, server: 38.86.135.126, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Cw） 583, server: 134.195.196.3, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 584, server: 104.24.172.156, port: 443, type: vmess, uuid: c213d58f-9e41-4d9e-ab99-efa6090dee02, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn-dc02.testred.xyz}}, udp: true}
+  - {name: Cw） 585, server: v6d1.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d.mooncloud.bike}}, udp: true}
+  - {name: Cw） 586, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 45.35.84.162}}, udp: true}
+  - {name: Cw） 587, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Cw） 588, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Cw） 589, server: 38.121.43.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Cw） 590, server: 167.88.62.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 591, server: 134.195.196.128, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Cw） 592, server: 112.33.32.136, port: 10002, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 593, server: 38.114.114.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 594, server: 198.41.212.14, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: Cw） 595, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 596, server: 42.157.8.162, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 597, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 974aeac3-c27c-4e20-86e4-03f526faaccd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v9.ssrsub.com}}, udp: true}
+  - {name: Cw） 598, server: 198.57.27.241, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 599, server: 142.202.48.58, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Cw） 600, server: oz1.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.mooncloud.bike}}, udp: true}
+  - {name: Cw） 601, server: 138.3.210.217, port: 60935, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}, udp: true}
+  - {name: Cw） 602, server: 37.218.245.122, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fPn40BnheGrB, udp: true}
+  - {name: Cw） 603, server: 38.91.100.102, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 604, server: 38.75.136.58, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 605, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Cw） 606, server: 38.91.107.22, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Cw） 607, server: 38.121.43.91, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Cw） 608, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: 51273235-0995-455e-96e4-83b1811b4cab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+  - {name: Cw） 609, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 610, server: 134.195.198.178, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Cw） 611, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Cw） 612, server: 198.41.212.10, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: Cw） 613, server: 38.86.135.126, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 俄罗斯w 7, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b3f4826a-01e1-438a-8cb4-becb9e8b140c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+  - {name: 法国w, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: 美国w, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国w+7, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国w 10, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: 美国w 11, server: 104.16.29.103, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxny.fovi.tk}}, udp: true}
+  - {name: 美国w 12, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: us.fovi.tk}}, udp: true}
+  - {name: 美国w 13, server: 104.17.165.193, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxny.fovi.tk}}, udp: true}
+  - {name: 美国w 14, server: 104.18.96.85, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: 美国w+15, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国w+16, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国w+17, server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国w+18, server: 167.88.63.61, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国w 23, server: cn3.node.zeroteam.top, port: 50235, type: vmess, uuid: 2ecd44af-e27c-4899-9482-cb2bb1a73fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国w 24, server: v11.ssrsub.com, port: 166, type: vmess, uuid: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v11.ssrsub.com}}, udp: true}
+  - {name: 美国w 29, server: inapus.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: inapus1.mooncloud.bike}}, udp: true}
+  - {name: 美国w 35, server: 20.205.101.183, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: 日本w 3, server: v4.ssrsub.com, port: 166, type: vmess, uuid: b3f4826a-01e1-438a-8cb4-becb9e8b140c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v4.ssrsub.com}}, udp: true}
+  - {name: 日本w 4, server: v6.ssrsub.com, port: 166, type: vmess, uuid: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v6.ssrsub.com}}, udp: true}
+  - {name: 日本w 5, server: jp19.holiganfan.com, port: 10088, type: trojan, password: 8ce38f17-b2be-453a-8d25-deec1a0aabba, sni: jp19.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡w+3, server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw, udp: true}
+  - {name: 新加坡w 4, server: v7.ssrsub.com, port: 8443, type: vmess, uuid: b3f4826a-01e1-438a-8cb4-becb9e8b140c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v7.ssrsub.com}}, udp: true}
+  - {name: 新加坡w 5, server: sg27.holiganfan.com, port: 10088, type: trojan, password: 8ce38f17-b2be-453a-8d25-deec1a0aabba, sni: sg27.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _HK_香港+2, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _HK_香港+3, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _HK_香港+4, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _HK_香港+5, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+2, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+3, server: 169.197.143.157, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国+4, server: 169.197.143.157, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国+5, server: 38.68.134.202, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.199, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国+6, server: 167.88.61.130, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+7, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+8, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+9, server: 167.88.61.204, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+10, server: 169.197.143.157, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大+2, server: 134.195.196.199, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国+11, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+12, server: 142.202.48.78, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+13, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001+w_1, server: 134.195.196.199, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大+3, server: 134.195.196.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _GB_英国, server: 172.99.190.90, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大+4, server: 134.195.198.250, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+14, server: 142.202.48.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+15, server: 38.68.134.202, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+16, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+17, server: 142.202.48.17, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+18, server: 38.68.135.19, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+19, server: 142.202.48.105, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+20, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国+21, server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+22, server: 38.68.134.202, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大+5, server: 134.195.196.199, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大+6, server: 134.195.196.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大+7, server: 134.195.196.101, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+23, server: 38.68.134.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+24, server: 169.197.143.157, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+25, server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+26, server: 38.75.136.93, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国+27, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: GB_8009+w_1, server: 212.38.189.174, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大+8, server: 134.195.196.52, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大+9, server: 134.195.196.199, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8000+w_1, server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+28, server: 142.202.48.78, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+29, server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _GB_英国+2, server: 172.99.190.90, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+30, server: 167.88.62.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+31, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+32, server: 142.202.48.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+33, server: 142.202.48.78, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大+10, server: 134.195.196.184, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+34, server: 142.202.48.17, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+35, server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大+11, server: 134.195.196.33, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+36, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大+12, server: 198.57.27.184, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+37, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大+13, server: 134.195.196.184, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大+14, server: 134.195.196.52, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8881+w_1, server: 134.195.196.52, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大+15, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _HK_香港+6, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国+38, server: 142.202.48.52, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+39, server: 38.68.134.202, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+40, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_5004+w_1, server: 38.86.135.27, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+41, server: 167.88.63.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大+16, server: 134.195.198.250, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+42, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+43, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+44, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+45, server: 38.75.136.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大+17, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大+18, server: 134.195.196.52, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+46, server: 169.197.143.157, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大+19, server: 134.195.196.199, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国+47, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+48, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国->🇯🇵_JP_日本, server: rb1.moonfree.top, port: 8443, type: vmess, uuid: f1533fd1-4562-4935-a1e6-832685d4a919, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rb.moonfree.top}}, udp: true}
+  - {name: US_5004+w_1+2, server: 169.197.143.157, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+49, server: 167.88.61.130, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+50, server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大+20, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+52, server: 38.86.135.27, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大+21, server: 134.195.196.110, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _JP_日本+3, server: 85.208.108.146, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国+53, server: 142.202.48.108, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+54, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国+55, server: 142.202.48.78, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大+22, server: 198.57.27.152, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+56, server: 38.64.138.145, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_8091+w_1, server: 169.197.143.157, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+57, server: 38.68.134.69, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大+23, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+58, server: 142.202.48.105, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大+24, server: 198.57.27.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+59, server: 38.68.134.85, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+60, server: 38.75.136.45, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+61, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+62, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _GB_英国+3, server: 172.99.190.90, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+63, server: 167.88.63.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+64, server: 38.143.66.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _GB_英国+4, server: 145.239.7.164, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大+25, server: 134.195.196.110, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+66, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+67, server: 169.197.143.157, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国+68, server: 169.197.143.157, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大+26, server: 134.195.196.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+69, server: 142.202.48.52, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _GB_英国+5, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国+70, server: 169.197.143.157, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+71, server: 38.68.134.69, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+72, server: 38.64.138.145, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _NO_挪威, server: 46.29.218.146, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大+27, server: 134.195.196.52, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大+28, server: 134.195.196.52, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大+29, server: 134.195.196.101, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _IT_意大利, server: 185.213.21.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大+30, server: 198.57.27.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+73, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国+74, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大+31, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1369,169 +2265,281 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 加拿大
-      - 法国
-      - 加拿大 2
-      - 加拿大 3
-      - 加拿大 4
-      - 英国
-      - 中国
-      - 英国 2
-      - 加拿大 5
-      - 墨西哥
-      - 德国
-      - 中国 2
-      - 澳大利亚
-      - _SG_新加坡
+      - Cw） 487
+      - Cw） 488
+      - Cw） 489
+      - Cw） 490
+      - Cw） 491
+      - Cw） 492
+      - Cw） 493
+      - Cw） 494
+      - Cw） 495
+      - Cw） 496
+      - Cw） 497
+      - Cw） 498
+      - Cw） 499
+      - Cw） 500
+      - Cw） 501
+      - Cw） 502
+      - Cw） 503
+      - Cw） 504
+      - Cw） 505
+      - Cw） 506
+      - Cw） 507
+      - Cw） 508
+      - Cw） 509
+      - Cw） 510
+      - Cw） 511
+      - Cw） 512
+      - Cw） 513
+      - Cw） 514
+      - Cw） 515
+      - Cw） 516
+      - Cw） 517
+      - Cw） 518
+      - Cw） 519
+      - Cw） 520
+      - Cw） 521
+      - Cw） 522
+      - Cw） 523
+      - Cw） 524
+      - Cw） 525
+      - Cw） 526
+      - Cw） 527
+      - Cw） 528
+      - Cw） 529
+      - Cw） 530
+      - Cw） 531
+      - Cw） 532
+      - Cw） 533
+      - Cw） 534
+      - Cw） 535
+      - Cw） 536
+      - Cw） 537
+      - Cw） 538
+      - Cw） 539
+      - Cw） 540
+      - Cw） 541
+      - Cw） 542
+      - Cw） 543
+      - Cw） 544
+      - Cw） 545
+      - Cw） 546
+      - Cw） 547
+      - Cw） 548
+      - Cw） 549
+      - Cw） 550
+      - Cw） 551
+      - Cw） 552
+      - Cw） 553
+      - Cw） 554
+      - Cw） 555
+      - Cw） 556
+      - Cw） 557
+      - Cw） 558
+      - Cw） 559
+      - Cw） 560
+      - Cw） 561
+      - Cw） 562
+      - Cw） 563
+      - Cw） 564
+      - Cw） 565
+      - Cw） 566
+      - Cw） 567
+      - Cw） 568
+      - Cw） 569
+      - Cw） 570
+      - Cw） 571
+      - Cw） 572
+      - Cw） 573
+      - Cw） 574
+      - Cw） 575
+      - Cw） 576
+      - Cw） 577
+      - Cw） 578
+      - Cw） 579
+      - Cw） 580
+      - Cw） 581
+      - Cw） 582
+      - Cw） 583
+      - Cw） 584
+      - Cw） 585
+      - Cw） 586
+      - Cw） 587
+      - Cw） 588
+      - Cw） 589
+      - Cw） 590
+      - Cw） 591
+      - Cw） 592
+      - Cw） 593
+      - Cw） 594
+      - Cw） 595
+      - Cw） 596
+      - Cw） 597
+      - Cw） 598
+      - Cw） 599
+      - Cw） 600
+      - Cw） 601
+      - Cw） 602
+      - Cw） 603
+      - Cw） 604
+      - Cw） 605
+      - Cw） 606
+      - Cw） 607
+      - Cw） 608
+      - Cw） 609
+      - Cw） 610
+      - Cw） 611
+      - Cw） 612
+      - Cw） 613
+      - 俄罗斯w 7
+      - 法国w
+      - 美国w
+      - 美国w+7
+      - 美国w 10
+      - 美国w 11
+      - 美国w 12
+      - 美国w 13
+      - 美国w 14
+      - 美国w+15
+      - 美国w+16
+      - 美国w+17
+      - 美国w+18
+      - 美国w 23
+      - 美国w 24
+      - 美国w 29
+      - 美国w 35
+      - 日本w 3
+      - 日本w 4
+      - 日本w 5
+      - 新加坡w+3
+      - 新加坡w 4
+      - 新加坡w 5
+      - _HK_香港
+      - _HK_香港+2
+      - _HK_香港+3
+      - _HK_香港+4
       - _US_美国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _US_美国 11
-      - _US_美国 12
-      - _US_美国 13
-      - _US_美国 14
-      - _US_美国 15
-      - _US_美国 16
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _US_美国 20
-      - _US_美国 21
-      - _US_美国 22
-      - w
-      - w 2
-      - w 3
-      - w 4
-      - w 5
-      - w 6
-      - w 7
-      - w 8
-      - w 9
-      - w 10
-      - w 11
-      - w 12
-      - w 13
-      - 美国 ☆☆ 01 ☆NTT☆   1.2x
-      - 日本 ☆☆ 02 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 01 ☆AWS☆  1.2x
-      - 德国 ☆☆ 01 ☆GMO☆  1.2x
-      - 香港 ☆☆ 01 ☆GMO☆  1.2x
-      - 台湾 ☆☆ 01 ☆NTT☆   1.2x
-      - 新加坡 ☆☆ 02 ☆AWS☆  1.2x
-      - 日本 ☆☆ 03 ☆GMO☆  1.2x
-      - 新加坡 ☆☆ 03 ☆AWS☆  1.2x
-      - w）_1
-      - w）_2
-      - _加拿大_w_3
-      - _美国_w_4
-      - _美国_w_5
-      - w_6
-      - w_7
-      - _加拿大_w_8
-      - _加拿大_w_9
-      - _美国_w_10
-      - _中国跳转_w_11
-      - _中国跳转_w_12
-      - _中国跳转_w_13
-      - _中国跳转_w_14
-      - _中国跳转_w_15
-      - _香港_w_16
-      - _中国跳转_w_17
-      - _香港_w_18
-      - _香港_w_19
-      - wq - 美国华盛顿Cogent通信公司 1
-      - wq - 瑞典  3
-      - wq - 美国华盛顿Cogent通信公司 4
-      - wq - 加拿大  7
-      - _中国_<w>_104
-      - _新加坡_<w>_12
-      - _新加坡_<w>_16
-      - 欧洲(w) 27
-      - _菲律宾_<w>_3
-      - _中国_<w>_18
-      - 欧洲(w) 28
-      - _中国_<w>_22
-      - _中国_<w>_13
-      - _美国_<w>_42
-      - _美国_<w>_49
-      - 欧洲(w) 7
-      - 美国w_156
-      - _美国_<w>_54
-      - 美国w_117
-      - 日本w_129
-      - 美国w_169
-      - 美国w_105
-      - 美国w_200
-      - _美国_<w>_45
-      - _美国_<w>_50
-      - 美国w_125
-      - _美国_<w>_31
-      - 美国w_216
-      - 美国w_236
-      - 美国w_455
-      - 美国w_1
-      - 美国w_153
-      - 美国w_314
-      - 美国w_159
-      - 美国w_217
-      - 欢w）_1
-      - _美国_<w>_44
-      - 美国w_139
-      - 美国w_223
-      - 美国w_227
-      - 美国w_264
-      - 美国w_322
-      - 欧洲w_336
-      - 美国w_440
-      - _美国_<w>_28
-      - _美国_<w>_41
-      - _美国_<w>_48
-      - _美国_<w>_53
-      - 美国w_87
-      - 法国w_132
-      - 美国w_164
-      - 美国w_176
-      - 美国w_203
-      - 美国w_465
-      - _美国_<w>_38
-      - _美国_<w>_56
-      - 美国w_3
-      - 欧洲w_49
-      - 美国w_141
-      - 美国w_143
-      - 美国w_145
-      - 美国w_177
-      - 美国w_184
-      - 美国w_193
-      - 美国w_224
-      - 美国w_283
-      - 美国w_454
-      - _美国_<w>_71
-      - _美国_<w>_73
-      - _加拿大_<w>_78
-      - 欧洲w_15
-      - 美国w_70
-      - 美国w_155
-      - 美国w_160
-      - 美国w_166
-      - 美国w_180
-      - 美国w_183
-      - 美国w_187
-      - 美国w_226
-      - 美国w_301
-      - 加拿大w_356
-      - 美国w_426
-      - _美国_<w>_72
-      - _美国_<w>_81
-      - 美国w_101
-      - 美国w_138
+      - _HK_香港+5
+      - _US_美国+2
+      - _US_美国+3
+      - _US_美国+4
+      - _US_美国+5
+      - _CA_加拿大
+      - _US_美国+6
+      - _US_美国+7
+      - _US_美国+8
+      - _US_美国+9
+      - _US_美国+10
+      - _CA_加拿大+2
+      - _US_美国+11
+      - _US_美国+12
+      - _US_美国+13
+      - ‌‌🇨🇦CA_5001+w_1
+      - _CA_加拿大+3
+      - _GB_英国
+      - _CA_加拿大+4
+      - _US_美国+14
+      - _US_美国+15
+      - _US_美国+16
+      - _US_美国+17
+      - _US_美国+18
+      - _US_美国+19
+      - _US_美国+20
+      - _US_美国+21
+      - _US_美国+22
+      - _CA_加拿大+5
+      - _CA_加拿大+6
+      - _CA_加拿大+7
+      - _US_美国+23
+      - _US_美国+24
+      - _US_美国+25
+      - _US_美国+26
+      - _US_美国+27
+      - GB_8009+w_1
+      - _CA_加拿大+8
+      - _CA_加拿大+9
+      - US_8000+w_1
+      - _US_美国+28
+      - _US_美国+29
+      - _GB_英国+2
+      - _US_美国+30
+      - _US_美国+31
+      - _US_美国+32
+      - _US_美国+33
+      - _CA_加拿大+10
+      - _US_美国+34
+      - _US_美国+35
+      - _CA_加拿大+11
+      - _US_美国+36
+      - _CA_加拿大+12
+      - _US_美国+37
+      - _CA_加拿大+13
+      - _CA_加拿大+14
+      - ‌‌🇨🇦CA_8881+w_1
+      - _CA_加拿大+15
+      - _HK_香港+6
+      - _US_美国+38
+      - _US_美国+39
+      - _US_美国+40
+      - US_5004+w_1
+      - _US_美国+41
+      - _CA_加拿大+16
+      - _US_美国+42
+      - _US_美国+43
+      - _US_美国+44
+      - _US_美国+45
+      - _CA_加拿大+17
+      - _CA_加拿大+18
+      - _US_美国+46
+      - _CA_加拿大+19
+      - _US_美国+47
+      - _US_美国+48
+      - _US_美国->🇯🇵_JP_日本
+      - US_5004+w_1+2
+      - _US_美国+49
+      - _US_美国+50
+      - _CA_加拿大+20
+      - _US_美国+52
+      - _CA_加拿大+21
+      - _JP_日本+3
+      - _US_美国+53
+      - _US_美国+54
+      - _US_美国+55
+      - _CA_加拿大+22
+      - _US_美国+56
+      - US_8091+w_1
+      - _US_美国+57
+      - _CA_加拿大+23
+      - _US_美国+58
+      - _CA_加拿大+24
+      - _US_美国+59
+      - _US_美国+60
+      - _US_美国+61
+      - _US_美国+62
+      - _GB_英国+3
+      - _US_美国+63
+      - _US_美国+64
+      - _GB_英国+4
+      - _CA_加拿大+25
+      - _US_美国+66
+      - _US_美国+67
+      - _US_美国+68
+      - _CA_加拿大+26
+      - _US_美国+69
+      - _GB_英国+5
+      - _US_美国+70
+      - _US_美国+71
+      - _US_美国+72
+      - _NO_挪威
+      - _CA_加拿大+27
+      - _CA_加拿大+28
+      - _CA_加拿大+29
+      - _IT_意大利
+      - _CA_加拿大+30
+      - _US_美国+73
+      - _US_美国+74
+      - _CA_加拿大+31
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
