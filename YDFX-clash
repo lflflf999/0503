@@ -5,272 +5,211 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本(yudou66.com 玉豆分享), server: 120.233.150.200, port: 50301, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享), server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 2, server: 120.233.150.200, port: 50302, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享), server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: cn2.relay.starlink.st, port: 50101, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享), server: 130.wgong.xyz, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享) 2, server: 117.wgong.xyz, port: 52217, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享) 3, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 3, server: cm-jm.okvpn.xyz, port: 20008, type: vmess, uuid: 9fcf9f33-407f-40a1-9a32-be97605fd99f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: super-hk.smdynet.com}}, udp: true}
-  - {name: 亚洲(yudou66.com 玉豆分享), server: cn2.relay.starlink.st, port: 50302, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 4, server: 120.197.88.216, port: 20008, type: vmess, uuid: 9fcf9f33-407f-40a1-9a32-be97605fd99f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: cm-jm.okvpn.xyz}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 5, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: 9fcf9f33-407f-40a1-9a32-be97605fd99f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm-jm.okvpn.xyz}}, udp: true}
-  - {name: 亚洲(yudou66.com 玉豆分享) 2, server: 120.233.150.200, port: 50401, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 亚洲(yudou66.com 玉豆分享) 3, server: cn2.relay.starlink.st, port: 50401, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 亚洲(yudou66.com 玉豆分享) 4, server: 120.197.88.216, port: 20001, type: vmess, uuid: 9fcf9f33-407f-40a1-9a32-be97605fd99f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm-jm.okvpn.xyz}}, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享), server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /mydisk, headers: {Host: vipdedi.boom.ovh}}, udp: true}
-  - {name: _US_美国, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 2, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 3, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 4, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享), server: 130.wgong.xyz, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享), server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: _DE_德国(yudou66.com 玉豆分享), server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 5, server: 38.114.114.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享), server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 6, server: 38.114.114.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 2, server: 38.75.136.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 7, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 8, server: 38.75.136.93, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 6, server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 9, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 10, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-sanfrancisco.lvuft.com}}, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 3, server: 38.114.114.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 11, server: 167.88.62.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 12, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 13, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 2, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 14, server: 38.121.43.91, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 15, server: 38.75.136.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _FR_法国, server: 217.182.199.168, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 16, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 17, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 4, server: 167.88.63.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 3, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 5, server: 167.88.63.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 18, server: 38.75.136.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 19, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 120.233.150.200, port: 50102, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 4, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 5, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 20, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 21, server: 167.88.63.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 22, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 23, server: 167.88.63.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 6, server: 172.99.190.139, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 24, server: 38.68.134.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 6, server: 38.68.135.239, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 25, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 26, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 27, server: 167.88.62.24, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.107, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 28, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _NO_挪威, server: 46.29.218.170, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 29, server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 7, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _GB_英国, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 8, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _GB_英国 2, server: 172.99.190.139, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 30, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君), server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 31, server: 38.68.134.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 3, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 7, server: 38.68.134.37, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 8, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 32, server: 167.88.63.61, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 33, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 34, server: 167.88.62.24, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 35, server: 167.88.62.24, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 36, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 37, server: 167.88.63.61, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _GB_英国 4, server: 172.99.190.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _GB_英国 5, server: 172.99.190.139, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 38, server: 167.88.63.28, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 39, server: 38.107.226.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 7, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 6, server: 172.99.190.139, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.41, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 40, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 41, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 42, server: 38.75.136.93, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 43, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.128, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.128, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.214, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 44, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 45, server: 38.75.136.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享), server: 134.195.196.149, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国(yudou66.com 玉豆分享), server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 46, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 8, server: 95.142.175.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: tkAx1ehPPkMN, udp: true}
-  - {name: _US_美国 47, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 48, server: 38.68.135.239, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 49, server: 38.68.134.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 50, server: 38.68.134.48, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 9, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _GB_英国 7, server: 172.99.190.149, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 51, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 52, server: 38.68.134.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 10, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 53, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 54, server: 38.68.134.37, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 55, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _GB_英国 8, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 56, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 57, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 58, server: 167.88.63.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 11, server: 38.107.226.48, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 59, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 9, server: 172.99.190.139, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 60, server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 61, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _GB_英国 9, server: 212.38.189.174, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 2, server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 9, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 62, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 63, server: 167.88.63.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 10, server: 172.99.190.84, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 64, server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 65, server: 38.68.134.37, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 11, server: 38.68.134.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 66, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 67, server: 172.99.188.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 68, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 3, server: 134.195.196.128, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.214, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 69, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 12, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 10, server: 212.38.189.174, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 10, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.128, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 12, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 11, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 70, server: 38.107.226.48, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 14, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 15, server: 198.57.27.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 16, server: 134.195.196.214, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 13, server: 134.195.196.227, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 12, server: 134.195.196.128, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 4, server: 134.195.196.128, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 71, server: 38.68.134.37, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 72, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 73, server: 167.88.63.61, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 74, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 17, server: 134.195.196.128, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 18, server: 134.195.196.128, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 19, server: 134.195.196.128, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _GB_英国 11, server: 212.38.189.174, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 13, server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 20, server: 134.195.196.128, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 75, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 21, server: 198.57.27.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 76, server: 38.107.226.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 22, server: 134.195.196.214, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 23, server: 134.195.196.128, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 5, server: 134.195.196.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 24, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 25, server: 134.195.196.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 26, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 27, server: 134.195.196.128, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 6, server: 134.195.196.214, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 28, server: 134.195.196.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 29, server: 198.57.27.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 30, server: 198.57.27.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 77, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 31, server: 134.195.196.128, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CH_瑞士, server: 37.120.137.82, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
-  - {name: _US_美国 78, server: 38.68.134.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 12, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _GB_英国(yudou66.com 玉豆分享) 2, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 14, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 14, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 32, server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 33, server: 134.195.196.128, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 34, server: 198.57.27.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 35, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 15, server: 134.195.196.200, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 79, server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 80, server: 38.107.226.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 36, server: 134.195.196.128, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 7, server: 134.195.196.128, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大 37, server: 134.195.196.214, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 13, server: 38.75.136.93, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 38, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 16, server: 134.195.196.128, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 39, server: 134.195.196.214, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 40, server: 134.195.196.128, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 41, server: 134.195.196.128, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 42, server: 198.57.27.184, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 43, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 44, server: 134.195.196.128, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 8, server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 9, server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 81, server: 167.88.62.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 15, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 82, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 45, server: 134.195.196.128, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 46, server: 134.195.196.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 16, server: 134.195.196.128, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享), server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 2, server: 37.120.137.82, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 3, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 2, server: 38.75.136.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 法国(yudou66.com 玉豆分享), server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 2, server: 38.75.136.58, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 3, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 4, server: 167.88.63.61, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 4, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 5, server: 38.75.136.58, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 6, server: 167.88.62.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 7, server: 38.75.136.58, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 3, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 8, server: 167.88.63.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 9, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 10, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 11, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 12, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 13, server: 167.88.63.61, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 14, server: 167.88.63.61, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大, server: 198.57.27.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.128, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 3, server: 198.57.27.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 5, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 4, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国(yudou66.com 玉豆分享), server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 15, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 16, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 17, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 18, server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 19, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 20, server: 167.88.63.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 21, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 22, server: 167.88.63.61, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 23, server: 167.88.63.61, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 24, server: 38.68.134.23, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.128, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国(yudou66.com 玉豆分享) 2, server: 167.88.63.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 25, server: 167.88.62.24, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 26, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 27, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 28, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 6, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 7, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 8, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 5, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: 加拿大(yudou66.com 玉豆分享), server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 10, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 47, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 11, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 48, server: 134.195.196.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 49, server: 134.195.196.128, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 17, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 50, server: 134.195.196.101, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 18, server: 134.195.196.128, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 51, server: 134.195.196.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 52, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 53, server: 198.57.27.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 54, server: 134.195.196.200, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 19, server: 134.195.196.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 55, server: 198.57.27.152, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 56, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 83, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 50a90339-8afa-4579-832d-f5d608a6f569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v8.ssrsub.com}}, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 12, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 84, server: 167.88.63.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国(yudou66.com 玉豆分享) 14, server: 38.75.136.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 57, server: 134.195.196.214, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 58, server: 134.195.196.214, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大(yudou66.com 玉豆分享) 13, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 59, server: 134.195.196.200, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 60, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 61, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 62, server: 134.195.196.128, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 63, server: 134.195.196.128, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 64, server: 134.195.196.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 20, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 65, server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 21, server: 217.138.193.42, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc, udp: true}
-  - {name: _GB_英国(yudou66.com 玉豆分享) 3, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 12, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 85, server: 167.88.63.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 66, server: 134.195.196.200, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大 67, server: 198.57.27.184, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 68, server: 134.195.196.107, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: default_name, server: 104.20.100.214, port: 443, type: vmess, uuid: 8f5176f2-dab4-4035-9a85-a9bd8d20b92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.wwsq.workers.dev}}, udp: true}
-  - {name: _US_美国 86, server: 38.75.136.93, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 87, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 22, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 69, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _GB_英国 13, server: 212.38.189.174, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 70, server: 198.57.27.152, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 71, server: 134.195.196.128, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 88, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 89, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 90, server: v8.ssrsub.com, port: 443, type: vmess, uuid: a56903b7-e983-4cd5-99a6-94d62c79b128, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v8.ssrsub.com}}, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 23, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _GB_英国(yudou66.com 玉豆分享) 4, server: 212.38.189.174, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 91, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _GB_英国 14, server: 212.38.189.174, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 17, server: 167.88.62.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 24, server: 172.104.207.140, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 29, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 30, server: 167.88.62.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 31, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 32, server: 167.88.62.24, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国 33, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 34, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _GB_英国(yudou66.com 玉豆分享), server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _GB_英国(yudou66.com 玉豆分享) 2, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.107, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.128, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 8, server: 134.195.196.128, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 9, server: 134.195.196.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 10, server: 134.195.196.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 11, server: 134.195.196.128, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 12, server: 134.195.196.128, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 9, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 10, server: 134.195.196.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 11, server: 167.88.63.28, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 6, server: 167.88.63.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 35, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-sanfrancisco.lvuft.com}}, udp: true}
+  - {name: _US_美国 36, server: 38.68.134.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 37, server: 172.99.188.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 38, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 39, server: 167.88.62.24, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 40, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 41, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 42, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 43, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 44, server: 38.68.134.23, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 45, server: 38.68.134.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 46, server: 38.68.134.23, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 13, server: 134.195.196.51, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 14, server: 134.195.196.128, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 15, server: 134.195.196.128, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 12, server: 134.195.196.200, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 13, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 14, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 7, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 8, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 9, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 10, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 47, server: 38.68.135.239, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 48, server: 167.88.63.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 49, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 50, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 51, server: 38.68.134.23, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 52, server: 38.68.134.23, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 53, server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 54, server: 167.88.63.61, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 55, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 56, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 57, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 58, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 59, server: 167.88.63.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _GB_英国(yudou66.com 玉豆分享) 3, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _GB_英国, server: 172.99.190.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _GB_英国 2, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大(yudou66.com 玉豆分享), server: 134.195.196.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 16, server: 134.195.196.128, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大 17, server: 134.195.196.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 18, server: 198.57.27.152, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 19, server: 134.195.196.128, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 20, server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 21, server: 134.195.196.200, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大 22, server: 198.57.27.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 23, server: 198.57.27.152, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 15, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 16, server: 38.121.43.91, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 17, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 11, server: 172.99.190.84, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 12, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 60, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 61, server: 38.75.136.49, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 62, server: 38.75.136.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 63, server: 38.107.226.48, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 24, server: 134.195.196.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 25, server: 198.57.27.184, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 26, server: 134.195.196.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 27, server: 134.195.196.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大 28, server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 29, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 30, server: 198.57.27.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 31, server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 32, server: 134.195.196.128, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大 33, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 34, server: 134.195.196.128, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大 35, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 36, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 37, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 38, server: 134.195.196.227, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 18, server: 134.195.196.128, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 19, server: 134.195.196.128, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 20, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 21, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 22, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 13, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大(yudou66.com 玉豆分享) 2, server: 198.57.27.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 64, server: 38.68.134.23, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 65, server: 38.75.136.45, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _GB_英国 3, server: 172.99.190.149, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大(yudou66.com 玉豆分享) 2, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 39, server: 134.195.196.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 40, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 41, server: 134.195.196.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 42, server: 198.57.27.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 43, server: 134.195.196.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大 44, server: 134.195.196.128, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 45, server: 134.195.196.128, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大 46, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 47, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 23, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 24, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 66, server: 38.68.134.23, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大(yudou66.com 玉豆分享) 3, server: 134.195.196.128, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大(yudou66.com 玉豆分享) 4, server: 134.195.196.128, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 48, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 49, server: 134.195.196.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 50, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 51, server: 134.195.196.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 52, server: 134.195.196.41, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 53, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 54, server: 134.195.196.200, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大 55, server: 134.195.196.107, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大 56, server: 134.195.196.107, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大 57, server: 134.195.196.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 58, server: 198.57.27.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 59, server: 134.195.196.51, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 25, server: 104.20.100.214, port: 443, type: vmess, uuid: 8f5176f2-dab4-4035-9a85-a9bd8d20b92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.wwsq.workers.dev}}, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 26, server: 134.195.196.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 67, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大 60, server: 134.195.196.128, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 61, server: 134.195.196.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 62, server: 134.195.196.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 14, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 63, server: 134.195.196.51, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 68, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 69, server: 38.68.134.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _NO_挪威, server: 46.29.218.170, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大 64, server: 134.195.196.128, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 65, server: 134.195.196.107, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大 66, server: 134.195.196.227, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大 67, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国(yudou66.com 玉豆分享) 3, server: 38.107.226.48, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 27, server: 131.wgong.xyz, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 70, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 68, server: 134.195.196.128, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 71, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 72, server: v8.ssrsub.com, port: 443, type: vmess, uuid: a56903b7-e983-4cd5-99a6-94d62c79b128, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v8.ssrsub.com}}, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 28, server: 217.138.193.42, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc, udp: true}
+  - {name: _US_美国 73, server: 38.75.136.93, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享) 29, server: 172.104.207.140, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国(yudou66.com 玉豆分享) 4, server: 38.75.136.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 74, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 50a90339-8afa-4579-832d-f5d608a6f569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v8.ssrsub.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -279,270 +218,209 @@ proxy-groups:
       - DIRECT
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -550,270 +428,209 @@ proxy-groups:
     proxies:
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -822,270 +639,209 @@ proxy-groups:
       - 🎯 全球直连
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1093,270 +849,209 @@ proxy-groups:
       - 🎯 全球直连
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1364,270 +1059,209 @@ proxy-groups:
       - 🚀 节点选择
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1635,270 +1269,209 @@ proxy-groups:
       - 🎯 全球直连
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -1907,270 +1480,209 @@ proxy-groups:
       - ♻️ 自动选择
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2195,270 +1707,209 @@ proxy-groups:
       - ♻️ 自动选择
       - 日本(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享)
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港(yudou66.com 玉豆分享)
-      - 香港(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 美国(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享)
-      - 美国(yudou66.com 玉豆分享) 4
-      - 美国(yudou66.com 玉豆分享) 5
-      - 亚洲(yudou66.com 玉豆分享) 2
-      - 亚洲(yudou66.com 玉豆分享) 3
-      - 亚洲(yudou66.com 玉豆分享) 4
+      - _DE_德国(yudou66.com 玉豆分享)
       - 欧洲(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 2
+      - 欧洲(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 2
+      - 法国(yudou66.com 玉豆分享)
       - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _DE_德国(yudou66.com 玉豆分享)
+      - 欧洲(yudou66.com 玉豆分享) 4
       - _US_美国 5
-      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 6
-      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 7
+      - 美国(yudou66.com 玉豆分享) 3
       - _US_美国 8
-      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 9
       - _US_美国 10
-      - _US_美国(yudou66.com 玉豆分享) 3
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
-      - 欧洲(yudou66.com 玉豆分享) 2
       - _US_美国 14
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - 欧洲(yudou66.com 玉豆分享) 5
+      - 美国(yudou66.com 玉豆分享) 4
+      - _US_美国(yudou66.com 玉豆分享)
       - _US_美国 15
-      - _FR_法国
       - _US_美国 16
       - _US_美国 17
-      - _US_美国(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - _US_美国(yudou66.com 玉豆分享) 5
       - _US_美国 18
       - _US_美国 19
-      - _CN_中国->🇭🇰_HK_香港 2
-      - 欧洲(yudou66.com 玉豆分享) 4
-      - 欧洲(yudou66.com 玉豆分享) 5
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
       - _US_美国 23
-      - 欧洲(yudou66.com 玉豆分享) 6
       - _US_美国 24
-      - _US_美国(yudou66.com 玉豆分享) 6
+      - _CA_加拿大 4
+      - _CA_加拿大 5
+      - _US_美国(yudou66.com 玉豆分享) 2
       - _US_美国 25
       - _US_美国 26
       - _US_美国 27
-      - _CA_加拿大
-      - _CA_加拿大 2
       - _US_美国 28
-      - _NO_挪威
+      - 欧洲(yudou66.com 玉豆分享) 6
+      - 欧洲(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 5
+      - 加拿大(yudou66.com 玉豆分享)
       - _US_美国 29
-      - 美国(yudou66.com 玉豆分享) 7
-      - _GB_英国
-      - 美国(yudou66.com 玉豆分享) 8
-      - _GB_英国 2
       - _US_美国 30
-      - 美国(欢迎订阅Youtube破解资源君)
       - _US_美国 31
-      - _GB_英国 3
-      - _US_美国(yudou66.com 玉豆分享) 7
-      - _US_美国(yudou66.com 玉豆分享) 8
       - _US_美国 32
       - _US_美国 33
       - _US_美国 34
+      - _GB_英国(yudou66.com 玉豆分享)
+      - _GB_英国(yudou66.com 玉豆分享) 2
+      - _CA_加拿大 6
+      - _CA_加拿大 7
+      - _CA_加拿大 8
+      - _CA_加拿大 9
+      - _CA_加拿大 10
+      - _CA_加拿大 11
+      - _CA_加拿大 12
+      - 欧洲(yudou66.com 玉豆分享) 9
+      - 欧洲(yudou66.com 玉豆分享) 10
+      - 欧洲(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 6
       - _US_美国 35
       - _US_美国 36
       - _US_美国 37
-      - _GB_英国 4
-      - _GB_英国 5
       - _US_美国 38
       - _US_美国 39
-      - 欧洲(yudou66.com 玉豆分享) 7
-      - _GB_英国 6
-      - _CA_加拿大 3
       - _US_美国 40
       - _US_美国 41
       - _US_美国 42
       - _US_美国 43
-      - _CA_加拿大 4
-      - _CA_加拿大 5
-      - _CA_加拿大 6
       - _US_美国 44
       - _US_美国 45
-      - _CA_加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大 7
-      - _GB_英国(yudou66.com 玉豆分享)
       - _US_美国 46
-      - 欧洲(yudou66.com 玉豆分享) 8
+      - _CA_加拿大 13
+      - _CA_加拿大 14
+      - _CA_加拿大 15
+      - 欧洲(yudou66.com 玉豆分享) 12
+      - 欧洲(yudou66.com 玉豆分享) 13
+      - 欧洲(yudou66.com 玉豆分享) 14
+      - 美国(yudou66.com 玉豆分享) 7
+      - 美国(yudou66.com 玉豆分享) 8
+      - 美国(yudou66.com 玉豆分享) 9
+      - 美国(yudou66.com 玉豆分享) 10
       - _US_美国 47
       - _US_美国 48
       - _US_美国 49
       - _US_美国 50
-      - _US_美国(yudou66.com 玉豆分享) 9
-      - _GB_英国 7
       - _US_美国 51
       - _US_美国 52
-      - _US_美国(yudou66.com 玉豆分享) 10
       - _US_美国 53
       - _US_美国 54
       - _US_美国 55
-      - _GB_英国 8
       - _US_美国 56
       - _US_美国 57
       - _US_美国 58
-      - _US_美国(yudou66.com 玉豆分享) 11
       - _US_美国 59
-      - 美国(yudou66.com 玉豆分享) 9
-      - _CA_加拿大 8
-      - _US_美国 60
-      - _US_美国 61
-      - _GB_英国 9
-      - _CA_加拿大(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 9
-      - _US_美国 62
-      - _US_美国 63
-      - 美国(yudou66.com 玉豆分享) 10
-      - _US_美国 64
-      - _US_美国 65
-      - 美国(yudou66.com 玉豆分享) 11
-      - _US_美国 66
-      - _US_美国 67
-      - _US_美国 68
-      - _CA_加拿大(yudou66.com 玉豆分享) 3
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _US_美国 69
-      - 美国(yudou66.com 玉豆分享) 12
-      - _GB_英国 10
-      - 欧洲(yudou66.com 玉豆分享) 10
-      - _CA_加拿大 11
-      - _CA_加拿大 12
-      - 欧洲(yudou66.com 玉豆分享) 11
-      - _US_美国 70
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
+      - _GB_英国(yudou66.com 玉豆分享) 3
+      - _GB_英国
+      - _GB_英国 2
+      - _CA_加拿大(yudou66.com 玉豆分享)
       - _CA_加拿大 16
-      - 美国(yudou66.com 玉豆分享) 13
-      - 欧洲(yudou66.com 玉豆分享) 12
-      - _CA_加拿大(yudou66.com 玉豆分享) 4
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _US_美国 74
       - _CA_加拿大 17
       - _CA_加拿大 18
       - _CA_加拿大 19
-      - _GB_英国 11
-      - 欧洲(yudou66.com 玉豆分享) 13
       - _CA_加拿大 20
-      - _US_美国 75
       - _CA_加拿大 21
-      - _US_美国 76
       - _CA_加拿大 22
       - _CA_加拿大 23
-      - _CA_加拿大(yudou66.com 玉豆分享) 5
+      - 欧洲(yudou66.com 玉豆分享) 15
+      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 17
+      - 美国(yudou66.com 玉豆分享) 11
+      - 美国(yudou66.com 玉豆分享) 12
+      - _US_美国 60
+      - _US_美国 61
+      - _US_美国 62
+      - _US_美国 63
       - _CA_加拿大 24
       - _CA_加拿大 25
       - _CA_加拿大 26
       - _CA_加拿大 27
-      - _CA_加拿大(yudou66.com 玉豆分享) 6
       - _CA_加拿大 28
       - _CA_加拿大 29
       - _CA_加拿大 30
-      - _US_美国 77
       - _CA_加拿大 31
-      - _CH_瑞士
-      - _US_美国 78
-      - _US_美国(yudou66.com 玉豆分享) 12
-      - _GB_英国(yudou66.com 玉豆分享) 2
-      - 欧洲(yudou66.com 玉豆分享) 14
-      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 32
       - _CA_加拿大 33
       - _CA_加拿大 34
       - _CA_加拿大 35
-      - 欧洲(yudou66.com 玉豆分享) 15
-      - _US_美国 79
-      - _US_美国 80
       - _CA_加拿大 36
-      - _CA_加拿大(yudou66.com 玉豆分享) 7
       - _CA_加拿大 37
-      - _US_美国(yudou66.com 玉豆分享) 13
       - _CA_加拿大 38
-      - 欧洲(yudou66.com 玉豆分享) 16
+      - 欧洲(yudou66.com 玉豆分享) 18
+      - 欧洲(yudou66.com 玉豆分享) 19
+      - 欧洲(yudou66.com 玉豆分享) 20
+      - 欧洲(yudou66.com 玉豆分享) 21
+      - 欧洲(yudou66.com 玉豆分享) 22
+      - 美国(yudou66.com 玉豆分享) 13
+      - 加拿大(yudou66.com 玉豆分享) 2
+      - _US_美国 64
+      - _US_美国 65
+      - _GB_英国 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 2
       - _CA_加拿大 39
       - _CA_加拿大 40
       - _CA_加拿大 41
       - _CA_加拿大 42
       - _CA_加拿大 43
       - _CA_加拿大 44
-      - _CA_加拿大(yudou66.com 玉豆分享) 8
-      - _CA_加拿大(yudou66.com 玉豆分享) 9
-      - _US_美国 81
-      - 美国(yudou66.com 玉豆分享) 15
-      - _US_美国 82
       - _CA_加拿大 45
       - _CA_加拿大 46
-      - 美国(yudou66.com 玉豆分享) 16
-      - 加拿大(yudou66.com 玉豆分享)
-      - _CA_加拿大(yudou66.com 玉豆分享) 10
       - _CA_加拿大 47
-      - _CA_加拿大(yudou66.com 玉豆分享) 11
+      - 欧洲(yudou66.com 玉豆分享) 23
+      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 66
+      - _CA_加拿大(yudou66.com 玉豆分享) 3
+      - _CA_加拿大(yudou66.com 玉豆分享) 4
       - _CA_加拿大 48
       - _CA_加拿大 49
-      - 欧洲(yudou66.com 玉豆分享) 17
       - _CA_加拿大 50
-      - 欧洲(yudou66.com 玉豆分享) 18
       - _CA_加拿大 51
       - _CA_加拿大 52
       - _CA_加拿大 53
       - _CA_加拿大 54
-      - 欧洲(yudou66.com 玉豆分享) 19
       - _CA_加拿大 55
       - _CA_加拿大 56
-      - _US_美国 83
-      - _CA_加拿大(yudou66.com 玉豆分享) 12
-      - _US_美国 84
-      - _US_美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 57
       - _CA_加拿大 58
-      - _CA_加拿大(yudou66.com 玉豆分享) 13
       - _CA_加拿大 59
+      - 欧洲(yudou66.com 玉豆分享) 25
+      - 欧洲(yudou66.com 玉豆分享) 26
+      - _US_美国 67
       - _CA_加拿大 60
       - _CA_加拿大 61
       - _CA_加拿大 62
+      - 美国(yudou66.com 玉豆分享) 14
       - _CA_加拿大 63
+      - _US_美国 68
+      - _US_美国 69
+      - _NO_挪威
       - _CA_加拿大 64
-      - 欧洲(yudou66.com 玉豆分享) 20
       - _CA_加拿大 65
-      - 欧洲(yudou66.com 玉豆分享) 21
-      - _GB_英国(yudou66.com 玉豆分享) 3
-      - _GB_英国 12
-      - _US_美国 85
       - _CA_加拿大 66
       - _CA_加拿大 67
+      - _US_美国(yudou66.com 玉豆分享) 3
+      - 欧洲(yudou66.com 玉豆分享) 27
+      - _US_美国 70
       - _CA_加拿大 68
-      - default_name
-      - _US_美国 86
-      - _US_美国 87
-      - 欧洲(yudou66.com 玉豆分享) 22
-      - _CA_加拿大 69
-      - _GB_英国 13
-      - _CA_加拿大 70
-      - _CA_加拿大 71
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - 欧洲(yudou66.com 玉豆分享) 23
-      - _GB_英国(yudou66.com 玉豆分享) 4
-      - _US_美国 91
-      - _GB_英国 14
-      - 美国(yudou66.com 玉豆分享) 17
-      - 欧洲(yudou66.com 玉豆分享) 24
+      - _US_美国 71
+      - _US_美国 72
+      - 欧洲(yudou66.com 玉豆分享) 28
+      - _US_美国 73
+      - 欧洲(yudou66.com 玉豆分享) 29
+      - _US_美国(yudou66.com 玉豆分享) 4
+      - _US_美国 74
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
