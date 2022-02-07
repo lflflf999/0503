@@ -5,403 +5,648 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇬🇧 英国阿伟科技-新年快乐, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇮🇳 印度*阿伟科技-新年快乐, server: yd.jietiyun.xyz, port: 520, type: trojan, password: 3b005336-26f8-4da6-9f7c-df1d7c359440, sni: yd.jietiyun.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡阿伟科技-新年快乐, server: sg1-aws.surplus.buzz, port: 10001, type: trojan, password: 8b4def29-77c8-4ca9-9cf9-517e01313ced, sni: sg1-aws.surplus.buzz, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡阿伟科技-新年快乐 2, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡*阿伟科技-新年快乐, server: 4.vpnbro.ml, port: 9999, type: trojan, password: 8eda21d2-93a1-4740-b967-06d134c439ea, sni: 4.vpnbro.ml, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡*阿伟科技-新年快乐 2, server: sg1-aws.surplus.buzz, port: 10001, type: trojan, password: 96ed0da7-a73c-4727-94b4-f9515431ae4d, sni: sg1-aws.surplus.buzz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐, server: az1.nodrop.bike, port: 10131, type: vmess, uuid: 70eda8a0-723e-4d7f-82ae-b1621ae8abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /onefall, ws-headers: {Host: az1.nodrop.bike}}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 2, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 3, server: 18.162.50.154, port: 18888, type: vmess, uuid: 5c923218-d8a0-3f35-b618-c6d0aebf2a63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk1.bpyun.live}}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 4, server: china-gzyd-1.forwardserver.xyz, port: 36029, type: trojan, password: 36352-2-41419784784722, sni: china-gzyd-1.forwardserver.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 5, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 6, server: az1.nodrop.bike, port: 10131, type: vmess, uuid: 70eda8a0-723e-4d7f-82ae-b1621ae8abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /onefall, ws-headers: {Host: az1.nodrop.bike}}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 7, server: 20.205.114.164, port: 52217, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 8, server: 2.zhuzhu12.com, port: 44301, type: vmess, uuid: 870d275f-31ff-30ba-b2d2-80633512bc0d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: 2.zhuzhu12.com}}
-  - {name: 🇭🇰 香港阿伟科技-新年快乐 9, server: hk1.bpyun.live, port: 18888, type: vmess, uuid: a4c04bab-9025-3046-86f2-6ee6e5add55d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk1.bpyun.live}}
-  - {name: 🇭🇰 香港*阿伟科技-新年快乐, server: 20.24.67.68, port: 52335, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾阿伟科技-新年快乐, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾阿伟科技-新年快乐 2, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾阿伟科技-新年快乐 3, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: tunnel-tw-a-01.xncloud.xyz}}
-  - {name: 🇯🇵 日本阿伟科技-新年快乐, server: 101.wgong.xyz, port: 52201, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本阿伟科技-新年快乐 2, server: 133.wgong.xyz, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本阿伟科技-新年快乐 3, server: jp1-aws.surplus.buzz, port: 10001, type: trojan, password: 8b4def29-77c8-4ca9-9cf9-517e01313ced, sni: jp1-aws.surplus.buzz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本阿伟科技-新年快乐 4, server: jp3.bpyun.live, port: 443, type: vmess, uuid: a4c04bab-9025-3046-86f2-6ee6e5add55d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cocksucker, ws-headers: {Host: jp3.bpyun.live}}
-  - {name: 🇯🇵 日本阿伟科技-新年快乐 5, server: jp1-aws.surplus.buzz, port: 10001, type: trojan, password: 96ed0da7-a73c-4727-94b4-f9515431ae4d, sni: jp1-aws.surplus.buzz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本*阿伟科技-新年快乐, server: aws.jp.tgproxy.wtf, port: 21888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /theuploadapi, ws-headers: {Host: aws.jp.tgproxy.wtf}}
-  - {name: 🇯🇵 日本*阿伟科技-新年快乐 2, server: sk2.pikap.one, port: 30032, type: vmess, uuid: d7c62140-026f-404c-81f6-7cc087d1771f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: YouTube-aweikeji}}
-  - {name: 挪威阿伟科技-新年快乐, server: 46.29.218.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 挪威*阿伟科技-新年快乐, server: 46.29.218.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐, server: 46.moons.team, port: 8088, type: trojan, password: afd6bfa1-a194-4893-8f06-79ed9135aea6, sni: 46.moons.team, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 2, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 3, server: fa1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 4, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 5, server: 123.lyzghim.com, port: 443, type: trojan, password: YSmrjN8GpxB2dL9Y, sni: 123.lyzghim.com, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 6, server: sqj.lyzghim.com, port: 443, type: trojan, password: yfkZlYd69wMTulQp, sni: sqj.lyzghim.com, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 7, server: xray.lixray.cf, port: 443, type: vmess, uuid: ff55ac62-eb94-414a-b58e-4f43ff8c896d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xray.lixray.cf}}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 8, server: us3.nodrop.bike, port: 47891, type: vmess, uuid: 70eda8a0-723e-4d7f-82ae-b1621ae8abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /onefall, ws-headers: {Host: us3.nodrop.bike}}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 9, server: 23.94.25.178, port: 8888, type: vmess, uuid: ab628ea5-b026-4914-9295-fa6e12de900c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 10, server: ceraus.moonfree.top, port: 443, type: vmess, uuid: a929040e-c97f-4ca5-bf40-f075252aea82, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cerus.moonfree.top}}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 11, server: 38.68.134.23, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 12, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 13, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 14, server: la41.bulink.xyz.fobzs.com, port: 18080, type: vmess, uuid: bdf0278c-3e5b-49a2-82ee-2ade14009270, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国阿伟科技-新年快乐 15, server: 22.moons.team, port: 8088, type: trojan, password: 25c98328-ef79-4508-9698-4da211bce253, sni: 22.moons.team, skip-cert-verify: false}
-  - {name: 🇺🇸 美国*阿伟科技-新年快乐, server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国*阿伟科技-新年快乐 2, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}}
-  - {name: 🇨🇦 加拿大阿伟科技-新年快乐, server: t1.ssrsub.com, port: 8443, type: trojan, password: 535c9eef-40a3-4767-9253-706b0b128ed5, sni: t1.ssrsub.com, skip-cert-verify: false}
-  - {name: 🇨🇦 加拿大阿伟科技-新年快乐 2, server: t4.ssrsub.com, port: 8443, type: trojan, password: 535c9eef-40a3-4767-9253-706b0b128ed5, sni: t4.ssrsub.com, skip-cert-verify: false}
-  - {name: 🇳🇱 荷兰阿伟科技-新年快乐, server: 172.99.188.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇳🇱 荷兰阿伟科技-新年快乐 2, server: 172.99.188.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇰🇷 韩国阿伟科技-新年快乐, server: kr1.bpyun.live, port: 443, type: vmess, uuid: 47d2d9ed-7713-347f-ba13-1624502e2b85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cocksucker, ws-headers: {Host: kr1.bpyun.live}}
-  - {name: 🇩🇪 德国阿伟科技-新年快乐, server: 172.99.190.84, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 布韦岛阿伟科技-新年快乐, server: 46.29.219.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 英国阿伟科技@TG/油管, server: 172.99.190.139, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 英国阿伟科技@TG/油管 2, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇬🇧 英国阿伟科技@TG/油管 3, server: 172.99.190.84, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇮🇩 印尼阿伟科技@TG/油管, server: 50.moons.team, port: 8088, type: trojan, password: 68af1b04-c4f9-4c27-a8c2-cc2c98ccf1a9, sni: 50.moons.team, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡阿伟科技@TG/油管, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡阿伟科技@TG/油管 2, server: china-gzyd-1.forwardserver.xyz, port: 36029, type: trojan, password: 36352-2-41419784784722, sni: china-gzyd-1.forwardserver.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡阿伟科技@TG/油管 3, server: qt16.shenseven.xyz, port: 443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: qt16.shenseven.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡*阿伟科技@TG/油管, server: 4.vpnbro.ml, port: 9999, type: trojan, password: 8eda21d2-93a1-4740-b967-06d134c439ea, sni: 4.vpnbro.ml, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡*阿伟科技@TG/油管 2, server: freegzcm.vproxy.us, port: 47463, type: trojan, password: 066771f4-b7f5-426a-bbb2-5fecfe9190f5, sni: freegzcm.vproxy.us, skip-cert-verify: false}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管 2, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管 3, server: llaz.scsevers.cf, port: 34699, type: vmess, uuid: 6dc8e6a9-0575-434d-dd26-11ba611c80b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: llaz.scsevers.cf}}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管 4, server: 172.99.188.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管 5, server: jike1-jxcn2.jiserver.xyz, port: 29719, type: vmess, uuid: 2154dd31-ee95-3b57-8bb1-4a1d6b65bcaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azhk34.jiserver.xyz}}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管 6, server: jike-cccn2.jiserver.xyz, port: 39405, type: vmess, uuid: 2154dd31-ee95-3b57-8bb1-4a1d6b65bcaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp03.jiserver.xyz}}
+  - {name: 🇭🇰 香港阿伟科技@TG/油管 7, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港*阿伟科技@TG/油管, server: 120.232.192.211, port: 9584, type: ss, cipher: aes-256-gcm, password: 29bbe1a0-e2d2-4e83-975b-6dcec7e2e700}
+  - {name: 🇨🇳 台湾阿伟科技@TG/油管, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: tunnel-tw-a-01.xncloud.xyz}}
+  - {name: 🇨🇳 台湾阿伟科技@TG/油管 2, server: tw01.lilyco.cc, port: 59801, type: vmess, uuid: a209854a-30ed-4887-e7d2-70c7e45f814c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: YouTube-aweikeji}}
+  - {name: 🇨🇳 台湾阿伟科技@TG/油管 3, server: jike1-jxcn2.jiserver.xyz, port: 31865, type: vmess, uuid: 2154dd31-ee95-3b57-8bb1-4a1d6b65bcaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jike1, ws-headers: {Host: YouTube-aweikeji}}
+  - {name: 🇯🇵 日本阿伟科技@TG/油管, server: 116.162.43.49, port: 60776, type: vmess, uuid: e50cad5c-dcff-36cf-bb9a-6c4098ce48d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: us.gs1024.com}}
+  - {name: 🇯🇵 日本阿伟科技@TG/油管 2, server: qt9.shenseven.xyz, port: 443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: qt9.shenseven.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本阿伟科技@TG/油管 3, server: jp5.bpyun.live, port: 443, type: vmess, uuid: 47d2d9ed-7713-347f-ba13-1624502e2b85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cocksucker, ws-headers: {Host: jp5.bpyun.live}}
+  - {name: 🇯🇵 日本阿伟科技@TG/油管 4, server: jp1-aws.surplus.buzz, port: 10001, type: trojan, password: 1433f213-86c7-44ad-b239-c1aeda50aa68, sni: jp1-aws.surplus.buzz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管, server: is3.vwvwvw.xyz, port: 443, type: trojan, password: e74a0560-de68-84d7-9ddb-1887e1be8840, sni: is3.vwvwvw.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 2, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 3, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 4, server: 123.lyzghim.com, port: 443, type: trojan, password: YSmrjN8GpxB2dL9Y, sni: 123.lyzghim.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 5, server: sqj.lyzghim.com, port: 443, type: trojan, password: yfkZlYd69wMTulQp, sni: sqj.lyzghim.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 6, server: ceraus.moonfree.top, port: 443, type: vmess, uuid: a929040e-c97f-4ca5-bf40-f075252aea82, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cerus.moonfree.top}}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 7, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 8, server: 103.wgong.xyz, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 9, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 10, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 11, server: 38.75.137.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 12, server: 38.107.226.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 13, server: 169.197.142.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 14, server: 38.68.135.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 15, server: 38.107.226.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 16, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 17, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国阿伟科技@TG/油管 18, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国*阿伟科技@TG/油管, server: 167.88.63.28, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大阿伟科技@TG/油管, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大阿伟科技@TG/油管 2, server: 134.195.196.3, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大阿伟科技@TG/油管 3, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇳🇱 荷兰阿伟科技@TG/油管, server: 172.99.188.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇰🇷 韩国阿伟科技@TG/油管, server: aws.kr.tgproxy.wtf, port: 21888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /theuploadapi, ws-headers: {Host: aws.kr.tgproxy.wtf}}
+  - {name: 🇰🇷 韩国阿伟科技@TG/油管 2, server: kr1-aws.surplus.buzz, port: 10001, type: trojan, password: 1433f213-86c7-44ad-b239-c1aeda50aa68, sni: kr1-aws.surplus.buzz, skip-cert-verify: false}
+  - {name: 🇫🇷 法国阿伟科技@TG/油管, server: 145.239.1.100, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇫🇷 法国阿伟科技@TG/油管 2, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇫🇷 法国阿伟科技@TG/油管 3, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 法国阿伟科技@TG/油管 4, server: 137.74.96.141, port: 9423, type: vmess, uuid: 077b4435-80de-4374-866d-349ae95e32e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇩🇪 德国阿伟科技@TG/油管, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇩🇪 德国阿伟科技@TG/油管 2, server: 172.99.190.139, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇩🇪 德国阿伟科技@TG/油管 3, server: 172.99.190.186, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 澳州阿伟科技@TG/油管, server: Ze9baeS5.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: Ze9baeS5.com}}
+  - {name: ZZ_142, server: 134.195.196.214, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: ZZ_141, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US-38.114.114.69-023, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_97, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 US_96, server: 38.68.135.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_95, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_90, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US_89, server: 167.88.62.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 US_87, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US_82, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US_81, server: 38.107.226.48, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US_75, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 US_73, server: 167.88.63.28, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 US_107, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US_105, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US_103, server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_101, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_42, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: CA-134.195.196.71-005, server: 134.195.196.71, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: CA-134.195.196.227-003, server: 134.195.196.227, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: CA-134.195.196.193-011, server: 134.195.196.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: CA_28, server: 198.57.27.184, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: CA_27, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: CA_24, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US-167.88.63.74-019, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US-167.88.63.61-018, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: CA-198.57.27.152-444, server: 198.57.27.152, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: CA-134.195.196.227-004, server: 134.195.196.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: CA-134.195.196.200-003, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: _13, server: 198.57.27.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -424,58 +669,93 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国阿伟科技-新年快乐
-      - 🇮🇳 印度*阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐
-      - 🇸🇬 新加坡阿伟科技-新年快乐 2
-      - 🇸🇬 新加坡*阿伟科技-新年快乐
-      - 🇸🇬 新加坡*阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐
-      - 🇭🇰 香港阿伟科技-新年快乐 2
-      - 🇭🇰 香港阿伟科技-新年快乐 3
-      - 🇭🇰 香港阿伟科技-新年快乐 4
-      - 🇭🇰 香港阿伟科技-新年快乐 5
-      - 🇭🇰 香港阿伟科技-新年快乐 6
-      - 🇭🇰 香港阿伟科技-新年快乐 7
-      - 🇭🇰 香港阿伟科技-新年快乐 8
-      - 🇭🇰 香港阿伟科技-新年快乐 9
-      - 🇭🇰 香港*阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐
-      - 🇨🇳 台湾阿伟科技-新年快乐 2
-      - 🇨🇳 台湾阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐
-      - 🇯🇵 日本阿伟科技-新年快乐 2
-      - 🇯🇵 日本阿伟科技-新年快乐 3
-      - 🇯🇵 日本阿伟科技-新年快乐 4
-      - 🇯🇵 日本阿伟科技-新年快乐 5
-      - 🇯🇵 日本*阿伟科技-新年快乐
-      - 🇯🇵 日本*阿伟科技-新年快乐 2
-      - 挪威阿伟科技-新年快乐
-      - 挪威*阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐
-      - 🇺🇸 美国阿伟科技-新年快乐 2
-      - 🇺🇸 美国阿伟科技-新年快乐 3
-      - 🇺🇸 美国阿伟科技-新年快乐 4
-      - 🇺🇸 美国阿伟科技-新年快乐 5
-      - 🇺🇸 美国阿伟科技-新年快乐 6
-      - 🇺🇸 美国阿伟科技-新年快乐 7
-      - 🇺🇸 美国阿伟科技-新年快乐 8
-      - 🇺🇸 美国阿伟科技-新年快乐 9
-      - 🇺🇸 美国阿伟科技-新年快乐 10
-      - 🇺🇸 美国阿伟科技-新年快乐 11
-      - 🇺🇸 美国阿伟科技-新年快乐 12
-      - 🇺🇸 美国阿伟科技-新年快乐 13
-      - 🇺🇸 美国阿伟科技-新年快乐 14
-      - 🇺🇸 美国阿伟科技-新年快乐 15
-      - 🇺🇸 美国*阿伟科技-新年快乐
-      - 🇺🇸 美国*阿伟科技-新年快乐 2
-      - 🇨🇦 加拿大阿伟科技-新年快乐
-      - 🇨🇦 加拿大阿伟科技-新年快乐 2
-      - 🇳🇱 荷兰阿伟科技-新年快乐
-      - 🇳🇱 荷兰阿伟科技-新年快乐 2
-      - 🇰🇷 韩国阿伟科技-新年快乐
-      - 🇩🇪 德国阿伟科技-新年快乐
-      - 布韦岛阿伟科技-新年快乐
+      - 🇬🇧 英国阿伟科技@TG/油管
+      - 🇬🇧 英国阿伟科技@TG/油管 2
+      - 🇬🇧 英国阿伟科技@TG/油管 3
+      - 🇮🇩 印尼阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管
+      - 🇸🇬 新加坡阿伟科技@TG/油管 2
+      - 🇸🇬 新加坡阿伟科技@TG/油管 3
+      - 🇸🇬 新加坡*阿伟科技@TG/油管
+      - 🇸🇬 新加坡*阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管
+      - 🇭🇰 香港阿伟科技@TG/油管 2
+      - 🇭🇰 香港阿伟科技@TG/油管 3
+      - 🇭🇰 香港阿伟科技@TG/油管 4
+      - 🇭🇰 香港阿伟科技@TG/油管 5
+      - 🇭🇰 香港阿伟科技@TG/油管 6
+      - 🇭🇰 香港阿伟科技@TG/油管 7
+      - 🇭🇰 香港*阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管
+      - 🇨🇳 台湾阿伟科技@TG/油管 2
+      - 🇨🇳 台湾阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管
+      - 🇯🇵 日本阿伟科技@TG/油管 2
+      - 🇯🇵 日本阿伟科技@TG/油管 3
+      - 🇯🇵 日本阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管
+      - 🇺🇸 美国阿伟科技@TG/油管 2
+      - 🇺🇸 美国阿伟科技@TG/油管 3
+      - 🇺🇸 美国阿伟科技@TG/油管 4
+      - 🇺🇸 美国阿伟科技@TG/油管 5
+      - 🇺🇸 美国阿伟科技@TG/油管 6
+      - 🇺🇸 美国阿伟科技@TG/油管 7
+      - 🇺🇸 美国阿伟科技@TG/油管 8
+      - 🇺🇸 美国阿伟科技@TG/油管 9
+      - 🇺🇸 美国阿伟科技@TG/油管 10
+      - 🇺🇸 美国阿伟科技@TG/油管 11
+      - 🇺🇸 美国阿伟科技@TG/油管 12
+      - 🇺🇸 美国阿伟科技@TG/油管 13
+      - 🇺🇸 美国阿伟科技@TG/油管 14
+      - 🇺🇸 美国阿伟科技@TG/油管 15
+      - 🇺🇸 美国阿伟科技@TG/油管 16
+      - 🇺🇸 美国阿伟科技@TG/油管 17
+      - 🇺🇸 美国阿伟科技@TG/油管 18
+      - 🇺🇸 美国*阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管
+      - 🇨🇦 加拿大阿伟科技@TG/油管 2
+      - 🇨🇦 加拿大阿伟科技@TG/油管 3
+      - 🇳🇱 荷兰阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管
+      - 🇰🇷 韩国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管
+      - 🇫🇷 法国阿伟科技@TG/油管 2
+      - 🇫🇷 法国阿伟科技@TG/油管 3
+      - 🇫🇷 法国阿伟科技@TG/油管 4
+      - 🇩🇪 德国阿伟科技@TG/油管
+      - 🇩🇪 德国阿伟科技@TG/油管 2
+      - 🇩🇪 德国阿伟科技@TG/油管 3
+      - 澳州阿伟科技@TG/油管
+      - ZZ_142
+      - ZZ_141
+      - 🇺🇸 US-38.114.114.69-023
+      - 🇺🇸 US_97
+      - 🇺🇸 US_96
+      - 🇺🇸 US_95
+      - 🇺🇸 US_90
+      - 🇺🇸 US_89
+      - 🇺🇸 US_87
+      - 🇺🇸 US_82
+      - 🇺🇸 US_81
+      - 🇺🇸 US_75
+      - 🇺🇸 US_73
+      - 🇺🇸 US_107
+      - 🇺🇸 US_105
+      - 🇺🇸 US_103
+      - 🇺🇸 US_101
+      - FR_42
+      - CA-134.195.196.71-005
+      - CA-134.195.196.227-003
+      - CA-134.195.196.193-011
+      - CA_28
+      - CA_27
+      - CA_24
+      - 🇺🇸 US-167.88.63.74-019
+      - 🇺🇸 US-167.88.63.61-018
+      - CA-198.57.27.152-444
+      - CA-134.195.196.227-004
+      - CA-134.195.196.200-003
+      - _13
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
