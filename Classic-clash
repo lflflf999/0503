@@ -5,503 +5,627 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 中国【YouTube由零開始】, server: mg04.nfeng6.pp.ua, port: 63078, type: vmess, uuid: 042250a0-5c14-3394-b57e-cf4970f5dcfc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
   - {name: 香港【YouTube由零開始】, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本【YouTube由零開始】, server: 45.11.1.158, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 日本【YouTube由零開始】 2, server: 172.104.82.126, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 韩国【YouTube由零開始】, server: 141.164.35.41, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 印度【YouTube由零開始】, server: 172.104.207.231, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 印度【YouTube由零開始】 2, server: india.tgsc.xyz, port: 443, type: vmess, uuid: 1355574d-dac9-4006-8420-95a156fa5f32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /V81DFD0H, ws-headers: {Host: india.tgsc.xyz}, udp: true}
-  - {name: 韩国【YouTube由零開始】 2, server: 141.164.53.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 印度【YouTube由零開始】 3, server: 172.105.59.32, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 印度【YouTube由零開始】 4, server: 192.46.209.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 韩国【YouTube由零開始】 3, server: 158.247.199.253, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 韩国【YouTube由零開始】 4, server: 141.164.59.168, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 日本【YouTube由零開始】 3, server: 85.208.108.134, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 新加坡【YouTube由零開始】, server: 172.104.50.106, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 2, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 3, server: 142.202.48.108, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 4, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 5, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】 6, server: 169.197.143.157, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 2, server: 134.195.196.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 7, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 8, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 9, server: anzhuo-hezi1.herokuapp.com, port: 443, type: vmess, uuid: 05b8441f-3c76-4af1-b5b9-dd60d27e5ef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /05b8441f-3c76-4af1-b5b9-dd60d27e5ef8-vmess, ws-headers: {Host: anzhuo-hezi1.herokuapp.com}, udp: true}
-  - {name: 美国【YouTube由零開始】 10, server: 142.202.48.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 11, server: 167.88.62.34, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 3, server: 134.195.196.217, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 12, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 13, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 14, server: 70.39.67.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
-  - {name: 美国【YouTube由零開始】 15, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】 2, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国【YouTube由零開始】 16, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 17, server: 167.88.63.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 18, server: 38.91.100.27, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 19, server: 142.202.48.83, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 20, server: 167.88.63.89, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 4, server: 134.195.196.33, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 加拿大【YouTube由零開始】 5, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 6, server: 134.195.196.230, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 21, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 7, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】 3, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 法国【YouTube由零開始】 4, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国【YouTube由零開始】 2, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大【YouTube由零開始】 8, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 22, server: 38.114.114.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】 5, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 韩国【YouTube由零開始】 5, server: www.darkwater.xyz, port: 41759, type: trojan, password: ixkIc4mCzH, sni: www.darkwater.xyz, skip-cert-verify: true, udp: true}
-  - {name: 加拿大【YouTube由零開始】 9, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 23, server: 38.68.135.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 3, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 法国【YouTube由零開始】 6, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国【YouTube由零開始】 24, server: 142.202.48.114, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 25, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 10, server: 134.195.196.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 26, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 27, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 4, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 11, server: 134.195.196.147, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 英国【YouTube由零開始】 5, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】 28, server: 167.88.63.108, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 12, server: 134.195.198.211, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 29, server: amu1ahfi.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
-  - {name: 加拿大【YouTube由零開始】 13, server: 134.195.196.199, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 30, server: 142.202.48.105, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】 7, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国【YouTube由零開始】 31, server: 142.202.48.17, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】 8, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国【YouTube由零開始】 32, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 33, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
-  - {name: 加拿大【YouTube由零開始】 14, server: 134.195.196.139, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 15, server: 134.195.196.97, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 16, server: 134.195.196.214, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 6, server: 172.99.190.153, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 34, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 35, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 7, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 法国【YouTube由零開始】 9, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 英国【YouTube由零開始】 8, server: 145.239.7.164, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 9, server: 51.68.205.180, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 36, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 10, server: 172.99.190.90, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 37, server: 104.27.89.125, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: xiaochen.chenyingjie5201314.workers.dev}, udp: true}
-  - {name: 法国【YouTube由零開始】 10, server: 145.239.1.100, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大【YouTube由零開始】 17, server: 134.195.196.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 法国【YouTube由零開始】 11, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国【YouTube由零開始】 38, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
-  - {name: 英国【YouTube由零開始】 11, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大【YouTube由零開始】 18, server: 134.195.196.147, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 法国【YouTube由零開始】, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国【YouTube由零開始】, server: 169.197.142.238, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 法国【YouTube由零開始】 2, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国【YouTube由零開始】 3, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国【YouTube由零開始】 4, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 澳大利亚【YouTube由零開始】, server: 172.105.177.120, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 5, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 印度【YouTube由零開始】, server: india.tgsc.xyz, port: 443, type: vmess, uuid: 1355574d-dac9-4006-8420-95a156fa5f32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /V81DFD0H, ws-headers: {Host: india.tgsc.xyz}, udp: true}
+  - {name: 澳大利亚【YouTube由零開始】 2, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 6, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国【YouTube由零開始】 7, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国【YouTube由零開始】 2, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 8, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 法国【YouTube由零開始】 9, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 法国【YouTube由零開始】 10, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 新加坡【YouTube由零開始】, server: 139.162.58.13, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 韩国【YouTube由零開始】, server: 141.164.53.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 印度【YouTube由零開始】 2, server: 172.104.207.231, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 3, server: 169.197.142.238, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 日本【YouTube由零開始】, server: 172.104.82.126, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 韩国【YouTube由零開始】 2, server: 141.164.59.168, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 4, server: 38.68.135.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 11, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国【YouTube由零開始】 5, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】, server: 134.195.196.128, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 6, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 法国【YouTube由零開始】 12, server: 149.202.82.172, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 加拿大【YouTube由零開始】 2, server: 134.195.196.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 3, server: 134.195.196.199, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 7, server: 167.88.63.89, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 4, server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 13, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大【YouTube由零開始】 5, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 6, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 8, server: 142.202.48.17, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 7, server: 134.195.196.214, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 14, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 法国【YouTube由零開始】 15, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大【YouTube由零開始】 8, server: 134.195.196.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 9, server: 134.195.196.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 10, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: _加拿大_【YouTube由零開始】, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 法国【YouTube由零開始】 12, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大【YouTube由零開始】 19, server: 134.195.196.200, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国【YouTube由零開始】 9, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 10, server: 169.197.143.157, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 2, server: 172.99.190.188, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 英国【YouTube由零開始】 3, server: 172.99.190.188, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大【YouTube由零開始】 11, server: 134.195.196.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 英国【YouTube由零開始】 4, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大【YouTube由零開始】 12, server: 134.195.196.33, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 5, server: 172.99.190.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 英国【YouTube由零開始】 6, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大【YouTube由零開始】 13, server: 134.195.196.139, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 7, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国【YouTube由零開始】 11, server: 167.88.63.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 14, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 15, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大【YouTube由零開始】 16, server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国【YouTube由零開始】 12, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 加拿大【YouTube由零開始】 17, server: 134.195.196.147, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大【YouTube由零開始】 18, server: 134.195.196.147, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 英国【YouTube由零開始】 8, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大【YouTube由零開始】 19, server: 134.195.196.147, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大【YouTube由零開始】 20, server: 134.195.196.230, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 9, server: 172.99.190.205, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 英国【YouTube由零開始】 10, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国【YouTube由零開始】 13, server: 142.202.48.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 21, server: 134.195.196.217, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 14, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 22, server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 15, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 16, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 日本【YouTube由零開始】 2, server: 45.11.1.158, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 11, server: 172.99.190.205, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国【YouTube由零開始】 17, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
+  - {name: 美国【YouTube由零開始】 18, server: 142.202.48.114, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 日本【YouTube由零開始】 3, server: 85.208.108.134, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: 英国【YouTube由零開始】 12, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国【YouTube由零開始】 39, server: 167.88.62.104, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 法国【YouTube由零開始】 13, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 印度【YouTube由零開始】 3, server: 192.46.209.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 韩国【YouTube由零開始】 3, server: 141.164.35.41, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 13, server: 172.99.190.188, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【YouTube由零開始】 19, server: 38.68.134.202, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 20, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 23, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 14, server: 172.99.190.205, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大【YouTube由零開始】 24, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 21, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 15, server: 172.99.190.188, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 英国【YouTube由零開始】 16, server: 172.99.190.188, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 澳大利亚【YouTube由零開始】 3, server: 192.53.169.116, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 英国【YouTube由零開始】 17, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 25, server: 134.195.196.97, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 22, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 23, server: 167.88.63.108, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 24, server: amu1ahfi.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
+  - {name: 美国【YouTube由零開始】 25, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 26, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 27, server: 142.202.48.108, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 28, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 26, server: 134.195.196.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国【YouTube由零開始】 29, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 27, server: 134.195.198.211, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 28, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 30, server: 167.88.62.34, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 31, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 印度【YouTube由零開始】 4, server: 172.105.59.32, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 29, server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 英国【YouTube由零開始】 18, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 英国【YouTube由零開始】 19, server: 172.99.190.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大【YouTube由零開始】 30, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国【YouTube由零開始】 32, server: 38.91.100.27, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 33, server: 142.202.48.83, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 34, server: 70.39.67.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
+  - {name: 美国【YouTube由零開始】 35, server: anzhuo-hezi1.herokuapp.com, port: 443, type: vmess, uuid: 05b8441f-3c76-4af1-b5b9-dd60d27e5ef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /05b8441f-3c76-4af1-b5b9-dd60d27e5ef8-vmess, ws-headers: {Host: anzhuo-hezi1.herokuapp.com}, udp: true}
+  - {name: 英国【YouTube由零開始】 20, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国【YouTube由零開始】 36, server: 167.88.62.104, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 21, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 22, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国【YouTube由零開始】 37, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 23, server: 172.99.190.205, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 英国【YouTube由零開始】 24, server: 172.99.190.188, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 英国【YouTube由零開始】 25, server: 172.99.190.153, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 38, server: 38.91.100.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 39, server: 169.197.141.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: _英国_【YouTube由零開始】, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国【YouTube由零開始】 13, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国【YouTube由零開始】 14, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 中国【YouTube由零開始】, server: gzcm.v2hub.top, port: 19221, type: trojan, password: da8f4c57-d022-3ccc-ae2a-a70256d68c32, sni: gzcm.v2hub.top, skip-cert-verify: true, udp: true}
-  - {name: 法国【YouTube由零開始】 14, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 拉脱维亚【YouTube由零開始】, server: lv.tgproxy.wtf, port: 2052, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: lv.tgproxy.wtf}, udp: true}
-  - {name: 英国【YouTube由零開始】 15, server: 172.99.190.188, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大【YouTube由零開始】 20, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国【YouTube由零開始】 16, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大【YouTube由零開始】 21, server: 134.195.196.147, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大【YouTube由零開始】 22, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 英国【YouTube由零開始】 17, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 法国【YouTube由零開始】 15, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国【YouTube由零開始】 40, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国【YouTube由零開始】 41, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 加拿大【YouTube由零開始】 23, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国【YouTube由零開始】 18, server: 172.99.190.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大【YouTube由零開始】 24, server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大【YouTube由零開始】 25, server: 134.195.196.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 加拿大【YouTube由零開始】 26, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国【YouTube由零開始】 40, server: 169.197.142.238, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 加拿大【YouTube由零開始】 31, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大【YouTube由零開始】 32, server: 134.195.196.193, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大【YouTube由零開始】 33, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【YouTube由零開始】 41, server: 38.114.114.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: 美国【YouTube由零開始】 42, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大【YouTube由零開始】 27, server: 134.195.196.193, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【YouTube由零開始】 43, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 16, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 44, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 45, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 46, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国【YouTube由零開始】 47, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 26, server: 145.239.7.164, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 17, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 加拿大【YouTube由零開始】 34, server: 134.195.196.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 法国【YouTube由零開始】 18, server: 145.239.1.100, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 35, server: 134.195.196.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【YouTube由零開始】 48, server: 142.202.48.105, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 27, server: 172.99.190.90, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 英国【YouTube由零開始】 28, server: 51.68.205.180, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 新加坡【YouTube由零開始】 2, server: 172.104.168.83, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 德国【YouTube由零開始】, server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 36, server: 134.195.196.200, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国【YouTube由零開始】 19, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -520,126 +644,157 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -651,377 +806,470 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1037,126 +1285,157 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 中国【YouTube由零開始】
       - 香港【YouTube由零開始】
-      - 日本【YouTube由零開始】
-      - 日本【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】
-      - 印度【YouTube由零開始】
-      - 印度【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 2
-      - 印度【YouTube由零開始】 3
-      - 印度【YouTube由零開始】 4
-      - 韩国【YouTube由零開始】 3
-      - 韩国【YouTube由零開始】 4
-      - 日本【YouTube由零開始】 3
-      - 新加坡【YouTube由零開始】
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
       - 法国【YouTube由零開始】
-      - 美国【YouTube由零開始】 6
-      - 加拿大【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 14
-      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】
       - 法国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 16
-      - 美国【YouTube由零開始】 17
-      - 美国【YouTube由零開始】 18
-      - 美国【YouTube由零開始】 19
-      - 美国【YouTube由零開始】 20
-      - 加拿大【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 加拿大【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 7
       - 法国【YouTube由零開始】 3
       - 法国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 22
+      - 澳大利亚【YouTube由零開始】
       - 法国【YouTube由零開始】 5
-      - 韩国【YouTube由零開始】 5
-      - 加拿大【YouTube由零開始】 9
-      - 美国【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 3
+      - 印度【YouTube由零開始】
+      - 澳大利亚【YouTube由零開始】 2
       - 法国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 24
-      - 美国【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 26
-      - 美国【YouTube由零開始】 27
-      - 英国【YouTube由零開始】 4
-      - 加拿大【YouTube由零開始】 11
-      - 英国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 28
-      - 加拿大【YouTube由零開始】 12
-      - 美国【YouTube由零開始】 29
-      - 加拿大【YouTube由零開始】 13
-      - 美国【YouTube由零開始】 30
       - 法国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 31
+      - 美国【YouTube由零開始】 2
       - 法国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 32
-      - 美国【YouTube由零開始】 33
+      - 法国【YouTube由零開始】 9
+      - 法国【YouTube由零開始】 10
+      - 新加坡【YouTube由零開始】
+      - 韩国【YouTube由零開始】
+      - 印度【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - 日本【YouTube由零開始】
+      - 韩国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 6
+      - 法国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大【YouTube由零開始】 3
+      - 美国【YouTube由零開始】 7
+      - 加拿大【YouTube由零開始】 4
+      - 法国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 7
+      - 法国【YouTube由零開始】 14
+      - 法国【YouTube由零開始】 15
+      - 加拿大【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 9
+      - 加拿大【YouTube由零開始】 10
+      - _加拿大_【YouTube由零開始】
+      - 英国【YouTube由零開始】
+      - 美国【YouTube由零開始】 9
+      - 美国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 3
+      - 加拿大【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 12
+      - 英国【YouTube由零開始】 5
+      - 英国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 13
+      - 英国【YouTube由零開始】 7
+      - 美国【YouTube由零開始】 11
       - 加拿大【YouTube由零開始】 14
       - 加拿大【YouTube由零開始】 15
       - 加拿大【YouTube由零開始】 16
-      - 英国【YouTube由零開始】 6
+      - 美国【YouTube由零開始】 12
+      - 加拿大【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 8
+      - 加拿大【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 20
+      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 10
+      - 美国【YouTube由零開始】 13
+      - 加拿大【YouTube由零開始】 21
+      - 美国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 15
+      - 美国【YouTube由零開始】 16
+      - 日本【YouTube由零開始】 2
+      - 英国【YouTube由零開始】 11
+      - 美国【YouTube由零開始】 17
+      - 美国【YouTube由零開始】 18
+      - 日本【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 12
+      - 印度【YouTube由零開始】 3
+      - 韩国【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 13
+      - 美国【YouTube由零開始】 19
+      - 美国【YouTube由零開始】 20
+      - 加拿大【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 14
+      - 加拿大【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 15
+      - 英国【YouTube由零開始】 16
+      - 澳大利亚【YouTube由零開始】 3
+      - 英国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 22
+      - 美国【YouTube由零開始】 23
+      - 美国【YouTube由零開始】 24
+      - 美国【YouTube由零開始】 25
+      - 美国【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 28
+      - 加拿大【YouTube由零開始】 26
+      - 美国【YouTube由零開始】 29
+      - 加拿大【YouTube由零開始】 27
+      - 加拿大【YouTube由零開始】 28
+      - 美国【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 31
+      - 印度【YouTube由零開始】 4
+      - 加拿大【YouTube由零開始】 29
+      - 英国【YouTube由零開始】 18
+      - 英国【YouTube由零開始】 19
+      - 加拿大【YouTube由零開始】 30
+      - 美国【YouTube由零開始】 32
+      - 美国【YouTube由零開始】 33
       - 美国【YouTube由零開始】 34
       - 美国【YouTube由零開始】 35
-      - 英国【YouTube由零開始】 7
-      - 法国【YouTube由零開始】 9
-      - 英国【YouTube由零開始】 8
-      - 英国【YouTube由零開始】 9
+      - 英国【YouTube由零開始】 20
       - 美国【YouTube由零開始】 36
-      - 英国【YouTube由零開始】 10
+      - 英国【YouTube由零開始】 21
+      - 英国【YouTube由零開始】 22
       - 美国【YouTube由零開始】 37
-      - 法国【YouTube由零開始】 10
-      - 加拿大【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 11
+      - 英国【YouTube由零開始】 23
+      - 英国【YouTube由零開始】 24
+      - 英国【YouTube由零開始】 25
       - 美国【YouTube由零開始】 38
-      - 英国【YouTube由零開始】 11
-      - 加拿大【YouTube由零開始】 18
-      - _加拿大_【YouTube由零開始】
-      - 法国【YouTube由零開始】 12
-      - 加拿大【YouTube由零開始】 19
-      - 英国【YouTube由零開始】 12
       - 美国【YouTube由零開始】 39
-      - 法国【YouTube由零開始】 13
       - _英国_【YouTube由零開始】
-      - 英国【YouTube由零開始】 13
-      - 英国【YouTube由零開始】 14
-      - 中国【YouTube由零開始】
-      - 法国【YouTube由零開始】 14
-      - 拉脱维亚【YouTube由零開始】
-      - 英国【YouTube由零開始】 15
-      - 加拿大【YouTube由零開始】 20
-      - 英国【YouTube由零開始】 16
-      - 加拿大【YouTube由零開始】 21
-      - 加拿大【YouTube由零開始】 22
-      - 英国【YouTube由零開始】 17
-      - 法国【YouTube由零開始】 15
       - 美国【YouTube由零開始】 40
+      - 加拿大【YouTube由零開始】 31
+      - 加拿大【YouTube由零開始】 32
+      - 加拿大【YouTube由零開始】 33
       - 美国【YouTube由零開始】 41
-      - 加拿大【YouTube由零開始】 23
-      - 英国【YouTube由零開始】 18
-      - 加拿大【YouTube由零開始】 24
-      - 加拿大【YouTube由零開始】 25
-      - 加拿大【YouTube由零開始】 26
       - 美国【YouTube由零開始】 42
-      - 加拿大【YouTube由零開始】 27
+      - 美国【YouTube由零開始】 43
+      - 法国【YouTube由零開始】 16
+      - 美国【YouTube由零開始】 44
+      - 美国【YouTube由零開始】 45
+      - 美国【YouTube由零開始】 46
+      - 美国【YouTube由零開始】 47
+      - 英国【YouTube由零開始】 26
+      - 法国【YouTube由零開始】 17
+      - 加拿大【YouTube由零開始】 34
+      - 法国【YouTube由零開始】 18
+      - 加拿大【YouTube由零開始】 35
+      - 美国【YouTube由零開始】 48
+      - 英国【YouTube由零開始】 27
+      - 英国【YouTube由零開始】 28
+      - 新加坡【YouTube由零開始】 2
+      - 德国【YouTube由零開始】
+      - 加拿大【YouTube由零開始】 36
+      - 法国【YouTube由零開始】 19
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
