@@ -5,215 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TW_1062, server: 59.125.11.164, port: 8369, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_436, server: os2-8.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-8.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_438, server: os2-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-2.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: TW_1061, server: 210.241.243.8, port: 8329, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: JP_765, server: jp-group-a-direct.node001.xyz, port: 80, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp-group-a-direct.node001.xyz}, udp: true}
+  - {name: US_1228, server: az1.xrenblog.com, port: 53067, type: vmess, uuid: 3c5e4538-d8aa-4d5e-ab37-81d20950c0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: SG_1063 |15.61Mb, server: 4.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 4.earths.team, skip-cert-verify: true, udp: true}
-  - {name: HK_648, server: azzz.doubledou.win, port: 50033, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: azzz.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: JP_770, server: cc2.doubledou.win, port: 4584, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: cc2.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_438 2, server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG_968, server: azhk.relay.qchwnd.moe, port: 10215, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: US_1268, server: cuvip.doubledou.win, port: 4583, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: cuvip.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: SG_967, server: azhk.relay.qchwnd.moe, port: 10217, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: JP_810 |156.04Mb, server: 1.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 1.earths.team, skip-cert-verify: true, udp: true}
-  - {name: US_1284, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: v2losdmit1.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: SG_1061 |23.44Mb, server: 6.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 6.earths.team, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_303, server: gy.wozcjd.xyz, port: 11352, type: ss, cipher: chacha20-ietf-poly1305, password: c753e8a8-e180-4e76-a486-c917273d718b, udp: true}
   - {name: SG_1062 |21.71Mb, server: 5.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 5.earths.team, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_328, server: 120.233.10.182, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: windows.com, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_362, server: 14.152.92.72, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_344, server: 120.233.10.182, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: windows.com, udp: true}
-  - {name: US_44, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1412, server: 172.99.190.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: HK_646, server: hkcn2.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: hkcn2.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: HK_649, server: azzz.doubledou.win, port: 50009, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: azzz.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: US_1258, server: ccc1.doubledou.win, port: 4585, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: ccc1.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: US_1604, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_392, server: in04.dns2333.xyz, port: 63078, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
-  - {name: US_2645, server: 172.99.190.188, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_2772, server: 45.9.10.103, port: 443, type: trojan, password: WpfQAbO2wg, skip-cert-verify: true, udp: true}
+  - {name: SG_968, server: azhk.relay.qchwnd.moe, port: 10215, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: TW_1061, server: 210.241.243.8, port: 8329, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
   - {name: US_2429 |28.74Mb, server: k11.pbaplink.xyz, port: 48500, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: k11.pbaplink.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_83, server: 172.99.190.188, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2571, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_455, server: os2-6.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-6.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_2699, server: 172.99.190.188, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_343, server: 14.152.92.73, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: SG_966, server: 14.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 14.earths.team, skip-cert-verify: true, udp: true}
-  - {name: US_2255, server: 172.99.190.188, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_2603, server: 172.99.190.205, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2483, server: 172.99.190.188, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1216, server: 172.99.190.188, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: HK_653, server: shanghai.doubledou.win, port: 20044, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: shanghai.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: US_2259, server: 172.99.190.188, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: SG_967, server: azhk.relay.qchwnd.moe, port: 10217, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_444, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2774, server: 7.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 7.earths.team, skip-cert-verify: true, udp: true}
+  - {name: US_2095, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_436, server: os2-8.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-8.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_2165, server: 38.68.134.191, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: Relay_🇪🇪EE-🇯🇵JP_459, server: os2-7.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-7.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_670, server: az1.xrenblog.com, port: 53067, type: vmess, uuid: 3c5e4538-d8aa-4d5e-ab37-81d20950c0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_2516, server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_438, server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_2148, server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_455, server: os2-6.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-6.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_1215, server: 172.99.190.205, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_438 2, server: os2-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-2.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_2436, server: 172.99.190.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2128, server: 172.99.190.149, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1412, server: 172.99.190.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_2269, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1297, server: 172.99.190.205, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: JP_885, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2708, server: anzhuo-hezi1.herokuapp.com, port: 443, type: vmess, uuid: 05b8441f-3c76-4af1-b5b9-dd60d27e5ef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /05b8441f-3c76-4af1-b5b9-dd60d27e5ef8-vmess, ws-headers: {Host: anzhuo-hezi1.herokuapp.com}, udp: true}
   - {name: Relay_🇺🇸US-🇷🇺RU_92, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: 739e53db-d41c-4bad-a61d-6cd5a173f85b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v5.ssrsub.com}, udp: true}
-  - {name: US_2071, server: 172.99.190.205, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2072, server: 172.99.190.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_330, server: in04.dns2333.xyz, port: 63069, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
-  - {name: HK_655, server: shanghai.doubledou.win, port: 50005, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: shanghai.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: US_2053, server: 172.99.190.205, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb, server: hax.hostmeetingnow.tk, port: 80, type: vmess, uuid: 86606733-f014-46d5-e5e4-8dc4d9fb77d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v2/null, ws-headers: {Host: hax.hostmeetingnow.tk}, udp: true}
+  - {name: US_2603, server: 172.99.190.205, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1233, server: 172.99.190.205, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1590 | 1.14Mb, server: 172.99.190.205, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -232,54 +172,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -290,161 +215,116 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -460,54 +340,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW_1062
-      - Relay_🇪🇪EE-🇯🇵JP_436
-      - Relay_🇪🇪EE-🇯🇵JP_438
-      - TW_1061
-      - JP_765
+      - US_1228
       - SG_1063 |15.61Mb
-      - HK_648
-      - JP_770
-      - Relay_🇪🇪EE-🇯🇵JP_438 2
-      - SG_968
-      - US_1268
-      - SG_967
-      - JP_810 |156.04Mb
-      - US_1284
-      - SG_1061 |23.44Mb
-      - Relay_🇨🇳CN-🇹🇼TW_303
       - SG_1062 |21.71Mb
-      - Relay_🇨🇳CN-🇯🇵JP_328
-      - Relay_🇨🇳CN-🇺🇸US_362
-      - Relay_🇨🇳CN-🇯🇵JP_344
-      - US_44
-      - US_1412
-      - HK_646
-      - HK_649
-      - US_1258
-      - US_1604
-      - Relay_🇨🇳CN-🇭🇰HK_392
-      - US_2645
+      - US_2772
+      - SG_968
+      - TW_1061
       - US_2429 |28.74Mb
-      - US_83
-      - US_2571
-      - Relay_🇪🇪EE-🇯🇵JP_455
-      - US_2699
-      - Relay_🇨🇳CN-🇺🇸US_343
-      - SG_966
-      - US_2255
-      - US_2603
-      - US_2483
-      - US_1216
-      - HK_653
-      - US_2259
+      - SG_967
+      - Relay_🇪🇪EE-🇯🇵JP_444
+      - Relay_🇺🇸US-🇺🇸US_2774
+      - US_2095
+      - Relay_🇪🇪EE-🇯🇵JP_436
+      - US_2165
       - Relay_🇪🇪EE-🇯🇵JP_459
+      - Relay_🇭🇰HK-🇭🇰HK_670
+      - US_2516
+      - Relay_🇪🇪EE-🇯🇵JP_438
+      - US_2148
+      - Relay_🇪🇪EE-🇯🇵JP_455
+      - US_1215
+      - Relay_🇪🇪EE-🇯🇵JP_438 2
+      - US_2436
+      - US_2128
+      - US_1412
+      - US_2269
+      - US_1297
+      - JP_885
+      - Relay_🇺🇸US-🇺🇸US_2708
       - Relay_🇺🇸US-🇷🇺RU_92
-      - US_2071
-      - US_2072
-      - Relay_🇨🇳CN-🇺🇸US_330
-      - HK_655
-      - US_2053
+      - Relay_🇺🇸US-🇺🇸US_2465 | 6.22Mb
+      - US_2603
+      - US_1233
+      - US_1590 | 1.14Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
