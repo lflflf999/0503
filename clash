@@ -5,199 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇭🇰HK_384, server: 223.166.157.192, port: 60009, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_352, server: 139.227.222.202, port: 60009, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_358, server: 139.227.222.202, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_349, server: 223.166.157.192, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_379, server: 223.166.157.41, port: 60009, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_350, server: 139.227.223.3, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: SG_923, server: sg-am11.eqnode.net, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: NONE, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: 185.217.110.195, port: 51390, type: trojan, password: xbTvw1dpLn, skip-cert-verify: true, udp: true}
-  - {name: 426未名站_1259, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 426未名站_626, server: 134.195.196.187, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_215, server: 38.143.66.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 426未名站_1268, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 426未名站_835, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 【426节点池】DE_470, server: 193.108.117.75, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_942, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_2303, server: 167.88.63.79, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: US_1982, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 426未名站_1271, server: 134.195.196.12, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 【426节点池】CA_188, server: 198.57.27.218, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 426未名站_1224, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 426未名站_1266, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 426未名站_840, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2432, server: 38.91.100.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 426未名站_841, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 【426节点池】DE_477, server: 193.108.117.75, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_475, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: 【426节点池】DE_463, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 426未名站_882, server: 134.195.196.12, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_371, server: 223.166.157.41, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: 117.28.243.220:8186, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3273, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: 426未名站_1214, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 426未名站_805, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3265, server: 39.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: 【426节点池】US_3491, server: 167.88.63.89, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 426未名站_833, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 426未名站_997, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 426未名站_968, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 【426节点池】CA_234, server: 198.57.27.218, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 【426节点池】IN_1802, server: 45.79.121.117, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 【426节点池】IN_1768, server: 45.79.121.117, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【426节点池】CA_292, server: 198.57.27.218, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 426未名站_1207, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 【426节点池】CA_164, server: 198.57.27.218, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 【426节点池】DE_413, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 【426节点池】CA_223, server: 198.57.27.218, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 【426节点池】DE_411, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 【426节点池】CA_179, server: 198.57.27.172, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: US_236, server: 38.86.135.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 【426节点池】US_3491, server: 167.88.63.89, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 【426节点池】DE_412, server: 193.108.117.75, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 【426节点池】US_3644, server: 167.88.63.79, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 【426节点池】CA_296, server: 198.57.27.218, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 【426节点池】IN_1802, server: 45.79.121.117, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 51.38.112.84:44, server: 51.38.112.84, port: 44, type: ss, cipher: aes-256-cfb, password: instgram.com/openvpnssh, plugin: obfs, plugin-opts: {mode: http, host: 51.38.112.84}, udp: true}
+  - {name: 426未名站_846, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 【426节点池】IN_1689, server: 172.105.39.228, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 426未名站_914, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 【426节点池】CA_159, server: 198.57.27.218, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: JP_951, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 【426节点池】IN_1720, server: 172.105.39.228, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 【426节点池】CA_161, server: 198.57.27.218, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -216,50 +128,28 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -270,149 +160,83 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -428,50 +252,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_384
-      - Relay_🇨🇳CN-🇭🇰HK_352
-      - Relay_🇨🇳CN-🇭🇰HK_358
-      - Relay_🇨🇳CN-🇭🇰HK_349
-      - Relay_🇨🇳CN-🇭🇰HK_379
-      - Relay_🇨🇳CN-🇭🇰HK_350
-      - SG_923
-      - NONE
-      - NONE 2
-      - 426未名站_1259
-      - 426未名站_626
-      - US_215
-      - 426未名站_1268
-      - 426未名站_835
-      - 【426节点池】DE_470
+      - Relay_🇯🇵JP-🇯🇵JP_942
+      - US_2303
       - US_1982
-      - 426未名站_1271
-      - 【426节点池】CA_188
-      - 426未名站_1224
-      - 426未名站_1266
-      - 426未名站_840
-      - US_2432
-      - 426未名站_841
-      - 【426节点池】DE_477
-      - Relay_🇪🇪EE-🇯🇵JP_475
-      - 【426节点池】DE_463
-      - 426未名站_882
-      - Relay_🇨🇳CN-🇭🇰HK_371
-      - 117.28.243.220:8186
-      - Relay_🇺🇸US-🇺🇸US_3273
-      - 426未名站_1214
-      - 426未名站_805
-      - Relay_🇺🇸US-🇺🇸US_3265
-      - 【426节点池】US_3491
-      - 426未名站_833
-      - 426未名站_997
-      - 426未名站_968
-      - 【426节点池】CA_234
-      - 【426节点池】IN_1802
-      - 【426节点池】IN_1768
-      - 【426节点池】CA_292
-      - 426未名站_1207
+      - 【426节点池】CA_164
+      - 【426节点池】DE_413
+      - 【426节点池】CA_223
+      - 【426节点池】DE_411
+      - 【426节点池】CA_179
       - US_236
+      - 【426节点池】US_3491
+      - 【426节点池】DE_412
       - 【426节点池】US_3644
+      - 【426节点池】CA_296
+      - 【426节点池】IN_1802
+      - 51.38.112.84:44
+      - 426未名站_846
+      - 【426节点池】IN_1689
+      - 426未名站_914
+      - 【426节点池】CA_159
+      - JP_951
+      - 【426节点池】IN_1720
+      - 【426节点池】CA_161
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
