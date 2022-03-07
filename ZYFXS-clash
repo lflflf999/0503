@@ -5,359 +5,363 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_899 | 3.73Mb, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: CN_353 | 9.40Mb, server: gy.xqcloud.net, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
-  - {name: US_1213 |27.72Mb, server: 38.143.66.71, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2915 |33.41Mb, server: 45.9.10.103, port: 443, type: trojan, password: WpfQAbO2wg, skip-cert-verify: true, udp: true}
-  - {name: CN_395 | 3.71Mb, server: 117.28.243.173, port: 2173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: IR_824 |30.74Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: CN_375 | 3.03Mb, server: 117.28.243.173, port: 4173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: CN_392 | 8.37Mb, server: 117.28.243.154, port: 6150, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: CN_397 |10.07Mb, server: 117.28.243.165, port: 8051, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: HK_705 |24.20Mb, server: 18.163.73.125, port: 10123, type: vmess, uuid: 9c0d7058-45b7-49ad-802e-55b69a8dfb01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.163.73.125}, udp: true}
+  - {name: JP_909 | 5.60Mb, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: ZZ_3129+|29.83Mb, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_3130+|27.92Mb, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_3066+|29.29Mb, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CN_375+|+3.03Mb, server: 117.28.243.173, port: 4173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: US_1232 |29.04Mb, server: 154.17.0.117, port: 54080, type: vmess, uuid: 2ba66a53-87a5-47eb-bb27-b2d2c4833a32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 154.17.0.117}, udp: true}
+  - {name: US_1189+|13.06Mb, server: 38.143.66.71, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CN_394+|+7.10Mb, server: 117.28.243.220, port: 8254, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
   - {name: US_2812, server: 138.197.236.77, port: 443, type: vmess, uuid: 3579436c-b37e-11eb-8529-0242ac130003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 138.197.236.77}, udp: true}
-  - {name: ZZ_3656 |41.66Mb, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1230 |41.46Mb, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
-  - {name: ZZ_3679 | 3.60Mb, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_3438 |34.59Mb, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: JP_825 | 7.35Mb, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
-  - {name: ZZ_3659 |46.49Mb, server: 134.195.196.12, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_2537 | 3.00Mb, server: 107.148.211.118, port: 8450, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: ZZ_2927 |39.74Mb, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CN_354 | 7.70Mb, server: gy.xqcloud.net, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
-  - {name: CN_378 |16.62Mb, server: gy.xqcloud.net, port: 31011, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
-  - {name: ZZ_2918 |24.39Mb, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CN_401 | 2.06Mb, server: s3.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: CN_402 | 2.85Mb, server: s2.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: ZZ_3361 |10.23Mb, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3563 | 6.24Mb, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_3407 |18.58Mb, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2931 |24.67Mb, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3016 | 4.91Mb, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3093 | 6.41Mb, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2932 |16.87Mb, server: 134.195.196.12, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_2930 |26.60Mb, server: 134.195.196.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_3199 | 3.90Mb, server: 134.195.196.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_3664 |50.03Mb, server: 134.195.196.12, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_3557 | 7.90Mb, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3634 |20.32Mb, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: ZZ_3564 | 3.49Mb, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_3657 |45.14Mb, server: 134.195.196.12, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_3661 |43.50Mb, server: 134.195.196.12, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_3350 |38.16Mb, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3655 |19.28Mb, server: 134.195.196.12, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN_380 | 2.80Mb, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
-  - {name: ZZ_3654 |19.31Mb, server: 134.195.196.12, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3665 |17.83Mb, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ_3637 |20.31Mb, server: 134.195.196.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: ZZ_2921 |39.49Mb, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_3663 |19.36Mb, server: 134.195.196.12, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3565 |11.34Mb, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2533 |43.21Mb, server: 38.91.100.102, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2933 |30.34Mb, server: 134.195.196.12, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2952 | 0.72Mb, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2944 | 3.00Mb, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3207 | 3.84Mb, server: 134.195.196.187, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_2936 |20.20Mb, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_3680 |47.21Mb, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_3077 |12.68Mb, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_3467 |12.85Mb, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_3559 | 5.93Mb, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_3666 |17.19Mb, server: 134.195.196.12, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_3548 | 6.62Mb, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2945 | 0.50Mb, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3208 | 1.10Mb, server: 134.195.196.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_3413 |28.72Mb, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_3351 | 5.94Mb, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_3551 | 2.41Mb, server: 134.195.196.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ_3558 | 6.53Mb, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2948 | 0.60Mb, server: 169.197.142.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_3556 |11.01Mb, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: SG_1033 |19.00Mb, server: 172.104.168.83, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_3560 | 7.14Mb, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2957 | 0.35Mb, server: 169.197.142.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_3168 | 7.06Mb, server: 134.195.196.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2950 | 1.33Mb, server: 169.197.142.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2954 | 2.92Mb, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_3670 |14.91Mb, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_2956 | 0.33Mb, server: 169.197.142.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_3698+|+1.76Mb, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: JP_832 | 7.35Mb, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
+  - {name: US_2537+|+3.00Mb, server: 107.148.211.118, port: 8450, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: US_1241 | 5.28Mb, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
   - {name: US_1233 |173.41Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: ZZ_3210 | 5.61Mb, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_3206 | 7.79Mb, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_3350 |11.41Mb, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_3635 |28.72Mb, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_3279 |22.68Mb, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_3363 | 0.56Mb, server: 169.197.142.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_3365 | 0.28Mb, server: 169.197.142.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_2968 |120.50Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
+  - {name: US_2529+|43.21Mb, server: 38.91.100.102, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_3683+|+3.60Mb, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CN_390+|+6.28Mb, server: 117.28.243.165, port: 8050, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: ZZ_3052+|37.87Mb, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1230 |25.51Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: ZZ_2932+|10.47Mb, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ZZ_2922+|+2.77Mb, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CN_397 |10.07Mb, server: 117.28.243.165, port: 8051, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: ZZ_3321+|+1.07Mb, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_3324+|+5.84Mb, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2706+|+1.02Mb, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_2969 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
+  - {name: ZZ_3366+|+0.28Mb, server: 169.197.142.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_3318+|+2.72Mb, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_2944+|+3.00Mb, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3093+|+6.41Mb, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_3361+|10.23Mb, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_2923+|+0.07Mb, server: 134.195.196.68, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: JP_910 | 7.06Mb, server: jp-do-zz.licom.ga, port: 27373, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: jp-do-zz.licom.ga, skip-cert-verify: true, udp: true}
+  - {name: CN_391+|+2.80Mb, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: ZZ_3566+|62.84Mb, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN_402 | 2.85Mb, server: s2.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: ZZ_3531+|+1.82Mb, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ZZ_3560+|11.01Mb, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_2944+|+2.40Mb, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_2920+|+2.04Mb, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_3405+|+6.51Mb, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ZZ_3559+|+5.93Mb, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_3529+|+0.88Mb, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ZZ_3560+|+7.14Mb, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_2951+|+0.72Mb, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3327+|+2.42Mb, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_3563+|+6.24Mb, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_2944+|+0.51Mb, server: 169.197.142.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_3636+|29.05Mb, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_3352+|+5.94Mb, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_2935+|+1.61Mb, server: 169.197.142.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_3669+|17.83Mb, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_2486+|11.87Mb, server: 158.101.23.126, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: miaoge110, udp: true}
+  - {name: ZZ_3541+|+2.05Mb, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3637+|20.31Mb, server: 134.195.196.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ZZ_3207+|+3.84Mb, server: 134.195.196.187, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1226 |11.65Mb, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
+  - {name: CN_392+|+5.14Mb, server: 117.28.243.220, port: 8036, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: ZZ_3047+|17.42Mb, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3552+|+6.62Mb, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: JP_837 | 5.92Mb, server: 139.162.67.80, port: 8443, type: trojan, password: Freebaipiao666, skip-cert-verify: true, udp: true}
+  - {name: NL_926+|23.18Mb, server: 85.208.108.90, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_2870 | 5.33Mb, server: 34.220.26.50, port: 8080, type: ssr, cipher: aes-256-cfb, password: vGndzdmPB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: JP_836 | 7.42Mb, server: jp-do-zz.licom.ga, port: 27373, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: jp-do-zz.licom.ga, skip-cert-verify: true, udp: true}
+  - {name: NL_933+|13.66Mb, server: 85.208.110.138, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_3206+|+7.79Mb, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CN_401 | 2.06Mb, server: s3.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: CN_392+|+8.37Mb, server: 117.28.243.154, port: 6150, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: JP_835 | 2.94Mb, server: xmlinodejp2.aifx.eu.org, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
+  - {name: ZZ_3631+|24.86Mb, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ZZ_3407+|18.58Mb, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_3536+|+6.26Mb, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ZZ_3670+|28.64Mb, server: 134.195.196.187, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: JP_897 | 0.04Mb, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ZZ_2973+|+1.33Mb, server: 169.197.142.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ZZ_2957+|+0.35Mb, server: 169.197.142.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: DE_436+|+7.43Mb, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: US_2892 | 2.63Mb, server: free2.portx.cc, port: 443, type: vmess, uuid: 514e8598-aae2-4c76-a1a7-da12941f8e09, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /af913804-d31a-45e8-9851-a4c5f8013d72, ws-headers: {Host: free2.portx.cc}, udp: true}
+  - {name: JP_882+|16.96Mb, server: 172.104.82.126, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_2867 | 1.49Mb, server: 13.40.124.0, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ZZ_3537+|+0.14Mb, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1230 |41.46Mb, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
+  - {name: ZZ_2933+|+1.82Mb, server: 169.197.142.187, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ZZ_3558+|+6.53Mb, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -376,90 +380,91 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -470,269 +475,272 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -748,90 +756,91 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_899 | 3.73Mb
-      - CN_353 | 9.40Mb
-      - US_1213 |27.72Mb
-      - US_2915 |33.41Mb
-      - CN_395 | 3.71Mb
-      - IR_824 |30.74Mb
-      - CN_375 | 3.03Mb
-      - CN_392 | 8.37Mb
-      - CN_397 |10.07Mb
-      - HK_705 |24.20Mb
+      - JP_909 | 5.60Mb
+      - ZZ_3129+|29.83Mb
+      - ZZ_3130+|27.92Mb
+      - ZZ_3066+|29.29Mb
+      - CN_375+|+3.03Mb
+      - US_1232 |29.04Mb
+      - US_1189+|13.06Mb
+      - CN_394+|+7.10Mb
       - US_2812
-      - ZZ_3656 |41.66Mb
-      - US_1230 |41.46Mb
-      - ZZ_3679 | 3.60Mb
-      - ZZ_3438 |34.59Mb
-      - JP_825 | 7.35Mb
-      - ZZ_3659 |46.49Mb
-      - US_2537 | 3.00Mb
-      - ZZ_2927 |39.74Mb
-      - CN_354 | 7.70Mb
-      - CN_378 |16.62Mb
-      - ZZ_2918 |24.39Mb
-      - CN_401 | 2.06Mb
-      - CN_402 | 2.85Mb
-      - ZZ_3361 |10.23Mb
-      - ZZ_3563 | 6.24Mb
-      - ZZ_3407 |18.58Mb
-      - ZZ_2931 |24.67Mb
-      - ZZ_3016 | 4.91Mb
-      - ZZ_3093 | 6.41Mb
-      - ZZ_2932 |16.87Mb
-      - ZZ_2930 |26.60Mb
-      - ZZ_3199 | 3.90Mb
-      - ZZ_3664 |50.03Mb
-      - ZZ_3557 | 7.90Mb
-      - ZZ_3634 |20.32Mb
-      - ZZ_3564 | 3.49Mb
-      - ZZ_3657 |45.14Mb
-      - ZZ_3661 |43.50Mb
-      - ZZ_3350 |38.16Mb
-      - ZZ_3655 |19.28Mb
-      - CN_380 | 2.80Mb
-      - ZZ_3654 |19.31Mb
-      - ZZ_3665 |17.83Mb
-      - ZZ_3637 |20.31Mb
-      - ZZ_2921 |39.49Mb
-      - ZZ_3663 |19.36Mb
-      - ZZ_3565 |11.34Mb
-      - US_2533 |43.21Mb
-      - ZZ_2933 |30.34Mb
-      - ZZ_2952 | 0.72Mb
-      - ZZ_2944 | 3.00Mb
-      - ZZ_3207 | 3.84Mb
-      - ZZ_2936 |20.20Mb
-      - ZZ_3680 |47.21Mb
-      - ZZ_3077 |12.68Mb
-      - ZZ_3467 |12.85Mb
-      - ZZ_3559 | 5.93Mb
-      - ZZ_3666 |17.19Mb
-      - ZZ_3548 | 6.62Mb
-      - ZZ_2945 | 0.50Mb
-      - ZZ_3208 | 1.10Mb
-      - ZZ_3413 |28.72Mb
-      - ZZ_3351 | 5.94Mb
-      - ZZ_3551 | 2.41Mb
-      - ZZ_3558 | 6.53Mb
-      - ZZ_2948 | 0.60Mb
-      - ZZ_3556 |11.01Mb
-      - SG_1033 |19.00Mb
-      - ZZ_3560 | 7.14Mb
-      - ZZ_2957 | 0.35Mb
-      - ZZ_3168 | 7.06Mb
-      - ZZ_2950 | 1.33Mb
-      - ZZ_2954 | 2.92Mb
-      - ZZ_3670 |14.91Mb
-      - ZZ_2956 | 0.33Mb
+      - ZZ_3698+|+1.76Mb
+      - JP_832 | 7.35Mb
+      - US_2537+|+3.00Mb
+      - US_1241 | 5.28Mb
       - US_1233 |173.41Mb
-      - ZZ_3210 | 5.61Mb
-      - ZZ_3206 | 7.79Mb
-      - ZZ_3350 |11.41Mb
-      - ZZ_3635 |28.72Mb
-      - ZZ_3279 |22.68Mb
-      - ZZ_3363 | 0.56Mb
-      - ZZ_3365 | 0.28Mb
+      - ZZ_2968 |120.50Mb
+      - US_2529+|43.21Mb
+      - ZZ_3683+|+3.60Mb
+      - CN_390+|+6.28Mb
+      - ZZ_3052+|37.87Mb
+      - US_1230 |25.51Mb
+      - ZZ_2932+|10.47Mb
+      - ZZ_2922+|+2.77Mb
+      - CN_397 |10.07Mb
+      - ZZ_3321+|+1.07Mb
+      - ZZ_3324+|+5.84Mb
+      - US_2706+|+1.02Mb
+      - ZZ_2969 |119.12Mb
+      - ZZ_3366+|+0.28Mb
+      - ZZ_3318+|+2.72Mb
+      - ZZ_2944+|+3.00Mb
+      - ZZ_3093+|+6.41Mb
+      - ZZ_3361+|10.23Mb
+      - ZZ_2923+|+0.07Mb
+      - JP_910 | 7.06Mb
+      - CN_391+|+2.80Mb
+      - ZZ_3566+|62.84Mb
+      - CN_402 | 2.85Mb
+      - ZZ_3531+|+1.82Mb
+      - ZZ_3560+|11.01Mb
+      - ZZ_2944+|+2.40Mb
+      - ZZ_2920+|+2.04Mb
+      - ZZ_3405+|+6.51Mb
+      - ZZ_3559+|+5.93Mb
+      - ZZ_3529+|+0.88Mb
+      - ZZ_3560+|+7.14Mb
+      - ZZ_2951+|+0.72Mb
+      - ZZ_3327+|+2.42Mb
+      - ZZ_3563+|+6.24Mb
+      - ZZ_2944+|+0.51Mb
+      - ZZ_3636+|29.05Mb
+      - ZZ_3352+|+5.94Mb
+      - ZZ_2935+|+1.61Mb
+      - ZZ_3669+|17.83Mb
+      - US_2486+|11.87Mb
+      - ZZ_3541+|+2.05Mb
+      - ZZ_3637+|20.31Mb
+      - ZZ_3207+|+3.84Mb
+      - US_1226 |11.65Mb
+      - CN_392+|+5.14Mb
+      - ZZ_3047+|17.42Mb
+      - ZZ_3552+|+6.62Mb
+      - JP_837 | 5.92Mb
+      - NL_926+|23.18Mb
+      - US_2870 | 5.33Mb
+      - JP_836 | 7.42Mb
+      - NL_933+|13.66Mb
+      - ZZ_3206+|+7.79Mb
+      - CN_401 | 2.06Mb
+      - CN_392+|+8.37Mb
+      - JP_835 | 2.94Mb
+      - ZZ_3631+|24.86Mb
+      - ZZ_3407+|18.58Mb
+      - ZZ_3536+|+6.26Mb
+      - ZZ_3670+|28.64Mb
+      - JP_897 | 0.04Mb
+      - ZZ_2973+|+1.33Mb
+      - ZZ_2957+|+0.35Mb
+      - DE_436+|+7.43Mb
+      - US_2892 | 2.63Mb
+      - JP_882+|16.96Mb
+      - US_2867 | 1.49Mb
+      - ZZ_3537+|+0.14Mb
+      - US_1230 |41.46Mb
+      - ZZ_2933+|+1.82Mb
+      - ZZ_3558+|+6.53Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
