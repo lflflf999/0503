@@ -5,379 +5,436 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 jp-am48-9.eqnode.net:8081, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: AU_253, server: 129.154.50.0, port: 29363, type: vmess, uuid: c71ba6b4-98c0-4e7c-b8a1-4b074a44933c, alterId: 0, cipher: auto, tls: false}
-  - {name: Relay_🇨🇦 CA-🇨🇦CA_345, server: 0306jp08.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0306jp08.fans8.xyz}}}
-  - {name: gz1.52168.xyz:1115, server: gz1.52168.xyz, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com}
-  - {name: 🇸🇬 SG_1270, server: 139.162.29.186, port: 54869, type: trojan, password: HqNAQ9UBJN, skip-cert-verify: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309, server: gz1.52168.xyz, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com}
-  - {name: 🇺🇸 Relay_-🇺🇸US_227, server: azure-f4s-hk-1.forwardserver.xyz, port: 49242, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}}
-  - {name: cmrelay01.yiyorelay.xyz:4002, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.co%%�}
-  - {name: 🇺🇸 US_1157, server: 167.88.63.89, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: CA_207, server: 198.57.27.188, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: CA_209, server: 198.57.27.188, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: CA_210, server: 198.57.27.188, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 US_1515, server: 167.88.63.89, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: CA_220, server: 198.57.27.188, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: CA_211, server: 198.57.27.188, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 Relay_-🇭🇰HK_231, server: iepl04.zerohost.live, port: 11003, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: iepl04.zerohost.live}}}
-  - {name: CA_252, server: 198.57.27.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: ZZ_3065, server: 134.195.196.81, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: CA_204, server: 198.57.27.188, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: CA_206, server: 198.57.27.188, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 136.243.191.85:443, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 US_1112, server: 142.202.48.105, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: ZZ_2922, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: ZZ_2145, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 US_2226, server: 172.104.207.140, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_2146, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: Relay_🏁 ZZ-🏁ZZ_3337, server: 0306hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0306hk01.fans8.xyz}}}
-  - {name: ZZ_3207, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇯🇵 JP_792 |10.00Mb, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 172.105.222.98}}}
-  - {name: ZZ_2296, server: 134.195.196.81, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: gz2.52168.xyz:2106, server: gz2.52168.xyz, port: 2106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com}
-  - {name: 🇺🇸 Relay_-🇺🇸US_229, server: iepl04.zerohost.live, port: 11017, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: iepl04.zerohost.live}}}
-  - {name: 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247, server: 39.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 39.earths.team, skip-cert-verify: true}
-  - {name: 🇨🇳 Relay_-🇹🇼TW_217, server: iepl02.zerohost.live, port: 11018, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: iepl02.zerohost.live}}}
-  - {name: ZZ_2165, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: ZZ_2162, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1172 |13.00Mb, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true}
-  - {name: ZZ_2140, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Relay_🇨🇦 CA-🇨🇦CA_347, server: 0306hk05.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0306hk05.fans8.xyz}}}
-  - {name: 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112, server: V2-NODE-3.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: 122b9200-c5e0-4003-836c-973eef59b6b2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: V2-NODE-3.GFWAIRPORT.NET}}}
-  - {name: 🇯🇵 JP_681, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true}
-  - {name: ZZ_2593, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 117.28.242.137:9359, server: 117.28.242.137, port: 9359, type: ss, cipher: aes-256-cfb, password: !<str> 73117962}
-  - {name: 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894, server: azure-f4s-hk-1.forwardserver.xyz, port: 30585, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}}
-  - {name: ZZ_2467, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_2508, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇸🇬 Pool_🇸🇬SG_812, server: 202.61.141.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: 202.61.141.130}}}
-  - {name: ZZ_2677, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896, server: azure-f4s-hk-1.forwardserver.xyz, port: 32434, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}}
-  - {name: ZZ_2176, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 Relay_-🇺🇸US_246, server: iepl02.zerohost.live, port: 11015, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: iepl02.zerohost.live}}}
-  - {name: 🇯🇵 jp-am48-9.eqnode.net:8081 2, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305, server: gz2.52168.xyz, port: 2107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com}
-  - {name: Relay_🇫🇷FR-🇱🇺LU_512, server: s4.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s4.upyun.online, skip-cert-verify: true}
-  - {name: ZZ_2268, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: ZZ_3197, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: ZZ_2196, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930, server: azure-f4s-hk-1.forwardserver.xyz, port: 41955, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}}
-  - {name: ZZ_3484, server: 134.195.196.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 Relay_-🇺🇸US_222, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: a413b1be-ae8c-40a3-afd6-25fd152cd45f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: bi.oracleusa.ml}}}
-  - {name: ZZ_2700_14.18Mb, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 13.215.51.22:8181, server: 13.215.51.22, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.co%%�}
-  - {name: 🇸🇬 sg-am11.eqnode.net:8181, server: sg-am11.eqnode.net, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.co%%�}
-  - {name: ZZ_2565, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: ZZ_2621, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: fr-am1-1.eqsunshine.com:8181, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: fr-am1-1.eqsunshine.com:8181 2, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb, server: 117.28.243.220, port: 8147, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: FR_488, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: ZZ_2620, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362, server: 117.28.243.220, port: 8223, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: ZZ_3493, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: fr-am1-1.eqsunshine.com:8181 3, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: Relay__ 7.84Mb, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb, server: 117.28.243.220, port: 8221, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546, server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 US_2005, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: FR_615, server: 51.255.66.185, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: _83, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350, server: s2.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s2.upyun.online, skip-cert-verify: true}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: ZZ_2144, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: ZZ_2564, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349, server: 117.28.243.141, port: 6112, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_463, server: g9.gs1024.com, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: gz2.52168.xyz:2106, server: gz2.52168.xyz, port: 2106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: gz2.52168.xyz:2107, server: gz2.52168.xyz, port: 2107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: gz2.52168.xyz:2109, server: gz2.52168.xyz, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Relay_-🇭🇰HK_231, server: iepl04.zerohost.live, port: 11003, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_474, server: g6.gs1024.com, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g6.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_307, server: gz2.52168.xyz, port: 2106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Relay_-🇺🇸US_229, server: iepl04.zerohost.live, port: 11017, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
+  - {name: Relay_-🇺🇸US_246, server: iepl02.zerohost.live, port: 11015, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇪SE_465, server: jp.gs1024.com, port: 21230, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: jp.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇭🇰HK_223, server: iepl02.zerohost.live, port: 11001, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: CN_602, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: Relay_🇨🇳 CN-🇺🇸US_561, server: 119.147.2.248, port: 50581, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 119.147.2.248}, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_472, server: g9.gs1024.com, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: CN_407, server: 116.162.14.197, port: 63152, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.14.197}, udp: true}
+  - {name: AU_142, server: www.ggchk.ga, port: 443, type: trojan, password: 4ae98d26-b209-4dd5-8e91-bf11d4f10801, sni: www.ggchk.ga, skip-cert-verify: true, udp: true}
+  - {name: CN_328, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇺🇸US_567, server: 119.147.2.248, port: 36553, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 119.147.2.248}, udp: true}
+  - {name: gz1.52168.xyz:1116, server: gz1.52168.xyz, port: 1116, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: gz1.52168.xyz:1115, server: gz1.52168.xyz, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_309, server: gz1.52168.xyz, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_1594, server: usaarm1.oracleusa.ml, port: 980, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: US_1176 | 7.76Mb, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
+  - {name: CN_406, server: iepl02.zerohost.live, port: 11006, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: US_1609, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1071, server: 142.202.48.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_1608, server: awsmx.xiaomai.my03.com, port: 11051, type: vmess, uuid: 88708134-0fc1-444f-ae1d-1c11433dadf3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: awsmx.xiaomai.my03.com}, udp: true}
+  - {name: US_1710, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: SG_1270, server: 139.162.29.186, port: 54869, type: trojan, password: HqNAQ9UBJN, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇦UA_310, server: gz1.52168.xyz, port: 1116, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: CN_407 2, server: 116.162.14.197, port: 63152, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.14.197}, udp: true}
+  - {name: gz1.52168.xyz:1115 2, server: gz1.52168.xyz, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Relay_-🇺🇸US_219, server: iepl02.zerohost.live, port: 11006, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: US_1558, server: 38.91.102.86, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_479, server: jp.gs1024.com, port: 21231, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: jp.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: US_1168 |109.21Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _83, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: cmrelay01.yiyorelay.xyz:3708, server: cmrelay01.yiyorelay.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.co%%�, udp: true}
+  - {name: ZZ_2986, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_403, server: iepl02.zerohost.live, port: 11010, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: ZZ_3532 | 4.44Mb, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Relay_-🇹🇼TW_217, server: iepl02.zerohost.live, port: 11018, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: Relay_-🇯🇵JP_220, server: iepl02.zerohost.live, port: 11010, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: ZZ_2990, server: 134.195.196.81, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_1587, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: Relay_🇨🇳CN-🇱🇺LU_351, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: ZZ_984 | 0.63Mb, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_3254, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb, server: 117.28.243.220, port: 8147, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: ZZ_2153, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ZZ_2144, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: AU_137, server: 172.105.187.158, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: jp-am48-9.eqnode.net:8081, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_2369, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
+  - {name: ca-am3.eqnode.net:8080, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: jp-am48-9.eqnode.net:8081 2, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: us-am11.eqnode.net:8080, server: us-am11.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: vGndzdmPB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_679, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇨🇦CA-🇨🇦CA_248, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ca-am3.eqnode.net:8080 2, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ZZ_2176, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: jp-am48-9.eqnode.net:8081 3, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🏁 ZZ-🏁ZZ_3337, server: 0306hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0306hk01.fans8.xyz}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3247, server: 39.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 39.earths.team, skip-cert-verify: true, udp: true}
+  - {name: US_1172 |13.00Mb, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
+  - {name: GB_332 | 5.47Mb, server: 145.239.7.164, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_2796, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: uk-am3-5.eqsunshine.com:8181, server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ZZ_953 | 0.48Mb, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2840, server: 13.40.124.0, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 13.40.124.0:8181, server: 13.40.124.0, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: GB_331 | 5.28Mb, server: 145.239.7.164, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: sy-am2.eqsunshine.com:443, server: sy-am2.eqsunshine.com, port: 443, type: ssr, cipher: aes-256-cfb, password: Jz8r4gLNP, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ZZ_3001, server: 0306hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0306hk01.fans8.xyz}, udp: true}
+  - {name: ZZ_2162, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_288, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_285, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: Relay_🇨🇳 CN-🇺🇸US_565, server: 180.163.152.61, port: 50497, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 180.163.152.61}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - Relay_🇨🇳CN-🇸🇬SG_463
+      - gz2.52168.xyz:2106
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
+      - _83
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
+      - ZZ_2144
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
+  - name: ⛔️ 广告拦截
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
+  - name: 🚫 运营劫持
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -388,284 +445,254 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -681,95 +708,85 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 jp-am48-9.eqnode.net:8081
-      - AU_253
-      - Relay_🇨🇦 CA-🇨🇦CA_345
-      - gz1.52168.xyz:1115
-      - 🇸🇬 SG_1270
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_343
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_309
-      - 🇺🇸 Relay_-🇺🇸US_227
-      - cmrelay01.yiyorelay.xyz:4002
-      - 🇺🇸 US_1157
-      - CA_207
-      - CA_209
-      - CA_210
-      - 🇺🇸 US_1515
-      - CA_220
-      - CA_211
-      - 🇭🇰 Relay_-🇭🇰HK_231
-      - CA_252
-      - ZZ_3065
-      - CA_204
-      - CA_206
-      - 136.243.191.85:443
-      - 🇺🇸 US_1112
-      - ZZ_2922
-      - ZZ_2145
-      - 🇺🇸 US_2226
-      - ZZ_2146
-      - Relay_🏁 ZZ-🏁ZZ_3337
-      - ZZ_3207
-      - 🇯🇵 JP_792 |10.00Mb
-      - ZZ_2296
+      - Relay_🇨🇳CN-🇸🇬SG_463
       - gz2.52168.xyz:2106
-      - 🇺🇸 Relay_-🇺🇸US_229
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_908
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_679
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3247
-      - 🇨🇳 Relay_-🇹🇼TW_217
-      - ZZ_2165
-      - ZZ_2162
-      - 🇺🇸 US_1172 |13.00Mb
-      - ZZ_2140
-      - Relay_🇨🇦 CA-🇨🇦CA_347
-      - 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_1112
-      - 🇯🇵 JP_681
-      - ZZ_2593
-      - 117.28.242.137:9359
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_894
-      - ZZ_2467
-      - ZZ_2508
-      - 🇸🇬 Pool_🇸🇬SG_812
-      - ZZ_2677
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_896
-      - ZZ_2176
-      - 🇺🇸 Relay_-🇺🇸US_246
-      - 🇯🇵 jp-am48-9.eqnode.net:8081 2
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇫🇷FR-🇱🇺LU_512
-      - ZZ_2268
-      - ZZ_3197
-      - ZZ_2196
-      - 🇺🇸 Relay_🇭🇰 HK-🇺🇸US_930
-      - ZZ_3484
-      - 🇺🇸 Relay_-🇺🇸US_222
-      - ZZ_2700_14.18Mb
-      - 13.215.51.22:8181
-      - 🇸🇬 sg-am11.eqnode.net:8181
-      - ZZ_2565
-      - ZZ_2621
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
-      - fr-am1-1.eqsunshine.com:8181
-      - fr-am1-1.eqsunshine.com:8181 2
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
-      - FR_488
-      - ZZ_2620
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_362
-      - ZZ_3493
-      - fr-am1-1.eqsunshine.com:8181 3
-      - Relay__ 7.84Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇨🇦CA_330_ 1.58Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_288
-      - 🇺🇸 Relay_🇬🇧GB-🇺🇸US_546
-      - 🇺🇸 US_2005
-      - FR_615
+      - gz2.52168.xyz:2107
+      - gz2.52168.xyz:2109
+      - Relay_-🇭🇰HK_231
+      - Relay_🇨🇳CN-🇺🇸US_474
+      - Relay_🇨🇳CN-🇺🇸US_307
+      - Relay_-🇺🇸US_229
+      - Relay_-🇺🇸US_246
+      - Relay_🇨🇳CN-🇸🇪SE_465
+      - Relay_-🇭🇰HK_223
+      - CN_602
+      - Relay_🇨🇳 CN-🇺🇸US_561
+      - Relay_🇨🇳CN-🇸🇬SG_472
+      - CN_407
+      - AU_142
+      - CN_328
+      - Relay_🇨🇳 CN-🇺🇸US_567
+      - gz1.52168.xyz:1116
+      - gz1.52168.xyz:1115
+      - Relay_🇨🇳CN-🇺🇸US_309
+      - Relay_🇺🇸 US-🇺🇸US_1594
+      - US_1176 | 7.76Mb
+      - CN_406
+      - US_1609
+      - US_1071
+      - Relay_🇺🇸 US-🇺🇸US_1608
+      - US_1710
+      - SG_1270
+      - Relay_🇨🇳CN-🇺🇦UA_310
+      - CN_407 2
+      - gz1.52168.xyz:1115 2
+      - Relay_-🇺🇸US_219
+      - US_1558
+      - Relay_🇨🇳CN-🇺🇸US_479
+      - US_1168 |109.21Mb
       - _83
-      - 🇨🇳 Relay_🇨🇳CN-🇱🇺LU_350
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_285
+      - cmrelay01.yiyorelay.xyz:3708
+      - ZZ_2986
+      - CN_403
+      - ZZ_3532 | 4.44Mb
+      - Relay_-🇹🇼TW_217
+      - Relay_-🇯🇵JP_220
+      - ZZ_2990
+      - Relay_🇺🇸 US-🇺🇸US_1587
+      - Relay_🇨🇳CN-🇹🇼TW_296_ 1.19Mb
+      - Relay_🇨🇳CN-🇱🇺LU_351
+      - ZZ_984 | 0.63Mb
+      - US_3254
+      - Relay_🇨🇳CN-🇮🇳IN_297_ 1.56Mb
+      - ZZ_2153
       - ZZ_2144
-      - ZZ_2564
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_349
+      - AU_137
+      - jp-am48-9.eqnode.net:8081
+      - US_2369
+      - ca-am3.eqnode.net:8080
+      - jp-am48-9.eqnode.net:8081 2
+      - us-am11.eqnode.net:8080
+      - Relay_🇯🇵JP-🇯🇵JP_679
+      - Relay_🇨🇦CA-🇨🇦CA_248
+      - ca-am3.eqnode.net:8080 2
+      - ZZ_2176
+      - jp-am48-9.eqnode.net:8081 3
+      - Relay_🏁 ZZ-🏁ZZ_3337
+      - Relay_🇺🇸US-🇺🇸US_3247
+      - US_1172 |13.00Mb
+      - GB_332 | 5.47Mb
+      - ZZ_2796
+      - uk-am3-5.eqsunshine.com:8181
+      - ZZ_953 | 0.48Mb
+      - US_2840
+      - 13.40.124.0:8181
+      - GB_331 | 5.28Mb
+      - sy-am2.eqsunshine.com:443
+      - ZZ_3001
+      - ZZ_2162
+      - Relay_🇨🇳CN-🇸🇬SG_288
+      - Relay_🇨🇳CN-🇸🇬SG_285
+      - Relay_🇨🇳 CN-🇺🇸US_565
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9760,6 +9777,37 @@ rules:
  - DOMAIN-SUFFIX,yuanchengxiezuo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zbrushcn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhzzx.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🎥 NETFLIX
+ - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
+ - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,34.210.42.111/32,🎥 NETFLIX,no-resolve
+ - IP-CIDR,52.89.124.203/32,🎥 NETFLIX,no-resolve
+ - IP-CIDR,54.148.37.5/32,🎥 NETFLIX,no-resolve
  - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
