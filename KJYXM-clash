@@ -5,1716 +5,1948 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CA_加拿大_订阅晓猛科技, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 订阅晓猛科技, server: cm.db-link.in, port: 443, type: vmess, uuid: 7cdf5275-cb65-3363-9872-e9aa0d0f53f2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.db-link.in}}, udp: true}
-  - {name: _US_美国_订阅晓猛科技, server: usa.oracleusa.ml, port: 2053, type: vmess, uuid: 928d2df4-6c5e-4274-9af4-b2769ea9dd96, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usa.oracleusa.ml}}, udp: true}
-  - {name: _GB_英国_订阅晓猛科技, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 订阅晓猛科技 2, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技, server: 120.197.85.73, port: 2061, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 2, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 2, server: 120.197.85.73, port: 5016, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 3, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _GB_英国_订阅晓猛科技 2, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 4, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 5, server: 134.195.196.81, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 6, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 7, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国_订阅晓猛科技 2, server: vir2.oracleusa.ml, port: 2053, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vir2.oracleusa.ml}}, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 8, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 9, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 10, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 11, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 12, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 13, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国_订阅晓猛科技 3, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _FR_法国_订阅晓猛科技, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 14, server: 134.195.196.81, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 15, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_订阅晓猛科技 4, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国_订阅晓猛科技 5, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国_订阅晓猛科技 6, server: ru.oracleusa.ml, port: 2053, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ru.oracleusa.ml}}, udp: true}
-  - {name: _US_美国_订阅晓猛科技 7, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 3, server: 120.197.85.73, port: 2065, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 16, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _GB_英国_订阅晓猛科技 3, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 17, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 4, server: 120.197.85.73, port: 2041, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 18, server: 134.195.196.81, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 19, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 订阅晓猛科技 3, server: test.0dc.cn, port: 443, type: vmess, uuid: ebe5703b-c18e-4664-c3a7-9fcf52453898, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: test.0dc.cn}}, udp: true}
-  - {name: _US_美国_订阅晓猛科技 8, server: 142.202.48.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 20, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 21, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 5, server: 120.197.85.73, port: 5012, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _JP_日本_订阅晓猛科技, server: cmi.db-link.in, port: 21153, type: vmess, uuid: 7cdf5275-cb65-3363-9872-e9aa0d0f53f2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cmi.db-link.in}}, udp: true}
-  - {name: _US_美国_订阅晓猛科技 9, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 22, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _FR_法国_订阅晓猛科技 2, server: 51.255.66.185, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国_订阅晓猛科技 10, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: iesei1ei.com}}, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 23, server: 134.195.196.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国_订阅晓猛科技 11, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _US_美国_订阅晓猛科技 12, server: gongyijp1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gongyijp1.yigeweizhuang.com}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 6, server: 120.197.85.73, port: 2092, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 24, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 25, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 26, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 订阅晓猛科技 4, server: sw.gfwglass.tk, port: 443, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sw.gfwglass.tk}}, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 27, server: 134.195.196.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 7, server: 120.197.85.73, port: 5009, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 8, server: 120.197.85.73, port: 2040, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 28, server: 134.195.196.68, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 29, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国_订阅晓猛科技 13, server: 38.143.66.71, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 9, server: 120.197.85.73, port: 2064, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 30, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 31, server: 134.195.196.81, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 32, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 10, server: 120.197.85.73, port: 5010, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 33, server: 134.195.196.81, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 34, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 35, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 11, server: 120.197.85.73, port: 2063, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 36, server: 134.195.196.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 37, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 38, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 39, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 订阅晓猛科技 5, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 98b20eea-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2ray.ifuckgfw.ga}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 12, server: 120.197.85.73, port: 2062, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _US_美国_订阅晓猛科技 14, server: fr.oracleusa.ml, port: 443, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr.oracleusa.ml}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 13, server: 120.197.85.73, port: 5001, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _US_美国_订阅晓猛科技 15, server: sw.oracleusa.ml, port: 2053, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sw.oracleusa.ml}}, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 40, server: 134.195.196.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国_订阅晓猛科技 16, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 14, server: 120.197.85.73, port: 5019, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 41, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _AE_阿联酋_订阅晓猛科技, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: d9d24ce4-7af4-47b6-84a0-6dd13c8a5c8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bi.oracleusa.ml}}, udp: true}
-  - {name: _FR_法国_订阅晓猛科技 3, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 42, server: 134.195.196.187, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国_订阅晓猛科技 4, server: 145.239.7.164, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _FR_法国_订阅晓猛科技 4, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 43, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_订阅晓猛科技 17, server: 158.101.23.126, port: 1149, type: ss, cipher: aes-256-gcm, password: miaoge110, udp: true}
-  - {name: 订阅晓猛科技 6, server: gongyisg1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gongyisg1.yigeweizhuang.com}}, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 44, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 45, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国_订阅晓猛科技 5, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 订阅晓猛科技 7, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cloudflare.a-yu.xyz}}, udp: true}
-  - {name: 订阅晓猛科技 8, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nl.oracleusa.ml}}, udp: true}
-  - {name: _US_美国_订阅晓猛科技 18, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 46, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 47, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _FR_法国_订阅晓猛科技 5, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
-  - {name: _CA_加拿大_订阅晓猛科技 48, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 15, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 16, server: ddos-sb.gcloud.wiki, port: 21017, type: vmess, uuid: 4842b791-8e17-4627-ae25-fb9ace0b06ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 17, server: ddos-sb.gcloud.wiki, port: 21043, type: vmess, uuid: 4842b791-8e17-4627-ae25-fb9ace0b06ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 18, server: ddos-sb.gcloud.wiki, port: 25855, type: vmess, uuid: 4842b791-8e17-4627-ae25-fb9ace0b06ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ddos-sb.gcloud.wiki}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 19, server: 117.28.243.220, port: 8221, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 20, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 21, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 22, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 23, server: ir01.advancedvectorextensions.com, port: 47883, type: ss, cipher: rc4-md5, password: OglqhI, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 24, server: hk34.advancedvectorextensions.com, port: 47883, type: ss, cipher: rc4-md5, password: OglqhI, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 25, server: hk17.advancedvectorextensions.com, port: 47883, type: ss, cipher: rc4-md5, password: OglqhI, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 26, server: hk20.advancedvectorextensions.com, port: 47883, type: ss, cipher: rc4-md5, password: OglqhI, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 27, server: hk28.advancedvectorextensions.com, port: 47883, type: ss, cipher: rc4-md5, password: OglqhI, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 28, server: hk29.advancedvectorextensions.com, port: 47883, type: ss, cipher: rc4-md5, password: OglqhI, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 29, server: 180.163.152.61, port: 49517, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _US_美国_订阅晓猛科技 19, server: usaarm1.oracleusa.ml, port: 980, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usaarm1.oracleusa.ml}}, udp: true}
-  - {name: _AE_阿联酋_订阅晓猛科技 2, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bi.oracleusa.ml}}, udp: true}
-  - {name: _AE_阿联酋_订阅晓猛科技 3, server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uae.oracleusa.ml}}, udp: true}
-  - {name: _HK_香港_订阅晓猛科技, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 30, server: 183.232.56.161, port: 1301, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 31, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 32, server: 183.232.56.161, port: 1202, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 33, server: 117.28.243.220, port: 8147, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 34, server: 183.232.56.161, port: 8004, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 35, server: 183.232.56.161, port: 1612, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 36, server: 183.232.56.161, port: 1101, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 37, server: 183.232.56.161, port: 8003, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 38, server: 183.232.56.161, port: 1952, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 2, server: hk-ms1.checkmails.xyz, port: 62222, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 3, server: hk-ms1.checkmails.xyz, port: 31111, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 4, server: hk-zone.checkmails.xyz, port: 22999, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 5, server: 101.33.125.235, port: 16056, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 6, server: hk-zone.checkmails.xyz, port: 25129, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 7, server: hk-zone.checkmails.xyz, port: 22125, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 8, server: hk-ms4.checkmails.xyz, port: 6619, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 9, server: hk-az2.checkmails.xyz, port: 12222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 10, server: hk-az2.checkmails.xyz, port: 25122, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 11, server: hk-zone.checkmails.xyz, port: 25656, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 12, server: hk-zone.checkmails.xyz, port: 19222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 13, server: hk-zone.checkmails.xyz, port: 29229, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 14, server: hk-az2.checkmails.xyz, port: 52222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 15, server: hk-zone.checkmails.xyz, port: 26522, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 16, server: hk-az2.checkmails.xyz, port: 12999, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 17, server: hk-az2.checkmails.xyz, port: 12929, type: ss, cipher: aes-256-gcm, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 18, server: hk-zone.checkmails.xyz, port: 27127, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 19, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 20, server: hk-zone.checkmails.xyz, port: 25212, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 21, server: hk-zone.checkmails.xyz, port: 25666, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 22, server: hk-azb1.uuuglass.co, port: 61226, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 23, server: hk-azb1.uuuglass.co, port: 21222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本_订阅晓猛科技 2, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 24, server: azure-f4s-hk-1.forwardserver.xyz, port: 41955, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 39, server: 183.232.56.161, port: 1615, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 40, server: 119.147.2.248, port: 49517, type: vmess, uuid: a442002a-aabb-4388-9984-7112b33a9f2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 25, server: azure-f4s-hk-1.forwardserver.xyz, port: 41955, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 26, server: azure-f4s-hk-1.forwardserver.xyz, port: 32434, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 41, server: 122.9.62.9, port: 1002, type: ss, cipher: chacha20-ietf-poly1305, password: a420056c3d197e3c4f6c7f20626f0c9543ebc86172974ef9bdd112043ee8ca02, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 42, server: 122.9.54.162, port: 1027, type: ss, cipher: chacha20-ietf-poly1305, password: 23d4a66a9e97b16f55ecab270da6820093515b366eb1026cea909ffeb244682c, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 43, server: 122.9.54.209, port: 5542, type: ss, cipher: chacha20-ietf-poly1305, password: c4e3e2445d3e03e651e620d3357b7c118417cda4605d4714993075cde9e2ba34, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 44, server: 122.9.62.9, port: 7931, type: ss, cipher: chacha20-ietf-poly1305, password: bbea04c91913a27ab1c04f3aedc2a74e1e47c876898738d7f79938fd20c13b5e, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 45, server: 122.9.54.153, port: 1029, type: ss, cipher: chacha20-ietf-poly1305, password: 8d0bcb875191315e459288411c18c38963d0627e1990a8fa9cc84dd43e6e8050, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 46, server: 122.9.62.52, port: 1027, type: ss, cipher: chacha20-ietf-poly1305, password: 4ff06d2cba70849a0b891027d008f5668da1050f1f491cc774794c16eb4bbd79, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 47, server: 122.9.62.57, port: 1001, type: ss, cipher: chacha20-ietf-poly1305, password: d448c5c3968140fcd5470e035d443c502faa163363b313e01bcbb2c024d2a510, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 48, server: 122.9.62.6, port: 5557, type: ss, cipher: chacha20-ietf-poly1305, password: 5912725b993997cf9a926efaa3827f2363a0edc73744ad39976bcb78bfd2995c, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 49, server: 122.9.62.44, port: 2945, type: ss, cipher: chacha20-ietf-poly1305, password: 2d5559dc1d6c1d3581f4ee327ac93b58359c963da44aa92faef307ee07a11261, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 50, server: iepl-gz.yyuuii.cyou, port: 64112, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 32381:C2pHyiQfgm, obfsparam: ajax.microsoft.com, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 51, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 52, server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 53, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 54, server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 55, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 56, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 57, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_订阅晓猛科技 27, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure-f4s-hk-1.forwardserver.xyz}}, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 58, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 59, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 60, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 61, server: cscu.wecanfly.top, port: 51227, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 62, server: cscu.wecanfly.top, port: 51131, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 63, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 64, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 65, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 66, server: cscu.wecanfly.top, port: 51227, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 67, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 68, server: hygz.doggogogo.top, port: 53030, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 69, server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 70, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾_订阅晓猛科技, server: tw.tcpbbr.net, port: 443, type: trojan, password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 71, server: cscu.wecanfly.top, port: 51210, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 72, server: 122.9.54.75, port: 4132, type: ss, cipher: chacha20-ietf-poly1305, password: a3c206f508a4e15b0c837117af7c73b37f20ad62537f02c18085d05eec48f312, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 73, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 74, server: 117.28.243.141, port: 6112, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 75, server: 117.28.243.220, port: 8223, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 76, server: cscu.wecanfly.top, port: 51210, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 77, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 78, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _SG_新加坡_订阅晓猛科技, server: sg-am11.eqnode.net, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
-  - {name: _CN_中国_订阅晓猛科技 79, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 80, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _JP_日本_订阅晓猛科技 3, server: tky3.ssgnode.ga, port: 443, type: trojan, password: lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本_订阅晓猛科技 4, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 81, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 82, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 83, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 84, server: 117.28.243.220, port: 8223, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 85, server: 117.28.243.220, port: 8221, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 86, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_订阅晓猛科技 87, server: 117.28.243.220, port: 8221, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _JP_日本_订阅晓猛科技 5, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
+  - {name: _HK_订阅晓猛科技_1, server: 23.102.234.10, port: 44288, type: vmess, uuid: 3e14963a-d117-46a2-b76e-05533bff306c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_订阅晓猛科技_2, server: 23.102.234.10, port: 30715, type: vmess, uuid: c75091b3-02d0-4b24-c648-2b0c6d78e76e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_订阅晓猛科技_3, server: 23.102.234.10, port: 10369, type: vmess, uuid: bcc6ac7a-0771-4887-ad24-9fd1e75b3b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_订阅晓猛科技_4, server: 23.102.234.10, port: 32774, type: vmess, uuid: 626c06b6-1a32-46b9-ed86-dbf39382fb5c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _GB_英国_youtube晓猛科技, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 2, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 3, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _FR_法国_youtube晓猛科技, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 4, server: 134.195.196.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 5, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 6, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 7, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国_youtube晓猛科技, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 8, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 9, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_youtube晓猛科技 2, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _GB_英国_youtube晓猛科技 2, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 10, server: 134.195.196.81, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国_youtube晓猛科技 3, server: 104.27.89.125, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 11, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 12, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 13, server: 134.195.196.81, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 14, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_youtube晓猛科技 4, server: 158.101.23.126, port: 80, type: ss, cipher: aes-256-gcm, password: miaoge110, udp: true}
+  - {name: _GB_英国_youtube晓猛科技 3, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 15, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 16, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国_youtube晓猛科技 5, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 17, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国_youtube晓猛科技 6, server: 38.86.135.36, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 18, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 19, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: youtube晓猛科技, server: gongyijp1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gongyijp1.yigeweizhuang.com}}, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 20, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _GB_英国_youtube晓猛科技 4, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 21, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 22, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 23, server: 134.195.196.81, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: youtube晓猛科技 2, server: cm.db-link.in, port: 443, type: vmess, uuid: 9b6dd8ea-fe2e-3508-b099-8e25bdf6b5fe, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.db-link.in}}, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 24, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 25, server: 134.195.196.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 26, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _FR_法国_youtube晓猛科技 2, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _FR_法国_youtube晓猛科技 3, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 27, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 28, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 29, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 30, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _GB_英国_youtube晓猛科技 5, server: 145.239.7.164, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_youtube晓猛科技 7, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 31, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 32, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _GB_英国_youtube晓猛科技 6, server: 145.239.7.164, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 33, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 34, server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 35, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国_youtube晓猛科技 8, server: gongyius1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gongyius1.yigeweizhuang.com}}, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 36, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _IN_印度_youtube晓猛科技, server: 172.105.59.32, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 37, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _FR_法国_youtube晓猛科技 4, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: _US_美国_youtube晓猛科技 9, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usa-dallas.lvuft.com}}, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 38, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 39, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大_youtube晓猛科技 40, server: 134.195.196.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技, server: activity.huawei.daanyht.com, port: 12022, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 2, server: activity.huawei.daanyht.com, port: 12023, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 3, server: activity.huawei.daanyht.com, port: 12024, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 4, server: activity.huawei.daanyht.com, port: 12025, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 5, server: activity.huawei.daanyht.com, port: 12026, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 6, server: activity.huawei.daanyht.com, port: 12027, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 7, server: activity.huawei.daanyht.com, port: 12029, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 8, server: activity.huawei.daanyht.com, port: 12030, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 9, server: activity.huawei.daanyht.com, port: 12031, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 10, server: activity.huawei.daanyht.com, port: 12033, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 11, server: activity.huawei.daanyht.com, port: 12721, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 12, server: activity.huawei.daanyht.com, port: 12722, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 13, server: activity.huawei.daanyht.com, port: 12729, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 14, server: activity.huawei.daanyht.com, port: 12730, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 15, server: activity.huawei.daanyht.com, port: 50227, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 16, server: activity.huawei.daanyht.com, port: 12304, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 17, server: activity.huawei.daanyht.com, port: 12305, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 18, server: activity.huawei.daanyht.com, port: 12306, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 19, server: activity.huawei.daanyht.com, port: 12307, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 20, server: activity.huawei.daanyht.com, port: 12308, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 21, server: activity.huawei.daanyht.com, port: 12309, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 22, server: activity.huawei.daanyht.com, port: 12310, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 23, server: activity.huawei.daanyht.com, port: 12311, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 24, server: activity.huawei.daanyht.com, port: 12412, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 25, server: activity.huawei.daanyht.com, port: 12413, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 26, server: activity.huawei.daanyht.com, port: 12414, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 27, server: activity.huawei.daanyht.com, port: 12415, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 28, server: activity.huawei.daanyht.com, port: 12416, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 29, server: activity.huawei.daanyht.com, port: 12417, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 30, server: activity.huawei.daanyht.com, port: 12418, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 31, server: activity.huawei.daanyht.com, port: 12419, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 32, server: activity.huawei.daanyht.com, port: 12000, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 33, server: activity.huawei.daanyht.com, port: 12001, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 34, server: activity.huawei.daanyht.com, port: 12002, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 35, server: activity.huawei.daanyht.com, port: 12003, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 36, server: activity.huawei.daanyht.com, port: 12004, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 37, server: activity.huawei.daanyht.com, port: 12005, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 38, server: activity.huawei.daanyht.com, port: 12006, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 39, server: activity.huawei.daanyht.com, port: 12007, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 40, server: activity.huawei.daanyht.com, port: 12009, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 41, server: activity.huawei.daanyht.com, port: 12008, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 42, server: activity.huawei.daanyht.com, port: 12110, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 43, server: activity.huawei.daanyht.com, port: 12111, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 44, server: activity.huawei.daanyht.com, port: 12726, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 45, server: activity.huawei.daanyht.com, port: 12728, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 46, server: activity.huawei.daanyht.com, port: 12321, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 47, server: activity.huawei.daanyht.com, port: 12322, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 48, server: activity.huawei.daanyht.com, port: 12323, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 49, server: activity.huawei.daanyht.com, port: 13031, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 50, server: activity.huawei.daanyht.com, port: 12723, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 51, server: activity.huawei.daanyht.com, port: 12727, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 52, server: activity.huawei.daanyht.com, port: 12314, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 53, server: asusjobhr.0064.shuyue521.com, port: 12011, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 54, server: asusjobhr.0064.shuyue521.com, port: 12010, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 55, server: asusjobhr.0064.shuyue521.com, port: 12012, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 56, server: asusjobhr.0064.shuyue521.com, port: 12013, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 57, server: asusjobhr.0064.shuyue521.com, port: 12014, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 58, server: asusjobhr.0064.shuyue521.com, port: 12015, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 59, server: asusjobhr.0064.shuyue521.com, port: 12016, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 60, server: asusjobhr.0064.shuyue521.com, port: 12017, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 61, server: asusjobhr.0064.shuyue521.com, port: 12018, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 62, server: asusjobhr.0064.shuyue521.com, port: 12019, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 63, server: asusjobhr.0064.shuyue521.com, port: 13019, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 64, server: asusjobhr.0064.shuyue521.com, port: 13022, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 65, server: asusjobhr.0064.shuyue521.com, port: 13021, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 66, server: asusjobhr.0064.shuyue521.com, port: 13018, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 67, server: asusjobhr.0064.shuyue521.com, port: 13026, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 68, server: asusjobhr.0064.shuyue521.com, port: 13023, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 69, server: asusjobhr.0064.shuyue521.com, port: 13020, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 70, server: asusjobhr.0064.shuyue521.com, port: 12317, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 71, server: asusjobhr.0064.shuyue521.com, port: 12318, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 72, server: asusjobhr.0064.shuyue521.com, port: 12319, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 73, server: asusjobhr.0064.shuyue521.com, port: 12320, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 74, server: activity.huawei.daanyht.com, port: 12316, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 75, server: activity.huawei.daanyht.com, port: 12700, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 76, server: activity.huawei.daanyht.com, port: 12020, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 77, server: activity.huawei.daanyht.com, port: 12021, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 78, server: activity.huawei.daanyht.com, port: 12300, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 79, server: activity.huawei.daanyht.com, port: 12301, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 80, server: activity.huawei.daanyht.com, port: 12302, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 81, server: activity.huawei.daanyht.com, port: 12303, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 82, server: activity.huawei.daanyht.com, port: 12328, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 83, server: inspurcloud.api.xjshihuifang.com, port: 12708, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 84, server: activity.huawei.daanyht.com, port: 12707, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 85, server: inspurcloud.api.xjshihuifang.com, port: 12600, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 86, server: inspurcloud.api.xjshihuifang.com, port: 12603, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 87, server: activity.huawei.daanyht.com, port: 12720, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 88, server: activity.huawei.daanyht.com, port: 12724, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 89, server: activity.huawei.daanyht.com, port: 12606, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 90, server: inspurcloud.api.xjshihuifang.com, port: 12644, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 91, server: activity.huawei.daanyht.com, port: 12604, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 92, server: activity.huawei.daanyht.com, port: 12605, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 93, server: activity.huawei.daanyht.com, port: 13032, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 94, server: inspurcloud.api.xjshihuifang.com, port: 12602, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 95, server: inspurcloud.api.xjshihuifang.com, port: 12717, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 96, server: activity.huawei.daanyht.com, port: 12400, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 97, server: activity.huawei.daanyht.com, port: 12324, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 98, server: activity.huawei.daanyht.com, port: 12325, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 99, server: activity.huawei.daanyht.com, port: 12326, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 100, server: inspurcloud.api.xjshihuifang.com, port: 12621, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 101, server: inspurcloud.api.xjshihuifang.com, port: 12626, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 102, server: inspurcloud.api.xjshihuifang.com, port: 12627, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 103, server: inspurcloud.api.xjshihuifang.com, port: 12640, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 104, server: inspurcloud.api.xjshihuifang.com, port: 12623, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 105, server: inspurcloud.api.xjshihuifang.com, port: 12619, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 106, server: inspurcloud.api.xjshihuifang.com, port: 12620, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 107, server: inspurcloud.api.xjshihuifang.com, port: 12608, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 108, server: inspurcloud.api.xjshihuifang.com, port: 12610, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 109, server: inspurcloud.api.xjshihuifang.com, port: 12611, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 110, server: inspurcloud.api.xjshihuifang.com, port: 12609, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 111, server: inspurcloud.api.xjshihuifang.com, port: 12607, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 112, server: inspurcloud.api.xjshihuifang.com, port: 12630, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 113, server: inspurcloud.api.xjshihuifang.com, port: 12613, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 114, server: inspurcloud.api.xjshihuifang.com, port: 12615, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 115, server: inspurcloud.api.xjshihuifang.com, port: 12622, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 116, server: inspurcloud.api.xjshihuifang.com, port: 12612, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 117, server: inspurcloud.api.xjshihuifang.com, port: 12034, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 118, server: asusjobhr.0064.shuyue521.com, port: 12327, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 119, server: inspurcloud.api.xjshihuifang.com, port: 12614, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 120, server: inspurcloud.api.xjshihuifang.com, port: 12631, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 121, server: inspurcloud.api.xjshihuifang.com, port: 12629, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 122, server: inspurcloud.api.xjshihuifang.com, port: 12628, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 123, server: inspurcloud.api.xjshihuifang.com, port: 12616, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 124, server: inspurcloud.api.xjshihuifang.com, port: 12618, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 125, server: inspurcloud.api.xjshihuifang.com, port: 12617, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 126, server: inspurcloud.api.xjshihuifang.com, port: 12652, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 127, server: inspurcloud.api.xjshihuifang.com, port: 12625, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 128, server: inspurcloud.api.xjshihuifang.com, port: 12624, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 129, server: inspurcloud.api.xjshihuifang.com, port: 12634, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 130, server: inspurcloud.api.xjshihuifang.com, port: 12646, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 131, server: inspurcloud.api.xjshihuifang.com, port: 12645, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 132, server: inspurcloud.api.xjshihuifang.com, port: 12647, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 133, server: inspurcloud.api.xjshihuifang.com, port: 12654, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 134, server: inspurcloud.api.xjshihuifang.com, port: 12649, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 135, server: inspurcloud.api.xjshihuifang.com, port: 12651, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 136, server: inspurcloud.api.xjshihuifang.com, port: 12650, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 137, server: inspurcloud.api.xjshihuifang.com, port: 12635, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 138, server: inspurcloud.api.xjshihuifang.com, port: 12633, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 139, server: inspurcloud.api.xjshihuifang.com, port: 12641, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 140, server: inspurcloud.api.xjshihuifang.com, port: 12653, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 141, server: inspurcloud.api.xjshihuifang.com, port: 12642, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 142, server: inspurcloud.api.xjshihuifang.com, port: 12643, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 143, server: asusjobhr.0064.shuyue521.com, port: 13005, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 144, server: asusjobhr.0064.shuyue521.com, port: 13006, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 145, server: asusjobhr.0064.shuyue521.com, port: 13007, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 146, server: asusjobhr.0064.shuyue521.com, port: 13008, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 147, server: asusjobhr.0064.shuyue521.com, port: 13009, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 148, server: asusjobhr.0064.shuyue521.com, port: 13010, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 149, server: asusjobhr.0064.shuyue521.com, port: 13011, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 150, server: asusjobhr.0064.shuyue521.com, port: 12705, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 151, server: asusjobhr.0064.shuyue521.com, port: 13012, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 152, server: asusjobhr.0064.shuyue521.com, port: 12706, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 153, server: asusjobhr.0064.shuyue521.com, port: 13000, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 154, server: asusjobhr.0064.shuyue521.com, port: 13001, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 155, server: asusjobhr.0064.shuyue521.com, port: 13002, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 156, server: asusjobhr.0064.shuyue521.com, port: 10140, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 157, server: asusjobhr.0064.shuyue521.com, port: 13004, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 158, server: asusjobhr.0064.shuyue521.com, port: 12704, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 159, server: asusjobhr.0064.shuyue521.com, port: 12719, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 160, server: asusjobhr.0064.shuyue521.com, port: 13013, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 161, server: asusjobhr.0064.shuyue521.com, port: 13014, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 162, server: asusjobhr.0064.shuyue521.com, port: 13016, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 163, server: asusjobhr.0064.shuyue521.com, port: 13015, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 164, server: asusjobhr.0064.shuyue521.com, port: 12715, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 165, server: asusjobhr.0064.shuyue521.com, port: 13050, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 166, server: asusjobhr.0064.shuyue521.com, port: 12720, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 167, server: inspurcloud.api.xjshihuifang.com, port: 12718, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 168, server: activity.huawei.daanyht.com, port: 12036, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 169, server: inspurcloud.api.xjshihuifang.com, port: 12731, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 170, server: inspurcloud.api.xjshihuifang.com, port: 12703, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 171, server: activity.huawei.daanyht.com, port: 12716, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: _CN_中国_YouTube晓猛科技 172, server: inspurcloud.api.xjshihuifang.com, port: 12648, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1737,215 +1969,244 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CA_加拿大_订阅晓猛科技
-      - 订阅晓猛科技
-      - _US_美国_订阅晓猛科技
-      - _GB_英国_订阅晓猛科技
-      - 订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 2
-      - _CN_中国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 3
-      - _GB_英国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 7
-      - _US_美国_订阅晓猛科技 2
-      - _CA_加拿大_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 12
-      - _CA_加拿大_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 3
-      - _FR_法国_订阅晓猛科技
-      - _CA_加拿大_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 15
-      - _US_美国_订阅晓猛科技 4
-      - _US_美国_订阅晓猛科技 5
-      - _US_美国_订阅晓猛科技 6
-      - _US_美国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 16
-      - _GB_英国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 19
-      - 订阅晓猛科技 3
-      - _US_美国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 20
-      - _CA_加拿大_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 5
-      - _JP_日本_订阅晓猛科技
-      - _US_美国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 22
-      - _FR_法国_订阅晓猛科技 2
-      - _US_美国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 23
-      - _US_美国_订阅晓猛科技 11
-      - _US_美国_订阅晓猛科技 12
-      - _CN_中国_订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 24
-      - _CA_加拿大_订阅晓猛科技 25
-      - _CA_加拿大_订阅晓猛科技 26
-      - 订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 7
-      - _CN_中国_订阅晓猛科技 8
-      - _CA_加拿大_订阅晓猛科技 28
-      - _CA_加拿大_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 13
-      - _CN_中国_订阅晓猛科技 9
-      - _CA_加拿大_订阅晓猛科技 30
-      - _CA_加拿大_订阅晓猛科技 31
-      - _CA_加拿大_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 10
-      - _CA_加拿大_订阅晓猛科技 33
-      - _CA_加拿大_订阅晓猛科技 34
-      - _CA_加拿大_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 11
-      - _CA_加拿大_订阅晓猛科技 36
-      - _CA_加拿大_订阅晓猛科技 37
-      - _CA_加拿大_订阅晓猛科技 38
-      - _CA_加拿大_订阅晓猛科技 39
-      - 订阅晓猛科技 5
-      - _CN_中国_订阅晓猛科技 12
-      - _US_美国_订阅晓猛科技 14
-      - _CN_中国_订阅晓猛科技 13
-      - _US_美国_订阅晓猛科技 15
-      - _CA_加拿大_订阅晓猛科技 40
-      - _US_美国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 14
-      - _CA_加拿大_订阅晓猛科技 41
-      - _AE_阿联酋_订阅晓猛科技
-      - _FR_法国_订阅晓猛科技 3
-      - _CA_加拿大_订阅晓猛科技 42
-      - _GB_英国_订阅晓猛科技 4
-      - _FR_法国_订阅晓猛科技 4
-      - _CA_加拿大_订阅晓猛科技 43
-      - _US_美国_订阅晓猛科技 17
-      - 订阅晓猛科技 6
-      - _CA_加拿大_订阅晓猛科技 44
-      - _CA_加拿大_订阅晓猛科技 45
-      - _GB_英国_订阅晓猛科技 5
-      - 订阅晓猛科技 7
-      - 订阅晓猛科技 8
-      - _US_美国_订阅晓猛科技 18
-      - _CA_加拿大_订阅晓猛科技 46
-      - _CA_加拿大_订阅晓猛科技 47
-      - _FR_法国_订阅晓猛科技 5
-      - _CA_加拿大_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 15
-      - _CN_中国_订阅晓猛科技 16
-      - _CN_中国_订阅晓猛科技 17
-      - _CN_中国_订阅晓猛科技 18
-      - _CN_中国_订阅晓猛科技 19
-      - _CN_中国_订阅晓猛科技 20
-      - _CN_中国_订阅晓猛科技 21
-      - _CN_中国_订阅晓猛科技 22
-      - _CN_中国_订阅晓猛科技 23
-      - _CN_中国_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 25
-      - _CN_中国_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 28
-      - _CN_中国_订阅晓猛科技 29
-      - _US_美国_订阅晓猛科技 19
-      - _AE_阿联酋_订阅晓猛科技 2
-      - _AE_阿联酋_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 30
-      - _CN_中国_订阅晓猛科技 31
-      - _CN_中国_订阅晓猛科技 32
-      - _CN_中国_订阅晓猛科技 33
-      - _CN_中国_订阅晓猛科技 34
-      - _CN_中国_订阅晓猛科技 35
-      - _CN_中国_订阅晓猛科技 36
-      - _CN_中国_订阅晓猛科技 37
-      - _CN_中国_订阅晓猛科技 38
-      - _HK_香港_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 3
-      - _HK_香港_订阅晓猛科技 4
-      - _HK_香港_订阅晓猛科技 5
-      - _HK_香港_订阅晓猛科技 6
-      - _HK_香港_订阅晓猛科技 7
-      - _HK_香港_订阅晓猛科技 8
-      - _HK_香港_订阅晓猛科技 9
-      - _HK_香港_订阅晓猛科技 10
-      - _HK_香港_订阅晓猛科技 11
-      - _HK_香港_订阅晓猛科技 12
-      - _HK_香港_订阅晓猛科技 13
-      - _HK_香港_订阅晓猛科技 14
-      - _HK_香港_订阅晓猛科技 15
-      - _HK_香港_订阅晓猛科技 16
-      - _HK_香港_订阅晓猛科技 17
-      - _HK_香港_订阅晓猛科技 18
-      - _HK_香港_订阅晓猛科技 19
-      - _HK_香港_订阅晓猛科技 20
-      - _HK_香港_订阅晓猛科技 21
-      - _HK_香港_订阅晓猛科技 22
-      - _HK_香港_订阅晓猛科技 23
-      - _JP_日本_订阅晓猛科技 2
-      - _HK_香港_订阅晓猛科技 24
-      - _CN_中国_订阅晓猛科技 39
-      - _CN_中国_订阅晓猛科技 40
-      - _HK_香港_订阅晓猛科技 25
-      - _HK_香港_订阅晓猛科技 26
-      - _CN_中国_订阅晓猛科技 41
-      - _CN_中国_订阅晓猛科技 42
-      - _CN_中国_订阅晓猛科技 43
-      - _CN_中国_订阅晓猛科技 44
-      - _CN_中国_订阅晓猛科技 45
-      - _CN_中国_订阅晓猛科技 46
-      - _CN_中国_订阅晓猛科技 47
-      - _CN_中国_订阅晓猛科技 48
-      - _CN_中国_订阅晓猛科技 49
-      - _CN_中国_订阅晓猛科技 50
-      - _CN_中国_订阅晓猛科技 51
-      - _CN_中国_订阅晓猛科技 52
-      - _CN_中国_订阅晓猛科技 53
-      - _CN_中国_订阅晓猛科技 54
-      - _CN_中国_订阅晓猛科技 55
-      - _CN_中国_订阅晓猛科技 56
-      - _CN_中国_订阅晓猛科技 57
-      - _HK_香港_订阅晓猛科技 27
-      - _CN_中国_订阅晓猛科技 58
-      - _CN_中国_订阅晓猛科技 59
-      - _CN_中国_订阅晓猛科技 60
-      - _CN_中国_订阅晓猛科技 61
-      - _CN_中国_订阅晓猛科技 62
-      - _CN_中国_订阅晓猛科技 63
-      - _CN_中国_订阅晓猛科技 64
-      - _CN_中国_订阅晓猛科技 65
-      - _CN_中国_订阅晓猛科技 66
-      - _CN_中国_订阅晓猛科技 67
-      - _CN_中国_订阅晓猛科技 68
-      - _CN_中国_订阅晓猛科技 69
-      - _CN_中国_订阅晓猛科技 70
-      - _TW_台湾_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 71
-      - _CN_中国_订阅晓猛科技 72
-      - _CN_中国_订阅晓猛科技 73
-      - _CN_中国_订阅晓猛科技 74
-      - _CN_中国_订阅晓猛科技 75
-      - _CN_中国_订阅晓猛科技 76
-      - _CN_中国_订阅晓猛科技 77
-      - _CN_中国_订阅晓猛科技 78
-      - _SG_新加坡_订阅晓猛科技
-      - _CN_中国_订阅晓猛科技 79
-      - _CN_中国_订阅晓猛科技 80
-      - _JP_日本_订阅晓猛科技 3
-      - _JP_日本_订阅晓猛科技 4
-      - _CN_中国_订阅晓猛科技 81
-      - _CN_中国_订阅晓猛科技 82
-      - _CN_中国_订阅晓猛科技 83
-      - _CN_中国_订阅晓猛科技 84
-      - _CN_中国_订阅晓猛科技 85
-      - _CN_中国_订阅晓猛科技 86
-      - _CN_中国_订阅晓猛科技 87
-      - _JP_日本_订阅晓猛科技 5
+      - _HK_订阅晓猛科技_1
+      - _HK_订阅晓猛科技_2
+      - _HK_订阅晓猛科技_3
+      - _HK_订阅晓猛科技_4
+      - _CA_加拿大_youtube晓猛科技
+      - _GB_英国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 3
+      - _FR_法国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 7
+      - _US_美国_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 9
+      - _US_美国_youtube晓猛科技 2
+      - _GB_英国_youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 10
+      - _US_美国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 11
+      - _CA_加拿大_youtube晓猛科技 12
+      - _CA_加拿大_youtube晓猛科技 13
+      - _CA_加拿大_youtube晓猛科技 14
+      - _US_美国_youtube晓猛科技 4
+      - _GB_英国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 15
+      - _CA_加拿大_youtube晓猛科技 16
+      - _US_美国_youtube晓猛科技 5
+      - _CA_加拿大_youtube晓猛科技 17
+      - _US_美国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 18
+      - _CA_加拿大_youtube晓猛科技 19
+      - youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 20
+      - _GB_英国_youtube晓猛科技 4
+      - _CA_加拿大_youtube晓猛科技 21
+      - _CA_加拿大_youtube晓猛科技 22
+      - _CA_加拿大_youtube晓猛科技 23
+      - youtube晓猛科技 2
+      - _CA_加拿大_youtube晓猛科技 24
+      - _CA_加拿大_youtube晓猛科技 25
+      - _CA_加拿大_youtube晓猛科技 26
+      - _FR_法国_youtube晓猛科技 2
+      - _FR_法国_youtube晓猛科技 3
+      - _CA_加拿大_youtube晓猛科技 27
+      - _CA_加拿大_youtube晓猛科技 28
+      - _CA_加拿大_youtube晓猛科技 29
+      - _CA_加拿大_youtube晓猛科技 30
+      - _GB_英国_youtube晓猛科技 5
+      - _US_美国_youtube晓猛科技 7
+      - _CA_加拿大_youtube晓猛科技 31
+      - _CA_加拿大_youtube晓猛科技 32
+      - _GB_英国_youtube晓猛科技 6
+      - _CA_加拿大_youtube晓猛科技 33
+      - _CA_加拿大_youtube晓猛科技 34
+      - _CA_加拿大_youtube晓猛科技 35
+      - _US_美国_youtube晓猛科技 8
+      - _CA_加拿大_youtube晓猛科技 36
+      - _IN_印度_youtube晓猛科技
+      - _CA_加拿大_youtube晓猛科技 37
+      - _FR_法国_youtube晓猛科技 4
+      - _US_美国_youtube晓猛科技 9
+      - _CA_加拿大_youtube晓猛科技 38
+      - _CA_加拿大_youtube晓猛科技 39
+      - _CA_加拿大_youtube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技
+      - _CN_中国_YouTube晓猛科技 2
+      - _CN_中国_YouTube晓猛科技 3
+      - _CN_中国_YouTube晓猛科技 4
+      - _CN_中国_YouTube晓猛科技 5
+      - _CN_中国_YouTube晓猛科技 6
+      - _CN_中国_YouTube晓猛科技 7
+      - _CN_中国_YouTube晓猛科技 8
+      - _CN_中国_YouTube晓猛科技 9
+      - _CN_中国_YouTube晓猛科技 10
+      - _CN_中国_YouTube晓猛科技 11
+      - _CN_中国_YouTube晓猛科技 12
+      - _CN_中国_YouTube晓猛科技 13
+      - _CN_中国_YouTube晓猛科技 14
+      - _CN_中国_YouTube晓猛科技 15
+      - _CN_中国_YouTube晓猛科技 16
+      - _CN_中国_YouTube晓猛科技 17
+      - _CN_中国_YouTube晓猛科技 18
+      - _CN_中国_YouTube晓猛科技 19
+      - _CN_中国_YouTube晓猛科技 20
+      - _CN_中国_YouTube晓猛科技 21
+      - _CN_中国_YouTube晓猛科技 22
+      - _CN_中国_YouTube晓猛科技 23
+      - _CN_中国_YouTube晓猛科技 24
+      - _CN_中国_YouTube晓猛科技 25
+      - _CN_中国_YouTube晓猛科技 26
+      - _CN_中国_YouTube晓猛科技 27
+      - _CN_中国_YouTube晓猛科技 28
+      - _CN_中国_YouTube晓猛科技 29
+      - _CN_中国_YouTube晓猛科技 30
+      - _CN_中国_YouTube晓猛科技 31
+      - _CN_中国_YouTube晓猛科技 32
+      - _CN_中国_YouTube晓猛科技 33
+      - _CN_中国_YouTube晓猛科技 34
+      - _CN_中国_YouTube晓猛科技 35
+      - _CN_中国_YouTube晓猛科技 36
+      - _CN_中国_YouTube晓猛科技 37
+      - _CN_中国_YouTube晓猛科技 38
+      - _CN_中国_YouTube晓猛科技 39
+      - _CN_中国_YouTube晓猛科技 40
+      - _CN_中国_YouTube晓猛科技 41
+      - _CN_中国_YouTube晓猛科技 42
+      - _CN_中国_YouTube晓猛科技 43
+      - _CN_中国_YouTube晓猛科技 44
+      - _CN_中国_YouTube晓猛科技 45
+      - _CN_中国_YouTube晓猛科技 46
+      - _CN_中国_YouTube晓猛科技 47
+      - _CN_中国_YouTube晓猛科技 48
+      - _CN_中国_YouTube晓猛科技 49
+      - _CN_中国_YouTube晓猛科技 50
+      - _CN_中国_YouTube晓猛科技 51
+      - _CN_中国_YouTube晓猛科技 52
+      - _CN_中国_YouTube晓猛科技 53
+      - _CN_中国_YouTube晓猛科技 54
+      - _CN_中国_YouTube晓猛科技 55
+      - _CN_中国_YouTube晓猛科技 56
+      - _CN_中国_YouTube晓猛科技 57
+      - _CN_中国_YouTube晓猛科技 58
+      - _CN_中国_YouTube晓猛科技 59
+      - _CN_中国_YouTube晓猛科技 60
+      - _CN_中国_YouTube晓猛科技 61
+      - _CN_中国_YouTube晓猛科技 62
+      - _CN_中国_YouTube晓猛科技 63
+      - _CN_中国_YouTube晓猛科技 64
+      - _CN_中国_YouTube晓猛科技 65
+      - _CN_中国_YouTube晓猛科技 66
+      - _CN_中国_YouTube晓猛科技 67
+      - _CN_中国_YouTube晓猛科技 68
+      - _CN_中国_YouTube晓猛科技 69
+      - _CN_中国_YouTube晓猛科技 70
+      - _CN_中国_YouTube晓猛科技 71
+      - _CN_中国_YouTube晓猛科技 72
+      - _CN_中国_YouTube晓猛科技 73
+      - _CN_中国_YouTube晓猛科技 74
+      - _CN_中国_YouTube晓猛科技 75
+      - _CN_中国_YouTube晓猛科技 76
+      - _CN_中国_YouTube晓猛科技 77
+      - _CN_中国_YouTube晓猛科技 78
+      - _CN_中国_YouTube晓猛科技 79
+      - _CN_中国_YouTube晓猛科技 80
+      - _CN_中国_YouTube晓猛科技 81
+      - _CN_中国_YouTube晓猛科技 82
+      - _CN_中国_YouTube晓猛科技 83
+      - _CN_中国_YouTube晓猛科技 84
+      - _CN_中国_YouTube晓猛科技 85
+      - _CN_中国_YouTube晓猛科技 86
+      - _CN_中国_YouTube晓猛科技 87
+      - _CN_中国_YouTube晓猛科技 88
+      - _CN_中国_YouTube晓猛科技 89
+      - _CN_中国_YouTube晓猛科技 90
+      - _CN_中国_YouTube晓猛科技 91
+      - _CN_中国_YouTube晓猛科技 92
+      - _CN_中国_YouTube晓猛科技 93
+      - _CN_中国_YouTube晓猛科技 94
+      - _CN_中国_YouTube晓猛科技 95
+      - _CN_中国_YouTube晓猛科技 96
+      - _CN_中国_YouTube晓猛科技 97
+      - _CN_中国_YouTube晓猛科技 98
+      - _CN_中国_YouTube晓猛科技 99
+      - _CN_中国_YouTube晓猛科技 100
+      - _CN_中国_YouTube晓猛科技 101
+      - _CN_中国_YouTube晓猛科技 102
+      - _CN_中国_YouTube晓猛科技 103
+      - _CN_中国_YouTube晓猛科技 104
+      - _CN_中国_YouTube晓猛科技 105
+      - _CN_中国_YouTube晓猛科技 106
+      - _CN_中国_YouTube晓猛科技 107
+      - _CN_中国_YouTube晓猛科技 108
+      - _CN_中国_YouTube晓猛科技 109
+      - _CN_中国_YouTube晓猛科技 110
+      - _CN_中国_YouTube晓猛科技 111
+      - _CN_中国_YouTube晓猛科技 112
+      - _CN_中国_YouTube晓猛科技 113
+      - _CN_中国_YouTube晓猛科技 114
+      - _CN_中国_YouTube晓猛科技 115
+      - _CN_中国_YouTube晓猛科技 116
+      - _CN_中国_YouTube晓猛科技 117
+      - _CN_中国_YouTube晓猛科技 118
+      - _CN_中国_YouTube晓猛科技 119
+      - _CN_中国_YouTube晓猛科技 120
+      - _CN_中国_YouTube晓猛科技 121
+      - _CN_中国_YouTube晓猛科技 122
+      - _CN_中国_YouTube晓猛科技 123
+      - _CN_中国_YouTube晓猛科技 124
+      - _CN_中国_YouTube晓猛科技 125
+      - _CN_中国_YouTube晓猛科技 126
+      - _CN_中国_YouTube晓猛科技 127
+      - _CN_中国_YouTube晓猛科技 128
+      - _CN_中国_YouTube晓猛科技 129
+      - _CN_中国_YouTube晓猛科技 130
+      - _CN_中国_YouTube晓猛科技 131
+      - _CN_中国_YouTube晓猛科技 132
+      - _CN_中国_YouTube晓猛科技 133
+      - _CN_中国_YouTube晓猛科技 134
+      - _CN_中国_YouTube晓猛科技 135
+      - _CN_中国_YouTube晓猛科技 136
+      - _CN_中国_YouTube晓猛科技 137
+      - _CN_中国_YouTube晓猛科技 138
+      - _CN_中国_YouTube晓猛科技 139
+      - _CN_中国_YouTube晓猛科技 140
+      - _CN_中国_YouTube晓猛科技 141
+      - _CN_中国_YouTube晓猛科技 142
+      - _CN_中国_YouTube晓猛科技 143
+      - _CN_中国_YouTube晓猛科技 144
+      - _CN_中国_YouTube晓猛科技 145
+      - _CN_中国_YouTube晓猛科技 146
+      - _CN_中国_YouTube晓猛科技 147
+      - _CN_中国_YouTube晓猛科技 148
+      - _CN_中国_YouTube晓猛科技 149
+      - _CN_中国_YouTube晓猛科技 150
+      - _CN_中国_YouTube晓猛科技 151
+      - _CN_中国_YouTube晓猛科技 152
+      - _CN_中国_YouTube晓猛科技 153
+      - _CN_中国_YouTube晓猛科技 154
+      - _CN_中国_YouTube晓猛科技 155
+      - _CN_中国_YouTube晓猛科技 156
+      - _CN_中国_YouTube晓猛科技 157
+      - _CN_中国_YouTube晓猛科技 158
+      - _CN_中国_YouTube晓猛科技 159
+      - _CN_中国_YouTube晓猛科技 160
+      - _CN_中国_YouTube晓猛科技 161
+      - _CN_中国_YouTube晓猛科技 162
+      - _CN_中国_YouTube晓猛科技 163
+      - _CN_中国_YouTube晓猛科技 164
+      - _CN_中国_YouTube晓猛科技 165
+      - _CN_中国_YouTube晓猛科技 166
+      - _CN_中国_YouTube晓猛科技 167
+      - _CN_中国_YouTube晓猛科技 168
+      - _CN_中国_YouTube晓猛科技 169
+      - _CN_中国_YouTube晓猛科技 170
+      - _CN_中国_YouTube晓猛科技 171
+      - _CN_中国_YouTube晓猛科技 172
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1962,6 +2223,8 @@ rules:
  - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
  - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
  - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+ - DOMAIN,instant.arubanetworks.com,🎯 全球直连
+ - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
  - DOMAIN,router.asus.com,🎯 全球直连
  - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
@@ -1970,10 +2233,10 @@ rules:
  - DOMAIN-SUFFIX,p.to,🎯 全球直连
  - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
  - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
+ - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
  - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
  - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
- - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
@@ -3707,6 +3970,21 @@ rules:
  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
+ - DOMAIN,csgo.wmsj.cn,🎯 全球直连
+ - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
+ - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
+ - DOMAIN,dota2.wmsj.cn,🎯 全球直连
+ - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
+ - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
+ - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+ - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
+ - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
+ - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+ - DOMAIN,wmsjsteam.com,🎯 全球直连
+ - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
  - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
  - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -4526,9 +4804,9 @@ rules:
  - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
- - DOMAIN-SUFFIX,中国,🎯 全球直连
- - DOMAIN-SUFFIX,公司,🎯 全球直连
- - DOMAIN-SUFFIX,网络,🎯 全球直连
+ - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
+ - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
+ - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
  - DOMAIN-KEYWORD,-cn,🎯 全球直连
  - DOMAIN-KEYWORD,360buy,🎯 全球直连
  - DOMAIN-KEYWORD,alicdn,🎯 全球直连
@@ -4758,6 +5036,7 @@ rules:
  - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
  - DOMAIN-SUFFIX,sony.com,🎯 全球直连
  - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
+ - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
