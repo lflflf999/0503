@@ -5,851 +5,1019 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"JP日本(youtube_com+玉豆分享)_1","server":"hncu.relay.qchwnd.moe","port":44603,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"jp1.alink.qchwnd.moe"}
-  - {"name":"香港(youtube_com玉豆分享)_2","server":"103.135.249.25","port":153,"type":"vmess","uuid":"cd93c530-a7fe-3f44-985d-5f0836f5e83b","alterId":64,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"headers":{"host":"74527113825.laowanxiang.com"}}}
-  - {"name":"台湾(youtube_com玉豆分享)_3","server":"864e2e1a.ddns.tokyo","port":57551,"type":"vmess","uuid":"8484b0a8-ab51-34a9-8ee0-cc166408c690","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/6f153699-4408-460c-be5f-fe104a7e9707","headers":{"host":"weishi.360.cn"}}}
-  - {"name":"美国(youtube_com+玉豆分享)_4","server":"hncu.relay.qchwnd.moe","port":44611,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"us2.alink.qchwnd.moe"}
-  - {"name":"JP日本(youtube_com+玉豆分享)_5","server":"jp.relay.qchwnd.moe","port":44616,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
-  - {"name":"迪拜(youtube_com玉豆分享)_6","server":"120.233.147.118","port":41435,"type":"vmess","uuid":"e7426d8f-5644-4856-a1db-af1b8198bd19","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"美国(youtube_com玉豆分享)_7","server":"rbzf.moonfree.top","port":10083,"type":"vmess","uuid":"d0ff23a4-37fb-4b37-810f-f16aa829a6f7","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"linodemx0303.moonfree.top"}}}
-  - {"name":"印度(youtube_com+玉豆分享)_8","server":"azhk.relay.qchwnd.moe","port":44607,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"id.node.qchwnd.moe"}
-  - {"name":"日本(youtube_com+玉豆分享)_9","server":"azhk.relay.qchwnd.moe","port":44603,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"jp1.alink.qchwnd.moe"}
-  - {"name":"韩国(youtube_com+玉豆分享)_10","server":"kr1.qingyun123.xyz","port":10050,"type":"trojan","password":"fa0fde96-4c33-4034-b3a7-45df14d19f1b","sni":"kr1.qingyun123.xyz"}
-  - {"name":"印度(youtube_com+玉豆分享)_11","server":"azhk.relay.qchwnd.moe","port":44604,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"in1.alink.qchwnd.moe"}
-  - {"name":"韩国(youtube_com+玉豆分享)_12","server":"jgwcc1.gaox.ml","port":443,"type":"trojan","password":"7118b5f4-0ea4-4c11-be7f-11471cb91e4a","sni":"jgwcc1.gaox.ml"}
-  - {"name":"香港(youtube_com玉豆分享)_13","server":"207.46.131.81","port":53780,"type":"vmess","uuid":"f955d089-add5-40e2-fb53-948154cba564","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube-TG"}}}
-  - {"name":"香港(youtube_com+玉豆分享)_14","server":"104.208.112.171","port":3389,"type":"trojan","password":"ca911d30af65ef1b","sni":"n2.gladns.com"}
-  - {"name":"台湾(youtube_com+玉豆分享)_15","server":"azhk.relay.qchwnd.moe","port":44608,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"tw.node.qchwnd.moe"}
-  - {"name":"韩国(youtube_com玉豆分享)_16","server":"chuna1.515223.xyz","port":27201,"type":"vmess","uuid":"b4f2999f-956b-4c6b-93cf-6a20bf3befa3","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"chuna1.515223.xyz"}}}
-  - {"name":"美国(youtube_com玉豆分享)_17","server":"120.233.147.118","port":56390,"type":"vmess","uuid":"e9f489b6-af82-44a4-a23f-f37374cbd4d3","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"加拿大(youtube_com+玉豆分享)_18","server":"hncu.relay.qchwnd.moe","port":44613,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"ca1.alink.qchwnd.moe"}
-  - {"name":"SG新加坡(youtube_com+玉豆分享)_19","server":"120.232.192.119","port":3389,"type":"trojan","password":"ca911d30af65ef1b","sni":"n2.gladns.com"}
-  - {"name":"印度(youtube_com+玉豆分享)_20","server":"in1.qingyun123.xyz","port":443,"type":"trojan","password":"fa0fde96-4c33-4034-b3a7-45df14d19f1b","sni":"in1.qingyun123.xyz"}
-  - {"name":"US美国(youtube_com+玉豆分享)_21","server":"jp.relay.qchwnd.moe","port":44610,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"us1.alink.qchwnd.moe"}
-  - {"name":"US美国(youtube_com玉豆分享)_22","server":"gmp3.bgnac.com","port":80,"type":"vmess","uuid":"63e07aea-fb06-4fc8-b3cc-c19d1d5767db","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"gmp3.bgnac.com"}}}
-  - {"name":"韩国(youtube_com+玉豆分享)_23","server":"jgwcc2.gaox.ml","port":443,"type":"trojan","password":"9c822f05-cfdc-479a-9534-60f3d4127435","sni":"jgwcc2.gaox.ml"}
-  - {"name":"土耳其(youtube_com玉豆分享)_24","server":"864e2e1a.ddns.tokyo","port":42727,"type":"vmess","uuid":"8484b0a8-ab51-34a9-8ee0-cc166408c690","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/2e6a1066-e5f5-46f1-8e6a-80727460e879","headers":{"host":"www.baidu.com"}}}
-  - {"name":"日本(youtube_com玉豆分享)_25","server":"104.21.65.46","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"6.72vpn.xyz"}}}
-  - {"name":"台湾(youtube_com+玉豆分享)_26","server":"116.129.253.177","port":3389,"type":"trojan","password":"ca911d30af65ef1b","sni":"n2.gladns.com"}
-  - {"name":"加拿大(youtube_com+玉豆分享)_27","server":"jp.relay.qchwnd.moe","port":44613,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"ca1.alink.qchwnd.moe"}
-  - {"name":"法国(youtube_com+玉豆分享)_28","server":"jp.relay.qchwnd.moe","port":44612,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"fr.node.qchwnd.moe"}
-  - {"name":"美国(youtube_com玉豆分享)_29","server":"ss.2024.ml","port":8080,"type":"vmess","uuid":"a1ed9c3b-2412-4fb4-a731-4d2dc2842c35","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ss.2024.ml"}}}
-  - {"name":"AE迪拜(youtube_com玉豆分享)_30","server":"20.212.220.101","port":8010,"type":"vmess","uuid":"b266714b-cfbb-4ded-b780-4d91d4bd1e63","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"美国(youtube_com玉豆分享)_31","server":"usaadm.oracleusa.ml","port":2053,"type":"vmess","uuid":"e7426d8f-5644-4856-a1db-af1b8198bd19","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"美国(youtube_com玉豆分享)_32","server":"san.515223.xyz","port":17247,"type":"vmess","uuid":"8e7ad1a3-ed57-406e-fd6c-0f2399993fec","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"san.515223.xyz"}}}
-  - {"name":"俄罗斯(youtube_com玉豆分享)_33","server":"104.21.65.46","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"2.72vpn.xyz"}}}
-  - {"name":"NL越南(youtube_com玉豆分享)_34","server":"cloudflare.xrenblog.com","port":443,"type":"vmess","uuid":"6c175d1a-a57f-4881-a471-173eb139694b","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/xrenblog/","headers":{"host":"ipv6.xrenblog.com"}}}
-  - {"name":"美国(youtube_com玉豆分享)_35","server":"smoracle2.515223.xyz","port":25859,"type":"vmess","uuid":"620e3569-7653-4456-9f71-c6f19f3839fe","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"smoracle2.515223.xyz"}}}
-  - {"name":"荷兰(youtube_com玉豆分享)_36","server":"nl.oracleusa.ml","port":2053,"type":"vmess","uuid":"b266714b-cfbb-4ded-b780-4d91d4bd1e63","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"澳大利亚(youtube_com+玉豆分享)_37","server":"jgwxn2.gaox.ml","port":443,"type":"trojan","password":"c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26","sni":"jgwxn2.gaox.ml"}
-  - {"name":"🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38","server":"172.67.140.165","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"2.72vpn.xyz"}}}
-  - {"name":"HK香港(youtube_com玉豆分享)_39","server":"104.21.65.46","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"1.72vpn.xyz"}}}
-  - {"name":"欧洲(youtube_com玉豆分享)_40","server":"154.31.41.10","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"chuch3go.com"}}}
-  - {"name":"美国(youtube_com+玉豆分享)_41","server":"hk-v.apqiang.com","port":12001,"type":"trojan","password":"4d0647f3-144b-3878-aef8-d19d465f387f","sni":"hk-v.apqiang.com"}
-  - {"name":"法国(youtube_com玉豆分享)_42","server":"fr.oracleusa.ml","port":2053,"type":"vmess","uuid":"b686abdb-118c-422e-97e0-57c1fa0e1a26","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"台湾(youtube_com玉豆分享)_43","server":"864e2e1a.ddns.tokyo","port":57551,"type":"vmess","uuid":"8484b0a8-ab51-34a9-8ee0-cc166408c690","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/81be8658-391b-42cb-97e0-eaaa3d1bd7de","headers":{"host":"account.weibo.com"}}}
-  - {"name":"美国(youtube_com+玉豆分享)_44","server":"hk-v.apqiang.com","port":12001,"type":"trojan","password":"b3f57c51-206e-3c41-8dba-56921740f9ca","sni":"hk-v.apqiang.com"}
-  - {"name":"美国(youtube_com玉豆分享)_45","server":"smoracle.515223.xyz","port":51690,"type":"vmess","uuid":"30ecebb3-1240-44e1-8551-a100ad13e330","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"smoracle.515223.xyzaweikeji-YouTube-TG"}}}
-  - {"name":"法国(youtube_com+玉豆分享)_46","server":"fr.node.qchwnd.moe","port":44612,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
-  - {"name":"🇬🇧_GB_英国_47","server":"172.99.190.109","port":8091,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"name":"🇬🇧_GB_英国_48","server":"172.99.190.109","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"美国(youtube_com玉豆分享)_49","server":"dynamic-us1b.obfs.xyz","port":443,"type":"vmess","uuid":"baa943ec-acaf-4820-ad47-883a5d706f8a","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/fastssh","headers":{"host":"dynamic-us1b.obfs.xyz"}}}
-  - {"name":"美国(youtube_com玉豆分享)_50","server":"173.82.120.9","port":59687,"type":"vmess","uuid":"a8035c81-f99e-466f-a515-3b6bb2fe81d7","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"173.82.120.9"}}}
-  - {"name":"🇬🇧_GB_英国_51","server":"172.99.190.109","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"name":"欧洲(youtube_com玉豆分享)_52","server":"chuch3go.com","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"chuch3go.com"}}}
-  - {"name":"美国(youtube_com玉豆分享)_53","server":"20.212.220.101","port":8006,"type":"vmess","uuid":"e9f489b6-af82-44a4-a23f-f37374cbd4d3","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"🇬🇧_GB_英国_54","server":"172.99.190.109","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"name":"us美国(youtube_com玉豆分享)_55","server":"ericpoweron.pl.eu.org","port":443,"type":"vmess","uuid":"43839f89-34d1-4144-8764-40c90c307058","alterId":0,"cipher":"auto","tls":true,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"ericpoweron.pl.eu.org"}}}
-  - {"name":"AE迪拜(youtube_com玉豆分享)_56","server":"52.184.99.90","port":8010,"type":"vmess","uuid":"b686abdb-118c-422e-97e0-57c1fa0e1a26","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"🇬🇧_GB_英国_57","server":"172.99.190.109","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"美国(youtube_com玉豆分享)_58","server":"107.175.62.31","port":18205,"type":"vmess","uuid":"51ffe900-f9a4-4517-b123-9d512d0f5069","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"107.175.62.31"}}}
-  - {"name":"迪拜(youtube_com玉豆分享)_59","server":"73.72vpn.xyz","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"73.72vpn.xyz"}}}
-  - {"name":"德国(youtube_com+玉豆分享)_60","server":"de1.qingyun123.xyz","port":10050,"type":"trojan","password":"fa0fde96-4c33-4034-b3a7-45df14d19f1b","sni":"de1.qingyun123.xyz"}
-  - {"name":"🇭🇰_HK_香港(youtube_com+玉豆分享)_61","server":"183.232.226.165","port":56141,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"rWZWEPb4JrX3lb2j"}
-  - {"name":"英国(youtube_com+玉豆分享)_62","server":"jgwld4.gaox.ml","port":443,"type":"trojan","password":"58d32c66-43b1-4561-9951-d87c9123774e","sni":"jgwld4.gaox.ml"}
-  - {"name":"美国(youtube_com玉豆分享)_63","server":"phx.bgnac.com","port":80,"type":"vmess","uuid":"63e07aea-fb06-4fc8-b3cc-c19d1d5767db","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"phx.bgnac.com"}}}
-  - {"name":"迪拜(youtube_com玉豆分享)_64","server":"74.72vpn.xyz","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"74.72vpn.xyz"}}}
-  - {"name":"瑞士(youtube_com玉豆分享)_65","server":"20.212.220.101","port":8000,"type":"vmess","uuid":"f023f6e9-44c2-4ade-92e1-a32e81a85500","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"瑞士(youtube_com玉豆分享)_66","server":"sw.gfwglass.tk","port":2053,"type":"vmess","uuid":"b686abdb-118c-422e-97e0-57c1fa0e1a26","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"加拿大(youtube_com+玉豆分享)_67","server":"ca02.holiganfan.com","port":10088,"type":"trojan","password":"883f3fef-0d16-4ed0-b463-e61667b47eef","sni":"ca02.holiganfan.com"}
-  - {"name":"jp日本(youtube_com玉豆分享)_68","server":"172.67.140.165","port":443,"type":"vmess","uuid":"0797aba7-f60a-4bc3-acd9-946a85a1e864","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/google.com","headers":{"host":"5.72vpn.xyz"}}}
-  - {"name":"美国(youtube_com玉豆分享)_69","server":"107.173.122.51","port":46390,"type":"vmess","uuid":"0cb29e24-00e5-4b4f-81b5-e0bc45e75b68","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"107.173.122.51"}}}
-  - {"name":"韩国(youtube_com玉豆分享)_70","server":"chun2.515223.xyz","port":57117,"type":"vmess","uuid":"0f5e2194-02ad-4295-db03-536381c9db48","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"chun2.515223.xyz"}}}
-  - {"name":"德国(youtube_com玉豆分享)_71","server":"fqtest.nsxz.ml","port":443,"type":"vmess","uuid":"8f7b3776-e05b-4b2c-d266-2d2b30db4051","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"fqtest.nsxz.ml"}}}
-  - {"name":"瑞士(youtube_com玉豆分享)_72","server":"52.184.99.90","port":8000,"type":"vmess","uuid":"e9f489b6-af82-44a4-a23f-f37374cbd4d3","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"瑞士(youtube_com玉豆分享)_73","server":"52.184.99.90","port":8012,"type":"vmess","uuid":"e7426d8f-5644-4856-a1db-af1b8198bd19","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
-  - {"name":"阿根廷(youtube_com玉豆分享)_74","server":"9c29ba40.ddns.tokyo","port":50452,"type":"vmess","uuid":"8484b0a8-ab51-34a9-8ee0-cc166408c690","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/6447d108-ae3d-488b-9f9f-0571f3fa17fa","headers":{"host":"www.so.com"}}}
-  - {"name":"日本(youtube_com+玉豆分享)_75","server":"jp.relay.qchwnd.moe","port":44602,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334","sni":"jp1.alinkrelay.com"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_76","server":"134.195.196.3","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_77","server":"134.195.196.68","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_78","server":"134.195.196.68","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_79","server":"134.195.196.68","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"name":"🇨🇦_CA_加拿大_80","server":"134.195.196.3","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"name":"欧洲(youtube_com玉豆分享)_81","server":"www.digitalocean.com","port":443,"type":"vmess","uuid":"7be43971-52f1-48af-9036-454a94b4723a","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws/?ed=2048","headers":{"host":"download.china666.ml"}}}
-  - {"name":"🇬🇧_GB_英国_82","server":"172.99.190.92","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_83","server":"134.195.196.68","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_84","server":"134.195.196.68","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"name":"🇬🇧英国(youtube_com+玉豆分享)_85","server":"172.99.190.92","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇬🇧英国(youtube_com+玉豆分享)_86","server":"172.99.190.92","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_87","server":"134.195.196.68","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_88","server":"134.195.196.3","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_89","server":"134.195.196.187","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_90","server":"172.99.190.92","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_91","server":"134.195.196.187","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_92","server":"51.255.66.185","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"🇺🇸美国(youtube_com+玉豆分享)_93","server":"169.197.142.99","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_94","server":"134.195.196.68","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_95","server":"169.197.142.99","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_96","server":"134.195.196.187","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_97","server":"134.195.196.3","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_98","server":"134.195.196.81","port":5004,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_99","server":"134.195.196.187","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"name":"🇨🇦_CA_加拿大_100","server":"134.195.196.81","port":8882,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"name":"🇨🇦_CA_加拿大_101","server":"134.195.196.3","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"HK香港(youtube_com玉豆分享)_102","server":"gy3.anoob.icu","port":31013,"type":"vmess","uuid":"9d1cf997-df2b-3656-9fab-23f8ec81f1b5","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube-TG"}}}
-  - {"name":"欧洲(youtube_com+玉豆分享)_103","server":"134.195.196.81","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"欧洲(youtube_com+玉豆分享)_104","server":"134.195.196.187","port":8000,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"name":"法国(youtube_com+玉豆分享)_105","server":"169.197.142.99","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"法国(youtube_com+玉豆分享)_106","server":"134.195.196.3","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_107","server":"134.195.196.81","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_108","server":"134.195.196.81","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_109","server":"134.195.196.81","port":5600,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_110","server":"134.195.196.187","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_111","server":"134.195.196.81","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_112","server":"134.195.196.187","port":8091,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_113","server":"134.195.196.81","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_114","server":"134.195.196.81","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_115","server":"134.195.196.81","port":3306,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_116","server":"134.195.196.187","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"台湾(youtube_com玉豆分享)_1","server":"tanz-cn3.ddnsnode.com","port":35069,"type":"vmess","uuid":"f2ad4004-0e73-3594-a8d9-870818e0034d","alterId":0,"cipher":"auto","tls":false,"network":"tcp"}
+  - {"name":"日本(youtube_com+玉豆分享)_2","server":"116.129.253.177","port":3389,"type":"trojan","password":"0437e2b78115adc2"}
+  - {"name":"香港(youtube_com玉豆分享)_3","server":"103.135.249.25","port":153,"type":"vmess","uuid":"cd93c530-a7fe-3f44-985d-5f0836f5e83b","alterId":64,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"headers":{"host":"74527113825.laowanxiang.com"}}}
+  - {"name":"台湾(youtube_com+玉豆分享)_4","server":"60.249.3.229","port":3389,"type":"trojan","password":"0437e2b78115adc2"}
+  - {"name":"美国(youtube_com+玉豆分享)_5","server":"hncu.relay.qchwnd.moe","port":44611,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"日本(youtube_com+玉豆分享)_6","server":"jp.relay.qchwnd.moe","port":44602,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"日本(youtube_com玉豆分享)_7","server":"jp61zz.ddns.566366.xyz","port":20002,"type":"vmess","uuid":"1d193dfa-9a49-340c-90e8-af2f56579281","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/wmsxwd","headers":{"host":"jp61.ddns.566366.xyz"}}}
+  - {"name":"迪拜(youtube_com玉豆分享)_8","server":"120.233.147.118","port":41435,"type":"vmess","uuid":"e7426d8f-5644-4856-a1db-af1b8198bd19","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
+  - {"name":"韩国(youtube_com+玉豆分享)_9","server":"jgwcc2.gaox.ml","port":443,"type":"trojan","password":"9c822f05-cfdc-479a-9534-60f3d4127435"}
+  - {"name":"日本(youtube_com+玉豆分享)_10","server":"jgwdj3.gaox.ml","port":443,"type":"trojan","password":"da777aae-defb-41d0-a183-2c27da2b4677"}
+  - {"name":"香港(youtube_com+玉豆分享)_11","server":"104.208.112.171","port":3389,"type":"trojan","password":"ca911d30af65ef1b"}
+  - {"name":"印度(youtube_com+玉豆分享)_12","server":"azhk.relay.qchwnd.moe","port":44607,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"香港(youtube_com+玉豆分享)_13","server":"104.208.112.171","port":3389,"type":"trojan","password":"0437e2b78115adc2"}
+  - {"name":"香港(youtube_com+玉豆分享)_14","server":"104.208.112.171","port":3389,"type":"trojan","password":"ca911d30af65ef1b"}
+  - {"name":"韩国(youtube_com+玉豆分享)_15","server":"jgwcc3.gaox.ml","port":443,"type":"trojan","password":"b291d129-ee55-4801-a9b8-b5316e5c37b7"}
+  - {"name":"德国(youtube_com玉豆分享)_16","server":"tanz-unicom.ddnsnode.com","port":35017,"type":"vmess","uuid":"f2ad4004-0e73-3594-a8d9-870818e0034d","alterId":0,"cipher":"auto","tls":false,"network":"tcp"}
+  - {"name":"印度(youtube_com+玉豆分享)_17","server":"azhk.relay.qchwnd.moe","port":44604,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"香港(youtube_com+玉豆分享)_18","server":"104.208.112.171","port":3389,"type":"trojan","password":"6f0a9d0fa39d65fa"}
+  - {"name":"俄罗斯(youtube_com玉豆分享)_19","server":"cn2.anoob.icu","port":31013,"type":"vmess","uuid":"9d1cf997-df2b-3656-9fab-23f8ec81f1b5","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cn2.anoob.icu"}}}
+  - {"name":"HK香港(youtube_com玉豆分享)_20","server":"gy3.anoob.icu","port":31013,"type":"vmess","uuid":"9d1cf997-df2b-3656-9fab-23f8ec81f1b5","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube-TG"}}}
+  - {"name":"台湾(youtube_com+玉豆分享)_21","server":"azhk.relay.qchwnd.moe","port":44608,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"日本(youtube_com+玉豆分享)_22","server":"azhk.relay.qchwnd.moe","port":44603,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"日本(youtube_com+玉豆分享)_23","server":"azhk.relay.qchwnd.moe","port":44603,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"美国(youtube_com玉豆分享)_24","server":"120.233.147.118","port":56390,"type":"vmess","uuid":"e9f489b6-af82-44a4-a23f-f37374cbd4d3","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
+  - {"name":"加拿大(youtube_com+玉豆分享)_25","server":"jp.relay.qchwnd.moe","port":44613,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"美国(youtube_com玉豆分享)_26","server":"all-us.ddnsnode.com","port":35019,"type":"vmess","uuid":"f2ad4004-0e73-3594-a8d9-870818e0034d","alterId":0,"cipher":"auto","tls":false,"network":"tcp"}
+  - {"name":"🇺🇸美国(youtube_com玉豆分享)_27","server":"chuch3go.com","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"chuch3go.com"}}}
+  - {"name":"美国(youtube_com玉豆分享)_28","server":"san.515223.xyz","port":17247,"type":"vmess","uuid":"8e7ad1a3-ed57-406e-fd6c-0f2399993fec","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"san.515223.xyz"}}}
+  - {"name":"美国(youtube_com玉豆分享)_29","server":"usaadm.oracleusa.ml","port":2053,"type":"vmess","uuid":"e7426d8f-5644-4856-a1db-af1b8198bd19","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
+  - {"name":"美国(youtube_com玉豆分享)_30","server":"san.515223.xyz","port":17247,"type":"vmess","uuid":"8e7ad1a3-ed57-406e-fd6c-0f2399993fec","alterId":64,"cipher":"auto","tls":false,"network":"ws"}
+  - {"name":"🇺🇸美国(youtube_com玉豆分享)_31","server":"cloudflare.xrenblog.com","port":443,"type":"vmess","uuid":"6c175d1a-a57f-4881-a471-173eb139694b","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/xrenblog/","headers":{"host":"ipv6.xrenblog.com"}}}
+  - {"name":"🇺🇸_US_美国_32","server":"167.88.63.61","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸_US_美国_33","server":"169.197.142.4","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"美国(youtube_com玉豆分享)_34","server":"usaadm.oracleusa.ml","port":2053,"type":"vmess","uuid":"e7426d8f-5644-4856-a1db-af1b8198bd19","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"usaadm.oracleusa.ml"}}}
+  - {"name":"加拿大(youtube_com+玉豆分享)_35","server":"hncu.relay.qchwnd.moe","port":44613,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"印度(youtube_com+玉豆分享)_36","server":"azhk.relay.qchwnd.moe","port":44607,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"美国(youtube_com玉豆分享)_37","server":"173.82.120.9","port":59687,"type":"vmess","uuid":"a8035c81-f99e-466f-a515-3b6bb2fe81d7","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/sakura/","headers":{"host":"173.82.120.9"}}}
+  - {"name":"美国(youtube_com玉豆分享)_38","server":"smoracle.515223.xyz","port":51690,"type":"vmess","uuid":"30ecebb3-1240-44e1-8551-a100ad13e330","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/ws","headers":{"host":"usa-buffalo.lvuft.com"}}}
+  - {"name":"美国(youtube_com+玉豆分享)_39","server":"fhcarm1.gaox.ml","port":443,"type":"trojan","password":"05742120-ce23-4cc8-88f5-6d221ce45bf4"}
+  - {"name":"澳大利亚(youtube_com+玉豆分享)_40","server":"jgwxn4.gaox.ml","port":443,"type":"trojan","password":"e8c1ab3c-89b3-4933-92df-682e6dce7819"}
+  - {"name":"澳大利亚(youtube_com+玉豆分享)_41","server":"jgwxn2.gaox.ml","port":443,"type":"trojan","password":"c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26"}
+  - {"name":"🇺🇸_US_美国_42","server":"169.197.142.4","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇺🇸_US_美国_43","server":"169.197.142.4","port":2375,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇺🇸_US_美国_44","server":"167.88.63.61","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇺🇸_US_美国_45","server":"167.88.63.61","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸_US_美国_46","server":"169.197.142.4","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"香港(youtube_com玉豆分享)_47","server":"hantesi.xyz","port":50129,"type":"vmess","uuid":"dd64d4c0-71fa-455a-ed52-ed6d947aa0d8","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/hello","headers":{"host":"hantesi.xyz"}}}
+  - {"name":"美国(youtube_com玉豆分享)_48","server":"smoracle.515223.xyz","port":51690,"type":"vmess","uuid":"30ecebb3-1240-44e1-8551-a100ad13e330","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/xsqfvws","headers":{"host":"smoracle.515223.xyz"}}}
+  - {"name":"美国(youtube_com玉豆分享)_49","server":"smoracle.515223.xyz","port":51690,"type":"vmess","uuid":"30ecebb3-1240-44e1-8551-a100ad13e330","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"smoracle.515223.xyzaweikeji-YouTube-TG"}}}
+  - {"name":"美国(youtube_com+玉豆分享)_50","server":"fhcarm2.gaox.ml","port":443,"type":"trojan","password":"f39bd244-f5fe-415c-8b98-a1e5250bf178"}
+  - {"name":"🇺🇸_US_美国_51","server":"169.197.142.4","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇺🇸_US_美国_52","server":"169.197.142.4","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"印度(youtube_com+玉豆分享)_53","server":"azhk.relay.qchwnd.moe","port":44604,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"香港(youtube_com玉豆分享)_54","server":"34.92.107.101","port":26066,"type":"vmess","uuid":"49dd4da0-f306-4ef6-8a8c-17fb6a77340b","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"us1.2024.ml"}}}
+  - {"name":"美国(youtube_com+玉豆分享)_55","server":"hncu.relay.qchwnd.moe","port":44611,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"🇺🇸_US_美国_56","server":"169.197.142.4","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸_US_美国_57","server":"169.197.142.4","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"美国(youtube_com玉豆分享)_58","server":"smoracle2.515223.xyz","port":25859,"type":"vmess","uuid":"620e3569-7653-4456-9f71-c6f19f3839fe","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"smoracle2.515223.xyz"}}}
+  - {"name":"🇺🇸_US_美国_59","server":"169.197.142.4","port":8091,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇺🇸_US_美国_60","server":"167.88.63.61","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_61","server":"198.57.27.191","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"韩国(youtube_com玉豆分享)_62","server":"chun2.515223.xyz","port":57117,"type":"vmess","uuid":"0f5e2194-02ad-4295-db03-536381c9db48","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"chun2.515223.xyz"}}}
+  - {"name":"🇺🇸_US_美国_63","server":"167.88.63.61","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_64","server":"198.57.27.191","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"加拿大(youtube_com+玉豆分享)_65","server":"hncu.relay.qchwnd.moe","port":44613,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"🇺🇸_US_美国_66","server":"169.197.142.4","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸_US_美国_67","server":"169.197.142.4","port":8882,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇺🇸_US_美国_68","server":"169.197.142.4","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇨🇦_CA_加拿大_69","server":"198.57.27.191","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"美国(youtube_com玉豆分享)_70","server":"ericpoweron.pl.eu.org","port":443,"type":"vmess","uuid":"43839f89-34d1-4144-8764-40c90c307058","alterId":0,"cipher":"auto","tls":true,"network":"tcp","ws-opts":{"path":"/ws","headers":{"host":"ericpoweron.pl.eu.org"}}}
+  - {"name":"法国(youtube_com+玉豆分享)_71","server":"fr.node.qchwnd.moe","port":44612,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"法国(youtube_com+玉豆分享)_72","server":"fr.node.qchwnd.moe","port":44612,"type":"trojan","password":"679631dd-a671-465d-a054-3d07a2381334"}
+  - {"name":"🇺🇸_US_美国_73","server":"169.197.142.4","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇨🇦_CA_加拿大_74","server":"198.57.27.191","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_75","server":"198.57.27.191","port":8882,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"美国(youtube_com玉豆分享)_76","server":"20.212.220.101","port":8006,"type":"vmess","uuid":"e9f489b6-af82-44a4-a23f-f37374cbd4d3","alterId":0,"cipher":"auto","tls":true,"network":"ws"}
+  - {"name":"美国(youtube_com玉豆分享)_77","server":"smoracle.515223.xyz","port":51690,"type":"vmess","uuid":"30ecebb3-1240-44e1-8551-a100ad13e330","alterId":64,"cipher":"auto","tls":false,"network":"tcp"}
+  - {"name":"美国(youtube_com+玉豆分享)_78","server":"192.210.201.72","port":51490,"type":"ss","cipher":"aes-128-gcm","password":"yangchaoyue"}
+  - {"name":"澳大利亚(youtube_com+玉豆分享)_79","server":"jgwxn2.gaox.ml","port":443,"type":"trojan","password":"c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26"}
+  - {"name":"🇺🇸_US_美国_80","server":"169.197.142.4","port":5004,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"🇺🇸_US_美国_81","server":"169.197.142.4","port":8000,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇺🇸_US_美国_82","server":"169.197.142.4","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇺🇸_US_美国_83","server":"167.88.63.61","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_84","server":"198.57.27.191","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇺🇸_US_美国_85","server":"169.197.142.4","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇺🇸_US_美国_86","server":"169.197.142.4","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_87","server":"198.57.27.191","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇺🇸_US_美国_88","server":"169.197.142.4","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"美国(youtube_com玉豆分享)_89","server":"107.175.62.31","port":18205,"type":"vmess","uuid":"51ffe900-f9a4-4517-b123-9d512d0f5069","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"107.175.62.31"}}}
+  - {"name":"🇺🇸_US_美国_90","server":"169.197.142.4","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_91","server":"134.195.196.3","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇺🇸_US_美国_92","server":"169.197.142.4","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸_US_美国_93","server":"169.197.142.4","port":5600,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸_US_美国_94","server":"167.88.63.61","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇬🇧英国(youtube_com+玉豆分享)_95","server":"172.99.190.92","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇨🇦_CA_加拿大_96","server":"134.195.196.81","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇨🇦_CA_加拿大_97","server":"134.195.196.81","port":5004,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"🇨🇦_CA_加拿大_98","server":"134.195.196.3","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇬🇧_GB_英国_99","server":"172.99.190.92","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_100","server":"134.195.196.68","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇨🇦_CA_加拿大_101","server":"134.195.196.68","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸美国(youtube_com玉豆分享)_102","server":"ahdaeph8.com","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}}}
+  - {"name":"🇬🇧英国(youtube_com+玉豆分享)_103","server":"172.99.190.92","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_104","server":"134.195.196.81","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_105","server":"134.195.196.187","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇨🇦_CA_加拿大_106","server":"134.195.196.3","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇨🇦_CA_加拿大_107","server":"134.195.196.81","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"🇨🇦_CA_加拿大_108","server":"134.195.196.3","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇨🇦_CA_加拿大_109","server":"134.195.196.68","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇺🇸_US_美国_110","server":"169.197.142.99","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇨🇦_CA_加拿大_111","server":"134.195.196.68","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇨🇦_CA_加拿大_112","server":"134.195.196.3","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇨🇦_CA_加拿大_113","server":"134.195.196.68","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_114","server":"134.195.196.81","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_115","server":"134.195.196.81","port":5003,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"🇨🇦_CA_加拿大_116","server":"134.195.196.3","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇨🇦_CA_加拿大_117","server":"134.195.196.68","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"🇨🇦_CA_加拿大_118","server":"134.195.196.68","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_119","server":"134.195.196.187","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"🇨🇦_CA_加拿大_120","server":"134.195.196.68","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇨🇦_CA_加拿大_121","server":"134.195.196.187","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇨🇦_CA_加拿大_122","server":"134.195.196.187","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"🇨🇦_CA_加拿大_123","server":"134.195.196.81","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇨🇦_CA_加拿大_124","server":"134.195.196.81","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_125","server":"134.195.196.3","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"🇨🇦_CA_加拿大_126","server":"134.195.196.3","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_127","server":"134.195.196.81","port":2375,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇨🇦_CA_加拿大_128","server":"134.195.196.81","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_129","server":"134.195.196.68","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"瑞士(youtube_com玉豆分享)_130","server":"sw.gfwglass.tk","port":2053,"type":"vmess","uuid":"b686abdb-118c-422e-97e0-57c1fa0e1a26","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sw.gfwglass.tk"}}}
+  - {"name":"欧洲(youtube_com玉豆分享)_131","server":"www.digitalocean.com","port":443,"type":"vmess","uuid":"7be43971-52f1-48af-9036-454a94b4723a","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws/?ed=2048","headers":{"host":"download.china666.ml"}}}
+  - {"name":"🇨🇦加拿大(youtube_com+玉豆分享)_132","server":"134.195.196.81","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦_CA_加拿大_133","server":"134.195.196.187","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇨🇦_CA_加拿大_134","server":"134.195.196.187","port":5600,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_CA_加拿大_135","server":"134.195.196.187","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇨🇦_CA_加拿大_136","server":"134.195.196.81","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"🇨🇦_CA_加拿大_137","server":"134.195.196.68","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇨🇦_CA_加拿大_138","server":"134.195.196.81","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇨🇦_CA_加拿大_139","server":"134.195.196.3","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇨🇦_CA_加拿大_140","server":"134.195.196.81","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -872,122 +1040,146 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP日本(youtube_com+玉豆分享)_1
-      - 香港(youtube_com玉豆分享)_2
-      - 台湾(youtube_com玉豆分享)_3
-      - 美国(youtube_com+玉豆分享)_4
-      - JP日本(youtube_com+玉豆分享)_5
-      - 迪拜(youtube_com玉豆分享)_6
-      - 美国(youtube_com玉豆分享)_7
-      - 印度(youtube_com+玉豆分享)_8
-      - 日本(youtube_com+玉豆分享)_9
-      - 韩国(youtube_com+玉豆分享)_10
-      - 印度(youtube_com+玉豆分享)_11
-      - 韩国(youtube_com+玉豆分享)_12
-      - 香港(youtube_com玉豆分享)_13
+      - 台湾(youtube_com玉豆分享)_1
+      - 日本(youtube_com+玉豆分享)_2
+      - 香港(youtube_com玉豆分享)_3
+      - 台湾(youtube_com+玉豆分享)_4
+      - 美国(youtube_com+玉豆分享)_5
+      - 日本(youtube_com+玉豆分享)_6
+      - 日本(youtube_com玉豆分享)_7
+      - 迪拜(youtube_com玉豆分享)_8
+      - 韩国(youtube_com+玉豆分享)_9
+      - 日本(youtube_com+玉豆分享)_10
+      - 香港(youtube_com+玉豆分享)_11
+      - 印度(youtube_com+玉豆分享)_12
+      - 香港(youtube_com+玉豆分享)_13
       - 香港(youtube_com+玉豆分享)_14
-      - 台湾(youtube_com+玉豆分享)_15
-      - 韩国(youtube_com玉豆分享)_16
-      - 美国(youtube_com玉豆分享)_17
-      - 加拿大(youtube_com+玉豆分享)_18
-      - SG新加坡(youtube_com+玉豆分享)_19
-      - 印度(youtube_com+玉豆分享)_20
-      - US美国(youtube_com+玉豆分享)_21
-      - US美国(youtube_com玉豆分享)_22
-      - 韩国(youtube_com+玉豆分享)_23
-      - 土耳其(youtube_com玉豆分享)_24
-      - 日本(youtube_com玉豆分享)_25
-      - 台湾(youtube_com+玉豆分享)_26
-      - 加拿大(youtube_com+玉豆分享)_27
-      - 法国(youtube_com+玉豆分享)_28
+      - 韩国(youtube_com+玉豆分享)_15
+      - 德国(youtube_com玉豆分享)_16
+      - 印度(youtube_com+玉豆分享)_17
+      - 香港(youtube_com+玉豆分享)_18
+      - 俄罗斯(youtube_com玉豆分享)_19
+      - HK香港(youtube_com玉豆分享)_20
+      - 台湾(youtube_com+玉豆分享)_21
+      - 日本(youtube_com+玉豆分享)_22
+      - 日本(youtube_com+玉豆分享)_23
+      - 美国(youtube_com玉豆分享)_24
+      - 加拿大(youtube_com+玉豆分享)_25
+      - 美国(youtube_com玉豆分享)_26
+      - 🇺🇸美国(youtube_com玉豆分享)_27
+      - 美国(youtube_com玉豆分享)_28
       - 美国(youtube_com玉豆分享)_29
-      - AE迪拜(youtube_com玉豆分享)_30
-      - 美国(youtube_com玉豆分享)_31
-      - 美国(youtube_com玉豆分享)_32
-      - 俄罗斯(youtube_com玉豆分享)_33
-      - NL越南(youtube_com玉豆分享)_34
-      - 美国(youtube_com玉豆分享)_35
-      - 荷兰(youtube_com玉豆分享)_36
-      - 澳大利亚(youtube_com+玉豆分享)_37
-      - 🇷🇺_RU_俄罗斯联邦(youtube_com玉豆分享)_38
-      - HK香港(youtube_com玉豆分享)_39
-      - 欧洲(youtube_com玉豆分享)_40
-      - 美国(youtube_com+玉豆分享)_41
-      - 法国(youtube_com玉豆分享)_42
-      - 台湾(youtube_com玉豆分享)_43
-      - 美国(youtube_com+玉豆分享)_44
-      - 美国(youtube_com玉豆分享)_45
-      - 法国(youtube_com+玉豆分享)_46
-      - 🇬🇧_GB_英国_47
-      - 🇬🇧_GB_英国_48
+      - 美国(youtube_com玉豆分享)_30
+      - 🇺🇸美国(youtube_com玉豆分享)_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 美国(youtube_com玉豆分享)_34
+      - 加拿大(youtube_com+玉豆分享)_35
+      - 印度(youtube_com+玉豆分享)_36
+      - 美国(youtube_com玉豆分享)_37
+      - 美国(youtube_com玉豆分享)_38
+      - 美国(youtube_com+玉豆分享)_39
+      - 澳大利亚(youtube_com+玉豆分享)_40
+      - 澳大利亚(youtube_com+玉豆分享)_41
+      - 🇺🇸_US_美国_42
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇺🇸_US_美国_46
+      - 香港(youtube_com玉豆分享)_47
+      - 美国(youtube_com玉豆分享)_48
       - 美国(youtube_com玉豆分享)_49
-      - 美国(youtube_com玉豆分享)_50
-      - 🇬🇧_GB_英国_51
-      - 欧洲(youtube_com玉豆分享)_52
-      - 美国(youtube_com玉豆分享)_53
-      - 🇬🇧_GB_英国_54
-      - us美国(youtube_com玉豆分享)_55
-      - AE迪拜(youtube_com玉豆分享)_56
-      - 🇬🇧_GB_英国_57
+      - 美国(youtube_com+玉豆分享)_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 印度(youtube_com+玉豆分享)_53
+      - 香港(youtube_com玉豆分享)_54
+      - 美国(youtube_com+玉豆分享)_55
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
       - 美国(youtube_com玉豆分享)_58
-      - 迪拜(youtube_com玉豆分享)_59
-      - 德国(youtube_com+玉豆分享)_60
-      - 🇭🇰_HK_香港(youtube_com+玉豆分享)_61
-      - 英国(youtube_com+玉豆分享)_62
-      - 美国(youtube_com玉豆分享)_63
-      - 迪拜(youtube_com玉豆分享)_64
-      - 瑞士(youtube_com玉豆分享)_65
-      - 瑞士(youtube_com玉豆分享)_66
-      - 加拿大(youtube_com+玉豆分享)_67
-      - jp日本(youtube_com玉豆分享)_68
-      - 美国(youtube_com玉豆分享)_69
-      - 韩国(youtube_com玉豆分享)_70
-      - 德国(youtube_com玉豆分享)_71
-      - 瑞士(youtube_com玉豆分享)_72
-      - 瑞士(youtube_com玉豆分享)_73
-      - 阿根廷(youtube_com玉豆分享)_74
-      - 日本(youtube_com+玉豆分享)_75
-      - 欧洲(youtube_com+玉豆分享)_76
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_77
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_78
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_79
-      - 🇨🇦_CA_加拿大_80
-      - 欧洲(youtube_com玉豆分享)_81
-      - 🇬🇧_GB_英国_82
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_83
-      - 欧洲(youtube_com+玉豆分享)_84
-      - 🇬🇧英国(youtube_com+玉豆分享)_85
-      - 🇬🇧英国(youtube_com+玉豆分享)_86
-      - 欧洲(youtube_com+玉豆分享)_87
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_88
-      - 欧洲(youtube_com+玉豆分享)_89
-      - 欧洲(youtube_com+玉豆分享)_90
-      - 欧洲(youtube_com+玉豆分享)_91
-      - 欧洲(youtube_com+玉豆分享)_92
-      - 🇺🇸美国(youtube_com+玉豆分享)_93
-      - 欧洲(youtube_com+玉豆分享)_94
-      - 欧洲(youtube_com+玉豆分享)_95
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_96
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_97
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_98
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_99
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇨🇦_CA_加拿大_61
+      - 韩国(youtube_com玉豆分享)_62
+      - 🇺🇸_US_美国_63
+      - 🇨🇦_CA_加拿大_64
+      - 加拿大(youtube_com+玉豆分享)_65
+      - 🇺🇸_US_美国_66
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_69
+      - 美国(youtube_com玉豆分享)_70
+      - 法国(youtube_com+玉豆分享)_71
+      - 法国(youtube_com+玉豆分享)_72
+      - 🇺🇸_US_美国_73
+      - 🇨🇦_CA_加拿大_74
+      - 🇨🇦_CA_加拿大_75
+      - 美国(youtube_com玉豆分享)_76
+      - 美国(youtube_com玉豆分享)_77
+      - 美国(youtube_com+玉豆分享)_78
+      - 澳大利亚(youtube_com+玉豆分享)_79
+      - 🇺🇸_US_美国_80
+      - 🇺🇸_US_美国_81
+      - 🇺🇸_US_美国_82
+      - 🇺🇸_US_美国_83
+      - 🇨🇦_CA_加拿大_84
+      - 🇺🇸_US_美国_85
+      - 🇺🇸_US_美国_86
+      - 🇨🇦_CA_加拿大_87
+      - 🇺🇸_US_美国_88
+      - 美国(youtube_com玉豆分享)_89
+      - 🇺🇸_US_美国_90
+      - 🇨🇦_CA_加拿大_91
+      - 🇺🇸_US_美国_92
+      - 🇺🇸_US_美国_93
+      - 🇺🇸_US_美国_94
+      - 🇬🇧英国(youtube_com+玉豆分享)_95
+      - 🇨🇦_CA_加拿大_96
+      - 🇨🇦_CA_加拿大_97
+      - 🇨🇦_CA_加拿大_98
+      - 🇬🇧_GB_英国_99
       - 🇨🇦_CA_加拿大_100
       - 🇨🇦_CA_加拿大_101
-      - HK香港(youtube_com玉豆分享)_102
-      - 欧洲(youtube_com+玉豆分享)_103
-      - 欧洲(youtube_com+玉豆分享)_104
-      - 法国(youtube_com+玉豆分享)_105
-      - 法国(youtube_com+玉豆分享)_106
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_107
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_108
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_109
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_110
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_111
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_112
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_113
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_114
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_115
-      - 🇨🇦加拿大(youtube_com+玉豆分享)_116
+      - 🇺🇸美国(youtube_com玉豆分享)_102
+      - 🇬🇧英国(youtube_com+玉豆分享)_103
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_104
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_105
+      - 🇨🇦_CA_加拿大_106
+      - 🇨🇦_CA_加拿大_107
+      - 🇨🇦_CA_加拿大_108
+      - 🇨🇦_CA_加拿大_109
+      - 🇺🇸_US_美国_110
+      - 🇨🇦_CA_加拿大_111
+      - 🇨🇦_CA_加拿大_112
+      - 🇨🇦_CA_加拿大_113
+      - 🇨🇦_CA_加拿大_114
+      - 🇨🇦_CA_加拿大_115
+      - 🇨🇦_CA_加拿大_116
+      - 🇨🇦_CA_加拿大_117
+      - 🇨🇦_CA_加拿大_118
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_119
+      - 🇨🇦_CA_加拿大_120
+      - 🇨🇦_CA_加拿大_121
+      - 🇨🇦_CA_加拿大_122
+      - 🇨🇦_CA_加拿大_123
+      - 🇨🇦_CA_加拿大_124
+      - 🇨🇦_CA_加拿大_125
+      - 🇨🇦_CA_加拿大_126
+      - 🇨🇦_CA_加拿大_127
+      - 🇨🇦_CA_加拿大_128
+      - 🇨🇦_CA_加拿大_129
+      - 瑞士(youtube_com玉豆分享)_130
+      - 欧洲(youtube_com玉豆分享)_131
+      - 🇨🇦加拿大(youtube_com+玉豆分享)_132
+      - 🇨🇦_CA_加拿大_133
+      - 🇨🇦_CA_加拿大_134
+      - 🇨🇦_CA_加拿大_135
+      - 🇨🇦_CA_加拿大_136
+      - 🇨🇦_CA_加拿大_137
+      - 🇨🇦_CA_加拿大_138
+      - 🇨🇦_CA_加拿大_139
+      - 🇨🇦_CA_加拿大_140
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
