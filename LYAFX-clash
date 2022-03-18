@@ -5,795 +5,585 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies: 
-  - {name: 'MN_935', server: '49.0.231.23', port: 32612, type: vmess, uuid: '6dfa7afc-14b7-43bf-e762-a171c06f9572', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '49.0.231.23'}} }
-  - {name: 'Relay_🇭🇰HK-🇭🇰HK_550', server: 'hkaz3.xmrth-node.xyz', port: 10009, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇭🇰HK-🇸🇬SG_545', server: 'hkaz3.xmrth-node.xyz', port: 10028, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇺🇸US-🇯🇵JP_2069', server: 'jpaz3.xmrth-node.xyz', port: 10051, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇭🇰HK-🇹🇼TW_546', server: 'hkaz3.xmrth-node.xyz', port: 10019, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇺🇸US-🇯🇵JP_2066', server: 'jpaz1.xmrth-node.xyz', port: 10045, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇺🇸US-🇯🇵JP_2068', server: 'jpaz2.xmrth-node.xyz', port: 10046, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇨🇳CN-🇺🇸US_338', server: gz1.52168.xyz, port: 1114, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
-  - {name: 'Relay_🇺🇸US-🇹🇼TW_2070', server: 'jpaz1.xmrth-node.xyz', port: 10063, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'defaultName_10', server: gz1.52168.xyz, port: 1114, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
-  - {name: 'Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11', server: 'zfd-unicom.ddnsnode.com', port: 16229, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: 'zfd-unicom.ddnsnode.com'}} }
-  - {name: 'Relay_🇺🇸US-🇺🇸US_2061', server: 'jpaz3.xmrth-node.xyz', port: 10140, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇺🇸US-🇺🇸US_2085', server: 'jpaz2.xmrth-node.xyz', port: 10141, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'Relay_🇭🇰HK-🇭🇰HK_550', server: 'hkaz1.xmrth-node.xyz', port: 10007, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'Relay_🇭🇰HK-🇰🇷KR_556', server: 'hkaz1.xmrth-node.xyz', port: 10017, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - { name: 'HK_702', server: 'ssl.tcpbbr.net', port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d }
   - {name: 'Relay_🇭🇰HK-🇩🇪DE_547', server: 'hkaz3.xmrth-node.xyz', port: 10035, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'gz1_52168_xyz:1114_15', server: gz1.52168.xyz, port: 1114, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
-  - {name: 'Relay_🇺🇸US-🇹🇼TW_2071', server: 'jpaz2.xmrth-node.xyz', port: 10067, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - { name: 'Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17', server: '120.232.192.119', port: 3389, type: trojan, password: a3c6461972471c75 }
-  - {name: 'Relay_🇺🇸US-🇺🇸US_2075', server: 'jpaz1.xmrth-node.xyz', port: 10058, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: '🇨🇳CN_400', server: 'sxqxj.cn', port: 2164, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws'} }
-  - {name: 'Relay_🇺🇸US-🇩🇪DE_2063', server: 'jpaz3.xmrth-node.xyz', port: 10135, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'Relay_🇺🇸US-🇩🇪DE_2095', server: 'jpaz2.xmrth-node.xyz', port: 10138, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'US_1509', server: '38.114.114.19', port: 8000,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'Relay_🇺🇸US-🇩🇪DE_2067', server: 'jpaz1.xmrth-node.xyz', port: 10133, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
-  - {name: 'US_1371', server: '38.114.114.19', port: 6379,  type: ss, cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
-  - {name: '🇨🇳CN_581', server: '117.28.242.156', port: 2164, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: 'sxqxj.cn'}} }
-  - {name: 'US_1468', server: '38.114.114.19', port: 2376,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
-  - {name: 'US_1369', server: '38.114.114.19', port: 8091,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
-  - {name: 'US_2124', server: '38.114.114.19', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'US_1505', server: '38.114.114.19', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'US_2130', server: '38.114.114.19', port: 8008,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: 'US_2129', server: '38.114.114.19', port: 5500,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'US_1444', server: '38.114.114.19', port: 5601,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇺🇸_33', server: '38.114.114.19', port: 8009,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: 'US_2164', server: '38.114.114.19', port: 5003,  type: ss, cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
-  - {name: 'US_2123', server: '38.114.114.19', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '🇺🇸_36', server: '38.114.114.19', port: 7307,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - { name: 'IR_602', server: '185.148.14.58', port: 53514, type: trojan, password: 3r90JDGBYA }
-  - {name: 'US_2168', server: '38.114.114.19', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'LT_808', server: '46.183.185.15', port: 989,  type: ss, cipher: 'aes-256-cfb', password: 'f8f7aCzcPKbsF8p3'}
-  - {name: 'US_2041', server: '192.46.209.146', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '', server: 'zfd-unicom.ddnsnode.com', port: 16229, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: 'US_2182', server: '167.88.63.89', port: 5600,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'defaultName_43', server: gz1.52168.xyz, port: 1103, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
-  - {name: 'ZZ_2437', server: '134.195.196.149', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'GB_629', server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, password: 'PNRbp3j9B', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth'}
+  - {name: 'defaultName_5', server: gz1.52168.xyz, port: 1101, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
+  - {name: '', server: 'hkaz1.xmrth-node.xyz', port: 10033, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'Relay_🇨🇳CN-🇳🇱NL_346', server: gz2.52168.xyz, port: 2109, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
+  - {name: 'defaultName_8', server: gz1.52168.xyz, port: 1103, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
+  - {name: 'defaultName_9', server: gz2.52168.xyz, port: 2109, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
+  - {name: 'US_855', server: '167.88.61.175', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'gz1_52168_xyz:1103_11', server: gz1.52168.xyz, port: 1103, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
+  - {name: 'US_1311', server: '142.202.48.74', port: 5004,  type: ss, cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
   - {name: '🇩🇪DE_601', server: '152.70.188.10', port: 443, type: vmess, uuid: '6ae16454-de6a-4113-c64e-0549be488f15', alterId: 0, cipher: auto, tls: true, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: 'CA_247', server: '198.57.27.191', port: 8091,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
-  - {name: 'CA_348', server: '198.57.27.191', port: 2375,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
-  - {name: 'KR_778', server: '13.125.239.214', port: 443,  type: ss, cipher: 'aes-256-cfb', password: 'amazonskr05'}
-  - {name: 'Relay_🇨🇳CN-🇸🇬SG_353', server: 'zfd-unicom.ddnsnode.com', port: 16227, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: 'zfd-unicom.ddnsnode.com'}} }
-  - {name: 'Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51', server: 'zfd-unicom.ddnsnode.com', port: 16227, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: 'zfd-unicom.ddnsnode.com'}} }
-  - {name: 'ZZ_2855', server: '169.197.142.99', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '🇨🇳CN_328', server: '42.193.48.64', port: 50002, type: vmess, uuid: '418048af-a293-4b99-9b0c-98ca3580dd24', alterId: 64, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: 'ZZ_2910', server: '134.195.196.3', port: 5600,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇨🇳CN_410', server: '183.232.56.161', port: 1612, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'microsoft.com'}} }
-  - {name: 'ZZ_3132', server: '134.195.196.149', port: 8881,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'defaultName_57', server: gz1.52168.xyz, port: 1103, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
-  - { name: 'Relay_🇯🇵JP-🇯🇵JP_922', server: 'lijp.scsevers.cf', port: 443, type: trojan, password: sharecentre }
-  - {name: 'JP_758', server: '172.105.251.193', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_3135', server: '134.195.196.149', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'Pool__215', server: '202.61.141.130', port: 443, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: '202.61.141.130'}} }
-  - {name: 'CA_285', server: '198.57.27.191', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'defaultName_63', server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, password: 'PNRbp3j9B', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth'}
-  - {name: 'JP_750', server: '172.105.251.193', port: 7307,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_2835', server: '134.195.196.3', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'CA_322', server: '198.57.27.191', port: 8882,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'JP_751', server: '172.105.251.193', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'FR_574', server: '62.210.140.163', port: 8881,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: '_83', server: '42.193.48.64', port: 50002, type: vmess, uuid: '418048af-a293-4b99-9b0c-98ca3580dd24', alterId: 64, cipher: auto, tls: false, network: 'tcp' }
-  - {name: 'Relay_🇨🇳CN-🇸🇬SG_390', server: '180.163.62.91', port: 22001,  type: ss, cipher: 'aes-128-cfb', password: 'QazEdcTgb159@$*'}
-  - {name: 'Relay_🇨🇳CN-🇺🇸US_353', server: '211.99.100.90', port: 56098, type: vmess, uuid: '28fae2ae-93f8-4ad8-86aa-f42bc3890173', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: 'AU_57', server: '172.105.184.113', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'AU_88', server: '172.105.184.113', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'ZZ_2794', server: '134.195.196.3', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'AU_71', server: '172.105.184.113', port: 8090,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
-  - {name: 'CN_406', server: '211.99.100.90', port: 56098, type: vmess, uuid: '28fae2ae-93f8-4ad8-86aa-f42bc3890173', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: '211.99.100.90'}} }
-  - {name: 'AU_84', server: '172.105.184.113', port: 6379,  type: ss, cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
-  - {name: 'AU_50', server: '172.105.184.113', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'AU_96', server: '172.105.184.113', port: 7307,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'AU_63', server: '172.105.184.113', port: 8882,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'AU_62', server: '172.105.184.113', port: 8888,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'AU_79', server: '172.105.184.113', port: 5000,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'US_2041', server: '192.46.209.146', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15', server: 'zfd-unicom.ddnsnode.com', port: 16227, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: 'zfd-unicom.ddnsnode.com'}} }
+  - {name: 'Relay_🇭🇰HK-🇹🇼TW_553', server: 'hkaz3.xmrth-node.xyz', port: 10019, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'US_1968', server: '142.202.48.74', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: 'LT_808', server: '46.183.185.15', port: 989,  type: ss, cipher: 'aes-256-cfb', password: 'f8f7aCzcPKbsF8p3'}
   - {name: 'DE_465', server: '142.93.168.188', port: 21612,  type: ss, cipher: 'chacha20-ietf-poly1305', password: 'zUOC2CcSPiEX'}
-  - {name: '🇸🇬SG_1227', server: '167.71.197.50', port: 44194, type: vmess, uuid: '5cc6c2cf-af81-4341-f8f7-af8a83804d46', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '167.71.197.50'}} }
-  - {name: 'AU_98', server: '172.105.184.113', port: 8008,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: 'AU_90', server: '172.105.184.113', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇭🇰HK_690', server: 'hkaz3.xmrth-node.xyz', port: 10028, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'ZZ_2702', server: '169.197.142.4', port: 3389,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_3648', server: '169.197.142.4', port: 8091,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: 'ZZ_3672', server: '169.197.142.4', port: 5001,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'Relay_🇭🇰HK-🇭🇰HK_550', server: 'hkaz3.xmrth-node.xyz', port: 10009, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'ZZ_3407', server: '134.195.196.68', port: 6379,  type: ss, cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: 'Relay_🇺🇸US-🇹🇼TW_2071', server: 'jpaz2.xmrth-node.xyz', port: 10067, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'ZZ_2649', server: '134.195.196.68', port: 8009,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
+  - {name: '', server: 'hkaz1.xmrth-node.xyz', port: 10026, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'Relay_🇺🇸US-🇺🇸US_2061', server: 'jpaz3.xmrth-node.xyz', port: 10140, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'KR_778', server: '13.125.239.214', port: 443,  type: ss, cipher: 'aes-256-cfb', password: 'amazonskr05'}
+  - {name: 'Relay_🇺🇸US-🇯🇵JP_2069', server: 'jpaz3.xmrth-node.xyz', port: 10051, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: '_83', server: '42.193.48.64', port: 50002, type: vmess, uuid: '418048af-a293-4b99-9b0c-98ca3580dd24', alterId: 64, cipher: auto, tls: false, network: 'tcp' }
+  - {name: 'Relay_🇺🇸US-🇩🇪DE_2063', server: 'jpaz3.xmrth-node.xyz', port: 10135, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'ZZ_3414', server: '134.195.196.187', port: 5000,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_2704', server: '134.195.196.187', port: 8881,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸US_2352', server: 'jpaz2.xmrth-node.xyz', port: 10046, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'ZZ_2600', server: '134.195.196.3', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: 'ZZ_3651', server: '169.197.142.4', port: 2376,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '', server: 'zfd-unicom.ddnsnode.com', port: 16229, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - {name: 'Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40', server: 'zfd-unicom.ddnsnode.com', port: 16229, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: 'zfd-unicom.ddnsnode.com'}} }
+  - {name: 'ZZ_3658', server: '169.197.142.4', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'ZZ_2634', server: '134.195.196.187', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'ZZ_2577', server: '134.195.196.187', port: 2376,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: 'ZZ_3426', server: '134.195.196.187', port: 2375,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: 'Relay_🇨🇳CN-🇸🇬SG_353', server: 'zfd-unicom.ddnsnode.com', port: 16227, type: vmess, uuid: 'f8a35790-1599-38a5-bed9-224befd26d38', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: 'zfd-unicom.ddnsnode.com'}} }
+  - {name: '🇨🇳CN_328', server: '42.193.48.64', port: 50002, type: vmess, uuid: '418048af-a293-4b99-9b0c-98ca3580dd24', alterId: 64, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
   - {name: 'AU_86', server: '172.105.184.113', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'Relay__+0_92Mb_88', server: '117.28.243.164', port: 8007,  type: ss, cipher: 'rc4-md5', password: 'passinfo123'}
-  - {name: 'FR_519', server: '51.255.66.185', port: 7307,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'AU_78', server: '172.105.184.113', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'ZZ_2156', server: '134.195.196.81', port: 8091,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: 'Relay_🇺🇸US-🇺🇸US_2085', server: 'jpaz2.xmrth-node.xyz', port: 10141, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: 'AU_50', server: '172.105.184.113', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'AU_79', server: '172.105.184.113', port: 5000,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'AU_84', server: '172.105.184.113', port: 6379,  type: ss, cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: 'AU_71', server: '172.105.184.113', port: 8090,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: 'ZZ_2502', server: '134.195.196.81', port: 2375,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: 'ZZ_2650', server: '134.195.196.3', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: 'ZZ_2678', server: '134.195.196.3', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'AU_90', server: '172.105.184.113', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: 'AU_88', server: '172.105.184.113', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: 'gz1_52168_xyz:1111_59', server: gz1.52168.xyz, port: 1111, type: ssr, password: 'epChJS35fV', cipher: 'aes-256-cfb', protocol: 'auth_aes128_sha1', obfs: 'tls1.2_ticket_auth', protocol-param: '149:y711wfz6uln', obfs-param: '30a2a149.baidu.com'}
   - {name: 'AU_64', server: '172.105.184.113', port: 8881,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'Relay__1_62Mb_92', server: sg-am11.eqnode.net, port: 8181, type: ssr, password: 'kKdNNt2HZ', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth', obfs-param: 'releases.ubuntu.com'}
-  - {name: 'ZZ_2782', server: '134.195.196.187', port: 8882,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'Relay_🇨🇳CN-🇺🇸US_454', server: '211.99.100.90', port: 56098, type: vmess, uuid: '28fae2ae-93f8-4ad8-86aa-f42bc3890173', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/video', headers: {host: '211.99.100.90'}} }
-  - {name: 'defaultName_95', server: sg-am11.eqnode.net, port: 8181, type: ssr, password: 'kKdNNt2HZ', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth'}
-  - {name: 'defaultName_96', server: 13.215.45.194, port: 8181, type: ssr, password: 'kKdNNt2HZ', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth'}
-  - { name: 'CN_411', server: 's1.upyun.online', port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219 }
-  - {name: 'uk-am3-5_eqsunshine_com:8181_98', server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, password: 'PNRbp3j9B', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth'}
-  - {name: 'CN_394', server: '117.28.243.220', port: 8223,  type: ss, cipher: 'rc4-md5', password: 'passinfo123'}
-  - {name: 'CN_400', server: '117.28.243.220', port: 8045,  type: ss, cipher: 'rc4-md5', password: 'passinfo123'}
-  - { name: 'CN_409', server: 's2.upyun.online', port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219 }
-  - {name: 'defaultName_102', server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, password: 'PNRbp3j9B', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth'}
-  - {name: 'CN_381', server: '117.28.243.220', port: 8147,  type: ss, cipher: 'rc4-md5', password: 'passinfo123'}
-  - {name: 'CN_31+_+2_30Mb_104', server: '101.91.121.247', port: 50004,  type: ss, cipher: 'aes-256-cfb', password: '4415934295'}
-  - {name: 'CA_329', server: '198.57.27.191', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'CN_393', server: '117.28.243.141', port: 6112,  type: ss, cipher: 'rc4-md5', password: 'passinfo123'}
-  - {name: 'Relay_🇨🇳CN-🇹🇼TW_388', server: '14.29.124.174', port: 20700,  type: ss, cipher: 'aes-128-cfb', password: 'QazEdcTgb159@$*'}
-  - {name: 'US_2802', server: 13.215.45.194, port: 8181, type: ssr, password: 'kKdNNt2HZ', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth', obfs-param: 'releases.ubuntu.com'}
+  - {name: 'AU_62', server: '172.105.184.113', port: 8888,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'AU_98', server: '172.105.184.113', port: 8008,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
+  - {name: 'ZZ_2674', server: '134.195.196.3', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: 'Relay_🇺🇸US-🇩🇪DE_2095', server: 'jpaz2.xmrth-node.xyz', port: 10138, type: vmess, uuid: 'fff8caab-7472-32c1-9a70-3953002ebb35', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/index', headers: {host: 'www.baidu.com'}} }
+  - {name: '_+7_06Mb_65', server: '51.255.66.185', port: 7001,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: 'ZZ_2638', server: '134.195.196.81', port: 5500,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'ZZ_2660', server: '134.195.196.81', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: 'ZZ_2547', server: '134.195.196.68', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'ZZ_2404', server: '134.195.196.68', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: 'Relay__+0_92Mb_70', server: '117.28.243.164', port: 8007,  type: ss, cipher: 'rc4-md5', password: 'passinfo123'}
+  - {name: '13_215_45_194:8181_71', server: 13.215.45.194, port: 8181, type: ssr, password: 'kKdNNt2HZ', cipher: 'aes-256-cfb', protocol: 'origin', obfs: 'tls1.2_ticket_auth', obfs-param: 'releases.ubuntu.co%%�'}
+  - {name: 'Relay_🇭🇰HK-🇭🇰HK_551', server: '124.156.146.231', port: 22836, type: vmess, uuid: 'b6cb8c79-9af3-440e-9781-813ac0a1e8e3', alterId: 64, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - {name: 'Relay_🇭🇰HK-🇭🇰HK_910', server: '124.156.146.231', port: 22836, type: vmess, uuid: 'b6cb8c79-9af3-440e-9781-813ac0a1e8e3', alterId: 64, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '124.156.146.231'}} }
+  - {name: '🇨🇳CN_400', server: 'sxqxj.cn', port: 2164, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws'} }
+  - {name: 'CN_313', server: '101.91.121.247', port: 50004,  type: ss, cipher: 'aes-256-cfb', password: '4415934295'}
+  - {name: 'Relay_🇭🇰HK-🇭🇰HK_551', server: '124.156.146.231', port: 22836, type: vmess, uuid: 'b6cb8c79-9af3-440e-9781-813ac0a1e8e3', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/index', headers: {host: '124.156.146.231'}} }
+  - {name: 'ZZ_2168', server: '134.195.196.81', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'ZZ_2643', server: '169.197.142.99', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -816,114 +606,84 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - MN_935
       - Relay_🇭🇰HK-🇭🇰HK_550
-      - Relay_🇭🇰HK-🇸🇬SG_545
-      - Relay_🇺🇸US-🇯🇵JP_2069
-      - Relay_🇭🇰HK-🇹🇼TW_546
-      - Relay_🇺🇸US-🇯🇵JP_2066
-      - Relay_🇺🇸US-🇯🇵JP_2068
-      - Relay_🇨🇳CN-🇺🇸US_338
-      - Relay_🇺🇸US-🇹🇼TW_2070
-      - defaultName_10
-      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_11
-      - Relay_🇺🇸US-🇺🇸US_2061
-      - Relay_🇺🇸US-🇺🇸US_2085
+      - Relay_🇭🇰HK-🇰🇷KR_556
+      - HK_702
       - Relay_🇭🇰HK-🇩🇪DE_547
-      - gz1_52168_xyz:1114_15
-      - Relay_🇺🇸US-🇹🇼TW_2071
-      - Relay_🇨🇳CN-🇹🇼TW_78+_+5_55Mb_17
-      - Relay_🇺🇸US-🇺🇸US_2075
-      - 🇨🇳CN_400
-      - Relay_🇺🇸US-🇩🇪DE_2063
-      - Relay_🇺🇸US-🇩🇪DE_2095
-      - US_1509
-      - Relay_🇺🇸US-🇩🇪DE_2067
-      - US_1371
-      - 🇨🇳CN_581
-      - US_1468
-      - US_1369
-      - US_2124
-      - US_1505
-      - US_2130
-      - US_2129
-      - US_1444
-      - 🇺🇸_33
-      - US_2164
-      - US_2123
-      - 🇺🇸_36
-      - IR_602
-      - US_2168
-      - LT_808
-      - US_2041
+      - defaultName_5
       - 
-      - US_2182
-      - defaultName_43
-      - ZZ_2437
-      - GB_629
+      - Relay_🇨🇳CN-🇳🇱NL_346
+      - defaultName_8
+      - defaultName_9
+      - US_855
+      - gz1_52168_xyz:1103_11
+      - US_1311
       - 🇩🇪DE_601
-      - CA_247
-      - CA_348
-      - KR_778
-      - Relay_🇨🇳CN-🇸🇬SG_353
-      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_51
-      - ZZ_2855
-      - 🇨🇳CN_328
-      - ZZ_2910
-      - 🇨🇳CN_410
-      - ZZ_3132
-      - defaultName_57
-      - Relay_🇯🇵JP-🇯🇵JP_922
-      - JP_758
-      - ZZ_3135
-      - Pool__215
-      - CA_285
-      - defaultName_63
-      - JP_750
-      - ZZ_2835
-      - CA_322
-      - JP_751
-      - FR_574
-      - _83
-      - Relay_🇨🇳CN-🇸🇬SG_390
-      - Relay_🇨🇳CN-🇺🇸US_353
-      - AU_57
-      - AU_88
-      - ZZ_2794
-      - AU_71
-      - CN_406
-      - AU_84
-      - AU_50
-      - AU_96
-      - AU_63
-      - AU_62
-      - AU_79
+      - US_2041
+      - Relay_🇨🇳CN-🇸🇬SG_41_12_68Mb_15
+      - Relay_🇭🇰HK-🇹🇼TW_553
+      - US_1968
+      - LT_808
       - DE_465
-      - 🇸🇬SG_1227
-      - AU_98
-      - AU_90
+      - 🇭🇰HK_690
+      - ZZ_2702
+      - ZZ_3648
+      - ZZ_3672
+      - Relay_🇭🇰HK-🇭🇰HK_550
+      - ZZ_3407
+      - Relay_🇺🇸US-🇹🇼TW_2071
+      - ZZ_2649
+      - 
+      - Relay_🇺🇸US-🇺🇸US_2061
+      - KR_778
+      - Relay_🇺🇸US-🇯🇵JP_2069
+      - _83
+      - Relay_🇺🇸US-🇩🇪DE_2063
+      - ZZ_3414
+      - ZZ_2704
+      - 🇺🇸US_2352
+      - ZZ_2600
+      - ZZ_3651
+      - 
+      - Relay_🇨🇳CN-🇸🇬SG_43_6_88Mb_40
+      - ZZ_3658
+      - ZZ_2634
+      - ZZ_2577
+      - ZZ_3426
+      - Relay_🇨🇳CN-🇸🇬SG_353
+      - 🇨🇳CN_328
       - AU_86
-      - Relay__+0_92Mb_88
-      - FR_519
-      - AU_78
+      - ZZ_2156
+      - Relay_🇺🇸US-🇺🇸US_2085
+      - AU_50
+      - AU_79
+      - AU_84
+      - AU_71
+      - ZZ_2502
+      - ZZ_2650
+      - ZZ_2678
+      - AU_90
+      - AU_88
+      - gz1_52168_xyz:1111_59
       - AU_64
-      - Relay__1_62Mb_92
-      - ZZ_2782
-      - Relay_🇨🇳CN-🇺🇸US_454
-      - defaultName_95
-      - defaultName_96
-      - CN_411
-      - uk-am3-5_eqsunshine_com:8181_98
-      - CN_394
-      - CN_400
-      - CN_409
-      - defaultName_102
-      - CN_381
-      - CN_31+_+2_30Mb_104
-      - CA_329
-      - CN_393
-      - Relay_🇨🇳CN-🇹🇼TW_388
-      - US_2802
+      - AU_62
+      - AU_98
+      - ZZ_2674
+      - Relay_🇺🇸US-🇩🇪DE_2095
+      - _+7_06Mb_65
+      - ZZ_2638
+      - ZZ_2660
+      - ZZ_2547
+      - ZZ_2404
+      - Relay__+0_92Mb_70
+      - 13_215_45_194:8181_71
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - Relay_🇭🇰HK-🇭🇰HK_910
+      - 🇨🇳CN_400
+      - CN_313
+      - Relay_🇭🇰HK-🇭🇰HK_551
+      - ZZ_2168
+      - ZZ_2643
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
