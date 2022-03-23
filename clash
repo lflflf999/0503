@@ -4,369 +4,390 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies: 
-  - {name: '🇨🇳CN_400', server: 'sxqxj.cn', port: 2164, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws'} }
-  - { name: 'KR_902+_+6_49Mb_2', server: 'jgw3.gaox.ml', port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921 }
-  - {name: '🇨🇳CN_581', server: '117.28.242.156', port: 2164, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: 'sxqxj.cn'}} }
-  - {name: '', server: '13.72.192.219', port: 36104, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: '美国阿伟科技atTG/油管*NF_5', server: 'gkdcm.gkdcn.top', port: 21822,  type: ss, cipher: 'chacha20-ietf-poly1305', password: '82b60549-103b-31f0-b6fb-a303177522ae'}
-  - { name: 'US_86', server: 'us2.tcpbbr.net', port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d }
-  - { name: 'US_84', server: 'us2.tcpbbr.net', port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b }
-  - {name: 'Relay_🇺🇸US-🇺🇸US_3196', server: 'tmxk.herokuapp.com', port: 443, type: vmess, uuid: 'ad806487-2d26-4636-98b6-ab85cc8521f7', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/'} }
-  - {name: '', server: '65.52.171.156', port: 36174, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'US_87', server: '155.248.202.203', port: 14564, type: vmess, uuid: '4a0da379-a7cc-4389-88d7-45514b896883', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: '155.248.202.203'}} }
-  - {name: 'Relay_🇺🇸US-🇺🇸US_1580', server: '155.248.202.203', port: 14564, type: vmess, uuid: '4a0da379-a7cc-4389-88d7-45514b896883', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '155.248.202.203'}} }
-  - {name: 'US_3086', server: '45.61.184.3', port: 40435, type: vmess, uuid: 'eca12e73-8f74-439f-b918-624e832422d4', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/9apQabyg9le', headers: {host: '45.61.184.3'}} }
-  - {name: '', server: '20.205.47.95', port: 15021, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'Relay_🇯🇵JP-🇯🇵JP_1122', server: 'lin1.free80ml.tk', port: 80, type: vmess, uuid: '4e1d0b12-25f0-363f-8659-9c6a3ca1fcda', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - { name: '日本阿伟科技atTG/油管*原生_15', server: 'jgwdj1.gaox.ml', port: 443, type: trojan, password: e8553fc5-f3a0-409c-ac06-1cd93b026cf4 }
-  - {name: '', server: '65.52.171.156', port: 15072, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'JP_342', server: 'vs.mumi.bid', port: 10124, type: vmess, uuid: '0748a567-ca97-4fc8-9d9c-9ca18f2b9ff4', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/', headers: {host: 'vs.mumi.bid'}} }
-  - {name: '', server: '172.104.76.239', port: 15020, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'ZZ_138', server: '134.195.196.81', port: 2375,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
-  - {name: '', server: '13.72.192.219', port: 15015, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'ZZ_2912', server: '134.195.196.3', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_2913', server: '134.195.196.3', port: 8000,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: '🇷🇺RU_831', server: '0319ru99.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/nmsl', headers: {host: '0319ru99.fans8.xyz'}} }
-  - {name: '新加坡阿伟科技atTG/油管_24', server: 'sp1.peakerselling.com', port: 443, type: vmess, uuid: 'd3435521-3d1f-37f7-ab48-f5302bc6a4fb', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/helloman', headers: {host: 'sp1.peakerselling.com'}} }
-  - {name: 'ZZ_2858', server: '169.197.142.4', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇺🇸US_2269', server: 'kr.rnmtq.gq', port: 63470, type: vmess, uuid: 'cb8ab285-fafc-45f6-87bc-97a7a2f27f9f', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: 'vod3.nty.tv189.cn'}} }
-  - {name: 'ZZ_139', server: '169.197.142.99', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'ZZ_189', server: '134.195.196.81', port: 5003,  type: ss, cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
-  - {name: 'ZZ_122', server: '169.197.142.4', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'ZZ_152', server: '134.195.196.81', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2854', server: '134.195.196.81', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: '', server: '65.52.171.156', port: 15031, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'US_44', server: '167.88.61.175', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_3343', server: '134.195.196.187', port: 2375,  type: ss, cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
-  - {name: 'ZZ_207', server: '134.195.196.68', port: 5601,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2469', server: '134.195.196.81', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_168', server: '134.195.196.68', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'ZZ_3642', server: '134.195.196.187', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_2646', server: '134.195.196.3', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_2925', server: '169.197.142.4', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '', server: '65.52.171.156', port: 15085, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: '', server: '13.72.192.219', port: 15018, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: '', server: '20.239.51.22', port: 15006, type: vmess, uuid: '047184b7-6da2-3d3f-ac27-6a1a8701daf8', alterId: 2, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'ZZ_190', server: '169.197.142.99', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '_10_93Mb_45', server: '172.99.190.92', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'ZZ_140', server: '134.195.196.187', port: 8882,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'ZZ_2363', server: '169.197.142.99', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+proxies:
+  - {"name":"US_3086","server":"45.61.184.3","port":40435,"type":"vmess","uuid":"eca12e73-8f74-439f-b918-624e832422d4","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/9apQabyg9le","headers":{"host":"45.61.184.3"}}}
+  - {"name":"defaultName_2","server":"117.28.243.173","port":4173,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"defaultName_3","server":"117.28.243.173","port":2173,"type":"ssr","password":"passinfo123","cipher":"rc4-md5","protocol":"origin","obfs":"plain"}
+  - {"name":"US_1680","server":"142.202.48.7","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"PL_881","server":"194.15.196.66","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"PL_879","server":"194.15.196.66","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"US_2231","server":"142.202.48.7","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"Relay_🇬🇧GB-🇬🇧GB_533","server":"uk-am3-5.eqsunshine.com","port":8181,"type":"ssr","password":"PNRbp3j9B","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
+  - {"name":"SE_934","server":"51.12.89.247","port":500,"type":"ss","cipher":"aes-128-gcm","password":"@VPNFolder"}
+  - {"name":"defaultName_10","server":"62.216.91.229","port":9080,"type":"ss","cipher":"aes-256-cfb","password":"VP8ZPxQpJtZRCjfZ"}
+  - {"name":"KR_832","server":"132.145.89.56","port":50934,"type":"vmess","uuid":"b9a71e83-98ef-437c-a358-f2514edca50f","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"132.145.89.56"}}}
+  - {"name":"Relay_🇺🇸US-🇺🇸US_3027","server":"us.rnmtq.gq","port":63480,"type":"vmess","uuid":"cb8ab285-fafc-45f6-87bc-97a7a2f27f9f","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us.rnmtq.gq"}}}
+  - {"name":"ZZ_2651","server":"134.195.196.187","port":5003,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"US_3001","server":"209.94.56.152","port":443,"type":"vmess","uuid":"3033e157-fdc3-47c0-ae32-fc4fe65fc64d","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/9apQabyg9le","headers":{"host":"209.94.56.152"}}}
+  - {"name":"ZZ_2545","server":"134.195.196.187","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"defaultName_16","server":"117.28.243.154","port":6188,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"US_2092","server":"45.61.184.3","port":40435,"type":"vmess","uuid":"eca12e73-8f74-439f-b918-624e832422d4","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"45.61.184.3"}}}
+  - {"name":"ZZ_2654","server":"134.195.196.187","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"ZZ_157+TGatpeekfun_19","server":"134.195.196.187","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"ZZ_2499","server":"134.195.196.68","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"ZZ_137+TGatpeekfun_21","server":"134.195.196.81","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"ZZ_2600","server":"169.197.142.99","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"ZZ_148+TGatpeekfun_23","server":"134.195.196.187","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_2608","server":"134.195.196.3","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"ZZ_216+TGatpeekfun_25","server":"134.195.196.187","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"US_1385","server":"172.99.190.92","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"ZZ_2447","server":"134.195.196.68","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_158+TGatpeekfun_28","server":"134.195.196.81","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"_02","server":"134.195.196.81","port":2375,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"ZZ_177+TGatpeekfun_30","server":"134.195.196.68","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"ZZ_2502","server":"134.195.196.68","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"ZZ_2602","server":"134.195.196.187","port":8091,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"ZZ_192+TGatpeekfun_33","server":"134.195.196.187","port":8080,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"US_3088","server":"45.32.94.166","port":31676,"type":"vmess","uuid":"6f3ec45c-5283-40e8-aea9-7749f4c75753","alterId":0,"cipher":"auto","tls":false,"network":"http","ws-opts":{"path":"/","headers":{"host":"45.32.94.166"}}}
+  - {"name":"ZZ_2553","server":"134.195.196.187","port":3306,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_2557","server":"134.195.196.3","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"ZZ_3410","server":"134.195.196.3","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"ZZ_2587","server":"134.195.196.81","port":8882,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"ZZ_2684","server":"134.195.196.81","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"ZZ_2506","server":"134.195.196.68","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_2535","server":"172.99.190.92","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"ZZ_138+TGatpeekfun_42","server":"134.195.196.3","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"ZZ_3428","server":"134.195.196.3","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"US_1890","server":"172.99.190.92","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_2674","server":"134.195.196.81","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"ZZ_3527","server":"134.195.196.187","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"ZZ_2584","server":"134.195.196.187","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"ZZ_2667","server":"134.195.196.81","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"US_3094","server":"152.70.188.10","port":443,"type":"vmess","uuid":"6ae16454-de6a-4113-c64e-0549be488f15","alterId":0,"cipher":"auto","tls":true,"network":"tcp","ws-opts":{"path":"/ws","headers":{"host":"152.70.188.10"}}}
+  - {"name":"ZZ_2662","server":"134.195.196.3","port":8000,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -389,53 +410,56 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳CN_400
-      - KR_902+_+6_49Mb_2
-      - 🇨🇳CN_581
-      - 
-      - 美国阿伟科技atTG/油管*NF_5
-      - US_86
-      - US_84
-      - Relay_🇺🇸US-🇺🇸US_3196
-      - 
-      - US_87
-      - Relay_🇺🇸US-🇺🇸US_1580
       - US_3086
-      - 
-      - Relay_🇯🇵JP-🇯🇵JP_1122
-      - 日本阿伟科技atTG/油管*原生_15
-      - 
-      - JP_342
-      - 
-      - ZZ_138
-      - 
-      - ZZ_2912
-      - ZZ_2913
-      - 🇷🇺RU_831
-      - 新加坡阿伟科技atTG/油管_24
-      - ZZ_2858
-      - 🇺🇸US_2269
-      - ZZ_139
-      - ZZ_189
-      - ZZ_122
-      - ZZ_152
-      - ZZ_2854
-      - 
-      - US_44
-      - ZZ_3343
-      - ZZ_207
-      - ZZ_2469
-      - ZZ_168
-      - ZZ_3642
-      - ZZ_2646
-      - ZZ_2925
-      - 
-      - 
-      - 
-      - ZZ_190
-      - _10_93Mb_45
-      - ZZ_140
-      - ZZ_2363
+      - defaultName_2
+      - defaultName_3
+      - US_1680
+      - PL_881
+      - PL_879
+      - US_2231
+      - Relay_🇬🇧GB-🇬🇧GB_533
+      - SE_934
+      - defaultName_10
+      - KR_832
+      - Relay_🇺🇸US-🇺🇸US_3027
+      - ZZ_2651
+      - US_3001
+      - ZZ_2545
+      - defaultName_16
+      - US_2092
+      - ZZ_2654
+      - ZZ_157+TGatpeekfun_19
+      - ZZ_2499
+      - ZZ_137+TGatpeekfun_21
+      - ZZ_2600
+      - ZZ_148+TGatpeekfun_23
+      - ZZ_2608
+      - ZZ_216+TGatpeekfun_25
+      - US_1385
+      - ZZ_2447
+      - ZZ_158+TGatpeekfun_28
+      - _02
+      - ZZ_177+TGatpeekfun_30
+      - ZZ_2502
+      - ZZ_2602
+      - ZZ_192+TGatpeekfun_33
+      - US_3088
+      - ZZ_2553
+      - ZZ_2557
+      - ZZ_3410
+      - ZZ_2587
+      - ZZ_2684
+      - ZZ_2506
+      - US_2535
+      - ZZ_138+TGatpeekfun_42
+      - ZZ_3428
+      - US_1890
+      - ZZ_2674
+      - ZZ_3527
+      - ZZ_2584
+      - ZZ_2667
+      - US_3094
+      - ZZ_2662
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
