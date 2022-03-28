@@ -4,383 +4,600 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies: 
-  - {name: 'JP_635', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '139.162.122.205'}} }
-  - {name: 'Relay_🇨🇳CN-🇷🇺RU_360', server: '183.240.132.27', port: 21209, type: vmess, uuid: '1b693eb3-3241-362a-9001-5b503789cfbe', alterId: 2, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: '🏁ZZ_3843', server: '134.195.198.211', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'Relay_🇯🇵JP-🇯🇵JP_1052', server: 'lin1.free80ml.tk', port: 80, type: vmess, uuid: '4e1d0b12-25f0-363f-8659-9c6a3ca1fcda', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/'} }
-  - {name: 'US_1133', server: '38.114.114.69', port: 3389,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇺🇸US_2588', server: '38.114.114.69', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_2703', server: '134.195.196.51', port: 8119,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'US_1112', server: '38.114.114.69', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2594', server: '134.195.196.3', port: 5600,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2722', server: '169.197.142.99', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇨🇳CN_411', server: '183.232.56.161', port: 1101, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'microsoft.com'}} }
-  - {name: 'ZZ_2512', server: '134.195.196.3', port: 8881,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'ZZ_2738', server: '134.195.196.51', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'JP_631', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: '139.162.122.205'}} }
-  - { name: 'US_161', server: 'tj-us02.yiyodns.xyz', port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc }
-  - {name: 'ZZ_2556', server: '169.197.142.99', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇨🇳CN_410', server: '183.232.56.161', port: 1612, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'microsoft.com'}} }
-  - {name: 'ZZ_2617', server: '134.195.196.3', port: 8000,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'ZZ_2605', server: '134.195.196.3', port: 8882,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: '🇺🇸US_2913', server: '38.114.114.69', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'Pool__215', server: '202.61.141.130', port: 443, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: '202.61.141.130'}} }
-  - {name: 'Relay_🇺🇸US-🇺🇸US_3101', server: 'bpjzx2.cainiao.tk', port: 443, type: vmess, uuid: '24b4b1e1-7a89-45f6-858c-242cf53b5bdb', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess', headers: {host: 'orange-mode-ac6a.xjp0mx2cp.workers.dev'}} }
-  - {name: 'ZZ_2741', server: '134.195.196.81', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'ZZ_2560', server: '134.195.196.81', port: 8882,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'ZZ_2557', server: '134.195.196.187', port: 7001,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'ZZ_2423', server: '134.195.196.68', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_2689', server: '134.195.196.51', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_2661', server: '169.197.142.99', port: 5001,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2744', server: '134.195.196.51', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_254', server: '134.195.196.81', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_243', server: '134.195.196.81', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: '🏁ZZ_2662', server: '134.195.196.187', port: 8009,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: 'FR_41', server: '147.135.164.113', port: 44423, type: vmess, uuid: 'e6ee3fe5-7602-47b0-8d8f-52853321107f', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '147.135.164.113'}} }
-  - {name: 'ZZ_2601', server: '134.195.196.3', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2478', server: '134.195.196.68', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'ZZ_2468', server: '134.195.196.68', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'ZZ_2419', server: '134.195.196.187', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'ZZ_2629', server: '134.195.196.3', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '', server: '183.240.132.27', port: 21101, type: vmess, uuid: '1b693eb3-3241-362a-9001-5b503789cfbe', alterId: 2, cipher: auto, tls: false, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: 'ZZ_2647', server: '134.195.196.81', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_2554', server: '134.195.196.187', port: 5001,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2588', server: '134.195.196.81', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'ZZ_2548', server: '134.195.196.51', port: 8080,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'ZZ_2475', server: '134.195.196.68', port: 5601,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - { name: 'Relay_🇫🇷FR-🇱🇺LU_497', server: 's4.upyun.online', port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219 }
-  - {name: 'ZZ_2567', server: '134.195.196.187', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_2585', server: '134.195.196.3', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_2559', server: '134.195.196.187', port: 5601,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - { name: 'Relay_🇨🇳CN-🇺🇸US_378', server: 's3.upyun.online', port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219 }
+proxies:
+  - {"name":"HK_525+_12_41Mb_1","server":"f2s.jddg.me","port":27585,"type":"trojan","password":"d716e745-62f8-498e-af97-3a1e096d8c84"}
+  - {"name":"Relay_🇨🇳CN-🇸🇬SG_916","server":"183.240.132.27","port":21203,"type":"vmess","uuid":"1b693eb3-3241-362a-9001-5b503789cfbe","alterId":2,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/"}}
+  - {"name":"Relay_🇭🇰HK-🇭🇰HK_1152","server":"f2s.jddg.me","port":40011,"type":"vmess","uuid":"d716e745-62f8-498e-af97-3a1e096d8c84","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"a.189.cn"}}}
+  - {"name":"Relay_🇬🇧GB-🇬🇧GB_1135","server":"kr.jddg.me","port":443,"type":"vmess","uuid":"d716e745-62f8-498e-af97-3a1e096d8c84","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr.jddg.me"}}}
+  - {"name":"Relay_🇯🇵JP-🇯🇵JP_1052","server":"lin1.free80ml.tk","port":80,"type":"vmess","uuid":"4e1d0b12-25f0-363f-8659-9c6a3ca1fcda","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"HK_536+_10_71Mb_6","server":"f2s.jddg.me","port":12226,"type":"trojan","password":"d716e745-62f8-498e-af97-3a1e096d8c84"}
+  - {"name":"HK_527+_11_28Mb_7","server":"f2s.jddg.me","port":15224,"type":"trojan","password":"d716e745-62f8-498e-af97-3a1e096d8c84"}
+  - {"name":"HK_535+_22_14Mb_8","server":"f2s.jddg.me","port":61360,"type":"trojan","password":"d716e745-62f8-498e-af97-3a1e096d8c84"}
+  - {"name":"Relay_🇨🇳CN-🇹🇼TW_914","server":"gy.rinki.monster","port":2003,"type":"vmess","uuid":"75272af5-741d-30af-93f5-514ba330c0be","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/shr","headers":{"host":"gy.rinki.monster"}}}
+  - {"name":"Relay_🇭🇰HK-🇺🇸US_1153","server":"f2s.jddg.me","port":40002,"type":"vmess","uuid":"d716e745-62f8-498e-af97-3a1e096d8c84","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"shoutingtoutiao3.10010.com"}}}
+  - {"name":"US_143","server":"cn2.v2jx.site","port":443,"type":"vmess","uuid":"d716e745-62f8-498e-af97-3a1e096d8c84","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cn2.v2jx.site"}}}
+  - {"name":"defaultName_12","server":"gz2.52168.xyz","port":2106,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"US_1133","server":"38.114.114.69","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"HK_532+_22_75Mb_14","server":"f2s.jddg.me","port":14891,"type":"trojan","password":"d716e745-62f8-498e-af97-3a1e096d8c84"}
+  - {"name":"Relay_🇨🇳CN-🇸🇬SG_638","server":"sg04.xiaocloud.icu","port":20467,"type":"vmess","uuid":"64749822-654a-3050-9aac-ba94af918f47","alterId":2,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"sg04.xiaocloud.icu"}}}
+  - {"name":"HK_530+_11_98Mb_16","server":"f2s.jddg.me","port":15474,"type":"trojan","password":"d716e745-62f8-498e-af97-3a1e096d8c84"}
+  - {"name":"defaultName_17","server":"gz2.52168.xyz","port":2109,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"US_785+_21_14Mb_18","server":"38.114.114.69","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"JP_635","server":"139.162.122.205","port":3845,"type":"vmess","uuid":"76d5c6e3-c74c-3406-b9e8-9859d0a71c56","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"139.162.122.205"}}}
+  - {"name":"US_126","server":"172.99.190.92","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"GB_504+_74_03Mb_21","server":"78.129.253.9","port":809,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"name":"Relay_🇨🇳CN-🇸🇬SG_639","server":"sg02.xiaocloud.icu","port":20265,"type":"vmess","uuid":"64749822-654a-3050-9aac-ba94af918f47","alterId":2,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"sg02.xiaocloud.icu"}}}
+  - {"name":"JP_631","server":"139.162.122.205","port":3845,"type":"vmess","uuid":"76d5c6e3-c74c-3406-b9e8-9859d0a71c56","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/ws","headers":{"host":"139.162.122.205"}}}
+  - {"name":"US_169","server":"tj-us01.yiyodns.xyz","port":443,"type":"trojan","password":"7dafe71e-2be6-302f-bdfc-e6319a3299bc"}
+  - {"name":"馃嚭馃嚫+US_2282","server":"hk-az-zz.licom.ga","port":48211,"type":"trojan","password":"f81e990e-1283-48f9-9eff-acacad6fb661"}
+  - {"name":"Relay_🇨🇳CN-🇺🇸US_919","server":"183.240.132.27","port":21232,"type":"vmess","uuid":"1b693eb3-3241-362a-9001-5b503789cfbe","alterId":2,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/"}}
+  - {"name":"defaultName_27","server":"gz1.52168.xyz","port":1116,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"Relay_🇭🇰HK-🇺🇸US_1151","server":"f2s.jddg.me","port":40008,"type":"vmess","uuid":"d716e745-62f8-498e-af97-3a1e096d8c84","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"shoutingtoutiao3.10010.com"}}}
+  - {"name":"US_120","server":"172.99.190.92","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🏁ZZ_3843","server":"134.195.198.211","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🏁ZZ_2707","server":"134.195.196.81","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"Relay_🇨🇳CN-🇭🇰HK_918","server":"gy.rinki.monster","port":1004,"type":"vmess","uuid":"75272af5-741d-30af-93f5-514ba330c0be","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/shr","headers":{"host":"gy.rinki.monster"}}}
+  - {"name":"US_107","server":"172.99.190.92","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"US_787+_15_04Mb_34","server":"38.114.114.69","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"ZZ_2722","server":"169.197.142.99","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"IR_72","server":"185.148.14.58","port":53514,"type":"trojan","password":"3r90JDGBYA"}
+  - {"name":"US_127","server":"172.99.190.92","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"ZZ_178","server":"134.195.196.81","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_246","server":"134.195.196.51","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"ZZ_2567","server":"134.195.196.187","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"defaultName_41","server":"gz1.52168.xyz","port":1103,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"ZZ_2617","server":"134.195.196.3","port":8000,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"ZZ_2647","server":"134.195.196.81","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"ZZ_287","server":"134.195.196.3","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"US_790+_+9_22Mb_45","server":"38.114.114.69","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"US_795+_50_38Mb_46","server":"38.114.114.69","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"ZZ_2605","server":"134.195.196.3","port":8882,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"ZZ_276","server":"134.195.196.187","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"US_778+_17_73Mb_49","server":"38.114.114.69","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇨🇦CA_365","server":"0314tw02.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":3,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0314tw02.fans8.xyz"}}}
+  - {"name":"US_128","server":"172.99.190.92","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"ZZ_232","server":"134.195.196.81","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"ZZ_233","server":"134.195.196.187","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"🏁_54","server":"134.195.196.81","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_2475","server":"134.195.196.68","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"Relay_🇫🇷FR-🇱🇺LU_497","server":"s4.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"US_166","server":"s162.s2022.xyz","port":23802,"type":"trojan","password":"770c9e92-f51b-3e52-b932-eba13fb56801"}
+  - {"name":"ZZ_180","server":"169.197.142.99","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"ZZ_189","server":"134.195.196.81","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"ZZ_218","server":"134.195.196.187","port":8000,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"ZZ_230","server":"134.195.196.51","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_235","server":"134.195.196.3","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"ZZ_251","server":"134.195.196.51","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"ZZ_268","server":"134.195.196.81","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_285","server":"134.195.196.81","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"Relay_🇨🇳CN-🇺🇸US_07","server":"s1.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"ZZ_2177+_15_24Mb_67","server":"134.195.196.81","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"defaultName_68","server":"gz1.52168.xyz","port":1111,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"🏁ZZ_2708","server":"134.195.196.187","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"Relay_🇲🇾MY-🇲🇾MY_1339","server":"oaQuie3i.com","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"oaQuie3i.com"}}}
+  - {"name":"ZZ_2594","server":"134.195.196.3","port":5600,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"ZZ_2512","server":"134.195.196.3","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"ZZ_2557","server":"134.195.196.187","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"ZZ_2423","server":"134.195.196.68","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"ZZ_2419","server":"134.195.196.187","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"Relay_🇨🇳CN-🇺🇸US_378","server":"s3.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"ZZ_242","server":"134.195.196.68","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"ZZ_252","server":"134.195.196.51","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"CN_363+_+2_23Mb_79","server":"s2.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"Relay_🇨🇦CA-🇨🇦CA_445","server":"0319hzm01.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/nmsl","headers":{"host":"0319hzm01.fans8.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -403,55 +620,86 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_635
-      - Relay_🇨🇳CN-🇷🇺RU_360
-      - 🏁ZZ_3843
+      - HK_525+_12_41Mb_1
+      - Relay_🇨🇳CN-🇸🇬SG_916
+      - Relay_🇭🇰HK-🇭🇰HK_1152
+      - Relay_🇬🇧GB-🇬🇧GB_1135
       - Relay_🇯🇵JP-🇯🇵JP_1052
+      - HK_536+_10_71Mb_6
+      - HK_527+_11_28Mb_7
+      - HK_535+_22_14Mb_8
+      - Relay_🇨🇳CN-🇹🇼TW_914
+      - Relay_🇭🇰HK-🇺🇸US_1153
+      - US_143
+      - defaultName_12
       - US_1133
-      - 🇺🇸US_2588
-      - ZZ_2703
-      - US_1112
-      - ZZ_2594
-      - ZZ_2722
-      - 🇨🇳CN_411
-      - ZZ_2512
-      - ZZ_2738
+      - HK_532+_22_75Mb_14
+      - Relay_🇨🇳CN-🇸🇬SG_638
+      - HK_530+_11_98Mb_16
+      - defaultName_17
+      - US_785+_21_14Mb_18
+      - JP_635
+      - US_126
+      - GB_504+_74_03Mb_21
+      - Relay_🇨🇳CN-🇸🇬SG_639
       - JP_631
-      - US_161
-      - ZZ_2556
-      - 🇨🇳CN_410
+      - US_169
+      - 馃嚭馃嚫+US_2282
+      - Relay_🇨🇳CN-🇺🇸US_919
+      - defaultName_27
+      - Relay_🇭🇰HK-🇺🇸US_1151
+      - US_120
+      - 🏁ZZ_3843
+      - 🏁ZZ_2707
+      - Relay_🇨🇳CN-🇭🇰HK_918
+      - US_107
+      - US_787+_15_04Mb_34
+      - ZZ_2722
+      - IR_72
+      - US_127
+      - ZZ_178
+      - ZZ_246
+      - ZZ_2567
+      - defaultName_41
       - ZZ_2617
-      - ZZ_2605
-      - 🇺🇸US_2913
-      - Pool__215
-      - Relay_🇺🇸US-🇺🇸US_3101
-      - ZZ_2741
-      - ZZ_2560
-      - ZZ_2557
-      - ZZ_2423
-      - ZZ_2689
-      - ZZ_2661
-      - ZZ_2744
-      - ZZ_254
-      - ZZ_243
-      - 🏁ZZ_2662
-      - FR_41
-      - ZZ_2601
-      - ZZ_2478
-      - ZZ_2468
-      - ZZ_2419
-      - ZZ_2629
-      - 
       - ZZ_2647
-      - ZZ_2554
-      - ZZ_2588
-      - ZZ_2548
+      - ZZ_287
+      - US_790+_+9_22Mb_45
+      - US_795+_50_38Mb_46
+      - ZZ_2605
+      - ZZ_276
+      - US_778+_17_73Mb_49
+      - 🇨🇦CA_365
+      - US_128
+      - ZZ_232
+      - ZZ_233
+      - 🏁_54
       - ZZ_2475
       - Relay_🇫🇷FR-🇱🇺LU_497
-      - ZZ_2567
-      - ZZ_2585
-      - ZZ_2559
+      - US_166
+      - ZZ_180
+      - ZZ_189
+      - ZZ_218
+      - ZZ_230
+      - ZZ_235
+      - ZZ_251
+      - ZZ_268
+      - ZZ_285
+      - Relay_🇨🇳CN-🇺🇸US_07
+      - ZZ_2177+_15_24Mb_67
+      - defaultName_68
+      - 🏁ZZ_2708
+      - Relay_🇲🇾MY-🇲🇾MY_1339
+      - ZZ_2594
+      - ZZ_2512
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2419
       - Relay_🇨🇳CN-🇺🇸US_378
+      - ZZ_242
+      - ZZ_252
+      - CN_363+_+2_23Mb_79
+      - Relay_🇨🇦CA-🇨🇦CA_445
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
