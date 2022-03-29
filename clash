@@ -4,369 +4,229 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies: 
-  - {name: 'Relay_🇰🇷KR-🇰🇷KR_861', server: 'krgs.v2yun.vip', port: 80, type: vmess, uuid: '7ecc2c47-f07f-3347-8f5e-2b8ccd23509b', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: 'krgs.v2yun.vip'}} }
-  - {name: 'Relay_🇳🇱NL-🇳🇱NL_900', server: 'v1-13.ppzhu.cc', port: 3421, type: vmess, uuid: '5f4b46d9-44bd-4ad6-bcd6-d30b1305125d', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/sometimesnaive', headers: {host: 'v1-13.ppzhu.cc'}} }
-  - {name: 'Relay_🇯🇵JP-🇯🇵JP_859', server: '21.ppzhu.cc', port: 10086, type: vmess, uuid: '5f4b46d9-44bd-4ad6-bcd6-d30b1305125d', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/sometimesnaive', headers: {host: '21.ppzhu.cc'}} }
-  - {name: 'FR_36+TGatpeekfun_4', server: '51.195.136.209', port: 50004,  type: ss, cipher: 'aes-256-cfb', password: '4415934295'}
-  - {name: 'GB_38+TGatpeekfun_5', server: '78.129.253.9', port: 809,  type: ss, cipher: 'chacha20-ietf-poly1305', password: 'G!yBwPWH3Vao'}
-  - {name: 'ZZ_3201', server: '134.195.196.51', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'US_3090', server: '149.28.92.209', port: 3222, type: vmess, uuid: 'c39208f2-ae3f-11ec-a583-560003ec8341', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/UTVwOb8B/', headers: {host: '149.28.92.209'}} }
-  - {name: 'US_3051', server: '152.70.188.10', port: 443, type: vmess, uuid: '6ae16454-de6a-4113-c64e-0549be488f15', alterId: 0, cipher: auto, tls: true, network: 'tcp', ws-opts: { path: '/ws-jp', headers: {host: '152.70.188.10'}} }
-  - {name: 'defaultName_9', server: '101.91.121.247', port: 50004,  type: ss, cipher: 'aes-256-cfb', password: '4415934295'}
-  - {name: 'defaultName_10', server: '134.195.196.51', port: 8888,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_117+TGatpeekfun_11', server: '134.195.196.51', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'US_3052', server: '209.94.56.152', port: 443, type: vmess, uuid: '3033e157-fdc3-47c0-ae32-fc4fe65fc64d', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/9apQabyg9le', headers: {host: '209.94.56.152'}} }
-  - {name: 'ZZ_20', server: '134.195.196.3', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_104+TGatpeekfun_14', server: '134.195.196.51', port: 3389,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_107+TGatpeekfun_15', server: '134.195.196.51', port: 7306,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_114+TGatpeekfun_16', server: '134.195.196.51', port: 8119,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'ZZ_23', server: '169.197.142.99', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_96+TGatpeekfun_18', server: '134.195.196.3', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_97+TGatpeekfun_19', server: '134.195.196.51', port: 8080,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'ZZ_102+TGatpeekfun_20', server: '134.195.196.3', port: 8888,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '', server: 'vs.mumi.bid', port: 10124, type: vmess, uuid: '0748a567-ca97-4fc8-9d9c-9ca18f2b9ff4', alterId: 0, cipher: auto, tls: true, network: 'ws', ws-opts: { path: '/', headers: {host: 'vs.mumi.bid'}} }
-  - {name: 'ZZ_112+TGatpeekfun_22', server: '134.195.196.51', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_103+TGatpeekfun_23', server: '134.195.196.3', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'defaultName_24', server: '134.195.196.51', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_93+TGatpeekfun_25', server: '169.197.142.99', port: 9101,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_110+TGatpeekfun_26', server: '134.195.196.3', port: 8119,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'ZZ_19', server: '134.195.196.3', port: 8881,  type: ss, cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: 'defaultName_28', server: '169.197.142.99', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'US_07', server: '172.99.190.92', port: 7307,  type: ss, cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
-  - {name: 'ZZ_21', server: '134.195.196.3', port: 3306,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_111+TGatpeekfun_31', server: '134.195.196.3', port: 6697,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'defaultName_32', server: '169.197.142.99', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'ZZ_24', server: '169.197.142.99', port: 8090,  type: ss, cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
-  - {name: 'US_3071', server: '20.222.251.211', port: 80, type: vmess, uuid: '3ddcaaad-1973-4bff-9a66-13afdcb043a5', alterId: 0, cipher: auto, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '20.222.251.211'}} }
-  - {name: 'ZZ_116+TGatpeekfun_35', server: '169.197.142.99', port: 8118,  type: ss, cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: 'defaultName_36', server: yy01.nfeng6.pp.ua, port: 4002, type: ssr, password: 'jFa4F1', cipher: 'chacha20-ietf', protocol: 'auth_aes128_sha1', obfs: 'plain', protocol-param: '65199:xMcKnc', obfs-param: 'e167065199.microsoft.com'}
-  - {name: 'US_10', server: '172.99.190.92', port: 7002,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'ZZ_115+TGatpeekfun_38', server: '134.195.196.3', port: 8008,  type: ss, cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: 'defaultName_39', server: '134.195.196.3', port: 5600,  type: ss, cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_100+TGatpeekfun_40', server: '134.195.196.3', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'ZZ_18', server: '169.197.142.99', port: 443,  type: ss, cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: 'US_08', server: '172.99.190.92', port: 9102,  type: ss, cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: 'US_2278', server: '172.99.190.92', port: 6679,  type: ss, cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: 'ZZ_91+TGatpeekfun_44', server: '134.195.196.3', port: 6379,  type: ss, cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
-  - {name: 'defaultName_45', server: '169.197.142.99', port: 7001,  type: ss, cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'ZZ_118+TGatpeekfun_46', server: '134.195.196.3', port: 8000,  type: ss, cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'defaultName_47', server: '172.99.190.92', port: 6379,  type: ss, cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+proxies:
+  - {"name":"US_2995","server":"172.99.188.71","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"US_3007","server":"172.99.188.71","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"US_3004","server":"172.99.188.71","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"US_2996","server":"172.99.188.71","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"US_3010","server":"172.99.188.71","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"US_3011","server":"172.99.188.71","port":5004,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"US_3015","server":"172.99.188.71","port":8882,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"US_3009","server":"172.99.188.71","port":8091,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"US_2970","server":"172.99.188.71","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"US_3046","server":"209.94.56.152","port":443,"type":"vmess","uuid":"3033e157-fdc3-47c0-ae32-fc4fe65fc64d","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/9apQabyg9le","headers":{"host":"209.94.56.152"}}}
+  - {"name":"US_2994","server":"172.99.188.71","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"US_2988","server":"172.99.188.71","port":5003,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"US_2975","server":"172.99.188.71","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"US_2979","server":"172.99.188.71","port":2375,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"US_3000","server":"172.99.188.71","port":9101,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"US_2967","server":"172.99.188.71","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_2972","server":"172.99.188.71","port":8000,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"US_3005","server":"172.99.188.71","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"US_2987","server":"172.99.188.71","port":8080,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"US_3048","server":"152.70.188.10","port":443,"type":"vmess","uuid":"6ae16454-de6a-4113-c64e-0549be488f15","alterId":0,"cipher":"auto","tls":true,"network":"tcp","ws-opts":{"path":"/9apQabyg9le","headers":{"host":"152.70.188.10"}}}
+  - {"name":"US_2981","server":"172.99.188.71","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"US_2983","server":"172.99.188.71","port":5600,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_2968","server":"172.99.188.71","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_2965","server":"172.99.188.71","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_2969","server":"172.99.188.71","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"US_2974","server":"172.99.188.71","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_294","server":"168.138.162.14","port":61106,"type":"vmess","uuid":"5e656a84-6566-4e95-9a5e-3640eb26d45c","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"168.138.162.14"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -389,53 +249,33 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇰🇷KR-🇰🇷KR_861
-      - Relay_🇳🇱NL-🇳🇱NL_900
-      - Relay_🇯🇵JP-🇯🇵JP_859
-      - FR_36+TGatpeekfun_4
-      - GB_38+TGatpeekfun_5
-      - ZZ_3201
-      - US_3090
-      - US_3051
-      - defaultName_9
-      - defaultName_10
-      - ZZ_117+TGatpeekfun_11
-      - US_3052
-      - ZZ_20
-      - ZZ_104+TGatpeekfun_14
-      - ZZ_107+TGatpeekfun_15
-      - ZZ_114+TGatpeekfun_16
-      - ZZ_23
-      - ZZ_96+TGatpeekfun_18
-      - ZZ_97+TGatpeekfun_19
-      - ZZ_102+TGatpeekfun_20
-      - 
-      - ZZ_112+TGatpeekfun_22
-      - ZZ_103+TGatpeekfun_23
-      - defaultName_24
-      - ZZ_93+TGatpeekfun_25
-      - ZZ_110+TGatpeekfun_26
-      - ZZ_19
-      - defaultName_28
-      - US_07
-      - ZZ_21
-      - ZZ_111+TGatpeekfun_31
-      - defaultName_32
-      - ZZ_24
-      - US_3071
-      - ZZ_116+TGatpeekfun_35
-      - defaultName_36
-      - US_10
-      - ZZ_115+TGatpeekfun_38
-      - defaultName_39
-      - ZZ_100+TGatpeekfun_40
-      - ZZ_18
-      - US_08
-      - US_2278
-      - ZZ_91+TGatpeekfun_44
-      - defaultName_45
-      - ZZ_118+TGatpeekfun_46
-      - defaultName_47
+      - US_2995
+      - US_3007
+      - US_3004
+      - US_2996
+      - US_3010
+      - US_3011
+      - US_3015
+      - US_3009
+      - US_2970
+      - US_3046
+      - US_2994
+      - US_2988
+      - US_2975
+      - US_2979
+      - US_3000
+      - US_2967
+      - US_2972
+      - US_3005
+      - US_2987
+      - US_3048
+      - US_2981
+      - US_2983
+      - US_2968
+      - US_2965
+      - US_2969
+      - US_2974
+      - US_294
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
