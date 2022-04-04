@@ -4,306 +4,579 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies: 
-  - {name: '🇺🇸US_1483', server: '20.200.209.104', port: 1234, type: vmess, uuid: '4cbdfcc4-60ea-4479-a290-8e7389af8789', alterId: 0, cipher: auto, country: "🇺🇸US_1483", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '20.200.209.104'}} }
-  - {name: 'US_220', server: '20.200.209.104', port: 1234, type: vmess, uuid: '4cbdfcc4-60ea-4479-a290-8e7389af8789', alterId: 0, cipher: auto, country: "US_220", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/ws', headers: {host: '20.200.209.104'}} }
-  - {name: 'US_934+_73_04Mb_3', server: '34.216.75.173', port: 443, type: ss, country: 'US_934+_73_04Mb_3', cipher: 'aes-256-cfb', password: 'amazonskr05'}
-  - { name: 'Relay_🇷🇺+RU-🇺🇸US_1115', server: 'ussc.scsevers.cf', port: 443, type: trojan, country: 'Relay_🇷🇺+RU-🇺🇸US_1115', 'skip-cert-verify': true, udp: true, password: sharecentre }
-  - {name: 'Relay_🇨🇳CN-🇺🇸US_329', server: shcn2tohkt66.ggboynextdoor.best, port: 49041, type: ssr, country: 'Relay_🇨🇳CN-🇺🇸US_329', password: 'lGBMNO', cipher: 'rc4-md5', protocol: 'auth_aes128_md5', obfs: 'tls1.2_ticket_auth', protocol-param: '4173:OrUbgB', obfs-param: '9f7c44173.download.windowsupdate.com'}
-  - {name: 'CN_05', server: '14.29.124.168', port: 25218, type: ss, country: 'CN_05', cipher: 'aes-128-cfb', password: 'QazEdcTgb159@$*'}
-  - {name: 'US_19', server: '209.94.56.152', port: 443, type: vmess, uuid: '3033e157-fdc3-47c0-ae32-fc4fe65fc64d', alterId: 0, cipher: auto, country: "US_19", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/9apQabyg9le', headers: {host: '209.94.56.152'}} }
-  - {name: 'Relay_🇨🇳CN-🇺🇸US_317', server: shcn2tohkt44.ggboynextdoor.best, port: 49042, type: ssr, country: 'Relay_🇨🇳CN-🇺🇸US_317', password: 'lGBMNO', cipher: 'rc4-md5', protocol: 'auth_aes128_md5', obfs: 'tls1.2_ticket_auth', protocol-param: '4173:OrUbgB', obfs-param: '9f7c44173.download.windowsupdate.com'}
-  - {name: '', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/'} }
-  - {name: 'JP_585', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "JP_585", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '139.162.122.205'}} }
-  - {name: 'JP_11', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "JP_11", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/D1LYYDHH', headers: {host: '139.162.122.205'}} }
-  - {name: 'Relay_🇨🇦CA-🇨🇦CA_629', server: '0326kr.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay_🇨🇦CA-🇨🇦CA_629", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0326kr.fans8.xyz'}} }
-  - {name: 'Relay_🇨🇳CN-🇭🇰HK_654', server: 'in-v1.sdgdn.com', port: 50206, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "Relay_🇨🇳CN-🇭🇰HK_654", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'telegram.channel.p2psharing'}} }
-  - {name: '🇺🇸US_3132', server: '45.32.94.166', port: 31676, type: vmess, uuid: '6f3ec45c-5283-40e8-aea9-7749f4c75753', alterId: 0, cipher: auto, country: "🇺🇸US_3132", "skip-cert-verify": true, tls: false, network: 'http', ws-opts: {headers: {host: '45.32.94.166'}} }
-  - { name: 'Relay_🇹🇷TR-🇹🇷TR_14', server: 'za02.holiganfan.com', port: 10088, type: trojan, country: 'Relay_🇹🇷TR-🇹🇷TR_14', 'skip-cert-verify': true, udp: true, password: 61729199-896f-4c15-bae3-e8780b22c70c }
-  - {name: 'ZZ_273', server: '169.197.142.99', port: 6697, type: ss, country: 'ZZ_273', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '🇨🇦CA_642', server: '165.154.225.231', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "🇨🇦CA_642", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '330hk02.fans8.xyz'}} }
-  - {name: 'DE_50', server: 'vpn-eu-fi-n25.hi-l.eu', port: 5368, type: ss, country: 'DE_50', cipher: 'chacha20-ietf-poly1305', password: 'fwaB23orhDPG'}
-  - {name: 'CN_296', server: '101.91.121.247', port: 50004, type: ss, country: 'CN_296', cipher: 'aes-256-cfb', password: '4415934295'}
-  - {name: 'ZZ_2828+_+4_32Mb_20', server: '134.195.196.51', port: 9101, type: ss, country: 'ZZ_2828+_+4_32Mb_20', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇨🇦CA_644', server: '165.154.225.176', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "🇨🇦CA_644", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0326hk01.fans8.xyz'}} }
-  - {name: 'ZZ_276', server: '169.197.142.99', port: 7001, type: ss, country: 'ZZ_276', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: 'Relay_🇨🇦CA-🇨🇦CA_444', server: '0319hzm01.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay_🇨🇦CA-🇨🇦CA_444", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nmsl', headers: {host: '0319hzm01.fans8.xyz'}} }
-  - { name: 'CA_270', server: 'ca-trojan.bonds.id', port: 443, type: trojan, country: 'CA_270', 'skip-cert-verify': true, udp: true, password: a3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272 }
-  - {name: 'Relay_🏁ZZ-🇺🇸US_3293', server: '198.41.221.169', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "Relay_🏁ZZ-🇺🇸US_3293", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero1.a-yu.xyz'}} }
-  - {name: 'IN_650', server: '45.79.121.117', port: 5601, type: ss, country: 'IN_650', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2875+_+5_01Mb_27', server: '134.195.196.51', port: 5601, type: ss, country: 'ZZ_2875+_+5_01Mb_27', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: 'ZZ_2546', server: '169.197.142.99', port: 6679, type: ss, country: 'ZZ_2546', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - { name: 'CA_56', server: 'ca02.holiganfan.com', port: 10088, type: trojan, country: 'CA_56', 'skip-cert-verify': true, udp: true, password: 61729199-896f-4c15-bae3-e8780b22c70c }
-  - {name: 'ZZ_2684', server: '169.197.142.99', port: 8118, type: ss, country: 'ZZ_2684', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: '_199', server: '169.197.142.99', port: 5004, type: ss, country: '_199', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
-  - {name: 'ZZ_2544', server: '169.197.142.99', port: 8090, type: ss, country: 'ZZ_2544', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
-  - {name: 'SG_873', server: '103.136.127.163', port: 56031, type: vmess, uuid: '783df988-4d45-467e-a1b5-83173c842660', alterId: 0, cipher: auto, country: "SG_873", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '103.136.127.163'}} }
-  - {name: '🇺🇸US_2904', server: '38.68.134.48', port: 7001, type: ss, country: '🇺🇸US_2904', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: '_200', server: '169.197.142.99', port: 5500, type: ss, country: '_200', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: 'Relay_🇨🇳CN-🇭🇰HK_677', server: 'ingress-i1.onebox6.org', port: 38106, type: vmess, uuid: '79386685-16da-327c-9e14-aa6d702d86bc', alterId: 1, cipher: auto, country: "Relay_🇨🇳CN-🇭🇰HK_677", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'www.ivpnpro.net'}} }
-  - {name: 'ZZ_2537', server: '169.197.142.99', port: 443, type: ss, country: 'ZZ_2537', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: '_205', server: '169.197.142.99', port: 8000, type: ss, country: '_205', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+proxies:
+  - {"name":"CN_118","server":"gz.mimon.cc","port":24255,"type":"trojan","country":"CN_118","skip-cert-verify":true,"udp":true,"password":"6d3e5694-d909-422e-96f2-57df94abe28e"}
+  - {"name":"CN_119","server":"shcu.mimon.cc","port":26133,"type":"trojan","country":"CN_119","skip-cert-verify":true,"udp":true,"password":"6d3e5694-d909-422e-96f2-57df94abe28e"}
+  - {"name":"Relay_🇨🇳CN-🇺🇸US_737","server":"in-v1.sdgdn.com","port":50401,"type":"vmess","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":1,"cipher":"auto","country":"Relay_🇨🇳CN-🇺🇸US_737","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8"}}
+  - {"name":"Relay_🇯🇵JP-🇯🇵JP_1138","server":"tt6.tjvpn.top","port":443,"type":"trojan","country":"Relay_🇯🇵JP-🇯🇵JP_1138","skip-cert-verify":true,"udp":true,"password":"0cb2cd1f-870b-485c-914a-60aba39eed39"}
+  - {"name":"Relay_🇸🇬SG-🇺🇸US_709","server":"tt1.tjvpn.top","port":2022,"type":"trojan","country":"Relay_🇸🇬SG-🇺🇸US_709","skip-cert-verify":true,"udp":true,"password":"0cb2cd1f-870b-485c-914a-60aba39eed39"}
+  - {"name":"Relay_🇨🇳CN-🇸🇬SG_740","server":"in-v1.sdgdn.com","port":50701,"type":"vmess","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":1,"cipher":"auto","country":"Relay_🇨🇳CN-🇸🇬SG_740","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"telegram.channel.ripaojiedian"}}}
+  - {"name":"TW_716","server":"211.72.35.153","port":3389,"type":"trojan","country":"TW_716","skip-cert-verify":true,"udp":true,"password":"cd39f62aed7b90f6"}
+  - {"name":"CN_110","server":"14.29.124.168","port":25230,"type":"ss","country":"CN_110","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_69","server":"14.29.124.168","port":25266,"type":"ss","country":"CN_69","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_103","server":"14.29.124.168","port":25287,"type":"ss","country":"CN_103","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"🇹🇼+TW_1360","server":"211.72.35.153","port":3389,"type":"trojan","country":"🇹🇼+TW_1360","skip-cert-verify":true,"udp":true,"password":"22e7ebb2dc8ab524"}
+  - {"name":"CN_80","server":"14.29.124.168","port":25295,"type":"ss","country":"CN_80","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_90","server":"14.29.124.168","port":25279,"type":"ss","country":"CN_90","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_66","server":"14.29.124.174","port":13249,"type":"ss","country":"CN_66","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_46","server":"14.29.124.174","port":13275,"type":"ss","country":"CN_46","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_48","server":"14.29.124.174","port":13256,"type":"ss","country":"CN_48","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_52","server":"14.29.124.174","port":13296,"type":"ss","country":"CN_52","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_65","server":"14.29.124.174","port":13268,"type":"ss","country":"CN_65","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_76","server":"14.29.124.174","port":11009,"type":"ss","country":"CN_76","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_77","server":"14.29.124.174","port":11013,"type":"ss","country":"CN_77","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_51","server":"14.29.124.174","port":13291,"type":"ss","country":"CN_51","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_445+_+7_98Mb_22","server":"14.29.124.168","port":25289,"type":"ss","country":"CN_445+_+7_98Mb_22","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_75","server":"14.29.124.174","port":13293,"type":"ss","country":"CN_75","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_106","server":"14.29.124.168","port":25210,"type":"ss","country":"CN_106","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_81","server":"14.29.124.174","port":13286,"type":"ss","country":"CN_81","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_57","server":"14.29.124.174","port":13242,"type":"ss","country":"CN_57","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_44","server":"14.29.124.174","port":13290,"type":"ss","country":"CN_44","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"Relay_🇨🇳CN-🇸🇬SG_296","server":"180.163.62.91","port":46188,"type":"ss","country":"Relay_🇨🇳CN-🇸🇬SG_296","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"Relay_🇨🇳CN-🇯🇵JP_738","server":"in-v1.sdgdn.com","port":50301,"type":"vmess","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":1,"cipher":"auto","country":"Relay_🇨🇳CN-🇯🇵JP_738","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8"}}
+  - {"name":"CN_74","server":"14.29.124.174","port":13261,"type":"ss","country":"CN_74","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_62","server":"14.29.124.174","port":11011,"type":"ss","country":"CN_62","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_64","server":"14.29.124.174","port":13241,"type":"ss","country":"CN_64","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_79","server":"14.29.124.174","port":13235,"type":"ss","country":"CN_79","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"Relay_🇨🇳CN-🇺🇸US_317","server":"shcn2tohkt44.ggboynextdoor.best","port":49042,"type":"ssr","country":"Relay_🇨🇳CN-🇺🇸US_317","password":"lGBMNO","cipher":"rc4-md5","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth","protocol-param":"4173:OrUbgB","obfs-param":"9f7c44173.download.windowsupdate.com"}
+  - {"name":"CN_88","server":"14.29.124.174","port":13231,"type":"ss","country":"CN_88","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_122","server":"shcu.mimon.cc","port":32072,"type":"trojan","country":"CN_122","skip-cert-verify":true,"udp":true,"password":"6d3e5694-d909-422e-96f2-57df94abe28e"}
+  - {"name":"CN_56","server":"14.29.124.174","port":13224,"type":"ss","country":"CN_56","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_70","server":"14.29.124.174","port":11041,"type":"ss","country":"CN_70","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_49","server":"14.29.124.174","port":13253,"type":"ss","country":"CN_49","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_96","server":"14.29.124.174","port":13229,"type":"ss","country":"CN_96","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"馃嚚馃嚦CN_399","server":"bp.pupuup.tools","port":80,"type":"vmess","uuid":"c55e1543-0608-3b57-8239-da48a17a6a17","alterId":1,"cipher":"auto","country":"馃嚚馃嚦CN_399","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/videos","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"US_19","server":"209.94.56.152","port":443,"type":"vmess","uuid":"3033e157-fdc3-47c0-ae32-fc4fe65fc64d","alterId":0,"cipher":"auto","country":"US_19","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/9apQabyg9le","headers":{"host":"209.94.56.152"}}}
+  - {"name":"🇺🇸US_3132","server":"45.32.94.166","port":31676,"type":"vmess","uuid":"6f3ec45c-5283-40e8-aea9-7749f4c75753","alterId":0,"cipher":"auto","country":"🇺🇸US_3132","skip-cert-verify":true,"tls":false,"network":"http","ws-opts":{"headers":{"host":"45.32.94.166"}}}
+  - {"name":"ZZ_2530","server":"169.197.142.99","port":8091,"type":"ss","country":"ZZ_2530","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"ZZ_2569","server":"169.197.142.99","port":7001,"type":"ss","country":"ZZ_2569","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"defaultName_46","server":"us-am32-5.eqnode.net","port":8081,"type":"ssr","country":"defaultName_46","password":"YFVrXZgRo","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
+  - {"name":"ZZ_2670","server":"134.195.196.51","port":443,"type":"ss","country":"ZZ_2670","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"CN_85","server":"14.29.124.174","port":13214,"type":"ss","country":"CN_85","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"US_2250","server":"159.203.73.153","port":4396,"type":"vmess","uuid":"7ef93298-6931-4d0e-a9c1-98005ab374df","alterId":0,"cipher":"auto","country":"US_2250","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/v2rayhunter0122","headers":{"host":"159.203.73.153"}}}
+  - {"name":"CN_82","server":"14.29.124.174","port":11031,"type":"ss","country":"CN_82","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"ZZ_374","server":"134.195.196.51","port":8009,"type":"ss","country":"ZZ_374","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"US_59TGpeekfu%%�_52","server":"34.221.160.179","port":8081,"type":"ssr","country":"US_59TGpeekfu%%�_52","password":"YFVrXZgRo","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
+  - {"name":"Relay_🇺🇸US-🇺🇸US_2004","server":"us-am32-5.eqnode.net","port":8081,"type":"ssr","country":"Relay_🇺🇸US-🇺🇸US_2004","password":"YFVrXZgRo","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
+  - {"name":"CN_59","server":"14.29.124.174","port":11019,"type":"ss","country":"CN_59","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_105","server":"14.29.124.174","port":13270,"type":"ss","country":"CN_105","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"ZZ_372","server":"134.195.196.51","port":9102,"type":"ss","country":"ZZ_372","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"US_881","server":"tj-us02.yiyodns.xyz","port":443,"type":"trojan","country":"US_881","skip-cert-verify":true,"udp":true,"password":"7dafe71e-2be6-302f-bdfc-e6319a3299bc"}
+  - {"name":"🇯🇵JP_1135","server":"139.162.122.205","port":3845,"type":"vmess","uuid":"76d5c6e3-c74c-3406-b9e8-9859d0a71c56","alterId":0,"cipher":"auto","country":"🇯🇵JP_1135","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/"}}
+  - {"name":"Relay_🇨🇳CN-🇭🇰HK_654","server":"in-v1.sdgdn.com","port":50206,"type":"vmess","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":1,"cipher":"auto","country":"Relay_🇨🇳CN-🇭🇰HK_654","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"telegram.channel.p2psharing"}}}
+  - {"name":"🇨🇦CA_642","server":"165.154.225.231","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"🇨🇦CA_642","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"330hk02.fans8.xyz"}}}
+  - {"name":"Relay_🇨🇳CN-🇭🇰HK_677","server":"ingress-i1.onebox6.org","port":38106,"type":"vmess","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"cipher":"auto","country":"Relay_🇨🇳CN-🇭🇰HK_677","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}}}
+  - {"name":"Relay_🇨🇳CN-🇭🇰HK_317","server":"117.28.242.137","port":9359,"type":"ssr","country":"Relay_🇨🇳CN-🇭🇰HK_317","password":"73117962","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+  - {"name":"ZZ_31","server":"134.195.196.51","port":8888,"type":"ss","country":"ZZ_31","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"CN_53","server":"14.29.124.174","port":11004,"type":"ss","country":"CN_53","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_84","server":"14.29.124.174","port":13236,"type":"ss","country":"CN_84","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_87","server":"14.29.124.174","port":11045,"type":"ss","country":"CN_87","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_92","server":"14.29.124.168","port":16011,"type":"ss","country":"CN_92","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"Relay_🇨🇳CN-🇺🇸US_329","server":"shcn2tohkt66.ggboynextdoor.best","port":49041,"type":"ssr","country":"Relay_🇨🇳CN-🇺🇸US_329","password":"lGBMNO","cipher":"rc4-md5","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth","protocol-param":"4173:OrUbgB","obfs-param":"9f7c44173.download.windowsupdate.com"}
+  - {"name":"CN_55","server":"14.29.124.174","port":13243,"type":"ss","country":"CN_55","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_68","server":"14.29.124.174","port":13276,"type":"ss","country":"CN_68","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_99","server":"14.29.124.174","port":13282,"type":"ss","country":"CN_99","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_100","server":"14.29.124.174","port":13277,"type":"ss","country":"CN_100","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_108","server":"14.29.124.168","port":25231,"type":"ss","country":"CN_108","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"🇨🇦CA_644","server":"165.154.225.176","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"🇨🇦CA_644","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0326hk01.fans8.xyz"}}}
+  - {"name":"CN_58","server":"14.29.124.174","port":13233,"type":"ss","country":"CN_58","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_61","server":"14.29.124.174","port":13210,"type":"ss","country":"CN_61","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"CN_94","server":"14.29.124.174","port":13222,"type":"ss","country":"CN_94","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -326,44 +599,83 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸US_1483
-      - US_220
-      - US_934+_73_04Mb_3
-      - Relay_🇷🇺+RU-🇺🇸US_1115
-      - Relay_🇨🇳CN-🇺🇸US_329
-      - CN_05
-      - US_19
+      - CN_118
+      - CN_119
+      - Relay_🇨🇳CN-🇺🇸US_737
+      - Relay_🇯🇵JP-🇯🇵JP_1138
+      - Relay_🇸🇬SG-🇺🇸US_709
+      - Relay_🇨🇳CN-🇸🇬SG_740
+      - TW_716
+      - CN_110
+      - CN_69
+      - CN_103
+      - 🇹🇼+TW_1360
+      - CN_80
+      - CN_90
+      - CN_66
+      - CN_46
+      - CN_48
+      - CN_52
+      - CN_65
+      - CN_76
+      - CN_77
+      - CN_51
+      - CN_445+_+7_98Mb_22
+      - CN_75
+      - CN_106
+      - CN_81
+      - CN_57
+      - CN_44
+      - Relay_🇨🇳CN-🇸🇬SG_296
+      - Relay_🇨🇳CN-🇯🇵JP_738
+      - CN_74
+      - CN_62
+      - CN_64
+      - CN_79
       - Relay_🇨🇳CN-🇺🇸US_317
-      - 
-      - JP_585
-      - JP_11
-      - Relay_🇨🇦CA-🇨🇦CA_629
-      - Relay_🇨🇳CN-🇭🇰HK_654
+      - CN_88
+      - CN_122
+      - CN_56
+      - CN_70
+      - CN_49
+      - CN_96
+      - 馃嚚馃嚦CN_399
+      - US_19
       - 🇺🇸US_3132
-      - Relay_🇹🇷TR-🇹🇷TR_14
-      - ZZ_273
+      - ZZ_2530
+      - ZZ_2569
+      - defaultName_46
+      - ZZ_2670
+      - CN_85
+      - US_2250
+      - CN_82
+      - ZZ_374
+      - US_59TGpeekfu%%�_52
+      - Relay_🇺🇸US-🇺🇸US_2004
+      - CN_59
+      - CN_105
+      - ZZ_372
+      - US_881
+      - 🇯🇵JP_1135
+      - Relay_🇨🇳CN-🇭🇰HK_654
       - 🇨🇦CA_642
-      - DE_50
-      - CN_296
-      - ZZ_2828+_+4_32Mb_20
-      - 🇨🇦CA_644
-      - ZZ_276
-      - Relay_🇨🇦CA-🇨🇦CA_444
-      - CA_270
-      - Relay_🏁ZZ-🇺🇸US_3293
-      - IN_650
-      - ZZ_2875+_+5_01Mb_27
-      - ZZ_2546
-      - CA_56
-      - ZZ_2684
-      - _199
-      - ZZ_2544
-      - SG_873
-      - 🇺🇸US_2904
-      - _200
       - Relay_🇨🇳CN-🇭🇰HK_677
-      - ZZ_2537
-      - _205
+      - Relay_🇨🇳CN-🇭🇰HK_317
+      - ZZ_31
+      - CN_53
+      - CN_84
+      - CN_87
+      - CN_92
+      - Relay_🇨🇳CN-🇺🇸US_329
+      - CN_55
+      - CN_68
+      - CN_99
+      - CN_100
+      - CN_108
+      - 🇨🇦CA_644
+      - CN_58
+      - CN_61
+      - CN_94
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
