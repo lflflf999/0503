@@ -5,423 +5,151 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇷🇺 俄罗斯-BGP, server: ultimate-stack.atomwan.link, port: 11017, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇺🇸 美国-BGP-K, server: ultimate-stack.atomwan.link, port: 11000, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇭🇰 直连 | 香港 03, server: hk03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: hk03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇰🇷 直连 |  韩国 01, server: kr01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: kr01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇭🇰 直连 | 香港 01, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇯🇵 直连 | 日本 03, server: jp03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: jp03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇭🇰 香港-BGP-D, server: ultimate-stack.atomwan.link, port: 11003, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇭🇰 香港-BGP-B, server: ultimate-stack.atomwan.link, port: 11021, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇸🇬 新加坡-BGP-M, server: ultimate-stack.atomwan.link, port: 11020, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇸🇬 新加坡-BGP-K, server: ultimate-stack.atomwan.link, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇦🇺 澳大利亚-BGP, server: ultimate-stack.atomwan.link, port: 11010, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇭🇰 直连 | 香港 04, server: hk04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: hk04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇯🇵 直连 | 日本 01, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇭🇰 香港阿伟科技@TG*油管, server: azure.luren.xyz, port: 443, type: vmess, uuid: bf654557-433a-4c5c-bab0-55b7602bd702, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: azure.luren.xyz}}}
-  - {name: 🇮🇳 印度(yudou66.com 玉豆分享), server: in-v1.sdgdn.com, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}}
-  - {name: 🇺🇸 美国-BGP-N, server: ultimate-stack.atomwan.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 32, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}}
-  - {name: 🇭🇰 直连 | 香港 02, server: hk02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: a9cda702-58fd-4d0c-acd4-4ab5d76197ba, sni: hk02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou}
-  - {name: 🇺🇸 _US_美国_9, server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 英国阿伟科技@TG*油管, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}}
-  - {name: 🇭🇰 _HK_香港_39, server: v2.bove.top, port: 35921, type: vmess, uuid: ea0f0aeb-da33-45dd-c512-1a07f5619937, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君), server: in-v1.sdgdn.com, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}}
-  - {name: 科技网络, server: 134.195.196.51, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: ZZ_2875 | 5.01Mb, server: 134.195.196.51, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_372, server: 134.195.196.51, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: ZZ_31, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_2876 | 0.17Mb, server: 134.195.196.51, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: _16 | 8.52Mb, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: ZZ_2302 | 9.98Mb, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2, server: 134.195.196.51, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 科技网络 2, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: ZZ_2530, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: ZZ_2305 |11.38Mb, server: 134.195.196.51, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_2879 | 6.81Mb, server: 134.195.196.51, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: ZZ_2877 | 1.20Mb, server: 134.195.196.51, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: _14 | 3.65Mb, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: ZZ_2307 | 3.37Mb, server: 134.195.196.51, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: ZZ_2569, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 科技网络 3, server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}}
-  - {name: _15 | 5.55Mb, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: ZZ_2271 | 0.14Mb, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 美国阿伟科技@TG*油管, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: /chaugg, headers: {Host: v2fly.samrt.website}}}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740, server: in-v1.sdgdn.com, port: 50701, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: ZZ_2877 | 1.20Mb 2, server: 134.195.196.51, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: ZZ_2302 | 9.98Mb 2, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: ZZ_2253 | 5.57Mb, server: 134.195.196.51, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: _14 | 3.65Mb 2, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "", server: 03071t.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 03071t.moonfree.top}}}
-  - {name: _15 | 5.55Mb 2, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 美国(欢迎订阅Youtube破解资源君), server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: 高速节点购买：v1.mk/vip（浏览器打开）, server: 104.18.96.85, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 32, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}, udp: true}
+  - {name: 香港阿伟科技@TG*油管, server: azure.luren.xyz, port: 443, type: vmess, uuid: bf654557-433a-4c5c-bab0-55b7602bd702, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure.luren.xyz}}, udp: true}
+  - {name: 高速节点购买：v1.mk/vip（浏览器打开） 2, server: 104.16.42.170, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: 科技网络, server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
+  - {name: 日本(欢迎订阅Youtube破解资源君), server: 20.222.58.16, port: 80, type: vmess, uuid: ced66bd3-4263-4fb2-cf69-cff22e394394, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 134.195.196.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 3, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 7867, type: ss, cipher: chacha20-ietf-poly1305, password: 998630ea-9e28-4ae9-b177-1ea5f278febf, udp: true}
+  - {name: "", server: 03071t.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 03071t.moonfree.top, network: ws, ws-opts: {path: /, headers: {Host: 03071t.moonfree.top}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 科技网络
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - ""
+  - name: ⛔️ 广告拦截
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
+  - name: 🚫 运营劫持
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 直连 | 香港 03
-      - 🇭🇰 直连 | 香港 01
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇭🇰 直连 | 香港 04
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇭🇰 直连 | 香港 02
-      - 🇭🇰 _HK_香港_39
+      - 香港阿伟科技@TG*油管
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -437,59 +165,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 俄罗斯-BGP
-      - 🇺🇸 美国-BGP-K
-      - 🇭🇰 直连 | 香港 03
-      - 🇰🇷 直连 |  韩国 01
-      - 🇭🇰 直连 | 香港 01
-      - 🇯🇵 直连 | 日本 03
-      - 🇭🇰 香港-BGP-D
-      - 🇭🇰 香港-BGP-B
-      - 🇸🇬 新加坡-BGP-M
-      - 🇸🇬 新加坡-BGP-K
-      - 🇦🇺 澳大利亚-BGP
-      - 🇭🇰 直连 | 香港 04
-      - 🇯🇵 直连 | 日本 01
-      - 🇭🇰 香港阿伟科技@TG*油管
-      - 🇮🇳 印度(yudou66.com 玉豆分享)
-      - 🇺🇸 美国-BGP-N
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-      - 🇭🇰 直连 | 香港 02
-      - 🇺🇸 _US_美国_9
-      - 🇬🇧 英国阿伟科技@TG*油管
-      - 🇭🇰 _HK_香港_39
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - github.com/freefq - 美国CloudFlare节点 32
+      - 香港阿伟科技@TG*油管
+      - 高速节点购买：v1.mk/vip（浏览器打开） 2
       - 科技网络
-      - ZZ_2875 | 5.01Mb
-      - ZZ_372
-      - ZZ_31
-      - ZZ_2876 | 0.17Mb
-      - _16 | 8.52Mb
-      - ZZ_2302 | 9.98Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 2
-      - 科技网络 2
-      - ZZ_2530
-      - ZZ_2305 |11.38Mb
-      - ZZ_2879 | 6.81Mb
-      - ZZ_2877 | 1.20Mb
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 3
-      - _14 | 3.65Mb
-      - ZZ_2307 | 3.37Mb
-      - ZZ_2569
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 4
-      - 科技网络 3
-      - _15 | 5.55Mb
-      - ZZ_2271 | 0.14Mb
-      - 🇺🇸 美国阿伟科技@TG*油管
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_740
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 5
-      - ZZ_2877 | 1.20Mb 2
-      - ZZ_2302 | 9.98Mb 2
-      - ZZ_2253 | 5.57Mb
-      - _14 | 3.65Mb 2
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 3
       - ""
-      - _15 | 5.55Mb 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 6
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9446,6 +9132,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9480,10 +9168,43 @@ rules:
  - DOMAIN-SUFFIX,yuanchengxiezuo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zbrushcn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhzzx.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🎥 NETFLIX
+ - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
+ - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,34.210.42.111/32,🎥 NETFLIX,no-resolve
+ - IP-CIDR,52.89.124.203/32,🎥 NETFLIX,no-resolve
+ - IP-CIDR,54.148.37.5/32,🎥 NETFLIX,no-resolve
  - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9528,6 +9249,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9614,6 +9336,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9714,15 +9437,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9740,6 +9462,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9753,11 +9476,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9766,16 +9492,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9808,6 +9554,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9858,11 +9605,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9931,7 +9681,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10025,7 +9774,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10051,6 +9799,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10140,6 +9889,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10155,6 +9905,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10271,20 +10022,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10292,12 +10056,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10453,19 +10215,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10545,6 +10299,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10589,8 +10344,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10613,6 +10366,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
