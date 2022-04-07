@@ -5,444 +5,252 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_ |20.14Mb, server: 223.166.21.33, port: 30003, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_410, server: 223.166.21.33, port: 30002, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_10, server: ultimate-stack.atomwan.link, port: 11000, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_413, server: 223.166.21.33, port: 30004, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
-  - {name: ZZ_1091, server: 103.172.116.10, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: ZZ_4272, server: 103.172.116.7, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: ZZ_1101, server: 103.172.116.10, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: RU_727, server: 217.30.10.63, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: "|29.65Mb", server: 216.240.140.240, port: 36381, type: vmess, uuid: 8fd08113-5422-40fb-b762-923a83fd089a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_631, server: 213.183.63.221, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: "|22.24Mb", server: 185.126.116.125, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: LT_597, server: 213.183.63.221, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: RU_724, server: 217.30.10.63, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: "|18.70Mb", server: 185.126.116.125, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 134.195.196.221:8009, server: 134.195.196.221, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 134.195.196.221:8008, server: 134.195.196.221, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "|24.98Mb", server: 185.126.116.125, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: RU_723, server: 217.30.10.63, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: "|17.72Mb", server: 185.126.116.125, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: LT_603, server: 213.183.63.221, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: "|19.83Mb", server: 213.183.53.202, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: RU_703, server: 217.30.10.63, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 134.195.196.221:5500, server: 134.195.196.221, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: LT_638, server: 213.183.53.202, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: "|16.94Mb", server: 185.126.116.125, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: "|18.54Mb", server: 213.183.53.202, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: "|23.97Mb", server: 213.183.53.202, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 134.195.196.221:8881, server: 134.195.196.221, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: RU_731, server: 217.30.10.63, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: ZZ_4219, server: 134.195.196.221, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 134.195.196.221:7002, server: 134.195.196.221, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_3110, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
-  - {name: RU_702, server: 217.30.10.63, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: RU_711, server: 217.30.10.63, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: "|20.32Mb", server: 213.183.53.202, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: "|19.52Mb", server: 213.183.53.202, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: "|16.67Mb", server: 185.126.116.125, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 134.195.196.221:8091, server: 134.195.196.221, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: LT_624, server: 213.183.63.221, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 134.195.196.221:2376, server: 134.195.196.221, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|15.98Mb", server: 185.126.116.125, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: LT_605, server: 213.183.63.221, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 134.195.196.221:6379, server: 134.195.196.221, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: RU_717, server: 217.30.10.63, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: "|21.37Mb", server: 185.126.116.125, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: LT_627, server: 213.183.53.202, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: RU_714, server: 217.30.10.63, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: LT_977 |17.03Mb, server: 213.183.53.202, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: RU_725, server: 217.30.10.63, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: "|19.48Mb", server: 185.126.116.125, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: "|28.60Mb", server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: Relay_ |18.83Mb, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: v4.xrenblog.com}}, udp: true}
+  - {name: "|26.85Mb", server: 213.183.53.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: "|26.06Mb", server: 213.183.53.177, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: "|26.68Mb", server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: "|27.36Mb", server: 213.183.53.177, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: "|26.25Mb", server: 213.183.53.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_751, server: azhk04.yitaiml.xyz, port: 443, type: vmess, uuid: 787eabe8-0c76-48b9-80d1-1f211036e1cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: azhk04.yitaiml.xyz}}, udp: true}
+  - {name: "|28.63Mb", server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: "|25.35Mb", server: 213.183.53.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: DE_564, server: 5.183.179.139, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: "|28.04Mb", server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: "|28.66Mb", server: 213.183.53.177, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: "|28.23Mb", server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: "|27.57Mb", server: 213.183.53.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: "|26.62Mb", server: 213.183.53.177, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: "|23.45Mb", server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: "|27.82Mb", server: 213.183.53.177, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: "|27.83Mb", server: 213.183.53.177, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: "|26.21Mb", server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: "|25.94Mb", server: 213.183.53.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: "|28.36Mb", server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3425, server: jp1.qingyun123.xyz, port: 10100, type: trojan, password: d34b5501-7621-4779-8fba-f18fa5a73460, sni: jp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_446, server: cn10.mynode.me, port: 8301, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 27300-vVAf0bKr.download.microsoft.com, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_449, server: cn17.mynode.me, port: 8602, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 27300-vVAf0bKr.download.microsoft.com, udp: true}
+  - {name: "|28.11Mb", server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -465,56 +273,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_ |20.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_410
-      - Relay_🇨🇳CN-🇺🇸US_10
-      - Relay_🇨🇳CN-🇭🇰HK_413
-      - ZZ_1091
-      - ZZ_4272
-      - ZZ_1101
-      - RU_727
-      - "|29.65Mb"
-      - LT_631
-      - "|22.24Mb"
-      - LT_597
-      - RU_724
-      - "|18.70Mb"
-      - 134.195.196.221:8009
-      - 134.195.196.221:8008
-      - "|24.98Mb"
-      - RU_723
-      - "|17.72Mb"
-      - LT_603
-      - "|19.83Mb"
-      - RU_703
-      - 134.195.196.221:5500
-      - LT_638
-      - "|16.94Mb"
-      - "|18.54Mb"
-      - "|23.97Mb"
-      - 134.195.196.221:8881
-      - RU_731
-      - ZZ_4219
-      - 134.195.196.221:7002
-      - US_3110
-      - RU_702
-      - RU_711
-      - "|20.32Mb"
-      - "|19.52Mb"
-      - "|16.67Mb"
-      - 134.195.196.221:8091
-      - LT_624
-      - 134.195.196.221:2376
-      - "|15.98Mb"
-      - LT_605
-      - 134.195.196.221:6379
-      - RU_717
-      - "|21.37Mb"
-      - LT_627
-      - RU_714
-      - LT_977 |17.03Mb
-      - RU_725
-      - "|19.48Mb"
+      - "|28.60Mb"
+      - Relay_ |18.83Mb
+      - "|26.85Mb"
+      - "|26.06Mb"
+      - "|26.68Mb"
+      - "|27.36Mb"
+      - "|26.25Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_751
+      - "|28.63Mb"
+      - "|25.35Mb"
+      - DE_564
+      - "|28.04Mb"
+      - "|28.66Mb"
+      - "|28.23Mb"
+      - "|27.57Mb"
+      - "|26.62Mb"
+      - "|23.45Mb"
+      - "|27.82Mb"
+      - "|27.83Mb"
+      - "|26.21Mb"
+      - "|25.94Mb"
+      - "|28.36Mb"
+      - Relay_🇺🇸US-🇺🇸US_3425
+      - Relay_🇨🇳CN-🇹🇼TW_446
+      - Relay_🇨🇳CN-🇺🇸US_449
+      - "|28.11Mb"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
