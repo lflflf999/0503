@@ -5,117 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube@阿阳AYANG, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 2, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chaugg, headers: {Host: v2fly.samrt.website}}, udp: true}
-  - {name: YouTube@阿阳AYANG 3, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 4, server: 104.24.231.101, port: 443, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: uka.997755.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 5, server: 146.56.41.3, port: 8888, type: vmess, uuid: c23c242f-3705-4bfa-be9e-887bb43ce501, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 6, server: 104.18.242.65, port: 8080, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: euf.997755.xyz}}, udp: true}
-  - {name: US_2455 |86.04Mb, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_2327, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero2.a-yu.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 7, server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 8, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chaugg, headers: {Host: v2fly.samrt.website}}, udp: true}
-  - {name: YouTube@阿阳AYANG 9, server: 104.19.248.15, port: 443, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: uka.997755.xyz}}, udp: true}
-  - {name: Relay_ |32.10Mb, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "| 3.57Mb", server: 165.154.225.176, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0326hk01.fans8.xyz}}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us01.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 10, server: vs.mumi.bid, port: 10124, type: vmess, uuid: 0748a567-ca97-4fc8-9d9c-9ca18f2b9ff4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vs.mumi.bid}}, udp: true}
-  - {name: YouTube@阿阳AYANG 11, server: 104.25.222.4, port: 80, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: usf.997755.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 12, server: 104.17.86.66, port: 8080, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: usc.ziyun.cyou}}, udp: true}
-  - {name: YouTube@阿阳AYANG 13, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chaugg, headers: {Host: v2fly.samrt.website}}, udp: true}
-  - {name: YouTube@阿阳AYANG 14, server: 03071t.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 03071t.moonfree.top}}, udp: true}
-  - {name: YouTube@阿阳AYANG 15, server: 104.21.100.200, port: 2087, type: vmess, uuid: 9c1dda93-8c98-dbf9-25a0-1c4c2c84baa8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yvws, headers: {Host: olo.aoyyds.tk}}, udp: true}
-  - {name: YouTube@阿阳AYANG 16, server: 146.56.41.3, port: 8888, type: vmess, uuid: c23c242f-3705-4bfa-be9e-887bb43ce501, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 17, server: 104.19.82.249, port: 443, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: had.369777.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 18, server: 104.225.239.41, port: 53528, type: vmess, uuid: f90f4cb7-d345-4c8b-be17-dfa016994855, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_ | 7.33Mb, server: eu.licom.ga, port: 60000, type: trojan, password: f81e990e-1283-48f9-9eff-acacad6fb661, sni: eu.licom.ga, skip-cert-verify: true, udp: true}
-  - {name: SG_1082, server: eu.licom.ga, port: 62011, type: vmess, uuid: f81e990e-1283-48f9-9eff-acacad6fb661, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu.licom.ga}}, udp: true}
-  - {name: YouTube@阿阳AYANG 19, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nmsl, headers: {Host: 0319hzm01.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 20, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nmsl, headers: {Host: 0319hzm01.fans8.xyz}}, udp: true}
-  - {name: "", server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nmsl, headers: {Host: 0319hzm01.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 21, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nmsl, headers: {Host: 0319hzm01.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 22, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: YouTube@阿阳AYANG 23, server: 134.195.196.51, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: YouTube@阿阳AYANG 24, server: 134.195.196.51, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: YouTube@阿阳AYANG 25, server: 134.195.196.51, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: YouTube@阿阳AYANG 26, server: 134.195.196.51, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: YouTube@阿阳AYANG 27, server: 134.195.196.51, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: YouTube@阿阳AYANG 28, server: 134.195.196.51, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: YouTube@阿阳AYANG 29, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: YouTube@阿阳AYANG 30, server: 134.195.196.51, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: YouTube@阿阳AYANG 31, server: 134.195.196.51, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: YouTube@阿阳AYANG 32, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: YouTube@阿阳AYANG 33, server: 134.195.196.51, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: YouTube@阿阳AYANG 34, server: 134.195.196.51, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: YouTube@阿阳AYANG 35, server: 134.195.196.51, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: YouTube@阿阳AYANG 36, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: YouTube@阿阳AYANG 37, server: 134.195.196.51, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: YouTube@阿阳AYANG 38, server: 134.195.196.51, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: YouTube@阿阳AYANG 39, server: 134.195.196.51, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_2454 |403.73Mb, server: 67.207.92.252, port: 55239, type: vmess, uuid: 1a923713-6220-4246-fd24-7192619740d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 2", server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
-  - {name: "|56.55Mb", server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
-  - {name: CA_368 | 3.36Mb, server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 40, server: 0320hk567.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0320hk567.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 41, server: 172.64.80.137, port: 8080, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: haz.997755.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 42, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: v2ray.788644.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 43, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
-  - {name: YouTube@阿阳AYANG 44, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
-  - {name: YouTube@阿阳AYANG 45, server: 104.20.200.145, port: 80, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: ukh.997755.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 46, server: 03071t.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 03071t.moonfree.top}}, udp: true}
-  - {name: YouTube@阿阳AYANG 47, server: 172.67.183.109, port: 8080, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: euf.ziyun.cyou}}, udp: true}
-  - {name: YouTube@阿阳AYANG 48, server: niaop.tk, port: 443, type: vmess, uuid: a0b0df87-bda2-440e-830f-347da6cc7760, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wsssdr1, headers: {Host: niaop.tk}}, udp: true}
-  - {name: YouTube@阿阳AYANG 49, server: niaop.tk, port: 443, type: vmess, uuid: a0b0df87-bda2-440e-830f-347da6cc7760, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wsssdr1, headers: {Host: niaop.tk}}, udp: true}
-  - {name: YouTube@阿阳AYANG 50, server: 198.41.204.174, port: 80, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: usa.369777.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 51, server: 03071t.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 03071t.moonfree.top}}, udp: true}
-  - {name: YouTube@阿阳AYANG 52, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: YouTube@阿阳AYANG 53, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube@阿阳AYANG, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 61be480a-eaa6-4ec6-aa39-ddb7f765b1d4, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 2, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 61be480a-eaa6-4ec6-aa39-ddb7f765b1d4, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 3, server: krnf2.qingyun123.xyz, port: 10050, type: trojan, password: 61be480a-eaa6-4ec6-aa39-ddb7f765b1d4, sni: krnf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 4, server: jp1.qingyun123.xyz, port: 10100, type: trojan, password: d34b5501-7621-4779-8fba-f18fa5a73460, sni: jp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 5, server: 193.123.229.241, port: 58818, type: vmess, uuid: 98c6fdc8-7d33-49e8-d727-5f79384564f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 6, server: krnf2.qingyun123.xyz, port: 10050, type: trojan, password: 61be480a-eaa6-4ec6-aa39-ddb7f765b1d4, sni: krnf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 7, server: jp1.qingyun123.xyz, port: 10100, type: trojan, password: d34b5501-7621-4779-8fba-f18fa5a73460, sni: jp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 8, server: 104.225.239.41, port: 53528, type: vmess, uuid: f90f4cb7-d345-4c8b-be17-dfa016994855, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 9, server: 193.123.229.241, port: 59108, type: vmess, uuid: 0d1c4e55-e842-46ae-dde2-7eeb7b47a391, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 10, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us01.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 11, server: us1.2024.ml, port: 8080, type: vmess, uuid: 5317566b-a3af-4616-bfe5-790ea88b7364, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.2024.ml}}, udp: true}
+  - {name: YouTube@阿阳AYANG 12, server: 03071t.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 03071t.moonfree.top}}, udp: true}
+  - {name: YouTube@阿阳AYANG 13, server: vpn-eu-node00a-bb.hi-l.eu, port: 35780, type: ss, cipher: chacha20-ietf-poly1305, password: XWXsTus9BXj4, udp: true}
+  - {name: YouTube@阿阳AYANG 14, server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 15, server: 134.195.198.252, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 16, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
+  - {name: YouTube@阿阳AYANG 17, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
+  - {name: YouTube@阿阳AYANG 18, server: 49.234.158.14, port: 10909, type: vmess, uuid: c3082e6f-37b2-41b6-b40a-1063bc8e2853, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 19, server: 134.195.196.51, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: YouTube@阿阳AYANG 20, server: oz.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: YouTube@阿阳AYANG 21, server: 134.195.196.51, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 22, server: 134.195.196.51, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 23, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 24, server: 134.195.196.51, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 25, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 26, server: 134.195.196.51, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: YouTube@阿阳AYANG 27, server: 169.197.142.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 28, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube@阿阳AYANG 29, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 30, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: YouTube@阿阳AYANG 31, server: 134.195.196.51, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 32, server: 134.195.196.51, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: YouTube@阿阳AYANG 33, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 34, server: 134.195.196.51, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube@阿阳AYANG 35, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 36, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 37, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: YouTube@阿阳AYANG 38, server: 134.195.196.51, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 39, server: 134.195.196.51, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 40, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 41, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 42, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 43, server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 44, server: vpn-eu-node002-fa.hi-l.eu, port: 4115, type: ss, cipher: chacha20-ietf-poly1305, password: RL8zWRu9ESs9, udp: true}
+  - {name: YouTube@阿阳AYANG 45, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 46, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 47, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 48, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 49, server: 134.195.196.51, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube@阿阳AYANG 50, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 51, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 52, server: 165.154.225.176, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0326hk01.fans8.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 53, server: 169.197.142.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: YouTube@阿阳AYANG 54, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: YouTube@阿阳AYANG 55, server: 45.142.158.72, port: 56482, type: vmess, uuid: a1c5d3bd-0a35-4c53-ba48-a14fa148eda2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 56, server: 104.19.164.198, port: 8080, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: usa.ziyun.cyou}}, udp: true}
-  - {name: YouTube@阿阳AYANG 57, server: 172.64.171.208, port: 8080, type: vmess, uuid: 7dea0da8-9528-3cc2-847d-8a8190119955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wwwnet, headers: {Host: usb.ziyun.cyou}}, udp: true}
-  - {name: YouTube@阿阳AYANG 58, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 55, server: 169.197.142.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 56, server: 169.197.142.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 57, server: 67.207.92.252, port: 55239, type: vmess, uuid: 1a923713-6220-4246-fd24-7192619740d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 58, server: 43.154.87.207, port: 24821, type: vmess, uuid: 357000f2-e4a9-4d35-8248-58ab72b7a0eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: YouTube@阿阳AYANG 59, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: YouTube@阿阳AYANG 60, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: YouTube@阿阳AYANG 61, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}, udp: true}
-  - {name: YouTube@阿阳AYANG 62, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: YouTube@阿阳AYANG 63, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: YouTube@阿阳AYANG 64, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: YouTube@阿阳AYANG 65, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: YouTube@阿阳AYANG 66, server: 0326kr.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0326kr.fans8.xyz}}, udp: true}
-  - {name: Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb, server: 0326kr.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0326kr.fans8.xyz}}, udp: true}
-  - {name: YouTube@阿阳AYANG 67, server: 152.70.106.35, port: 39033, type: vmess, uuid: ed6e41e8-1803-4af7-d65a-0581a5e9220a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _20 |10.18Mb, server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 3", server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 4", server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 68, server: 13.70.61.248, port: 21568, type: vmess, uuid: 4e70526f-3e97-49c2-8576-e08b730e0c03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 5", server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
-  - {name: " 6", server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: YouTube@阿阳AYANG 69, server: azure.luren.xyz, port: 443, type: vmess, uuid: bf654557-433a-4c5c-bab0-55b7602bd702, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azure.luren.xyz}}, udp: true}
-  - {name: " 7", server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
-  - {name: " 8", server: 49.234.158.14, port: 10909, type: vmess, uuid: c3082e6f-37b2-41b6-b40a-1063bc8e2853, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 70, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
-  - {name: 美国-BGP-N, server: ultimate-stack.atomwan.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: 俄罗斯-BGP, server: ultimate-stack.atomwan.link, port: 11017, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 71, server: ultimate-stack.atomwan.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 72, server: speedtest-pathx.xtsmart.link, port: 11017, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 73, server: 116.205.130.234, port: 11020, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: " 9", server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: CN_501 | 6.52Mb, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: YouTube@阿阳AYANG 74, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: YouTube@阿阳AYANG 75, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: YouTube@阿阳AYANG 76, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 美国-BGP-K, server: ultimate-stack.atomwan.link, port: 11000, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 77, server: 116.205.130.234, port: 11020, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 78, server: speedtest-pathx.xtsmart.link, port: 11000, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 79, server: speedtest-pathx.xtsmart.link, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 80, server: speedtest-pathx.xtsmart.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 81, server: ultimate-stack.atomwan.link, port: 11000, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 82, server: ultimate-stack.atomwan.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 83, server: ultimate-stack.atomwan.link, port: 11017, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 84, server: ultimate-stack.atomwan.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 85, server: 116.205.130.234, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: YouTube@阿阳AYANG 86, server: 116.205.130.234, port: 11020, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
+  - {name: YouTube@阿阳AYANG 60, server: 198.41.212.8, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 61, server: 198.41.212.11, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 62, server: 198.41.212.6, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 63, server: 198.41.212.2, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 64, server: 198.41.212.5, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 65, server: 198.41.212.18, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 66, server: 198.41.212.20, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 67, server: 198.41.212.13, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 68, server: 34.106.38.4, port: 25698, type: vmess, uuid: 9f7300fd-04cb-4896-97f0-532516e66be1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 69, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: YouTube@阿阳AYANG 70, server: 134.195.196.51, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: YouTube@阿阳AYANG 71, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: YouTube@阿阳AYANG 72, server: 165.154.225.176, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0326hk01.fans8.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 73, server: hk.2024.ml, port: 8080, type: vmess, uuid: 5317566b-a3af-4616-bfe5-790ea88b7364, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.2024.ml}}, udp: true}
+  - {name: YouTube@阿阳AYANG 74, server: 0320hk567.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 0320hk567.fans8.xyz}}, udp: true}
+  - {name: YouTube@阿阳AYANG 75, server: 45.77.175.145, port: 9918, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 45.77.175.145}}, udp: true}
+  - {name: YouTube@阿阳AYANG 76, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-sg02.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 77, server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -128,14 +94,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -145,11 +106,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -169,10 +127,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -200,39 +154,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -244,14 +176,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -261,11 +188,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -285,10 +209,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -316,39 +236,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -361,14 +259,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -378,11 +271,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -402,10 +292,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -433,39 +319,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: 📲 电报信息
     type: select
     proxies:
@@ -477,14 +341,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -494,11 +353,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -518,10 +374,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -549,39 +401,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -593,14 +423,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -610,11 +435,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -634,10 +456,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -665,39 +483,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -709,14 +505,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -726,11 +517,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -750,10 +538,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -781,39 +565,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -826,14 +588,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -843,11 +600,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -867,10 +621,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -898,39 +648,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -959,14 +687,9 @@ proxy-groups:
       - YouTube@阿阳AYANG 4
       - YouTube@阿阳AYANG 5
       - YouTube@阿阳AYANG 6
-      - US_2455 |86.04Mb
-      - US_2327
       - YouTube@阿阳AYANG 7
       - YouTube@阿阳AYANG 8
       - YouTube@阿阳AYANG 9
-      - Relay_ |32.10Mb
-      - "| 3.57Mb"
-      - Relay_🇺🇸US-🇺🇸US_1263 | 7.83Mb
       - YouTube@阿阳AYANG 10
       - YouTube@阿阳AYANG 11
       - YouTube@阿阳AYANG 12
@@ -976,11 +699,8 @@ proxy-groups:
       - YouTube@阿阳AYANG 16
       - YouTube@阿阳AYANG 17
       - YouTube@阿阳AYANG 18
-      - Relay_ | 7.33Mb
-      - SG_1082
       - YouTube@阿阳AYANG 19
       - YouTube@阿阳AYANG 20
-      - ""
       - YouTube@阿阳AYANG 21
       - YouTube@阿阳AYANG 22
       - YouTube@阿阳AYANG 23
@@ -1000,10 +720,6 @@ proxy-groups:
       - YouTube@阿阳AYANG 37
       - YouTube@阿阳AYANG 38
       - YouTube@阿阳AYANG 39
-      - US_2454 |403.73Mb
-      - " 2"
-      - "|56.55Mb"
-      - CA_368 | 3.36Mb
       - YouTube@阿阳AYANG 40
       - YouTube@阿阳AYANG 41
       - YouTube@阿阳AYANG 42
@@ -1031,39 +747,17 @@ proxy-groups:
       - YouTube@阿阳AYANG 64
       - YouTube@阿阳AYANG 65
       - YouTube@阿阳AYANG 66
-      - Relay_🇨🇦CA-🇨🇦CA_549 | 7.63Mb
       - YouTube@阿阳AYANG 67
-      - _20 |10.18Mb
-      - " 3"
-      - " 4"
       - YouTube@阿阳AYANG 68
-      - " 5"
-      - " 6"
       - YouTube@阿阳AYANG 69
-      - " 7"
-      - " 8"
       - YouTube@阿阳AYANG 70
-      - 美国-BGP-N
-      - 俄罗斯-BGP
       - YouTube@阿阳AYANG 71
       - YouTube@阿阳AYANG 72
       - YouTube@阿阳AYANG 73
-      - " 9"
-      - CN_501 | 6.52Mb
       - YouTube@阿阳AYANG 74
       - YouTube@阿阳AYANG 75
       - YouTube@阿阳AYANG 76
-      - 美国-BGP-K
       - YouTube@阿阳AYANG 77
-      - YouTube@阿阳AYANG 78
-      - YouTube@阿阳AYANG 79
-      - YouTube@阿阳AYANG 80
-      - YouTube@阿阳AYANG 81
-      - YouTube@阿阳AYANG 82
-      - YouTube@阿阳AYANG 83
-      - YouTube@阿阳AYANG 84
-      - YouTube@阿阳AYANG 85
-      - YouTube@阿阳AYANG 86
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
