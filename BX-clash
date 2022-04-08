@@ -5,268 +5,532 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: V2 日本 Standard A, server: v2jptransfer.lineshort.xyz, port: 50053, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: 星河, server: 20.210.96.240, port: 3832, type: vmess, uuid: 1176d43e-2578-4265-e511-c9fdc51cddfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V2 日本 Standard C, server: v2jptransfer.lineshort.xyz, port: 50055, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 新加坡 Standard B, server: v2sgtransfer.lineshort.xyz, port: 50038, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 台湾 Standard A, server: v2twtransfer.lineshort.xyz, port: 50021, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
   - {name: 新加坡 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: db7af587-36b3-4203-9e58-5ce43e3901ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz5.workers.dev}}, udp: true}
+  - {name: V2 香港 Standard A, server: v2hktransfer.lineshort.xyz, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 日本 Standard B, server: v2jptransfer.lineshort.xyz, port: 50054, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 香港 Standard B, server: v2hktransfer.lineshort.xyz, port: 50006, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 香港 Standard D, server: v2hktransfer.lineshort.xyz, port: 50008, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 台湾 Standard C, server: v2twtransfer.lineshort.xyz, port: 50023, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 台湾 Standard B, server: v2twtransfer.lineshort.xyz, port: 50022, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 新加坡 Standard C, server: v2sgtransfer.lineshort.xyz, port: 50039, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 下载专线, server: cscu.lineshort.xyz, port: 50085, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 新加坡 Standard D, server: v2sgtransfer.lineshort.xyz, port: 50040, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 美国 Standard C, server: v2ustransfer.lineshort.xyz, port: 50071, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 俄罗斯 Standard B, server: v2rutransfer.lineshort.xyz, port: 50120, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 美国 Standard A, server: v2ustransfer.lineshort.xyz, port: 50069, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 香港 Standard C, server: v2hktransfer.lineshort.xyz, port: 50007, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 美国 Standard B, server: v2ustransfer.lineshort.xyz, port: 50070, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
   - {name: HKG CN2/10 x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: V2 美国 Standard D, server: v2ustransfer.lineshort.xyz, port: 50072, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
   - {name: 新加坡 ARM, server: xjp.csz666.ml, port: 443, type: vmess, uuid: db7af587-36b3-4203-9e58-5ce43e3901ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjp.csz666.ml}}, udp: true}
+  - {name: 星河 2, server: 207.46.133.218, port: 3832, type: vmess, uuid: dab330a4-7605-4a30-95ea-2c96d51b11c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 韩国 春川1 AMD, server: cc2.csz666.ml, port: 443, type: vmess, uuid: 6ef3dc42-9782-4887-a804-d84cc4149a0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2.csz666.ml}}, udp: true}
+  - {name: V2 英国 Standard A, server: v2uktransfer.lineshort.xyz, port: 50111, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: V2 英国 Standard B, server: v2uktransfer.lineshort.xyz, port: 50112, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
   - {name: HKG CM_A/09 x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: V2 台湾 Standard D, server: v2twtransfer.lineshort.xyz, port: 50024, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
   - {name: 韩国 春川 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: f81fa67b-a277-4c98-bb5b-302334c2febb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz7.workers.dev}}, udp: true}
+  - {name: V2 新加坡 Standard A, server: v2sgtransfer.lineshort.xyz, port: 50037, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: 爱尔兰(yudou66.com 玉豆分享), server: 104.16.196.47, port: 443, type: vmess, uuid: 3256a220-3c95-4844-839c-3b509c1c0997, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: production.flat-firefly-71d2.v20210811.workers.dev}}, udp: true}
   - {name: 美国 洛杉矶 CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 8bcb6a9f-40d6-4d17-9976-c35919e6c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg.csz666.ml}}, udp: true}
   - {name: 新加坡1 ARM, server: xjp1.csz666.ml, port: 443, type: vmess, uuid: c2786b5d-ff65-44c5-b63d-d7d06a2d8fda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjp1.csz666.ml}}, udp: true}
   - {name: 韩国 春川 AMD, server: cc1.csz666.ml, port: 443, type: vmess, uuid: fb4ae33e-4e01-4486-a99c-b94de3f667a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc1.csz666.ml}}, udp: true}
+  - {name: 爱尔兰(yudou66.com 玉豆分享) 2, server: 104.16.104.126, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, headers: {Host: sweet-salad-aa33.tianzhen19880808.workers.dev}}, udp: true}
+  - {name: US美国(yudou66.com 玉豆分享), server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: v4.xrenblog.com}}, udp: true}
+  - {name: V2 俄罗斯 Standard A, server: v2rutransfer.lineshort.xyz, port: 50119, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: 立陶宛(yudou66.com 玉豆分享), server: vpn-eu-node00c-bb.hi-l.eu, port: 16623, type: ss, cipher: chacha20-ietf-poly1305, password: 8WJv71lqEkYC, udp: true}
   - {name: HKG CN2/01 x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 星河 3, server: 20.213.134.39, port: 566, type: vmess, uuid: 789feb8c-f755-46b7-96ab-97b455a1491f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享), server: sg1.31vpn.com, port: 443, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/bddasdf/624e71635ed8e/, headers: {Host: sg1.31vpn.com}}, udp: true}
   - {name: YouTube@阿阳AYANG, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us01.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 立陶宛(yudou66.com 玉豆分享) 2, server: vpn-eu-node00a-bb.hi-l.eu, port: 35780, type: ss, cipher: chacha20-ietf-poly1305, password: 7LaxzNQTLnd3, udp: true}
   - {name: 美国 圣何塞 ARM, server: shs.csz666.ml, port: 443, type: vmess, uuid: b8a160f3-9053-4cf0-8327-3273386f18ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shs.csz666.ml}}, udp: true}
   - {name: YouTube@阿阳AYANG 2, server: vpn-eu-node00a-bb.hi-l.eu, port: 35780, type: ss, cipher: chacha20-ietf-poly1305, password: XWXsTus9BXj4, udp: true}
+  - {name: V2 韩国 Standard A, server: v2krtransfer.lineshort.xyz, port: 50103, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
   - {name: YouTube@阿阳AYANG 3, server: oz.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享) 2, server: sg1.31vpn.com, port: 80, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/bddasdf/624e71635ed8e/, headers: {Host: sg1.31vpn.com}}, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享) 3, server: sg1.31vpn.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ppdt/624dde181c76e/, headers: {Host: sg1.31vpn.com}}, udp: true}
   - {name: 美国 圣何塞 AMD, server: shs1.csz666.ml, port: 443, type: vmess, uuid: d496855f-683f-4eb5-866a-e065ccd2577f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shs1.csz666.ml}}, udp: true}
+  - {name: 香港【由零开始YouTube】, server: tanz-moble.0098dns01in.work, port: 35067, type: vmess, uuid: bd198085-c950-3e20-b5a3-dec879762ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 巴西 维涅杜 ARM, server: vnd.csz666.ml, port: 443, type: vmess, uuid: 0288a5d6-3f6d-48dc-a79f-994367803633, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vnd.csz666.ml}}, udp: true}
+  - {name: V2 韩国 Standard B, server: v2krtransfer.lineshort.xyz, port: 50104, type: ss, cipher: chacha20-ietf-poly1305, password: 7c2ec9bf-9175-4f90-ac0a-ab3babd7d5ab, udp: true}
+  - {name: 香港【由零开始YouTube】 2, server: tanz-moble.0098dns01in.work, port: 35011, type: vmess, uuid: bd198085-c950-3e20-b5a3-dec879762ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【由零开始YouTube】, server: hkpro8270.azzico.website, port: 11571, type: vmess, uuid: c6322489-1b11-318a-ae2a-10dbab1f4c41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港【由零开始YouTube】 3, server: tanz-moble.0098dns01in.work, port: 35071, type: vmess, uuid: bd198085-c950-3e20-b5a3-dec879762ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: HKG CM_B/02 x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
   - {name: 日本 东京 AMD, server: dj1.csz666.ml, port: 443, type: vmess, uuid: 6e834c4b-bf4f-4768-acee-13fd96ed23e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj1.csz666.ml}}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_25, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}, udp: true}
-  - {name: 巴西 维涅杜 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 0288a5d6-3f6d-48dc-a79f-994367803633, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz1.workers.dev}}, udp: true}
-  - {name: YouTube@阿阳AYANG 4, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3332, server: 104.19.62.119, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: broken-snow-9bc0.nhv111202.workers.dev}}, udp: true}
-  - {name: 全球直连①, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 5, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: YouTube@阿阳AYANG 6, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: YouTube@阿阳AYANG 7, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_3573, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: YouTube@阿阳AYANG 8, server: vpn-eu-node002-fa.hi-l.eu, port: 4115, type: ss, cipher: chacha20-ietf-poly1305, password: RL8zWRu9ESs9, udp: true}
+  - {name: 香港【由零开始YouTube】 4, server: cmjm.senlinss.link, port: 21135, type: vmess, uuid: 97b7f7ab-e3ea-3758-9c83-0ff308c14d3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: cmjm.senlinss.link}}, udp: true}
+  - {name: 香港【由零开始YouTube】 5, server: cmjm.senlinss.link, port: 21117, type: vmess, uuid: 97b7f7ab-e3ea-3758-9c83-0ff308c14d3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: cmjm.senlinss.link}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -289,34 +553,67 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - V2 日本 Standard A
+      - 星河
+      - V2 日本 Standard C
+      - V2 新加坡 Standard B
+      - V2 台湾 Standard A
       - 新加坡 ARM CDN
+      - V2 香港 Standard A
+      - V2 日本 Standard B
+      - V2 香港 Standard B
+      - V2 香港 Standard D
+      - V2 台湾 Standard C
+      - V2 台湾 Standard B
+      - V2 新加坡 Standard C
+      - V2 下载专线
+      - V2 新加坡 Standard D
+      - V2 美国 Standard C
+      - V2 俄罗斯 Standard B
+      - V2 美国 Standard A
+      - V2 香港 Standard C
+      - V2 美国 Standard B
       - HKG CN2/10 x0_3
+      - V2 美国 Standard D
       - 新加坡 ARM
+      - 星河 2
       - 韩国 春川1 AMD
+      - V2 英国 Standard A
+      - V2 英国 Standard B
       - HKG CM_A/09 x0_3
+      - V2 台湾 Standard D
       - 韩国 春川 ARM CDN
+      - V2 新加坡 Standard A
+      - 爱尔兰(yudou66.com 玉豆分享)
       - 美国 洛杉矶 CDN
       - 新加坡1 ARM
       - 韩国 春川 AMD
+      - 爱尔兰(yudou66.com 玉豆分享) 2
+      - US美国(yudou66.com 玉豆分享)
+      - V2 俄罗斯 Standard A
+      - 立陶宛(yudou66.com 玉豆分享)
       - HKG CN2/01 x0_3
+      - 星河 3
+      - 新加坡(yudou66.com 玉豆分享)
       - YouTube@阿阳AYANG
+      - 立陶宛(yudou66.com 玉豆分享) 2
       - 美国 圣何塞 ARM
       - YouTube@阿阳AYANG 2
+      - V2 韩国 Standard A
       - YouTube@阿阳AYANG 3
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 新加坡(yudou66.com 玉豆分享) 3
       - 美国 圣何塞 AMD
+      - 香港【由零开始YouTube】
       - 巴西 维涅杜 ARM
+      - V2 韩国 Standard B
+      - 香港【由零开始YouTube】 2
+      - 中国【由零开始YouTube】
+      - 香港【由零开始YouTube】 3
       - HKG CM_B/02 x0_3
       - 日本 东京 AMD
-      - Relay_🇺🇸US-🇺🇸US_25
-      - 巴西 维涅杜 ARM CDN
-      - YouTube@阿阳AYANG 4
-      - Relay_🇺🇸US-🇺🇸US_3332
-      - 全球直连①
-      - YouTube@阿阳AYANG 5
-      - YouTube@阿阳AYANG 6
-      - YouTube@阿阳AYANG 7
-      - ZZ_3573
-      - YouTube@阿阳AYANG 8
+      - 香港【由零开始YouTube】 4
+      - 香港【由零开始YouTube】 5
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
