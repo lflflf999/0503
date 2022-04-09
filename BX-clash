@@ -5,356 +5,412 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本（TG@阿伟科技/油管）, server: jp1.qingyun123.xyz, port: 10100, type: trojan, password: 8c26295e-8c01-42fd-a38a-53dda97f29b1, sni: jp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾（TG@阿伟科技/油管）, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 61.222.202.140}}, udp: true}
-  - {name: 日本（TG@阿伟科技/油管） 2, server: jpgamer.godlight.xyz, port: 14597, type: vmess, uuid: 1780c20e-bcb7-47e7-8655-dcdc45404fcc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Start, headers: {Host: jpgamer.godlight.xyz}}, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管）, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: 2a023737-8dd7-310a-bca0-206b21eb81e7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kr, headers: {Host: cu2.worldmuseum.buzz}}, udp: true}
-  - {name: 日本（TG@阿伟科技/油管） 7, server: 183.240.69.49, port: 64015, type: ss, cipher: aes-256-gcm, password: 5438aeea-8c9d-4c9f-a606-a572276ecd83, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管） 2, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: e5b8c9d0-bff0-4232-ae36-0492d3f23d6c, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国 春川 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: f81fa67b-a277-4c98-bb5b-302334c2febb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz7.workers.dev}}, udp: true}
-  - {name: 新加坡 ARM, server: xjp.csz666.ml, port: 443, type: vmess, uuid: db7af587-36b3-4203-9e58-5ce43e3901ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjp.csz666.ml}}, udp: true}
-  - {name: 公众号：光头院长_1, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
-  - {name: 日本（TG@阿伟科技/油管） 3, server: jpgamer.godlight.xyz, port: 25902, type: vmess, uuid: cbc4c404-f916-4693-e4b3-6220752f7fb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Start, headers: {Host: jpgamer.godlight.xyz}}, udp: true}
   - {name: 新加坡 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: db7af587-36b3-4203-9e58-5ce43e3901ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz5.workers.dev}}, udp: true}
-  - {name: 美国 圣何塞 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: b8a160f3-9053-4cf0-8327-3273386f18ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shs.csz666.ml}}, udp: true}
-  - {name: 美国（TG@阿伟科技/油管）, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}, udp: true}
-  - {name: 荷兰（TG@阿伟科技/油管）, server: hn.cu1.fevers.cyou, port: 16335, type: vmess, uuid: 89d0b6c6-d7a4-39a1-b3b1-4b26f3168dae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray-nl, headers: {Host: hn.cu1.fevers.cyou}}, udp: true}
-  - {name: 香港（TG@阿伟科技/油管）, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
-  - {name: 日本（TG@阿伟科技/油管） 4, server: jp2.lolvps.xyz, port: 30031, type: vmess, uuid: c838324f-06e7-4754-9953-7043c3ca6a81, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /0IY50BPB, headers: {Host: jp2.lolvps.xyz}}, udp: true}
-  - {name: US美国(yudou66.com 玉豆分享), server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: v4.xrenblog.com}}, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 2, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: e5b8c9d0-bff0-4232-ae36-0492d3f23d6c, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 3, server: 120.232.173.75, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
-  - {name: 英国（TG@阿伟科技/油管）, server: 183.240.69.49, port: 64006, type: vmess, uuid: 5438aeea-8c9d-4c9f-a606-a572276ecd83, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巴西 维涅杜 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 0288a5d6-3f6d-48dc-a79f-994367803633, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vnd.csz666.ml}}, udp: true}
-  - {name: 日本 东京 AMD, server: dj1.csz666.ml, port: 443, type: vmess, uuid: 6e834c4b-bf4f-4768-acee-13fd96ed23e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj1.csz666.ml}}, udp: true}
-  - {name: 日本 东京 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: b2dc243c-db04-4190-a2c3-f8db738cc38d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj.csz666.ml}}, udp: true}
-  - {name: 欧洲（TG@阿伟科技/油管） 2, server: oz.moonfree.top, port: 443, type: vmess, uuid: ecea9b32-d571-460f-bb74-2010c6acd6ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
-  - {name: 韩国 春川 AMD, server: cc1.csz666.ml, port: 443, type: vmess, uuid: fb4ae33e-4e01-4486-a99c-b94de3f667a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc1.csz666.ml}}, udp: true}
-  - {name: 巴西 维涅杜 ARM CDN 2, server: 47.52.57.57, port: 443, type: vmess, uuid: 0288a5d6-3f6d-48dc-a79f-994367803633, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz1.workers.dev}}, udp: true}
   - {name: 新加坡 ARM CDN 2, server: 47.52.57.57, port: 443, type: vmess, uuid: db7af587-36b3-4203-9e58-5ce43e3901ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjp.csz666.ml}}, udp: true}
-  - {name: 韩国 春川1 AMD, server: cc2.csz666.ml, port: 443, type: vmess, uuid: 6ef3dc42-9782-4887-a804-d84cc4149a0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2.csz666.ml}}, udp: true}
+  - {name: 韩国 春川 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: f81fa67b-a277-4c98-bb5b-302334c2febb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz7.workers.dev}}, udp: true}
+  - {name: 美国 圣何塞 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: b8a160f3-9053-4cf0-8327-3273386f18ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shs.csz666.ml}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管）, server: hhkk.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: hhkk.scsevers.cf, skip-cert-verify: true, udp: true}
   - {name: 美国 洛杉矶 CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 8bcb6a9f-40d6-4d17-9976-c35919e6c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg.csz666.ml}}, udp: true}
-  - {name: 德国（TG@阿伟科技/油管）, server: kor2.lolvps.xyz, port: 40033, type: vmess, uuid: f829ce42-0f03-4e66-b18f-34b070fcbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /GAMS0Y7X, headers: {Host: kor2.lolvps.xyz}}, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 4, server: ggzz1.tifa.pro, port: 26358, type: vmess, uuid: 05e518ad-da34-3855-9563-c3dafb092357, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /windows10, headers: {Host: hkt2.hk.tifa.pro}}, udp: true}
-  - {name: 韩国(解锁Netflix)(免费)倍率(x0.01), server: hgmf.speedcncnforward2.tk, port: 8443, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hgmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: 巴西 维涅杜 ARM CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 0288a5d6-3f6d-48dc-a79f-994367803633, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vnd.csz666.ml}}, udp: true}
+  - {name: 巴西 维涅杜 ARM CDN 2, server: 47.52.57.57, port: 443, type: vmess, uuid: 0288a5d6-3f6d-48dc-a79f-994367803633, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.csz1.workers.dev}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 2, server: ggzz1.tifa.pro, port: 26358, type: vmess, uuid: 05e518ad-da34-3855-9563-c3dafb092357, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /windows10, headers: {Host: hkt2.hk.tifa.pro}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 3, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: f1cf7724-37db-43d7-8d41-459323fa7eef, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国 春川 AMD, server: cc1.csz666.ml, port: 443, type: vmess, uuid: fb4ae33e-4e01-4486-a99c-b94de3f667a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc1.csz666.ml}}, udp: true}
+  - {name: 俄罗斯（TG@阿伟科技/油管）, server: 183.232.226.213, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: f71f0a92-5155-4700-ba4e-bcb3223cbf2c, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3640, server: 48us.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 48us.fans8.xyz}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管）, server: node.zxcairport.xyz, port: 443, type: vmess, uuid: 7b198651-f526-44b5-a156-6badfe346dbf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us2.zxcairport.xyz}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 4, server: in05.dns2333.xyz, port: 63082, type: vmess, uuid: 61fefbce-2368-3809-8979-de696ffd3841, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt3-cdn.tencent.best}}, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管）, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: f1cf7724-37db-43d7-8d41-459323fa7eef, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国 春川1 AMD, server: cc2.csz666.ml, port: 443, type: vmess, uuid: 6ef3dc42-9782-4887-a804-d84cc4149a0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2.csz666.ml}}, udp: true}
+  - {name: 日本（TG@阿伟科技/油管）, server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: 9722b10f-062c-4429-a63d-ecaf7502f562, sni: nfjp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 2, server: 48us.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 48us.fans8.xyz}}, udp: true}
+  - {name: 俄罗斯（TG@阿伟科技/油管） 2, server: 183.232.226.213, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: f71f0a92-5155-4700-ba4e-bcb3223cbf2c, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 5, server: in05.dns2333.xyz, port: 63081, type: vmess, uuid: 61fefbce-2368-3809-8979-de696ffd3841, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt2-cdn.tencent.best}}, udp: true}
+  - {name: 德国TG@阿伟科技/油管）, server: hex.eeeqq.tk, port: 443, type: vmess, uuid: ce36b301-63d8-40b3-f701-aae480998267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hex.eeeqq.tk}}, udp: true}
+  - {name: 韩国01 1x_35, server: eb0453114ec45064654e57eeb394d6671csda.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: 816518db-ea90-408e-ae2b-84c3f06c371a, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 6, server: ggzz1.tifa.pro, port: 26358, type: vmess, uuid: 05e518ad-da34-3855-9563-c3dafb092357, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /windows10, headers: {Host: hkt2.hk.tifa.pro}}, udp: true}
+  - {name: 德国（TG@阿伟科技/油管）, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 8fb115e3-4870-4396-b276-7fee9964298e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 7, server: in03.dns2333.xyz, port: 63004, type: vmess, uuid: 61fefbce-2368-3809-8979-de696ffd3841, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-kr01.covid19.rip}}, udp: true}
+  - {name: do新加坡直连, server: sg.gtss.tk, port: 443, type: trojan, password: NWGdxI6dQo, sni: sg.gtss.tk, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 ARM, server: xjp.csz666.ml, port: 443, type: vmess, uuid: db7af587-36b3-4203-9e58-5ce43e3901ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjp.csz666.ml}}, udp: true}
+  - {name: 日本 东京 AMD, server: dj1.csz666.ml, port: 443, type: vmess, uuid: 6e834c4b-bf4f-4768-acee-13fd96ed23e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj1.csz666.ml}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 8, server: eb0453114ec45064654e57eeb394d6671csda.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: 816518db-ea90-408e-ae2b-84c3f06c371a, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 3, server: nfus.qingyun123.xyz, port: 10050, type: trojan, password: 9722b10f-062c-4429-a63d-ecaf7502f562, sni: nfus.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 9, server: hk1.azure.infininode.xyz, port: 34634, type: vmess, uuid: f81fe6ec-d426-4fcf-ae9a-fe00dd40b48f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 香港节点1(免费)倍率(x0.01), server: hkmf1.speedcncnforward2.tk, port: 8443, type: trojan, password: 72af330e-852d-4640-bb9f-36c99f3edb5f, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: 香港节点1(免费)倍率(x0.01) 2, server: hkmf1.speedcncnforward2.tk, port: 8443, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享), server: sg1.31vpn.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ppdt/624dde181c76e/, headers: {Host: sg1.31vpn.com}}, udp: true}
   - {name: 新加坡1 ARM, server: xjp1.csz666.ml, port: 443, type: vmess, uuid: c2786b5d-ff65-44c5-b63d-d7d06a2d8fda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjp1.csz666.ml}}, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 2, server: nfus.qingyun123.xyz, port: 10050, type: trojan, password: 8c26295e-8c01-42fd-a38a-53dda97f29b1, sni: nfus.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本（TG@阿伟科技/油管） 5, server: jp1.lolvps.xyz, port: 30030, type: vmess, uuid: 24619dee-3117-4b1a-b903-93d6b2db4697, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /F39I9NQN, headers: {Host: jp1.lolvps.xyz}}, udp: true}
-  - {name: 美国 圣何塞 AMD, server: shs1.csz666.ml, port: 443, type: vmess, uuid: d496855f-683f-4eb5-866a-e065ccd2577f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shs1.csz666.ml}}, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 5, server: 101.230.149.27, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
-  - {name: 新加坡【由零开始YouTube】, server: cmjm.senlinss.link, port: 21121, type: vmess, uuid: 97b7f7ab-e3ea-3758-9c83-0ff308c14d3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: cmjm.senlinss.link}}, udp: true}
-  - {name: 新加坡（TG@阿伟科技/油管）, server: cmjm.senlinss.link, port: 21112, type: vmess, uuid: 97b7f7ab-e3ea-3758-9c83-0ff308c14d3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: cmjm.senlinss.link}}, udp: true}
+  - {name: _美国(yudou66.com 玉豆分享), server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 2, server: hgmf.speedcncnforward2.tk, port: 8443, type: trojan, password: d0173f59-c7e7-4bb0-bc09-3da657c70dd6, sni: hgmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: 美国【由零开始YouTube】, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 10, server: hkmf1.speedcncnforward2.tk, port: 8443, type: trojan, password: d0173f59-c7e7-4bb0-bc09-3da657c70dd6, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬 SG-🇺🇸US_1640, server: eu.licom.ga, port: 62013, type: vmess, uuid: f81e990e-1283-48f9-9eff-acacad6fb661, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu.licom.ga}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 11, server: azhk05.yitaiml.xyz, port: 443, type: vmess, uuid: 08f91f07-9506-41b4-b115-0b45640fe701, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /JJkuv3, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管）, server: sg.gtss.tk, port: 443, type: trojan, password: NWGdxI6dQo, sni: sg.gtss.tk, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 12, server: hk1.azure.infininode.xyz, port: 34634, type: vmess, uuid: f81fe6ec-d426-4fcf-ae9a-fe00dd40b48f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 2, server: sg1.31vpn.com, port: 443, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/bddasdf/624e71635ed8e/, headers: {Host: sg1.31vpn.com}}, udp: true}
+  - {name: TG群https://t.me/aweikeji, server: in1.qingyun123.xyz, port: 443, type: trojan, password: 9722b10f-062c-4429-a63d-ecaf7502f562, sni: in1.qingyun123.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -377,45 +433,52 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本（TG@阿伟科技/油管）
-      - 台湾（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 2
-      - 韩国（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 7
-      - 韩国（TG@阿伟科技/油管） 2
-      - 韩国 春川 ARM CDN
-      - 新加坡 ARM
-      - 公众号：光头院长_1
-      - 日本（TG@阿伟科技/油管） 3
       - 新加坡 ARM CDN
+      - 新加坡 ARM CDN 2
+      - 韩国 春川 ARM CDN
       - 美国 圣何塞 ARM CDN
-      - 美国（TG@阿伟科技/油管）
-      - 荷兰（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管）
-      - 日本（TG@阿伟科技/油管） 4
-      - US美国(yudou66.com 玉豆分享)
+      - 美国 洛杉矶 CDN
+      - 巴西 维涅杜 ARM CDN
+      - 巴西 维涅杜 ARM CDN 2
       - 香港（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 3
-      - 英国（TG@阿伟科技/油管）
-      - 巴西 维涅杜 ARM CDN
-      - 日本 东京 AMD
-      - 日本 东京 ARM CDN
-      - 欧洲（TG@阿伟科技/油管） 2
       - 韩国 春川 AMD
-      - 巴西 维涅杜 ARM CDN 2
-      - 新加坡 ARM CDN 2
-      - 韩国 春川1 AMD
-      - 美国 洛杉矶 CDN
-      - 德国（TG@阿伟科技/油管）
+      - 俄罗斯（TG@阿伟科技/油管）
+      - Relay_🇺🇸US-🇺🇸US_3640
+      - 美国（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 4
-      - 韩国(解锁Netflix)(免费)倍率(x0.01)
-      - 新加坡1 ARM
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国 春川1 AMD
+      - 日本（TG@阿伟科技/油管）
       - 美国（TG@阿伟科技/油管） 2
-      - 日本（TG@阿伟科技/油管） 5
-      - 美国 圣何塞 AMD
+      - 俄罗斯（TG@阿伟科技/油管） 2
       - 香港（TG@阿伟科技/油管） 5
-      - 新加坡【由零开始YouTube】
+      - 德国TG@阿伟科技/油管）
+      - 韩国01 1x_35
+      - 香港（TG@阿伟科技/油管） 6
+      - 德国（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 7
+      - do新加坡直连
+      - 新加坡 ARM
+      - 日本 东京 AMD
+      - 香港（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港节点1(免费)倍率(x0.01)
+      - 香港节点1(免费)倍率(x0.01) 2
+      - 新加坡(yudou66.com 玉豆分享)
+      - 新加坡1 ARM
+      - _美国(yudou66.com 玉豆分享)
+      - 韩国（TG@阿伟科技/油管） 2
+      - 美国【由零开始YouTube】
+      - 香港（TG@阿伟科技/油管） 10
+      - Relay_🇸🇬 SG-🇺🇸US_1640
+      - 香港（TG@阿伟科技/油管） 11
       - 新加坡（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 12
+      - 新加坡（TG@阿伟科技/油管） 2
+      - TG群https://t.me/aweikeji
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
