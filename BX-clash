@@ -5,58 +5,38 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 科技网络, server: 120.240.48.19, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.19}}, udp: true}
-  - {name: HK-120.233.10.230-0128, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: github.com/mianfeifq |v2cross_com_101, server: gy.sharecentrepro.tk, port: 13397, type: trojan, password: d3b04e55-f2ae-4500-b317-e23946dde463, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: JP-20.222.154.235-0313, server: ddns-jp01.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-20.222.152.249-2177, server: ddns-jp02.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-20.222.154.235-2174, server: ddns-jp01.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管）, server: kor2.lolvps.xyz, port: 40033, type: vmess, uuid: f829ce42-0f03-4e66-b18f-34b070fcbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /GAMS0Y7X, headers: {Host: kor2.lolvps.xyz}}, udp: true}
-  - {name: 香港（TG@阿伟科技/油管）, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 3576ba82-23cd-4d31-b9fc-b5e4f72ff1a7, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: RU-185.80.200.65-0100, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6129CFHR, headers: {Host: ru1.lolvps.xyz}}, udp: true}
-  - {name: HK-120.233.10.230-0113, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: HK-120.233.10.230-0124, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: 科技网络, server: 119.147.20.236, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 119.147.20.236}}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: f2fa64af-619b-4b09-9e6c-3f9ff6de077c, udp: true}
   - {name: 美国 洛杉矶 CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 8bcb6a9f-40d6-4d17-9976-c35919e6c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg.csz666.ml}}, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管） 2, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: 3576ba82-23cd-4d31-b9fc-b5e4f72ff1a7, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: KR-20.41.103.232-2175, server: ddns-kr01.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 卢森堡(yudou66.com 玉豆分享), server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: US-169.197.142.99-0363, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 卢森堡(yudou66.com 玉豆分享) 2, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: US-169.197.142.99-0227, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: RELAY-104.16.162.16-0337, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
-  - {name: JP-20.222.152.249-0709, server: ddns-jp02.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US-169.197.142.99-0807, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US-169.197.142.99-0809, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US-169.197.142.99-0234, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US-169.197.142.99-0364, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: HK, server: 330hk02.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
-  - {name: CN, server: fs.keaiyun.xyz, port: 48552, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 德国(yudou66.com 玉豆分享), server: www.zhangss.xyz, port: 59627, type: vmess, uuid: 7cb9b8c1-ddc8-4bdc-b365-d8b73aafa0ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.zhangss.xyz}}, udp: true}
-  - {name: KR-20.41.102.45-2176, server: ddns-kr02.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA-134.195.198.252-0237, server: 134.195.198.252, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 俄罗斯（TG@阿伟科技/油管）, server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: US-169.197.142.99-0812, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US-169.197.142.99-0355, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 2, server: us1.31vpn.com, port: 80, type: vmess, uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/remaoqi/624ca41d72e6d/, headers: {Host: us1.31vpn.com}}, udp: true}
-  - {name: US-169.197.142.99-0813, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RELAY-104.21.94.31-0350, server: ce.rutracker-cn.com, port: 443, type: vmess, uuid: ed5b1c2a-0f6d-4607-9725-a70a20727ab7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IqTUMDzwOI, headers: {Host: ce.rutracker-cn.com}}, udp: true}
-  - {name: HK-207.46.150.61-0685, server: hk02.bosaidong.buzz, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US-169.197.142.99-0302, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US-161.35.184.61-0238, server: us1.31vpn.com, port: 80, type: vmess, uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/remaoqi/624ca41d72e6d/, headers: {Host: us1.31vpn.com}}, udp: true}
-  - {name: HK-207.46.150.61-0317, server: hk02.bosaidong.buzz, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 立陶宛(yudou66.com 玉豆分享), server: n24.fnyun.ml, port: 22552, type: ss, cipher: chacha20-ietf-poly1305, password: KiMShrsdskKf, udp: true}
-  - {name: 德国（TG@阿伟科技/油管）, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 8fb115e3-4870-4396-b276-7fee9964298e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
-  - {name: 台湾(欢迎订阅Youtube破解资源君), server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
-  - {name: KR-20.41.103.232-0314, server: ddns-kr01.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-20.222.152.249-0316, server: ddns-jp02.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK-120.233.10.230-2233, server: cn1.iepl.starlink.st, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: RELAY-104.21.94.31-0276, server: cg.rutracker-cn.com, port: 443, type: vmess, uuid: 5cf05a99-0d57-419e-99f6-8f2b447f129b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /teishTqRb, headers: {Host: cg.rutracker-cn.com}}, udp: true}
-  - {name: KR-20.41.103.232-0689, server: ddns-kr01.ayanami.best, port: 8080, type: vmess, uuid: ff0c4cbd-bcfb-40af-9538-f31e91feb2d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RELAY-104.21.15.101-0707, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: v2ray.788644.xyz}}, udp: true}
-  - {name: HK 2, server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330hk02.fans8.xyz}}, udp: true}
+  - {name: 香港节点2(免费)倍率0x不消耗流量), server: hkmf2.speedcncnforward3.tk, port: 10001, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
+  - {name: "[SVIP][80免流]香港6", server: hk5.fdns.unino.tech, port: 80, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.fdns.unino.tech}}, udp: true}
+  - {name: 香港节点1(免费)倍率0x不消耗流量), server: hkmf1.speedcncnforward2.tk, port: 10001, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: "[SVIP][80免流]香港3", server: hk3.fdns.unino.tech, port: 80, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk3.fdns.unino.tech}}, udp: true}
   - {name: RELAY-104.26.8.87-0696, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}, udp: true}
-  - {name: US-169.197.142.99-0134, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: (Youtube技术分享室)🇱🇹立陶宛, server: vpn-eu-node00c-bb.hi-l.eu, port: 16623, type: ss, cipher: chacha20-ietf-poly1305, password: 8WJv71lqEkYC, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: f2fa64af-619b-4b09-9e6c-3f9ff6de077c, udp: true}
+  - {name: "[SVIP][80免流]香港5", server: hk4.fdns.unino.tech, port: 80, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.fdns.unino.tech}}, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享), server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开）, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "[VIP]至强线路|无敌G口|澳洲-体验-X20", server: cdn-h1.cloudlink123.com, port: 28078, type: ss, cipher: aes-128-gcm, password: 0c836f92-5362-409e-badf-ef22a43c9bcb, udp: true}
+  - {name: "[SVIP][443免流]香港6", server: hk5.fdns.unino.tech, port: 443, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.fdns.unino.tech}}, udp: true}
+  - {name: 日本节点(免费)倍率0x不消耗流量), server: rbmf.speedcncnforward3.tk, port: 10001, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 45.32.94.223, port: 23796, type: vmess, uuid: 35b3f17a-b9ee-11ec-a395-560003f19ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /NRMOZ4ea/, headers: {Host: 45.32.94.223}}, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 德国（TG@阿伟科技/油管）, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 8fb115e3-4870-4396-b276-7fee9964298e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 4, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 5, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "[VIP]香港|至强线路|无敌G口-体验-X20", server: cdn-h1.cloudlink123.com, port: 10005, type: ss, cipher: chacha20-ietf-poly1305, password: 0c836f92-5362-409e-badf-ef22a43c9bcb, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开）, server: 120.233.10.230, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: "[VIP]至强线路|无敌G口|印度-体验-X20", server: cdn-h1.cloudlink123.com, port: 33444, type: ss, cipher: aes-128-gcm, password: 0c836f92-5362-409e-badf-ef22a43c9bcb, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 120.233.10.230, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 120.233.10.230, port: 50100, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: 台湾(欢迎订阅Youtube破解资源君), server: cn1.iepl.starlink.st, port: 50200, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: 免费|香港|08 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55092, type: trojan, password: 92ccfcfa-8ba2-45ca-893c-ce28d0f0dfce, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 4, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 5, server: 120.233.10.230, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: "[SVIP][443免流]香港5", server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.fdns.unino.tech}}, udp: true}
+  - {name: ZZ_2982, server: 34.80.198.210, port: 46137, type: vmess, uuid: 77ff090a-e711-4af8-8538-67fa2ab3f3d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -64,114 +44,74 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -179,228 +119,148 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -408,57 +268,37 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -482,57 +322,37 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 科技网络
-      - HK-120.233.10.230-0128
-      - github.com/mianfeifq |v2cross_com_101
-      - JP-20.222.154.235-0313
-      - JP-20.222.152.249-2177
-      - JP-20.222.154.235-2174
-      - 韩国（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管）
-      - RU-185.80.200.65-0100
-      - HK-120.233.10.230-0113
-      - HK-120.233.10.230-0124
+      - 香港IDC宽频|NF解锁|SS|A01
       - 美国 洛杉矶 CDN
-      - 韩国（TG@阿伟科技/油管） 2
-      - KR-20.41.103.232-2175
-      - 卢森堡(yudou66.com 玉豆分享)
-      - US-169.197.142.99-0363
-      - 卢森堡(yudou66.com 玉豆分享) 2
-      - US-169.197.142.99-0227
-      - RELAY-104.16.162.16-0337
-      - JP-20.222.152.249-0709
-      - US-169.197.142.99-0807
-      - US-169.197.142.99-0809
-      - US-169.197.142.99-0234
-      - US-169.197.142.99-0364
-      - HK
-      - CN
-      - 德国(yudou66.com 玉豆分享)
-      - KR-20.41.102.45-2176
-      - CA-134.195.198.252-0237
-      - 俄罗斯（TG@阿伟科技/油管）
-      - US-169.197.142.99-0812
-      - US-169.197.142.99-0355
-      - 科技网络 2
-      - US-169.197.142.99-0813
-      - RELAY-104.21.94.31-0350
-      - HK-207.46.150.61-0685
-      - US-169.197.142.99-0302
-      - US-161.35.184.61-0238
-      - HK-207.46.150.61-0317
-      - 立陶宛(yudou66.com 玉豆分享)
-      - 德国（TG@阿伟科技/油管）
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - KR-20.41.103.232-0314
-      - JP-20.222.152.249-0316
-      - HK-120.233.10.230-2233
-      - RELAY-104.21.94.31-0276
-      - KR-20.41.103.232-0689
-      - RELAY-104.21.15.101-0707
-      - HK 2
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港6"
+      - 香港节点1(免费)倍率0x不消耗流量)
+      - "[SVIP][80免流]香港3"
       - RELAY-104.26.8.87-0696
-      - US-169.197.142.99-0134
-      - (Youtube技术分享室)🇱🇹立陶宛
+      - 香港家庭宽频|NF解锁|SS|A01
+      - "[SVIP][80免流]香港5"
+      - 香港(yudou66.com 玉豆分享)
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
+      - "[SVIP][443免流]香港6"
+      - 日本节点(免费)倍率0x不消耗流量)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 德国（TG@阿伟科技/油管）
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - "[VIP]至强线路|无敌G口|印度-体验-X20"
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 免费|香港|08 永久免费机场
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - "[SVIP][443免流]香港5"
+      - ZZ_2982
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
