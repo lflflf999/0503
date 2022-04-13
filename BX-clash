@@ -6,63 +6,53 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 科技网络, server: 119.147.20.236, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 119.147.20.236}}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: f2fa64af-619b-4b09-9e6c-3f9ff6de077c, udp: true}
-  - {name: 美国 洛杉矶 CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 8bcb6a9f-40d6-4d17-9976-c35919e6c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg.csz666.ml}}, udp: true}
-  - {name: 香港节点2(免费)倍率0x不消耗流量), server: hkmf2.speedcncnforward3.tk, port: 10001, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: 香港（TG@阿伟科技/油管）, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 4f278153-2043-412e-a5eb-ea730d5978e1, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[SVIP][80免流]香港6", server: hk5.fdns.unino.tech, port: 80, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.fdns.unino.tech}}, udp: true}
-  - {name: 香港节点1(免费)倍率0x不消耗流量), server: hkmf1.speedcncnforward2.tk, port: 10001, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: "[SVIP][80免流]香港3", server: hk3.fdns.unino.tech, port: 80, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk3.fdns.unino.tech}}, udp: true}
-  - {name: 新加坡（TG@阿伟科技/油管）, server: 161.117.249.118, port: 34345, type: vmess, uuid: 267821ff-9eb0-489d-9499-8deb549e87d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管）, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: 4f278153-2043-412e-a5eb-ea730d5978e1, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: RELAY-104.26.8.87-0696, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: f2fa64af-619b-4b09-9e6c-3f9ff6de077c, udp: true}
-  - {name: "[SVIP][80免流]香港5", server: hk4.fdns.unino.tech, port: 80, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.fdns.unino.tech}}, udp: true}
-  - {name: 美国（TG@阿伟科技/油管）, server: 169.197.142.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享), server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开）, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "[VIP]至强线路|无敌G口|澳洲-体验-X20", server: cdn-h1.cloudlink123.com, port: 28078, type: ss, cipher: aes-128-gcm, password: 0c836f92-5362-409e-badf-ef22a43c9bcb, udp: true}
-  - {name: "[SVIP][443免流]香港6", server: hk5.fdns.unino.tech, port: 443, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.fdns.unino.tech}}, udp: true}
-  - {name: 日本节点(免费)倍率0x不消耗流量), server: rbmf.speedcncnforward3.tk, port: 10001, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 芬兰（TG@阿伟科技/油管）, server: 120.233.10.230, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 45.32.94.223, port: 23796, type: vmess, uuid: 35b3f17a-b9ee-11ec-a395-560003f19ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /NRMOZ4ea/, headers: {Host: 45.32.94.223}}, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: 台湾（TG@阿伟科技/油管）, server: 120.233.10.230, port: 50200, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: TW1(如遇节点失效请点击左上角订阅), server: cn1.iepl.starlink.st, port: 50200, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: TG频道|https://t.me/getv2ray|1号, server: v2.godlight.xyz, port: 26937, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f34f3-f32f364, headers: {Host: v2.godlight.xyz}}, udp: true}
+  - {name: TG频道|https://t.me/getv2ray|2号, server: v2-1.godlight.xyz, port: 12232, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
+  - {name: 科技网络 2, server: 120.240.48.19, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.19}}, udp: true}
+  - {name: KR1(IEPL)+-+负载均衡专线, server: cn1.iepl.starlink.st, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: 香港（TG@阿伟科技/油管）, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 4f278153-2043-412e-a5eb-ea730d5978e1, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管）, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: 4f278153-2043-412e-a5eb-ea730d5978e1, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 洛杉矶 CDN, server: 47.52.57.57, port: 443, type: vmess, uuid: 8bcb6a9f-40d6-4d17-9976-c35919e6c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg.csz666.ml}}, udp: true}
+  - {name: 卢森堡(yudou66.com 玉豆分享), server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管）, server: 161.117.249.118, port: 34345, type: vmess, uuid: 267821ff-9eb0-489d-9499-8deb549e87d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG频道|https://t.me/getv2ray|3号, server: v2-2.godlight.xyz, port: 30526, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}, udp: true}
+  - {name: TG频道|https://t.me/getv2ray|4号, server: v2-3.godlight.xyz, port: 39273, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f45361465j175, headers: {Host: v2-3.godlight.xyz}}, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开）, server: us1.31vpn.com, port: 80, type: vmess, uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/remaoqi/624ca41d72e6d/, headers: {Host: us1.31vpn.com}}, udp: true}
+  - {name: 高速节点购买：v1.mk/vip（浏览器打开）, server: cg.rutracker-cn.com, port: 443, type: vmess, uuid: 5cf05a99-0d57-419e-99f6-8f2b447f129b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /teishTqRb, headers: {Host: cg.rutracker-cn.com}}, udp: true}
+  - {name: RU1(IEPL)+-+负载均衡专线, server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: RELAY-104.21.15.101-0707, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: v2ray.788644.xyz}}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君), server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: 南非（TG@阿伟科技/油管）, server: za02.holiganfan.com, port: 10088, type: trojan, password: 8c0a7502-0343-43d4-8551-030668fceab1, sni: za02.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管）, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 德国（TG@阿伟科技/油管）, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 8fb115e3-4870-4396-b276-7fee9964298e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 2, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 4, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 5, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "[VIP]香港|至强线路|无敌G口-体验-X20", server: cdn-h1.cloudlink123.com, port: 10005, type: ss, cipher: chacha20-ietf-poly1305, password: 0c836f92-5362-409e-badf-ef22a43c9bcb, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 3, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: CN-高速节点购买：v1.mk/vip（浏览器打开）, server: 120.233.10.230, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 4, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 2, server: 120.233.10.230, port: 50100, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 5, server: 169.197.142.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管） 2, server: 120.233.10.230, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 6, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: "[VIP]至强线路|无敌G口|印度-体验-X20", server: cdn-h1.cloudlink123.com, port: 33444, type: ss, cipher: aes-128-gcm, password: 0c836f92-5362-409e-badf-ef22a43c9bcb, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管） 3, server: cn1.iepl.starlink.st, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 7, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 荷兰（TG@阿伟科技/油管）, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 8, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 120.233.10.230, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 120.233.10.230, port: 50100, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 德国（TG@阿伟科技/油管） 2, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 8fb115e3-4870-4396-b276-7fee9964298e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
-  - {name: 台湾(欢迎订阅Youtube破解资源君), server: cn1.iepl.starlink.st, port: 50200, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 9, server: 169.197.142.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 10, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 台湾（TG@阿伟科技/油管） 2, server: cn1.iepl.starlink.st, port: 50200, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 免费|香港|08 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55092, type: trojan, password: 92ccfcfa-8ba2-45ca-893c-ce28d0f0dfce, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 4, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 5, server: 120.233.10.230, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: "[SVIP][443免流]香港5", server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: 0c836f92-5362-409e-badf-ef22a43c9bcb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.fdns.unino.tech}}, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 11, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: JP1(IEPL)+-+负载均衡专线, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
   - {name: 新加坡（TG@阿伟科技/油管） 2, server: 120.233.10.230, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: ZZ_2982, server: 34.80.198.210, port: 46137, type: vmess, uuid: 77ff090a-e711-4af8-8538-67fa2ab3f3d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 3, server: hk2.frp6.top, port: 443, type: vmess, uuid: f0ce45f6-6c45-4c8b-9432-2c40667c495a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk2.frp6.top}}, udp: true}
-  - {name: 日本（TG@阿伟科技/油管）, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 香港（TG@阿伟科技/油管） 4, server: global.sggov.anycast2.sggovcloud.com, port: 51163, type: vmess, uuid: 5072ea16-08cf-4ab0-9e64-e158aa52c9a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: global.sggov.anycast2.sggovcloud.com}}, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 120.233.10.230, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: SG1(IEPL)+-+负载均衡专线, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: DE-高速节点购买：v1.mk/vip（浏览器打开）, server: vpn-eu-de-n28.hi-l.eu, port: 34171, type: ss, cipher: chacha20-ietf-poly1305, password: AYNhoou5RNXs, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 2, server: 120.233.10.230, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: RELAY-104.26.8.87-0696, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenblog/, headers: {Host: ipv6.xrenblog.com}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 2, server: 169.197.142.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 荷兰（TG@阿伟科技/油管）, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 120.233.10.230, port: 50100, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 3, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 4, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 5, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 6, server: 169.197.142.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 7, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 8, server: hex.eeeqq.tk, port: 443, type: vmess, uuid: ce36b301-63d8-40b3-f701-aae480998267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hex.eeeqq.tk}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 9, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 2, server: global.sggov.anycast2.sggovcloud.com, port: 51163, type: vmess, uuid: 5072ea16-08cf-4ab0-9e64-e158aa52c9a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: global.sggov.anycast2.sggovcloud.com}}, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 4, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 10, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 5, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 11, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 12, server: 169.197.142.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -70,126 +60,106 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -197,63 +167,53 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -273,86 +233,60 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 香港(yudou66.com 玉豆分享)
-      - "[SVIP][443免流]香港6"
       - 台湾（TG@阿伟科技/油管）
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
+      - 香港（TG@阿伟科技/油管）
       - 香港（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - "[SVIP][443免流]香港5"
-      - 香港（TG@阿伟科技/油管） 3
-      - 香港（TG@阿伟科技/油管） 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -360,126 +294,106 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -487,63 +401,53 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -560,63 +464,53 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 科技网络
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 美国 洛杉矶 CDN
-      - 香港节点2(免费)倍率0x不消耗流量)
-      - 香港（TG@阿伟科技/油管）
-      - "[SVIP][80免流]香港6"
-      - 香港节点1(免费)倍率0x不消耗流量)
-      - "[SVIP][80免流]香港3"
-      - 新加坡（TG@阿伟科技/油管）
-      - 韩国（TG@阿伟科技/油管）
-      - RELAY-104.26.8.87-0696
-      - 香港家庭宽频|NF解锁|SS|A01
-      - "[SVIP][80免流]香港5"
-      - 美国（TG@阿伟科技/油管）
-      - 香港(yudou66.com 玉豆分享)
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - "[VIP]至强线路|无敌G口|澳洲-体验-X20"
-      - "[SVIP][443免流]香港6"
-      - 日本节点(免费)倍率0x不消耗流量)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 芬兰（TG@阿伟科技/油管）
-      - 欧洲(欢迎订阅Youtube破解资源君)
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
       - 台湾（TG@阿伟科技/油管）
+      - TW1(如遇节点失效请点击左上角订阅)
+      - TG频道|https://t.me/getv2ray|1号
+      - TG频道|https://t.me/getv2ray|2号
+      - 科技网络 2
+      - KR1(IEPL)+-+负载均衡专线
+      - 香港（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管）
+      - 美国 洛杉矶 CDN
+      - 卢森堡(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - TG频道|https://t.me/getv2ray|4号
+      - US-高速节点购买：v1.mk/vip（浏览器打开）
+      - 高速节点购买：v1.mk/vip（浏览器打开）
+      - RU1(IEPL)+-+负载均衡专线
+      - RELAY-104.21.15.101-0707
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 南非（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管）
       - 德国（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 2
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[VIP]香港|至强线路|无敌G口-体验-X20"
-      - 美国（TG@阿伟科技/油管） 3
       - CN-高速节点购买：v1.mk/vip（浏览器打开）
-      - 美国（TG@阿伟科技/油管） 4
-      - 香港（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 5
-      - 韩国（TG@阿伟科技/油管） 2
-      - 美国（TG@阿伟科技/油管） 6
-      - "[VIP]至强线路|无敌G口|印度-体验-X20"
-      - 韩国（TG@阿伟科技/油管） 3
-      - 美国（TG@阿伟科技/油管） 7
-      - 荷兰（TG@阿伟科技/油管）
-      - 美国（TG@阿伟科技/油管） 8
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - 德国（TG@阿伟科技/油管） 2
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - 美国（TG@阿伟科技/油管） 9
-      - 美国（TG@阿伟科技/油管） 10
-      - 台湾（TG@阿伟科技/油管） 2
-      - 免费|香港|08 永久免费机场
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CN-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - "[SVIP][443免流]香港5"
-      - 美国（TG@阿伟科技/油管） 11
+      - JP1(IEPL)+-+负载均衡专线
       - 新加坡（TG@阿伟科技/油管） 2
-      - ZZ_2982
-      - 香港（TG@阿伟科技/油管） 3
-      - 日本（TG@阿伟科技/油管）
-      - 香港（TG@阿伟科技/油管） 4
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - SG1(IEPL)+-+负载均衡专线
+      - DE-高速节点购买：v1.mk/vip（浏览器打开）
+      - 韩国（TG@阿伟科技/油管） 2
+      - RELAY-104.26.8.87-0696
+      - 美国（TG@阿伟科技/油管） 2
+      - 荷兰（TG@阿伟科技/油管）
+      - CN-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 2
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
+      - 美国（TG@阿伟科技/油管） 10
+      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
