@@ -5,348 +5,564 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "|15.07Mb", server: trojan.linkdns.xyz, port: 40206, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇫🇷FR_485, server: trojan.linkdns.xyz, port: 40208, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾(欢迎订阅Youtube破解资源君), server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: "|23.49Mb", server: trojan.linkdns.xyz, port: 40229, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|4号, server: v2-3.godlight.xyz, port: 39273, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f45361465j175, headers: {Host: v2-3.godlight.xyz}}, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|3号, server: v2-2.godlight.xyz, port: 30526, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}, udp: true}
-  - {name: Relay_🇺🇸US-🇯🇵JP_3714, server: azure-jp-1.forwardserver.xyz, port: 22687, type: vmess, uuid: 0b406a9e-1685-4f10-a684-64376ac5d380, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nana, headers: {Host: jp1.qcjs.one}}, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_481, server: trojan.linkdns.xyz, port: 40218, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_30, server: hknf2.qingyun123.xyz, port: 10070, type: trojan, password: e8490cd3-c589-4c06-8465-469de822a45e, sni: hknf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: "|20.12Mb", server: trojan.linkdns.xyz, port: 40230, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: "|22.63Mb", server: azure-hk-1.forwardserver.xyz, port: 45870, type: vmess, uuid: 0b406a9e-1685-4f10-a684-64376ac5d380, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nana, headers: {Host: sg3.qcjs.one}}, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|2号, server: v2-1.godlight.xyz, port: 12232, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_83, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: e8490cd3-c589-4c06-8465-469de822a45e, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: "|23.97Mb", server: azure-hk-1.forwardserver.xyz, port: 36779, type: vmess, uuid: 0b406a9e-1685-4f10-a684-64376ac5d380, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nana, headers: {Host: sg4.qcjs.one}}, udp: true}
-  - {name: "|26.17Mb", server: azure-hk-1.forwardserver.xyz, port: 15124, type: vmess, uuid: 0b406a9e-1685-4f10-a684-64376ac5d380, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nana, headers: {Host: sg1.qcjs.one}}, udp: true}
-  - {name: "|16.06Mb", server: azure-jp-1.forwardserver.xyz, port: 38748, type: vmess, uuid: 0b406a9e-1685-4f10-a684-64376ac5d380, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nana, headers: {Host: us4.qcjs.one}}, udp: true}
-  - {name: 美国（TG@阿伟科技/油管）, server: v2fly.sab.quest, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chacgc, headers: {Host: v2fly.samrt.website}}, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_500, server: trojan.linkdns.xyz, port: 40216, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_503, server: trojan.linkdns.xyz, port: 40220, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3707, server: azure-hk-1.forwardserver.xyz, port: 22214, type: vmess, uuid: 0b406a9e-1685-4f10-a684-64376ac5d380, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nana, headers: {Host: us2.qcjs.one}}, udp: true}
-  - {name: 英国（TG@阿伟科技/油管）, server: yin1.qingyun123.xyz, port: 10000, type: trojan, password: 559cccaf-1a5c-4a8d-99fe-b27463f2d88d, sni: yin1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_82, server: in1.qingyun123.xyz, port: 443, type: trojan, password: 559cccaf-1a5c-4a8d-99fe-b27463f2d88d, sni: in1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇨🇦CA_40, server: sg1.31vpn.com, port: 80, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/bddasdf/624e71635ed8e/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_505, server: trojan.linkdns.xyz, port: 40204, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印度（TG@阿伟科技/油管）, server: in1.qingyun123.xyz, port: 443, type: trojan, password: 559cccaf-1a5c-4a8d-99fe-b27463f2d88d, sni: in1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇨🇦CA_39, server: sg1.31vpn.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ppdt/624dde181c76e/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: Relay_🇸🇬SG-🇨🇦CA_38, server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ccvcxds/6252624d4fda3/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: US_2150, server: 38.68.135.112, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: "|15.24Mb", server: trojan.linkdns.xyz, port: 40228, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_3756, server: 45.32.80.244, port: 61994, type: vmess, uuid: f98423e6-bac9-11ec-bf47-560003f1e1a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /5fGJSKhY/, headers: {Host: 45.32.80.244}}, udp: true}
-  - {name: Relay_🇸🇬SG-🇨🇦CA_37, server: sg1.31vpn.com, port: 443, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/bddasdf/624e71635ed8e/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_499, server: trojan.linkdns.xyz, port: 40210, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: "|21.77Mb", server: trojan.linkdns.xyz, port: 40202, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_83 TG@peekfun, server: 38.68.135.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "|24.70Mb", server: trojan.linkdns.xyz, port: 40212, type: trojan, password: bef6a326-5913-394b-ab80-3b7adcf4e847, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国（TG@阿伟科技/油管） 2, server: 45.66.157.206, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 卢森堡(yudou66.com 玉豆分享), server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: github.com/mianfeifq |日本4_23, server: 4bgp.lilyco.cc, port: 10021, type: vmess, uuid: f4392618-d694-3a8b-aa05-0484b8292ca0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 41003, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇨🇳 CN 2, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管）, server: bgpwz02.kuli888.xyz, port: 20000, type: trojan, password: 5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101, sni: bgpwz02.kuli888.xyz}
+  - {name: 🇨🇳 CN 3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61004, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇨🇳 CN 4, server: lt.yhy520.xyz, port: 58832, type: trojan, password: d2898729-b621-373e-91cd-2be7cece83ba, sni: lt.yhy520.xyz}
+  - {name: 🇨🇳 CN 5, server: ck88.ck222.xyz, port: 55137, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 6, server: l128u1st.ted1.xyz, port: 26551, type: trojan, password: dc838a4f-4b2d-3cca-a82f-8f1f0963929e, sni: l128u1st.ted1.xyz}
+  - {name: 🇨🇳 CN 7, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇸🇬 新加坡（TG@阿伟科技/油管）, server: 20.212.197.126, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3}
+  - {name: 🇨🇳 CN 8, server: ck77.ck222.xyz, port: 55138, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 9, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇨🇳 台湾（TG@阿伟科技/油管）, server: guangzhou.kuli888.xyz, port: 52006, type: trojan, password: 5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101, sni: guangzhou.kuli888.xyz}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 2, server: hknf1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: hknf1.qingyun123.xyz}
+  - {name: TG频道|https://t.me/getv2ray|2号, server: v2-1.godlight.xyz, port: 12232, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}}
+  - {name: 🇨🇳 CN 10, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 3, server: 40.83.89.223, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3}
+  - {name: 🇨🇳 CN 11, server: lt.yhy520.xyz, port: 58810, type: trojan, password: d2898729-b621-373e-91cd-2be7cece83ba, sni: lt.yhy520.xyz}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管）, server: hugang03.kuli888.xyz, port: 20025, type: trojan, password: 5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101, sni: hugang03.kuli888.xyz}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 4, server: 40.83.89.223, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 2, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: v4.xrenblog.com}}}
+  - {name: 🇨🇳 CN 12, server: l124j3pt.ted1.xyz, port: 26533, type: trojan, password: dc838a4f-4b2d-3cca-a82f-8f1f0963929e, sni: l124j3pt.ted1.xyz}
+  - {name: 🇨🇳 CN 13, server: ck88.ck222.xyz, port: 55125, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 5, server: v2bgp01.kuli888.xyz, port: 10009, type: trojan, password: 5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101, sni: v2bgp01.kuli888.xyz}
+  - {name: 🇰🇷 韩国（TG@阿伟科技/油管）, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: kr1.qingyun123.xyz}
+  - {name: 🇭🇰 香港(yudou66.com 玉豆分享), server: 40.83.89.223, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9}
+  - {name: 🇭🇰 HK, server: 40.83.89.223, port: 443, type: trojan, password: 26c6e9fc-0c9c-438d-98f1-38a07ae08cdb}
+  - {name: 🇨🇳 CN 14, server: dx.yhy520.xyz, port: 58817, type: trojan, password: d2898729-b621-373e-91cd-2be7cece83ba, sni: dx.yhy520.xyz}
+  - {name: 🇯🇵 日本（TG@阿伟科技/油管）, server: tky.xrenblog.com, port: 18888, type: vmess, uuid: b51eb7f5-1d97-48fb-d344-9d774f9422df, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenblog, headers: {Host: tky.xrenblog.com}}}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 6, server: changsha01.kuli888.xyz, port: 52013, type: trojan, password: 5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101, sni: changsha01.kuli888.xyz}
+  - {name: 🇨🇳 CN 15, server: l151r3ut.ted1.xyz, port: 26583, type: trojan, password: dc838a4f-4b2d-3cca-a82f-8f1f0963929e, sni: l151r3ut.ted1.xyz}
+  - {name: 🇰🇷 韩国（TG@阿伟科技/油管） 2, server: cn1.iepl.starlink.st, port: 50400, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865}
+  - {name: 🇰🇷 韩国（TG@阿伟科技/油管） 3, server: li.xiaohui867.tk, port: 20033, type: vmess, uuid: bc3bbba3-ccd9-4317-be9b-cbdf936e4409, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 CN 16, server: ck99.ck222.xyz, port: 10030, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 17, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 41003, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 2, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865}
+  - {name: 🇪🇺 欧洲（TG@阿伟科技/油管）, server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}}
+  - {name: TG频道|https://t.me/getv2ray|3号, server: v2-2.godlight.xyz, port: 30526, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君), server: tky.xrenblog.com, port: 18888, type: vmess, uuid: b51eb7f5-1d97-48fb-d344-9d774f9422df, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenblog, headers: {Host: tky.xrenblog.com}}}
+  - {name: 🇨🇳 CN 18, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: ee90ef42-2363-4d88-a434-afb9d8f679f8}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 3, server: www.xiaohui867.tk, port: 9109, type: vmess, uuid: 3cad6d94-8935-4029-e13c-043f82921795, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 4, server: www.xiaohui867.tk, port: 9109, type: vmess, uuid: 3cad6d94-8935-4029-e13c-043f82921795, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 5, server: dmit.kuli888.xyz, port: 20026, type: trojan, password: 5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101, sni: dmit.kuli888.xyz}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 6, server: c6s3.jamjams.net, port: 27620, type: vmess, uuid: b08fce9e-b88c-4edd-8f72-b6db2a3cdf58, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 7, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865}
+  - {name: 🇨🇳 CN 19, server: ck77.ck222.xyz, port: 55133, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ck77.ck222.xyz}}}
+  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 3, server: c6s4.jamjams.net, port: 27620, type: vmess, uuid: b08fce9e-b88c-4edd-8f72-b6db2a3cdf58, alterId: 0, cipher: auto, tls: false}
+  - {name: TG频道|https://t.me/getv2ray|4号, server: v2-3.godlight.xyz, port: 39273, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /f45361465j175, headers: {Host: v2-3.godlight.xyz}}}
+  - {name: 🇨🇳 CN 20, server: l152i1nt.ted1.xyz, port: 26584, type: trojan, password: dc838a4f-4b2d-3cca-a82f-8f1f0963929e, sni: l152i1nt.ted1.xyz}
+  - {name: 🇨🇳 CN 21, server: ck99.ck222.xyz, port: 55136, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡（TG@阿伟科技/油管） 2, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865}
+  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 7, server: ck66.ck222.xyz, port: 10044, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾（TG@阿伟科技/油管） 2, server: guangzhou.kuli888.xyz, port: 52004, type: trojan, password: 54acbfdc-34ec-3d72-8182-3b437e4747eb, sni: guangzhou.kuli888.xyz}
+  - {name: 🇨🇳 CN 22, server: ck66.ck222.xyz, port: 10040, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 俄罗斯（TG@阿伟科技/油管）, server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 8, server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2, server: 45.32.80.244, port: 61994, type: vmess, uuid: f98423e6-bac9-11ec-bf47-560003f1e1a4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5fGJSKhY/, headers: {Host: 45.32.80.244}}}
+  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 9, server: li.xiaohui867.tk, port: 17051, type: vmess, uuid: cfc5ef31-eb74-416a-9658-75bf5f73a6a9, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 CN 23, server: ck66.ck222.xyz, port: 65511, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 24, server: ck66.ck222.xyz, port: 65514, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 25, server: ck77.ck222.xyz, port: 55126, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 26, server: ck66.ck222.xyz, port: 55132, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 27, server: gzzz.v2ssyhub.xyz, port: 10026, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN_54 TG@peekfun, server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
+  - {name: 🇨🇳 CN 28, server: ck66.ck222.xyz, port: 10055, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 29, server: ck77.ck222.xyz, port: 55131, type: vmess, uuid: 247c589a-a456-452b-90b7-7d9fc211d052, alterId: 0, cipher: auto, tls: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -369,44 +585,71 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|15.07Mb"
-      - Relay_🇨🇳CN-🇫🇷FR_485
-      - 台湾(欢迎订阅Youtube破解资源君)
-      - "|23.49Mb"
-      - TG频道|https://t.me/getv2ray|4号
-      - TG频道|https://t.me/getv2ray|3号
-      - Relay_🇺🇸US-🇯🇵JP_3714
-      - Relay_🇨🇳CN-🇯🇵JP_481
-      - Relay_🇭🇰HK-🇭🇰HK_30
-      - "|20.12Mb"
-      - "|22.63Mb"
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇭🇰 香港（TG@阿伟科技/油管）
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 CN 7
+      - 🇸🇬 新加坡（TG@阿伟科技/油管）
+      - 🇨🇳 CN 8
+      - 🇨🇳 CN 9
+      - 🇨🇳 台湾（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 2
       - TG频道|https://t.me/getv2ray|2号
-      - Relay_🇺🇸US-🇺🇸US_83
-      - "|23.97Mb"
-      - "|26.17Mb"
-      - "|16.06Mb"
-      - 美国（TG@阿伟科技/油管）
-      - Relay_🇨🇳CN-🇺🇸US_500
-      - Relay_🇨🇳CN-🇯🇵JP_503
-      - Relay_🇺🇸US-🇺🇸US_3707
-      - 英国（TG@阿伟科技/油管）
-      - Relay_🇺🇸US-🇺🇸US_82
-      - Relay_🇸🇬SG-🇨🇦CA_40
-      - Relay_🇨🇳CN-🇺🇸US_505
-      - 印度（TG@阿伟科技/油管）
-      - Relay_🇸🇬SG-🇨🇦CA_39
-      - Relay_🇸🇬SG-🇨🇦CA_38
-      - US_2150
-      - "|15.24Mb"
-      - US_3756
-      - Relay_🇸🇬SG-🇨🇦CA_37
-      - Relay_🇨🇳CN-🇺🇸US_499
-      - "|21.77Mb"
-      - US_83 TG@peekfun
-      - "|24.70Mb"
-      - 美国（TG@阿伟科技/油管） 2
-      - 卢森堡(yudou66.com 玉豆分享)
-      - github.com/mianfeifq |日本4_23
+      - 🇨🇳 CN 10
+      - 🇭🇰 香港（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 11
+      - 🇺🇸 美国（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 12
+      - 🇨🇳 CN 13
+      - 🇭🇰 香港（TG@阿伟科技/油管） 5
+      - 🇰🇷 韩国（TG@阿伟科技/油管）
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇭🇰 HK
+      - 🇨🇳 CN 14
+      - 🇯🇵 日本（TG@阿伟科技/油管）
+      - 🇭🇰 香港（TG@阿伟科技/油管） 6
+      - 🇨🇳 CN 15
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
+      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
+      - 🇨🇳 CN 16
+      - 🇨🇳 CN 17
+      - 🇯🇵 日本（TG@阿伟科技/油管） 2
+      - 🇪🇺 欧洲（TG@阿伟科技/油管）
+      - TG频道|https://t.me/getv2ray|3号
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇨🇳 CN 18
+      - 🇺🇸 美国（TG@阿伟科技/油管） 3
+      - 🇺🇸 美国（TG@阿伟科技/油管） 4
+      - 🇺🇸 美国（TG@阿伟科技/油管） 5
+      - 🇺🇸 美国（TG@阿伟科技/油管） 6
+      - 🇺🇸 美国（TG@阿伟科技/油管） 7
+      - 🇨🇳 CN 19
+      - 🇯🇵 日本（TG@阿伟科技/油管） 3
+      - TG频道|https://t.me/getv2ray|4号
+      - 🇨🇳 CN 20
+      - 🇨🇳 CN 21
+      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
+      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
+      - 🇨🇳 CN 22
+      - 🇷🇺 俄罗斯（TG@阿伟科技/油管）
+      - 🇺🇸 美国（TG@阿伟科技/油管） 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 美国（TG@阿伟科技/油管） 9
+      - 🇨🇳 CN 23
+      - 🇨🇳 CN 24
+      - 🇨🇳 CN 25
+      - 🇨🇳 CN 26
+      - 🇨🇳 CN 27
+      - 🇨🇳 CN_54 TG@peekfun
+      - 🇨🇳 CN 28
+      - 🇨🇳 CN 29
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
