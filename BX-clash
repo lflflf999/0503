@@ -5,516 +5,492 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: (Youtube技术分享室)SSR 11, server: relay1.wallless.cloud, port: 39016, type: ss, cipher: aes-128-gcm, password: 62e190ea-e9aa-4027-b1da-1c2a3d756dda, udp: true}
-  - {name: (Youtube技术分享室)SSR 10, server: cs.linghun1.xyz, port: 40005, type: ss, cipher: aes-128-gcm, password: 2d141d67-67fd-4c34-89eb-a8d71f34001d, udp: true}
   - {name: TG频道|https://t.me/getv2ray|3号, server: v2-2.godlight.xyz, port: 30526, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}, udp: true}
-  - {name: (Youtube技术分享室)SSR 33, server: 120.232.174.85, port: 33502, type: ss, cipher: aes-128-gcm, password: d3gwkBCDS3iBTj88, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|2号, server: v2-1.godlight.xyz, port: 12232, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93, server: bgp.samshui.cn, port: 20243, type: trojan, password: co61rwoeb, sni: bgp.samshui.cn, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)SSR 8, server: cs.linghun1.xyz, port: 40001, type: ss, cipher: aes-128-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
-  - {name: (Youtube技术分享室)SSR 14, server: gy.linghun1.xyz, port: 40004, type: ss, cipher: aes-128-gcm, password: 2d141d67-67fd-4c34-89eb-a8d71f34001d, udp: true}
-  - {name: 新加坡（TG@阿伟科技/油管）, server: 20.212.197.126, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)SSR 15, server: cs.linghun1.xyz, port: 40004, type: ss, cipher: aes-128-gcm, password: 2d141d67-67fd-4c34-89eb-a8d71f34001d, udp: true}
-  - {name: (Youtube技术分享室)SSR 3, server: 120.232.174.85, port: 27938, type: ss, cipher: aes-128-gcm, password: U9c1i9BcJpjfoiHy, udp: true}
-  - {name: (Youtube技术分享室)SSR 36, server: 120.232.174.85, port: 27419, type: ss, cipher: aes-128-gcm, password: U9c1i9BcJpjfoiHy, udp: true}
-  - {name: (Youtube技术分享室)SSR 39, server: 120.232.174.85, port: 29147, type: ss, cipher: aes-128-gcm, password: U9c1i9BcJpjfoiHy, udp: true}
-  - {name: (Youtube技术分享室)SSR 13, server: gy.linghun1.xyz, port: 40005, type: ss, cipher: aes-128-gcm, password: 2d141d67-67fd-4c34-89eb-a8d71f34001d, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享), server: 20.212.197.126, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)SSR 2, server: gy.linghun1.xyz, port: 40000, type: ss, cipher: aes-256-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91, server: 40.83.89.223, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104, server: zz.vip341.xyz, port: 48005, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: 日本(yudou66.com 玉豆分享), server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: dfd4f3f6-22d0-40f0-857d-23ff4358164d, sni: nfjp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(欢迎订阅Youtube破解资源君), server: zz.vip341.xyz, port: 48003, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)SSR 27, server: gy.linghun1.xyz, port: 40001, type: ss, cipher: aes-128-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君), server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109, server: zz.vip341.xyz, port: 48004, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: 韩国（TG@阿伟科技/油管）, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 2, server: sg1.31vpn.com, port: 443, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ccvcxds/6252624d4fda3/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享), server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
-  - {name: Relay_🇸🇬SG-🇨🇦CA_22, server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ccvcxds/6252624d4fda3/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: HK香港(yudou66.com 玉豆分享), server: 40.83.89.223, port: 443, type: trojan, password: 26c6e9fc-0c9c-438d-98f1-38a07ae08cdb, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_973, server: zz.vip341.xyz, port: 48003, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112, server: zz.vip341.xyz, port: 48001, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: 45.77.126.179, port: 57745, type: vmess, uuid: e8b99f3e-bc07-11ec-bc51-560003f2ac4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /SfqyKoZu/, headers: {Host: 45.77.126.179}}, udp: true}
-  - {name: 俄罗斯(yudou66.com 玉豆分享), server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
-  - {name: 香港（TG@阿伟科技/油管）, server: 40.83.89.223, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君) 3, server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax.hax01.tk}}, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46, server: c106d6z2q.mczu62b33.95bvz0g12.soabgo.com, port: 25003, type: vmess, uuid: 1AD7CB74-F19E-22E0-F5A6-C227CE5EE440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28, server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: eb90ad94-9b20-4075-af26-e8e17ff12258, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.fdns.unino.tech}}, udp: true}
-  - {name: (Youtube技术分享室)SSR 9, server: cs.linghun1.xyz, port: 40009, type: ss, cipher: aes-128-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106, server: zz.vip341.xyz, port: 48000, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: US_3677, server: 140.82.22.122, port: 37572, type: vmess, uuid: 81e3f426-bc02-11ec-b4df-560003f2aa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qgbdnHwN/, headers: {Host: 140.82.22.122}}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 3, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96, server: hkmf2.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95, server: 20.212.197.126, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
-  - {name: 日本(欢迎订阅Youtube破解资源君), server: 149.28.78.78, port: 62451, type: vmess, uuid: 98f8403c-bc42-11ec-9954-560003f2c074, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /DgPdRoGN/, headers: {Host: 149.28.78.78}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 2, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
-  - {name: (Youtube技术分享室)SSR 47, server: relay1.wallless.cloud, port: 39004, type: ss, cipher: aes-128-gcm, password: 62e190ea-e9aa-4027-b1da-1c2a3d756dda, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 3, server: nfus.qingyun123.xyz, port: 10050, type: trojan, password: dfd4f3f6-22d0-40f0-857d-23ff4358164d, sni: nfus.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115, server: sz6toh2k.26df6s89b.d5e31cv83.soabgo.com, port: 11591, type: vmess, uuid: 1AD7CB74-F19E-22E0-F5A6-C227CE5EE440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)SSR 50, server: relay1.wallless.cloud, port: 39009, type: ss, cipher: aes-128-gcm, password: 62e190ea-e9aa-4027-b1da-1c2a3d756dda, udp: true}
-  - {name: (Youtube技术分享室)SSR 6, server: sh.linghun1.xyz, port: 40001, type: ss, cipher: aes-128-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
-  - {name: (Youtube技术分享室)SSR 45, server: iepl.linghun1.xyz, port: 39999, type: ss, cipher: aes-256-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110, server: zz.vip341.xyz, port: 48003, type: vmess, uuid: cff7d4c4-4d4b-3fa0-a059-81f8f939910e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87, server: 40.83.89.223, port: 443, type: trojan, password: 26c6e9fc-0c9c-438d-98f1-38a07ae08cdb, skip-cert-verify: true, udp: true}
+  - {name: 香港_1.6#47@469G, server: s47.s2022.xyz, port: 23498, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s47.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港-网飞_1.6#236@458G, server: s236.s2022.xyz, port: 27278, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s236.s2022.xyz, skip-cert-verify: true, udp: true}
   - {name: (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27, server: v2-5.godlight.xyz, port: 39785, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /71h4b3s1f53, headers: {Host: v2-5.godlight.xyz}}, udp: true}
-  - {name: (Youtube技术分享室)SSR 67, server: relay1.wallless.cloud, port: 39013, type: ss, cipher: aes-128-gcm, password: 62e190ea-e9aa-4027-b1da-1c2a3d756dda, udp: true}
-  - {name: (Youtube技术分享室)SSR 46, server: relay1.wallless.cloud, port: 39006, type: ss, cipher: aes-128-gcm, password: 62e190ea-e9aa-4027-b1da-1c2a3d756dda, udp: true}
-  - {name: (Youtube技术分享室)SSR 29, server: gy.linghun1.xyz, port: 40009, type: ss, cipher: aes-128-gcm, password: fa85555a-381b-448b-906f-bab5ccae112e, udp: true}
+  - {name: 香港-网飞_1.6#86@452G, server: s86.s2022.xyz, port: 31377, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s86.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国1-tg频道:@ripaojiedian, server: v2-5.godlight.xyz, port: 39785, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /71h4b3s1f53, headers: {Host: v2-5.godlight.xyz}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享), server: 20.210.254.74, port: 80, type: vmess, uuid: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: TG频道|https://t.me/getv2ray|2号, server: v2-1.godlight.xyz, port: 12232, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96, server: hkmf2.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28, server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: eb90ad94-9b20-4075-af26-e8e17ff12258, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.fdns.unino.tech}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139, server: 20.222.84.185, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, skip-cert-verify: true, udp: true}
+  - {name: 香港节点2(免费)倍率0x不消耗流量), server: hkmf2.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
+  - {name: 香港_1.6#233@453G, server: s233.s2022.xyz, port: 39747, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s233.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港_1.6#88@474G, server: s88.s2022.xyz, port: 28475, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s88.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港_网飞_2.3#341@567G, server: s341.s2022.xyz, port: 443, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s341.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本（TG@阿伟科技/油管）, server: 20.222.84.185, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: 香港_1.6#201@453G, server: s201.s2022.xyz, port: 29004, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s201.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101, server: 20.210.254.74, port: 80, type: vmess, uuid: b345dea8-d232-4aa5-8bec-517f78f986e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: 20.210.254.74}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133, server: 40.83.89.223, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君), server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax.hax01.tk}}, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享), server: 40.83.89.223, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: 45.77.126.179, port: 57745, type: vmess, uuid: e8b99f3e-bc07-11ec-bc51-560003f2ac4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /SfqyKoZu/, headers: {Host: 45.77.126.179}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享), server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: US_3677, server: 140.82.22.122, port: 37572, type: vmess, uuid: 81e3f426-bc02-11ec-b4df-560003f2aa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qgbdnHwN/, headers: {Host: 140.82.22.122}}, udp: true}
+  - {name: Relay_🇸🇬SG-🇨🇦CA_22, server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ccvcxds/6252624d4fda3/, headers: {Host: sg1.31vpn.com}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 2, server: 20.210.254.74, port: 80, type: vmess, uuid: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: 20.210.254.74}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91, server: 40.83.89.223, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享), server: sg1.31vpn.com, port: 443, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ccvcxds/6252624d4fda3/, headers: {Host: sg1.31vpn.com}}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 3, server: hax2.hax01.ml, port: 443, type: vmess, uuid: 25af03c3-27ff-4c14-c142-ad7694ec42f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax2.hax01.ml}}, udp: true}
+  - {name: 香港_1.6#203@463G, server: s203.s2022.xyz, port: 43023, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s203.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87, server: 40.83.89.223, port: 443, type: trojan, password: 26c6e9fc-0c9c-438d-98f1-38a07ae08cdb, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140, server: 20.212.197.126, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享) 2, server: 20.212.197.126, port: 443, type: trojan, password: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君), server: 120.240.48.19, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95, server: 20.212.197.126, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 4, server: hax2.hax01.ml, port: 443, type: vmess, uuid: 25af03c3-27ff-4c14-c142-ad7694ec42f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax2.hax01.ml}}, udp: true}
+  - {name: 香港-网飞_1.5#257@507G, server: s257.s2022.xyz, port: 23967, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s257.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管）, server: 40.83.89.223, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 3, server: 20.210.254.74, port: 80, type: vmess, uuid: b345dea8-d232-4aa5-8bec-517f78f986e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: 20.210.254.74}}, udp: true}
+  - {name: US_3696, server: 20.210.254.74, port: 80, type: vmess, uuid: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: KR_1143, server: 20.194.18.187, port: 80, type: vmess, uuid: a17ad3d8-6b83-4a57-8e4a-98b8be9fe72e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 5, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 6, server: 20.210.254.74, port: 80, type: vmess, uuid: b345dea8-d232-4aa5-8bec-517f78f986e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: HK香港(yudou66.com 玉豆分享), server: 40.83.89.223, port: 443, type: trojan, password: 26c6e9fc-0c9c-438d-98f1-38a07ae08cdb, skip-cert-verify: true, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管）, server: 20.212.197.126, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 7, server: 20.210.254.74, port: 80, type: vmess, uuid: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98, server: 20.212.197.126, port: 443, type: trojan, password: a17ad3d8-6b83-4a57-8e4a-98b8be9fe72e, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34, server: 20.194.18.187, port: 80, type: vmess, uuid: b345dea8-d232-4aa5-8bec-517f78f986e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99, server: 20.194.18.187, port: 80, type: vmess, uuid: a17ad3d8-6b83-4a57-8e4a-98b8be9fe72e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: 20.194.18.187}}, udp: true}
   - {name: (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君) 4, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
+  - {name: 韩国(欢迎订阅Youtube破解资源君), server: 20.194.18.187, port: 80, type: vmess, uuid: a17ad3d8-6b83-4a57-8e4a-98b8be9fe72e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/ccvcxds/6252624d4fda3/, headers: {Host: sg1.31vpn.com}}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 8, server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: 台湾(欢迎订阅Youtube破解资源君), server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享) 3, server: 119.147.20.236, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25, server: 20.194.18.187, port: 80, type: vmess, uuid: a17ad3d8-6b83-4a57-8e4a-98b8be9fe72e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index.php, headers: {Host: telelink.cc}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -537,65 +513,62 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - (Youtube技术分享室)SSR 11
-      - (Youtube技术分享室)SSR 10
       - TG频道|https://t.me/getv2ray|3号
-      - (Youtube技术分享室)SSR 33
-      - TG频道|https://t.me/getv2ray|2号
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_93
-      - (Youtube技术分享室)SSR 8
-      - (Youtube技术分享室)SSR 14
-      - 新加坡（TG@阿伟科技/油管）
-      - (Youtube技术分享室)SSR 15
-      - (Youtube技术分享室)SSR 3
-      - (Youtube技术分享室)SSR 36
-      - (Youtube技术分享室)SSR 39
-      - (Youtube技术分享室)SSR 13
-      - 新加坡(yudou66.com 玉豆分享)
-      - (Youtube技术分享室)SSR 2
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_104
-      - 日本(yudou66.com 玉豆分享)
-      - 香港(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_90
-      - (Youtube技术分享室)SSR 27
-      - 美国(欢迎订阅Youtube破解资源君)
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_109
-      - 韩国（TG@阿伟科技/油管）
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 美国(yudou66.com 玉豆分享)
-      - Relay_🇸🇬SG-🇨🇦CA_22
-      - HK香港(yudou66.com 玉豆分享)
-      - Relay_🇭🇰HK-🇺🇸US_973
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_112
-      - 美国(欢迎订阅Youtube破解资源君) 2
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 香港（TG@阿伟科技/油管）
-      - 美国(欢迎订阅Youtube破解资源君) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_46
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
-      - (Youtube技术分享室)SSR 9
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_106
-      - US_3677
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
-      - 日本(欢迎订阅Youtube破解资源君)
-      - 美国(yudou66.com 玉豆分享) 2
-      - (Youtube技术分享室)SSR 47
-      - 美国(yudou66.com 玉豆分享) 3
-      - (Youtube/TG：俊佳科技JJ)_🇨🇳_中国_115
-      - (Youtube技术分享室)SSR 50
-      - (Youtube技术分享室)SSR 6
-      - (Youtube技术分享室)SSR 45
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_110
-      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - 香港_1.6#47@469G
+      - 香港-网飞_1.6#236@458G
       - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_27
-      - (Youtube技术分享室)SSR 67
-      - (Youtube技术分享室)SSR 46
-      - (Youtube技术分享室)SSR 29
-      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 香港-网飞_1.6#86@452G
+      - 美国1-tg频道:@ripaojiedian
+      - 日本(yudou66.com 玉豆分享)
+      - TG频道|https://t.me/getv2ray|2号
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_96
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_28
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_139
+      - 香港节点2(免费)倍率0x不消耗流量)
+      - 香港_1.6#233@453G
+      - 香港_1.6#88@474G
+      - 香港_网飞_2.3#341@567G
+      - 日本（TG@阿伟科技/油管）
+      - 香港_1.6#201@453G
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_101
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_133
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 香港(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(yudou66.com 玉豆分享)
+      - US_3677
+      - Relay_🇸🇬SG-🇨🇦CA_22
+      - 美国(yudou66.com 玉豆分享) 2
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_91
+      - 新加坡(yudou66.com 玉豆分享)
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 香港_1.6#203@463G
+      - (Youtube/TG：俊佳科技JJ)_🇭🇰_香港_87
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_140
+      - 新加坡(yudou66.com 玉豆分享) 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_95
       - 美国(欢迎订阅Youtube破解资源君) 4
+      - 香港-网飞_1.5#257@507G
+      - 香港（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享) 3
+      - US_3696
+      - KR_1143
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - HK香港(yudou66.com 玉豆分享)
+      - 新加坡（TG@阿伟科技/油管）
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_98
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_34
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_99
+      - (Youtube/TG：俊佳科技JJ)_🇺🇸_美国_92
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - 台湾(欢迎订阅Youtube破解资源君)
+      - 新加坡(yudou66.com 玉豆分享) 3
+      - (Youtube/TG：俊佳科技JJ)_🇰🇷_韩国_25
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
