@@ -5,884 +5,500 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管）, server: snode-cn-gz3.nmp.pw, port: 28001, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管）, server: snode-cn-gz1.nmp.pw, port: 28000, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 2, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管）, server: snode-14.nmp.pw, port: 11328, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡（TG@阿伟科技/油管）, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a}
-  - {name: 🇨🇳 台湾（TG@阿伟科技/油管）, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}}
-  - {name: 🇸🇬 新加坡（TG@阿伟科技/油管） 2, server: v2-2.godlight.xyz, port: 30523, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 2, server: hk-a.vmess.top, port: 53601, type: vmess, uuid: e4701d38-c416-4049-9c2b-59b837616830, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /asdxsaduesadwadxi, headers: {Host: hk-a.vmess.top}}}
-  - {name: 🇭🇰 香港 网飞 _0.8#93@727G, server: s93.s2022.xyz, port: 35025, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /usermyadmin, host: [s93.s2022.xyz]}}
-  - {name: 🇭🇰 香港 _1.1#230@596G, server: s230.s2022.xyz, port: 37919, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s230.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_0.3#186@1727G, server: s156.s2022.xyz, port: 35952, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s156.s2022.xyz}}}
-  - {name: 🇭🇰 香港_1.6#238@416G, server: s238.s2022.xyz, port: 37826, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s238.s2022.xyz}
-  - {name: 🇭🇰 香港-网飞_1.1#348@1180G, server: s359.s2022.xyz, port: 27507, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s359.s2022.xyz}}}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 3, server: jp.456url.com, port: 10088, type: ss, cipher: chacha20-ietf-poly1305, password: fbd77250-a674-4a24-be1a-d1a76f695c34}
-  - {name: 🇭🇰 香港 网飞 _1.5#94@317G, server: s94.s2022.xyz, port: 41980, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s94.s2022.xyz]}}
-  - {name: 🇭🇰 香港 移动_1.2#41@357G, server: s41.s2022.xyz, port: 29625, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s41.s2022.xyz]}}
-  - {name: 🇭🇰 香港 网飞  _2#216@210G, server: s216.s2022.xyz, port: 43012, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /usermyadmin, host: [s216.s2022.xyz]}}
-  - {name: 🇭🇰 香港 _1.1#99@399G, server: s99.s2022.xyz, port: 39682, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s99.s2022.xyz]}}
-  - {name: 🇭🇰 香港_0.9#231@636G, server: s231.s2022.xyz, port: 39919, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s231.s2022.xyz}
-  - {name: 🇭🇰 香港_1.6#233@413G, server: s233.s2022.xyz, port: 39747, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s233.s2022.xyz}
-  - {name: 🇭🇰 香港-网飞_1.1#252@601G, server: s252.s2022.xyz, port: 35170, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s252.s2022.xyz}
-  - {name: 🇭🇰 香港_0.7#59@1471G, server: s241.s2022.xyz, port: 28686, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s241.s2022.xyz}}}
-  - {name: 🇭🇰 香港_1.1#228@554G, server: s228.s2022.xyz, port: 42406, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s228.s2022.xyz}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 4, server: v2-1.godlight.xyz, port: 12233, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}}
-  - {name: 🇭🇰 香港_1.2#232@371G, server: s232.s2022.xyz, port: 29464, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s232.s2022.xyz]}}
-  - {name: 🇭🇰 香港 网飞_1.1#276@386G, server: s276.s2022.xyz, port: 28178, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /usermyadmin, host: [s276.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_0.6#361@1501G, server: s358.s2022.xyz, port: 23866, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s358.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_1#318@1312G, server: s272.s2022.xyz, port: 24017, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s272.s2022.xyz]}}
-  - {name: 🇭🇰 香港_0.7#241@1471G, server: s241.s2022.xyz, port: 30458, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s241.s2022.xyz}}}
-  - {name: 🇭🇰 香港_0.8#353@1422G, server: s353.s2022.xyz, port: 23741, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s353.s2022.xyz}}}
-  - {name: 🇭🇰 香港_1.6#88@419G, server: s88.s2022.xyz, port: 28475, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s88.s2022.xyz}
-  - {name: 🇭🇰 香港_0.3#197@1688G, server: s109.s2022.xyz, port: 27636, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s109.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_1#278@1312G, server: s272.s2022.xyz, port: 32421, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s272.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_0.5#142@1574G, server: s152.s2022.xyz, port: 35685, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s152.s2022.xyz}}}
-  - {name: 🇰🇷 韩国（TG@阿伟科技/油管）, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: c07dff62-1e72-4d83-a83b-d611a98a1c9d, sni: kr2.qingyun123.xyz}
-  - {name: 🇭🇰 香港 网飞 _1#87@589G, server: s87.s2022.xyz, port: 32580, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s87.s2022.xyz]}}
-  - {name: 🇭🇰 香港_1.3#37@526G, server: s37.s2022.xyz, port: 41553, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s37.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_1.1#351@1180G, server: s359.s2022.xyz, port: 31253, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s359.s2022.xyz}}}
-  - {name: 🇭🇰 香港_1.2#253@494G, server: s253.s2022.xyz, port: 25221, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s253.s2022.xyz}
-  - {name: 🇭🇰 香港-网飞_0#377@538G, server: s217.s2022.xyz, port: 41676, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s217.s2022.xyz}
-  - {name: 🇭🇰 香港_1#250@589G, server: s250.s2022.xyz, port: 27073, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s250.s2022.xyz}
-  - {name: 🇭🇰 香港-网飞_0.3#207@1719G, server: s101.s2022.xyz, port: 24583, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s101.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_1.4#257@482G, server: s257.s2022.xyz, port: 23967, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s257.s2022.xyz}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 5, server: jp.456url.com, port: 10087, type: trojan, password: fbd77250-a674-4a24-be1a-d1a76f695c34, sni: jp.456url.com}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 6, server: v2.godlight.xyz, port: 26933, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /f34f3-f32f364, headers: {Host: v2.godlight.xyz}}}
-  - {name: 🇭🇰 香港_1.7#234@270G, server: s234.s2022.xyz, port: 27809, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s234.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_0.5#152@1574G, server: s152.s2022.xyz, port: 37312, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s152.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_0.3#40@1709G, server: s344.s2022.xyz, port: 26731, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s344.s2022.xyz}}}
-  - {name: 🇭🇰 香港 网飞_0.9#69@423G, server: s69.s2022.xyz, port: 33140, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s69.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_0.9#218@637G, server: s218.s2022.xyz, port: 27691, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s218.s2022.xyz}
-  - {name: 🇭🇰 香港-网飞_0.6#309@1501G, server: s358.s2022.xyz, port: 37977, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s358.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_0.9#209@1356G, server: s307.s2022.xyz, port: 40525, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s307.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_0.3#156@1727G, server: s156.s2022.xyz, port: 34665, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s156.s2022.xyz}}}
-  - {name: 🇭🇰 香港_0.8#354@1422G, server: s353.s2022.xyz, port: 26427, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s353.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_1.5#213@477G, server: s213.s2022.xyz, port: 28110, type: trojan, password: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, sni: s213.s2022.xyz}
-  - {name: 🇭🇰 香港_0.8#79@1422G, server: s353.s2022.xyz, port: 33504, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s353.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_0.9#307@1356G, server: s307.s2022.xyz, port: 41789, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s307.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_0.7#151@1449G, server: s81.s2022.xyz, port: 39110, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s81.s2022.xyz}}}
-  - {name: 🇭🇰 香港 网飞_1.2#240@352G, server: s240.s2022.xyz, port: 42366, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s240.s2022.xyz]}}
-  - {name: 🇭🇰 香港_0.7#223@1471G, server: s241.s2022.xyz, port: 32843, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s241.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_1#272@1312G, server: s272.s2022.xyz, port: 39601, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /panelmyadmin, host: [s272.s2022.xyz]}}
-  - {name: 🇭🇰 香港-网飞_0.9#352@1356G, server: s307.s2022.xyz, port: 29503, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s307.s2022.xyz}}}
-  - {name: 🇭🇰 香港-网飞_0.3#344@1709G, server: s344.s2022.xyz, port: 26739, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s344.s2022.xyz}}}
-  - {name: 🇭🇰 香港_0.3#132@1688G, server: s109.s2022.xyz, port: 23975, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s109.s2022.xyz}}}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 7, server: jpaz4.xmrth-node.xyz, port: 10091, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 2, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}}
-  - {name: 🇰🇷 韩国（TG@阿伟科技/油管） 2, server: 129.154.60.36, port: 10000, type: trojan, password: 0f7989cf-99a8-41b2-9ade-f8c77bccebad}
-  - {name: 🇭🇰 香港-网飞_0.6#358@1501G, server: s358.s2022.xyz, port: 30506, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s358.s2022.xyz}}}
-  - {name: 🇦🇺 澳洲（TG@阿伟科技/油管）, server: jgwxn1.gaox.ml, port: 443, type: trojan, password: 0f715619-0037-4358-a7c6-958106bc6b49, sni: jgwxn1.gaox.ml}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君), server: 104.16.47.181, port: 443, type: vmess, uuid: 7824cbc1-f82d-48cf-fb1d-54d8911849c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /yorknodes-fr-par-1, headers: {Host: fr1.144050.cf}}}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 8, server: jpaz3.xmrth-node.xyz, port: 11012, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 9, server: jp.456url.com, port: 10089, type: ss, cipher: chacha20-ietf-poly1305, password: fbd77250-a674-4a24-be1a-d1a76f695c34}
-  - {name: 🇺🇸 US B 003, server: jpaz3.xmrth-node.xyz, port: 11021, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）, server: sg04.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg04.xqkj.cloud}}}
-  - {name: 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2, server: sg02.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg02.xqkj.cloud}}}
-  - {name: 🇰🇷 韩国（TG@阿伟科技/油管） 3, server: 144.24.78.6, port: 10000, type: trojan, password: 0f7989cf-99a8-41b2-9ade-f8c77bccebad}
-  - {name: 🇦🇺 澳洲（TG@阿伟科技/油管） 2, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml}
-  - {name: 🇺🇸 美国(yudou66.com 玉豆分享), server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}}
-  - {name: 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3, server: sg05.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg05.xqkj.cloud}}}
-  - {name: 🇭🇰 香港 网飞 _1#269@650G, server: s269.s2022.xyz, port: 32351, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: h2, h2-opts: {path: /usermyadmin, host: [s269.s2022.xyz]}}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 10, server: lt-jp.vmess.top, port: 53809, type: vmess, uuid: e4701d38-c416-4049-9c2b-59b837616830, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /asdasdueasddasi, headers: {Host: lt-jp.vmess.top}}}
-  - {name: 🇸🇬 新加坡（TG@阿伟科技/油管） 3, server: 69.161.221.231, port: 28893, type: vmess, uuid: 7d5aa028-049b-4ca5-e6fc-2e474140ff1e, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港_0.3#109@1688G, server: s109.s2022.xyz, port: 36023, type: vmess, uuid: 0f32741c-3c57-3136-9cd1-7ef58f3546e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s109.s2022.xyz}}}
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 3, server: cn1.relay.iepl.pw, port: 50600, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a}
-  - {name: 🇯🇵 日本（TG@阿伟科技/油管） 11, server: jp.456url.com, port: 10086, type: trojan, password: fbd77250-a674-4a24-be1a-d1a76f695c34, sni: jp.456url.com}
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 4, server: 65.49.210.47, port: 10895, type: vmess, uuid: 51a66487-e65e-47cb-8c6d-6054bb29a5f7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 5, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml}
-  - {name: 🇺🇸 US, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}}
-  - {name: 🇰🇷 韩国（TG@阿伟科技/油管） 4, server: kr.alinkrelay.com, port: 10000, type: trojan, password: 0f7989cf-99a8-41b2-9ade-f8c77bccebad, sni: kr.alinkrelay.com}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3, server: 104.16.47.181, port: 443, type: vmess, uuid: 1e9be421-4135-4edb-9655-804042753442, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /yorknodes-de1, headers: {Host: eu19.144050.cf}}}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 3, server: snode-14.nmp.pw, port: 11328, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国（TG@阿伟科技/油管）, server: dx.vmess.top, port: 53805, type: vmess, uuid: e4701d38-c416-4049-9c2b-59b837616830, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /sadasdxasdasdueasdxasdi, headers: {Host: dx.vmess.top}}}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 4, server: snode-14.nmp.pw, port: 11280, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 亚洲(欢迎订阅Youtube破解资源君), server: 45.32.74.255, port: 11514, type: vmess, uuid: 0f83d532-bf76-11ec-ada7-560003f41aa7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /XrwK6Y0x/, headers: {Host: 45.32.74.255}}}
-  - {name: 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4, server: sg01.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg01.xqkj.cloud}}}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 5, server: snode-14.nmp.pw, port: 11328, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾（TG@阿伟科技/油管） 2, server: snode-cn-gz1.nmp.pw, port: 28001, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 荷兰（TG@阿伟科技/油管）, server: cn1.relay.iepl.pw, port: 50600, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a}
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 6, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 6, server: snode-14.nmp.pw, port: 11280, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡（TG@阿伟科技/油管） 4, server: snode-cn-gz3.nmp.pw, port: 28000, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国（TG@阿伟科技/油管） 7, server: jpaz3.xmrth-node.xyz, port: 11021, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇰🇷 韩国（TG@阿伟科技/油管） 5, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a}
-  - {name: 🇭🇰 香港（TG@阿伟科技/油管） 7, server: snode-14.nmp.pw, port: 11280, type: vmess, uuid: b5bc5ccc-bf5f-4bd5-99d5-5c79f6b57548, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本（TG@阿伟科技/油管）, server: jpaz4.xmrth-node.xyz, port: 10091, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 2, server: v2-1.godlight.xyz, port: 12233, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 3, server: v2.godlight.xyz, port: 26933, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f34f3-f32f364, headers: {Host: v2.godlight.xyz}}, udp: true}
+  - {name: github.com/freefq - 美国Xerox 4, server: v2-3.godlight.xyz, port: 39273, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f45361465j175, headers: {Host: v2-3.godlight.xyz}}, udp: true}
+  - {name: github.com/freefq - 加拿大  56, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管）, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: c07dff62-1e72-4d83-a83b-d611a98a1c9d, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管）, server: v2-2.godlight.xyz, port: 30523, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}, udp: true}
+  - {name: 澳洲（TG@阿伟科技/油管）, server: node.774.gs, port: 8443, type: vmess, uuid: 28f6159e-ed46-4bfe-b893-0e7531c28143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: node.774.gs}}, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君), server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 15, server: vn.iplc.skin, port: 11113, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vn.iplc.skin}}, udp: true}
+  - {name: github.com/freefq - 亚太地区  36, server: 103.177.38.220, port: 80, type: vmess, uuid: f62c46d2-242d-4433-b008-a6fe7eb34965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zingfast/, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 47, server: jgwxn1.gaox.ml, port: 443, type: trojan, password: 0f715619-0037-4358-a7c6-958106bc6b49, sni: jgwxn1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 亚太地区  55, server: zingfast.vn, port: 80, type: vmess, uuid: f62c46d2-242d-4433-b008-a6fe7eb34965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zingfast/, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君), server: 104.16.47.181, port: 443, type: vmess, uuid: 1e9be421-4135-4edb-9655-804042753442, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yorknodes-de1, headers: {Host: eu19.144050.cf}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管）, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享), server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}, udp: true}
+  - {name: US, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}, udp: true}
+  - {name: 新加坡（欢迎订阅YouTube晓柒科技）, server: sg04.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg04.xqkj.cloud}}, udp: true}
+  - {name: 澳洲（TG@阿伟科技/油管） 2, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港特别行政区 66, server: gy.gothy.cyou, port: 14401, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gy.gothy.cyou}}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君), server: 45.32.74.255, port: 11514, type: vmess, uuid: 0f83d532-bf76-11ec-ada7-560003f41aa7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /XrwK6Y0x/, headers: {Host: 45.32.74.255}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 2, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 3, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}, udp: true}
+  - {name: 美国（欢迎订阅YouTube晓柒科技）, server: us06.xqkj.cloud, port: 1116, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us06.xqkj.cloud}}, udp: true}
+  - {name: 美国（欢迎订阅YouTube晓柒科技） 2, server: us04.xqkj.cloud, port: 1114, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us04.xqkj.cloud}}, udp: true}
+  - {name: 澳洲（TG@阿伟科技/油管） 3, server: jgwxn1.gaox.ml, port: 443, type: trojan, password: 0f715619-0037-4358-a7c6-958106bc6b49, sni: jgwxn1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国（欢迎订阅YouTube晓柒科技） 3, server: us02.xqkj.cloud, port: 1112, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us02.xqkj.cloud}}, udp: true}
+  - {name: 加拿大（欢迎订阅YouTube晓柒科技）, server: ca02.xqkj.cloud, port: 1918, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca02.xqkj.cloud}}, udp: true}
+  - {name: 加拿大（欢迎订阅YouTube晓柒科技） 2, server: ca05.xqkj.cloud, port: 1918, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca05.xqkj.cloud}}, udp: true}
+  - {name: 新加坡（欢迎订阅YouTube晓柒科技） 2, server: sg05.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg05.xqkj.cloud}}, udp: true}
+  - {name: CN_373 | 7.26Mb, server: 183.240.181.57, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.p2psharing}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 2, server: 69.161.221.231, port: 28893, type: vmess, uuid: 7d5aa028-049b-4ca5-e6fc-2e474140ff1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 4, server: us.456url.com, port: 10088, type: ss, cipher: chacha20-ietf-poly1305, password: fbd77250-a674-4a24-be1a-d1a76f695c34, udp: true}
+  - {name: 德国（欢迎订阅YouTube晓柒科技）, server: dg02.xqkj.cloud, port: 1915, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg02.xqkj.cloud}}, udp: true}
+  - {name: 加拿大（欢迎订阅YouTube晓柒科技） 3, server: ca01.xqkj.cloud, port: 1918, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca01.xqkj.cloud}}, udp: true}
+  - {name: 德国（欢迎订阅YouTube晓柒科技） 2, server: dg03.xqkj.cloud, port: 1915, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg03.xqkj.cloud}}, udp: true}
+  - {name: 新加坡（欢迎订阅YouTube晓柒科技） 3, server: sg02.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg02.xqkj.cloud}}, udp: true}
+  - {name: github.com/freefq - 英国伦敦Oracle云计算数据中心 45, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 荷兰（欢迎订阅YouTube晓柒科技）, server: hl03.xqkj.cloud, port: 1913, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hl03.xqkj.cloud}}, udp: true}
+  - {name: github.com/freefq - 亚太地区  35, server: 103.177.146.79, port: 80, type: vmess, uuid: f62c46d2-242d-4433-b008-a6fe7eb34965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zingfast/, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: 加拿大（欢迎订阅YouTube晓柒科技） 4, server: ca03.xqkj.cloud, port: 1918, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca03.xqkj.cloud}}, udp: true}
+  - {name: 德国（欢迎订阅YouTube晓柒科技） 3, server: dg05.xqkj.cloud, port: 1915, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg05.xqkj.cloud}}, udp: true}
+  - {name: 荷兰（欢迎订阅YouTube晓柒科技） 2, server: hl01.xqkj.cloud, port: 1911, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hl01.xqkj.cloud}}, udp: true}
+  - {name: github.com/freefq - 美国  34, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 英国伦敦Oracle云计算数据中心 43, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US|美国|IP6|SS|02, server: us.456url.com, port: 10089, type: ss, cipher: chacha20-ietf-poly1305, password: fbd77250-a674-4a24-be1a-d1a76f695c34, udp: true}
+  - {name: 美国（欢迎订阅YouTube晓柒科技） 4, server: us03.xqkj.cloud, port: 1113, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us03.xqkj.cloud}}, udp: true}
+  - {name: 新加坡（欢迎订阅YouTube晓柒科技） 4, server: sg01.xqkj.cloud, port: 1416, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg01.xqkj.cloud}}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: 104.16.47.181, port: 443, type: vmess, uuid: 7824cbc1-f82d-48cf-fb1d-54d8911849c8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yorknodes-fr-par-1, headers: {Host: fr1.144050.cf}}, udp: true}
+  - {name: github.com/freefq - 亚太地区  54, server: 103.177.146.77, port: 80, type: vmess, uuid: f62c46d2-242d-4433-b008-a6fe7eb34965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zingfast/, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 37, server: app.ssfree.ru, port: 443, type: vmess, uuid: c58a8a46-bff9-11ec-a25c-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管）, server: 2.it58no.top, port: 443, type: vmess, uuid: ad15faac-2797-4993-b4cb-4b7efccc5aba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8471/, headers: {Host: 2.it58no.top}}, udp: true}
+  - {name: github.com/freefq - 俄罗斯  41, server: us.456url.com, port: 10086, type: trojan, password: fbd77250-a674-4a24-be1a-d1a76f695c34, sni: us.456url.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 亚太地区  38, server: hn.zingfast.vn, port: 80, type: vmess, uuid: f62c46d2-242d-4433-b008-a6fe7eb34965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zingfast/, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: 台湾（TG@阿伟科技/油管）, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 荷兰（欢迎订阅YouTube晓柒科技） 3, server: hl04.xqkj.cloud, port: 1914, type: vmess, uuid: 518f28fc-4d66-4b89-81a0-0e43c4d7f7e3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hl04.xqkj.cloud}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -905,111 +521,63 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管）
-      - 🇯🇵 日本（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管）
-      - 🇨🇳 台湾（TG@阿伟科技/油管）
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港 网飞 _0.8#93@727G
-      - 🇭🇰 香港 _1.1#230@596G
-      - 🇭🇰 香港-网飞_0.3#186@1727G
-      - 🇭🇰 香港_1.6#238@416G
-      - 🇭🇰 香港-网飞_1.1#348@1180G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港 网飞 _1.5#94@317G
-      - 🇭🇰 香港 移动_1.2#41@357G
-      - 🇭🇰 香港 网飞  _2#216@210G
-      - 🇭🇰 香港 _1.1#99@399G
-      - 🇭🇰 香港_0.9#231@636G
-      - 🇭🇰 香港_1.6#233@413G
-      - 🇭🇰 香港-网飞_1.1#252@601G
-      - 🇭🇰 香港_0.7#59@1471G
-      - 🇭🇰 香港_1.1#228@554G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 4
-      - 🇭🇰 香港_1.2#232@371G
-      - 🇭🇰 香港 网飞_1.1#276@386G
-      - 🇭🇰 香港-网飞_0.6#361@1501G
-      - 🇭🇰 香港-网飞_1#318@1312G
-      - 🇭🇰 香港_0.7#241@1471G
-      - 🇭🇰 香港_0.8#353@1422G
-      - 🇭🇰 香港_1.6#88@419G
-      - 🇭🇰 香港_0.3#197@1688G
-      - 🇭🇰 香港-网飞_1#278@1312G
-      - 🇭🇰 香港-网飞_0.5#142@1574G
-      - 🇰🇷 韩国（TG@阿伟科技/油管）
-      - 🇭🇰 香港 网飞 _1#87@589G
-      - 🇭🇰 香港_1.3#37@526G
-      - 🇭🇰 香港-网飞_1.1#351@1180G
-      - 🇭🇰 香港_1.2#253@494G
-      - 🇭🇰 香港-网飞_0#377@538G
-      - 🇭🇰 香港_1#250@589G
-      - 🇭🇰 香港-网飞_0.3#207@1719G
-      - 🇭🇰 香港-网飞_1.4#257@482G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 5
-      - 🇯🇵 日本（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港_1.7#234@270G
-      - 🇭🇰 香港-网飞_0.5#152@1574G
-      - 🇭🇰 香港-网飞_0.3#40@1709G
-      - 🇭🇰 香港 网飞_0.9#69@423G
-      - 🇭🇰 香港-网飞_0.9#218@637G
-      - 🇭🇰 香港-网飞_0.6#309@1501G
-      - 🇭🇰 香港-网飞_0.9#209@1356G
-      - 🇭🇰 香港-网飞_0.3#156@1727G
-      - 🇭🇰 香港_0.8#354@1422G
-      - 🇭🇰 香港-网飞_1.5#213@477G
-      - 🇭🇰 香港_0.8#79@1422G
-      - 🇭🇰 香港-网飞_0.9#307@1356G
-      - 🇭🇰 香港-网飞_0.7#151@1449G
-      - 🇭🇰 香港 网飞_1.2#240@352G
-      - 🇭🇰 香港_0.7#223@1471G
-      - 🇭🇰 香港-网飞_1#272@1312G
-      - 🇭🇰 香港-网飞_0.9#352@1356G
-      - 🇭🇰 香港-网飞_0.3#344@1709G
-      - 🇭🇰 香港_0.3#132@1688G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 7
-      - 🇺🇸 美国（TG@阿伟科技/油管） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 2
-      - 🇭🇰 香港-网飞_0.6#358@1501G
-      - 🇦🇺 澳洲（TG@阿伟科技/油管）
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
-      - 🇯🇵 日本（TG@阿伟科技/油管） 8
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
-      - 🇯🇵 日本（TG@阿伟科技/油管） 9
-      - 🇺🇸 US B 003
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技）
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 2
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 3
-      - 🇦🇺 澳洲（TG@阿伟科技/油管） 2
-      - 🇺🇸 美国(yudou66.com 玉豆分享)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 3
-      - 🇭🇰 香港 网飞 _1#269@650G
-      - 🇯🇵 日本（TG@阿伟科技/油管） 10
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 3
-      - 🇭🇰 香港_0.3#109@1688G
-      - 🇺🇸 美国（TG@阿伟科技/油管） 3
-      - 🇯🇵 日本（TG@阿伟科技/油管） 11
-      - 🇺🇸 美国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 5
-      - 🇺🇸 US
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 3
-      - 🇭🇰 香港（TG@阿伟科技/油管） 3
-      - 🇩🇪 德国（TG@阿伟科技/油管）
-      - 🇭🇰 香港（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - github.com/freefq - 美国Xerox 4
+      - github.com/freefq - 加拿大  56
+      - 韩国（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管）
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - github.com/freefq - 广东省广州市移动 15
+      - github.com/freefq - 亚太地区  36
+      - github.com/freefq - 美国3COM公司企业网 47
+      - github.com/freefq - 亚太地区  55
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 51
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国（TG@阿伟科技/油管）
+      - 美国(yudou66.com 玉豆分享)
+      - US
+      - 新加坡（欢迎订阅YouTube晓柒科技）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - github.com/freefq - 香港特别行政区 66
       - 亚洲(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 新加坡（欢迎订阅YouTube晓柒科技） 4
-      - 🇭🇰 香港（TG@阿伟科技/油管） 5
-      - 🇨🇳 台湾（TG@阿伟科技/油管） 2
-      - 🇳🇱 荷兰（TG@阿伟科技/油管）
-      - 🇺🇸 美国（TG@阿伟科技/油管） 6
-      - 🇭🇰 香港（TG@阿伟科技/油管） 6
-      - 🇸🇬 新加坡（TG@阿伟科技/油管） 4
-      - 🇺🇸 美国（TG@阿伟科技/油管） 7
-      - 🇰🇷 韩国（TG@阿伟科技/油管） 5
-      - 🇭🇰 香港（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技）
+      - 美国（欢迎订阅YouTube晓柒科技） 2
+      - 澳洲（TG@阿伟科技/油管） 3
+      - 美国（欢迎订阅YouTube晓柒科技） 3
+      - 加拿大（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 2
+      - CN_373 | 7.26Mb
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 4
+      - 德国（欢迎订阅YouTube晓柒科技）
+      - 加拿大（欢迎订阅YouTube晓柒科技） 3
+      - 德国（欢迎订阅YouTube晓柒科技） 2
+      - 新加坡（欢迎订阅YouTube晓柒科技） 3
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 45
+      - 荷兰（欢迎订阅YouTube晓柒科技）
+      - github.com/freefq - 亚太地区  35
+      - 加拿大（欢迎订阅YouTube晓柒科技） 4
+      - 德国（欢迎订阅YouTube晓柒科技） 3
+      - 荷兰（欢迎订阅YouTube晓柒科技） 2
+      - github.com/freefq - 美国  34
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 43
+      - US|美国|IP6|SS|02
+      - 美国（欢迎订阅YouTube晓柒科技） 4
+      - 新加坡（欢迎订阅YouTube晓柒科技） 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - github.com/freefq - 亚太地区  54
+      - github.com/freefq - 美国CloudFlare节点 37
+      - 香港（TG@阿伟科技/油管）
+      - github.com/freefq - 俄罗斯  41
+      - github.com/freefq - 亚太地区  38
+      - 台湾（TG@阿伟科技/油管）
+      - 荷兰（欢迎订阅YouTube晓柒科技） 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
