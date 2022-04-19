@@ -5,143 +5,211 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: hostdare_1, server: 212.103.62.37, port: 443, type: vmess, uuid: 17beadf3-1878-4beb-9417-b47295aefc12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cNlbnKh, ws-headers: {Host: 212.103.62.37}, udp: true}
-  - {name: v2ray_1_982 | 9.90Mb, server: 185.212.63.172, port: 53546, type: vmess, uuid: 5f90ae2a-ecd1-4ffb-ad28-804e33b96cf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: newserver1_2, server: 159.203.73.153, port: 4396, type: vmess, uuid: 7ef93298-6931-4d0e-a9c1-98005ab374df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2rayhunter0122, ws-headers: {Host: 159.203.73.153}, udp: true}
-  - {name: 403更新_IN_印度_10, server: in.dadiangan.xyz, port: 34254, type: ss, cipher: chacha20-ietf-poly1305, password: 9de3e9ba-18ce-4cd8-81a3-e4ed47fc7d41, udp: true}
-  - {name: LT_1650, server: vpn-eu-node00e-bb.hi-l.eu, port: 30010, type: ss, cipher: chacha20-ietf-poly1305, password: p0gkMB4ZVukw, udp: true}
-  - {name: _441 | 4.57Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _430 | 8.73Mb, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _447 |49.54Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _435 |17.92Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _445 | 8.67Mb, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US美国43_43, server: c39s2.jamjams.net, port: 32567, type: ss, cipher: aes-256-gcm, password: m35yfEjtbS, udp: true}
-  - {name: 21, server: hkmax08.170809.xyz, port: 444, type: trojan, password: 18defc20-38b9-4d4d-b4e6-a4d2c55f441b, sni: hkmax08.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 23, server: hkmax06.170809.xyz, port: 444, type: trojan, password: 18defc20-38b9-4d4d-b4e6-a4d2c55f441b, sni: hkmax06.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP日本45_45, server: os2-1.nrojat.com, port: 443, type: trojan, password: 9zB9WZg2xaJz8pgcR2, sni: os2-1.nrojat.com, skip-cert-verify: true, udp: true}
-  - {name: 48, server: hk12.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: hk12.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 21 2, server: hkmax08.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: hkmax08.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港01, server: ddns01.hmkj55.xyz, port: 54323, type: trojan, password: 0794a581-9b2c-44ca-9386-1c5b32d86366, sni: ddns01.hmkj55.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国10, server: ddns18.hmkj55.xyz, port: 54321, type: trojan, password: 0794a581-9b2c-44ca-9386-1c5b32d86366, sni: ddns18.hmkj55.xyz, skip-cert-verify: true, udp: true}
-  - {name: 403更新_HK_香港_8, server: hk2.qingyun123.xyz, port: 10050, type: trojan, password: 173ada09-6d94-4cae-96db-17da3b840a2d, sni: hk2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国07, server: ddns04.hmkj55.xyz, port: 54321, type: trojan, password: 0794a581-9b2c-44ca-9386-1c5b32d86366, sni: ddns04.hmkj55.xyz, skip-cert-verify: true, udp: true}
-  - {name: 22, server: hkmax10.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: hkmax10.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: DE德国46_46, server: de1-4.nrojat.com, port: 443, type: trojan, password: 9zB9WZg2xaJz8pgcR2, sni: de1-4.nrojat.com, skip-cert-verify: true, udp: true}
-  - {name: 49, server: hk13.170809.xyz, port: 444, type: trojan, password: 18defc20-38b9-4d4d-b4e6-a4d2c55f441b, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 49 2, server: hk13.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 44, server: jpmax02.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: jpmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 26, server: hkmax12.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 23 2, server: hkmax06.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: hkmax06.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 14, server: jp01.170809.xyz, port: 444, type: trojan, password: 1e61196d-0254-4772-ac0b-234af47163d6, sni: jp01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 油管 TG 8度科技, server: za02.holiganfan.com, port: 10088, type: trojan, password: 61729199-896f-4c15-bae3-e8780b22c70c, sni: za02.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: 油管 TG 8度科技 2, server: yin1.qingyun123.xyz, port: 10000, type: trojan, password: 173ada09-6d94-4cae-96db-17da3b840a2d, sni: yin1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR, server: 140.238.16.203, port: 59711, type: ss, cipher: aes-256-gcm, password: j9Fq2tbYGb, udp: true}
+  - {name: CN, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 2, server: 117.50.106.86, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 3, server: 116.129.253.191, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 4, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: 912ebb9f-7c7a-4ee2-b9c9-5c2a87280c2e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP, server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: 599d9e75-08dc-4e9c-b93a-5e455fb5ec42, sni: nfjp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 5, server: 116.129.253.227, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 6, server: 116.129.253.177, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 7, server: 116.129.253.227, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 8, server: 123.59.87.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: US, server: uscera.moonfree.top, port: 443, type: vmess, uuid: 0ab2cbc2-8b6a-4402-838a-735b25ad1331, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uscera.moonfree.top}, udp: true}
+  - {name: GB, server: yin1.qingyun123.xyz, port: 10000, type: trojan, password: 599d9e75-08dc-4e9c-b93a-5e455fb5ec42, sni: yin1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 9, server: 120.232.192.250, port: 3385, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 10, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: TW, server: 60.249.3.125, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: PL, server: 217.30.10.68, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: CN 11, server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: 912ebb9f-7c7a-4ee2-b9c9-5c2a87280c2e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 2, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: vpna1.herokuapp.com}, udp: true}
+  - {name: CN 12, server: 117.50.106.86, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 13, server: 120.232.192.250, port: 3383, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 14, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: PL 2, server: 217.30.10.68, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: PL 3, server: 217.30.10.68, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: CN 15, server: 116.129.253.201, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: PL 4, server: 217.30.10.68, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: PL 5, server: 217.30.10.68, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: CN 16, server: 120.232.192.250, port: 3384, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: PL 6, server: 217.30.10.68, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: PL 7, server: 217.30.10.68, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: CN 17, server: 117.50.106.86, port: 3389, type: trojan, password: edf497f40f71aeeb, skip-cert-verify: true, udp: true}
+  - {name: CN 18, server: 116.129.253.245, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 19, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 20, server: 116.129.253.187, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 21, server: de-s-route.teacher2060.com, port: 31617, type: ss, cipher: chacha20-ietf-poly1305, password: oq7Hsx00G4, udp: true}
+  - {name: CN 22, server: 116.129.253.134, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 23, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 24, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: KR 2, server: 146.56.184.37, port: 51511, type: ss, cipher: aes-256-gcm, password: awFW0Z7xzb, udp: true}
+  - {name: CN 25, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 26, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 27, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 28, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US 3, server: 138.197.236.77, port: 443, type: vmess, uuid: 3579436c-b37e-11eb-8529-0242ac130003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 138.197.236.77}, udp: true}
+  - {name: CN 29, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 30, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 31, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 32, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,149 +228,215 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01
-      - 403更新_HK_香港_8
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -318,36 +452,53 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - hostdare_1
-      - v2ray_1_982 | 9.90Mb
-      - newserver1_2
-      - 403更新_IN_印度_10
-      - LT_1650
-      - _441 | 4.57Mb
-      - _430 | 8.73Mb
-      - _447 |49.54Mb
-      - _435 |17.92Mb
-      - _445 | 8.67Mb
-      - US美国43_43
-      - 21
-      - 23
-      - JP日本45_45
-      - 48
-      - 21 2
-      - 香港01
-      - 美国10
-      - 403更新_HK_香港_8
-      - 美国07
-      - 22
-      - DE德国46_46
-      - 49
-      - 49 2
-      - 44
-      - 26
-      - 23 2
-      - 14
-      - 油管 TG 8度科技
-      - 油管 TG 8度科技 2
+      - KR
+      - CN
+      - CN 2
+      - CN 3
+      - CN 4
+      - JP
+      - CN 5
+      - CN 6
+      - CN 7
+      - CN 8
+      - US
+      - GB
+      - CN 9
+      - CN 10
+      - TW
+      - PL
+      - CN 11
+      - US 2
+      - CN 12
+      - CN 13
+      - CN 14
+      - PL 2
+      - PL 3
+      - CN 15
+      - PL 4
+      - PL 5
+      - CN 16
+      - PL 6
+      - PL 7
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - KR 2
+      - CN 25
+      - CN 26
+      - CN 27
+      - CN 28
+      - US 3
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -524,42 +675,42 @@ rules:
  - DOMAIN-SUFFIX,das.mobile.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dev-push.m.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dl.g.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dmapp.youku.com,🛑全球拦截
- - DOMAIN-SUFFIX,gamex.mobile.youku.com,🛑全球拦截
- - DOMAINSUFFIX,hudong.pl.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dmapp.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,gamex.mobile.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,hudong.pl.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,huodong.pl.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,huodong.vip.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,hz.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,hz.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,l.ykimg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lstat.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.yes.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mobilemsg.youku.com,🛑全球拦截
- - DOMAIN-SUFFIX,msg.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mobilemsg.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,msg.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,myes.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pyouku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,passport-log.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,p.l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,passport-log.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,p-log.ykimg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,push.m.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,rlyouku.com,🛑全球拦截
- - DOMAIN-SUFFIX,spyouku.com,🛑全球拦截
- - DOMAIN-SUFFIX,sdk.api.gamex.mobile.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,r.l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,s.p.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,sdk.api.gamex.mobile.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sdk.m.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,stat.youku.com,🛑全球拦截
- - DOMAIN-SUFFIX,store.tv.api.3g.youku.com,🛑全球拦截
- - DOMAIN-SUFFIX,store.xl.api.3g.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,stat.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,store.tv.api.3g.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,store.xl.api.3g.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tdrec.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,test.ott.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,test.ott.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,urchin.lstat.youku.com,🛑 全球拦截
- - DOMAIN-SUFFIX,vlyouku.com,🛑全球拦截
- - DOMAIN-SUFFIX,val.api.youku.com,🛑全球拦截
- - DOMAIN-SUFFIX,wan.youku.com,🛑全球拦截
+ - DOMAIN-SUFFIX,v.l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,val.api.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,wan.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ykatr.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ykrec.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ads-api.videojj.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cdn.cmop.mgtv.com,🛑 全球拦截
- - DOMAIN-SUFFIX,click.hunantv.com,🛑全球拦截
- - DOMAIN-SUFFIX,cmop.mgtv.com,🛑全球拦截
- - DOMAIN-SUFFIX,cytron.videojj.com,🛑全球拦截
+ - DOMAIN-SUFFIX,click.hunantv.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cmop.mgtv.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cytron.videojj.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cytroncdn.videojj.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imgaliyun.da.mgtv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imgaliyun.res.mgtv.com,🛑 全球拦截
@@ -585,20 +736,20 @@ rules:
  - DOMAIN-SUFFIX,x1.da.hunantv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,y.da.hunantv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,y.da.mgtv.com,🛑 全球拦截
- - DOMAIN-SUFFIX,1.letvlive.com,🛑全球拦截
- - DOMAIN-SUFFIX,2.letvlive.com,🛑全球拦截
+ - DOMAIN-SUFFIX,1.letvlive.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,2.letvlive.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ads1.lfengmobile.com,🛑 全球拦截
- - DOMAIN-SUFFIX,api.game.letvstore.com,🛑全球拦截
- - DOMAIN-SUFFIX,api.push.le.com,🛑全球拦截
+ - DOMAIN-SUFFIX,api.game.letvstore.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.push.le.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cdn.zampdsp.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cm.fancyapi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cn.api.push.le.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dc.letv.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dc.letv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,fz.letv.com,🛑 全球拦截
- - DOMAIN-SUFFIX,minisite.letv.com,🛑全球拦截
+ - DOMAIN-SUFFIX,minisite.letv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,msg.m.letv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pro.hoye.letv.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pro.letv.com,🛑全球拦截
+ - DOMAIN-SUFFIX,pro.letv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.zampdsp.com,🛑 全球拦截
  - DOMAIN-SUFFIX,stat.letv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,static.app.m.letv.com,🛑 全球拦截
@@ -1427,22 +1578,22 @@ rules:
  - DOMAIN-SUFFIX,ad7.tagphi.net,🛑 全球拦截
  - DOMAIN-SUFFIX,ad8.adfarm1.adition.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ad9377.com,🛑 全球拦截
- - DOMAIN-SUFFIX,adapted.com,🛑 全球拦截
- - DOMAINSUFFIX,adadmin.house365.com,🛑全球拦截
+ - DOMAIN-SUFFIX,adadapted.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adadmin.house365.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adadvisor.net,🛑 全球拦截
  - DOMAIN-SUFFIX,ad-android.51wnl.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adap.tv,🛑 全球拦截
- - DOMAINSUFFIX,adapi.lenovogame.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adapi.lenovogame.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adasad.myweb.hinet.net,🛑 全球拦截
  - DOMAIN-SUFFIX,adbana.com,🛑 全球拦截
- - DOMAINSUFFIX,ad-beta-.flipboard.com,🛑 全球拦截
- - DOMAIN-SUFFIX,adbot.tw,🛑全球拦截
- - DOMAIN-SUFFIX,adbox.sina.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,ad-beta.flipboard.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adbot.tw,🛑 全球拦截
+ - DOMAIN-SUFFIX,adbox.sina.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,ad-brix.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adbuyer3.lycos.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adbxb.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adcast.deviantart.com,🛑 全球拦截
- - DOMAIN-SUFFIX,adcast.fblife.com,🛑全球拦截
+ - DOMAIN-SUFFIX,adcast.fblife.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adccoo.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,adcdn.goo.ne.jp,🛑 全球拦截
  - DOMAIN-SUFFIX,adchina.com,🛑 全球拦截
@@ -1507,24 +1658,24 @@ rules:
  - DOMAIN-SUFFIX,adinfo.aol.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adinfo.ra1.xlmc.sec.miui.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adingo.jp.eimg.jp,🛑 全球拦截
- - DOMAIN-SUFFIX,adirects.com,🛑全球拦截
+ - DOMAIN-SUFFIX,adirects.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adjb.5nd.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adk.funshion.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adk2.co,🛑 全球拦截
- - DOMAIN-SUFFIX,adk2x.com,🛑全球拦截
+ - DOMAIN-SUFFIX,adk2x.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adkmob.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adkongjian.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adlabs-sync.rutarget.ru,🛑 全球拦截
  - DOMAIN-SUFFIX,adlefee.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adlink.shopsafe.co.nz,🛑 全球拦截
- - DOMAIN-SUFFIX,adlive.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,adlive.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,adlocus.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ad-locus.com,🛑 全球拦截
- - DOMAIN-SUFFIX,adlog.flurry.com,🛑全球拦截
+ - DOMAIN-SUFFIX,adlog.flurry.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adm.265g.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adm.72zx.com,🛑 全球拦截
- - DOMAIN-SUFFIX,adm.86wan.com,🛑全球拦截
- - DOMAIN-SUFFIX,adm.baidu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,adm.86wan.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adm.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adm.cloud.cnfol.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adm.easou.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adm.funshion.com,🛑 全球拦截
@@ -1694,20 +1845,20 @@ rules:
  - DOMAIN-SUFFIX,ae-gb.mgid.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aercxy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aerserv.com,🛑 全球拦截
- - DOMAIN-SUFFIX,aes01.com,🛑全球拦截
+ - DOMAIN-SUFFIX,aes01.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
- - DOMAIN-SUFFIX,aff.eteachergroup.com,🛑全球拦截
- - DOMAIN-SUFFIX,aff.lmgtfy.com,🛑全球拦截
+ - DOMAIN-SUFFIX,aff.eteachergroup.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,aff.lmgtfy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aff.marathonbet.com,🛑 全球拦截
- - DOMAIN-SUFFIX,aff.svjump.com,🛑全球拦截
- - DOMAIN-SUFFIX,affil.mupromo.com,🛑全球拦截
- - DOMAIN-SUFFIX,affiliategroove.com,🛑全球拦截
+ - DOMAIN-SUFFIX,aff.svjump.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,affil.mupromo.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,affiliategroove.com,🛑 全球拦截
  - DOMAIN-SUFFIX,affiliateprogram.keywordspy.com,🛑 全球拦截
- - DOMAINSUFFIX,affiliates.allposters.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,affiliates.allposters.com,🛑 全球拦截
  - DOMAIN-SUFFIX,affiliates.goodvibes.com,🛑 全球拦截
- - DOMAINSUFFIX,affiliates.thrixxx.com,🛑 全球拦截
- - DOMAINSUFFIX,affiliatesmedia.sbobet.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,affiliates.thrixxx.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,affiliatesmedia.sbobet.com,🛑 全球拦截
  - DOMAIN-SUFFIX,affiliation.fotovista.com,🛑 全球拦截
  - DOMAIN-SUFFIX,afjlb.com,🛑 全球拦截
  - DOMAIN-SUFFIX,afp.alicdn.com,🛑 全球拦截
@@ -1728,26 +1879,26 @@ rules:
  - DOMAIN-SUFFIX,agn.aty.cp45.ott.cibntv.net,🛑 全球拦截
  - DOMAIN-SUFFIX,agn.aty.snmsohu.aisee.tv,🛑 全球拦截
  - DOMAIN-SUFFIX,agoodm.m.taobao.com,🛑 全球拦截
- - DOMAIN-SUFFIX,agr.voiceads.cn,🛑全球拦截
- - DOMAIN-SUFFIX,agrant.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,agr.voiceads.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,agrant.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,agrantsem.com,🛑 全球拦截
- - DOMAIN-SUFFIX,ahhuazhen.com,🛑全球拦截
+ - DOMAIN-SUFFIX,ahhuazhen.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ahyau.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ahyuns.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ai.bioon.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ai.m.taobao.com,🛑 全球拦截
- - DOMAIN-SUFFIX,ai.taobao.com,🛑全球拦截
- - DOMAIN-SUFFIX,ai.xinju.cc,🛑全球拦截
+ - DOMAIN-SUFFIX,ai.taobao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ai.xinju.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,ai.yimg.jp,🛑 全球拦截
  - DOMAIN-SUFFIX,aibangzs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aicydb.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aid.chinayk.com,🛑 全球拦截
- - DOMAINSUFFIX,aider-res.meizu.com,🛑 全球拦截
- - DOMAIN-SUFFIX,aihaoduo.cn,🛑全球拦截
- - DOMAIN-SUFFIX,aikan6.com,🛑全球拦截
+ - DOMAIN-SUFFIX,aider-res.meizu.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,aihaoduo.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,aikan6.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ailicee.com,🛑 全球拦截
- - DOMAINSUFFIX,aim.yoyi.com.cn,🛑全球拦截
- - DOMAIN-SUFFIX,air.yoyi.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,aim.yoyi.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,air.yoyi.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,airpush.com,🛑 全球拦截
  - DOMAIN-SUFFIX,airpushmarketing.s3.amazonaws.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ais.abacast.com,🛑 全球拦截
@@ -1850,26 +2001,26 @@ rules:
  - DOMAIN-SUFFIX,api.ijunhai.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.itaoxiaoshuo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.jr.mi.com,🛑 全球拦截
- - DOMAIN-SUFFIX,api.keteddata.com,🛑全球拦截
+ - DOMAIN-SUFFIX,api.ketedata.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.koudaikj.com,🛑 全球拦截
- - DOMAIN-SUFFIX,api.leadbolt.net,🛑全球拦截
+ - DOMAIN-SUFFIX,api.leadbolt.net,🛑 全球拦截
  - DOMAIN-SUFFIX,api.mobgi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.mobula.sdk.duapps.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.moogos.com,🛑 全球拦截
- - DOMAIN-SUFFIX,api.mp.uc.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,api.mp.uc.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,api.newbelden.com,🛑 全球拦截
- - DOMAIN-SUFFIX,api.open.uc.cn,🛑全球拦截
- - DOMAIN-SUFFIX,api.pingstart.com,🛑全球拦截
- - DOMAIN-SUFFIX,api.ppoi.org,🛑全球拦截
- - DOMAIN-SUFFIX,api.primecaster.net,🛑全球拦截
+ - DOMAIN-SUFFIX,api.open.uc.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.pingstart.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.ppoi.org,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.primecaster.net,🛑 全球拦截
  - DOMAIN-SUFFIX,api.push.daoyoudao.com,🛑 全球拦截
- - DOMAIN-SUFFIX,api.ra2.xlmc.sec.miui.com,🛑全球拦截
- - DOMAIN-SUFFIX,api.rees46.com,🛑全球拦截
- - DOMAIN-SUFFIX,api.rideraid.net,🛑全球拦截
- - DOMAIN-SUFFIX,api.sec.miui.com,🛑全球拦截
- - DOMAIN-SUFFIX,api.share.mob.com,🛑全球拦截
- - DOMAIN-SUFFIX,api.shuzilm.cn,🛑全球拦截
- - DOMAIN-SUFFIX,api.similarweb.com,🛑全球拦截
+ - DOMAIN-SUFFIX,api.ra2.xlmc.sec.miui.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.rees46.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.rideraid.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.sec.miui.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.share.mob.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.shuzilm.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,api.similarweb.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.tr.blismedia.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.tw06.xlmc.sec.miui.com,🛑 全球拦截
  - DOMAIN-SUFFIX,api.ujian.cc,🛑 全球拦截
@@ -2275,25 +2426,25 @@ rules:
  - DOMAIN-SUFFIX,br.fling.com,🛑 全球拦截
  - DOMAIN-SUFFIX,br.realitykings.com,🛑 全球拦截
  - DOMAIN-SUFFIX,brakefluid.website,🛑 全球拦截
- - DOMAIN-SUFFIX,brand.sogou.com,🛑全球拦截
- - DOMAIN-SUFFIX,brandshow.58.com,🛑全球拦截
+ - DOMAIN-SUFFIX,brand.sogou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,brandshow.58.com,🛑 全球拦截
  - DOMAIN-SUFFIX,brcache.madthumbs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,breeze.olclient.baofeng.com,🛑 全球拦截
- - DOMAIN-SUFFIX,breezily168.com,🛑全球拦截
+ - DOMAIN-SUFFIX,breezily168.com,🛑 全球拦截
  - DOMAIN-SUFFIX,brizads.com,🛑 全球拦截
- - DOMAIN-SUFFIX,bro.flyme.cn,🛑全球拦截
- - DOMAIN-SUFFIX,browser.gwdang.com,🛑全球拦截
+ - DOMAIN-SUFFIX,bro.flyme.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,browser.gwdang.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bs.5442.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bs.serving-sys.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bs14.9669.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,bsch.serving-sys.com,🛑 全球拦截
- - DOMAIN-SUFFIX,bsdev.cn,🛑全球拦截
- - DOMAIN-SUFFIX,bshare.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,bsdev.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,bshare.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,bshare.optimix.asia,🛑 全球拦截
  - DOMAIN-SUFFIX,bsiet.husky.sogou.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bss.pandora.xiaomi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bstatic.1kejian.com,🛑 全球拦截
- - DOMAIN-SUFFIX,bstatic.diyifanwen.com,🛑全球拦截
+ - DOMAIN-SUFFIX,bstatic.diyifanwen.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bt.xitongmonitor.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bt641499.gotoip4.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bthergyuan.com,🛑 全球拦截
@@ -2987,21 +3138,21 @@ rules:
  - DOMAIN-SUFFIX,dailydeals.lubbockonline.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dailydeals.onlineathens.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dailydeals.savannahnow.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dailylog.storm.baofeng.com,🛑全球拦截
- - DOMAIN-SUFFIX,dailyvideo.securejoin.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dailylog.storm.baofeng.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dailyvideo.securejoin.com,🛑 全球拦截
  - DOMAIN-SUFFIX,daima.23yy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,daima.chazidian.com,🛑 全球拦截
- - DOMAIN-SUFFIX,daima.diaoben.net,🛑全球拦截
+ - DOMAIN-SUFFIX,daima.diaoben.net,🛑 全球拦截
  - DOMAIN-SUFFIX,daima.dsxdn.com,🛑 全球拦截
- - DOMAIN-SUFFIX,daima.huoche.net,🛑全球拦截
- - DOMAIN-SUFFIX,daima.ijq.tv,🛑全球拦截
- - DOMAIN-SUFFIX,daima.mubite.cn,🛑全球拦截
- - DOMAIN-SUFFIX,daima.youbian.com,🛑全球拦截
- - DOMAIN-SUFFIX,daima123.cc,🛑全球拦截
- - DOMAIN-SUFFIX,dairuqi.com,🛑全球拦截
+ - DOMAIN-SUFFIX,daima.huoche.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,daima.ijq.tv,🛑 全球拦截
+ - DOMAIN-SUFFIX,daima.mubite.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,daima.youbian.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,daima123.cc,🛑 全球拦截
+ - DOMAIN-SUFFIX,dairuqi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dajean.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dajiyuan.org,🛑全球拦截
- - DOMAIN-SUFFIX,dalianhengtai.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dajiyuan.org,🛑 全球拦截
+ - DOMAIN-SUFFIX,dalianhengtai.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dandan11.top,🛑 全球拦截
  - DOMAIN-SUFFIX,dandan13.top,🛑 全球拦截
  - DOMAIN-SUFFIX,dandan15.top,🛑 全球拦截
@@ -3184,27 +3335,27 @@ rules:
  - DOMAIN-SUFFIX,dm.sanwen.net,🛑 全球拦截
  - DOMAIN-SUFFIX,dm.sanwen8.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dm.sb580.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dm.toutiao.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dm.toutiao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dm.ws8.org,🛑 全球拦截
  - DOMAIN-SUFFIX,dm.yjbys.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dm1.tom61.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dm50.jkyd.net,🛑 全球拦截
  - DOMAIN-SUFFIX,dm50.yxlady.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dmacore.kejet.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dmacore.kejet.net,🛑全球拦截
- - DOMAIN-SUFFIX,dmg.digitaltarget.ru,🛑全球拦截
- - DOMAIN-SUFFIX,dmp.kejet.net,🛑全球拦截
- - DOMAIN-SUFFIX,dmp.sina.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,dmacore.kejet.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,dmg.digitaltarget.ru,🛑 全球拦截
+ - DOMAIN-SUFFIX,dmp.kejet.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,dmp.sina.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,dmpclick.deliver.ifeng.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dmrtb.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dmt.qcrx.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,dmt.qcrx.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,dmtrck.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dn3.ixinwei.com,🛑全球拦截
- - DOMAIN-SUFFIX,dn7788.com,🛑全球拦截
- - DOMAIN-SUFFIX,dn-growth.qbox.me,🛑全球拦截
- - DOMAIN-SUFFIX,dnvus.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dn3.ixinwei.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dn7788.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dn-growing.qbox.me,🛑 全球拦截
+ - DOMAIN-SUFFIX,dnvus.com,🛑 全球拦截
  - DOMAIN-SUFFIX,do.lymstsc.com,🛑 全球拦截
- - DOMAINSUFFIX,do69ifsly4.me,🛑 全球拦截
+ - DOMAIN-SUFFIX,do69ifsly4.me,🛑 全球拦截
  - DOMAIN-SUFFIX,doc.go.sohu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dol.deliver.ifeng.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dolphin.deliver.ifeng.com,🛑 全球拦截
@@ -3243,24 +3394,24 @@ rules:
  - DOMAIN-SUFFIX,download.350.com,🛑 全球拦截
  - DOMAIN-SUFFIX,download.bav.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,download.coolguang.com,🛑 全球拦截
- - DOMAIN-SUFFIX,download.fuyuncc.com,🛑全球拦截
- - DOMAIN-SUFFIX,download.mackeeper.com,🛑全球拦截
- - DOMAIN-SUFFIX,download.mediaget.com,🛑全球拦截
- - DOMAIN-SUFFIX,download.qianka.com,🛑全球拦截
- - DOMAIN-SUFFIX,download.sd.baidu.com,🛑全球拦截
- - DOMAIN-SUFFIX,download.sj.qq.com,🛑全球拦截
- - DOMAIN-SUFFIX,download.zhushou.sogou.com,🛑全球拦截
- - DOMAIN-SUFFIX,download3.123cw.cn,🛑全球拦截
- - DOMAIN-SUFFIX,downloada.dewmobile.net,🛑全球拦截
- - DOMAIN-SUFFIX,downloadb.dewmobile.net,🛑全球拦截
- - DOMAIN-SUFFIX,downmobile.kugou.com,🛑全球拦截
- - DOMAIN-SUFFIX,dp.559.cc,🛑全球拦截
- - DOMAIN-SUFFIX,dp3.qq.com,🛑全球拦截
+ - DOMAIN-SUFFIX,download.fuyuncc.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download.mackeeper.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download.mediaget.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download.qianka.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download.sd.baidu.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download.sj.qq.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download.zhushou.sogou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,download3.123cw.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,downloada.dewmobile.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,downloadb.dewmobile.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,downmobile.kugou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dp.559.cc,🛑 全球拦截
+ - DOMAIN-SUFFIX,dp3.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dpm.demdex.net,🛑 全球拦截
- - DOMAIN-SUFFIX,dps.499.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,dps.499.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,dps.shouji56.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dps.wtdtjs.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dpvc.39.net,🛑全球拦截
+ - DOMAIN-SUFFIX,dpvc.39.net,🛑 全球拦截
  - DOMAIN-SUFFIX,dpvc1.qqyy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dpvc2.qqyy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dpvchos.qqyy.com,🛑 全球拦截
@@ -3283,20 +3434,20 @@ rules:
  - DOMAIN-SUFFIX,ds.jlbksy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ds.serving-sys.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dsadas.hydp188.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dshrx.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dshrx.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dsjsee.dqgpb.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ds-ll.serving-sys.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dsp.adfarm1.adition.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dsp.com,🛑全球拦截
- - DOMAIN-SUFFIX,dsp.hypers.com.cn,🛑全球拦截
- - DOMAIN-SUFFIX,dsp.pro.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,dsp.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dsp.hypers.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,dsp.pro.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,dsp.send.microad-cn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dsp.simba.taobao.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dsp.toutiao.com,🛑全球拦截
- - DOMAIN-SUFFIX,dsp.youdao.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dsp.toutiao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dsp.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ds-pc.admsger.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dsp-click.youdao.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dsp-impr.youdao.com,🛑全球拦截
+ - DOMAIN-SUFFIX,dsp-impr.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dsp-impr2.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,dspmnt.autohome.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,dspmy.ge95.com,🛑 全球拦截
@@ -3532,11 +3683,11 @@ rules:
  - DOMAIN-SUFFIX,e.wnxcg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.wonwg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.wsxxu.com,🛑 全球拦截
- - DOMAIN-SUFFIX,excn.xtgreat.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,e.x.cn.xtgreat.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.xdkje.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.xeihy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.xetvb.com,🛑 全球拦截
- - DOMAIN-SUFFIX,e.xiangchim0.com,🛑全球拦截
+ - DOMAIN-SUFFIX,e.xiangchim0.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.xikdn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.xkqpco.com.com,🛑 全球拦截
  - DOMAIN-SUFFIX,e.xlsschina15.net,🛑 全球拦截
@@ -3585,24 +3736,24 @@ rules:
  - DOMAIN-SUFFIX,ebp.renren.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ec.kejet.net,🛑 全球拦截
  - DOMAIN-SUFFIX,eclick.120ask.com,🛑 全球拦截
- - DOMAINSUFFIX,eclick.360doc.com,🛑全球拦截
- - DOMAIN-SUFFIX,eclick.baidu.com,🛑全球拦截
- - DOMAIN-SUFFIX,eclkspbn.com,🛑全球拦截
+ - DOMAIN-SUFFIX,eclick.360doc.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,eclick.baidu.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,eclkspbn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ecma.bdimg.com,🛑 全球拦截
- - DOMAIN-SUFFIX,ecmb.bdimg.com,🛑全球拦截
+ - DOMAIN-SUFFIX,ecmb.bdimg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ecmc.bdimg.com,🛑 全球拦截
- - DOMAIN-SUFFIX,ecuc123.net,🛑全球拦截
- - DOMAIN-SUFFIX,ed.aijielang.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,ecuc123.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,ed.aijielang.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,ed.sczhilong.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,eddong.com,🛑全球拦截
+ - DOMAIN-SUFFIX,eddong.com,🛑 全球拦截
  - DOMAIN-SUFFIX,edesf.xyzxmark.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,edge.quantserve.com,🛑 全球拦截
  - DOMAIN-SUFFIX,edge.sharethis.com,🛑 全球拦截
  - DOMAIN-SUFFIX,edge.yunjiasu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
- - DOMAIN-SUFFIX,edncu.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,edncui.net,🛑 全球拦截
  - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
- - DOMAIN-SUFFIX,eduzzjy.com,🛑全球拦截
+ - DOMAIN-SUFFIX,eduzzjy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ee4kdushuba.com,🛑 全球拦截
  - DOMAIN-SUFFIX,eee.eh39.co,🛑 全球拦截
  - DOMAIN-SUFFIX,eee.kj78.org,🛑 全球拦截
@@ -5024,24 +5175,24 @@ rules:
  - DOMAIN-SUFFIX,lfyuanai.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lg2.jointreport-switch.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lg4.jointreport-switch.com,🛑 全球拦截
- - DOMAIN-SUFFIX,lhafy.com,🛑全球拦截
+ - DOMAIN-SUFFIX,lhafy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lhengilin.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lhusy.com,🛑 全球拦截
- - DOMAIN-SUFFIX,li.anyysz.com,🛑全球拦截
- - DOMAIN-SUFFIX,lianao.com,🛑全球拦截
- - DOMAIN-SUFFIX,liangziweixg.com,🛑全球拦截
- - DOMAIN-SUFFIX,lib.haotv8.com,🛑全球拦截
- - DOMAINSUFFIX,liba.haotv8.com,🛑全球拦截
- - DOMAIN-SUFFIX,libs.tvmao.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,li.anyysz.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,liangao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,liangziweixg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,lib.haotv8.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,liba.haotv8.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,libs.tvmao.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,license.lumion3d.com,🛑 全球拦截
  - DOMAIN-SUFFIX,license.lumion3d.net,🛑 全球拦截
  - DOMAIN-SUFFIX,licenses.ashampoo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,licensing.tableausoftware.com,🛑 全球拦截
  - DOMAIN-SUFFIX,life.e0575.com,🛑 全球拦截
  - DOMAIN-SUFFIX,life.imagepix.org,🛑 全球拦截
- - DOMAIN-SUFFIX,lightson.vpsboard.com,🛑全球拦截
- - DOMAIN-SUFFIX,linezing.com,🛑全球拦截
- - DOMAIN-SUFFIX,lingdian98.com,🛑全球拦截
+ - DOMAIN-SUFFIX,lightson.vpsboard.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,linezing.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,lingdian98.com,🛑 全球拦截
  - DOMAIN-SUFFIX,linkbide.com,🛑 全球拦截
  - DOMAIN-SUFFIX,linkeye.ximalaya.com,🛑 全球拦截
  - DOMAIN-SUFFIX,linkpage.cn,🛑 全球拦截
@@ -5125,7 +5276,7 @@ rules:
  - DOMAIN-SUFFIX,lxcdn.dl.files.xiaomi.net,🛑 全球拦截
  - DOMAIN-SUFFIX,lxqcgj.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lxting.com,🛑 全球拦截
- - DOMAIN-SUFFIX,lx-upload-log.yidianzixun.com,🛑全球拦截
+ - DOMAIN-SUFFIX,lx-upload-log.yidianzixun.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lyaeccn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lyapi.1391.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lycos-eu.imrworldwide.com,🛑 全球拦截
@@ -5133,18 +5284,18 @@ rules:
  - DOMAIN-SUFFIX,lyjk.1391.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lynndollin.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lyrymy.com,🛑 全球拦截
- - DOMAIN-SUFFIX,lytubaobao.com,🛑全球拦截
+ - DOMAIN-SUFFIX,lytubaobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lyunsd.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,lyztdz.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lz.chaelc.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lz.whafwl.com,🛑 全球拦截
  - DOMAIN-SUFFIX,lzjycy.com,🛑 全球拦截
- - DOMAIN-SUFFIX,lzmm8.com,🛑全球拦截
+ - DOMAIN-SUFFIX,lzmm8.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.027blzs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.0531mnk.net,🛑 全球拦截
  - DOMAIN-SUFFIX,m.107279.com,🛑 全球拦截
- - DOMAIN-SUFFIX,m.118ex.cn,🛑全球拦截
- - DOMAIN-SUFFIX,m.1768.com,🛑全球拦截
+ - DOMAIN-SUFFIX,m.118ex.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.1768.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.1919388.net,🛑 全球拦截
  - DOMAIN-SUFFIX,m.28487.net,🛑 全球拦截
  - DOMAIN-SUFFIX,m.3987.com,🛑 全球拦截
@@ -5203,13 +5354,13 @@ rules:
  - DOMAIN-SUFFIX,m.coenr.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.couas.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.cqytjzgc.com,🛑 全球拦截
- - DOMAIN-SUFFIX,m.ctsywy.com,🛑全球拦截
- - DOMAIN-SUFFIX,m.cudaojia.com,🛑全球拦截
+ - DOMAIN-SUFFIX,m.ctsywy.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.cudaojia.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.cuoas.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.cuoss.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.daishuxy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.dante2007.com,🛑 全球拦截
- - DOMAIN-SUFFIX,m.data.mob.com,🛑全球拦截
+ - DOMAIN-SUFFIX,m.data.mob.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.dbaiz.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.dgaoz.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.diogv.com,🛑 全球拦截
@@ -5594,27 +5745,27 @@ rules:
  - DOMAIN-SUFFIX,medrx.telstra.com.au,🛑 全球拦截
  - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,meimeidaren.com,🛑 全球拦截
- - DOMAIN-SUFFIX,meiti1.net,🛑全球拦截
+ - DOMAIN-SUFFIX,meiti1.net,🛑 全球拦截
  - DOMAIN-SUFFIX,meitubeauty.meitudata.com,🛑 全球拦截
  - DOMAIN-SUFFIX,meitumq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,menghuanzs.com,🛑 全球拦截
- - DOMAIN-SUFFIX,menmengdas.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mengmengdas.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mengyuanwei.com,🛑 全球拦截
- - DOMAIN-SUFFIX,message.meitu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,message.meitu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,metok.sys.miui.com,🛑 全球拦截
- - DOMAIN-SUFFIX,metrics.cnn.com,🛑全球拦截
- - DOMAIN-SUFFIX,mfan.iclick.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,metrics.cnn.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mfan.iclick.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,mfm.video.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mfp.deliver.ifeng.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mfsr.lenovomm.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mg.5pk,🛑全球拦截
+ - DOMAIN-SUFFIX,mg.5pk,🛑 全球拦截
  - DOMAIN-SUFFIX,mg.games.sina.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,mg.yadro.ru,🛑 全球拦截
- - DOMAIN-SUFFIX,mgid.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mgid.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mgldzcls.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mgwcn.com,🛑全球拦截
- - DOMAIN-SUFFIX,mgwl668.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mgwcn.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mgwl668.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mhd.1391.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mhdpay.1391.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mhdtestks3.1391.com,🛑 全球拦截
@@ -5635,24 +5786,24 @@ rules:
  - DOMAIN-SUFFIX,migu.kssws.ks-cdn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mihui.com,🛑 全球拦截
  - DOMAIN-SUFFIX,miidi.net,🛑 全球拦截
- - DOMAIN-SUFFIX,mijifen.com,🛑全球拦截
- - DOMAIN-SUFFIX,milk.yesky.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,mijifen.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,milk.yesky.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,millennialmedia.com,🛑 全球拦截
  - DOMAIN-SUFFIX,millwardbrownacsr.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mimg.126.net,🛑全球拦截
+ - DOMAIN-SUFFIX,mimg.126.net,🛑 全球拦截
  - DOMAIN-SUFFIX,mimg.7791.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,minesage.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mingxianhanghang.cn,🛑全球拦截
- - DOMAIN-SUFFIX,mingysh.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mingxianshanghang.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,mingysh.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mini.cpc.sogou.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mini.eastday.com,🛑全球拦截
- - DOMAIN-SUFFIX,mini.hao123.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mini.eastday.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mini.hao123.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mini.jijiplayer.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mini2015.qq.com,🛑全球拦截
- - DOMAINSUFFIX,minidcsc.kugou.com,🛑全球拦截
- - DOMAIN-SUFFIX,minipage.2345.com,🛑全球拦截
- - DOMAIN-SUFFIX,minisite.vidown.cn,🛑全球拦截
- - DOMAIN-SUFFIX,miniye.xjts.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,mini2015.qq.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,minidcsc.kugou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,minipage.2345.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,minisite.vidown.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,miniye.xjts.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,mip.yuelvxing.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mipcache.bdstatic.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mipujia.com,🛑 全球拦截
@@ -5677,26 +5828,26 @@ rules:
  - DOMAIN-SUFFIX,mmg.aty.cp45.ott.cibntv.net,🛑 全球拦截
  - DOMAIN-SUFFIX,mmg.aty.snmsohu.aisee.tv,🛑 全球拦截
  - DOMAIN-SUFFIX,mng-ads.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mnkan.com,🛑全球拦截
- - DOMAIN-SUFFIX,mnwan.com,🛑全球拦截
- - DOMAIN-SUFFIX,mnxtu.com,🛑全球拦截
- - DOMAIN-SUFFIX,mo.haloapps.cn,🛑全球拦截
- - DOMAIN-SUFFIX,mo.kugou.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mnkan.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mnwan.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mnxtu.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mo.haloapps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,mo.kugou.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mo.res.wpscdn.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,mo.test.haloapps.com,🛑 全球拦截
- - DOMAIN-SUFFIX,moad.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,moad.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,moatads.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mob.huimee.net,🛑全球拦截
- - DOMAIN-SUFFIX,mobad.ijinshan.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mob.huimee.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobad.ijinshan.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobadme.jp,🛑 全球拦截
- - DOMAIN-SUFFIX,mobfox.com,🛑全球拦截
- - DOMAIN-SUFFIX,mobgi.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mobfox.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mobileads.msn.com,🛑全球拦截
- - DOMAIN-SUFFIX,mobileapptracking.com,🛑全球拦截
- - DOMAIN-SUFFIX,mobiledissector.com,🛑全球拦截
- - DOMAIN-SUFFIX,mobile-pubt.ele.me,🛑全球拦截
- - DOMAIN-SUFFIX,mobile-service.segment.com,🛑全球拦截
+ - DOMAIN-SUFFIX,mobileads.msn.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobileapptracking.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobiledissector.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobile-pubt.ele.me,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobile-service.segment.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobilityware.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobiorg8.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
@@ -6161,24 +6312,24 @@ rules:
  - DOMAIN-SUFFIX,pic.casee.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.cnmo-img.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.dotmore.com.tw,🛑 全球拦截
- - DOMAIN-SUFFIX,pic.ea3w.com,🛑全球拦截
+ - DOMAIN-SUFFIX,pic.ea3w.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.eduancm.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pic.fengniao.com,🛑全球拦截
- - DOMAIN-SUFFIX,pic.haowj.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,pic.fengniao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,pic.haowj.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.jdbbs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.jd-bbs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.jdunion.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pic.moad.cn,🛑全球拦截
- - DOMAIN-SUFFIX,pic.neiyicun.net,🛑全球拦截
- - DOMAIN-SUFFIX,pic.new400.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,pic.moad.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,pic.neiyicun.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,pic.new400.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.pic-img.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.punchbox.org,🛑 全球拦截
- - DOMAIN-SUFFIX,pic.pxstda.com,🛑全球拦截
- - DOMAIN-SUFFIX,pic.usingde.com,🛑全球拦截
+ - DOMAIN-SUFFIX,pic.pxstda.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,pic.usingde.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic.zol-img.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,pic1.59wd.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic1.onetad.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pic183025.images9999.com,🛑全球拦截
+ - DOMAIN-SUFFIX,pic183025.images9999.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic2.onetad.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic2016.5442.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pic2016.ytqmx.com,🛑 全球拦截
@@ -6627,15 +6778,15 @@ rules:
  - DOMAIN-SUFFIX,rudy.adsnative.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ru-gmtdmp.mookie1.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rum-collector.pingdom.net,🛑 全球拦截
- - DOMAIN-SUFFIX,rum-static.pingdom.net,🛑全球拦截
+ - DOMAIN-SUFFIX,rum-static.pingdom.net,🛑 全球拦截
  - DOMAIN-SUFFIX,runetki.joyreactor.ru,🛑 全球拦截
  - DOMAIN-SUFFIX,runiman.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rutrk.org,🛑 全球拦截
- - DOMAIN-SUFFIX,ruxianke.com,🛑全球拦截
- - DOMAIN-SUFFIX,rvb.quanliyouxi.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,ruxianke.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,rvb.quanliyouxi.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,rwjfs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rwq.youle55.com,🛑 全球拦截
- - DOMAIN-SUFFIX,rxwan.com,🛑全球拦截
+ - DOMAIN-SUFFIX,rxwan.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.0.0.0.0.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,s.051352.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.0594529.com,🛑 全球拦截
@@ -6644,11 +6795,11 @@ rules:
  - DOMAIN-SUFFIX,s.5jjx.net,🛑 全球拦截
  - DOMAIN-SUFFIX,s.652748.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.6travel.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s.abcache.com,🛑全球拦截
+ - DOMAIN-SUFFIX,s.abcache.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.alitui.weibo.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s.baidu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,s.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.bmgan.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s.caduka.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,s.caduka.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,s.cdn.u17t.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.cdxyb.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,s.clkservice.youdao.com,🛑 全球拦截
@@ -6717,22 +6868,22 @@ rules:
  - DOMAIN-SUFFIX,s.zixuntop.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.zjhoudao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s.zlongad.com,🛑 全球拦截
- - DOMAINSUFFIX,s.zxwdw.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s0.2mdn.net,🛑全球拦截
+ - DOMAIN-SUFFIX,s.zxwdw.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,s0.2mdn.net,🛑 全球拦截
  - DOMAIN-SUFFIX,s03.optimix.asia,🛑 全球拦截
- - DOMAIN-SUFFIX,s1.2mdn.net,🛑全球拦截
+ - DOMAIN-SUFFIX,s1.2mdn.net,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.cmfu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.hiapk.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.hnhbyxdq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.huiqituan.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.iigushi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.kutongji.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s1.mingmingtehui.com,🛑全球拦截
- - DOMAIN-SUFFIX,s1.qiqutt.cn,🛑全球拦截
- - DOMAIN-SUFFIX,s1.qiqutt.com,🛑全球拦截
- - DOMAIN-SUFFIX,s1.qiuyi.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,s1.mingmingtehui.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,s1.qiqutt.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,s1.qiqutt.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,s1.qiuyi.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,s1.s8tu.com,🛑 全球拦截
- - DOMAINSUFFIX,s1.tansuotv.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,s1.tansuotv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s10.histats.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s2.dnaxddnc.com,🛑 全球拦截
  - DOMAIN-SUFFIX,s2.hiapk.com,🛑 全球拦截
@@ -6951,17 +7102,17 @@ rules:
  - DOMAIN-SUFFIX,sitemobia.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
- - DOMAINSUFFIX,sj.uukanshu.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,sj.uukanshu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sj1.3987.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sjj.jsyjwj.com,🛑 全球拦截
  - DOMAIN-SUFFIX,skatehot.net,🛑 全球拦截
  - DOMAIN-SUFFIX,sl.xawjwl.com,🛑 全球拦截
  - DOMAIN-SUFFIX,slb.sxuantang.com,🛑 全球拦截
- - DOMAIN-SUFFIX,slb.upshengyi.com,🛑全球拦截
- - DOMAIN-SUFFIX,slib.tvmao.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,slb.upshengyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,slib.tvmao.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,slides.discovery.tom.com,🛑 全球拦截
- - DOMAIN-SUFFIX,slog.sina.cn,🛑全球拦截
- - DOMAIN-SUFFIX,slog.sina.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,slog.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,slog.sina.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,slot.union.ucweb.com,🛑 全球拦截
  - DOMAIN-SUFFIX,slzs.52xiyou.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sm.0.0.0.0.cn,🛑 全球拦截
@@ -6969,8 +7120,8 @@ rules:
  - DOMAIN-SUFFIX,sm2.todgo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,smartmad.com,🛑 全球拦截
  - DOMAIN-SUFFIX,smblock.s3.amazonaws.com,🛑 全球拦截
- - DOMAIN-SUFFIX,smucdn.com,🛑全球拦截
- - DOMAIN-SUFFIX,smxay.com,🛑全球拦截
+ - DOMAIN-SUFFIX,smucdn.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,smxay.com,🛑 全球拦截
  - DOMAIN-SUFFIX,smxsg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,snap.snapmobile.asia,🛑 全球拦截
  - DOMAIN-SUFFIX,snapmobileasia.net,🛑 全球拦截
@@ -7295,24 +7446,24 @@ rules:
  - DOMAIN-SUFFIX,tap-t.rubiconproject.com,🛑 全球拦截
  - DOMAIN-SUFFIX,targetedinfo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,targetedmedia.com.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,targetedtopic.com,🛑全球拦截
- - DOMAIN-SUFFIX,tatagou.com.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,targetedtopic.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,tatagou.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,tb.code.twyxi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tb060x.corp.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tb104x.corp.youdao.com,🛑 全球拦截
- - DOMAIN-SUFFIX,tbaocdn.com,🛑全球拦截
+ - DOMAIN-SUFFIX,tbaocdn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tbjfw.com,🛑 全球拦截
- - DOMAIN-SUFFIX,tc.51la.net,🛑全球拦截
+ - DOMAIN-SUFFIX,tc.51la.net,🛑 全球拦截
  - DOMAIN-SUFFIX,tc.ci123.com,🛑 全球拦截
- - DOMAIN-SUFFIX,tc600.com,🛑全球拦截
+ - DOMAIN-SUFFIX,tc600.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tcad.wedolook.com,🛑 全球拦截
- - DOMAIN-SUFFIX,tcjy66.cc,🛑全球拦截
- - DOMAIN-SUFFIX,tcss.qq.com,🛑全球拦截
- - DOMAIN-SUFFIX,td.mpush.cn,🛑全球拦截
- - DOMAIN-SUFFIX,td.xue63.com,🛑全球拦截
+ - DOMAIN-SUFFIX,tcjy66.cc,🛑 全球拦截
+ - DOMAIN-SUFFIX,tcss.qq.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,td.mpush.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,td.xue63.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tdayi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tdcv3.talkingdata.net,🛑 全球拦截
- - DOMAIN-SUFFIX,te.flyme.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,t-e.flyme.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,teen.77rog.com,🛑 全球拦截
  - DOMAIN-SUFFIX,telstra.imrworldwide.com,🛑 全球拦截
  - DOMAIN-SUFFIX,temai.snssdk.com,🛑 全球拦截
@@ -7546,25 +7697,25 @@ rules:
  - DOMAIN-SUFFIX,un1.takefoto.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,unconf.mobad.ijinshan.com,🛑 全球拦截
  - DOMAIN-SUFFIX,undm.qibulo.com,🛑 全球拦截
- - DOMAIN-SUFFIX,unicast.ign.com,🛑全球拦截
- - DOMAIN-SUFFIX,unicast.msn.com,🛑全球拦截
- - DOMAIN-SUFFIX,unilog.wostore.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,unicast.ign.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,unicast.msn.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,unilog.wostore.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,unimhk.com,🛑 全球拦截
- - DOMAIN-SUFFIX,union.baidu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,union.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,union.baidustatic.guannin.com,🛑 全球拦截
  - DOMAIN-SUFFIX,union.china.com.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,union.dbba.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,union.dbba.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,union.maccms.com,🛑 全球拦截
  - DOMAIN-SUFFIX,union.mop.com,🛑 全球拦截
- - DOMAIN-SUFFIX,union.sogou.com,🛑全球拦截
- - DOMAIN-SUFFIX,union.star-media.cn,🛑全球拦截
- - DOMAIN-SUFFIX,union.youdao.com,🛑全球拦截
+ - DOMAIN-SUFFIX,union.sogou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,union.star-media.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,union.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,union1.xiaojianjian.net,🛑 全球拦截
  - DOMAIN-SUFFIX,uniondm.cz88.net,🛑 全球拦截
- - DOMAIN-SUFFIX,unionimage.baidu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,unionimage.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,unionsy.com,🛑 全球拦截
- - DOMAIN-SUFFIX,union-wifi.com,🛑全球拦截
- - DOMAIN-SUFFIX,unipaydl.wostore.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,union-wifi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,unipaydl.wostore.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,unipayupg.wostore.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,unitacs.m.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,unjs.jfcdns.com,🛑 全球拦截
@@ -7585,22 +7736,22 @@ rules:
  - DOMAIN-SUFFIX,update.minipage.2345.com,🛑 全球拦截
  - DOMAIN-SUFFIX,update.mobile.kugou.com,🛑 全球拦截
  - DOMAIN-SUFFIX,update.sdk.jiguang.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,updatecenter.qq.com,🛑全球拦截
- - DOMAIN-SUFFIX,updatepage.kuwo.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,updatecenter.qq.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,updatepage.kuwo.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,updates-s3.binaryage.com,🛑 全球拦截
  - DOMAIN-SUFFIX,uplze.code.weddingeeos.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ups.ksmobile.net,🛑 全球拦截
- - DOMAIN-SUFFIX,upush.res.meizu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,upush.res.meizu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,uqszvk.code.weddingeeos.com,🛑 全球拦截
  - DOMAIN-SUFFIX,uqum.52shouyou.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,urbanairship.com,🛑 全球拦截
  - DOMAIN-SUFFIX,urchin.5173.com,🛑 全球拦截
  - DOMAIN-SUFFIX,urh.tylll.com,🛑 全球拦截
- - DOMAIN-SUFFIX,urhu.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,urhu.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,url.222bz.com,🛑 全球拦截
- - DOMAIN-SUFFIX,url.tudown.com,🛑全球拦截
- - DOMAIN-SUFFIX,urls.api.twitter.com,🛑全球拦截
- - DOMAINSUFFIX,us.adserver.yahoo.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,url.tudown.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,urls.api.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,us.adserver.yahoo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,us.bannyat.com,🛑 全球拦截
  - DOMAIN-SUFFIX,us.bs.serving-sys.com,🛑 全球拦截
  - DOMAIN-SUFFIX,user.tiankongzudui.com,🛑 全球拦截
@@ -7728,24 +7879,24 @@ rules:
  - DOMAIN-SUFFIX,vz-cdn.contentabc.com,🛑 全球拦截
  - DOMAIN-SUFFIX,vz-cdn.trafficjunky.net,🛑 全球拦截
  - DOMAIN-SUFFIX,w.bobocn.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,w.cube3d.cn,🛑全球拦截
- - DOMAIN-SUFFIX,w.gdown.baidu.com,🛑全球拦截
+ - DOMAIN-SUFFIX,w.cube3d.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,w.gdown.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w.homes.yahoo.net,🛑 全球拦截
- - DOMAIN-SUFFIX,w.jscsd.cn,🛑全球拦截
- - DOMAIN-SUFFIX,wmtaobao.com,🛑全球拦截
+ - DOMAIN-SUFFIX,w.jscsd.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,w.m.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w.punchbox.org,🛑 全球拦截
- - DOMAIN-SUFFIX,w.sharethis.com,🛑全球拦截
+ - DOMAIN-SUFFIX,w.sharethis.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w.waacorp.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w.werpig.com,🛑 全球拦截
- - DOMAIN-SUFFIX,wxbaidu.com,🛑全球拦截
- - DOMAIN-SUFFIX,w.xiaoopiaoyou.com,🛑全球拦截
+ - DOMAIN-SUFFIX,w.x.baidu.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,w.xiaopiaoyou.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w.yamaidei.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,w.yinyuhu.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,w.yinyuehu.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,w.ymapp.com,🛑 全球拦截
- - DOMAIN-SUFFIX,w1.diaoyou.com,🛑全球拦截
- - DOMAIN-SUFFIX,w2528.com,🛑全球拦截
- - DOMAIN-SUFFIX,w3.yinyuhu.cn,🛑全球拦截
- - DOMAIN-SUFFIX,w3989.com,🛑全球拦截
+ - DOMAIN-SUFFIX,w1.diaoyou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,w2528.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,w3.yinyuehu.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,w3989.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w5sac788c1.360doc.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,w6061.move7.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w65p.com,🛑 全球拦截
@@ -8346,27 +8497,27 @@ rules:
  - DOMAIN-SUFFIX,zhanzhang.net,🛑 全球拦截
  - DOMAIN-SUFFIX,zhao258.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhaoshang8.com,🛑 全球拦截
- - DOMAIN-SUFFIX,zh-cn.shenyun.com,🛑全球拦截
- - DOMAIN-SUFFIX,zh-cn.shenyun.org,🛑全球拦截
- - DOMAIN-SUFFIX,zheng.cs12d.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhichi08.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhidian3g.cn,🛑全球拦截
- - DOMAIN-SUFFIX,zhifenjie.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhihei.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhihu.xmcimg.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhiong.net,🛑全球拦截
- - DOMAIN-SUFFIX,zhiyuanteam.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhiziyun.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhongchouyan.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhongzicili.cc,🛑全球拦截
+ - DOMAIN-SUFFIX,zh-cn.shenyun.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zh-cn.shenyun.org,🛑 全球拦截
+ - DOMAIN-SUFFIX,zheng.cs12d.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhichi08.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhidian3g.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhifenjie.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhihei.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhihu.xmcimg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhiong.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhiyuanteam.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhiziyun.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhongchouyan.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhongzicili.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,zhtjdl.com,🛑 全球拦截
- - DOMAIN-SUFFIX,zhuanfakong.com,🛑全球拦截
- - DOMAIN-SUFFIX,zhuba8.com,🛑全球拦截
+ - DOMAIN-SUFFIX,zhuanfakong.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhuba8.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhudiaosz.com,🛑 全球拦截
- - DOMAIN-SUFFIX,zhushou.2345.com,🛑全球拦截
+ - DOMAIN-SUFFIX,zhushou.2345.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhuuv.maoyumao.net,🛑 全球拦截
- - DOMAIN-SUFFIX,zhwnlapi.etouch.cn,🛑全球拦截
- - DOMAIN-SUFFIX,zhybzp.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,zhwnlapi.etouch.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,zhybzp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,zisunion.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zizcy.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zjbdt.com,🛑 全球拦截
@@ -8731,29 +8882,29 @@ rules:
  - DOMAIN-SUFFIX,6d63d3.com,🛑 全球拦截
  - DOMAIN-SUFFIX,7gg.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,91veg.com,🛑 全球拦截
- - DOMAIN-SUFFIX,9s6q.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,9s6q.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,adsame.com,🛑 全球拦截
  - DOMAIN-SUFFIX,aiclk.com,🛑 全球拦截
- - DOMAIN-SUFFIX,akuai.top,🛑全球拦截
- - DOMAIN-SUFFIX,atplay.cn,🛑全球拦截
- - DOMAIN-SUFFIX,baiwanchuangyi.com,🛑全球拦截
+ - DOMAIN-SUFFIX,akuai.top,🛑 全球拦截
+ - DOMAIN-SUFFIX,atplay.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,baiwanchuangyi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bayimob.com,🛑 全球拦截
- - DOMAIN-SUFFIX,beerto.cn,🛑全球拦截
- - DOMAIN-SUFFIX,beilamusi.com,🛑全球拦截
- - DOMAIN-SUFFIX,benshiw.net,🛑全球拦截
- - DOMAIN-SUFFIX,bianxianmao.com,🛑全球拦截
- - DOMAIN-SUFFIX,bronypie.com,🛑 全球拦截
- - DOMAIN-SUFFIX,cishantao.com,🛑全球拦截
- - DOMAIN-SUFFIX,cszlks.com,🛑全球拦截
- - DOMAIN-SUFFIX,cudaojia.com,🛑全球拦截
- - DOMAIN-SUFFIX,dafapromo.com,🛑全球拦截
+ - DOMAIN-SUFFIX,beerto.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,beilamusi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,benshiw.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,bianxianmao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,bryonypie.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cishantao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cszlks.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cudaojia.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dafapromo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,daitdai.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dsaerf.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dugesheying.com,🛑全球拦截
- - DOMAIN-SUFFIX,dv8c1t.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,dsaeerf.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dugesheying.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dv8c1t.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,echatu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,erdoscs.com,🛑 全球拦截
- - DOMAIN-SUFFIX,fan-yong.com,🛑全球拦截
+ - DOMAIN-SUFFIX,fan-yong.com,🛑 全球拦截
  - DOMAIN-SUFFIX,feih.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,fjlqqc.com,🛑 全球拦截
  - DOMAIN-SUFFIX,fkku194.com,🛑 全球拦截
@@ -9051,24 +9202,24 @@ rules:
  - IP-CIDR,47.90.50.177/32,🛑 全球拦截,no-resolve
  - IP-CIDR,47.93.103.196/32,🛑 全球拦截,no-resolve
  - IP-CIDR,47.94.89.32/32,🛑 全球拦截,no-resolve
- - IP-CIDR,47.96.162.122/32,🛑全球拦截,no-resolve
- - IP-CIDR,58.215.179.159/32,🛑全球拦截，无解决
- - IP-CIDR,58.221.28.166/32,🛑全球拦截,no-resolve
+ - IP-CIDR,47.96.162.122/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,58.215.179.159/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,58.221.28.166/32,🛑 全球拦截,no-resolve
  - IP-CIDR,60.19.29.21/28,🛑 全球拦截,no-resolve
- - IP-CIDR,60.190.139.164/32,🛑全球拦截,no-resolve
- - IP-CIDR,60.191.124.196/32,🛑全球拦截,no-resolve
+ - IP-CIDR,60.190.139.164/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,60.191.124.196/32,🛑 全球拦截,no-resolve
  - IP-CIDR,60.210.17.12/24,🛑 全球拦截,no-resolve
- - IP-CIDR,61.129.70.132/32,🛑全球拦截,no-resolve
- - IP-CIDR,61.132.216.232/32,🛑全球拦截,no-resolve
- - IP-CI DR,61.132.221.146/32,🛑全球拦截,no-resolve
- - IP-CIDR,61.132.255.212/32,🛑全球拦截,no-resolve
- - IP-CIDR,61.132.255.222/25,🛑全球拦截,no-resolve
- - IP-CIDR,61.147.184.18/32,🛑全球拦截,no-resolve
- - IP-CIDR,61.152.223.15/32,🛑全球拦截,no-resolve
- - IP-CIDR,61.174.50.167/25,🛑全球拦截,no-resolve
+ - IP-CIDR,61.129.70.132/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.132.216.232/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.132.221.146/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.132.255.212/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.132.255.222/25,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.147.184.18/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.152.223.15/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,61.174.50.167/25,🛑 全球拦截,no-resolve
  - IP-CIDR,61.191.12.74/32,🛑 全球拦截,no-resolve
  - IP-CIDR,61.191.206.4/32,🛑 全球拦截,no-resolve
- - IP-CIDR,67.229.224.28/32,🛑全球拦截,no-resolve
+ - IP-CIDR,67.229.224.28/32,🛑 全球拦截,no-resolve
  - IP-CIDR,69.28.57.245/32,🛑 全球拦截,no-resolve
  - IP-CIDR,74.117.182.77/32,🛑 全球拦截,no-resolve
  - IP-CIDR,78.140.131.214/32,🛑 全球拦截,no-resolve
@@ -9105,48 +9256,48 @@ rules:
  - IP-CIDR,118.144.88.215/32,🛑 全球拦截,no-resolve
  - IP-CIDR,118.144.88.216/32,🛑 全球拦截,no-resolve
  - IP-CIDR,120.76.189.132/32,🛑 全球拦截,no-resolve
- - IP-CIDR,124.14.21.147/32,🛑全球拦截,no-resolve
- - IP-CIDR,124.14.21.151/32,🛑全球拦截,no-resolve
- - IP-CIDR,180.166.52.24/32,🛑全球拦截,no-resolve
- - IP-CI DR,211.161.101.106/32,🛑全球拦截,no-resolve
- - IP-CIDR,220.115.251.25/32,🛑全球拦截,no-resolve
- - IP-CIDR,222.73.156.235/32,🛑全球拦截,no-resolve
- - IP-CIDR,188.89.204.198/32,🛑全球拦截,no-resolve
- - DOMAIN-SUFFIX,17gouwuba.com,🛑全球拦截
- - DOMAIN-SUFFIX,186078.com,🛑全球拦截
- - DOMAIN-SUFFIX,189key.com,🛑全球拦截
- - DOMAIN-SUFFIX,189zj.cn,🛑全球拦截
- - DOMAIN-SUFFIX,285680.com,🛑全球拦截
- - DOMAIN-SUFFIX,3721zh.com,🛑全球拦截
- - DOMAIN-SUFFIX,4336wang.cn,🛑全球拦截
- - DOMAIN-SUFFIX,51chumoping.com,🛑全球拦截
- - DOMAIN-SUFFIX,51mld.cn,🛑全球拦截
- - DOMAIN-SUFFIX,51mypc.cn,🛑全球拦截
- - DOMAIN-SUFFIX,58mingri.cn,🛑全球拦截
- - DOMAIN-SUFFIX,58mingtian.cn,🛑全球拦截
+ - IP-CIDR,124.14.21.147/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,124.14.21.151/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,180.166.52.24/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,211.161.101.106/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,220.115.251.25/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,222.73.156.235/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,188.89.204.198/32,🛑 全球拦截,no-resolve
+ - DOMAIN-SUFFIX,17gouwuba.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,186078.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,189key.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,189zj.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,285680.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,3721zh.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,4336wang.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,51chumoping.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,51mld.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,51mypc.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,58mingri.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,58mingtian.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,5vl58stm.com,🛑 全球拦截
  - DOMAIN-SUFFIX,6d63d3.com,🛑 全球拦截
- - DOMAIN-SUFFIX,7gg.cc,🛑全球拦截
- - DOMAIN-SUFFIX,91veg.com,🛑全球拦截
- - DOMAIN-SUFFIX,9s6q.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,7gg.cc,🛑 全球拦截
+ - DOMAIN-SUFFIX,91veg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,9s6q.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,adsame.com,🛑 全球拦截
- - DOMAIN-SUFFIX,akuai.top,🛑全球拦截
- - DOMAIN-SUFFIX,atplay.cn,🛑全球拦截
- - DOMAIN-SUFFIX,baiwanchuangyi.com,🛑全球拦截
- - DOMAIN-SUFFIX,beerto.cn,🛑全球拦截
- - DOMAIN-SUFFIX,beilamusi.com,🛑全球拦截
- - DOMAIN-SUFFIX,benshiw.net,🛑全球拦截
- - DOMAIN-SUFFIX,bianxianmao.com,🛑全球拦截
- - DOMAIN-SUFFIX,bkyhq.cn,🛑全球拦截
- - DOMAIN-SUFFIX,bronypie.com,🛑 全球拦截
- - DOMAIN-SUFFIX,cishantao.com,🛑全球拦截
- - DOMAIN-SUFFIX,cszlks.com,🛑全球拦截
- - DOMAIN-SUFFIX,cudaojia.com,🛑全球拦截
- - DOMAIN-SUFFIX,dafapromo.com,🛑全球拦截
+ - DOMAIN-SUFFIX,akuai.top,🛑 全球拦截
+ - DOMAIN-SUFFIX,atplay.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,baiwanchuangyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,beerto.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,beilamusi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,benshiw.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,bianxianmao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,bkyhq.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,bryonypie.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cishantao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cszlks.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cudaojia.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dafapromo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,daitdai.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dsaerf.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dugesheying.com,🛑全球拦截
- - DOMAIN-SUFFIX,dv8c1t.cn,🛑全球拦截
+ - DOMAIN-SUFFIX,dsaeerf.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dugesheying.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dv8c1t.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,echatu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,erdoscs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,fan-yong.com,🛑 全球拦截
