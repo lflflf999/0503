@@ -5,500 +5,596 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25897, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25890, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 2, server: gkdcm.gkdcn.top, port: 25889, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 3, server: gkdcm.gkdcn.top, port: 25890, type: vmess, uuid: d7879cc7-01cb-4343-a444-42cafb80e9c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 4, server: gkdcm.gkdcn.top, port: 25889, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享) 2, server: gkdcm.gkdcn.top, port: 25897, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 日本(yudou66.com 玉豆分享), server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 5, server: gkdcm.gkdcn.top, port: 25890, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25895, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 印度(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25882, type: vmess, uuid: d7879cc7-01cb-4343-a444-42cafb80e9c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 2, server: gkdcm1.gkdcn.top, port: 25894, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享) 3, server: gkdcm.gkdcn.top, port: 25899, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 3, server: gkdcm1.gkdcn.top, port: 25895, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 4, server: gkdcm1.gkdcn.top, port: 25895, type: vmess, uuid: d7879cc7-01cb-4343-a444-42cafb80e9c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
-  - {name: 印度(yudou66.com 玉豆分享) 2, server: gkdcm.gkdcn.top, port: 25882, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25885, type: vmess, uuid: d7879cc7-01cb-4343-a444-42cafb80e9c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 5, server: gkdcm.gkdcn.top, port: 25894, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 2, server: cn1.relay.iepl.pw, port: 50600, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 3, server: gkdcm.gkdcn.top, port: 25885, type: vmess, uuid: 6a971069-d6a7-4c52-a326-f1e6176bab80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 4, server: gkdcm.gkdcn.top, port: 25885, type: vmess, uuid: bde3f285-4806-4622-8562-6e2d4d7f10a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 5, server: uscera.moonfree.top, port: 443, type: vmess, uuid: 0ab2cbc2-8b6a-4402-838a-735b25ad1331, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uscera.moonfree.top}}, udp: true}
-  - {name: 澳洲(yudou66.com 玉豆分享), server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 6, server: dailichi.ga, port: 45300, type: ss, cipher: aes-256-gcm, password: OI2894TXhv, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 6, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, sni: jgwcc1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 7, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 7, server: 35.236.191.75, port: 4516, type: ss, cipher: aes-256-gcm, password: zljVgnokqp, udp: true}
-  - {name: US美国(yudou66.com 玉豆分享), server: ai1.susenl.com, port: 10030, type: trojan, password: c4b65d4c-ca53-328b-a4f2-4d8bc4b912b0, sni: ai1.susenl.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 8, server: 35.236.191.75, port: 32590, type: vmess, uuid: c6a34556-6cc7-4397-a1d8-956c55d435df, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 9, server: 35.236.191.75, port: 12401, type: vmess, uuid: 9e281270-ec65-4aa0-ce4a-6cfd56ebced2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 10, server: dailichi.ga, port: 4666, type: vmess, uuid: 3394f5e6-8094-425b-ebdd-5a5981e6af19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dailichi.ga}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 11, server: dailichi.ga, port: 5747, type: vmess, uuid: ad2ebb3d-eb6c-471c-f1f1-66181735ce98, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dailichi.ga}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 12, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 13, server: 35.236.191.75, port: 5761, type: ss, cipher: aes-256-gcm, password: usw3onAsUl, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 14, server: dailichi.ga, port: 4426, type: vmess, uuid: 409db2af-0af5-4211-d51e-e67cd7d659ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 8, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: vpna1.herokuapp.com}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 15, server: dailichi.ga, port: 5011, type: ss, cipher: aes-256-gcm, password: wifIzB2tOh, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享), server: 144.24.88.101, port: 16833, type: vmess, uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国(yudou66.com 玉豆分享), server: yin1.qingyun123.xyz, port: 10000, type: trojan, password: 599d9e75-08dc-4e9c-b93a-5e455fb5ec42, sni: yin1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯(yudou66.com 玉豆分享), server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: 韩国(yudou66.com 玉豆分享), server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 9, server: 88.218.94.22, port: 29988, type: vmess, uuid: e020b92c-b4ee-11ec-a479-00163c4358f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /x6UiVPhJ/, headers: {Host: wsclash2.free4444.xyz}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 10, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 2, server: oz.moonfree.top, port: 443, type: vmess, uuid: 0ab2cbc2-8b6a-4402-838a-735b25ad1331, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 11, server: 45.66.157.193, port: 34567, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 韩国(yudou66.com 玉豆分享) 2, server: 140.238.16.203, port: 18390, type: ss, cipher: aes-256-gcm, password: am7CKC0T63, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆分享) 6, server: v2-3.godlight.xyz, port: 39270, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f45361465j175, headers: {Host: v2-3.godlight.xyz}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 12, server: 45.76.168.79, port: 62969, type: vmess, uuid: 14c7249a-bda0-11ec-9317-560003f3536b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /W40anfFp/, headers: {Host: 45.76.168.79}}, udp: true}
-  - {name: 香港(yudou66.com 玉豆分享) 4, server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.19}}, udp: true}
-  - {name: 台湾(yudou66.com 玉豆分享) 16, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆分享) 3, server: 412sgsg.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 412sgsg.fans8.xyz}}, udp: true}
-  - {name: 德国(yudou66.com 玉豆分享), server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax.hax01.tk}}, udp: true}
-  - {name: 韩国(yudou66.com 玉豆分享) 3, server: 140.238.16.203, port: 42001, type: vmess, uuid: 1101a310-8604-4e48-c3c7-8d93a17965e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(yudou66.com 玉豆分享) 2, server: hax2.hax01.ml, port: 443, type: vmess, uuid: 25af03c3-27ff-4c14-c142-ad7694ec42f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax2.hax01.ml}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 13, server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax.hax01.tk}}, udp: true}
-  - {name: 美国(yudou66.com 玉豆分享) 14, server: xjpmf.speedcncnforward2.tk, port: 10001, type: trojan, password: 32f3466c-2483-4de6-83b8-f4008c750102, sni: xjpmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国(yudou66.com 玉豆分享), server: 92.243.24.236, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: LE6Ee6PELhVu, udp: true}
-  - {name: _CZ_捷克(yudou66.com 玉豆分享), server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v4.ssrsub.com}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享), server: gkdcm1.gkdcn.top, port: 25899, type: vmess, uuid: 11de8348-7c87-4646-84a8-d0577faaddea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享), server: gkdcm1.gkdcn.top, port: 25897, type: vmess, uuid: 3b316dc1-885f-4ce9-b540-a235bcf93901, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25895, type: vmess, uuid: b70c29c7-b344-4d90-a799-01c3db4f94a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享), server: v2.godlight.xyz, port: 26933, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f34f3-f32f364, headers: {Host: v2.godlight.xyz}}, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享) 2, server: gkdcm1.gkdcn.top, port: 25892, type: vmess, uuid: 11de8348-7c87-4646-84a8-d0577faaddea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享) 2, server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: 8a9dbb59-fa5a-4004-9673-28f037631b3c, sni: nfjp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享) 3, server: gkdcm1.gkdcn.top, port: 25899, type: vmess, uuid: 0ab9e6e7-13f6-4717-b0c9-097259bbf8ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm1.gkdcn.top}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享) 3, server: v2-1.godlight.xyz, port: 12233, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
+  - {name: 韩国(yudou66.com 玉豆分享), server: v2-5.godlight.xyz, port: 39783, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /71h4b3s1f53, headers: {Host: v2-5.godlight.xyz}}, udp: true}
+  - {name: 印度(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25882, type: vmess, uuid: b70c29c7-b344-4d90-a799-01c3db4f94a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
+  - {name: 菲律宾(yudou66.com 玉豆分享), server: ph.iplc.skin, port: 11125, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ph.iplc.skin}}, udp: true}
+  - {name: 印度(yudou66.com 玉豆分享) 2, server: gkdcm.gkdcn.top, port: 25882, type: vmess, uuid: 11de8348-7c87-4646-84a8-d0577faaddea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享) 4, server: jpaz3.xmrth-node.xyz, port: 11012, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 2, server: www.digitalocean.com, port: 443, type: vmess, uuid: 6bf68fb9-e0d2-1418-6704-ef5805258a5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctvvws, headers: {Host: olo.aoyyds.tk}}, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享), server: gkdcm.gkdcn.top, port: 25889, type: vmess, uuid: 11de8348-7c87-4646-84a8-d0577faaddea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 3, server: gkdcm.gkdcn.top, port: 25885, type: vmess, uuid: 11de8348-7c87-4646-84a8-d0577faaddea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享) 4, server: hk.iplc.skin, port: 11101, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.iplc.skin}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 4, server: 2.71137223.xyz, port: 443, type: vmess, uuid: f99f4e79-a924-4890-a0df-b8a470b77a31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/bfwhvws?ed=2048", headers: {Host: 2.71137223.xyz}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 5, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 德国(yudou66.com 玉豆分享), server: de.iplc.skin, port: 11116, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de.iplc.skin}}, udp: true}
+  - {name: 葡萄牙(yudou66.com 玉豆分享), server: pt.iplc.skin, port: 11124, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pt.iplc.skin}}, udp: true}
+  - {name: 捷克(yudou66.com 玉豆分享), server: cz.iplc.skin, port: 11123, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cz.iplc.skin}}, udp: true}
+  - {name: 沙特(yudou66.com 玉豆分享), server: sa.iplc.skin, port: 11115, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sa.iplc.skin}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 6, server: gkdcm.gkdcn.top, port: 25885, type: vmess, uuid: 0ab9e6e7-13f6-4717-b0c9-097259bbf8ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.gkdcn.top}}, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 2, server: 35.236.191.75, port: 1240, type: vmess, uuid: 9e281270-ec65-4aa0-ce4a-6cfd56ebced2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 7, server: 38.121.43.27, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 8, server: 38.121.43.27, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 亚洲(yudou66.com 玉豆分享), server: 45.32.74.255, port: 11514, type: vmess, uuid: 0f83d532-bf76-11ec-ada7-560003f41aa7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /XrwK6Y0x/, headers: {Host: 45.32.74.255}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 9, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 10, server: free.thunetwork.ml, port: 443, type: vmess, uuid: 08d4b99d-9885-4bf0-9bbb-0fe04dc3c113, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: free.thunetwork.ml}}, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 3, server: dailichi.ga, port: 5740, type: vmess, uuid: ad2ebb3d-eb6c-471c-f1f1-66181735ce98, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dailichi.ga}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 11, server: 38.121.43.27, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 4, server: dailichi.ga, port: 5010, type: ss, cipher: aes-256-gcm, password: wifIzB2tOh, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 12, server: uscera.moonfree.top, port: 443, type: vmess, uuid: 6a856d0a-c374-4d25-b4db-327801ca9dc2, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uscera.moonfree.top}}, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 5, server: dailichi.ga, port: 4660, type: vmess, uuid: 3394f5e6-8094-425b-ebdd-5a5981e6af19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dailichi.ga}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 13, server: 38.121.43.27, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 14, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 6, server: 35.236.191.75, port: 45160, type: ss, cipher: aes-256-gcm, password: zljVgnokqp, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 15, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 16, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 17, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享) 5, server: 2.it58no.top, port: 443, type: vmess, uuid: ad15faac-2797-4993-b4cb-4b7efccc5aba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8471/, headers: {Host: 2.it58no.top}}, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 7, server: dailichi.ga, port: 4530, type: ss, cipher: aes-256-gcm, password: OI2894TXhv, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 8, server: dailichi.ga, port: 4420, type: vmess, uuid: 409db2af-0af5-4211-d51e-e67cd7d659ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 9, server: 35.236.191.75, port: 57610, type: ss, cipher: aes-256-gcm, password: usw3onAsUl, udp: true}
+  - {name: 土耳其(yudou66.com 玉豆分享), server: tr.iplc.skin, port: 11117, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tr.iplc.skin}}, udp: true}
+  - {name: 越南(yudou66.com 玉豆分享), server: hn.zingfast.vn, port: 80, type: vmess, uuid: f62c46d2-242d-4433-b008-a6fe7eb34965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zingfast/, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 18, server: 38.121.43.27, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 19, server: 104.16.47.181, port: 443, type: vmess, uuid: 1e9be421-4135-4edb-9655-804042753442, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yorknodes-de1, headers: {Host: eu19.144050.cf}}, udp: true}
+  - {name: 韩国(yudou66.com 玉豆分享) 2, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: v2ray.788644.xyz}}, udp: true}
+  - {name: 加拿大(yudou66.com 玉豆分享), server: ca.iplc.skin, port: 11119, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.iplc.skin}}, udp: true}
+  - {name: 韩国(yudou66.com 玉豆分享) 3, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: c07dff62-1e72-4d83-a83b-d611a98a1c9d, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 20, server: niaop.tk, port: 443, type: vmess, uuid: a0b0df87-bda2-440e-830f-347da6cc7760, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wsssdr1, headers: {Host: niaop.tk}}, udp: true}
+  - {name: 台湾(yudou66.com 玉豆分享) 10, server: 35.236.191.75, port: 47420, type: vmess, uuid: 20fc3e80-004f-42f8-87f1-421a115caff7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 21, server: 104.16.47.181, port: 443, type: vmess, uuid: 7824cbc1-f82d-48cf-fb1d-54d8911849c8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yorknodes-fr-par-1, headers: {Host: fr1.144050.cf}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享) 5, server: gdcm-2.onescloud.top, port: 22016, type: vmess, uuid: 1faaf75a-8032-309e-a94e-6efafe2ce998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: microsoft.com}}, udp: true}
+  - {name: 泰国(yudou66.com 玉豆分享), server: th.iplc.skin, port: 11118, type: vmess, uuid: 10ca989d-17b5-421d-bf30-23593bf1cc3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: th.iplc.skin}}, udp: true}
+  - {name: 日本(yudou66.com 玉豆分享) 6, server: gdcm-2.onescloud.top, port: 22016, type: vmess, uuid: 1faaf75a-8032-309e-a94e-6efafe2ce998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: gdcm-2.onescloud.top}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 22, server: 8.ezydfdd.com, port: 443, type: vmess, uuid: dc0887b9-4c05-428c-adce-4235d1636341, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe, headers: {Host: 8.ezydfdd.com}}, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享) 6, server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.19}}, udp: true}
+  - {name: 澳洲(yudou66.com 玉豆分享), server: node.774.gs, port: 8443, type: vmess, uuid: 28f6159e-ed46-4bfe-b893-0e7531c28143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: node.774.gs}}, udp: true}
+  - {name: _韩国(yudou66.com 玉豆分享), server: 140.238.16.203, port: 4200, type: vmess, uuid: 1101a310-8604-4e48-c3c7-8d93a17965e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 23, server: 142.4.127.67, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/310910211916, headers: {Host: www.47727450.xyz}}, udp: true}
+  - {name: _韩国(yudou66.com 玉豆分享) 2, server: 146.56.184.37, port: 2054, type: ss, cipher: aes-256-gcm, password: ZrZOQJdwqc, udp: true}
+  - {name: 香港(yudou66.com 玉豆分享) 7, server: 119.147.20.236, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆分享), server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 24, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享) 25, server: us.456url.com, port: 10088, type: ss, cipher: chacha20-ietf-poly1305, password: fbd77250-a674-4a24-be1a-d1a76f695c34, udp: true}
+  - {name: 英国(yudou66.com 玉豆分享), server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -521,63 +617,75 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 2
-      - 台湾(yudou66.com 玉豆分享) 3
-      - 台湾(yudou66.com 玉豆分享) 4
-      - 香港(yudou66.com 玉豆分享) 2
-      - 日本(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 5
-      - 新加坡(yudou66.com 玉豆分享)
-      - 印度(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 2
-      - 香港(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 3
-      - 新加坡(yudou66.com 玉豆分享) 4
-      - 印度(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享)
-      - 新加坡(yudou66.com 玉豆分享) 5
+      - 香港(yudou66.com 玉豆分享)
+      - 新加坡(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享)
+      - 香港(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 3
+      - 日本(yudou66.com 玉豆分享) 3
+      - 韩国(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享)
+      - 菲律宾(yudou66.com 玉豆分享)
+      - 印度(yudou66.com 玉豆分享) 2
+      - 日本(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 3
+      - 香港(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 5
-      - 澳洲(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 6
+      - 德国(yudou66.com 玉豆分享)
+      - 葡萄牙(yudou66.com 玉豆分享)
+      - 捷克(yudou66.com 玉豆分享)
+      - 沙特(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 2
       - 美国(yudou66.com 玉豆分享) 7
-      - 台湾(yudou66.com 玉豆分享) 7
-      - US美国(yudou66.com 玉豆分享)
-      - 台湾(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 9
-      - 台湾(yudou66.com 玉豆分享) 10
-      - 台湾(yudou66.com 玉豆分享) 11
-      - 台湾(yudou66.com 玉豆分享) 12
-      - 台湾(yudou66.com 玉豆分享) 13
-      - 台湾(yudou66.com 玉豆分享) 14
       - 美国(yudou66.com 玉豆分享) 8
-      - 台湾(yudou66.com 玉豆分享) 15
-      - 欧洲(yudou66.com 玉豆分享)
-      - 英国(yudou66.com 玉豆分享)
-      - 俄罗斯(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享)
+      - 亚洲(yudou66.com 玉豆分享)
       - 美国(yudou66.com 玉豆分享) 9
       - 美国(yudou66.com 玉豆分享) 10
-      - 欧洲(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 3
       - 美国(yudou66.com 玉豆分享) 11
-      - 韩国(yudou66.com 玉豆分享) 2
-      - 新加坡(yudou66.com 玉豆分享) 6
+      - 台湾(yudou66.com 玉豆分享) 4
       - 美国(yudou66.com 玉豆分享) 12
-      - 香港(yudou66.com 玉豆分享) 4
-      - 台湾(yudou66.com 玉豆分享) 16
-      - 欧洲(yudou66.com 玉豆分享) 3
-      - 德国(yudou66.com 玉豆分享)
-      - 韩国(yudou66.com 玉豆分享) 3
-      - US美国(yudou66.com 玉豆分享) 2
+      - 台湾(yudou66.com 玉豆分享) 5
       - 美国(yudou66.com 玉豆分享) 13
       - 美国(yudou66.com 玉豆分享) 14
-      - _FR_法国(yudou66.com 玉豆分享)
-      - _CZ_捷克(yudou66.com 玉豆分享)
+      - 台湾(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 15
+      - 美国(yudou66.com 玉豆分享) 16
+      - 美国(yudou66.com 玉豆分享) 17
+      - 香港(yudou66.com 玉豆分享) 5
+      - 台湾(yudou66.com 玉豆分享) 7
+      - 台湾(yudou66.com 玉豆分享) 8
+      - 台湾(yudou66.com 玉豆分享) 9
+      - 土耳其(yudou66.com 玉豆分享)
+      - 越南(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 18
+      - 美国(yudou66.com 玉豆分享) 19
+      - 韩国(yudou66.com 玉豆分享) 2
+      - 加拿大(yudou66.com 玉豆分享)
+      - 韩国(yudou66.com 玉豆分享) 3
+      - 美国(yudou66.com 玉豆分享) 20
+      - 台湾(yudou66.com 玉豆分享) 10
+      - 美国(yudou66.com 玉豆分享) 21
+      - 日本(yudou66.com 玉豆分享) 5
+      - 泰国(yudou66.com 玉豆分享)
+      - 日本(yudou66.com 玉豆分享) 6
+      - 美国(yudou66.com 玉豆分享) 22
+      - 香港(yudou66.com 玉豆分享) 6
+      - 澳洲(yudou66.com 玉豆分享)
+      - _韩国(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 23
+      - _韩国(yudou66.com 玉豆分享) 2
+      - 香港(yudou66.com 玉豆分享) 7
+      - 欧洲(yudou66.com 玉豆分享)
+      - 美国(yudou66.com 玉豆分享) 24
+      - 美国(yudou66.com 玉豆分享) 25
+      - 英国(yudou66.com 玉豆分享)
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
